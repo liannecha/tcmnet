@@ -265,7 +265,6 @@ function AboutCard({ card }: { card: (typeof ABOUT_CARDS)[number] }) {
     >
       <Text style={styles.aboutCardTitle}>{card.title}</Text>
       <Text style={styles.aboutCardText}>{card.text}</Text>
-      {isHovered ? <Text style={styles.aboutCardDetail}>{card.detail}</Text> : null}
     </View>
   );
 }
@@ -274,38 +273,26 @@ const ABOUT_CARDS = [
   {
     title: 'What is TCM?',
     text: 'Traditional Chinese Medicine diagnoses illness by interpreting combinations of symptoms as underlying patterns, or syndromes, which then guide treatment.',
-    detail:
-      'TCM emphasizes patterns of signs and symptoms rather than single isolated findings, which directs therapeutic choices.',
   },
   {
     title: 'The 14 Concepts',
     text: 'TCMNet tracks 14 core concepts, including Yin/Yang, Hot/Cold, Interior/Exterior, Deficiency/Excess, and six organ or meridian groups.',
-    detail:
-      'These concept signals are predicted from symptoms and help translate clinical features into traditional diagnostic language.',
   },
   {
     title: 'Syndrome Prediction',
     text: "TCMNet combines a patient's symptoms with these learned concepts to rank which of 228 TCM syndromes best matches their pattern.",
-    detail:
-      'The app surfaces the top matches while preserving alternative candidates for clinician review.',
   },
   {
     title: 'Herb Recommendation',
     text: 'After predicting a syndrome, TCMNet ranks herbs using both traditional syndrome-herb relationships and how closely each herb matches the predicted concepts.',
-    detail:
-      'Recommendations include contextual metadata so users can see why an herb was ranked highly for a given pattern.',
   },
   {
     title: 'How Our Model Works',
     text: 'TCMNet uses a multi-task neural network that learns shared symptom features, predicts the 14 TCM concepts, then uses both to predict the final syndrome.',
-    detail:
-      'A shared representation helps the model leverage concept supervision to improve syndrome prediction performance.',
   },
   {
     title: 'Model Performance',
     text: 'TCMNet reached 88.25% syndrome accuracy and 90.79% Precision@1 for herb recommendations.',
-    detail:
-      'Performance metrics are reported on held-out synthetic test data and described in the project writeup.',
   },
 ];
 
@@ -1843,6 +1830,8 @@ const styles = StyleSheet.create({
     flexBasis: 360,
     flexGrow: 1,
     minHeight: 190,
+    borderWidth: 1,
+    borderColor: 'transparent',
     borderRadius: 8,
     backgroundColor: colors.softPanel,
     padding: 22,
@@ -1851,7 +1840,6 @@ const styles = StyleSheet.create({
   },
   aboutCardHovered: {
     backgroundColor: '#e4f0e9',
-    borderWidth: 1,
     borderColor: '#c8dfd0',
   },
   aboutCardTitle: {
@@ -1863,13 +1851,6 @@ const styles = StyleSheet.create({
     color: colors.muted,
     fontSize: 15,
     lineHeight: 23,
-  },
-  aboutCardDetail: {
-    color: colors.text,
-    fontSize: 14,
-    lineHeight: 21,
-    fontWeight: '700',
-    marginTop: 4,
   },
   page: {
     width: '100%',
