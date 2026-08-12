@@ -1,3 +1,6 @@
+// API helpers for the React Native app.
+// These functions connect to the FastAPI backend by building HTTP requests
+// from API_BASE_URL, sending/receiving JSON, and surfacing backend errors.
 import { API_BASE_URL } from './config';
 import type { MetadataRecord, PredictRequest, PredictionResponse } from './types';
 

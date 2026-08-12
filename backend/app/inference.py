@@ -1,7 +1,9 @@
-"""Inference utilities for frozen TCMNet artifacts.
+"""Load frozen TCMNet artifacts and turn symptom IDs into predictions.
 
-This module intentionally does not train models and does not start an API server.
-It only loads exported artifacts and runs local predictions.
+1. loads the saved model, mappings, metadata, and herb scoring matrices;
+2. converts selected symptom IDs into the fixed model input vector;
+3. runs the neural syndrome/concept model;
+4. scores herbs from predicted concepts plus the predicted syndrome prior.
 """
 from __future__ import annotations
 
@@ -20,6 +22,8 @@ DEFAULT_ARTIFACT_DIR = PROJECT_ROOT / "pipeline" / "artifacts"
 
 
 class TCMNet(nn.Module):
+    """Neural architecture matching the saved TCMNet weights."""
+
     def __init__(
         self,
         num_symptoms: int,
@@ -45,14 +49,18 @@ class TCMNet(nn.Module):
         )
 
     def forward(self, x):
+        """Return concept scores and raw syndrome logits for an input batch."""
         shared_features = self.shared_layer(x)
         concept_preds = torch.sigmoid(self.concept_head(shared_features))
+        # Syndrome prediction is conditioned on both learned features and concepts.
         combined_features = torch.cat((shared_features, concept_preds), dim=1)
         syndrome_preds = self.syndrome_head(combined_features)
         return concept_preds, syndrome_preds
 
 
 class TCMNetInference:
+    """Loads frozen artifacts once and exposes reusable prediction helpers."""
+
     def __init__(
         self,
         artifact_dir: str | Path = DEFAULT_ARTIFACT_DIR,
@@ -63,6 +71,7 @@ class TCMNetInference:
             self.artifact_dir = PROJECT_ROOT / self.artifact_dir
         self.device = torch.device(device)
 
+        # These files are produced by the pipeline exporters and are read-only here.
         self.model_config = self._read_json("model_config.json")
         self.symptom_mapping = self._read_json("symptom_columns.json")
         self.syndrome_mapping = self._read_json("syndrome_index_to_id.json")
@@ -100,6 +109,7 @@ class TCMNetInference:
         top_herbs: int = 5,
         herb_alpha: float | None = None,
     ) -> dict:
+        """Run model inference and return API-friendly prediction data."""
         requested_symptoms = [str(symptom_id) for symptom_id in symptom_ids]
         input_vector, known_symptoms, unknown_symptoms = self._vectorize(
             requested_symptoms
@@ -109,6 +119,7 @@ class TCMNetInference:
             x = torch.tensor(input_vector, dtype=torch.float32, device=self.device)
             concept_scores, syndrome_logits = self.model(x.unsqueeze(0))
             concept_array = concept_scores.squeeze(0).cpu().numpy()
+            # Convert logits into comparable confidence scores for display.
             syndrome_probs = torch.softmax(syndrome_logits, dim=1).squeeze(0).cpu().numpy()
 
         syndrome_predictions = self._top_syndromes(syndrome_probs, top_syndromes)
@@ -144,6 +155,7 @@ class TCMNetInference:
         }
 
     def _load_model(self) -> TCMNet:
+        """Recreate the model shape from config and load saved weights."""
         config = self.model_config
         model = TCMNet(
             num_symptoms=int(config["num_symptoms"]),
@@ -164,6 +176,7 @@ class TCMNetInference:
         return model
 
     def _vectorize(self, symptom_ids: Iterable[str]) -> tuple[np.ndarray, list[str], list[str]]:
+        """Convert symptom IDs into the fixed binary vector expected by TCMNet."""
         vector = np.zeros(len(self.symptom_columns), dtype=np.float32)
         known: list[str] = []
         unknown: list[str] = []
@@ -173,12 +186,14 @@ class TCMNetInference:
             if lookup_key is None:
                 unknown.append(str(symptom_id))
                 continue
+            # Duplicate symptoms are harmless: setting the same binary slot to 1 again.
             vector[self.symptom_id_to_index[lookup_key]] = 1.0
             known.append(str(symptom_id))
 
         return vector, known, unknown
 
     def _display_symptom_id(self, symptom_id: str) -> str:
+        """Return the canonical SMTS display ID for a known symptom."""
         lookup_key = self._lookup_symptom_key(symptom_id)
         if lookup_key is None:
             return str(symptom_id)
@@ -187,12 +202,14 @@ class TCMNetInference:
         return str(lookup_key)
 
     def _lookup_symptom_key(self, symptom_id: str) -> str | None:
+        """Find the stored mapping key for numeric or SMTS-formatted IDs."""
         raw = str(symptom_id).strip()
         candidates = [raw]
 
         upper = raw.upper()
         if upper.startswith("SMTS"):
             numeric = upper.removeprefix("SMTS").lstrip("0") or "0"
+            # Artifacts currently store symptom columns as numeric strings.
             candidates.extend([numeric, f"SMTS{int(numeric):05d}"])
         elif raw.isdigit():
             numeric = raw.lstrip("0") or "0"
@@ -204,6 +221,7 @@ class TCMNetInference:
         return None
 
     def _top_syndromes(self, syndrome_probs: np.ndarray, top_k: int) -> list[dict]:
+        """Format the highest-probability syndrome predictions."""
         limit = min(top_k, len(self.syndrome_index_to_id))
         indices = np.argsort(syndrome_probs)[::-1][:limit]
         return [
@@ -226,13 +244,16 @@ class TCMNetInference:
         top_k: int,
         alpha: float,
     ) -> list[dict]:
+        """Score herbs from concept similarity and syndrome-herb prior data."""
         concept_similarity = (self.herb_concept_matrix @ concept_scores) / max(
             len(concept_scores), 1
         )
         prior = self.syndrome_herb_prior[pred_syndrome_idx]
+        # alpha controls the blend between concept fit and known syndrome usage.
         final_scores = alpha * concept_similarity + (1.0 - alpha) * prior
         used_for_syndrome = prior > 0
         if used_for_syndrome.any():
+            # Prefer herbs known for the predicted syndrome when such links exist.
             candidate_indices = np.where(used_for_syndrome)[0]
         else:
             candidate_indices = np.arange(len(self.herb_ids))
@@ -263,6 +284,7 @@ class TCMNetInference:
         herb_recommendations: list[dict],
         alpha: float,
     ) -> dict:
+        """Build concise explanation details for the frontend."""
         matched_symptoms = []
         for symptom_id in known_symptoms:
             display_id = self._display_symptom_id(symptom_id)
@@ -282,6 +304,7 @@ class TCMNetInference:
         syndrome_id = self.syndrome_index_to_id[pred_syndrome_idx]
         prior = self.syndrome_herb_prior[pred_syndrome_idx]
         associated_indices = np.where(prior > 0)[0]
+        # Keep this list short so responses stay lightweight for the UI.
         associated_herbs = [
             {
                 "id": self.herb_ids[int(index)],
@@ -322,6 +345,7 @@ class TCMNetInference:
         }
 
     def _validate_artifacts(self) -> None:
+        """Fail early if artifact dimensions disagree with the model config."""
         expected_symptoms = int(self.model_config["num_symptoms"])
         expected_concepts = int(self.model_config["num_concepts"])
         expected_syndromes = int(self.model_config["num_syndromes"])
@@ -379,18 +403,21 @@ class TCMNetInference:
 
     @staticmethod
     def _metadata_label_map(records: list[dict]) -> dict[str, str]:
+        """Build a quick ID-to-label lookup from metadata records."""
         return {
             str(record["id"]): str(record.get("label") or record["id"])
             for record in records
         }
 
     def _read_json(self, filename: str):
+        """Read a JSON artifact from the artifact directory."""
         path = self.artifact_dir / filename
         if not path.exists():
             raise FileNotFoundError(f"Missing artifact: {path}")
         return json.loads(path.read_text(encoding="utf-8"))
 
     def _read_npy(self, filename: str) -> np.ndarray:
+        """Read a NumPy artifact from the artifact directory."""
         path = self.artifact_dir / filename
         if not path.exists():
             raise FileNotFoundError(f"Missing artifact: {path}")
@@ -398,6 +425,7 @@ class TCMNetInference:
 
 
 def _default_smoke_symptoms(inference: TCMNetInference, count: int = 3) -> list[str]:
+    """Choose a few valid symptoms for command-line smoke tests."""
     symptoms = []
     for symptom_id in inference.symptom_columns[:count]:
         if str(symptom_id).isdigit():
@@ -408,6 +436,7 @@ def _default_smoke_symptoms(inference: TCMNetInference, count: int = 3) -> list[
 
 
 def main() -> None:
+    """Run a small command-line inference smoke test."""
     parser = argparse.ArgumentParser(description="Run a TCMNet inference smoke test.")
     parser.add_argument("symptom_ids", nargs="*", help="Symptom IDs, e.g. SMTS00012")
     parser.add_argument("--artifact-dir", type=Path, default=DEFAULT_ARTIFACT_DIR)

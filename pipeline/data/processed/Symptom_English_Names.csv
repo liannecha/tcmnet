@@ -1,0 +1,1870 @@
+id,source_numeric_id,chinese_name,pinyin,english_name
+SMTS00001,1,嗳气,Ai Qi,belching
+SMTS00002,2,白带色乳白,Bai Dai Se Ru Bai,leucorrhea milky white in color
+SMTS00003,3,白带淸稀,Bai Dai Qing Xi,thin leucorrhea
+SMTS00004,4,白带增多,Bai Dai Zeng Duo,increased leucorrhea
+SMTS00005,5,白发,Bai Fa,gray hair
+SMTS00006,6,白睛红赤,Bai Jing Hong Chi,redness of the white of the eye
+SMTS00010,10,斑疹,Ban Zhen,macules
+SMTS00011,11,斑疹紫黑,Ban Zhen Zi Hei,purple-black macules
+SMTS00012,12,半身不遂,Ban Shen Bu Sui,hemiplegia
+SMTS00013,13,半身麻木,Ban Shen Ma Mu,numbness in half of the body
+SMTS00014,14,胞衣不下,Bao Yi Bu Xia,Remaining afterbirth
+SMTS00015,15,饱胀,Bao Zhang,fullness
+SMTS00016,16,暴发火眼,Bao Fa Huo Yan,acute contagious conjunctivitis
+SMTS00017,17,暴厥,Bao Jue,violent seizures
+SMTS00018,18,暴注下泻,Bao Zhu Xia Xie,severe diarrhea
+SMTS00019,19,背冷,Bei Leng,cold back
+SMTS00020,20,背酸痛,Bei Suan Tong,back pain
+SMTS00021,21,背疼痛,Bei Teng Tong,Back Pain
+SMTS00022,22,背痛,Bei Tong,Back Pain
+SMTS00023,23,崩漏,Beng Lou,metrorrhagia
+SMTS00024,24,鼻干,Bi Gan,dry nose
+SMTS00025,25,鼻干燥,Bi Gan Zao,Dry nose
+SMTS00026,26,鼻流清涕,Bi Liu Qing Ti,runny nose and clear discharge
+SMTS00027,27,鼻流浊涕,Bi Liu Zhuo Ti,runny nose and runny nose
+SMTS00028,28,鼻鸣,Bi Ming,rhinorrhoea
+SMTS00029,29,鼻衄,Bi Nv,epistaxis
+SMTS00030,30,鼻塞,Bi Sai,nasal congestion
+SMTS00032,32,鼻痒,Bi Yang,nasal itching
+SMTS00034,34,鼻燥,Bi Zao,Nasal dryness
+SMTS00036,36,闭经,Bi Jing,amenorrhea
+SMTS00037,37,痹病,Bi Bing,Bi disease
+SMTS00038,38,痹痛,Bi Tong,numbness and pain
+SMTS00039,39,臂疼痛,Bi Teng Tong,arm pain
+SMTS00040,40,臂痛,Bi Tong,arm pain
+SMTS00041,41,便闭,Bian Bi,constipation
+SMTS00042,42,便干,Bian Gan,dry stool
+SMTS00043,43,便黄而黏,Bian Huang Er Nian,yellow and sticky stool
+SMTS00044,44,便结,Bian Jie,constipation
+SMTS00045,45,便秘,Bian Mi,constipation
+SMTS00046,46,便溏,Bian Tang,loose stools
+SMTS00047,47,便溏日久,Bian Tang Ri Jiu,Prolonged loose stools
+SMTS00048,48,便下脓血,Bian Xia Nong Xie,pus and blood in stool
+SMTS00049,49,便泻,Bian Xie,diarrhea
+SMTS00050,50,便血,Bian Xie,blood in the stool
+SMTS00051,51,表虚自汗,Biao Xu Zi Han,spontaneous sweating due to superficial deficiency
+SMTS00052,52,憋气,Bie Qi,breathlessness
+SMTS00053,53,病后体弱,Bing Hou Ti Ruo,Weakness after illness
+SMTS00054,54,病后脱发,Bing Hou Tuo Fa,hair loss after illness
+SMTS00055,55,病后虚弱,Bing Hou Xu Ruo,weakness after illness
+SMTS00056,56,不饥,Bu Ji,Not hungry
+SMTS00057,57,不寐,Bu Mei,insomnia
+SMTS00058,58,不能久视,Bu Neng Jiu Shi,Can’t look for long periods of time
+SMTS00059,59,不省人事,Bu Sheng Ren Shi,unconsciousness
+SMTS00060,60,不食,Bu Shi,Not eating
+SMTS00061,61,不思乳食,Bu Si Ru Shi,Not wanting to eat milk
+SMTS00062,62,不思饮食,Bu Si Yin Shi,Not thinking about eating
+SMTS00063,63,不喜热饮,Bu Xi Re Yin,dislike hot drinks
+SMTS00064,64,不育,Bu Yu,Infertility
+SMTS00065,65,不欲饮食,Bu Yu Yin Shi,No desire to eat
+SMTS00066,66,不孕,Bu Yun,Infertility
+SMTS00067,67,步履艰难,Bu Lv Jian Nan,Hard Steps
+SMTS00068,68,嘈杂,Cao Za,Noisy
+SMTS00069,69,嘈杂呕吐,Cao Za Ou Tu,noisy vomiting
+SMTS00070,70,嘈杂似饥,Cao Za Si Ji,noisy and hungry
+SMTS00071,71,岔气,Cha Qi,Cha Qi
+SMTS00072,72,岔气作痛,Cha Qi Zuo Tong,Pain caused by miscarriage of energy
+SMTS00073,73,产后出血日久,Chan Hou Chu Xie Ri Jiu,Prolonged Postpartum Hemorrhage
+SMTS00074,74,产后恶露不尽,Chan Hou E Lu Bu Jin,postpartum lochia
+SMTS00075,75,产后腹痛,Chan Hou Fu Tong,postpartum abdominal pain
+SMTS00076,76,产后流血,Chan Hou Liu Xie,Postpartum Bleeding
+SMTS00077,77,产后乳房结块,Chan Hou Ru Fang Jie Kuai,postpartum breast lumps
+SMTS00078,78,产后乳汁不通,Chan Hou Ru Zhi Bu Tong,Postpartum lactation obstruction
+SMTS00079,79,产后乳肿,Chan Hou Ru Zhong,postpartum breast swelling
+SMTS00080,80,产后少乳,Chan Hou Shao Ru,Postpartum oliguria
+SMTS00081,81,产后脱发,Chan Hou Tuo Fa,postpartum hair loss
+SMTS00082,82,产后小腹疼痛,Chan Hou Xiao Fu Teng Tong,postpartum lower abdominal pain
+SMTS00083,83,产后血虚,Chan Hou Xie Xu,postpartum anemia
+SMTS00084,84,产后血晕,Chan Hou Xie Yun,Postpartum haemorrhage
+SMTS00085,85,产后瘀痛,Chan Hou Yu Tong,Postpartum blood stasis and pain
+SMTS00086,86,产后诸虚,Chan Hou Zhu Xu,Postpartum deficiency
+SMTS00087,87,产后子宫复旧不全,Chan Hou Zi Gong Fu Jiu Bu Quan,Postpartum uterine involution is incomplete
+SMTS00088,88,肠风便血,Chang Feng Bian Xie,intestinal wind and blood in the stool
+SMTS00089,89,肠风下血,Chang Feng Xia Xie,intestinal wind and bleeding
+SMTS00091,91,肠鸣,Chang Ming,bowel borborygmus
+SMTS00092,92,肠胃不适,Chang Wei Bu Shi,gastrointestinal discomfort
+SMTS00093,93,潮热,Chao Re,hot flashes
+SMTS00095,95,晨起面肿,Chen Qi Mian Zhong,swollen face in the morning
+SMTS00096,96,齿鼻衄血,Chi Bi Nv Xie,Teeth and epistaxis
+SMTS00097,97,齿痛,Chi Tong,toothache
+SMTS00098,98,齿龈肿痛,Chi Ken Zhong Tong,gum swelling and pain
+SMTS00102,102,赤缕红斑,Chi Lv Hong Ban,red streaks of erythema
+SMTS00104,104,虫咬肿痛,Chong Yao Zhong Tong,"insect bites, swelling and pain"
+SMTS00105,105,抽搐,Chou Chu,convulsions
+SMTS00106,106,抽搐神昏,Chou Chu Shen Hun,convulsions and coma
+SMTS00107,107,出血,Chu Xie,bleeding
+SMTS00108,108,出血症,Chu Xie Zheng,hemorrhage
+SMTS00109,109,喘,Chuan,asthma
+SMTS00110,110,喘促,Chuan Cu,shortness of breath
+SMTS00111,111,喘促气逆,Chuan Cu Qi Ni,shortness of breath and shortness of breath
+SMTS00112,112,喘促痰多,Chuan Cu Tan Duo,"Breathing, promoting phlegm and excessive phlegm"
+SMTS00113,113,喘急,Chuan Ji,shortness of breath
+SMTS00114,114,喘咳,Chuan Ke,asthma and cough
+SMTS00115,115,喘满,Chuan Man,dyspnea
+SMTS00116,116,喘嗽,Chuan Sou,asthma and cough
+SMTS00117,117,喘息,Chuan Xi,wheezing
+SMTS00118,118,疮毒,Chuang Du,Sores
+SMTS00119,119,疮疖痈肿,Chuang Jie Yong Zhong,"sores, boils and carbuncles"
+SMTS00120,120,疮疖肿毒,Chuang Jie Zhong Du,"sores, boils, swelling and poison"
+SMTS00121,121,疮疖肿痛,Chuang Jie Zhong Tong,"sores, boils, swelling and pain"
+SMTS00122,122,疮口久不愈合,Chuang Kou Jiu Bu Yu He,Sores that don’t heal for a long time
+SMTS00123,123,疮面久溃不敛,Chuang Mian Jiu Kui Bu Lian,sores that persist for a long time
+SMTS00124,124,疮面疼痛,Chuang Mian Teng Tong,Sore face pain
+SMTS00125,125,疮面鲜活,Chuang Mian Xian Huo,sores appear fresh
+SMTS00126,126,疮色鲜活,Chuang Se Xian Huo,Sores are vivid in color
+SMTS00128,128,疮疡,Chuang Yang,sores
+SMTS00129,129,疮疡不敛,Chuang Yang Bu Lian,sores that do not heal
+SMTS00130,130,疮疡久溃不敛,Chuang Yang Jiu Kui Bu Lian,Sores that persist for a long time
+SMTS00131,131,疮疡溃烂,Chuang Yang Kui Lan,sores and ulcers
+SMTS00132,132,疮疡肿痛,Chuang Yang Zhong Tong,"sores, swelling and pain"
+SMTS00133,133,疮痈肿痛,Chuang Yong Zhong Tong,"sores, swelling and pain"
+SMTS00134,134,疮肿,Chuang Zhong,sores and swelling
+SMTS00136,136,唇干,Chun Gan,Dry lips
+SMTS00137,137,唇甲出血,Chun Jia Chu Xie,lip nail bleeding
+SMTS00138,138,唇甲色淡,Chun Jia Se Dan,pale lip and nail color
+SMTS00139,139,刺痛,Ci Tong,tingling
+SMTS00140,140,猝然昏倒,Cu Ran Hun Dao,sudden fainting
+SMTS00141,141,窜痛,Cuan Tong,channeling pain
+SMTS00142,142,挫伤筋骨,Cuo Shang Jin Gu,Bruised muscles and bones
+SMTS00143,143,大便不畅,Da Bian Bu Chang,difficulty in defecation
+SMTS00144,144,大便不利,Da Bian Bu Li,Difficulty in defecation
+SMTS00145,145,大便不爽,Da Bian Bu Shuang,Unpleasant bowel movement
+SMTS00146,146,大便不调,Da Bian Bu Diao,irregular bowel movements
+SMTS00148,148,大便不下,Da Bian Bu Xia,Inability to defecate
+SMTS00149,149,大便臭秽,Da Bian Chou Hui,Smelly stool
+SMTS00150,150,大便出血,Da Bian Chu Xie,bleeding in stool
+SMTS00151,151,大便次数增多 ,Da Bian Ci Shu Zeng Duo  ,increased stool frequency
+SMTS00152,152,大便干,Da Bian Gan,dry stool
+SMTS00153,153,大便干结,Da Bian Gan Jie,dry stool
+SMTS00154,154,大便干结难下,Da Bian Gan Jie Nan Xia,dry and hard stool
+SMTS00155,155,大便干燥,Da Bian Gan Zao,dry stool
+SMTS00156,156,大便困难,Da Bian Kun Nan,Difficulty in defecation
+SMTS00157,157,大便秘结,Da Bian Mi Jie,constipation
+SMTS00158,158,大便黏滞,Da Bian Nian Zhi,sticky stool
+SMTS00159,159,大便黏滞不爽 ,Da Bian Nian Zhi Bu Shuang  ,Sticky and unpleasant stools
+SMTS00160,160,大便脓血,Da Bian Nong Xie,pus and blood in stool
+SMTS00161,161,大便清稀,Da Bian Qing Xi,loose stools
+SMTS00162,162,大便失调,Da Bian Shi Diao,Defecation Disorders
+SMTS00163,163,大便酸臭,Da Bian Suan Chou,sour and smelly stools
+SMTS00164,164,大便溏雹,Da Bian Tang Bao,loose stools
+SMTS00165,165,大便溏薄,Da Bian Tang Bo,loose stools
+SMTS00166,166,大便溏软,Da Bian Tang Ruan,loose stools
+SMTS00167,167,大便溏泻,Da Bian Tang Xie,loose stools and diarrhea
+SMTS00168,168,大便稀薄如水样,Da Bian Xi Bo Ru Shui Yang,thin and watery stool
+SMTS00169,169,大便稀溏,Da Bian Xi Tang,loose stools
+SMTS00170,170,大便泄泻,Da Bian Xie Xie,stool and diarrhea
+SMTS00171,171,大便燥结,Da Bian Zao Jie,dry stool
+SMTS00173,173,带下白浊,Dai Xia Bai Zhuo,white turbid vaginal discharge
+SMTS00175,175,带下量多,Dai Xia Liang Duo,heavy vaginal discharge
+SMTS00176,176,带下色黄,Dai Xia Se Huang,vaginal discharge with yellow color
+SMTS00177,177,带下色黄质稠,Dai Xia Se Huang Zhi Chou,vaginal discharge with thick yellowish substance
+SMTS00182,182,倒饱嘈杂,Dao Bao Cao Za,Feeling full and noisy
+SMTS00183,183,盗汗,Dao Han,night sweats
+SMTS00184,184,低热,Di Re,low fever
+SMTS00185,185,巅顶疼痛,Dian Ding Teng Tong,Peak Pain
+SMTS00186,186,癫狂,Dian Kuang,Madness
+SMTS00187,187,癫痫,Dian Xian,Epilepsy
+SMTS00188,188,癫痫痰多,Dian Xian Tan Duo,epilepsy with excessive phlegm
+SMTS00189,189,癲痫,Dian Xian,Epilepsy
+SMTS00190,190,跌打伤痛,Die Da Shang Tong,bruises and pain
+SMTS00191,191,跌打损伤,Die Da Sun Shang,bruises and injuries
+SMTS00192,192,跌打瘀痛,Die Da Yu Tong,pain due to bruises and blood stasis
+SMTS00193,193,跌打肿痛,Die Da Zhong Tong,swelling and pain due to bruises
+SMTS00194,194,跌扑伤痛,Die Pu Shang Tong,Pain due to fall
+SMTS00195,195,跌扑瘀肿,Die Pu Yu Zhong,"falling, fluttering, blood stasis and swelling"
+SMTS00196,196,跌扑肿痛,Die Pu Zhong Tong,swelling and pain due to falls
+SMTS00197,197,疔疮痈肿初起,Ding Chuang Yong Zhong Chu Qi,First onset of boils and carbuncles
+SMTS00198,198,疔疮肿痛,Ding Chuang Zhong Tong,"boils, swelling and pain"
+SMTS00199,199,疔毒,Ding Du,boils
+SMTS00201,201,动辄汗出,Dong Zhe Han Chu,Frequent sweating
+SMTS00206,206,短气,Duan Qi,shortness of breath
+SMTS00208,208,多汗,Duo Han,excessive sweating
+SMTS00209,209,多泪,Duo Lei,excessive tears
+SMTS00210,210,多泪羞明,Duo Lei Xiu Ming,excessive tears and shy eyesight
+SMTS00211,211,多梦,Duo Meng,dreaminess
+SMTS00212,212,多尿,Duo Niao,polyuria
+SMTS00213,213,多食,Duo Shi,eating too much
+SMTS00214,214,多涎,Duo Xian,excessive salivation
+SMTS00215,215,多饮,Duo Yin,Polydipsia
+SMTS00216,216,呃逆,E Ni,hiccups
+SMTS00217,217,恶疮,E Chuang,malignant sores
+SMTS00218,218,恶风寒,E Feng Han,Aversion to wind and cold
+SMTS00219,219,恶寒,E Han,Aversion to cold
+SMTS00220,220,恶寒重,E Han Zhong,Severe aversion to cold
+SMTS00221,221,恶寒壮热,E Han Zhuang Re,aversion to cold and strengthening of heat
+SMTS00222,222,恶心,E Xin,Nausea
+SMTS00223,223,耳道流脓,Er Dao Liu Nong,Ear canal discharge
+SMTS00224,224,耳聋,Er Long,Deafness
+SMTS00225,225,耳漏,Er Lou,otorrhea
+SMTS00226,226,耳鸣,Er Ming,tinnitus
+SMTS00227,227,耳内流脓,Er Nei Liu Nong,Ear discharge
+SMTS00228,228,耳下肿痛,Er Xia Zhong Tong,swelling and pain under the ears
+SMTS00229,229,二便失禁,Er Bian Shi Jin,fecal incontinence
+SMTS00230,230,发斑,Fa Ban,hair spots
+SMTS00231,231,发喘,Fa Chuan,Asthma
+SMTS00233,233,发狂,Fa Kuang,Madness
+SMTS00234,234,发热,Fa Re,fever
+SMTS00235,235,发热重,Fa Re Zhong,severe fever
+SMTS00236,236,发烧,Fa Shao,fever
+SMTS00237,237,发颐,Fa Yi,Fayi
+SMTS00238,238,发育迟缓,Fa Yu Chi Huan,Developmental delay
+SMTS00239,239,发疹,Fa Zhen,Rash
+SMTS00240,240,乏力,Fa Li,fatigue
+SMTS00241,241,烦倦,Fan Juan,Tiredness
+SMTS00242,242,烦渴,Fan Ke,Polydipsia
+SMTS00243,243,烦热,Fan Re,Fever
+SMTS00244,244,烦躁,Fan Zao,irritability
+SMTS00245,245,烦躁不安,Fan Zao Bu An,irritability
+SMTS00246,246,烦躁不宁,Fan Zao Bu Ning,restlessness
+SMTS00247,247,烦躁不适,Fan Zao Bu Shi,irritability and discomfort
+SMTS00248,248,烦躁易怒,Fan Zao Yi Nu,irritability and irritability
+SMTS00249,249,烦躁谵语,Fan Zao Zhan Yu,Irritability and Delirium
+SMTS00250,250,反酸,Fan Suan,Acid Reflux
+SMTS00251,251,反胃,Fan Wei,Nausea
+SMTS00252,252,反应迟钝,Fan Ying Chi Dun,slow response
+SMTS00253,253,泛吐清水,Fan Tu Qing Shui,general vomiting of water
+SMTS00254,254,肺痨,Fei Lao,Tuberculosis
+SMTS00255,255,肺气不畅,Fei Qi Bu Chang,poor lung qi
+SMTS00256,256,肺热,Fei Re,Lung heat
+SMTS00257,257,肺热咳嗽,Fei Re Ke Sou,Cough due to lung heat
+SMTS00258,258,肺痈,Fei Yong,lung abscess
+SMTS00259,259,肺燥,Fei Zao,dryness of the lungs
+SMTS00260,260,痱疹鲜红,Fei Zhen Xian Hong,prickly heat rash bright red
+SMTS00261,261,粉刺,Fen Ci,Acne
+SMTS00262,262,粉剌疙瘩,Fen La Ge Da,powdery pimples
+SMTS00263,263,风寒头痛,Feng Han Tou Tong,headache due to wind cold
+SMTS00264,264,风热,Feng Re,wind-heat
+SMTS00265,265,风热感冒,Feng Re Gan Mao,wind-heat and cold
+SMTS00266,266,风湿痹痛,Feng Shi Bi Tong,rheumatic arthralgia
+SMTS00267,267,风湿关节痛,Feng Shi Guan Jie Tong,rheumatic joint pain
+SMTS00268,268,风湿疼痛,Feng Shi Teng Tong,rheumatic pain
+SMTS00269,269,风湿瘀痛,Feng Shi Yu Tong,Rheumatism and blood stasis pain
+SMTS00270,270,风湿肢体关节痿软,Feng Shi Zhi Ti Guan Jie Wei Ruan,"rheumatism, weak joints in limbs"
+SMTS00271,271,风痰,Feng Tan,Wind Phlegm
+SMTS00272,272,风痰眩晕,Feng Tan Xuan Yun,dizziness caused by wind and phlegm
+SMTS00273,273,风痰瘀血痹阻脉络,Feng Tan Yu Xie Bi Zu Mai Luo,"wind, phlegm, blood stasis, obstruction of veins"
+SMTS00274,274,风痛,Feng Tong,wind pain
+SMTS00275,275,风眼烂弦,Feng Yan Lan Xian,Wind eye and strings
+SMTS00276,276,风疹发红,Feng Zhen Fa Hong,rubella redness
+SMTS00277,277,风疹瘙痒,Feng Zhen Sao Yang,rubella itching
+SMTS00278,278,浮肿,Fu Zhong,edema
+SMTS00279,279,腐肉不去,Fu Rou Bu Qu,Carrion does not go away
+SMTS00280,280,妇女痛经,Fu Nv Tong Jing,Women’s Dysmenorrhea
+SMTS00281,281,妇女癥瘕,Fu Nv Zheng Jia,Gynecomastia
+SMTS00282,282,腹暴痛,Fu Bao Tong,Abdominal pain
+SMTS00283,283,腹部不适,Fu Bu Bu Shi,abdominal discomfort
+SMTS00284,284,腹部隐痛,Fu Bu Yin Tong,Abdominal pain
+SMTS00285,285,腹部胀满,Fu Bu Zhang Man,abdominal fullness
+SMTS00286,286,腹部胀满不舒,Fu Bu Zhang Man Bu Shu,abdominal fullness and discomfort
+SMTS00287,287,腹水,Fu Shui,ascites
+SMTS00288,288,腹痛,Fu Tong,abdominal pain
+SMTS00289,289,腹痛绵绵,Fu Tong Mian Mian,Abdominal pain
+SMTS00290,290,腹泻,Fu Xie,Diarrhea
+SMTS00291,291,腹有癥块,Fu You Zheng Kuai,Symptoms in the abdomen
+SMTS00292,292,腹胀,Fu Zhang,abdominal distension
+SMTS00293,293,腹胀满,Fu Zhang Man,abdominal distension and fullness
+SMTS00294,294,腹中冷痛,Fu Zhong Leng Tong,cold pain in the abdomen
+SMTS00295,295,腹中胀满,Fu Zhong Zhang Man,fullness in the abdomen
+SMTS00297,297,肝火目赤,Gan Huo Mu Chi,"Liver fire, red eyes"
+SMTS00298,298,肝区疼痛,Gan Qu Teng Tong,pain in liver area
+SMTS00299,299,肝区胀痛,Gan Qu Zhang Tong,swelling and pain in the liver area
+SMTS00300,300,肝热目赤,Gan Re Mu Chi,Liver heat and red eyes
+SMTS00301,301,肝痛,Gan Tong,liver pain
+SMTS00302,302,肝阳眩晕,Gan Yang Xuan Yun,Liver Yang dizziness
+SMTS00309,309,干咳,Gan Ke,dry cough
+SMTS00310,310,干呕,Gan Ou,retching
+SMTS00311,311,肛窦炎出血,Gang Dou Yan Chu Xie,anal sinusitis and bleeding
+SMTS00312,312,肛裂疼痛,Gang Lie Teng Tong,anal fissure pain
+SMTS00313,313,肛门疼痛,Gang Men Teng Tong,anal pain
+SMTS00314,314,肛门下坠,Gang Men Xia Zhui,Anal prolapse
+SMTS00315,315,肛门肿痛,Gang Men Zhong Tong,Anal swelling and pain
+SMTS00316,316,肛门灼热,Gang Men Zhuo Re,Anal burning
+SMTS00317,317,高热,Gao Re,high fever
+SMTS00318,318,高热不退,Gao Re Bu Tui,high fever that does not go away
+SMTS00319,319,高热惊厥,Gao Re Liang Jue,febrile convulsions
+SMTS00320,320,高热神昏,Gao Re Shen Hun,high fever and coma
+SMTS00321,321,高血压头痛,Gao Xie Ya Tou Tong,high blood pressure and headache
+SMTS00323,323,髙热,Gao Re,high fever
+SMTS00324,324,髙热不退,Gao Re Bu Tui,high fever that does not go away
+SMTS00325,325,睾丸偏坠,Gao Wan Pian Zhui,testicular prolapse
+SMTS00326,326,睾丸痛,Gao Wan Tong,testicular pain
+SMTS00327,327,睾丸肿,Gao Wan Zhong,testicular swelling
+SMTS00328,328,睾丸坠胀疼痛,Gao Wan Zhui Zhang Teng Tong,testicle swelling and pain
+SMTS00329,329,咯痰,Ge Tan,expectoration
+SMTS00330,330,咯痰、血,Ge Tan 、 Xie,"expectoration, blood"
+SMTS00331,331,咯痰不爽,Ge Tan Bu Shuang,Unpleasant expectoration
+SMTS00332,332,咯痰黄稠,Ge Tan Huang Chou,Vomiting yellow and thick phlegm
+SMTS00333,333,咯痰色白,Ge Tan Se Bai,expectoration with white color
+SMTS00334,334,咯痰色黄,Ge Tan Se Huang,Vomiting and yellow phlegm
+SMTS00335,335,咯痰稀白,Ge Tan Xi Bai,Vomiting and thin white phlegm
+SMTS00336,336,咯吐白痰,Ge Tu Bai Tan,Vomiting white phlegm
+SMTS00337,337,咯吐不爽,Ge Tu Bu Shuang,Unpleasant vomiting
+SMTS00338,338,咯血,Ge Xie,hemoptysis
+SMTS00341,341,宫寒,Gong Han,Gong Han
+SMTS00343,343,骨关节疼痛,Gu Guan Jie Teng Tong,bone and joint pain
+SMTS00344,344,骨关节肿大,Gu Guan Jie Zhong Da,bone and joint swelling
+SMTS00345,345,骨节酸痛,Gu Jie Suan Tong,joint pain
+SMTS00346,346,骨节疼痛,Gu Jie Teng Tong,joint pain
+SMTS00347,347,骨扭伤,Gu Niu Shang,bone sprain
+SMTS00349,349,骨折肿痛,Gu Zhe Zhong Tong,"fracture, swelling and pain"
+SMTS00350,350,骨蒸劳热,Gu Zheng Lao Re,bone steaming fever
+SMTS00352,352,骨肿大,Gu Zhong Da,bone swelling
+SMTS00354,354,关节痹痛,Guan Jie Bi Tong,joint pain
+SMTS00355,355,关节不利,Guan Jie Bu Li,Joint Disadvantage
+SMTS00356,356,关节刺痛,Guan Jie Ci Tong,joint pain
+SMTS00357,357,关节钝痛,Guan Jie Dun Tong,Dull pain in joints
+SMTS00358,358,关节红肿热痛,Guan Jie Hong Zhong Re Tong,"joint redness, swelling, heat and pain"
+SMTS00359,359,关节僵硬,Guan Jie Jiang Ying,joint stiffness
+SMTS00360,360,关节剧痛,Guan Jie Ju Tong,severe joint pain
+SMTS00361,361,关节冷痛,Guan Jie Leng Tong,cold joint pain
+SMTS00362,362,关节麻木,Guan Jie Ma Mu,joint numbness
+SMTS00363,363,关节扭伤,Guan Jie Niu Shang,joint sprains
+SMTS00364,364,关节屈伸不利,Guan Jie Qu Shen Bu Li,Inadequate joint flexion and extension
+SMTS00365,365,关节四肢疼痛,Guan Jie Si Zhi Teng Tong,pain in joints and limbs
+SMTS00366,366,关节酸痛,Guan Jie Suan Tong,joint pain
+SMTS00367,367,关节酸痛麻木,Guan Jie Suan Tong Ma Mu,joint pain and numbness
+SMTS00368,368,关节疼痛,Guan Jie Teng Tong,joint pain
+SMTS00369,369,关节疼痈,Guan Jie Teng Yong,joint pain and carbuncle
+SMTS00370,370,关节痛,Guan Jie Tong,joint pain
+SMTS00371,371,关节肿大,Guan Jie Zhong Da,joint swelling
+SMTS00372,372,关节肿痛,Guan Jie Zhong Tong,joint swelling and pain
+SMTS00373,373,关节肿胀疼痛,Guan Jie Zhong Zhang Teng Tong,joint swelling and pain
+SMTS00376,376,寒疝,Han Shan,Cold Hernia
+SMTS00377,377,寒湿痹痛,Han Shi Bi Tong,cold-dampness arthralgia
+SMTS00378,378,寒痰,Han Tan,cold phlegm
+SMTS00379,379,寒性腹泻,Han Xing Fu Xie,cold diarrhea
+SMTS00380,380,汗出,Han Chu,sweating
+SMTS00381,381,汗出不畅,Han Chu Bu Chang,poor sweating
+SMTS00382,382,汗出不解,Han Chu Bu Jie,Perplexed sweating
+SMTS00383,383,汗少,Han Shao,less sweating
+SMTS00385,385,行经腹痛,Xing Jing Fu Tong,abdominal pain during menstruation
+SMTS00386,386,行经小腹冷痛,Xing Jing Xiao Fu Leng Tong,cold pain in lower abdomen during menstruation
+SMTS00387,387,行走无力,Xing Zou Wu Li,Weakness in walking
+SMTS00388,388,黑便,Hei Bian,black stool
+SMTS00390,390,烘热,Hong Re,fever
+SMTS00392,392,红肿,Hong Zhong,redness and swelling
+SMTS00394,394,喉核红肿,Hou He Hong Zhong,redness and swelling of the throat core
+SMTS00395,395,喉核肿大,Hou He Zhong Da,Swelling of laryngeal core
+SMTS00396,396,喉间痰鸣,Hou Jian Tan Ming,Phlegm in the throat
+SMTS00397,397,喉痛,Hou Tong,sore throat
+SMTS00398,398,喉痒,Hou Yang,itchy throat
+SMTS00399,399,喉中作响,Hou Zhong Zuo Xiang,Sound in the throat
+SMTS00400,400,喉肿,Hou Zhong,swollen larynx
+SMTS00402,402,呼吸气促,Hu Xi Qi Cu,shortness of breath
+SMTS00403,403,滑精,Hua Jing,Huajing
+SMTS00405,405,黄疸,Huang Dan,jaundice
+SMTS00406,406,黄痰,Huang Tan,yellow phlegm
+SMTS00407,407,会阴少腹腰骶部疼痛,Hui Yin Shao Fu Yao Di Bu Teng Tong,lumbosacral pain in the lower abdomen and perineum
+SMTS00408,408,昏厥,Hun Jue,fainting
+SMTS00409,409,昏迷,Hun Mi,coma
+SMTS00410,410,昏仆,Hun Pu,Fainting
+SMTS00411,411,昏睡,Hun Shui,lethargy
+SMTS00412,412,活动受限,Huo Dong Shou Xian,limited activity
+SMTS00413,413,活动障碍,Huo Dong Zhang Ai,Movement Disorder
+SMTS00414,414,肌肤红,Ji Fu Hong,red skin
+SMTS00415,415,肌肤下肿块数处,Ji Fu Xia Zhong Kuai Shu Chu,several lumps under the skin
+SMTS00416,416,肌肤下肿块一处,Ji Fu Xia Zhong Kuai Yi Chu,a lump under the skin
+SMTS00417,417,肌肤肿块数处,Ji Fu Zhong Kuai Shu Chu,several skin bumps
+SMTS00418,418,肌肤肿块一处 推之能动,Ji Fu Zhong Kuai Yi Chu   Tui Zhi Neng Dong,A lump on the skin can be moved by pushing it
+SMTS00419,419,肌肉关节酸痛,Ji Rou Guan Jie Suan Tong,Muscle and joint pain
+SMTS00420,420,肌肉红肿热痛,Ji Rou Hong Zhong Re Tong,"muscle redness, swelling, heat and pain"
+SMTS00421,421,肌肉剧痛,Ji Rou Ju Tong,severe muscle pain
+SMTS00422,422,肌肉麻木,Ji Rou Ma Mu,muscle numbness
+SMTS00423,423,肌肉疲劳,Ji Rou Pi Lao,Muscle Fatigue
+SMTS00424,424,肌肉酸麻,Ji Rou Suan Ma,Muscle soreness and numbness
+SMTS00425,425,肌肉酸痛,Ji Rou Suan Tong,muscle soreness
+SMTS00426,426,肌肉疼痛,Ji Rou Teng Tong,Muscle Pain
+SMTS00427,427,肌肉萎缩,Ji Rou Wei Suo,Muscle atrophy
+SMTS00428,428,肌痩,Ji Shou,Muscle thinning
+SMTS00429,429,肌痿无力,Ji Wei Wu Li,muscle weakness and weakness
+SMTS00430,430,积聚痞块,Ji Ju Pi Kuai,accumulation of lumps
+SMTS00431,431,积滞,Ji Zhi,stagnation
+SMTS00432,432,积滞不消,Ji Zhi Bu Xiao,lingering stagnation
+SMTS00433,433,积滞内停,Ji Zhi Nei Ting,internal stagnation
+SMTS00434,434,积滞胀满,Ji Zhi Zhang Man,stagnation and fullness
+SMTS00436,436,急性起并半身不遂,Ji Xing Qi Bing Ban Shen Bu Sui,acute onset and hemiplegia
+SMTS00437,437,急躁易怒,Ji Zao Yi Nu,irritable and irritable
+SMTS00438,438,记忆减退,Ji Yi Jian Tui,memory loss
+SMTS00439,439,记忆力减退,Ji Yi Li Jian Tui,memory loss
+SMTS00441,441,肩背酸痛,Jian Bei Suan Tong,shoulder and back pain
+SMTS00442,442,肩臂疼痛,Jian Bi Teng Tong,shoulder and arm pain
+SMTS00443,443,肩部疼痛重着,Jian Bu Teng Tong Zhong Zhao,severe shoulder pain
+SMTS00444,444,肩颈疼痛,Jian Jing Teng Tong,shoulder and neck pain
+SMTS00445,445,肩疼痛,Jian Teng Tong,Shoulder Pain
+SMTS00446,446,睑弦赤烂,Jian Xian Chi Lan,Red and rotten eyelid strings
+SMTS00447,447,健忘,Jian Wang,Forgetfulness
+SMTS00449,449,僵硬,Jiang Ying,stiffness
+SMTS00450,450,僵硬畸形,Jiang Ying Ji Xing,stiffness and deformity
+SMTS00451,451,焦虑,Jiao Lv,Anxiety
+SMTS00453,453,脚气浮肿,Jiao Qi Fu Zhong,athlete’s foot and edema
+SMTS00454,454,脚重,Jiao Zhong,heavy feet
+SMTS00455,455,疖肿,Jie Zhong,boils and swelling
+SMTS00458,458,疥癣瘙痒,Jie Xian Sao Yang,scabies itching
+SMTS00459,459,津伤,Jin Shang,body fluid injury
+SMTS00460,460,筋骨酸痛,Jin Gu Suan Tong,muscle and bone aches
+SMTS00461,461,筋骨疼痛,Jin Gu Teng Tong,muscle and bone pain
+SMTS00462,462,筋骨痿软,Jin Gu Wei Ruan,weak muscles and bones
+SMTS00463,463,筋骨无力,Jin Gu Wu Li,weakness of muscles and bones
+SMTS00464,464,筋骨瘀痛,Jin Gu Yu Tong,muscle and bone stasis and pain
+SMTS00465,465,筋脉拘急,Jin Mai Ju Ji,Tension in tendons and arteries
+SMTS00466,466,筋脉拘挛,Jin Mai Ju Luan,muscle spasm
+SMTS00467,467,筋扭伤,Jin Niu Shang,tendon sprain
+SMTS00468,468,筋伤,Jin Shang,tendon injury
+SMTS00470,470,经闭,Jing Bi,amenorrhea
+SMTS00471,471,经初行不畅,Jing Chu Xing Bu Chang,Sluggish menstruation at the beginning of menstruation
+SMTS00472,472,经寒不调,Jing Han Bu Diao,Irregular menstruation
+SMTS00473,473,经行腹痛,Jing Xing Fu Tong,abdominal pain during menstruation
+SMTS00474,474,经行量少,Jing Xing Liang Shao,low menstrual flow
+SMTS00475,475,经行痛减,Jing Xing Tong Jian,Reduced menstrual pain
+SMTS00476,476,经行小腹冷痛,Jing Xing Xiao Fu Leng Tong,cold pain in lower abdomen during menstruation
+SMTS00477,477,经行小腹疼痛,Jing Xing Xiao Fu Teng Tong,lower abdominal pain during menstruation
+SMTS00478,478,经行小腹喜热,Jing Xing Xiao Fu Xi Re,Feeling hot in the lower abdomen during menstruation
+SMTS00479,479,经行小腹胀痛,Jing Xing Xiao Fu Zhang Tong,lower abdominal distension and pain during menstruation
+SMTS00480,480,经量少有血块,Jing Liang Shao You Xie Kuai,low menstrual flow and blood clots
+SMTS00481,481,经期腹痛,Jing Qi Fu Tong,abdominal pain during menstruation
+SMTS00482,482,经期延长,Jing Qi Yan Chang,prolonged menstruation
+SMTS00483,483,经前腹痛加剧,Jing Qian Fu Tong Jia Ju,Premenstrual abdominal pain worsens
+SMTS00484,484,经前乳房胀痛,Jing Qian Ru Fang Zhang Tong,Premenstrual breast swelling and pain
+SMTS00485,485,经前乳胀,Jing Qian Ru Zhang,Premenstrual breast swelling
+SMTS00486,486,经前双乳胀痛,Jing Qian Shuang Ru Zhang Tong,Premenstrual breast swelling and pain
+SMTS00487,487,经前疼痛加重,Jing Qian Teng Tong Jia Zhong,worsening of premenstrual pain
+SMTS00488,488,经前头痛,Jing Qian Tou Tong,Premenstrual headache
+SMTS00489,489,经前性情急躁,Jing Qian Xing Qing Ji Zao,Premenstrual irritability
+SMTS00490,490,经前胸闷,Jing Qian Xiong Men,Premenstrual chest tightness
+SMTS00491,491,经少色淡,Jing Shao Se Dan,scanty menstruation and light color
+SMTS00492,492,经水淋漓不净,Jing Shui Lin Li Bu Jing,Menstrual fluid dripping and unclean
+SMTS00493,493,经血紫暗,Jing Xie Zi An,dark purple menstrual blood
+SMTS00495,495,惊风抽搐,Liang Feng Chou Chu,convulsions and convulsions
+SMTS00496,496,惊悸,Liang Ji,palpitation
+SMTS00497,497,惊悸不安,Liang Ji Bu An,panic and restlessness
+SMTS00498,498,惊悸不宁,Liang Ji Bu Ning,panic and restlessness
+SMTS00499,499,惊悸多梦,Liang Ji Duo Meng,palpitation and dreaminess
+SMTS00500,500,惊厥,Liang Jue,convulsions
+SMTS00501,501,惊恐,Liang Kong,Panic
+SMTS00502,502,惊痫,Liang Xian,epilepsy
+SMTS00503,503,惊痫不安,Liang Xian Bu An,epilepsy and restlessness
+SMTS00504,504,精亏,Jing Yu,Jing deficiency
+SMTS00505,505,精冷,Jing Leng,Jing Leng
+SMTS00506,506,精气不足,Jing Qi Bu Zu,Insufficient Essence and Qi
+SMTS00507,507,精神不振,Jing Shen Bu Zhen,Lack of energy
+SMTS00508,508,精神恍惚,Jing Shen Huang Hu,Trance
+SMTS00509,509,精神萎靡,Jing Shen Wei Mi,listlessness
+SMTS00510,510,精神忧郁,Jing Shen You Yu,Mental Depression
+SMTS00511,511,精溢,Jing Yi,semen overflow
+SMTS00512,512,颈肩部僵硬,Jing Jian Bu Jiang Ying,stiff neck and shoulders
+SMTS00513,513,颈项活动不利,Jing Xiang Huo Dong Bu Li,Inability to move the neck
+SMTS00515,515,颈项僵直,Jing Xiang Jiang Zhi,stiff neck
+SMTS00516,516,颈项紧张不舒,Jing Xiang Jin Zhang Bu Shu,Neck tension and discomfort
+SMTS00517,517,颈项疼痛,Jing Xiang Teng Tong,Neck Pain
+SMTS00518,518,颈椎病型头痛,Jing Zhui Bing Xing Tou Tong,cervical spondylosis type headache
+SMTS00520,520,胫膝酸软,Jing Xi Suan Ruan,Soreness and weakness in shins and knees
+SMTS00521,521,痉厥,Jing Jue,convulsions
+SMTS00522,522,痉挛,Jing Luan,spasm
+SMTS00523,523,久病体弱,Jiu Bing Ti Ruo,chronic illness and weakness
+SMTS00524,524,久咳,Jiu Ke,Chronic Cough
+SMTS00525,525,久咳不止,Jiu Ke Bu Zhi,persistent cough
+SMTS00528,528,久疟体虚,Jiu Nve Ti Xu,chronic malaria and physical weakness
+SMTS00529,529,久嗽,Jiu Sou,Chronic Cough
+SMTS00530,530,久嗽不止,Jiu Sou Bu Zhi,persistent cough
+SMTS00531,531,久泻,Jiu Xie,chronic diarrhea
+SMTS00532,532,久泻不止,Jiu Xie Bu Zhi,persistent diarrhea
+SMTS00533,533,久泻久痢,Jiu Xie Jiu Li,chronic diarrhea and dysentery
+SMTS00534,534,久泻脱肛,Jiu Xie Tuo Gang,chronic diarrhea and anal prolapse
+SMTS00535,535,拘挛麻木,Ju Luan Ma Mu,spasm and numbness
+SMTS00536,536,局部恶寒,Ju Bu E Han,local aversion to cold
+SMTS00537,537,局部红肿,Ju Bu Hong Zhong,local redness and swelling
+SMTS00538,538,局部畏恶风寒,Ju Bu Wei E Feng Han,local fear of wind and cold
+SMTS00539,539,局部畏风寒,Ju Bu Wei Feng Han,local fear of wind and cold
+SMTS00540,540,局部畏寒,Ju Bu Wei Han,local chills
+SMTS00542,542,倦怠,Juan Dai,Burnout
+SMTS00543,543,倦怠乏力,Juan Dai Fa Li,fatigue and fatigue
+SMTS00544,544,厥阴头痛,Jue Yin Tou Tong,Jueyin headache
+SMTS00545,545,咳喘,Ke Chuan,Cough and asthma
+SMTS00546,546,咳喘痛甚,Ke Chuan Tong Shen,"Cough, asthma and severe pain"
+SMTS00547,547,咳呛阵作,Ke Qiang Zhen Zuo,bursts of coughing and choking
+SMTS00548,548,咳甚而喘,Ke Shen Er Chuan,Cough and even wheezing
+SMTS00549,549,咳嗽,Ke Sou,cough
+SMTS00550,550,咳嗽频作,Ke Sou Pin Zuo,Frequent cough
+SMTS00551,551,咳嗽日久,Ke Sou Ri Jiu,Cough that lasts for a long time
+SMTS00552,552,咳嗽痰多,Ke Sou Tan Duo,Cough with excessive phlegm
+SMTS00553,553,咳嗽痰盛,Ke Sou Tan Sheng,Cough with excessive phlegm
+SMTS00554,554,咳嗽有痰,Ke Sou You Tan,Cough with phlegm
+SMTS00555,555,咳嗽阵作,Ke Sou Zhen Zuo,Cough bursts
+SMTS00556,556,咳痰不爽,Ke Tan Bu Shuang,Unpleasant coughing up phlegm
+SMTS00557,557,咳痰不已,Ke Tan Bu Yi,endless coughing up phlegm
+SMTS00558,558,咳痰带血,Ke Tan Dai Xie,coughing up phlegm with blood
+SMTS00559,559,咳痰色白,Ke Tan Se Bai,cough with white phlegm
+SMTS00560,560,咳吐不爽,Ke Tu Bu Shuang,Unpleasant cough and vomiting
+SMTS00561,561,咳血,Ke Xie,coughing up blood
+SMTS00562,562,渴,Ke,Thirst
+SMTS00563,563,渴不思饮,Ke Bu Si Yin,Thirst and no desire to drink
+SMTS00564,564,渴不欲饮,Ke Bu Yu Yin,Thirst and no desire to drink
+SMTS00565,565,口鼻生疮,Kou Bi Sheng Chuang,Sores in the mouth and nose
+SMTS00566,566,口臭,Kou Chou,bad breath
+SMTS00567,567,口疮,Kou Chuang,Aphthous Sores
+SMTS00568,568,口疮肿痛,Kou Chuang Zhong Tong,aphthous swelling and pain
+SMTS00569,569,口唇青紫,Kou Chun Qing Zi,blue lips
+SMTS00570,570,口唇紫绀,Kou Chun Zi Gan,cyanosis of lips
+SMTS00571,571,口淡乏味,Kou Dan Fa Wei,Bland mouth
+SMTS00573,573,口干,Kou Gan,dry mouth
+SMTS00574,574,口角流诞,Kou Jiao Liu Dan,quarrels and quarrels
+SMTS00575,575,口角流涎,Kou Jiao Liu Xian,salivation at the corners of the mouth
+SMTS00576,576,口噤,Kou Jin,Silence of mouth
+SMTS00577,577,口渴,Kou Ke,Thirst
+SMTS00578,578,口渴不欲饮,Kou Ke Bu Yu Yin,Thirst and no desire to drink
+SMTS00579,579,口渴喜饮,Kou Ke Xi Yin,thirsty and fond of drinking
+SMTS00580,580,口苦,Kou Ku,Bitter mouth
+SMTS00581,581,口糜烂,Kou Mi Lan,Oral erosion
+SMTS00582,582,口黏,Kou Nian,sticky mouth
+SMTS00584,584,口腔溃疡久不收敛,Kou Qiang Kui Yang Jiu Bu Shou Lian,Oral ulcers that persist for a long time
+SMTS00586,586,口舌干燥,Kou She Gan Zao,Dry mouth and tongue
+SMTS00587,587,口舌生疮,Kou She Sheng Chuang,Sores on the mouth and tongue
+SMTS00589,589,口舌肿痛,Kou She Zhong Tong,swelling and pain in mouth and tongue
+SMTS00590,590,口生疮,Kou Sheng Chuang,mouth sores
+SMTS00591,591,口吐涎沫,Kou Tu Xian Mo,spitting at the mouth
+SMTS00592,592,口喎,Kou Wai,Mouth
+SMTS00593,593,口眼涡斜,Kou Yan Wo Xie,vortex of mouth and eyes
+SMTS00594,594,口喁,Kou Yong,Mouth
+SMTS00595,595,口燥,Kou Zao,Dry mouth
+SMTS00596,596,口中甜腻,Kou Zhong Tian Ni,sweetness and greasiness in the mouth
+SMTS00597,597,狂躁,Kuang Zao,Mania
+SMTS00598,598,溃疡不敛,Kui Yang Bu Lian,ulcers that do not heal
+SMTS00599,599,剌痛,La Tong,stinging pain
+SMTS00600,600,懒言,Lan Yan,Lazy Talk
+SMTS00601,601,劳伤,Lao Shang,Strain
+SMTS00602,602,劳嗽,Lao Sou,labor cough
+SMTS00603,603,劳嗽咯血,Lao Sou Ge Xie,labor cough and hemoptysis
+SMTS00604,604,痨嗽,Lao Sou,tuberculosis and cough
+SMTS00605,605,老年轻度认知障碍,Lao Nian Qing Du Ren Zhi Zhang Ai,Mild Cognitive Impairment in the Elderly
+SMTS00606,606,老年腰膝酸软,Lao Nian Yao Xi Suan Ruan,Soreness and weakness in waist and knees in the elderly
+SMTS00607,607,羸瘦,Lei Shou,thinness
+SMTS00608,608,肋间神经痛,Lei Jian Shen Jing Tong,intercostal neuralgia
+SMTS00609,609,冷喘,Leng Chuan,cold asthma
+SMTS00610,610,冷汗自出,Leng Han Zi Chu,cold sweat spontaneously
+SMTS00611,611,冷痛,Leng Tong,cold pain
+SMTS00612,612,冷哮,Leng Xiao,cold asthma
+SMTS00613,613,冷泻,Leng Xie,cold diarrhea
+SMTS00614,614,里急后重,Li Ji Hou Zhong,tenesmus
+SMTS00616,616,臁疮糜烂,Lian Chuang Mi Lan,ecthyma and erosion
+SMTS00617,617,两腮痛,Liang Sai Tong,Pain in both cheeks
+SMTS00618,618,两腮肿,Liang Sai Zhong,swollen cheeks
+SMTS00619,619,两腮肿痛,Liang Sai Zhong Tong,swelling and pain in both cheeks
+SMTS00620,620,两胁疼痛,Liang Xie Teng Tong,Pain in both flanks
+SMTS00621,621,两胁胀痛,Liang Xie Zhang Tong,swelling and pain in both sides of the body
+SMTS00622,622,两眼刺痛,Liang Yan Ci Tong,tingling in both eyes
+SMTS00623,623,淋沥疼痛,Lin Li Teng Tong,Lymph Pain
+SMTS00625,625,淋证涩痛,Lin Zheng Se Tong,"stranguria syndrome, astringent pain"
+SMTS00627,627,淋浊,Lin Zhuo,stranguria
+SMTS00629,629,流产后出血,Liu Chan Hou Chu Xie,Post-abortion Bleeding
+SMTS00630,630,流产后宫缩不良,Liu Chan Hou Gong Suo Bu Liang,poor uterine contractions after miscarriage
+SMTS00631,631,流黄稠涕,Liu Huang Chou Ti,yellow and thick nasal discharge
+SMTS00632,632,流黄涕,Liu Huang Ti,yellow runny nose
+SMTS00633,633,流黄浊涕,Liu Huang Zhuo Ti,yellowish and turbid nasal discharge
+SMTS00634,634,流泪,Liu Lei,Tears
+SMTS00635,635,流脓,Liu Nong,pus discharge
+SMTS00636,636,流脓涕,Liu Nong Ti,purulent nasal discharge
+SMTS00637,637,流清涕,Liu Qing Ti,runny nose
+SMTS00638,638,流涕,Liu Ti,runny nose
+SMTS00639,639,流涕黏白,Liu Ti Nian Bai,runny nose and sticky white urine
+SMTS00641,641,流浊涕,Liu Zhuo Ti,runny nose
+SMTS00642,642,瘰疬,Luo Li,Scrofula
+SMTS00643,643,瘰疬未溃,Luo Li Wei Kui,Scrofula does not break out
+SMTS00644,644,落枕,Luo Zhen,stiff neck
+SMTS00645,645,屡经流产,Lv Jing Liu Chan,Repeated Miscarriages
+SMTS00646,646,麻痹瘙痒,Ma Bi Sao Yang,numbness and itching
+SMTS00647,647,麻木,Ma Mu,Numbness
+SMTS00648,648,麻木拘挛,Ma Mu Ju Luan,numbness and spasm
+SMTS00649,649,麻木瘫痪,Ma Mu Tan Huan,numbness and paralysis
+SMTS00650,650,麻疹不透,Ma Zhen Bu Tou,Measles is not clear
+SMTS00651,651,脉沉细,Mai Chen Xi,Thready pulse
+SMTS00652,652,脉细,Mai Xi,thin pulse
+SMTS00653,653,脉细弱,Mai Xi Ruo,thin and weak pulse
+SMTS00654,654,脉细涩,Mai Xi Se,thin and astringent pulse
+SMTS00655,655,脉细数,Mai Xi Shu,thready and rapid pulse
+SMTS00656,656,脉细弦,Mai Xi Xian,thin and stringy pulse
+SMTS00657,657,脉弦细,Mai Xian Xi,stringy and thin pulse
+SMTS00658,658,慢性腹泻,Man Xing Fu Xie,chronic diarrhea
+SMTS00660,660,毛发成片脱落,Mao Fa Cheng Pian Tuo Luo,hair falling out in patches
+SMTS00661,661,毛发呈稀疏状脱落,Mao Fa Cheng Xi Shu Zhuang Tuo Luo,Hair is thinning and falling out
+SMTS00662,662,毛发干燥,Mao Fa Gan Zao,dry hair
+SMTS00663,663,毛发松动,Mao Fa Song Dong,loose hair
+SMTS00664,664,毛发油腻,Mao Fa You Ni,greasy hair
+SMTS00666,666,梦遗,Meng Yi,wet dreams
+SMTS00667,667,眠差,Mian Cha,poor sleep
+SMTS00668,668,面赤,Mian Chi,red face
+SMTS00669,669,面浮肿,Mian Fu Zhong,Facial edema
+SMTS00670,670,面红,Mian Hong,flushing
+SMTS00671,671,面黄,Mian Huang,yellow face
+SMTS00672,672,面目悉黄,Mian Mu Xi Huang,Facial complexion becomes yellowish
+SMTS00673,673,面目虚涪,Mian Mu Xu Fu,weak-looking face
+SMTS00674,674,面色不华,Mian Se Bu Hua,Unpleasant complexion
+SMTS00675,675,面色苍白,Mian Se Cang Bai,pale complexion
+SMTS00676,676,面色淡白,Mian Se Dan Bai,Pale complexion
+SMTS00677,677,面色恍白,Mian Se Huang Bai,pale complexion
+SMTS00678,678,面色晄白,Mian Se Huang Bai,pale complexion
+SMTS00679,679,面色黢黑,Mian Se Qu Hei,dark complexion
+SMTS00680,680,面色少华,Mian Se Shao Hua,Shaohua complexion
+SMTS00681,681,面色萎黄,Mian Se Wei Huang,sallow complexion
+SMTS00682,682,面色无华,Mian Se Wu Hua,Pale complexion
+SMTS00684,684,面肢浮肿,Mian Zhi Fu Zhong,facial and limb edema
+SMTS00685,685,目暗不明,Mu An Bu Ming,Darkness of vision
+SMTS00686,686,目暗昏花,Mu An Hun Hua,Dark eyesight
+SMTS00687,687,目暗羞明,Mu An Xiu Ming,dark eyes and shyness
+SMTS00688,688,目赤,Mu Chi,red eyes
+SMTS00689,689,目赤红肿,Mu Chi Hong Zhong,red and swollen eyes
+SMTS00690,690,目赤昏花,Mu Chi Hun Hua,red eyes and dim light
+SMTS00691,691,目赤翳障,Mu Chi Yi Zhang,red eyes and nebula
+SMTS00692,692,目赤肿痛,Mu Chi Zhong Tong,"red, swollen and painful eyes"
+SMTS00693,693,目发黄,Mu Fa Huang,yellowing of eyes
+SMTS00694,694,目花,Mu Hua,Flowering Eyes
+SMTS00695,695,目黄,Mu Huang,yellow eyes
+SMTS00696,696,目昏,Mu Hun,dizziness
+SMTS00697,697,目昏不明,Mu Hun Bu Ming,blurred vision
+SMTS00698,698,目涩,Mu Se,astringent eyes
+SMTS00699,699,目生翳膜,Mu Sheng Yi Mo,nebula in the eyes
+SMTS00700,700,目生云翳,Mu Sheng Yun Yi,Unseen clouds
+SMTS00701,701,目眩,Mu Xuan,dizziness
+SMTS00702,702,目痒,Mu Yang,itchy eyes
+SMTS00703,703,目淫羞明,Mu Yin Xiu Ming,blurred vision
+SMTS00704,704,目胀,Mu Zhang,swelling of eyes
+SMTS00705,705,目珠夜痛,Mu Zhu Ye Tong,Eye pain at night
+SMTS00706,706,纳差,Na Cha,Anorexia
+SMTS00707,707,纳呆,Na Dai,Nausea
+SMTS00708,708,纳谷不香,Na Gu Bu Xiang,Nagu is not fragrant
+SMTS00709,709,纳少,Na Shao,Nausea
+SMTS00710,710,纳少嘈杂,Na Shao Cao Za,Nasty and noisy
+SMTS00712,712,脑部疼痛,Nao Bu Teng Tong,Brain Pain
+SMTS00713,713,脑功能减退,Nao Gong Neng Jian Tui,decreased brain function
+SMTS00714,714,脑络瘀阻,Nao Luo Yu Zu,Cerebral Blood Stasis
+SMTS00716,716,内障目暗,Nei Zhang Mu An,Cataract and dark eyes
+SMTS00717,717,内痔出血,Nei Zhi Chu Xie,Internal Hemorrhoids Bleeding
+SMTS00718,718,年老气喘,Nian Lao Qi Chuan,Asthma in the elderly
+SMTS00719,719,年老哮喘,Nian Lao Xiao Chuan,Asthma in the elderly
+SMTS00720,720,黏液便,Nian Ye Bian,Mucus stool
+SMTS00721,721,尿赤,Niao Chi,red urine
+SMTS00722,722,尿道涩痛,Niao Dao Se Tong,urethral astringency and pain
+SMTS00723,723,尿道灼热,Niao Dao Zhuo Re,Urethral burning
+SMTS00724,724,尿点滴而下,Niao Dian Di Er Xia,dribbling of urine
+SMTS00725,725,尿后滴沥,Niao Hou Di Li,dripping after urination
+SMTS00726,726,尿后余沥不尽,Niao Hou Yu Li Bu Jin,Incessant drainage after urination
+SMTS00727,727,尿黄,Niao Huang,yellow urine
+SMTS00728,728,尿黄如茶,Niao Huang Ru Cha,urine as yellow as tea
+SMTS00729,729,尿混浊,Niao Hun Zhuo,cloudy urine
+SMTS00730,730,尿急,Niao Ji,Urgency of urination
+SMTS00732,732,尿频,Niao Pin,Frequent urination
+SMTS00733,733,尿频数,Niao Pin Shu,Frequent urination
+SMTS00734,734,尿热,Niao Re,hot urination
+SMTS00735,735,尿色赤黄,Niao Se Chi Huang,red-yellow urine
+SMTS00736,736,尿色偏黄,Niao Se Pian Huang,yellowish urine
+SMTS00737,737,尿涩,Niao Se,astringent urine
+SMTS00738,738,尿涩痛,Niao Se Tong,astringent and painful urination
+SMTS00739,739,尿少,Niao Shao,oliguria
+SMTS00740,740,尿痛,Niao Tong,painful urination
+SMTS00741,741,尿线细,Niao Xian Xi,thin urine lines
+SMTS00742,742,尿血,Niao Xie,blood in urine
+SMTS00743,743,尿血血色鲜红,Niao Xie Xie Se Xian Hong,bright red blood in urine
+SMTS00744,744,尿血血色紫红,Niao Xie Xie Se Zi Hong,Purple-red blood in urine
+SMTS00745,745,扭腰,Niu Yao,twisted waist
+SMTS00746,746,脓成不溃,Nong Cheng Bu Kui,pus does not ulcerate
+SMTS00747,747,脓腐将荆,Nong Fu Jiang Jing,purulent rot and thorns
+SMTS00748,748,脓疱,Nong Pao,pustules
+SMTS00749,749,脓水,Nong Shui,pus
+SMTS00750,750,脓痰,Nong Tan,purulent phlegm
+SMTS00752,752,衄血,Nv Xie,epistaxis
+SMTS00753,753,呕恶,Ou E,Vomiting
+SMTS00754,754,呕逆,Ou Ni,Vomiting
+SMTS00755,755,呕吐,Ou Tu,vomiting
+SMTS00756,756,呕吐清水,Ou Tu Qing Shui,Vomiting clear water
+SMTS00757,757,呕吐乳食,Ou Tu Ru Shi,Vomiting after breastfeeding
+SMTS00758,758,呕吐痰涎,Ou Tu Tan Xian,Vomiting and phlegm
+SMTS00759,759,呕吐吞酸,Ou Tu Tun Suan,"vomiting, acid swallowing"
+SMTS00761,761,排尿滴沥不尽,Pai Niao Di Li Bu Jin,Incontinent urination
+SMTS00762,762,排尿困难,Pai Niao Kun Nan,Difficulty urinating
+SMTS00763,763,喷嚏,Pen Ti,sneezing
+SMTS00765,765,皮肤风团色红,Pi Fu Feng Tuan Se Hong,skin wheals with red color
+SMTS00767,767,皮肤干燥,Pi Fu Gan Zao,dry skin
+SMTS00768,768,皮肤黄染,Pi Fu Huang Ran,yellowish skin
+SMTS00769,769,皮肤皲裂,Pi Fu Jun Lie,chapped skin
+SMTS00770,770,皮肤潰疡,Pi Fu Kui Yang,skin ulcers
+SMTS00771,771,皮肤糜烂,Pi Fu Mi Lan,skin erosion
+SMTS00772,772,皮肤黏膜破溃,Pi Fu Nian Mo Po Kui,skin and mucous membrane ulcers
+SMTS00773,773,皮肤青紫,Pi Fu Qing Zi,blue and purple skin
+SMTS00774,774,皮肤瘙痒,Pi Fu Sao Yang,itchy skin
+SMTS00775,775,皮肤色斑,Pi Fu Se Ban,skin spots
+SMTS00776,776,皮肤湿烂,Pi Fu Shi Lan,wet and rotten skin
+SMTS00777,777,皮肤湿疹,Pi Fu Shi Zhen,skin eczema
+SMTS00778,778,皮肤瘀斑,Pi Fu Yu Ban,skin ecchymosis
+SMTS00779,779,皮肤肿痛,Pi Fu Zhong Tong,skin swelling and pain
+SMTS00780,780,皮肤紫斑,Pi Fu Zi Ban,skin purpura
+SMTS00781,781,皮肤紫癜,Pi Fu Zi Dian,skin purpura
+SMTS00782,782,皮损呈红斑湿润,Pi Sun Cheng Hong Ban Shi Run,The skin lesions are erythematous and moist
+SMTS00783,783,皮下结块,Pi Xia Jie Kuai,subcutaneous agglomeration
+SMTS00784,784,皮下紫斑,Pi Xia Zi Ban,Purpura under the skin
+SMTS00785,785,皮疹表面覆有较厚的银白色鳞屑,Pi Zhen Biao Mian Fu You Jiao Hou De Yin Bai Se Lin Xie,The rash is covered with thick silvery white scales.
+SMTS00786,786,皮疹色鲜红,Pi Zhen Se Xian Hong,bright red rash
+SMTS00789,789,疲乏无力,Pi Fa Wu Li,fatigue and weakness
+SMTS00790,790,疲倦,Pi Juan,fatigue
+SMTS00791,791,脾胃气滞,Pi Wei Qi Zhi,Spleen and stomach qi stagnation
+SMTS00792,792,脾虚,Pi Xu,spleen deficiency
+SMTS00793,793,脾虚气滞,Pi Xu Qi Zhi,spleen deficiency and qi stagnation
+SMTS00794,794,痞满,Pi Man,fullness
+SMTS00795,795,痞闷,Pi Men,Suffocation
+SMTS00796,796,偏身麻木,Pian Shen Ma Mu,Numbness on one side of the body
+SMTS00797,797,偏瘫,Pian Tan,Hemiplegia
+SMTS00798,798,偏头痛,Pian Tou Tong,Migraine
+SMTS00799,799,贫血,Pin Xie,anemia
+SMTS00800,800,脐腹胀痛,Qi Fu Zhang Tong,umbilical and abdominal distension and pain
+SMTS00801,801,起坐不利,Qi Zuo Bu Li,Difficulty in sitting up
+SMTS00802,802,气闭昏厥,Qi Bi Hun Jue,breathlessness and fainting
+SMTS00803,803,气喘,Qi Chuan,Asthma
+SMTS00804,804,气喘咳嗽,Qi Chuan Ke Sou,Asthma and cough
+SMTS00805,805,气粗,Qi Cu,rough Qi
+SMTS00806,806,气促,Qi Cu,shortness of breath
+SMTS00807,807,气促喘息,Qi Cu Chuan Xi,shortness of breath and wheezing
+SMTS00808,808,气短,Qi Duan,shortness of breath
+SMTS00809,809,气急,Qi Ji,shortness of breath
+SMTS00810,810,气逆,Qi Ni,Qi Rebellion
+SMTS00811,811,气逆喘急,Qi Ni Chuan Ji,"shortness of breath, shortness of breath, and shortness of breath"
+SMTS00812,812,气逆喘咳,Qi Ni Chuan Ke,"dyspnea, asthma and cough"
+SMTS00813,813,气阴两虚,Qi Yin Liang Xu,Qi and Yin deficiency
+SMTS00814,814,气郁,Qi Yu,Qi depression
+SMTS00815,815,气滞胃痛,Qi Zhi Wei Tong,Qi stagnation and stomach pain
+SMTS00816,816,前额头痛,Qian E Tou Tong,forehead headache
+SMTS00817,817,前额压痛,Qian E Ya Tong,forehead tenderness
+SMTS00819,819,浅表脓疱,Qian Biao Nong Pao,Superficial pustules
+SMTS00820,820,青盲雀目,Qing Mang Que Mu,Blue Blind Bird Eyes
+SMTS00821,821,靑少年远视力下降,Qing Shao Nian Yuan Shi Li Xia Jiang,Distance vision loss in young people
+SMTS00823,823,轻度视力下降,Qing Du Shi Li Xia Jiang,mild vision loss
+SMTS00825,825,情志不畅,Qing Zhi Bu Chang,poor mood
+SMTS00826,826,情志抑郁,Qing Zhi Yi Yu,Emotional Depression
+SMTS00827,827,屈伸不利,Qu Shen Bu Li,Difficulty in flexion and extension
+SMTS00828,828,龋齿疼痛,Qu Chi Teng Tong,dental caries pain
+SMTS00829,829,全身乏力,Quan Shen Fa Li,general fatigue
+SMTS00830,830,全身酸疼,Quan Shen Suan Teng,body aches
+SMTS00831,831,颧骨部压痛,Quan Gu Bu Ya Tong,Tenderness in the cheekbones
+SMTS00832,832,热痹疼痛,Re Bi Teng Tong,heat numbness and pain
+SMTS00833,833,热病发热,Re Bing Fa Re,Fever
+SMTS00834,834,热病发烧,Re Bing Fa Shao,Fever
+SMTS00835,835,热病烦渴,Re Bing Fan Ke,fever and polydipsia
+SMTS00836,836,热毒泻痢,Re Du Xie Li,heat poisoning and diarrhea
+SMTS00837,837,热毒血痢,Re Du Xie Li,"dysentery caused by heat, poison, and blood"
+SMTS00838,838,热痢,Re Li,fever dysentery
+SMTS00839,839,热淋涩痛,Re Lin Se Tong,hot stranguria and astringent pain
+SMTS00840,840,热淋证,Re Lin Zheng,heat stranguria syndrome
+SMTS00841,841,热痰,Re Tan,hot phlegm
+SMTS00842,842,热泻,Re Xie,hot diarrhea
+SMTS00843,843,妊娠恶阻,Ren Shen E Zu,Pregnancy obstruction
+SMTS00844,844,妊娠漏血,Ren Shen Lou Xie,Pregnancy Bleeding
+SMTS00845,845,妊娠呕吐,Ren Shen Ou Tu,Vomiting in pregnancy
+SMTS00846,846,妊娠胎漏,Ren Shen Tai Lou,Pregnancy Leakage
+SMTS00848,848,乳房结节,Ru Fang Jie Jie,Breast Nodules
+SMTS00849,849,乳房疼痛,Ru Fang Teng Tong,Breast Pain
+SMTS00850,850,乳房有块,Ru Fang You Kuai,lump in breast
+SMTS00851,851,乳房胀痛,Ru Fang Zhang Tong,Breast swelling and pain
+SMTS00852,852,乳房肿块,Ru Fang Zhong Kuai,Breast Lumps
+SMTS00853,853,乳房肿痛,Ru Fang Zhong Tong,breast swelling and pain
+SMTS00854,854,乳癖,Ru Pi,Breast Mania
+SMTS00855,855,乳少,Ru Shao,lack of breast milk
+SMTS00856,856,乳腺增生,Ru Xian Zeng Sheng,Breast hyperplasia
+SMTS00857,857,乳痈,Ru Yong,mastitis
+SMTS00858,858,乳痈初起,Ru Yong Chu Qi,initial onset of mastitis
+SMTS00859,859,乳胀痛,Ru Zhang Tong,Breast swelling and pain
+SMTS00860,860,乳汁不通,Ru Zhi Bu Tong,Lactation obstruction
+SMTS00861,861,乳汁不下,Ru Zhi Bu Xia,Lack of Breast Milk
+SMTS00862,862,乳汁郁积,Ru Zhi Yu Ji,galactostasis
+SMTS00863,863,乳肿痛,Ru Zhong Tong,breast swelling and pain
+SMTS00865,865,褥疮肿痛,Ru Chuang Zhong Tong,"bedsores, swelling and pain"
+SMTS00867,867,腮腺炎肿痛,Sai Xian Yan Zhong Tong,mumps swelling and pain
+SMTS00868,868,腮肿,Sai Zhong,swollen cheeks
+SMTS00869,869,瘙痒,Sao Yang,itching
+SMTS00870,870,瘙痒明显,Sao Yang Ming Xian,obvious itching
+SMTS00871,871,瘙痒难忍,Sao Yang Nan Ren,unbearable itching
+SMTS00873,873,涩痛,Se Tong,astringent pain
+SMTS00875,875,痧胀腹痛,Sha Zhang Fu Tong,Sha distension and abdominal pain
+SMTS00877,877,闪腰挫气,Shan Yao Cuo Qi,Flash of waist and depression of Qi
+SMTS00879,879,善饥,Shan Ji,Hunger
+SMTS00880,880,善太息,Shan Tai Xi,Shantaixi
+SMTS00881,881,伤处瘀肿疼痛,Shang Chu Yu Zhong Teng Tong,"bruise, swelling and pain"
+SMTS00884,884,上下肢 偏身麻木,Shang Xia Zhi   Pian Shen Ma Mu,numbness in upper and lower limbs
+SMTS00886,886,上肢麻木,Shang Zhi Ma Mu,numbness of upper limbs
+SMTS00887,887,上肢疼痛,Shang Zhi Teng Tong,upper limb pain
+SMTS00888,888,少腹拒按,Shao Fu Ju An,Refusal to press on the lower abdomen
+SMTS00889,889,少腹冷痛,Shao Fu Leng Tong,cold pain in lower abdomen
+SMTS00890,890,少腹疼痛,Shao Fu Teng Tong,lower abdominal pain
+SMTS00891,891,少腹痛,Shao Fu Tong,abdominal pain
+SMTS00892,892,少腹坠胀,Shao Fu Zhui Zhang,distension in lower abdomen
+SMTS00893,893,少津,Shao Jin,Shaojin
+SMTS00894,894,少寐,Shao Mei,less sleepiness
+SMTS00895,895,少气,Shao Qi,Lack of Qi
+SMTS00896,896,少食,Shao Shi,Eat less
+SMTS00897,897,少痰,Shao Tan,less phlegm
+SMTS00898,898,舌暗,She An,dark tongue
+SMTS00899,899,舌暗红,She An Hong,dark red tongue
+SMTS00900,900,舌边尖有瘀斑,She Bian Jian You Yu Ban,ecchymosis on the tip of the tongue
+SMTS00901,901,舌部疲斑,She Bu Pi Ban,Tired spots on tongue
+SMTS00902,902,舌赤,She Chi,red tongue
+SMTS00903,903,舌淡,She Dan,Pale tongue
+SMTS00904,904,舌干,She Gan,dry tongue
+SMTS00905,905,舌红,She Hong,red tongue
+SMTS00906,906,舌红苔黄腻,She Hong Tai Huang Ni,"red tongue, yellow and greasy coating"
+SMTS00907,907,舌尖边有瘀点,She Jian Bian You Yu Dian,petechiae on the tip of the tongue
+SMTS00908,908,舌尖红,She Jian Hong,red tip of tongue
+SMTS00909,909,舌绛,She Jiang,dark tongue
+SMTS00910,910,舌糜烂,She Mi Lan,Tongue erosion
+SMTS00911,911,舌胖,She Pang,fat tongue
+SMTS00912,912,舌偏红,She Pian Hong,red tongue
+SMTS00913,913,舌强,She Qiang,Strong tongue
+SMTS00914,914,舌强不语,She Qiang Bu Yu,Strong tongue and inability to speak
+SMTS00915,915,舌生疮,She Sheng Chuang,sores on tongue
+SMTS00916,916,舌体胖大,She Ti Pang Da,Fat and enlarged tongue
+SMTS00917,917,舌体肿,She Ti Zhong,swollen tongue
+SMTS00918,918,舌有齿痕,She You Chi Hen,Teeth marks on tongue
+SMTS00919,919,舌有瘀斑,She You Yu Ban,ecchymosis on tongue
+SMTS00920,920,舌有瘀点瘀斑,She You Yu Dian Yu Ban,Petechiae and ecchymosis on tongue
+SMTS00921,921,舌瘀斑,She Yu Ban,Tongue ecchymosis
+SMTS00922,922,舌质暗红,She Zhi An Hong,dark red tongue
+SMTS00923,923,舌质黯,She Zhi An,dark tongue
+SMTS00924,924,舌质淡暗,She Zhi Dan An,dark tongue
+SMTS00925,925,舌质红少津,She Zhi Hong Shao Jin,red tongue and less fluid
+SMTS00926,926,舌质红少苔,She Zhi Hong Shao Tai,red tongue with less coating
+SMTS00927,927,舌质有瘀斑,She Zhi You Yu Ban,ecchymosis on tongue
+SMTS00928,928,舌质紫暗,She Zhi Zi An,dark purple tongue
+SMTS00929,929,舌紫暗,She Zi An,dark purple tongue
+SMTS00931,931,身黄,Shen Huang,Yellow body
+SMTS00932,932,身倦,Shen Juan,Tiredness
+SMTS00933,933,身困重,Shen Kun Zhong,Heavy sleepiness
+SMTS00934,934,身目发黄,Shen Mu Fa Huang,yellowing of body and eyes
+SMTS00935,935,身热,Shen Re,body heat
+SMTS00936,936,身瘦,Shen Shou,weight loss
+SMTS00937,937,身疼痛,Shen Teng Tong,body pain
+SMTS00938,938,身体倦懒,Shen Ti Juan Lan,Physical fatigue
+SMTS00939,939,身体麻木,Shen Ti Ma Mu,Body numbness
+SMTS00940,940,身体痩弱,Shen Ti Shou Ruo,Physical weakness
+SMTS00941,941,身体瘦弱,Shen Ti Shou Ruo,thin body
+SMTS00942,942,身痛,Shen Tong,body pain
+SMTS00943,943,身痛痉挛,Shen Tong Jing Luan,body pain and spasm
+SMTS00944,944,神昏,Shen Hun,coma
+SMTS00945,945,神昏不语,Shen Hun Bu Yu,Faint and speechless
+SMTS00946,946,神昏狂躁,Shen Hun Kuang Zao,coma and mania
+SMTS00947,947,神昏谵语,Shen Hun Zhan Yu,coma and delirium
+SMTS00948,948,神经衰弱,Shen Jing Shuai Ruo,neurasthenia
+SMTS00949,949,神经痛,Shen Jing Tong,neuralgia
+SMTS00950,950,神经性疼痛,Shen Jing Xing Teng Tong,Neuropathic Pain
+SMTS00951,951,神经性头痛,Shen Jing Xing Tou Tong,Nervous headache
+SMTS00952,952,神倦,Shen Juan,fatigue
+SMTS00953,953,神倦懒言,Shen Juan Lan Yan,tiredness and laziness
+SMTS00954,954,神疲,Shen Pi,mental fatigue
+SMTS00955,955,神情呆滞,Shen Qing Dai Zhi,Sluggish expression
+SMTS00956,956,神志不清,Shen Zhi Bu Qing,Confusion
+SMTS00957,957,神志淡漠,Shen Zhi Dan Mo,Apathy
+SMTS00958,958,神志恍惚,Shen Zhi Huang Hu,Confusion
+SMTS00959,959,神志昏蒙,Shen Zhi Hun Meng,confusion
+SMTS00960,960,神志昏迷,Shen Zhi Hun Mi,coma
+SMTS00961,961,神志混乱,Shen Zhi Hun Luan,Confusion
+SMTS00962,962,肾精不足,Shen Jing Bu Zu,Insufficient kidney essence
+SMTS00963,963,肾区叩击痛,Shen Qu Kou Ji Tong,percussion pain in the kidney area
+SMTS00964,964,肾区冷痛、,Shen Qu Leng Tong 、,"cold pain in kidney area,"
+SMTS00965,965,声带充血,Sheng Dai Chong Xie,Vocal cord congestion
+SMTS00967,967,声带小结,Sheng Dai Xiao Jie,Vocal cord nodules
+SMTS00968,968,声音嘶哑,Sheng Yin Si Ya,hoarseness
+SMTS00969,969,声重,Sheng Zhong,heavy voice
+SMTS00970,970,失眠,Shi Mian,insomnia
+SMTS00971,971,失音,Shi Yin,aphonia
+SMTS00972,972,失语,Shi Yu,aphasia
+SMTS00973,973,湿痹拘挛,Shi Bi Ju Luan,Dampness and spasm
+SMTS00974,974,湿疮,Shi Chuang,Eczema
+SMTS00975,975,湿疮脓水浸淫,Shi Chuang Nong Shui Jin Yin,Eczema and pus-soaked water
+SMTS00976,976,湿热毒邪聚结肌肤,Shi Re Du Xie Ju Jie Ji Fu,"dampness, heat and poisonous evil gather on the skin"
+SMTS00977,977,湿热下注,Shi Re Xia Zhu,Damp and Heat Bets
+SMTS00978,978,湿疹,Shi Zhen,Eczema
+SMTS00979,979,湿疹瘙痒,Shi Zhen Sao Yang,Eczema Itching
+SMTS00981,981,石淋,Shi Lin,Shilin
+SMTS00982,982,石淋涩痛,Shi Lin Se Tong,Shilin astringent pain
+SMTS00983,983,时有隐痛,Shi You Yin Tong,dull pain from time to time
+SMTS00984,984,食后腹胀拒按,Shi Hou Fu Zhang Ju An,abdominal distension and refusal to press after eating
+SMTS00985,985,食后胀痛,Shi Hou Zhang Tong,distension and pain after eating
+SMTS00986,986,食积,Shi Ji,food accumulation
+SMTS00987,987,食积不消,Shi Ji Bu Xiao,food accumulation that cannot be eliminated
+SMTS00988,988,食积胀满,Shi Ji Zhang Man,fullness due to food accumulation
+SMTS00989,989,食乳不化,Shi Ru Bu Hua,Inability to digest milk after eating
+SMTS00990,990,食少,Shi Shao,Eating less
+SMTS00991,991,食少不化,Shi Shao Bu Hua,Not eating enough
+SMTS00992,992,食少乏力,Shi Shao Fa Li,Lack of food and fatigue
+SMTS00993,993,食少腹胀,Shi Shao Fu Zhang,abdominal distension after eating less
+SMTS00994,994,食物积滞,Shi Wu Ji Zhi,food stagnation
+SMTS00995,995,食欲不振,Shi Yu Bu Zhen,loss of appetite
+SMTS00996,996,食欲减退,Shi Yu Jian Tui,loss of appetite
+SMTS00997,997,食滞,Shi Zhi,food stagnation
+SMTS00998,998,食滞不化,Shi Zhi Bu Hua,food stagnation
+SMTS00999,999,食滞化热,Shi Zhi Hua Re,Food stagnation turns into heat
+SMTS01001,1001,视力减退,Shi Li Jian Tui,vision loss
+SMTS01002,1002,视力疲劳,Shi Li Pi Lao,visual fatigue
+SMTS01003,1003,视力下降,Shi Li Xia Jiang,decreased vision
+SMTS01004,1004,视物不清,Shi Wu Bu Qing,blurred vision
+SMTS01005,1005,视物昏暗,Shi Wu Hun An,dim vision
+SMTS01006,1006,视物昏花,Shi Wu Hun Hua,blurred vision
+SMTS01007,1007,视物模糊,Shi Wu Mo Hu,blurred vision
+SMTS01008,1008,手臂麻木,Shou Bi Ma Mu,numbness in arms
+SMTS01009,1009,手抽搐,Shou Chou Chu,hand twitching
+SMTS01010,1010,手拘挛,Shou Ju Luan,hand spasm
+SMTS01011,1011,手麻木,Shou Ma Mu,numbness in hands
+SMTS01013,1013,手心热,Shou Xin Re,hot palms
+SMTS01014,1014,手肿胀,Shou Zhong Zhang,Swelling of Hands
+SMTS01015,1015,手足不遂,Shou Zu Bu Sui,Paralysis of Hands and Feet
+SMTS01016,1016,手足不温,Shou Zu Bu Wen,lukewarm hands and feet
+SMTS01017,1017,手足发凉,Shou Zu Fa Liang,cold hands and feet
+SMTS01018,1018,手足麻木症,Shou Zu Ma Mu Zheng,Numbness of Hands and Feet
+SMTS01019,1019,手足瘈疲,Shou Zu Ji Pi,Fatigue in hands and feet
+SMTS01020,1020,暑湿,Shu Shi,summer heat dampness
+SMTS01021,1021,暑邪发热,Shu Xie Fa Re,Fever caused by summer heat
+SMTS01022,1022,术后疼痛,Zhu Hou Teng Tong,postoperative pain
+SMTS01023,1023,双目上吊,Shuang Mu Shang Diao,Hanging eyes
+SMTS01024,1024,双乳痛,Shuang Ru Tong,breast pain
+SMTS01025,1025,水浆难下,Shui Jiang Nan Xia,Difficulty in water slurry
+SMTS01026,1026,水泻,Shui Xie,Watery Diarrhea
+SMTS01027,1027,水肿,Shui Zhong,edema
+SMTS01028,1028,睡卧不安,Shui Wo Bu An,restless sleep
+SMTS01029,1029,思维迟缓,Si Wei Chi Huan,slow thinking
+SMTS01030,1030,死胎,Si Tai,stillbirth
+SMTS01031,1031,四肢不温,Si Zhi Bu Wen,lukewarm limbs
+SMTS01032,1032,四肢乏力,Si Zhi Fa Li,Weakness in the limbs
+SMTS01033,1033,四肢浮肿,Si Zhi Fu Zhong,edema of limbs
+SMTS01034,1034,四肢关节冷痛,Si Zhi Guan Jie Leng Tong,cold pain in limb joints
+SMTS01035,1035,四肢拘挛,Si Zhi Ju Luan,spasm of limbs
+SMTS01036,1036,四肢倦怠,Si Zhi Juan Dai,fatigue of limbs
+SMTS01037,1037,四肢倦乏,Si Zhi Juan Fa,tiredness of limbs
+SMTS01038,1038,四肢厥逆,Si Zhi Jue Ni,syncope in limbs
+SMTS01039,1039,四肢挛急,Si Zhi Luan Ji,Acute cramping of limbs
+SMTS01040,1040,四肢挛痛,Si Zhi Luan Tong,cramping pain in limbs
+SMTS01041,1041,四肢麻痹,Si Zhi Ma Bi,paralysis of limbs
+SMTS01042,1042,四肢麻木,Si Zhi Ma Mu,numbness of limbs
+SMTS01043,1043,四肢逆冷,Si Zhi Ni Leng,Coldness in the limbs
+SMTS01044,1044,四肢酸,Si Zhi Suan,Sore limbs
+SMTS01045,1045,四肢酸懒,Si Zhi Suan Lan,soreness and laziness of limbs
+SMTS01046,1046,四肢酸痛,Si Zhi Suan Tong,soreness in limbs
+SMTS01047,1047,四肢疼痛,Si Zhi Teng Tong,pain in limbs
+SMTS01048,1048,四肢无力,Si Zhi Wu Li,weakness in limbs
+SMTS01049,1049,嗖痛,Sou Tong,soreness
+SMTS01050,1050,溲黄,Sou Huang,Anhui
+SMTS01051,1051,胎动不安,Tai Dong Bu An,Fetal Movement Restlessness
+SMTS01052,1052,胎漏,Tai Lou,fetal leakage
+SMTS01053,1053,胎漏下血,Tai Lou Xia Xie,fetal bleeding
+SMTS01054,1054,胎盘不下,Tai Pan Bu Xia,Retained placenta
+SMTS01055,1055,瘫痪,Tan Huan,Paralysis
+SMTS01056,1056,痰白,Tan Bai,white phlegm
+SMTS01057,1057,痰白质稀,Tan Bai Zhi Xi,thin phlegm and white matter
+SMTS01058,1058,痰不易出,Tan Bu Yi Chu,Difficulty phlegm coming out
+SMTS01059,1059,痰稠,Tan Chou,thick phlegm
+SMTS01060,1060,痰稠黄,Tan Chou Huang,thick yellow phlegm
+SMTS01061,1061,痰稠难出,Tan Chou Nan Chu,thick phlegm that is difficult to come out
+SMTS01062,1062,痰喘,Tan Chuan,phlegm and asthma
+SMTS01063,1063,痰多,Tan Duo,excessive phlegm
+SMTS01064,1064,痰多黄稠,Tan Duo Huang Chou,yellowish and thick phlegm
+SMTS01065,1065,痰多咳嗽,Tan Duo Ke Sou,Cough with excessive phlegm
+SMTS01066,1066,痰多淸稀,Tan Duo Qing Xi,excessive phlegm and thin phlegm
+SMTS01067,1067,痰多上气,Tan Duo Shang Qi,Excessive phlegm and constipation
+SMTS01068,1068,痰多作喘,Tan Duo Zuo Chuan,Excessive phlegm and asthma
+SMTS01069,1069,痰核痞块,Tan He Pi Kuai,phlegm core lumps
+SMTS01070,1070,痰黄,Tan Huang,yellow phlegm
+SMTS01071,1071,痰黄稠,Tan Huang Chou,yellow and thick phlegm
+SMTS01072,1072,痰黄稠黏,Tan Huang Chou Nian,"yellow, thick and sticky phlegm"
+SMTS01073,1073,痰黄黏稠,Tan Huang Nian Chou,yellow and sticky phlegm
+SMTS01074,1074,痰厥,Tan Jue,phlegm syncope
+SMTS01075,1075,痰厥头痛,Tan Jue Tou Tong,phlegm and headache
+SMTS01076,1076,痰鸣,Tan Ming,Phlegm
+SMTS01077,1077,痰鸣如吼,Tan Ming Ru Hou,Roaring phlegm
+SMTS01078,1078,痰黏,Tan Nian,sticky phlegm
+SMTS01079,1079,痰黏稠,Tan Nian Chou,sticky phlegm
+SMTS01080,1080,痰热,Tan Re,Phlegm-heat
+SMTS01081,1081,痰热喘咳,Tan Re Chuan Ke,"phlegm-heat, asthma and cough"
+SMTS01082,1082,痰热阻肺,Tan Re Zu Fei,Phlegm-heat blocking the lungs
+SMTS01083,1083,痰少,Tan Shao,less phlegm
+SMTS01084,1084,痰盛,Tan Sheng,excessive phlegm
+SMTS01085,1085,痰稀,Tan Xi,thin phlegm
+SMTS01086,1086,痰涎壅盛,Tan Xian Yong Sheng,excessive phlegm and saliva
+SMTS01087,1087,痰血,Tan Xie,phlegm and blood
+SMTS01088,1088,痰饮,Tan Yin,Phlegm Drinking
+SMTS01089,1089,痰饮咳喘,Tan Yin Ke Chuan,"phlegm, cough, and asthma"
+SMTS01090,1090,痰壅,Tan Yong,phlegm congestion
+SMTS01091,1091,痰粘稠,Tan Nian Chou,sticky phlegm
+SMTS01092,1092,痰中带血,Tan Zhong Dai Xie,blood in sputum
+SMTS01093,1093,痰浊黄稠,Tan Zhuo Huang Chou,turbid yellow and thick phlegm
+SMTS01094,1094,疼痛,Teng Tong,Pain
+SMTS01095,1095,疼痛夜甚,Teng Tong Ye Shen,severe pain at night
+SMTS01096,1096,体乏,Ti Fa,fatigue
+SMTS01097,1097,体乏无力,Ti Fa Wu Li,fatigue and weakness
+SMTS01098,1098,体倦,Ti Juan,Tiredness
+SMTS01099,1099,体疲,Ti Pi,physical fatigue
+SMTS01100,1100,体弱,Ti Ruo,Weakness
+SMTS01101,1101,体虚,Ti Xu,physical weakness
+SMTS01102,1102,体虚多汗,Ti Xu Duo Han,physical weakness and excessive sweating
+SMTS01103,1103,体虚乏力,Ti Xu Fa Li,physical weakness and fatigue
+SMTS01104,1104,体虚欲脱,Ti Xu Yu Tuo,physical weakness and desire to escape
+SMTS01105,1105,体虛,Ti Xu,physical weakness
+SMTS01106,1106,涕黄稠,Ti Huang Chou,yellowish and thick mucus
+SMTS01107,1107,涕中带血,Ti Zhong Dai Xie,blood in the nose
+SMTS01108,1108,天行赤眼,Tian Xing Chi Yan,Heavenly Red Eyes
+SMTS01109,1109,听衰,Ting Shuai,Hearing Failure
+SMTS01110,1110,停经,Ting Jing,Menopause
+SMTS01111,1111,停乳,Ting Ru,Breastfeeding cessation
+SMTS01112,1112,停食,Ting Shi,Stop eating
+SMTS01115,1115,痛处拒按,Tong Chu Ju An,Refusal to press on the painful area
+SMTS01116,1116,痛经,Tong Jing,dysmenorrhea
+SMTS01117,1117,痛如针刺,Tong Ru Zhen Ci,Pain like acupuncture
+SMTS01118,1118,痛甚,Tong Shen,severe pain
+SMTS01119,1119,痛有定处,Tong You Ding Chu,Pain has a fixed location
+SMTS01121,1121,头部剌痛,Tou Bu La Tong,Stinging pain in head
+SMTS01122,1122,头部胀痛,Tou Bu Zhang Tong,Head swelling and pain
+SMTS01123,1123,头发早白,Tou Fa Zao Bai,premature graying of hair
+SMTS01124,1124,头昏,Tou Hun,dizziness
+SMTS01125,1125,头剌痛,Tou La Tong,Head pain
+SMTS01126,1126,头面部神经痛,Tou Mian Bu Shen Jing Tong,Head and facial neuralgia
+SMTS01127,1127,头面疼痛,Tou Mian Teng Tong,Head and face pain
+SMTS01128,1128,头目不清,Tou Mu Bu Qing,unclear head and head
+SMTS01130,1130,头皮瘙痒,Tou Pi Sao Yang,scalp itching
+SMTS01131,1131,头身困重,Tou Shen Kun Zhong,Head and body drowsiness
+SMTS01132,1132,头疼痛,Tou Teng Tong,headache
+SMTS01133,1133,头痛,Tou Tong,headache
+SMTS01134,1134,头痛日久,Tou Tong Ri Jiu,headache that lasts for a long time
+SMTS01135,1135,头痛如裹,Tou Tong Ru Guo,headache
+SMTS01138,1138,头眩,Tou Xuan,dizziness
+SMTS01139,1139,头痈,Tou Yong,Head carbuncle
+SMTS01140,1140,头晕,Tou Yun,dizziness
+SMTS01141,1141,头晕目眩,Tou Yun Mu Xuan,dizziness
+SMTS01142,1142,头晕眼花,Tou Yun Yan Hua,dizziness and dizziness
+SMTS01143,1143,头胀,Tou Zhang,Head swelling
+SMTS01144,1144,头胀痛,Tou Zhang Tong,Head swelling and pain
+SMTS01145,1145,头重,Tou Zhong,heavy head
+SMTS01146,1146,吐脓,Tu Nong,Vomiting pus
+SMTS01147,1147,吐衄,Tu Nv,vomiting
+SMTS01148,1148,吐痰,Tu Tan,spitting
+SMTS01149,1149,吐痰清稀,Tu Tan Qing Xi,thin phlegm
+SMTS01150,1150,吐泻,Tu Xie,vomiting and diarrhea
+SMTS01151,1151,吐泻腹痛,Tu Xie Fu Tong,"vomiting, diarrhea and abdominal pain"
+SMTS01152,1152,吐血,Tu Xie,vomiting blood
+SMTS01153,1153,腿疲软,Tui Pi Ruan,Weak legs
+SMTS01154,1154,腿疲痛,Tui Pi Tong,Leg fatigue and pain
+SMTS01155,1155,腿软,Tui Ruan,weak legs
+SMTS01156,1156,腿疼痛，重者痛剧不能转侧,Tui Teng Tong ， Zhong Zhe Tong Ju Bu Neng Zhuan Ce,"leg pain, severe pain, inability to turn sideways"
+SMTS01157,1157,吞酸,Tun Suan,acid swallowing
+SMTS01158,1158,脱发,Tuo Fa,hair loss
+SMTS01159,1159,脱肛,Tuo Gang,Anal prolapse
+SMTS01161,1161,脱屑,Tuo Xie,Desquamation
+SMTS01164,1164,外伤红肿,Wai Shang Hong Zhong,redness and swelling due to trauma
+SMTS01166,1166,外阴红肿,Wai Yin Hong Zhong,vulva redness and swelling
+SMTS01167,1167,完谷不化,Wan Gu Bu Hua,The grain remains intact
+SMTS01168,1168,顽痰,Wan Tan,Stubborn phlegm
+SMTS01169,1169,脘腹刺痛,Guan Fu Ci Tong,Pain in the epigastrium and abdomen
+SMTS01170,1170,脘腹冷,Guan Fu Leng,Cold in the epigastrium and abdomen
+SMTS01171,1171,脘腹冷痛,Guan Fu Leng Tong,cold pain in the epigastrium and abdomen
+SMTS01172,1172,脘腹痞满,Guan Fu Pi Man,abdominal distension and fullness
+SMTS01173,1173,脘腹痞闷,Guan Fu Pi Men,abdominal distension and tightness
+SMTS01174,1174,脘腹疼痛,Guan Fu Teng Tong,epigastric pain
+SMTS01175,1175,脘腹痛,Guan Fu Tong,epigastric and abdominal pain
+SMTS01176,1176,脘腹胁痛,Guan Fu Xie Tong,"epigastrium, abdominal and hypochondriac pain"
+SMTS01177,1177,脘腹隐痛,Guan Fu Yin Tong,Dull pain in the epigastrium and abdomen
+SMTS01178,1178,脘腹胀满,Guan Fu Zhang Man,abdominal distension
+SMTS01179,1179,脘腹胀闷,Guan Fu Zhang Men,abdominal distension and stuffiness
+SMTS01180,1180,脘腹胀痛,Guan Fu Zhang Tong,abdominal distension and pain
+SMTS01181,1181,脘闷,Guan Men,abdominal discomfort
+SMTS01182,1182,脘闷不舒,Guan Men Bu Shu,abdominal discomfort and discomfort
+SMTS01183,1183,脘痞,Guan Pi,epigastrium
+SMTS01184,1184,脘痞不饥,Guan Pi Bu Ji,epigastrium and no hunger
+SMTS01185,1185,脘痞呕吐,Guan Pi Ou Tu,epigastrium and vomiting
+SMTS01186,1186,脘胁疼痛,Guan Xie Teng Tong,epigastrium and hypochondriac pain
+SMTS01187,1187,脘胁胀痛,Guan Xie Zhang Tong,distension and pain in the abdomen and hypochondrium
+SMTS01188,1188,微恶风寒,Wei E Feng Han,Slight aversion to wind and cold
+SMTS01189,1189,微渴,Wei Ke,slight thirst
+SMTS01190,1190,畏光,Wei Guang,Photophobia
+SMTS01191,1191,畏寒,Wei Han,Chill
+SMTS01192,1192,畏热,Wei Re,Fear of heat
+SMTS01194,1194,胃肠积热,Wei Chang Ji Re,gastrointestinal heat accumulation
+SMTS01195,1195,胃肠术后腹胀,Wei Chang Zhu Hou Fu Zhang,abdominal distension after gastrointestinal surgery
+SMTS01198,1198,胃寒呕吐,Wei Han Ou Tu,Stomach cold and vomiting
+SMTS01199,1199,胃绞痛,Wei Jiao Tong,gastric colic
+SMTS01202,1202,胃热,Wei Re,stomach heat
+SMTS01203,1203,胃酸过多,Wei Suan Guo Duo,Hyperacidity
+SMTS01204,1204,胃痛,Wei Tong,stomach pain
+SMTS01205,1205,胃痛拘急,Wei Tong Ju Ji,stomach pain and nervousness
+SMTS01206,1206,胃痛绵绵,Wei Tong Mian Mian,Stomach pain
+SMTS01207,1207,胃痛隐隐,Wei Tong Yin Yin,dull stomach pain
+SMTS01208,1208,胃脘饱胀,Wei Guan Bao Zhang,epigastric fullness
+SMTS01209,1209,胃脘不舒,Wei Guan Bu Shu,epigastric discomfort
+SMTS01210,1210,胃脘嘈杂,Wei Guan Cao Za,noisy epigastrium
+SMTS01211,1211,胃脘嘈杂不适,Wei Guan Cao Za Bu Shi,Noisy and uncomfortable epigastrium
+SMTS01212,1212,胃脘刺痛,Wei Guan Ci Tong,epigastric tingling
+SMTS01213,1213,胃脘剌痛,Wei Guan La Tong,epigastric pain
+SMTS01214,1214,胃脘冷痛,Wei Guan Leng Tong,cold and painful epigastrium
+SMTS01215,1215,胃脘挛痛,Wei Guan Luan Tong,gastric epigastric spasm
+SMTS01216,1216,胃脘痞满,Wei Guan Pi Man,epigastric fullness
+SMTS01217,1217,胃脘痞闷,Wei Guan Pi Men,epigastric congestion
+SMTS01218,1218,胃脘痞塞,Wei Guan Pi Sai,epigastric congestion
+SMTS01219,1219,胃脘烧灼感,Wei Guan Shao Zhuo Gan,Burning sensation in the epigastrium
+SMTS01220,1220,胃脘疼痛,Wei Guan Teng Tong,epigastric pain
+SMTS01221,1221,胃脘隐痛,Wei Guan Yin Tong,Dull epigastric pain
+SMTS01222,1222,胃脘胀满,Wei Guan Zhang Man,epigastric distension
+SMTS01223,1223,胃脘胀痛,Wei Guan Zhang Tong,epigastric distension and pain
+SMTS01224,1224,胃阴不足,Wei Yin Bu Zu,Insufficient stomach yin
+SMTS01225,1225,胃胀,Wei Zhang,stomach bloating
+SMTS01226,1226,胃胀满,Wei Zhang Man,stomach fullness
+SMTS01227,1227,胃中灼热,Wei Zhong Zhuo Re,Burning in the Heart
+SMTS01228,1228,温毒发斑,Wen Du Fa Ban,Warm toxin spots
+SMTS01229,1229,瘟疫发热,Wen Yi Fa Re,Plague Fever
+SMTS01230,1230,无汗,Wu Han,no sweating
+SMTS01231,1231,无名肿痛,Wu Ming Zhong Tong,nameless swelling and pain
+SMTS01232,1232,无乳,Wu Ru,No Breasts
+SMTS01233,1233,五更溏泻,Wu Geng Tang Xie,loose stools at midnight
+SMTS01234,1234,五更泄泻,Wu Geng Xie Xie,diarrhea at midnight
+SMTS01235,1235,五心烦热,Wu Xin Fan Re,Five upsets and fever
+SMTS01236,1236,午后潮热,Wu Hou Chao Re,Afternoon Hot Flashes
+SMTS01237,1237,膝部痿软,Xi Bu Wei Ruan,Knee weakness
+SMTS01238,1238,膝软乏力,Xi Ruan Fa Li,Knee weakness and weakness
+SMTS01239,1239,膝酸痛,Xi Suan Tong,Knee Soreness
+SMTS01240,1240,喜暖,Xi Nuan,warmth
+SMTS01241,1241,下腹胀痛,Xia Fu Zhang Tong,lower abdominal distension and pain
+SMTS01242,1242,下利清谷,Xia Li Qing Gu,Lower Li Qinggu
+SMTS01243,1243,下痢臭秽,Xia Li Chou Hui,diarrhea and foul smell
+SMTS01244,1244,下痢脓血,Xia Li Nong Xie,"dysentery, pus and blood"
+SMTS01245,1245,下气甚痛,Xia Qi Shen Tong,severe pain in lowering Qi
+SMTS01246,1246,下血,Xia Xie,bleeding
+SMTS01247,1247,下元虚冷,Xia Yuan Xu Leng,Xia Yuan deficiency and cold
+SMTS01248,1248,下肢沉重,Xia Zhi Chen Zhong,heaviness in lower limbs
+SMTS01249,1249,下肢浮肿,Xia Zhi Fu Zhong,edema of lower limbs
+SMTS01250,1250,下肢痿软,Xia Zhi Wei Ruan,flaccidity of lower limbs
+SMTS01251,1251,下肢痿弱,Xia Zhi Wei Ruo,weakness of lower limbs
+SMTS01252,1252,下肢无力,Xia Zhi Wu Li,weakness in lower limbs
+SMTS01253,1253,夏令中恶昏厥,Xia Ling Zhong E Hun Jue,Summer Evil Fainting
+SMTS01254,1254,项背强急不舒,Xiang Bei Qiang Ji Bu Shu,Strongness and discomfort in the nape and back
+SMTS01255,1255,项背强痛,Xiang Bei Qiang Tong,strong pain in the neck and back
+SMTS01256,1256,项背强直,Xiang Bei Qiang Zhi,Ankylosis of the nape and back
+SMTS01257,1257,项强,Xiang Qiang,Xiang Qiang
+SMTS01260,1260,消渴,Xiao Ke,thirst
+SMTS01261,1261,消痩,Xiao Shou,diarrhea
+SMTS01262,1262,消瘦,Xiao Shou,weight loss
+SMTS01264,1264,小便白浊,Xiao Bian Bai Zhuo,white and turbid urine
+SMTS01265,1265,小便不利,Xiao Bian Bu Li,Difficulty urinating
+SMTS01266,1266,小便不爽,Xiao Bian Bu Shuang,Unpleasant urination
+SMTS01267,1267,小便不通,Xiao Bian Bu Tong,difficulty urinating
+SMTS01268,1268,小便赤涩,Xiao Bian Chi Se,red and astringent urine
+SMTS01269,1269,小便滴沥不净,Xiao Bian Di Li Bu Jing,Dirty urine
+SMTS01270,1270,小便短赤,Xiao Bian Duan Chi,short red urine
+SMTS01271,1271,小便短少,Xiao Bian Duan Shao,Shortness of Urination
+SMTS01272,1272,小便黄,Xiao Bian Huang,yellow urine
+SMTS01273,1273,小便黄赤,Xiao Bian Huang Chi,yellow and red urine
+SMTS01274,1274,小便黄少,Xiao Bian Huang Shao,yellowish urine
+SMTS01275,1275,小便浑浊,Xiao Bian Hun Zhuo,cloudy urine
+SMTS01276,1276,小便淋漓不尽,Xiao Bian Lin Li Bu Jin,Incessant urination
+SMTS01277,1277,小便淋浊,Xiao Bian Lin Zhuo,turbid urine
+SMTS01278,1278,小便频急,Xiao Bian Pin Ji,Frequent and urgent urination
+SMTS01279,1279,小便频数,Xiao Bian Pin Shu,Frequent urination
+SMTS01280,1280,小便频数短涩,Xiao Bian Pin Shu Duan Se,"Frequent urination, short and astringent urine"
+SMTS01281,1281,小便清长,Xiao Bian Qing Chang,long and clear urine
+SMTS01282,1282,小便热,Xiao Bian Re,Urinary fever
+SMTS01283,1283,小便涩痛,Xiao Bian Se Tong,astringent and painful urination
+SMTS01284,1284,小便痛,Xiao Bian Tong,painful urination
+SMTS01285,1285,小儿顿咳,Xiao Er Dun Ke,Cough in children
+SMTS01286,1286,小儿多汗,Xiao Er Duo Han,excessive sweating in children
+SMTS01287,1287,小儿疳积发热,Xiao Er Gan Ji Fa Re,infantile malnutrition and fever
+SMTS01289,1289,小儿高热,Xiao Er Gao Re,high fever in children
+SMTS01290,1290,小儿行迟,Xiao Er Xing Chi,Infantile Delay
+SMTS01291,1291,小儿积滞化热,Xiao Er Ji Zhi Hua Re,stagnation of heat in children
+SMTS01292,1292,小儿急惊,Xiao Er Ji Liang,panic in children
+SMTS01293,1293,小儿急热惊风,Xiao Er Ji Re Liang Feng,acute fever and convulsions in children
+SMTS01294,1294,小儿秋季腹泻,Xiao Er Qiu Ji Fu Xie,diarrhea in children in autumn
+SMTS01295,1295,小儿饮食积滞,Xiao Er Yin Shi Ji Zhi,food stagnation in children
+SMTS01296,1296,小腹拘急,Xiao Fu Ju Ji,Tension in the lower abdomen
+SMTS01297,1297,小腹冷痛,Xiao Fu Leng Tong,cold pain in lower abdomen
+SMTS01298,1298,小腹两侧胀痛,Xiao Fu Liang Ce Zhang Tong,distension and pain on both sides of lower abdomen
+SMTS01299,1299,小腹满,Xiao Fu Man,fullness in lower abdomen
+SMTS01300,1300,小腹疼痛,Xiao Fu Teng Tong,lower abdominal pain
+SMTS01301,1301,小腹痛,Xiao Fu Tong,lower abdominal pain
+SMTS01302,1302,小腹喜热,Xiao Fu Xi Re,Feeling hot in the lower abdomen
+SMTS01303,1303,小腹下坠,Xiao Fu Xia Zhui,Lower abdominal drop
+SMTS01304,1304,小腹隐痛,Xiao Fu Yin Tong,Dull pain in lower abdomen
+SMTS01305,1305,小腹胀,Xiao Fu Zhang,abdominal distension
+SMTS01306,1306,小腹胀痛,Xiao Fu Zhang Tong,lower abdominal distension and pain
+SMTS01307,1307,小腹坠痛,Xiao Fu Zhui Tong,lower abdominal pain
+SMTS01308,1308,小腹坠胀,Xiao Fu Zhui Zhang,distension in the lower abdomen
+SMTS01309,1309,哮喘,Xiao Chuan,Asthma
+SMTS01310,1310,胁肋不舒,Xie Lei Bu Shu,Discomfort in the flanks
+SMTS01311,1311,胁肋部疼痛,Xie Lei Bu Teng Tong,Pain in the flanks and ribs
+SMTS01312,1312,胁肋刺痛,Xie Lei Ci Tong,Tingling pain in the flanks
+SMTS01313,1313,胁肋疼痛,Xie Lei Teng Tong,flank pain
+SMTS01314,1314,胁肋隐痛,Xie Lei Yin Tong,Dull pain in the hypochondrium
+SMTS01315,1315,胁肋胀痛,Xie Lei Zhang Tong,distended ribs and pain
+SMTS01316,1316,胁痛,Xie Tong,hypochondriac pain
+SMTS01317,1317,胁下痞块,Xie Xia Pi Kuai,lumps under the ribs
+SMTS01318,1318,泄泻,Xie Xie,diarrhea
+SMTS01319,1319,泄泻急迫,Xie Xie Ji Po,Urgent diarrhea
+SMTS01320,1320,泻而不爽,Xie Er Bu Shuang,diarrhea and discomfort
+SMTS01323,1323,心暴痛,Xin Bao Tong,heart attack and pain
+SMTS01324,1324,心烦,Xin Fan,upset
+SMTS01325,1325,心烦不寐,Xin Fan Bu Mei,upset and insomnia
+SMTS01326,1326,心烦不宁,Xin Fan Bu Ning,Restlessness
+SMTS01327,1327,心烦难寐,Xin Fan Nan Mei,upset and difficulty sleeping
+SMTS01328,1328,心烦喜呕,Xin Fan Xi Ou,"upset, nausea and vomiting"
+SMTS01329,1329,心腹刺痛,Xin Fu Ci Tong,Pain in the heart and abdomen
+SMTS01330,1330,心腹冷痛,Xin Fu Leng Tong,Coldness and pain in the heart and abdomen
+SMTS01331,1331,心慌,Xin Huang,palpitation
+SMTS01333,1333,心悸,Xin Ji,palpitations
+SMTS01334,1334,心悸不安,Xin Ji Bu An,palpitation and restlessness
+SMTS01335,1335,心悸不宁,Xin Ji Bu Ning,palpitation and restlessness
+SMTS01336,1336,心绞痛,Xin Jiao Tong,angina pectoris
+SMTS01339,1339,心气痛,Xin Qi Tong,Heart Qi pain
+SMTS01340,1340,心气虚损,Xin Qi Xu Sun,Heart Qi deficiency
+SMTS01341,1341,心前区刺痛,Xin Qian Qu Ci Tong,tingling in the precordium
+SMTS01342,1342,心前区剌痛,Xin Qian Qu La Tong,Precordial pain
+SMTS01343,1343,心前区疼痛,Xin Qian Qu Teng Tong,Precordial pain
+SMTS01344,1344,心神不安,Xin Shen Bu An,uneasiness
+SMTS01345,1345,心神不宁,Xin Shen Bu Ning,Restlessness
+SMTS01346,1346,心痛,Xin Tong,Heartache
+SMTS01347,1347,心下痞硬,Xin Xia Pi Ying,Hard heart
+SMTS01348,1348,心胸烦热,Xin Xiong Fan Re,irritability and heat in the chest and chest
+SMTS01349,1349,心血不足,Xin Xie Bu Zu,insufficient heart-blood flow
+SMTS01350,1350,新旧瘀痛,Xin Jiu Yu Tong,new and old blood stasis and pain
+SMTS01351,1351,形寒,Xing Han,Cold form
+SMTS01352,1352,形瘦,Xing Shou,Thin appearance
+SMTS01353,1353,形体肥胖,Xing Ti Fei Pang,body obesity
+SMTS01354,1354,形体消瘦,Xing Ti Xiao Shou,weight loss
+SMTS01356,1356,性功能衰退,Xing Gong Neng Shuai Tui,sexual function decline
+SMTS01357,1357,性功能障碍,Xing Gong Neng Zhang Ai,Sexual Dysfunction
+SMTS01358,1358,性冷淡,Xing Leng Dan,frigidity
+SMTS01359,1359,性欲减退,Xing Yu Jian Tui,loss of sexual desire
+SMTS01360,1360,胸痹,Xiong Bi,Chest Bi
+SMTS01361,1361,胸痹作痛,Xiong Bi Zuo Tong,chest pain
+SMTS01362,1362,胸部憋闷,Xiong Bu Bie Men,chest tightness
+SMTS01363,1363,胸部刺痛,Xiong Bu Ci Tong,Tingling in the chest
+SMTS01364,1364,胸部闷痛,Xiong Bu Men Tong,Chest tightness and pain
+SMTS01365,1365,胸部疼痛,Xiong Bu Teng Tong,Chest Pain
+SMTS01366,1366,胸腹刺痛,Xiong Fu Ci Tong,tingling in the chest and abdomen
+SMTS01367,1367,胸腹积水,Xiong Fu Ji Shui,hydrops in chest and abdomen
+SMTS01368,1368,胸腹冷痛,Xiong Fu Leng Tong,cold pain in chest and abdomen
+SMTS01369,1369,胸腹满闷,Xiong Fu Man Men,chest and abdominal fullness and tightness
+SMTS01370,1370,胸腹闷胀,Xiong Fu Men Zhang,Chest and abdominal distention
+SMTS01371,1371,胸腹水肿,Xiong Fu Shui Zhong,chest and abdominal edema
+SMTS01372,1372,胸腹疼痛,Xiong Fu Teng Tong,Chest and abdominal pain
+SMTS01373,1373,胸腹胀满,Xiong Fu Zhang Man,distension of chest and abdomen
+SMTS01374,1374,胸腹胀闷,Xiong Fu Zhang Men,Chest and abdominal distension and tightness
+SMTS01375,1375,胸腹胀痛,Xiong Fu Zhang Tong,Chest and abdominal distension and pain
+SMTS01376,1376,胸膈不利,Xiong Ge Bu Li,Chest and diaphragm discomfort
+SMTS01377,1377,胸膈满闷,Xiong Ge Man Men,chest and diaphragm fullness and tightness
+SMTS01378,1378,胸膈痞满,Xiong Ge Pi Man,chest and diaphragm fullness
+SMTS01379,1379,胸膈痞闷,Xiong Ge Pi Men,Chest and diaphragm tightness
+SMTS01380,1380,胸膈痞塞,Xiong Ge Pi Sai,Chest and diaphragm congestion
+SMTS01381,1381,胸膈胀满,Xiong Ge Zhang Man,distension of chest and diaphragm
+SMTS01382,1382,胸满,Xiong Man,chest fullness
+SMTS01383,1383,胸满郁闷,Xiong Man Yu Men,Chest fullness and depression
+SMTS01384,1384,胸闷,Xiong Men,Chest tightness
+SMTS01385,1385,胸闷不畅,Xiong Men Bu Chang,Chest tightness
+SMTS01386,1386,胸闷不适,Xiong Men Bu Shi,Chest tightness and discomfort
+SMTS01387,1387,胸闷不舒,Xiong Men Bu Shu,Chest tightness and discomfort
+SMTS01388,1388,胸闷作痛,Xiong Men Zuo Tong,Chest tightness and pain
+SMTS01389,1389,胸痞,Xiong Pi,chest pain
+SMTS01390,1390,胸热,Xiong Re,Chest fever
+SMTS01391,1391,胸痛,Xiong Tong,chest pain
+SMTS01392,1392,胸痛彻背,Xiong Tong Che Bei,Chest pain all over the back
+SMTS01393,1393,胸脘满闷,Xiong Guan Man Men,chest and epigastrium fullness and tightness
+SMTS01394,1394,胸脘痞闷,Xiong Guan Pi Men,chest and epigastrium tightness
+SMTS01395,1395,胸脘胀满,Xiong Guan Zhang Man,chest fullness
+SMTS01396,1396,胸脘胀闷,Xiong Guan Zhang Men,chest and epigastrium distension and tightness
+SMTS01397,1397,胸胁刺痛,Xiong Xie Ci Tong,Tingling pain in the chest and hypochondrium
+SMTS01398,1398,胸胁挫伤,Xiong Xie Cuo Shang,chest and hypochondrium contusion
+SMTS01399,1399,胸胁苦满,Xiong Xie Ku Man,bitter fullness in the chest and hypochondrium
+SMTS01400,1400,胸胁剌痛,Xiong Xie La Tong,stabbing pain in chest and hypochondrium
+SMTS01401,1401,胸胁闷痛,Xiong Xie Men Tong,Chest and hypochondrium pain
+SMTS01402,1402,胸胁痞闷,Xiong Xie Pi Men,chest and hypochondrium tightness
+SMTS01403,1403,胸胁气滞,Xiong Xie Qi Zhi,Qi stagnation in the chest and hypochondrium
+SMTS01404,1404,胸胁疼痛,Xiong Xie Teng Tong,chest and hypochondrium pain
+SMTS01405,1405,胸胁痛,Xiong Xie Tong,chest and hypochondriac pain
+SMTS01406,1406,胸胁隐痛,Xiong Xie Yin Tong,Dull pain in chest and hypochondrium
+SMTS01407,1407,胸胁胀,Xiong Xie Zhang,distension of chest and hypochondrium
+SMTS01408,1408,胸胁胀满,Xiong Xie Zhang Man,fullness in the chest and hypochondrium
+SMTS01409,1409,胸胁胀闷,Xiong Xie Zhang Men,distension and tightness in the chest and hypochondrium
+SMTS01410,1410,胸胁胀痛,Xiong Xie Zhang Tong,chest and hypochondrium pain
+SMTS01411,1411,胸胁作痛,Xiong Xie Zuo Tong,chest and hypochondrium pain
+SMTS01412,1412,胸胀满,Xiong Zhang Man,chest fullness
+SMTS01413,1413,胸胀痛,Xiong Zhang Tong,Chest swelling and pain
+SMTS01414,1414,胸中憋闷,Xiong Zhong Bie Men,tightness in the chest
+SMTS01415,1415,胸中满闷,Xiong Zhong Man Men,Fullness and tightness in the chest
+SMTS01416,1416,胸中闷热,Xiong Zhong Men Re,hot and stuffy chest
+SMTS01417,1417,胸中闷痛,Xiong Zhong Men Tong,chest pain
+SMTS01418,1418,羞明,Xiu Ming,Shame
+SMTS01419,1419,羞明多眵,Xiu Ming Duo Chi,"Shame, Ming and Duohuan"
+SMTS01420,1420,羞明流泪,Xiu Ming Liu Lei,Shyness and tears
+SMTS01421,1421,羞明畏光,Xiu Ming Wei Guang,shyness and photophobia
+SMTS01422,1422,嗅觉不灵,Xiu Jue Bu Ling,poor sense of smell
+SMTS01423,1423,嗅觉迟钝,Xiu Jue Chi Dun,Dull sense of smell
+SMTS01424,1424,嗅觉失灵,Xiu Jue Shi Ling,loss of sense of smell
+SMTS01425,1425,须发早白,Xu Fa Zao Bai,premature graying of beard and hair
+SMTS01426,1426,虚喘,Xu Chuan,Asthenia and asthma
+SMTS01427,1427,虚烦,Xu Fan,Deficiency and Trouble
+SMTS01428,1428,虚烦不眠,Xu Fan Bu Mian,Tiredness and insomnia
+SMTS01429,1429,虚寒,Xu Han,Deficiency and cold
+SMTS01430,1430,虚寒性出血,Xu Han Xing Chu Xie,Bleeding due to deficiency and cold
+SMTS01431,1431,虚劳,Xu Lao,Consumption
+SMTS01432,1432,虚劳久咳,Xu Lao Jiu Ke,chronic cough due to fatigue
+SMTS01433,1433,虚劳咳喘,Xu Lao Ke Chuan,Cough and asthma due to fatigue
+SMTS01434,1434,虚劳咳嗽,Xu Lao Ke Sou,Asthenia and cough
+SMTS01435,1435,虚热,Xu Re,Deficiency heat
+SMTS01436,1436,虚热不退,Xu Re Bu Tui,Deficient heat that persists
+SMTS01437,1437,虚脱,Xu Tuo,collapse
+SMTS01438,1438,虚泻,Xu Xie,Deficiency and diarrhea
+SMTS01439,1439,眩晕,Xuan Yun,dizziness
+SMTS01440,1440,血便,Xie Bian,bloody stool
+SMTS01441,1441,血管神经性头痛,Xie Guan Shen Jing Xing Tou Tong,vaso-neuropathic headache
+SMTS01443,1443,血淋,Xie Lin,bloody stranguria
+SMTS01444,1444,血尿,Xie Niao,hematuria
+SMTS01445,1445,血热,Xie Re,blood heat
+SMTS01446,1446,血热吐紐,Xie Re Tu Niu,blood heat and vomiting
+SMTS01447,1447,血热吐衄,Xie Re Tu Nv,blood heat and vomiting
+SMTS01451,1451,血瘀,Xie Yu,blood stasis
+SMTS01453,1453,血肿疼痛,Xie Zhong Teng Tong,hematoma pain
+SMTS01454,1454,牙齿松动,Ya Chi Song Dong,loose teeth
+SMTS01455,1455,牙关紧闭,Ya Guan Jin Bi,Trismus
+SMTS01456,1456,牙疼,Ya Teng,toothache
+SMTS01457,1457,牙痛,Ya Tong,toothache
+SMTS01458,1458,牙龈出血,Ya Ken Chu Xie,Bleeding gums
+SMTS01459,1459,牙龈红肿,Ya Ken Hong Zhong,red and swollen gums
+SMTS01460,1460,牙龈痛,Ya Ken Tong,gum pain
+SMTS01461,1461,牙龈肿,Ya Ken Zhong,swollen gums
+SMTS01462,1462,牙龈肿痛,Ya Ken Zhong Tong,gum swelling and pain
+SMTS01463,1463,牙龈肿胀,Ya Ken Zhong Zhang,gum swelling
+SMTS01464,1464,咽部不适,Yan Bu Bu Shi,Pharyngeal discomfort
+SMTS01465,1465,咽部充血,Yan Bu Chong Xie,Throat congestion
+SMTS01466,1466,咽部红,Yan Bu Hong,red throat
+SMTS01467,1467,咽部红肿,Yan Bu Hong Zhong,pharyngeal redness and swelling
+SMTS01468,1468,咽部肿,Yan Bu Zhong,pharyngeal swelling
+SMTS01469,1469,咽部肿痛,Yan Bu Zhong Tong,pharyngeal swelling and pain
+SMTS01470,1470,咽干,Yan Gan,dry throat
+SMTS01471,1471,咽干喉痛,Yan Gan Hou Tong,dry throat and sore throat
+SMTS01472,1472,咽干燥,Yan Gan Zao,Dry throat
+SMTS01473,1473,咽干灼热,Yan Gan Zhuo Re,dry and burning throat
+SMTS01474,1474,咽膈不利,Yan Ge Bu Li,Unfavorable throat and diaphragm
+SMTS01475,1475,咽红,Yan Hong,red throat
+SMTS01476,1476,咽红肿痛,Yan Hong Zhong Tong,"sore throat, redness, swelling and pain"
+SMTS01477,1477,咽喉不利,Yan Hou Bu Li,Sore throat
+SMTS01478,1478,咽喉干,Yan Hou Gan,dry throat
+SMTS01479,1479,咽喉干燥,Yan Hou Gan Zao,Dry throat
+SMTS01480,1480,咽喉红肿,Yan Hou Hong Zhong,Throat redness and swelling
+SMTS01481,1481,咽喉疼痛,Yan Hou Teng Tong,Throat Pain
+SMTS01482,1482,咽喉痛,Yan Hou Tong,sore throat
+SMTS01483,1483,咽喉痒,Yan Hou Yang,itchy throat
+SMTS01484,1484,咽喉肿,Yan Hou Zhong,swollen throat
+SMTS01485,1485,咽喉肿痛,Yan Hou Zhong Tong,sore throat
+SMTS01486,1486,咽喉肿痈,Yan Hou Zhong Yong,Sore throat and carbuncle
+SMTS01487,1487,咽喉灼热,Yan Hou Zhuo Re,Throat burning
+SMTS01488,1488,咽黏膜充血,Yan Nian Mo Chong Xie,Congestion of pharyngeal mucosa
+SMTS01489,1489,咽痛,Yan Tong,sore throat
+SMTS01490,1490,咽下不利,Yan Xia Bu Li,Difficulty swallowing
+SMTS01491,1491,咽痒,Yan Yang,itchy throat
+SMTS01492,1492,咽痈,Yan Yong,pharyngeal abscess
+SMTS01493,1493,咽燥,Yan Zao,dry throat
+SMTS01494,1494,咽中有痰,Yan Zhong You Tan,phlegm in the throat
+SMTS01495,1495,咽灼热感,Yan Zhuo Re Gan,burning sensation in throat
+SMTS01496,1496,言语不利,Yan Yu Bu Li,Speech Difficulty
+SMTS01497,1497,言语不清,Yan Yu Bu Qing,slurred speech
+SMTS01498,1498,言语不淸,Yan Yu Bu Qing,slurred speech
+SMTS01499,1499,言语謇涩,Yan Yu Jian Se,astringent speech
+SMTS01500,1500,颜面部红斑,Yan Mian Bu Hong Ban,facial erythema
+SMTS01501,1501,颜面皮肤光亮油腻,Yan Mian Pi Fu Guang Liang You Ni,shiny and greasy facial skin
+SMTS01502,1502,眼边刺痒,Yan Bian Ci Yang,itching around the eyes
+SMTS01503,1503,眼底瘀血,Yan Di Yu Xie,blood stasis under the eyes
+SMTS01504,1504,眼花,Yan Hua,dizziness
+SMTS01505,1505,眼睑赤烂,Yan Jian Chi Lan,red and rotten eyelids
+SMTS01506,1506,眼睑红烂,Yan Jian Hong Lan,red and rotten eyelids
+SMTS01507,1507,眼睛红肿,Yan Jing Hong Zhong,red and swollen eyes
+SMTS01508,1508,眼睛痛痒,Yan Jing Tong Yang,Eye pain and itching
+SMTS01509,1509,眼睛肿痛,Yan Jing Zhong Tong,eye swelling and pain
+SMTS01510,1510,眼目昏花,Yan Mu Hun Hua,blurred vision
+SMTS01511,1511,眼目昏涩,Yan Mu Hun Se,Dizzy eyes
+SMTS01512,1512,眼生翳膜,Yan Sheng Yi Mo,Eye nebula
+SMTS01513,1513,眼痛,Yan Tong,eye pain
+SMTS01514,1514,厌食,Yan Shi,anorexia
+SMTS01515,1515,阳痿,Yang Wei,impotence
+SMTS01516,1516,阳虚,Yang Xu,Yang deficiency
+SMTS01517,1517,阳虚血瘀,Yang Xu Xie Yu,Yang deficiency and blood stasis
+SMTS01518,1518,阳虚欲脱,Yang Xu Yu Tuo,Yang deficiency and desire to escape
+SMTS01519,1519,痒,Yang,itching
+SMTS01520,1520,腰背痛,Yao Bei Tong,low back pain
+SMTS01521,1521,腰部疼痛,Yao Bu Teng Tong,waist pain
+SMTS01522,1522,腰部痿软,Yao Bu Wei Ruan,weak waist
+SMTS01523,1523,腰骶酸痛,Yao Di Suan Tong,lumbosacral pain
+SMTS01524,1524,腰骶痛,Yao Di Tong,lumbosacral pain
+SMTS01525,1525,腰骶胀痛,Yao Di Zhang Tong,lumbosacral distension and pain
+SMTS01526,1526,腰腹疼痛,Yao Fu Teng Tong,waist and abdominal pain
+SMTS01528,1528,腰脊冷痛,Yao Ji Leng Tong,cold pain in the waist and spine
+SMTS01529,1529,腰脊酸痛,Yao Ji Suan Tong,pain in the waist and spine
+SMTS01530,1530,腰脊疼痛,Yao Ji Teng Tong,Lumbar pain
+SMTS01531,1531,腰酸,Yao Suan,backache
+SMTS01532,1532,腰痛,Yao Tong,low back pain
+SMTS01533,1533,腰腿酸软,Yao Tui Suan Ruan,Soreness and weakness in waist and legs
+SMTS01534,1534,腰腿酸痛,Yao Tui Suan Tong,soreness in waist and legs
+SMTS01535,1535,腰腿疼痛重着,Yao Tui Teng Tong Zhong Zhao,severe waist and leg pain
+SMTS01536,1536,腰腿痛,Yao Tui Tong,waist and leg pain
+SMTS01537,1537,腰膝关节酸重,Yao Xi Guan Jie Suan Zhong,Soreness of waist and knee joints
+SMTS01538,1538,腰膝关节疼痛,Yao Xi Guan Jie Teng Tong,waist and knee joint pain
+SMTS01539,1539,腰膝冷痛,Yao Xi Leng Tong,cold pain in waist and knees
+SMTS01540,1540,腰膝痠软,Yao Xi Suan Ruan,Soreness and weakness in waist and knees
+SMTS01541,1541,腰膝酸冷,Yao Xi Suan Leng,soreness and coldness in waist and knees
+SMTS01542,1542,腰膝酸软,Yao Xi Suan Ruan,Soreness and weakness in waist and knees
+SMTS01543,1543,腰膝酸痛,Yao Xi Suan Tong,soreness in waist and knees
+SMTS01544,1544,腰膝酸重,Yao Xi Suan Zhong,Soreness of waist and knees
+SMTS01545,1545,腰膝疼痛,Yao Xi Teng Tong,waist and knee pain
+SMTS01546,1546,腰膝无力,Yao Xi Wu Li,Weakness in waist and knees
+SMTS01548,1548,夜间遗尿,Ye Jian Yi Niao,nocturnal enuresis
+SMTS01549,1549,夜惊,Ye Liang,Night Terrors
+SMTS01551,1551,夜寐不安,Ye Mei Bu An,Restless sleep at night
+SMTS01552,1552,夜梦,Ye Meng,Night Dreams
+SMTS01553,1553,夜眠不安,Ye Mian Bu An,Restless Night Sleep
+SMTS01554,1554,夜眠不宁,Ye Mian Bu Ning,restless sleep at night
+SMTS01555,1555,夜尿频,Ye Niao Pin,Frequent urination at night
+SMTS01556,1556,夜尿频多,Ye Niao Pin Duo,Frequent urination at night
+SMTS01557,1557,夜尿清长,Ye Niao Qing Chang,clear and clear urine at night
+SMTS01558,1558,夜热早凉,Ye Re Zao Liang,hot at night and cool in the morning
+SMTS01559,1559,夜啼,Ye Ti,Night Crying
+SMTS01560,1560,噫气,Yi Qi,Geezing
+SMTS01561,1561,遗精,Yi Jing,spermatorrhea
+SMTS01562,1562,遗尿,Yi Niao,enuresis
+SMTS01563,1563,抑郁,Yi Yu,Depression
+SMTS01564,1564,易感,Yi Gan,Susceptibility
+SMTS01565,1565,易感风邪,Yi Gan Feng Xie,susceptibility to wind evil
+SMTS01566,1566,易饥,Yi Ji,easy hunger
+SMTS01567,1567,易惊,Yi Liang,easily frightened
+SMTS01568,1568,易怒,Yi Nu,Irritability
+SMTS01570,1570,阴道出血,Yin Dao Chu Xie,Vaginal Bleeding
+SMTS01571,1571,阴道干燥,Yin Dao Gan Zao,Vaginal Dryness
+SMTS01573,1573,阴疽不敛,Yin Ju Bu Lian,uncontrolled vaginal gangrene
+SMTS01574,1574,阴疽初起,Yin Ju Chu Qi,initial onset of vaginal gangrene
+SMTS01575,1575,阴疽肿痛,Yin Ju Zhong Tong,"vaginal gangrene, swelling and pain"
+SMTS01576,1576,阴囊湿痒,Yin Nang Shi Yang,wet and itchy scrotum
+SMTS01577,1577,阴痒,Yin Yang,vaginal itching
+SMTS01578,1578,阴肿,Yin Zhong,vaginal swelling
+SMTS01579,1579,音哑,Yin Ya,Dumb tone
+SMTS01581,1581,饮食不化,Yin Shi Bu Hua,poor diet
+SMTS01582,1582,饮食不节,Yin Shi Bu Jie,Improper diet
+SMTS01583,1583,饮食积滞,Yin Shi Ji Zhi,Dietary stagnation
+SMTS01584,1584,饮食少进,Yin Shi Shao Jin,Eat less
+SMTS01585,1585,饮食停滞,Yin Shi Ting Zhi,Eating Stagnation
+SMTS01586,1586,隐痛,Yin Tong,dull pain
+SMTS01587,1587,阴部肿块,Yin Bu Zhong Kuai,vaginal mass
+SMTS01593,1593,痈疽,Yong Ju,carbuncle
+SMTS01594,1594,痈疽不溃,Yong Ju Bu Kui,carbuncle does not break out
+SMTS01595,1595,痈疽疔毒,Yong Ju Ding Du,carbuncle and furuncle
+SMTS01596,1596,痈疽难溃,Yong Ju Nan Kui,Carbuncle is difficult to ulcerate
+SMTS01597,1597,痈疽肿毒,Yong Ju Zhong Du,"carbuncle, swelling and poison"
+SMTS01598,1598,痈疽肿痛,Yong Ju Zhong Tong,"carbuncle, swelling and pain"
+SMTS01599,1599,痈肿,Yong Zhong,carbuncle
+SMTS01600,1600,痈肿疮疡,Yong Zhong Chuang Yang,"carbuncle, swollen sore"
+SMTS01601,1601,痈肿溃烂,Yong Zhong Kui Lan,carbuncle ulceration
+SMTS01602,1602,涌吐痰涎,Yong Tu Tan Xian,spitting and salivation
+SMTS01603,1603,有汗,You Han,sweating
+SMTS01604,1604,有血块,You Xie Kuai,blood clots
+SMTS01605,1605,右上腹隐隐作痛,You Shang Fu Yin Yin Zuo Tong,Dull pain in the right upper abdomen
+SMTS01606,1606,右胁胀满,You Xie Zhang Man,Fullness in the right hypochondrium
+SMTS01607,1607,瘀斑,Yu Ban,ecchymosis
+SMTS01608,1608,瘀血不尽,Yu Xie Bu Jin,persistent blood stasis
+SMTS01609,1609,瘀血肿胀,Yu Xie Zhong Zhang,blood stasis and swelling
+SMTS01610,1610,瘀血阻络,Yu Xie Zu Luo,blood stasis blocking collaterals
+SMTS01611,1611,瘀阻经闭,Yu Zu Jing Bi,amenorrhea due to blood stasis
+SMTS01613,1613,语言不利,Yu Yan Bu Li,Language Difficulty
+SMTS01614,1614,语言謇涩,Yu Yan Jian Se,astringent speech
+SMTS01615,1615,郁闷心烦,Yu Men Xin Fan,depression and upset
+SMTS01616,1616,月经不调,Yue Jing Bu Diao,irregular menstruation
+SMTS01617,1617,月经过多,Yue Jing Guo Duo,Menorrhagia
+SMTS01618,1618,月经后错,Yue Jing Hou Cuo,Postmenstrual errors
+SMTS01619,1619,月经量多,Yue Jing Liang Duo,heavy menstruation
+SMTS01620,1620,月经量多，味臭,Yue Jing Liang Duo ， Wei Chou,heavy menstrual flow and foul odor
+SMTS01621,1621,月经量少,Yue Jing Liang Shao,low menstrual flow
+SMTS01622,1622,月经提前,Yue Jing Ti Qian,early menstruation
+SMTS01623,1623,月经先后不定期,Yue Jing Xian Hou Bu Ding Qi,irregular menstruation
+SMTS01626,1626,晕眩,Yun Xuan,dizziness
+SMTS01628,1628,脏器下垂,Zang Qi Xia Chui,organ ptosis
+SMTS01630,1630,早产,Zao Chan,premature birth
+SMTS01631,1631,早泄,Zao Xie,premature ejaculation
+SMTS01632,1632,燥咳,Zao Ke,Dry cough
+SMTS01633,1633,燥咳少痰,Zao Ke Shao Tan,Dry cough with less phlegm
+SMTS01634,1634,燥渴,Zao Ke,dryness and thirst
+SMTS01635,1635,燥热,Zao Re,dryness and heat
+SMTS01636,1636,燥痰,Zao Tan,dry phlegm
+SMTS01637,1637,憎寒,Zeng Han,aversion to cold
+SMTS01639,1639,谵狂,Zhan Kuang,Delirium
+SMTS01640,1640,谵语,Zhan Yu,Delirium
+SMTS01641,1641,胀满,Zhang Man,fullness
+SMTS01642,1642,胀痛,Zhang Tong,swelling and pain
+SMTS01643,1643,真元不足,Zhen Yuan Bu Zu,Insufficient True Yuan
+SMTS01644,1644,怔忡,Zheng Chong,hesitation
+SMTS01645,1645,癥积,Zheng Ji,Symptoms
+SMTS01646,1646,癥瘕,Zheng Jia,Massage
+SMTS01647,1647,癥瘕腹痛,Zheng Jia Fu Tong,Abdominal pain
+SMTS01648,1648,癥瘕痞块,Zheng Jia Pi Kuai,lumps and lumps
+SMTS01649,1649,癥块,Zheng Kuai,Symptoms
+SMTS01652,1652,肢浮肿,Zhi Fu Zhong,limb edema
+SMTS01653,1653,肢节疼痛,Zhi Jie Teng Tong,Pain in limbs and joints
+SMTS01654,1654,肢倦乏力,Zhi Juan Fa Li,tiredness and fatigue in limbs
+SMTS01655,1655,肢冷,Zhi Leng,cold limbs
+SMTS01656,1656,肢麻,Zhi Ma,numbness in limbs
+SMTS01657,1657,肢酸,Zhi Suan,limb aches
+SMTS01658,1658,肢体不利,Zhi Ti Bu Li,Limb Disadvantage
+SMTS01659,1659,肢体不用,Zhi Ti Bu Yong,No use of limbs
+SMTS01660,1660,肢体沉重,Zhi Ti Chen Zhong,heavy limbs
+SMTS01661,1661,肢体乏力,Zhi Ti Fa Li,limb weakness
+SMTS01662,1662,肢体浮肿,Zhi Ti Fu Zhong,limb edema
+SMTS01663,1663,肢体关节疼痛,Zhi Ti Guan Jie Teng Tong,limb joint pain
+SMTS01664,1664,肢体活动受限,Zhi Ti Huo Dong Shou Xian,limited limb movement
+SMTS01665,1665,肢体肌肉萎缩,Zhi Ti Ji Rou Wei Suo,limb muscle atrophy
+SMTS01666,1666,肢体拘挛,Zhi Ti Ju Luan,limb spasm
+SMTS01667,1667,肢体困重,Zhi Ti Kun Zhong,heavy limbs
+SMTS01668,1668,肢体剌痛,Zhi Ti La Tong,tingling pain in limbs
+SMTS01669,1669,肢体麻木,Zhi Ti Ma Mu,numbness of limbs
+SMTS01670,1670,肢体麻木拘挛,Zhi Ti Ma Mu Ju Luan,numbness and spasm of limbs
+SMTS01671,1671,肢体酸痛,Zhi Ti Suan Tong,sore limbs
+SMTS01672,1672,肢体酸重,Zhi Ti Suan Zhong,Soreness and heaviness of limbs
+SMTS01673,1673,肢体疼痛,Zhi Ti Teng Tong,limb pain
+SMTS01674,1674,肢体胸痛,Zhi Ti Xiong Tong,chest pain in limbs
+SMTS01676,1676,痔疮出血,Zhi Chuang Chu Xie,Hemorrhoids Bleeding
+SMTS01677,1677,痔疮痛,Zhi Chuang Tong,Hemorrhoid Pain
+SMTS01678,1678,痔疮肿,Zhi Chuang Zhong,swollen hemorrhoids
+SMTS01679,1679,痔疮肿痛,Zhi Chuang Zhong Tong,hemorrhoid swelling and pain
+SMTS01680,1680,痔血,Zhi Xie,hemorrhoids
+SMTS01681,1681,痔肿,Zhi Zhong,hemorrhoids
+SMTS01683,1683,中风,Zhong Feng,Stroke
+SMTS01684,1684,中风后遗症,Zhong Feng Hou Yi Zheng,sequelae of stroke
+SMTS01685,1685,中暑,Zhong Shu,Heat Stroke
+SMTS01686,1686,肿毒,Zhong Du,swelling and poisoning
+SMTS01687,1687,肿痛,Zhong Tong,swelling and pain
+SMTS01688,1688,肿痛羞明,Zhong Tong Xiu Ming,"swelling, pain, and shyness"
+SMTS01689,1689,肿硬作痛,Zhong Ying Zuo Tong,"swelling, hardness and pain"
+SMTS01690,1690,肿胀,Zhong Zhang,swelling
+SMTS01691,1691,肿胀麻木,Zhong Zhang Ma Mu,swelling and numbness
+SMTS01693,1693,周身乏力,Zhou Shen Fa Li,general fatigue
+SMTS01695,1695,转筋挛痛,Zhuan Jin Luan Tong,Spasticity pain
+SMTS01696,1696,壮热,Zhuang Re,strong fever
+SMTS01697,1697,灼热,Zhuo Re,burning
+SMTS01698,1698,灼痛,Zhuo Tong,burning pain
+SMTS01699,1699,浊涕,Zhuo Ti,turbid nasal discharge
+SMTS01700,1700,浊涕臭气,Zhuo Ti Chou Qi,turbid nasal discharge and odor
+SMTS01701,1701,子烦,Zi Fan,Trouble
+SMTS01702,1702,子宫出血,Zi Gong Chu Xie,uterine bleeding
+SMTS01703,1703,子宫功能性出血,Zi Gong Gong Neng Xing Chu Xie,functional uterine bleeding
+SMTS01704,1704,子宫脱垂,Zi Gong Tuo Chui,uterine prolapse
+SMTS01705,1705,子痫抽搐,Zi Xian Chou Chu,eclamptic convulsions
+SMTS01706,1706,紫斑,Zi Ban,Purpura
+SMTS01707,1707,自汗,Zi Han,spontaneous sweating
+SMTS01708,1708,足抽搐,Zu Chou Chu,foot twitching
+SMTS01709,1709,足跟疼痛,Zu Gen Teng Tong,Heel Pain
+SMTS01710,1710,足胫红肿热痛,Zu Jing Hong Zhong Re Tong,"redness, swelling, heat and pain in the shins"
+SMTS01711,1711,足拘挛,Zu Ju Luan,foot spasm
+SMTS01712,1712,足冷,Zu Leng,cold feet
+SMTS01713,1713,足麻木,Zu Ma Mu,numbness of feet
+SMTS01714,1714,足痿筋挛,Zu Wei Jin Luan,foot flaccidity and spasm
+SMTS01715,1715,足膝红肿,Zu Xi Hong Zhong,redness and swelling of feet and knees
+SMTS01716,1716,足膝红肿热痛,Zu Xi Hong Zhong Re Tong,"redness, swelling, heat and pain in the feet and knees"
+SMTS01717,1717,足肿胀,Zu Zhong Zhang,swollen feet
+SMTS01718,1718,下疳,Xia Gan,Chancre
+SMTS01720,1720,不得平卧,Bu De Ping Wo,Do not lie down
+SMTS01721,1721,不眠,Bu Mian,Insomnia
+SMTS01722,1722,不语,Bu Yu,Silence
+SMTS01725,1725,中恶昏迷,Zhong E Hun Mi,middle-evil coma
+SMTS01727,1727,中风痰迷,Zhong Feng Tan Mi,Stroke and Phlegm Disorder
+SMTS01728,1728,久不收口,Jiu Bu Shou Kou,Not closing the mouth for a long time
+SMTS01730,1730,久溃不敛,Jiu Kui Bu Lian,Prolonged ulceration
+SMTS01733,1733,乳痈肿痛,Ru Yong Zhong Tong,mastitis swelling and pain
+SMTS01737,1737,乳蛾,Ru E,Milk Moth
+SMTS01738,1738,乳闭,Ru Bi,Breast Atresia
+SMTS01739,1739,二便不利,Er Bian Bu Li,Difficulty in defecation
+SMTS01740,1740,二便不通,Er Bian Bu Tong,obstruction of bowel movements
+SMTS01741,1741,亦气疼痛,Yi Qi Teng Tong,Qi pain
+SMTS01745,1745,产后淤阻,Chan Hou Yu Zu,Postpartum congestion
+SMTS01748,1748,产后瘀血,Chan Hou Yu Xie,postpartum blood stasis
+SMTS01750,1750,产后瘀阻,Chan Hou Yu Zu,Postpartum blood stasis
+SMTS01759,1759,体倦乏力,Ti Juan Fa Li,fatigue and fatigue
+SMTS01761,1761,作喘,Zuo Chuan,asthma
+SMTS01762,1762,便塘,Bian Tang,Bitter Pond
+SMTS01763,1763,偏正头痛,Pian Zheng Tou Tong,migraine headache
+SMTS01765,1765,关窍不通,Guan Qiao Bu Tong,Guan Qiao is blocked.
+SMTS01766,1766,关节痿软,Guan Jie Wei Ruan,joint flaccidity
+SMTS01767,1767,关节肿胀,Guan Jie Zhong Zhang,joint swelling
+SMTS01768,1768,关节酸,Guan Jie Suan,joint acidity
+SMTS01773,1773,劳伤腰痛,Lao Shang Yao Tong,Strain and low back pain
+SMTS01774,1774,劳热,Lao Re,labor fever
+SMTS01776,1776,历节风痛,Li Jie Feng Tong,wind pain during festivals
+SMTS01780,1780,口㖞,Kou Wai,Mouth㖞
+SMTS01781,1781,口眼㖞斜,Kou Yan Wai Xie,slanted mouth and eyes
+SMTS01782,1782,口眼喝斜,Kou Yan He Xie,squinting in mouth and eyes
+SMTS01784,1784,口蜗,Kou Gua,Oral cochlea
+SMTS01786,1786,后重,Hou Zhong,backache
+SMTS01789,1789,呕吐呃逆,Ou Tu E Ni,vomiting and hiccups
+SMTS01790,1790,呕吐腹痛,Ou Tu Fu Tong,Vomiting and abdominal pain
+SMTS01791,1791,呕哕,Ou Yue,vomiting
+SMTS01793,1793,咯吐不出,Ge Tu Bu Chu,unable to vomit
+SMTS01795,1795,咳嗽气喘,Ke Sou Qi Chuan,Cough and asthma
+SMTS01796,1796,咳痰,Ke Tan,expectoration
+SMTS01797,1797,咳逆,Ke Ni,Cough
+SMTS01798,1798,咽喉干痛,Yan Hou Gan Tong,dry and painful throat
+SMTS01800,1800,咽肿,Yan Zhong,pharyngeal swelling
+SMTS01805,1805,噎膈,Ye Ge,choking and diaphragm
+SMTS01807,1807,四肢抽搐,Si Zhi Chou Chu,twitching of limbs
+SMTS01808,1808,四肢挛急疼痛,Si Zhi Luan Ji Teng Tong,Acute pain in limbs
+SMTS01811,1811,声哑,Sheng Ya,hoarseness
+SMTS01814,1814,外伤肿痛,Wai Shang Zhong Tong,"trauma, swelling and pain"
+SMTS01816,1816,外感热病,Wai Gan Re Bing,exogenous fever
+SMTS01818,1818,大头瘟疫,Da Tou Wen Yi,Big Head Plague
+SMTS01819,1819,大汗,Da Han,profuse sweating
+SMTS01820,1820,天疱疮,Tian Pao Chuang,Pemphigus
+SMTS01822,1822,失血,Shi Xie,blood loss
+SMTS01828,1828,奔豚,Ben Tun,Running Dolphin
+SMTS01829,1829,妇人脏躁,Fu Ren Zang Zao,Women’s irritability
+SMTS01833,1833,妊娠子痫,Ren Shen Zi Xian,Pregnancy Eclampsia
+SMTS01837,1837,实热积滞便秘,Shi Re Ji Zhi Bian Mi,constipation due to excess heat accumulation
+SMTS01838,1838,宫冷不孕,Gong Leng Bu Yun,cold uterus and infertility
+SMTS01839,1839,寒湿呕逆,Han Shi Ou Ni,cold-dampness and vomiting
+SMTS01840,1840,寒湿脚气,Han Shi Jiao Qi,cold-damp athlete’s foot
+SMTS01842,1842,寒疝腹痛,Han Shan Fu Tong,cold hernia and abdominal pain
+SMTS01843,1843,寒痹,Han Bi,Cold Bi
+SMTS01844,1844,寒积便秘,Han Ji Bian Mi,constipation due to cold accumulation
+SMTS01846,1846,小便淋漓,Xiao Bian Lin Li,dripping urine
+SMTS01848,1848,小便短赤涩痛,Xiao Bian Duan Chi Se Tong,"short, red, astringent and painful urination"
+SMTS01849,1849,小便艰涩,Xiao Bian Jian Se,Difficulty urinating
+SMTS01850,1850,小便赤,Xiao Bian Chi,red urine
+SMTS01853,1853,小儿急惊风,Xiao Er Ji Liang Feng,acute convulsions in children
+SMTS01854,1854,小儿惊啼,Xiao Er Liang Ti,Children crying
+SMTS01855,1855,小儿惊痫,Xiao Er Liang Xian,epilepsy in children
+SMTS01856,1856,小儿惊风,Xiao Er Liang Feng,convulsions in children
+SMTS01857,1857,小儿慢惊,Xiao Er Man Liang,Slow terror in children
+SMTS01859,1859,小儿疳积,Xiao Er Gan Ji,infantile malnutrition
+SMTS01860,1860,小儿痰热惊痫,Xiao Er Tan Re Liang Xian,phlegm-heat and epilepsy in children
+SMTS01862,1862,少阴伏风头痛,Shao Yin Fu Feng Tou Tong,Shaoyin subdued wind headache
+SMTS01863,1863,尿少涩痛,Niao Shao Se Tong,"oliguria, astringency and pain"
+SMTS01864,1864,尿热涩痛,Niao Re Se Tong,hot and painful urination
+SMTS01866,1866,尿闭,Niao Bi,anuria
+SMTS01867,1867,崩中,Beng Zhong,collapse
+SMTS01870,1870,带下色白,Dai Xia Se Bai,white vaginal discharge
+SMTS01871,1871,带下色赤,Dai Xia Se Chi,vaginal discharge with red color
+SMTS01872,1872,带下阴痒,Dai Xia Yin Yang,vaginal itching
+SMTS01877,1877,庁肿,Ting Zhong,swelling
+SMTS01879,1879,强中,Qiang Zhong,strong middle
+SMTS01880,1880,心动悸,Xin Dong Ji,palpitations
+SMTS01882,1882,心肾不交多梦,Xin Shen Bu Jiao Duo Meng,disharmony between the heart and kidneys and excessive dreams
+SMTS01883,1883,心肾不交失眠,Xin Shen Bu Jiao Shi Mian,Insomnia due to disharmony between the heart and kidneys
+SMTS01885,1885,心胸郁闷,Xin Xiong Yu Men,depression
+SMTS01886,1886,心腹暴痛,Xin Fu Bao Tong,Severe pain in the heart and abdomen
+SMTS01887,1887,心腹疼痛,Xin Fu Teng Tong,abdominal pain
+SMTS01888,1888,心腹瘀痛,Xin Fu Yu Tong,blood stasis and pain in the heart and abdomen
+SMTS01889,1889,忧郁,You Yu,Depression
+SMTS01896,1896,恶露不尽,E Lu Bu Jin,endless lochia
+SMTS01897,1897,恶露不行,E Lu Bu Xing,Lochia is not working
+SMTS01898,1898,惊痛,Liang Tong,frightened pain
+SMTS01909,1909,手足瘈疭,Shou Zu Ji Zong,Fistula on hands and feet
+SMTS01910,1910,手足麻木,Shou Zu Ma Mu,numbness in hands and feet
+SMTS01911,1911,扭挫伤痛,Niu Cuo Shang Tong,sprain and pain
+SMTS01912,1912,拘挛,Ju Luan,spasm
+SMTS01913,1913,挛急,Luan Ji,acute spasm
+SMTS01914,1914,挛痛,Luan Tong,spasm pain
+SMTS01918,1918,斑紫黑,Ban Zi Hei,purple and black spots
+SMTS01919,1919,新久咳嗽,Xin Jiu Ke Sou,Xinjiu Cough
+SMTS01920,1920,新咳,Xin Ke,New Cough
+SMTS01922,1922,无痰,Wu Tan,No phlegm
+SMTS01924,1924,早衰,Zao Shuai,premature aging
+SMTS01925,1925,时疫,Shi Yi,Epidemic
+SMTS01926,1926,时疫感冒,Shi Yi Gan Mao,Epidemic Cold
+SMTS01927,1927,昏花,Hun Hua,dizziness
+SMTS01929,1929,晐嗽,Gai Sou,cough
+SMTS01930,1930,暑湿吐泻,Shu Shi Tu Xie,vomiting and diarrhea due to summer heat dampness
+SMTS01938,1938,气喘痰多,Qi Chuan Tan Duo,Asthma and excessive phlegm
+SMTS01943,1943,水肿胀满,Shui Zhong Zhang Man,edema and fullness
+SMTS01944,1944,水肿胀满尿少,Shui Zhong Zhang Man Niao Shao,"edema, full urine, and oliguria"
+SMTS01947,1947,泛酸,Fan Suan,pantothenic acid
+SMTS01948,1948,泻痢后重,Xie Li Hou Zhong,severe diarrhea and diarrhea
+SMTS01954,1954,淋巴结结核,Lin Ba Jie Jie He,lymph node tuberculosis
+SMTS01956,1956,淋沥涩痛,Lin Li Se Tong,stranguria and astringent pain
+SMTS01959,1959,温疫时毒,Wen Yi Shi Du,Poison during warm epidemic
+SMTS01960,1960,温病,Wen Bing,febrile disease
+SMTS01963,1963,湿热淋证,Shi Re Lin Zheng,Damp-heat stranguria syndrome
+SMTS01964,1964,湿热疮满,Shi Re Chuang Man,Damp-heat sores
+SMTS01968,1968,湿痹,Shi Bi,Dampness
+SMTS01969,1969,湿痹病,Shi Bi Bing,dampness syndrome
+SMTS01970,1970,溃疡,Kui Yang,Ulcer
+SMTS01973,1973,澹语,Dan Yu,Danyu
+SMTS01974,1974,火毒疮疡,Huo Du Chuang Yang,fire poisonous sores
+SMTS01977,1977,烂喉丹痧,Lan Hou Dan Sha,Sore Throat and Dansha
+SMTS01985,1985,热淋,Re Lin,hot stranguria
+SMTS01988,1988,热痹,Re Bi,heat numbness
+SMTS01989,1989,热证,Re Zheng,heat syndrome
+SMTS01990,1990,焮肿,Xin Zhong,swelling
+SMTS01991,1991,牙疳,Ya Gan,Teeth Crane
+SMTS01992,1992,牙龈疼痛,Ya Ken Teng Tong,gum pain
+SMTS01993,1993,牙龈肿痛出血,Ya Ken Zhong Tong Chu Xie,"swollen, painful and bleeding gums"
+SMTS01995,1995,狂证,Kuang Zheng,Madness Syndrome
+SMTS01998,1998,疔疮肿毒,Ding Chuang Zhong Du,"boils, swelling and poison"
+SMTS01999,1999,疔肿,Ding Zhong,boils
+SMTS02001,2001,疗毒,Liao Du,Healing Poison
+SMTS02002,2002,疗疮,Liao Chuang,Treating Sores
+SMTS02003,2003,疝气疼痛,Shan Qi Teng Tong,Hernia Pain
+SMTS02015,2015,疮满,Chuang Man,Sores
+SMTS02016,2016,疮疖,Chuang Jie,boils
+SMTS02017,2017,疮疡初起,Chuang Yang Chu Qi,first onset of sores
+SMTS02020,2020,疮疡肿毒,Chuang Yang Zhong Du,"sores, swelling and poison"
+SMTS02021,2021,疮疳,Chuang Gan,Cancer
+SMTS02023,2023,疮痈肿毒,Chuang Yong Zhong Du,"sores, carbuncles, swollen poison"
+SMTS02026,2026,疹紫黑,Zhen Zi Hei,purple-black rash
+SMTS02027,2027,疼痛麻木,Teng Tong Ma Mu,pain and numbness
+SMTS02028,2028,病后虚热不退,Bing Hou Xu Re Bu Tui,Deficiency and heat that persists after illness
+SMTS02033,2033,痈疮肿毒,Yong Chuang Zhong Du,"carbuncle, swelling and poison"
+SMTS02034,2034,痈疽初起,Yong Ju Chu Qi,the beginning of carbuncle
+SMTS02037,2037,痈疽脓成不溃,Yong Ju Nong Cheng Bu Kui,carbuncle with pus that does not ulcerate
+SMTS02038,2038,痈肿疔疮,Yong Zhong Ding Chuang,carbuncle and furuncle
+SMTS02039,2039,痈肿疮毒,Yong Zhong Chuang Du,carbuncle and sore
+SMTS02040,2040,痈肿痰核,Yong Zhong Tan He,"carbuncle, phlegm core"
+SMTS02042,2042,痈肿脓成不溃,Yong Zhong Nong Cheng Bu Kui,"carbuncle, pus, and abscess"
+SMTS02044,2044,痔瘘,Zhi Lv,hemorrhoids and fistulas
+SMTS02045,2045,痔肿出血,Zhi Zhong Chu Xie,hemorrhoids and bleeding
+SMTS02046,2046,痞块,Pi Kuai,lumps
+SMTS02049,2049,痤疮,Cuo Chuang,Acne
+SMTS02050,2050,痧,Sha,Sha
+SMTS02051,2051,痧胀腹痛吐泻,Sha Zhang Fu Tong Tu Xie,"Sha distension, abdominal pain, vomiting and diarrhea"
+SMTS02053,2053,痰嗽,Tan Sou,phlegm and cough
+SMTS02054,2054,痰核,Tan He,Phlegm Core
+SMTS02055,2055,痰湿流注,Tan Shi Liu Zhu,phlegm and dampness flowing down
+SMTS02056,2056,痰热咳嗽,Tan Re Ke Sou,Cough due to phlegm-heat
+SMTS02060,2060,痱子,Fei Zi,prickly heat
+SMTS02061,2061,痹疽,Bi Ju,gangrene
+SMTS02064,2064,瘟疫,Wen Yi,Plague
+SMTS02065,2065,瘰疠,Luo Li,scrofula
+SMTS02067,2067,瘰痂,Luo Jia,scrofula
+SMTS02069,2069,療疬,Liao Li,Treatment of boils
+SMTS02070,2070,療痂,Liao Jia,treating scabs
+SMTS02080,2080,癫证,Dian Zheng,epilepsy syndrome
+SMTS02081,2081,癲狂,Dian Kuang,Madness
+SMTS02085,2085,白带过多,Bai Dai Guo Duo,excessive leucorrhea
+SMTS02094,2094,皮肤溃疡,Pi Fu Kui Yang,skin ulcers
+SMTS02096,2096,皮肤顽癣,Pi Fu Wan Xian,skin tinea
+SMTS02097,2097,目暗,Mu An,dark eyes
+SMTS02098,2098,目涩痛,Mu Se Tong,sore eyes
+SMTS02100,2100,目痛,Mu Tong,eye pain
+SMTS02102,2102,目肿,Mu Zhong,swollen eyes
+SMTS02104,2104,眩悸,Xuan Ji,dizziness and palpitations
+SMTS02107,2107,睾丸肿痛,Gao Wan Zhong Tong,testicular swelling and pain
+SMTS02109,2109,秃疮,Tu Chuang,Bald Sores
+SMTS02110,2110,积聚,Ji Ju,Accumulation
+SMTS02112,2112,筋伤骨折,Jin Shang Gu Zhe,tendon injuries and fractures
+SMTS02113,2113,筋挛,Jin Luan,spasticity
+SMTS02114,2114,筋骨折伤,Jin Gu Zhe Shang,tendon fractures and injuries
+SMTS02117,2117,筋骨痪软,Jin Gu Huan Ruan,weak muscles and bones
+SMTS02118,2118,筋骨痰软,Jin Gu Tan Ruan,Soft muscles and bones with phlegm
+SMTS02120,2120,类风湿性关节炎,Lei Feng Shi Xing Guan Jie Yan,Rheumatoid Arthritis
+SMTS02122,2122,红疹,Hong Zhen,rash
+SMTS02125,2125,经多,Jing Duo,Menorrhagia
+SMTS02131,2131,结胸,Jie Xiong,Chest knot
+SMTS02132,2132,结胸痞满,Jie Xiong Pi Man,knotted chest and fullness
+SMTS02133,2133,绝经期眩晕,Jue Jing Qi Xuan Yun,Menopausal Dizziness
+SMTS02136,2136,缠身蛇丹,Chan Shen She Dan,Snake Pill
+SMTS02138,2138,聘耳流脓,Pin Er Liu Nong,Ear discharge
+SMTS02139,2139,聤耳,Ting Er,Yin Er
+SMTS02141,2141,肉暗紫黑,Rou An Zi Hei,dark purple flesh
+SMTS02142,2142,肝火眩晕,Gan Huo Xuan Yun,Liver fire dizziness
+SMTS02147,2147,肝肾不足腰膝酸冷,Gan Shen Bu Zu Yao Xi Suan Leng,"Insufficiency of liver and kidney, soreness and coldness in waist and knees"
+SMTS02149,2149,肝肾阴虚眩晕耳鸣,Gan Shen Yin Xu Xuan Yun Er Ming,"Liver and kidney yin deficiency, dizziness, tinnitus"
+SMTS02150,2150,肝胃气痛,Gan Wei Qi Tong,Liver and stomach qi pain
+SMTS02156,2156,肠痈,Chang Yong,intestinal carbuncle
+SMTS02157,2157,肠痈肿痛,Chang Yong Zhong Tong,"intestinal abscess, swelling and pain"
+SMTS02159,2159,肠风,Chang Feng,intestinal wind
+SMTS02162,2162,肢体痿软,Zhi Ti Wei Ruan,weakness of limbs
+SMTS02163,2163,肢体酸,Zhi Ti Suan,sore limbs
+SMTS02164,2164,肢体重,Zhi Ti Zhong,heavy limbs
+SMTS02166,2166,肩臂痛,Jian Bi Tong,shoulder and arm pain
+SMTS02167,2167,肩臂酸,Jian Bi Suan,Shoulder and arm soreness
+SMTS02168,2168,肩臂酸痛麻木,Jian Bi Suan Tong Ma Mu,shoulder and arm pain and numbness
+SMTS02169,2169,肩臂麻木,Jian Bi Ma Mu,numbness of shoulders and arms
+SMTS02171,2171,肺捞,Fei Lao,Feilao
+SMTS02177,2177,肺痈吐脓,Fei Yong Tu Nong,lung abscess and vomiting pus
+SMTS02179,2179,肺结核,Fei Jie He,Tuberculosis
+SMTS02180,2180,肺结核咳嗽,Fei Jie He Ke Sou,Tuberculosis Cough
+SMTS02183,2183,肾与小腹冷痛,Shen Yu Xiao Fu Leng Tong,Cold and pain in the kidneys and lower abdomen
+SMTS02184,2184,肾冷痛,Shen Leng Tong,cold kidney pain
+SMTS02193,2193,胀满疼痛,Zhang Man Teng Tong,fullness and pain
+SMTS02194,2194,胃火牙痛,Wei Huo Ya Tong,stomach fire and toothache
+SMTS02201,2201,胸痹刺痛,Xiong Bi Ci Tong,chest pain and tingling pain
+SMTS02203,2203,胸腔积水,Xiong Qiang Ji Shui,pleural effusion
+SMTS02205,2205,胸膈不舒,Xiong Ge Bu Shu,Chest and diaphragm discomfort
+SMTS02206,2206,脉微,Mai Wei,weak pulse
+SMTS02207,2207,脉结代,Mai Jie Dai,pulse knotting
+SMTS02208,2208,脓水淋漓,Nong Shui Lin Li,dripping pus
+SMTS02210,2210,脘痞吐泻,Guan Pi Tu Xie,"epigastrium, vomiting and diarrhea"
+SMTS02211,2211,脘痞呕恶,Guan Pi Ou E,"epigastrium, vomiting and nausea"
+SMTS02212,2212,脘腹挛急疼痛,Guan Fu Luan Ji Teng Tong,acute pain in the epigastrium and abdomen
+SMTS02213,2213,脘腹痞满胀痛,Guan Fu Pi Man Zhang Tong,abdominal fullness and pain
+SMTS02214,2214,脘腹胀满冷痛,Guan Fu Zhang Man Leng Tong,distension and cold pain in the epigastrium
+SMTS02216,2216,脘腹虛痛,Guan Fu Xu Tong,epigastric and abdominal pain
+SMTS02217,2217,脚气肿毒,Jiao Qi Zhong Du,Beriberi Toxin
+SMTS02220,2220,脱力劳伤,Tuo Li Lao Shang,fatigue and fatigue
+SMTS02221,2221,脾肾虚泻,Pi Shen Xu Xie,Spleen and kidney deficiency and diarrhea
+SMTS02222,2222,脾虚泄泻,Pi Xu Xie Xie,Spleen deficiency and diarrhea
+SMTS02223,2223,脾虚食少,Pi Xu Shi Shao,Spleen deficiency and lack of food
+SMTS02225,2225,腰冷痛,Yao Leng Tong,cold pain in the waist
+SMTS02226,2226,腰腿疼痛,Yao Tui Teng Tong,waist and leg pain
+SMTS02229,2229,腰膝痿软,Yao Xi Wei Ruan,weak waist and knees
+SMTS02230,2230,腰部沉重,Yao Bu Chen Zhong,heaviness in the waist
+SMTS02231,2231,腰酸软,Yao Suan Ruan,Soreness and weakness of waist
+SMTS02232,2232,腹中痞块,Fu Zhong Pi Kuai,abdominal mass
+SMTS02233,2233,腹满,Fu Man,abdominal fullness
+SMTS02235,2235,腹腔积水,Fu Qiang Ji Shui,hydroabdominal fluid
+SMTS02236,2236,腿痛,Tui Tong,leg pain
+SMTS02238,2238,膝关节沉重,Xi Guan Jie Chen Zhong,heavy knee joints
+SMTS02239,2239,膝关节疼痛,Xi Guan Jie Teng Tong,Knee Pain
+SMTS02240,2240,膝关节酸,Xi Guan Jie Suan,Knee joint soreness
+SMTS02241,2241,膝冷痛,Xi Leng Tong,cold knee pain
+SMTS02242,2242,膝痛,Xi Tong,Knee Pain
+SMTS02243,2243,膝酸,Xi Suan,Knee Soreness
+SMTS02244,2244,膝酸软,Xi Suan Ruan,Sore and weak knees
+SMTS02245,2245,臁疮,Lian Chuang,ecthyma
+SMTS02249,2249,萎黄,Wei Huang,chlorosis
+SMTS02255,2255,蚀疮,Shi Chuang,Erosion
+SMTS02267,2267,血淋涩痛,Xie Lin Se Tong,bloody and astringent pain
+SMTS02269,2269,血热发斑,Xie Re Fa Ban,blood heat spots
+SMTS02270,2270,血热发疹,Xie Re Fa Zhen,blood heat rash
+SMTS02271,2271,血热吐血,Xie Re Tu Xie,blood heat and vomiting blood
+SMTS02277,2277,血痢,Xie Li,bloody dysentery
+SMTS02280,2280,赤白带下,Chi Bai Dai Xia,red and white discharge
+SMTS02282,2282,足痿,Zu Wei,foot flaccidity
+SMTS02283,2283,趺扑肿痛,Fu Pu Zhong Tong,swelling and pain
+SMTS02284,2284,跌扑损伤,Die Pu Sun Shang,Fall injury
+SMTS02285,2285,跌扑闪挫,Die Pu Shan Cuo,falling and falling
+SMTS02289,2289,转筋,Zhuan Jin,tendon transfer
+SMTS02290,2290,郁闷,Yu Men,Depression
+SMTS02297,2297,闪腰,Shan Yao,flashing waist
+SMTS02299,2299,阳毒发斑,Yang Du Fa Ban,spots caused by impotence
+SMTS02300,2300,阳痪,Yang Huan,Yang paralysis
+SMTS02301,2301,阳痿不孕,Yang Wei Bu Yun,impotence and infertility
+SMTS02302,2302,阳瘘,Yang Lv,impotence
+SMTS02303,2303,阳萎,Yang Wei,Impotence
+SMTS02306,2306,阴虚劳嗽,Yin Xu Lao Sou,Yin deficiency and labor cough
+SMTS02309,2309,院腹冷痛,Yuan Fu Leng Tong,cold and painful abdominal pain
+SMTS02310,2310,院腹括闷,Yuan Fu Kuo Men,Abdominal tightness in hospital
+SMTS02311,2311,雀目,Que Mu,Bird Eyes
+SMTS02314,2314,青盲,Qing Mang,Blue Blindness
+SMTS02315,2315,面目肌肤浮肿,Mian Mu Ji Fu Fu Zhong,puffy facial skin
+SMTS02317,2317,风寒挟湿头痛,Feng Han Xie Shi Tou Tong,Headache due to wind-cold and dampness
+SMTS02319,2319,风寒湿痹痛,Feng Han Shi Bi Tong,wind-cold-damp arthralgia
+SMTS02320,2320,风水浮肿,Feng Shui Fu Zhong,Feng Shui edema
+SMTS02322,2322,风湿关节痿软疼痛,Feng Shi Guan Jie Wei Ruan Teng Tong,rheumatic joint flaccidity and pain
+SMTS02324,2324,风湿热痹,Feng Shi Re Bi,Rheumatism and heat paralysis
+SMTS02326,2326,风湿痹病,Feng Shi Bi Bing,rheumatic paralysis
+SMTS02327,2327,风湿肢体痿软疼痛,Feng Shi Zhi Ti Wei Ruan Teng Tong,"Rheumatism, weakness and pain in limbs"
+SMTS02328,2328,风湿肩臂疼痛,Feng Shi Jian Bi Teng Tong,rheumatic shoulder and arm pain
+SMTS02329,2329,风湿肿痛,Feng Shi Zhong Tong,"rheumatism, swelling and pain"
+SMTS02330,2330,风湿顽痹,Feng Shi Wan Bi,Rheumatism and stubborn paralysis
+SMTS02331,2331,风湿骨痛,Feng Shi Gu Tong,rheumatic bone pain
+SMTS02334,2334,风热郁肺咽痛,Feng Re Yu Fei Yan Tong,"wind-heat, lung stagnation, sore throat"
+SMTS02335,2335,风疹,Feng Zhen,Rubella
+SMTS02337,2337,风痹,Feng Bi,Wind Bi
+SMTS02338,2338,风痹病,Feng Bi Bing,Wind Bi disease
+SMTS02340,2340,饮食不消,Yin Shi Bu Xiao,Insufficiency of diet
+SMTS02341,2341,骨痛,Gu Tong,bone pain
+SMTS02342,2342,骨蒸,Gu Zheng,bone steaming
+SMTS02353,2353,麻痹,Ma Bi,Paralysis
+SMTS02357,2357,黄水淋漓,Huang Shui Lin Li,dripping yellow water
+SMTS02358,2358,黄水疮,Huang Shui Chuang,yellow water sores
+SMTS02360,2360,黄疽,Huang Ju,jaundice
+SMTS02361,2361,黄肿胀满,Huang Zhong Zhang Man,yellow swelling and fullness
+SMTS02362,2362,黏稠难咯,Nian Chou Nan Ge,sticky and difficult

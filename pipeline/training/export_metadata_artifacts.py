@@ -13,6 +13,9 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 ARTIFACT_DIR = PROJECT_ROOT / "pipeline" / "artifacts"
+SYMPTOM_ENGLISH_FILE = (
+    PROJECT_ROOT / "pipeline" / "data" / "processed" / "Symptom_English_Names.csv"
+)
 
 
 def read_json(path: Path):
@@ -61,24 +64,21 @@ def smhb_id(value: str | int) -> str:
 
 def build_symptoms_metadata() -> list[dict[str, str]]:
     symptom_columns = read_json(ARTIFACT_DIR / "symptom_columns.json")["columns"]
-    source = pd.read_excel(
-        PROJECT_ROOT / "pipeline/data/original/Symptoms_Data_SymMap_SMTS.xlsx"
-    )
-    label_by_id = {
-        smts_id(row["TCM_symptom_id"]): clean_label(row["TCM_symptom_name"], "")
-        for _, row in source.iterrows()
-    }
+    english_by_id = {}
+    if SYMPTOM_ENGLISH_FILE.exists():
+        english_df = pd.read_csv(SYMPTOM_ENGLISH_FILE).fillna("")
+        english_by_id = {
+            str(row["id"]): clean_label(row["english_name"], str(row["id"]))
+            for _, row in english_df.iterrows()
+        }
 
-    records = []
-    for symptom in symptom_columns:
-        artifact_id = smts_id(symptom)
-        records.append(
-            {
-                "id": artifact_id,
-                "label": label_by_id.get(artifact_id) or artifact_id,
-            }
-        )
-    return records
+    return [
+        {
+            "id": smts_id(symptom),
+            "label": english_by_id.get(smts_id(symptom), smts_id(symptom)),
+        }
+        for symptom in symptom_columns
+    ]
 
 
 def build_syndromes_metadata() -> list[dict[str, str]]:

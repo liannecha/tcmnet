@@ -1,4 +1,5 @@
 fastapi
+deep-translator
 matplotlib
 networkx
 numpy

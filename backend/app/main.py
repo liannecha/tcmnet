@@ -1,4 +1,4 @@
-"""FastAPI app for frozen TCMNet inference."""
+"""FastAPI server entry point."""
 from __future__ import annotations
 
 import os

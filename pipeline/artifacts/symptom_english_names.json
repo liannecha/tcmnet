@@ -1,0 +1,7478 @@
+[
+  {
+    "id": "SMTS00001",
+    "english_name": "belching"
+  },
+  {
+    "id": "SMTS00002",
+    "english_name": "leucorrhea milky white in color"
+  },
+  {
+    "id": "SMTS00003",
+    "english_name": "thin leucorrhea"
+  },
+  {
+    "id": "SMTS00004",
+    "english_name": "increased leucorrhea"
+  },
+  {
+    "id": "SMTS00005",
+    "english_name": "gray hair"
+  },
+  {
+    "id": "SMTS00006",
+    "english_name": "redness of the white of the eye"
+  },
+  {
+    "id": "SMTS00010",
+    "english_name": "macules"
+  },
+  {
+    "id": "SMTS00011",
+    "english_name": "purple-black macules"
+  },
+  {
+    "id": "SMTS00012",
+    "english_name": "hemiplegia"
+  },
+  {
+    "id": "SMTS00013",
+    "english_name": "numbness in half of the body"
+  },
+  {
+    "id": "SMTS00014",
+    "english_name": "Remaining afterbirth"
+  },
+  {
+    "id": "SMTS00015",
+    "english_name": "fullness"
+  },
+  {
+    "id": "SMTS00016",
+    "english_name": "acute contagious conjunctivitis"
+  },
+  {
+    "id": "SMTS00017",
+    "english_name": "violent seizures"
+  },
+  {
+    "id": "SMTS00018",
+    "english_name": "severe diarrhea"
+  },
+  {
+    "id": "SMTS00019",
+    "english_name": "cold back"
+  },
+  {
+    "id": "SMTS00020",
+    "english_name": "back pain"
+  },
+  {
+    "id": "SMTS00021",
+    "english_name": "Back Pain"
+  },
+  {
+    "id": "SMTS00022",
+    "english_name": "Back Pain"
+  },
+  {
+    "id": "SMTS00023",
+    "english_name": "metrorrhagia"
+  },
+  {
+    "id": "SMTS00024",
+    "english_name": "dry nose"
+  },
+  {
+    "id": "SMTS00025",
+    "english_name": "Dry nose"
+  },
+  {
+    "id": "SMTS00026",
+    "english_name": "runny nose and clear discharge"
+  },
+  {
+    "id": "SMTS00027",
+    "english_name": "runny nose and runny nose"
+  },
+  {
+    "id": "SMTS00028",
+    "english_name": "rhinorrhoea"
+  },
+  {
+    "id": "SMTS00029",
+    "english_name": "epistaxis"
+  },
+  {
+    "id": "SMTS00030",
+    "english_name": "nasal congestion"
+  },
+  {
+    "id": "SMTS00032",
+    "english_name": "nasal itching"
+  },
+  {
+    "id": "SMTS00034",
+    "english_name": "Nasal dryness"
+  },
+  {
+    "id": "SMTS00036",
+    "english_name": "amenorrhea"
+  },
+  {
+    "id": "SMTS00037",
+    "english_name": "Bi disease"
+  },
+  {
+    "id": "SMTS00038",
+    "english_name": "numbness and pain"
+  },
+  {
+    "id": "SMTS00039",
+    "english_name": "arm pain"
+  },
+  {
+    "id": "SMTS00040",
+    "english_name": "arm pain"
+  },
+  {
+    "id": "SMTS00041",
+    "english_name": "constipation"
+  },
+  {
+    "id": "SMTS00042",
+    "english_name": "dry stool"
+  },
+  {
+    "id": "SMTS00043",
+    "english_name": "yellow and sticky stool"
+  },
+  {
+    "id": "SMTS00044",
+    "english_name": "constipation"
+  },
+  {
+    "id": "SMTS00045",
+    "english_name": "constipation"
+  },
+  {
+    "id": "SMTS00046",
+    "english_name": "loose stools"
+  },
+  {
+    "id": "SMTS00047",
+    "english_name": "Prolonged loose stools"
+  },
+  {
+    "id": "SMTS00048",
+    "english_name": "pus and blood in stool"
+  },
+  {
+    "id": "SMTS00049",
+    "english_name": "diarrhea"
+  },
+  {
+    "id": "SMTS00050",
+    "english_name": "blood in the stool"
+  },
+  {
+    "id": "SMTS00051",
+    "english_name": "spontaneous sweating due to superficial deficiency"
+  },
+  {
+    "id": "SMTS00052",
+    "english_name": "breathlessness"
+  },
+  {
+    "id": "SMTS00053",
+    "english_name": "Weakness after illness"
+  },
+  {
+    "id": "SMTS00054",
+    "english_name": "hair loss after illness"
+  },
+  {
+    "id": "SMTS00055",
+    "english_name": "weakness after illness"
+  },
+  {
+    "id": "SMTS00056",
+    "english_name": "Not hungry"
+  },
+  {
+    "id": "SMTS00057",
+    "english_name": "insomnia"
+  },
+  {
+    "id": "SMTS00058",
+    "english_name": "Can’t look for long periods of time"
+  },
+  {
+    "id": "SMTS00059",
+    "english_name": "unconsciousness"
+  },
+  {
+    "id": "SMTS00060",
+    "english_name": "Not eating"
+  },
+  {
+    "id": "SMTS00061",
+    "english_name": "Not wanting to eat milk"
+  },
+  {
+    "id": "SMTS00062",
+    "english_name": "Not thinking about eating"
+  },
+  {
+    "id": "SMTS00063",
+    "english_name": "dislike hot drinks"
+  },
+  {
+    "id": "SMTS00064",
+    "english_name": "Infertility"
+  },
+  {
+    "id": "SMTS00065",
+    "english_name": "No desire to eat"
+  },
+  {
+    "id": "SMTS00066",
+    "english_name": "Infertility"
+  },
+  {
+    "id": "SMTS00067",
+    "english_name": "Hard Steps"
+  },
+  {
+    "id": "SMTS00068",
+    "english_name": "Noisy"
+  },
+  {
+    "id": "SMTS00069",
+    "english_name": "noisy vomiting"
+  },
+  {
+    "id": "SMTS00070",
+    "english_name": "noisy and hungry"
+  },
+  {
+    "id": "SMTS00071",
+    "english_name": "Cha Qi"
+  },
+  {
+    "id": "SMTS00072",
+    "english_name": "Pain caused by miscarriage of energy"
+  },
+  {
+    "id": "SMTS00073",
+    "english_name": "Prolonged Postpartum Hemorrhage"
+  },
+  {
+    "id": "SMTS00074",
+    "english_name": "postpartum lochia"
+  },
+  {
+    "id": "SMTS00075",
+    "english_name": "postpartum abdominal pain"
+  },
+  {
+    "id": "SMTS00076",
+    "english_name": "Postpartum Bleeding"
+  },
+  {
+    "id": "SMTS00077",
+    "english_name": "postpartum breast lumps"
+  },
+  {
+    "id": "SMTS00078",
+    "english_name": "Postpartum lactation obstruction"
+  },
+  {
+    "id": "SMTS00079",
+    "english_name": "postpartum breast swelling"
+  },
+  {
+    "id": "SMTS00080",
+    "english_name": "Postpartum oliguria"
+  },
+  {
+    "id": "SMTS00081",
+    "english_name": "postpartum hair loss"
+  },
+  {
+    "id": "SMTS00082",
+    "english_name": "postpartum lower abdominal pain"
+  },
+  {
+    "id": "SMTS00083",
+    "english_name": "postpartum anemia"
+  },
+  {
+    "id": "SMTS00084",
+    "english_name": "Postpartum haemorrhage"
+  },
+  {
+    "id": "SMTS00085",
+    "english_name": "Postpartum blood stasis and pain"
+  },
+  {
+    "id": "SMTS00086",
+    "english_name": "Postpartum deficiency"
+  },
+  {
+    "id": "SMTS00087",
+    "english_name": "Postpartum uterine involution is incomplete"
+  },
+  {
+    "id": "SMTS00088",
+    "english_name": "intestinal wind and blood in the stool"
+  },
+  {
+    "id": "SMTS00089",
+    "english_name": "intestinal wind and bleeding"
+  },
+  {
+    "id": "SMTS00091",
+    "english_name": "bowel borborygmus"
+  },
+  {
+    "id": "SMTS00092",
+    "english_name": "gastrointestinal discomfort"
+  },
+  {
+    "id": "SMTS00093",
+    "english_name": "hot flashes"
+  },
+  {
+    "id": "SMTS00095",
+    "english_name": "swollen face in the morning"
+  },
+  {
+    "id": "SMTS00096",
+    "english_name": "Teeth and epistaxis"
+  },
+  {
+    "id": "SMTS00097",
+    "english_name": "toothache"
+  },
+  {
+    "id": "SMTS00098",
+    "english_name": "gum swelling and pain"
+  },
+  {
+    "id": "SMTS00102",
+    "english_name": "red streaks of erythema"
+  },
+  {
+    "id": "SMTS00104",
+    "english_name": "insect bites, swelling and pain"
+  },
+  {
+    "id": "SMTS00105",
+    "english_name": "convulsions"
+  },
+  {
+    "id": "SMTS00106",
+    "english_name": "convulsions and coma"
+  },
+  {
+    "id": "SMTS00107",
+    "english_name": "bleeding"
+  },
+  {
+    "id": "SMTS00108",
+    "english_name": "hemorrhage"
+  },
+  {
+    "id": "SMTS00109",
+    "english_name": "asthma"
+  },
+  {
+    "id": "SMTS00110",
+    "english_name": "shortness of breath"
+  },
+  {
+    "id": "SMTS00111",
+    "english_name": "shortness of breath and shortness of breath"
+  },
+  {
+    "id": "SMTS00112",
+    "english_name": "Breathing, promoting phlegm and excessive phlegm"
+  },
+  {
+    "id": "SMTS00113",
+    "english_name": "shortness of breath"
+  },
+  {
+    "id": "SMTS00114",
+    "english_name": "asthma and cough"
+  },
+  {
+    "id": "SMTS00115",
+    "english_name": "dyspnea"
+  },
+  {
+    "id": "SMTS00116",
+    "english_name": "asthma and cough"
+  },
+  {
+    "id": "SMTS00117",
+    "english_name": "wheezing"
+  },
+  {
+    "id": "SMTS00118",
+    "english_name": "Sores"
+  },
+  {
+    "id": "SMTS00119",
+    "english_name": "sores, boils and carbuncles"
+  },
+  {
+    "id": "SMTS00120",
+    "english_name": "sores, boils, swelling and poison"
+  },
+  {
+    "id": "SMTS00121",
+    "english_name": "sores, boils, swelling and pain"
+  },
+  {
+    "id": "SMTS00122",
+    "english_name": "Sores that don’t heal for a long time"
+  },
+  {
+    "id": "SMTS00123",
+    "english_name": "sores that persist for a long time"
+  },
+  {
+    "id": "SMTS00124",
+    "english_name": "Sore face pain"
+  },
+  {
+    "id": "SMTS00125",
+    "english_name": "sores appear fresh"
+  },
+  {
+    "id": "SMTS00126",
+    "english_name": "Sores are vivid in color"
+  },
+  {
+    "id": "SMTS00128",
+    "english_name": "sores"
+  },
+  {
+    "id": "SMTS00129",
+    "english_name": "sores that do not heal"
+  },
+  {
+    "id": "SMTS00130",
+    "english_name": "Sores that persist for a long time"
+  },
+  {
+    "id": "SMTS00131",
+    "english_name": "sores and ulcers"
+  },
+  {
+    "id": "SMTS00132",
+    "english_name": "sores, swelling and pain"
+  },
+  {
+    "id": "SMTS00133",
+    "english_name": "sores, swelling and pain"
+  },
+  {
+    "id": "SMTS00134",
+    "english_name": "sores and swelling"
+  },
+  {
+    "id": "SMTS00136",
+    "english_name": "Dry lips"
+  },
+  {
+    "id": "SMTS00137",
+    "english_name": "lip nail bleeding"
+  },
+  {
+    "id": "SMTS00138",
+    "english_name": "pale lip and nail color"
+  },
+  {
+    "id": "SMTS00139",
+    "english_name": "tingling"
+  },
+  {
+    "id": "SMTS00140",
+    "english_name": "sudden fainting"
+  },
+  {
+    "id": "SMTS00141",
+    "english_name": "channeling pain"
+  },
+  {
+    "id": "SMTS00142",
+    "english_name": "Bruised muscles and bones"
+  },
+  {
+    "id": "SMTS00143",
+    "english_name": "difficulty in defecation"
+  },
+  {
+    "id": "SMTS00144",
+    "english_name": "Difficulty in defecation"
+  },
+  {
+    "id": "SMTS00145",
+    "english_name": "Unpleasant bowel movement"
+  },
+  {
+    "id": "SMTS00146",
+    "english_name": "irregular bowel movements"
+  },
+  {
+    "id": "SMTS00148",
+    "english_name": "Inability to defecate"
+  },
+  {
+    "id": "SMTS00149",
+    "english_name": "Smelly stool"
+  },
+  {
+    "id": "SMTS00150",
+    "english_name": "bleeding in stool"
+  },
+  {
+    "id": "SMTS00151",
+    "english_name": "increased stool frequency"
+  },
+  {
+    "id": "SMTS00152",
+    "english_name": "dry stool"
+  },
+  {
+    "id": "SMTS00153",
+    "english_name": "dry stool"
+  },
+  {
+    "id": "SMTS00154",
+    "english_name": "dry and hard stool"
+  },
+  {
+    "id": "SMTS00155",
+    "english_name": "dry stool"
+  },
+  {
+    "id": "SMTS00156",
+    "english_name": "Difficulty in defecation"
+  },
+  {
+    "id": "SMTS00157",
+    "english_name": "constipation"
+  },
+  {
+    "id": "SMTS00158",
+    "english_name": "sticky stool"
+  },
+  {
+    "id": "SMTS00159",
+    "english_name": "Sticky and unpleasant stools"
+  },
+  {
+    "id": "SMTS00160",
+    "english_name": "pus and blood in stool"
+  },
+  {
+    "id": "SMTS00161",
+    "english_name": "loose stools"
+  },
+  {
+    "id": "SMTS00162",
+    "english_name": "Defecation Disorders"
+  },
+  {
+    "id": "SMTS00163",
+    "english_name": "sour and smelly stools"
+  },
+  {
+    "id": "SMTS00164",
+    "english_name": "loose stools"
+  },
+  {
+    "id": "SMTS00165",
+    "english_name": "loose stools"
+  },
+  {
+    "id": "SMTS00166",
+    "english_name": "loose stools"
+  },
+  {
+    "id": "SMTS00167",
+    "english_name": "loose stools and diarrhea"
+  },
+  {
+    "id": "SMTS00168",
+    "english_name": "thin and watery stool"
+  },
+  {
+    "id": "SMTS00169",
+    "english_name": "loose stools"
+  },
+  {
+    "id": "SMTS00170",
+    "english_name": "stool and diarrhea"
+  },
+  {
+    "id": "SMTS00171",
+    "english_name": "dry stool"
+  },
+  {
+    "id": "SMTS00173",
+    "english_name": "white turbid vaginal discharge"
+  },
+  {
+    "id": "SMTS00175",
+    "english_name": "heavy vaginal discharge"
+  },
+  {
+    "id": "SMTS00176",
+    "english_name": "vaginal discharge with yellow color"
+  },
+  {
+    "id": "SMTS00177",
+    "english_name": "vaginal discharge with thick yellowish substance"
+  },
+  {
+    "id": "SMTS00182",
+    "english_name": "Feeling full and noisy"
+  },
+  {
+    "id": "SMTS00183",
+    "english_name": "night sweats"
+  },
+  {
+    "id": "SMTS00184",
+    "english_name": "low fever"
+  },
+  {
+    "id": "SMTS00185",
+    "english_name": "Peak Pain"
+  },
+  {
+    "id": "SMTS00186",
+    "english_name": "Madness"
+  },
+  {
+    "id": "SMTS00187",
+    "english_name": "Epilepsy"
+  },
+  {
+    "id": "SMTS00188",
+    "english_name": "epilepsy with excessive phlegm"
+  },
+  {
+    "id": "SMTS00189",
+    "english_name": "Epilepsy"
+  },
+  {
+    "id": "SMTS00190",
+    "english_name": "bruises and pain"
+  },
+  {
+    "id": "SMTS00191",
+    "english_name": "bruises and injuries"
+  },
+  {
+    "id": "SMTS00192",
+    "english_name": "pain due to bruises and blood stasis"
+  },
+  {
+    "id": "SMTS00193",
+    "english_name": "swelling and pain due to bruises"
+  },
+  {
+    "id": "SMTS00194",
+    "english_name": "Pain due to fall"
+  },
+  {
+    "id": "SMTS00195",
+    "english_name": "falling, fluttering, blood stasis and swelling"
+  },
+  {
+    "id": "SMTS00196",
+    "english_name": "swelling and pain due to falls"
+  },
+  {
+    "id": "SMTS00197",
+    "english_name": "First onset of boils and carbuncles"
+  },
+  {
+    "id": "SMTS00198",
+    "english_name": "boils, swelling and pain"
+  },
+  {
+    "id": "SMTS00199",
+    "english_name": "boils"
+  },
+  {
+    "id": "SMTS00201",
+    "english_name": "Frequent sweating"
+  },
+  {
+    "id": "SMTS00206",
+    "english_name": "shortness of breath"
+  },
+  {
+    "id": "SMTS00208",
+    "english_name": "excessive sweating"
+  },
+  {
+    "id": "SMTS00209",
+    "english_name": "excessive tears"
+  },
+  {
+    "id": "SMTS00210",
+    "english_name": "excessive tears and shy eyesight"
+  },
+  {
+    "id": "SMTS00211",
+    "english_name": "dreaminess"
+  },
+  {
+    "id": "SMTS00212",
+    "english_name": "polyuria"
+  },
+  {
+    "id": "SMTS00213",
+    "english_name": "eating too much"
+  },
+  {
+    "id": "SMTS00214",
+    "english_name": "excessive salivation"
+  },
+  {
+    "id": "SMTS00215",
+    "english_name": "Polydipsia"
+  },
+  {
+    "id": "SMTS00216",
+    "english_name": "hiccups"
+  },
+  {
+    "id": "SMTS00217",
+    "english_name": "malignant sores"
+  },
+  {
+    "id": "SMTS00218",
+    "english_name": "Aversion to wind and cold"
+  },
+  {
+    "id": "SMTS00219",
+    "english_name": "Aversion to cold"
+  },
+  {
+    "id": "SMTS00220",
+    "english_name": "Severe aversion to cold"
+  },
+  {
+    "id": "SMTS00221",
+    "english_name": "aversion to cold and strengthening of heat"
+  },
+  {
+    "id": "SMTS00222",
+    "english_name": "Nausea"
+  },
+  {
+    "id": "SMTS00223",
+    "english_name": "Ear canal discharge"
+  },
+  {
+    "id": "SMTS00224",
+    "english_name": "Deafness"
+  },
+  {
+    "id": "SMTS00225",
+    "english_name": "otorrhea"
+  },
+  {
+    "id": "SMTS00226",
+    "english_name": "tinnitus"
+  },
+  {
+    "id": "SMTS00227",
+    "english_name": "Ear discharge"
+  },
+  {
+    "id": "SMTS00228",
+    "english_name": "swelling and pain under the ears"
+  },
+  {
+    "id": "SMTS00229",
+    "english_name": "fecal incontinence"
+  },
+  {
+    "id": "SMTS00230",
+    "english_name": "hair spots"
+  },
+  {
+    "id": "SMTS00231",
+    "english_name": "Asthma"
+  },
+  {
+    "id": "SMTS00233",
+    "english_name": "Madness"
+  },
+  {
+    "id": "SMTS00234",
+    "english_name": "fever"
+  },
+  {
+    "id": "SMTS00235",
+    "english_name": "severe fever"
+  },
+  {
+    "id": "SMTS00236",
+    "english_name": "fever"
+  },
+  {
+    "id": "SMTS00237",
+    "english_name": "Fayi"
+  },
+  {
+    "id": "SMTS00238",
+    "english_name": "Developmental delay"
+  },
+  {
+    "id": "SMTS00239",
+    "english_name": "Rash"
+  },
+  {
+    "id": "SMTS00240",
+    "english_name": "fatigue"
+  },
+  {
+    "id": "SMTS00241",
+    "english_name": "Tiredness"
+  },
+  {
+    "id": "SMTS00242",
+    "english_name": "Polydipsia"
+  },
+  {
+    "id": "SMTS00243",
+    "english_name": "Fever"
+  },
+  {
+    "id": "SMTS00244",
+    "english_name": "irritability"
+  },
+  {
+    "id": "SMTS00245",
+    "english_name": "irritability"
+  },
+  {
+    "id": "SMTS00246",
+    "english_name": "restlessness"
+  },
+  {
+    "id": "SMTS00247",
+    "english_name": "irritability and discomfort"
+  },
+  {
+    "id": "SMTS00248",
+    "english_name": "irritability and irritability"
+  },
+  {
+    "id": "SMTS00249",
+    "english_name": "Irritability and Delirium"
+  },
+  {
+    "id": "SMTS00250",
+    "english_name": "Acid Reflux"
+  },
+  {
+    "id": "SMTS00251",
+    "english_name": "Nausea"
+  },
+  {
+    "id": "SMTS00252",
+    "english_name": "slow response"
+  },
+  {
+    "id": "SMTS00253",
+    "english_name": "general vomiting of water"
+  },
+  {
+    "id": "SMTS00254",
+    "english_name": "Tuberculosis"
+  },
+  {
+    "id": "SMTS00255",
+    "english_name": "poor lung qi"
+  },
+  {
+    "id": "SMTS00256",
+    "english_name": "Lung heat"
+  },
+  {
+    "id": "SMTS00257",
+    "english_name": "Cough due to lung heat"
+  },
+  {
+    "id": "SMTS00258",
+    "english_name": "lung abscess"
+  },
+  {
+    "id": "SMTS00259",
+    "english_name": "dryness of the lungs"
+  },
+  {
+    "id": "SMTS00260",
+    "english_name": "prickly heat rash bright red"
+  },
+  {
+    "id": "SMTS00261",
+    "english_name": "Acne"
+  },
+  {
+    "id": "SMTS00262",
+    "english_name": "powdery pimples"
+  },
+  {
+    "id": "SMTS00263",
+    "english_name": "headache due to wind cold"
+  },
+  {
+    "id": "SMTS00264",
+    "english_name": "wind-heat"
+  },
+  {
+    "id": "SMTS00265",
+    "english_name": "wind-heat and cold"
+  },
+  {
+    "id": "SMTS00266",
+    "english_name": "rheumatic arthralgia"
+  },
+  {
+    "id": "SMTS00267",
+    "english_name": "rheumatic joint pain"
+  },
+  {
+    "id": "SMTS00268",
+    "english_name": "rheumatic pain"
+  },
+  {
+    "id": "SMTS00269",
+    "english_name": "Rheumatism and blood stasis pain"
+  },
+  {
+    "id": "SMTS00270",
+    "english_name": "rheumatism, weak joints in limbs"
+  },
+  {
+    "id": "SMTS00271",
+    "english_name": "Wind Phlegm"
+  },
+  {
+    "id": "SMTS00272",
+    "english_name": "dizziness caused by wind and phlegm"
+  },
+  {
+    "id": "SMTS00273",
+    "english_name": "wind, phlegm, blood stasis, obstruction of veins"
+  },
+  {
+    "id": "SMTS00274",
+    "english_name": "wind pain"
+  },
+  {
+    "id": "SMTS00275",
+    "english_name": "Wind eye and strings"
+  },
+  {
+    "id": "SMTS00276",
+    "english_name": "rubella redness"
+  },
+  {
+    "id": "SMTS00277",
+    "english_name": "rubella itching"
+  },
+  {
+    "id": "SMTS00278",
+    "english_name": "edema"
+  },
+  {
+    "id": "SMTS00279",
+    "english_name": "Carrion does not go away"
+  },
+  {
+    "id": "SMTS00280",
+    "english_name": "Women’s Dysmenorrhea"
+  },
+  {
+    "id": "SMTS00281",
+    "english_name": "Gynecomastia"
+  },
+  {
+    "id": "SMTS00282",
+    "english_name": "Abdominal pain"
+  },
+  {
+    "id": "SMTS00283",
+    "english_name": "abdominal discomfort"
+  },
+  {
+    "id": "SMTS00284",
+    "english_name": "Abdominal pain"
+  },
+  {
+    "id": "SMTS00285",
+    "english_name": "abdominal fullness"
+  },
+  {
+    "id": "SMTS00286",
+    "english_name": "abdominal fullness and discomfort"
+  },
+  {
+    "id": "SMTS00287",
+    "english_name": "ascites"
+  },
+  {
+    "id": "SMTS00288",
+    "english_name": "abdominal pain"
+  },
+  {
+    "id": "SMTS00289",
+    "english_name": "Abdominal pain"
+  },
+  {
+    "id": "SMTS00290",
+    "english_name": "Diarrhea"
+  },
+  {
+    "id": "SMTS00291",
+    "english_name": "Symptoms in the abdomen"
+  },
+  {
+    "id": "SMTS00292",
+    "english_name": "abdominal distension"
+  },
+  {
+    "id": "SMTS00293",
+    "english_name": "abdominal distension and fullness"
+  },
+  {
+    "id": "SMTS00294",
+    "english_name": "cold pain in the abdomen"
+  },
+  {
+    "id": "SMTS00295",
+    "english_name": "fullness in the abdomen"
+  },
+  {
+    "id": "SMTS00297",
+    "english_name": "Liver fire, red eyes"
+  },
+  {
+    "id": "SMTS00298",
+    "english_name": "pain in liver area"
+  },
+  {
+    "id": "SMTS00299",
+    "english_name": "swelling and pain in the liver area"
+  },
+  {
+    "id": "SMTS00300",
+    "english_name": "Liver heat and red eyes"
+  },
+  {
+    "id": "SMTS00301",
+    "english_name": "liver pain"
+  },
+  {
+    "id": "SMTS00302",
+    "english_name": "Liver Yang dizziness"
+  },
+  {
+    "id": "SMTS00309",
+    "english_name": "dry cough"
+  },
+  {
+    "id": "SMTS00310",
+    "english_name": "retching"
+  },
+  {
+    "id": "SMTS00311",
+    "english_name": "anal sinusitis and bleeding"
+  },
+  {
+    "id": "SMTS00312",
+    "english_name": "anal fissure pain"
+  },
+  {
+    "id": "SMTS00313",
+    "english_name": "anal pain"
+  },
+  {
+    "id": "SMTS00314",
+    "english_name": "Anal prolapse"
+  },
+  {
+    "id": "SMTS00315",
+    "english_name": "Anal swelling and pain"
+  },
+  {
+    "id": "SMTS00316",
+    "english_name": "Anal burning"
+  },
+  {
+    "id": "SMTS00317",
+    "english_name": "high fever"
+  },
+  {
+    "id": "SMTS00318",
+    "english_name": "high fever that does not go away"
+  },
+  {
+    "id": "SMTS00319",
+    "english_name": "febrile convulsions"
+  },
+  {
+    "id": "SMTS00320",
+    "english_name": "high fever and coma"
+  },
+  {
+    "id": "SMTS00321",
+    "english_name": "high blood pressure and headache"
+  },
+  {
+    "id": "SMTS00323",
+    "english_name": "high fever"
+  },
+  {
+    "id": "SMTS00324",
+    "english_name": "high fever that does not go away"
+  },
+  {
+    "id": "SMTS00325",
+    "english_name": "testicular prolapse"
+  },
+  {
+    "id": "SMTS00326",
+    "english_name": "testicular pain"
+  },
+  {
+    "id": "SMTS00327",
+    "english_name": "testicular swelling"
+  },
+  {
+    "id": "SMTS00328",
+    "english_name": "testicle swelling and pain"
+  },
+  {
+    "id": "SMTS00329",
+    "english_name": "expectoration"
+  },
+  {
+    "id": "SMTS00330",
+    "english_name": "expectoration, blood"
+  },
+  {
+    "id": "SMTS00331",
+    "english_name": "Unpleasant expectoration"
+  },
+  {
+    "id": "SMTS00332",
+    "english_name": "Vomiting yellow and thick phlegm"
+  },
+  {
+    "id": "SMTS00333",
+    "english_name": "expectoration with white color"
+  },
+  {
+    "id": "SMTS00334",
+    "english_name": "Vomiting and yellow phlegm"
+  },
+  {
+    "id": "SMTS00335",
+    "english_name": "Vomiting and thin white phlegm"
+  },
+  {
+    "id": "SMTS00336",
+    "english_name": "Vomiting white phlegm"
+  },
+  {
+    "id": "SMTS00337",
+    "english_name": "Unpleasant vomiting"
+  },
+  {
+    "id": "SMTS00338",
+    "english_name": "hemoptysis"
+  },
+  {
+    "id": "SMTS00341",
+    "english_name": "Gong Han"
+  },
+  {
+    "id": "SMTS00343",
+    "english_name": "bone and joint pain"
+  },
+  {
+    "id": "SMTS00344",
+    "english_name": "bone and joint swelling"
+  },
+  {
+    "id": "SMTS00345",
+    "english_name": "joint pain"
+  },
+  {
+    "id": "SMTS00346",
+    "english_name": "joint pain"
+  },
+  {
+    "id": "SMTS00347",
+    "english_name": "bone sprain"
+  },
+  {
+    "id": "SMTS00349",
+    "english_name": "fracture, swelling and pain"
+  },
+  {
+    "id": "SMTS00350",
+    "english_name": "bone steaming fever"
+  },
+  {
+    "id": "SMTS00352",
+    "english_name": "bone swelling"
+  },
+  {
+    "id": "SMTS00354",
+    "english_name": "joint pain"
+  },
+  {
+    "id": "SMTS00355",
+    "english_name": "Joint Disadvantage"
+  },
+  {
+    "id": "SMTS00356",
+    "english_name": "joint pain"
+  },
+  {
+    "id": "SMTS00357",
+    "english_name": "Dull pain in joints"
+  },
+  {
+    "id": "SMTS00358",
+    "english_name": "joint redness, swelling, heat and pain"
+  },
+  {
+    "id": "SMTS00359",
+    "english_name": "joint stiffness"
+  },
+  {
+    "id": "SMTS00360",
+    "english_name": "severe joint pain"
+  },
+  {
+    "id": "SMTS00361",
+    "english_name": "cold joint pain"
+  },
+  {
+    "id": "SMTS00362",
+    "english_name": "joint numbness"
+  },
+  {
+    "id": "SMTS00363",
+    "english_name": "joint sprains"
+  },
+  {
+    "id": "SMTS00364",
+    "english_name": "Inadequate joint flexion and extension"
+  },
+  {
+    "id": "SMTS00365",
+    "english_name": "pain in joints and limbs"
+  },
+  {
+    "id": "SMTS00366",
+    "english_name": "joint pain"
+  },
+  {
+    "id": "SMTS00367",
+    "english_name": "joint pain and numbness"
+  },
+  {
+    "id": "SMTS00368",
+    "english_name": "joint pain"
+  },
+  {
+    "id": "SMTS00369",
+    "english_name": "joint pain and carbuncle"
+  },
+  {
+    "id": "SMTS00370",
+    "english_name": "joint pain"
+  },
+  {
+    "id": "SMTS00371",
+    "english_name": "joint swelling"
+  },
+  {
+    "id": "SMTS00372",
+    "english_name": "joint swelling and pain"
+  },
+  {
+    "id": "SMTS00373",
+    "english_name": "joint swelling and pain"
+  },
+  {
+    "id": "SMTS00376",
+    "english_name": "Cold Hernia"
+  },
+  {
+    "id": "SMTS00377",
+    "english_name": "cold-dampness arthralgia"
+  },
+  {
+    "id": "SMTS00378",
+    "english_name": "cold phlegm"
+  },
+  {
+    "id": "SMTS00379",
+    "english_name": "cold diarrhea"
+  },
+  {
+    "id": "SMTS00380",
+    "english_name": "sweating"
+  },
+  {
+    "id": "SMTS00381",
+    "english_name": "poor sweating"
+  },
+  {
+    "id": "SMTS00382",
+    "english_name": "Perplexed sweating"
+  },
+  {
+    "id": "SMTS00383",
+    "english_name": "less sweating"
+  },
+  {
+    "id": "SMTS00385",
+    "english_name": "abdominal pain during menstruation"
+  },
+  {
+    "id": "SMTS00386",
+    "english_name": "cold pain in lower abdomen during menstruation"
+  },
+  {
+    "id": "SMTS00387",
+    "english_name": "Weakness in walking"
+  },
+  {
+    "id": "SMTS00388",
+    "english_name": "black stool"
+  },
+  {
+    "id": "SMTS00390",
+    "english_name": "fever"
+  },
+  {
+    "id": "SMTS00392",
+    "english_name": "redness and swelling"
+  },
+  {
+    "id": "SMTS00394",
+    "english_name": "redness and swelling of the throat core"
+  },
+  {
+    "id": "SMTS00395",
+    "english_name": "Swelling of laryngeal core"
+  },
+  {
+    "id": "SMTS00396",
+    "english_name": "Phlegm in the throat"
+  },
+  {
+    "id": "SMTS00397",
+    "english_name": "sore throat"
+  },
+  {
+    "id": "SMTS00398",
+    "english_name": "itchy throat"
+  },
+  {
+    "id": "SMTS00399",
+    "english_name": "Sound in the throat"
+  },
+  {
+    "id": "SMTS00400",
+    "english_name": "swollen larynx"
+  },
+  {
+    "id": "SMTS00402",
+    "english_name": "shortness of breath"
+  },
+  {
+    "id": "SMTS00403",
+    "english_name": "Huajing"
+  },
+  {
+    "id": "SMTS00405",
+    "english_name": "jaundice"
+  },
+  {
+    "id": "SMTS00406",
+    "english_name": "yellow phlegm"
+  },
+  {
+    "id": "SMTS00407",
+    "english_name": "lumbosacral pain in the lower abdomen and perineum"
+  },
+  {
+    "id": "SMTS00408",
+    "english_name": "fainting"
+  },
+  {
+    "id": "SMTS00409",
+    "english_name": "coma"
+  },
+  {
+    "id": "SMTS00410",
+    "english_name": "Fainting"
+  },
+  {
+    "id": "SMTS00411",
+    "english_name": "lethargy"
+  },
+  {
+    "id": "SMTS00412",
+    "english_name": "limited activity"
+  },
+  {
+    "id": "SMTS00413",
+    "english_name": "Movement Disorder"
+  },
+  {
+    "id": "SMTS00414",
+    "english_name": "red skin"
+  },
+  {
+    "id": "SMTS00415",
+    "english_name": "several lumps under the skin"
+  },
+  {
+    "id": "SMTS00416",
+    "english_name": "a lump under the skin"
+  },
+  {
+    "id": "SMTS00417",
+    "english_name": "several skin bumps"
+  },
+  {
+    "id": "SMTS00418",
+    "english_name": "A lump on the skin can be moved by pushing it"
+  },
+  {
+    "id": "SMTS00419",
+    "english_name": "Muscle and joint pain"
+  },
+  {
+    "id": "SMTS00420",
+    "english_name": "muscle redness, swelling, heat and pain"
+  },
+  {
+    "id": "SMTS00421",
+    "english_name": "severe muscle pain"
+  },
+  {
+    "id": "SMTS00422",
+    "english_name": "muscle numbness"
+  },
+  {
+    "id": "SMTS00423",
+    "english_name": "Muscle Fatigue"
+  },
+  {
+    "id": "SMTS00424",
+    "english_name": "Muscle soreness and numbness"
+  },
+  {
+    "id": "SMTS00425",
+    "english_name": "muscle soreness"
+  },
+  {
+    "id": "SMTS00426",
+    "english_name": "Muscle Pain"
+  },
+  {
+    "id": "SMTS00427",
+    "english_name": "Muscle atrophy"
+  },
+  {
+    "id": "SMTS00428",
+    "english_name": "Muscle thinning"
+  },
+  {
+    "id": "SMTS00429",
+    "english_name": "muscle weakness and weakness"
+  },
+  {
+    "id": "SMTS00430",
+    "english_name": "accumulation of lumps"
+  },
+  {
+    "id": "SMTS00431",
+    "english_name": "stagnation"
+  },
+  {
+    "id": "SMTS00432",
+    "english_name": "lingering stagnation"
+  },
+  {
+    "id": "SMTS00433",
+    "english_name": "internal stagnation"
+  },
+  {
+    "id": "SMTS00434",
+    "english_name": "stagnation and fullness"
+  },
+  {
+    "id": "SMTS00436",
+    "english_name": "acute onset and hemiplegia"
+  },
+  {
+    "id": "SMTS00437",
+    "english_name": "irritable and irritable"
+  },
+  {
+    "id": "SMTS00438",
+    "english_name": "memory loss"
+  },
+  {
+    "id": "SMTS00439",
+    "english_name": "memory loss"
+  },
+  {
+    "id": "SMTS00441",
+    "english_name": "shoulder and back pain"
+  },
+  {
+    "id": "SMTS00442",
+    "english_name": "shoulder and arm pain"
+  },
+  {
+    "id": "SMTS00443",
+    "english_name": "severe shoulder pain"
+  },
+  {
+    "id": "SMTS00444",
+    "english_name": "shoulder and neck pain"
+  },
+  {
+    "id": "SMTS00445",
+    "english_name": "Shoulder Pain"
+  },
+  {
+    "id": "SMTS00446",
+    "english_name": "Red and rotten eyelid strings"
+  },
+  {
+    "id": "SMTS00447",
+    "english_name": "Forgetfulness"
+  },
+  {
+    "id": "SMTS00449",
+    "english_name": "stiffness"
+  },
+  {
+    "id": "SMTS00450",
+    "english_name": "stiffness and deformity"
+  },
+  {
+    "id": "SMTS00451",
+    "english_name": "Anxiety"
+  },
+  {
+    "id": "SMTS00453",
+    "english_name": "athlete’s foot and edema"
+  },
+  {
+    "id": "SMTS00454",
+    "english_name": "heavy feet"
+  },
+  {
+    "id": "SMTS00455",
+    "english_name": "boils and swelling"
+  },
+  {
+    "id": "SMTS00458",
+    "english_name": "scabies itching"
+  },
+  {
+    "id": "SMTS00459",
+    "english_name": "body fluid injury"
+  },
+  {
+    "id": "SMTS00460",
+    "english_name": "muscle and bone aches"
+  },
+  {
+    "id": "SMTS00461",
+    "english_name": "muscle and bone pain"
+  },
+  {
+    "id": "SMTS00462",
+    "english_name": "weak muscles and bones"
+  },
+  {
+    "id": "SMTS00463",
+    "english_name": "weakness of muscles and bones"
+  },
+  {
+    "id": "SMTS00464",
+    "english_name": "muscle and bone stasis and pain"
+  },
+  {
+    "id": "SMTS00465",
+    "english_name": "Tension in tendons and arteries"
+  },
+  {
+    "id": "SMTS00466",
+    "english_name": "muscle spasm"
+  },
+  {
+    "id": "SMTS00467",
+    "english_name": "tendon sprain"
+  },
+  {
+    "id": "SMTS00468",
+    "english_name": "tendon injury"
+  },
+  {
+    "id": "SMTS00470",
+    "english_name": "amenorrhea"
+  },
+  {
+    "id": "SMTS00471",
+    "english_name": "Sluggish menstruation at the beginning of menstruation"
+  },
+  {
+    "id": "SMTS00472",
+    "english_name": "Irregular menstruation"
+  },
+  {
+    "id": "SMTS00473",
+    "english_name": "abdominal pain during menstruation"
+  },
+  {
+    "id": "SMTS00474",
+    "english_name": "low menstrual flow"
+  },
+  {
+    "id": "SMTS00475",
+    "english_name": "Reduced menstrual pain"
+  },
+  {
+    "id": "SMTS00476",
+    "english_name": "cold pain in lower abdomen during menstruation"
+  },
+  {
+    "id": "SMTS00477",
+    "english_name": "lower abdominal pain during menstruation"
+  },
+  {
+    "id": "SMTS00478",
+    "english_name": "Feeling hot in the lower abdomen during menstruation"
+  },
+  {
+    "id": "SMTS00479",
+    "english_name": "lower abdominal distension and pain during menstruation"
+  },
+  {
+    "id": "SMTS00480",
+    "english_name": "low menstrual flow and blood clots"
+  },
+  {
+    "id": "SMTS00481",
+    "english_name": "abdominal pain during menstruation"
+  },
+  {
+    "id": "SMTS00482",
+    "english_name": "prolonged menstruation"
+  },
+  {
+    "id": "SMTS00483",
+    "english_name": "Premenstrual abdominal pain worsens"
+  },
+  {
+    "id": "SMTS00484",
+    "english_name": "Premenstrual breast swelling and pain"
+  },
+  {
+    "id": "SMTS00485",
+    "english_name": "Premenstrual breast swelling"
+  },
+  {
+    "id": "SMTS00486",
+    "english_name": "Premenstrual breast swelling and pain"
+  },
+  {
+    "id": "SMTS00487",
+    "english_name": "worsening of premenstrual pain"
+  },
+  {
+    "id": "SMTS00488",
+    "english_name": "Premenstrual headache"
+  },
+  {
+    "id": "SMTS00489",
+    "english_name": "Premenstrual irritability"
+  },
+  {
+    "id": "SMTS00490",
+    "english_name": "Premenstrual chest tightness"
+  },
+  {
+    "id": "SMTS00491",
+    "english_name": "scanty menstruation and light color"
+  },
+  {
+    "id": "SMTS00492",
+    "english_name": "Menstrual fluid dripping and unclean"
+  },
+  {
+    "id": "SMTS00493",
+    "english_name": "dark purple menstrual blood"
+  },
+  {
+    "id": "SMTS00495",
+    "english_name": "convulsions and convulsions"
+  },
+  {
+    "id": "SMTS00496",
+    "english_name": "palpitation"
+  },
+  {
+    "id": "SMTS00497",
+    "english_name": "panic and restlessness"
+  },
+  {
+    "id": "SMTS00498",
+    "english_name": "panic and restlessness"
+  },
+  {
+    "id": "SMTS00499",
+    "english_name": "palpitation and dreaminess"
+  },
+  {
+    "id": "SMTS00500",
+    "english_name": "convulsions"
+  },
+  {
+    "id": "SMTS00501",
+    "english_name": "Panic"
+  },
+  {
+    "id": "SMTS00502",
+    "english_name": "epilepsy"
+  },
+  {
+    "id": "SMTS00503",
+    "english_name": "epilepsy and restlessness"
+  },
+  {
+    "id": "SMTS00504",
+    "english_name": "Jing deficiency"
+  },
+  {
+    "id": "SMTS00505",
+    "english_name": "Jing Leng"
+  },
+  {
+    "id": "SMTS00506",
+    "english_name": "Insufficient Essence and Qi"
+  },
+  {
+    "id": "SMTS00507",
+    "english_name": "Lack of energy"
+  },
+  {
+    "id": "SMTS00508",
+    "english_name": "Trance"
+  },
+  {
+    "id": "SMTS00509",
+    "english_name": "listlessness"
+  },
+  {
+    "id": "SMTS00510",
+    "english_name": "Mental Depression"
+  },
+  {
+    "id": "SMTS00511",
+    "english_name": "semen overflow"
+  },
+  {
+    "id": "SMTS00512",
+    "english_name": "stiff neck and shoulders"
+  },
+  {
+    "id": "SMTS00513",
+    "english_name": "Inability to move the neck"
+  },
+  {
+    "id": "SMTS00515",
+    "english_name": "stiff neck"
+  },
+  {
+    "id": "SMTS00516",
+    "english_name": "Neck tension and discomfort"
+  },
+  {
+    "id": "SMTS00517",
+    "english_name": "Neck Pain"
+  },
+  {
+    "id": "SMTS00518",
+    "english_name": "cervical spondylosis type headache"
+  },
+  {
+    "id": "SMTS00520",
+    "english_name": "Soreness and weakness in shins and knees"
+  },
+  {
+    "id": "SMTS00521",
+    "english_name": "convulsions"
+  },
+  {
+    "id": "SMTS00522",
+    "english_name": "spasm"
+  },
+  {
+    "id": "SMTS00523",
+    "english_name": "chronic illness and weakness"
+  },
+  {
+    "id": "SMTS00524",
+    "english_name": "Chronic Cough"
+  },
+  {
+    "id": "SMTS00525",
+    "english_name": "persistent cough"
+  },
+  {
+    "id": "SMTS00528",
+    "english_name": "chronic malaria and physical weakness"
+  },
+  {
+    "id": "SMTS00529",
+    "english_name": "Chronic Cough"
+  },
+  {
+    "id": "SMTS00530",
+    "english_name": "persistent cough"
+  },
+  {
+    "id": "SMTS00531",
+    "english_name": "chronic diarrhea"
+  },
+  {
+    "id": "SMTS00532",
+    "english_name": "persistent diarrhea"
+  },
+  {
+    "id": "SMTS00533",
+    "english_name": "chronic diarrhea and dysentery"
+  },
+  {
+    "id": "SMTS00534",
+    "english_name": "chronic diarrhea and anal prolapse"
+  },
+  {
+    "id": "SMTS00535",
+    "english_name": "spasm and numbness"
+  },
+  {
+    "id": "SMTS00536",
+    "english_name": "local aversion to cold"
+  },
+  {
+    "id": "SMTS00537",
+    "english_name": "local redness and swelling"
+  },
+  {
+    "id": "SMTS00538",
+    "english_name": "local fear of wind and cold"
+  },
+  {
+    "id": "SMTS00539",
+    "english_name": "local fear of wind and cold"
+  },
+  {
+    "id": "SMTS00540",
+    "english_name": "local chills"
+  },
+  {
+    "id": "SMTS00542",
+    "english_name": "Burnout"
+  },
+  {
+    "id": "SMTS00543",
+    "english_name": "fatigue and fatigue"
+  },
+  {
+    "id": "SMTS00544",
+    "english_name": "Jueyin headache"
+  },
+  {
+    "id": "SMTS00545",
+    "english_name": "Cough and asthma"
+  },
+  {
+    "id": "SMTS00546",
+    "english_name": "Cough, asthma and severe pain"
+  },
+  {
+    "id": "SMTS00547",
+    "english_name": "bursts of coughing and choking"
+  },
+  {
+    "id": "SMTS00548",
+    "english_name": "Cough and even wheezing"
+  },
+  {
+    "id": "SMTS00549",
+    "english_name": "cough"
+  },
+  {
+    "id": "SMTS00550",
+    "english_name": "Frequent cough"
+  },
+  {
+    "id": "SMTS00551",
+    "english_name": "Cough that lasts for a long time"
+  },
+  {
+    "id": "SMTS00552",
+    "english_name": "Cough with excessive phlegm"
+  },
+  {
+    "id": "SMTS00553",
+    "english_name": "Cough with excessive phlegm"
+  },
+  {
+    "id": "SMTS00554",
+    "english_name": "Cough with phlegm"
+  },
+  {
+    "id": "SMTS00555",
+    "english_name": "Cough bursts"
+  },
+  {
+    "id": "SMTS00556",
+    "english_name": "Unpleasant coughing up phlegm"
+  },
+  {
+    "id": "SMTS00557",
+    "english_name": "endless coughing up phlegm"
+  },
+  {
+    "id": "SMTS00558",
+    "english_name": "coughing up phlegm with blood"
+  },
+  {
+    "id": "SMTS00559",
+    "english_name": "cough with white phlegm"
+  },
+  {
+    "id": "SMTS00560",
+    "english_name": "Unpleasant cough and vomiting"
+  },
+  {
+    "id": "SMTS00561",
+    "english_name": "coughing up blood"
+  },
+  {
+    "id": "SMTS00562",
+    "english_name": "Thirst"
+  },
+  {
+    "id": "SMTS00563",
+    "english_name": "Thirst and no desire to drink"
+  },
+  {
+    "id": "SMTS00564",
+    "english_name": "Thirst and no desire to drink"
+  },
+  {
+    "id": "SMTS00565",
+    "english_name": "Sores in the mouth and nose"
+  },
+  {
+    "id": "SMTS00566",
+    "english_name": "bad breath"
+  },
+  {
+    "id": "SMTS00567",
+    "english_name": "Aphthous Sores"
+  },
+  {
+    "id": "SMTS00568",
+    "english_name": "aphthous swelling and pain"
+  },
+  {
+    "id": "SMTS00569",
+    "english_name": "blue lips"
+  },
+  {
+    "id": "SMTS00570",
+    "english_name": "cyanosis of lips"
+  },
+  {
+    "id": "SMTS00571",
+    "english_name": "Bland mouth"
+  },
+  {
+    "id": "SMTS00573",
+    "english_name": "dry mouth"
+  },
+  {
+    "id": "SMTS00574",
+    "english_name": "quarrels and quarrels"
+  },
+  {
+    "id": "SMTS00575",
+    "english_name": "salivation at the corners of the mouth"
+  },
+  {
+    "id": "SMTS00576",
+    "english_name": "Silence of mouth"
+  },
+  {
+    "id": "SMTS00577",
+    "english_name": "Thirst"
+  },
+  {
+    "id": "SMTS00578",
+    "english_name": "Thirst and no desire to drink"
+  },
+  {
+    "id": "SMTS00579",
+    "english_name": "thirsty and fond of drinking"
+  },
+  {
+    "id": "SMTS00580",
+    "english_name": "Bitter mouth"
+  },
+  {
+    "id": "SMTS00581",
+    "english_name": "Oral erosion"
+  },
+  {
+    "id": "SMTS00582",
+    "english_name": "sticky mouth"
+  },
+  {
+    "id": "SMTS00584",
+    "english_name": "Oral ulcers that persist for a long time"
+  },
+  {
+    "id": "SMTS00586",
+    "english_name": "Dry mouth and tongue"
+  },
+  {
+    "id": "SMTS00587",
+    "english_name": "Sores on the mouth and tongue"
+  },
+  {
+    "id": "SMTS00589",
+    "english_name": "swelling and pain in mouth and tongue"
+  },
+  {
+    "id": "SMTS00590",
+    "english_name": "mouth sores"
+  },
+  {
+    "id": "SMTS00591",
+    "english_name": "spitting at the mouth"
+  },
+  {
+    "id": "SMTS00592",
+    "english_name": "Mouth"
+  },
+  {
+    "id": "SMTS00593",
+    "english_name": "vortex of mouth and eyes"
+  },
+  {
+    "id": "SMTS00594",
+    "english_name": "Mouth"
+  },
+  {
+    "id": "SMTS00595",
+    "english_name": "Dry mouth"
+  },
+  {
+    "id": "SMTS00596",
+    "english_name": "sweetness and greasiness in the mouth"
+  },
+  {
+    "id": "SMTS00597",
+    "english_name": "Mania"
+  },
+  {
+    "id": "SMTS00598",
+    "english_name": "ulcers that do not heal"
+  },
+  {
+    "id": "SMTS00599",
+    "english_name": "stinging pain"
+  },
+  {
+    "id": "SMTS00600",
+    "english_name": "Lazy Talk"
+  },
+  {
+    "id": "SMTS00601",
+    "english_name": "Strain"
+  },
+  {
+    "id": "SMTS00602",
+    "english_name": "labor cough"
+  },
+  {
+    "id": "SMTS00603",
+    "english_name": "labor cough and hemoptysis"
+  },
+  {
+    "id": "SMTS00604",
+    "english_name": "tuberculosis and cough"
+  },
+  {
+    "id": "SMTS00605",
+    "english_name": "Mild Cognitive Impairment in the Elderly"
+  },
+  {
+    "id": "SMTS00606",
+    "english_name": "Soreness and weakness in waist and knees in the elderly"
+  },
+  {
+    "id": "SMTS00607",
+    "english_name": "thinness"
+  },
+  {
+    "id": "SMTS00608",
+    "english_name": "intercostal neuralgia"
+  },
+  {
+    "id": "SMTS00609",
+    "english_name": "cold asthma"
+  },
+  {
+    "id": "SMTS00610",
+    "english_name": "cold sweat spontaneously"
+  },
+  {
+    "id": "SMTS00611",
+    "english_name": "cold pain"
+  },
+  {
+    "id": "SMTS00612",
+    "english_name": "cold asthma"
+  },
+  {
+    "id": "SMTS00613",
+    "english_name": "cold diarrhea"
+  },
+  {
+    "id": "SMTS00614",
+    "english_name": "tenesmus"
+  },
+  {
+    "id": "SMTS00616",
+    "english_name": "ecthyma and erosion"
+  },
+  {
+    "id": "SMTS00617",
+    "english_name": "Pain in both cheeks"
+  },
+  {
+    "id": "SMTS00618",
+    "english_name": "swollen cheeks"
+  },
+  {
+    "id": "SMTS00619",
+    "english_name": "swelling and pain in both cheeks"
+  },
+  {
+    "id": "SMTS00620",
+    "english_name": "Pain in both flanks"
+  },
+  {
+    "id": "SMTS00621",
+    "english_name": "swelling and pain in both sides of the body"
+  },
+  {
+    "id": "SMTS00622",
+    "english_name": "tingling in both eyes"
+  },
+  {
+    "id": "SMTS00623",
+    "english_name": "Lymph Pain"
+  },
+  {
+    "id": "SMTS00625",
+    "english_name": "stranguria syndrome, astringent pain"
+  },
+  {
+    "id": "SMTS00627",
+    "english_name": "stranguria"
+  },
+  {
+    "id": "SMTS00629",
+    "english_name": "Post-abortion Bleeding"
+  },
+  {
+    "id": "SMTS00630",
+    "english_name": "poor uterine contractions after miscarriage"
+  },
+  {
+    "id": "SMTS00631",
+    "english_name": "yellow and thick nasal discharge"
+  },
+  {
+    "id": "SMTS00632",
+    "english_name": "yellow runny nose"
+  },
+  {
+    "id": "SMTS00633",
+    "english_name": "yellowish and turbid nasal discharge"
+  },
+  {
+    "id": "SMTS00634",
+    "english_name": "Tears"
+  },
+  {
+    "id": "SMTS00635",
+    "english_name": "pus discharge"
+  },
+  {
+    "id": "SMTS00636",
+    "english_name": "purulent nasal discharge"
+  },
+  {
+    "id": "SMTS00637",
+    "english_name": "runny nose"
+  },
+  {
+    "id": "SMTS00638",
+    "english_name": "runny nose"
+  },
+  {
+    "id": "SMTS00639",
+    "english_name": "runny nose and sticky white urine"
+  },
+  {
+    "id": "SMTS00641",
+    "english_name": "runny nose"
+  },
+  {
+    "id": "SMTS00642",
+    "english_name": "Scrofula"
+  },
+  {
+    "id": "SMTS00643",
+    "english_name": "Scrofula does not break out"
+  },
+  {
+    "id": "SMTS00644",
+    "english_name": "stiff neck"
+  },
+  {
+    "id": "SMTS00645",
+    "english_name": "Repeated Miscarriages"
+  },
+  {
+    "id": "SMTS00646",
+    "english_name": "numbness and itching"
+  },
+  {
+    "id": "SMTS00647",
+    "english_name": "Numbness"
+  },
+  {
+    "id": "SMTS00648",
+    "english_name": "numbness and spasm"
+  },
+  {
+    "id": "SMTS00649",
+    "english_name": "numbness and paralysis"
+  },
+  {
+    "id": "SMTS00650",
+    "english_name": "Measles is not clear"
+  },
+  {
+    "id": "SMTS00651",
+    "english_name": "Thready pulse"
+  },
+  {
+    "id": "SMTS00652",
+    "english_name": "thin pulse"
+  },
+  {
+    "id": "SMTS00653",
+    "english_name": "thin and weak pulse"
+  },
+  {
+    "id": "SMTS00654",
+    "english_name": "thin and astringent pulse"
+  },
+  {
+    "id": "SMTS00655",
+    "english_name": "thready and rapid pulse"
+  },
+  {
+    "id": "SMTS00656",
+    "english_name": "thin and stringy pulse"
+  },
+  {
+    "id": "SMTS00657",
+    "english_name": "stringy and thin pulse"
+  },
+  {
+    "id": "SMTS00658",
+    "english_name": "chronic diarrhea"
+  },
+  {
+    "id": "SMTS00660",
+    "english_name": "hair falling out in patches"
+  },
+  {
+    "id": "SMTS00661",
+    "english_name": "Hair is thinning and falling out"
+  },
+  {
+    "id": "SMTS00662",
+    "english_name": "dry hair"
+  },
+  {
+    "id": "SMTS00663",
+    "english_name": "loose hair"
+  },
+  {
+    "id": "SMTS00664",
+    "english_name": "greasy hair"
+  },
+  {
+    "id": "SMTS00666",
+    "english_name": "wet dreams"
+  },
+  {
+    "id": "SMTS00667",
+    "english_name": "poor sleep"
+  },
+  {
+    "id": "SMTS00668",
+    "english_name": "red face"
+  },
+  {
+    "id": "SMTS00669",
+    "english_name": "Facial edema"
+  },
+  {
+    "id": "SMTS00670",
+    "english_name": "flushing"
+  },
+  {
+    "id": "SMTS00671",
+    "english_name": "yellow face"
+  },
+  {
+    "id": "SMTS00672",
+    "english_name": "Facial complexion becomes yellowish"
+  },
+  {
+    "id": "SMTS00673",
+    "english_name": "weak-looking face"
+  },
+  {
+    "id": "SMTS00674",
+    "english_name": "Unpleasant complexion"
+  },
+  {
+    "id": "SMTS00675",
+    "english_name": "pale complexion"
+  },
+  {
+    "id": "SMTS00676",
+    "english_name": "Pale complexion"
+  },
+  {
+    "id": "SMTS00677",
+    "english_name": "pale complexion"
+  },
+  {
+    "id": "SMTS00678",
+    "english_name": "pale complexion"
+  },
+  {
+    "id": "SMTS00679",
+    "english_name": "dark complexion"
+  },
+  {
+    "id": "SMTS00680",
+    "english_name": "Shaohua complexion"
+  },
+  {
+    "id": "SMTS00681",
+    "english_name": "sallow complexion"
+  },
+  {
+    "id": "SMTS00682",
+    "english_name": "Pale complexion"
+  },
+  {
+    "id": "SMTS00684",
+    "english_name": "facial and limb edema"
+  },
+  {
+    "id": "SMTS00685",
+    "english_name": "Darkness of vision"
+  },
+  {
+    "id": "SMTS00686",
+    "english_name": "Dark eyesight"
+  },
+  {
+    "id": "SMTS00687",
+    "english_name": "dark eyes and shyness"
+  },
+  {
+    "id": "SMTS00688",
+    "english_name": "red eyes"
+  },
+  {
+    "id": "SMTS00689",
+    "english_name": "red and swollen eyes"
+  },
+  {
+    "id": "SMTS00690",
+    "english_name": "red eyes and dim light"
+  },
+  {
+    "id": "SMTS00691",
+    "english_name": "red eyes and nebula"
+  },
+  {
+    "id": "SMTS00692",
+    "english_name": "red, swollen and painful eyes"
+  },
+  {
+    "id": "SMTS00693",
+    "english_name": "yellowing of eyes"
+  },
+  {
+    "id": "SMTS00694",
+    "english_name": "Flowering Eyes"
+  },
+  {
+    "id": "SMTS00695",
+    "english_name": "yellow eyes"
+  },
+  {
+    "id": "SMTS00696",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS00697",
+    "english_name": "blurred vision"
+  },
+  {
+    "id": "SMTS00698",
+    "english_name": "astringent eyes"
+  },
+  {
+    "id": "SMTS00699",
+    "english_name": "nebula in the eyes"
+  },
+  {
+    "id": "SMTS00700",
+    "english_name": "Unseen clouds"
+  },
+  {
+    "id": "SMTS00701",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS00702",
+    "english_name": "itchy eyes"
+  },
+  {
+    "id": "SMTS00703",
+    "english_name": "blurred vision"
+  },
+  {
+    "id": "SMTS00704",
+    "english_name": "swelling of eyes"
+  },
+  {
+    "id": "SMTS00705",
+    "english_name": "Eye pain at night"
+  },
+  {
+    "id": "SMTS00706",
+    "english_name": "Anorexia"
+  },
+  {
+    "id": "SMTS00707",
+    "english_name": "Nausea"
+  },
+  {
+    "id": "SMTS00708",
+    "english_name": "Nagu is not fragrant"
+  },
+  {
+    "id": "SMTS00709",
+    "english_name": "Nausea"
+  },
+  {
+    "id": "SMTS00710",
+    "english_name": "Nasty and noisy"
+  },
+  {
+    "id": "SMTS00712",
+    "english_name": "Brain Pain"
+  },
+  {
+    "id": "SMTS00713",
+    "english_name": "decreased brain function"
+  },
+  {
+    "id": "SMTS00714",
+    "english_name": "Cerebral Blood Stasis"
+  },
+  {
+    "id": "SMTS00716",
+    "english_name": "Cataract and dark eyes"
+  },
+  {
+    "id": "SMTS00717",
+    "english_name": "Internal Hemorrhoids Bleeding"
+  },
+  {
+    "id": "SMTS00718",
+    "english_name": "Asthma in the elderly"
+  },
+  {
+    "id": "SMTS00719",
+    "english_name": "Asthma in the elderly"
+  },
+  {
+    "id": "SMTS00720",
+    "english_name": "Mucus stool"
+  },
+  {
+    "id": "SMTS00721",
+    "english_name": "red urine"
+  },
+  {
+    "id": "SMTS00722",
+    "english_name": "urethral astringency and pain"
+  },
+  {
+    "id": "SMTS00723",
+    "english_name": "Urethral burning"
+  },
+  {
+    "id": "SMTS00724",
+    "english_name": "dribbling of urine"
+  },
+  {
+    "id": "SMTS00725",
+    "english_name": "dripping after urination"
+  },
+  {
+    "id": "SMTS00726",
+    "english_name": "Incessant drainage after urination"
+  },
+  {
+    "id": "SMTS00727",
+    "english_name": "yellow urine"
+  },
+  {
+    "id": "SMTS00728",
+    "english_name": "urine as yellow as tea"
+  },
+  {
+    "id": "SMTS00729",
+    "english_name": "cloudy urine"
+  },
+  {
+    "id": "SMTS00730",
+    "english_name": "Urgency of urination"
+  },
+  {
+    "id": "SMTS00732",
+    "english_name": "Frequent urination"
+  },
+  {
+    "id": "SMTS00733",
+    "english_name": "Frequent urination"
+  },
+  {
+    "id": "SMTS00734",
+    "english_name": "hot urination"
+  },
+  {
+    "id": "SMTS00735",
+    "english_name": "red-yellow urine"
+  },
+  {
+    "id": "SMTS00736",
+    "english_name": "yellowish urine"
+  },
+  {
+    "id": "SMTS00737",
+    "english_name": "astringent urine"
+  },
+  {
+    "id": "SMTS00738",
+    "english_name": "astringent and painful urination"
+  },
+  {
+    "id": "SMTS00739",
+    "english_name": "oliguria"
+  },
+  {
+    "id": "SMTS00740",
+    "english_name": "painful urination"
+  },
+  {
+    "id": "SMTS00741",
+    "english_name": "thin urine lines"
+  },
+  {
+    "id": "SMTS00742",
+    "english_name": "blood in urine"
+  },
+  {
+    "id": "SMTS00743",
+    "english_name": "bright red blood in urine"
+  },
+  {
+    "id": "SMTS00744",
+    "english_name": "Purple-red blood in urine"
+  },
+  {
+    "id": "SMTS00745",
+    "english_name": "twisted waist"
+  },
+  {
+    "id": "SMTS00746",
+    "english_name": "pus does not ulcerate"
+  },
+  {
+    "id": "SMTS00747",
+    "english_name": "purulent rot and thorns"
+  },
+  {
+    "id": "SMTS00748",
+    "english_name": "pustules"
+  },
+  {
+    "id": "SMTS00749",
+    "english_name": "pus"
+  },
+  {
+    "id": "SMTS00750",
+    "english_name": "purulent phlegm"
+  },
+  {
+    "id": "SMTS00752",
+    "english_name": "epistaxis"
+  },
+  {
+    "id": "SMTS00753",
+    "english_name": "Vomiting"
+  },
+  {
+    "id": "SMTS00754",
+    "english_name": "Vomiting"
+  },
+  {
+    "id": "SMTS00755",
+    "english_name": "vomiting"
+  },
+  {
+    "id": "SMTS00756",
+    "english_name": "Vomiting clear water"
+  },
+  {
+    "id": "SMTS00757",
+    "english_name": "Vomiting after breastfeeding"
+  },
+  {
+    "id": "SMTS00758",
+    "english_name": "Vomiting and phlegm"
+  },
+  {
+    "id": "SMTS00759",
+    "english_name": "vomiting, acid swallowing"
+  },
+  {
+    "id": "SMTS00761",
+    "english_name": "Incontinent urination"
+  },
+  {
+    "id": "SMTS00762",
+    "english_name": "Difficulty urinating"
+  },
+  {
+    "id": "SMTS00763",
+    "english_name": "sneezing"
+  },
+  {
+    "id": "SMTS00765",
+    "english_name": "skin wheals with red color"
+  },
+  {
+    "id": "SMTS00767",
+    "english_name": "dry skin"
+  },
+  {
+    "id": "SMTS00768",
+    "english_name": "yellowish skin"
+  },
+  {
+    "id": "SMTS00769",
+    "english_name": "chapped skin"
+  },
+  {
+    "id": "SMTS00770",
+    "english_name": "skin ulcers"
+  },
+  {
+    "id": "SMTS00771",
+    "english_name": "skin erosion"
+  },
+  {
+    "id": "SMTS00772",
+    "english_name": "skin and mucous membrane ulcers"
+  },
+  {
+    "id": "SMTS00773",
+    "english_name": "blue and purple skin"
+  },
+  {
+    "id": "SMTS00774",
+    "english_name": "itchy skin"
+  },
+  {
+    "id": "SMTS00775",
+    "english_name": "skin spots"
+  },
+  {
+    "id": "SMTS00776",
+    "english_name": "wet and rotten skin"
+  },
+  {
+    "id": "SMTS00777",
+    "english_name": "skin eczema"
+  },
+  {
+    "id": "SMTS00778",
+    "english_name": "skin ecchymosis"
+  },
+  {
+    "id": "SMTS00779",
+    "english_name": "skin swelling and pain"
+  },
+  {
+    "id": "SMTS00780",
+    "english_name": "skin purpura"
+  },
+  {
+    "id": "SMTS00781",
+    "english_name": "skin purpura"
+  },
+  {
+    "id": "SMTS00782",
+    "english_name": "The skin lesions are erythematous and moist"
+  },
+  {
+    "id": "SMTS00783",
+    "english_name": "subcutaneous agglomeration"
+  },
+  {
+    "id": "SMTS00784",
+    "english_name": "Purpura under the skin"
+  },
+  {
+    "id": "SMTS00785",
+    "english_name": "The rash is covered with thick silvery white scales."
+  },
+  {
+    "id": "SMTS00786",
+    "english_name": "bright red rash"
+  },
+  {
+    "id": "SMTS00789",
+    "english_name": "fatigue and weakness"
+  },
+  {
+    "id": "SMTS00790",
+    "english_name": "fatigue"
+  },
+  {
+    "id": "SMTS00791",
+    "english_name": "Spleen and stomach qi stagnation"
+  },
+  {
+    "id": "SMTS00792",
+    "english_name": "spleen deficiency"
+  },
+  {
+    "id": "SMTS00793",
+    "english_name": "spleen deficiency and qi stagnation"
+  },
+  {
+    "id": "SMTS00794",
+    "english_name": "fullness"
+  },
+  {
+    "id": "SMTS00795",
+    "english_name": "Suffocation"
+  },
+  {
+    "id": "SMTS00796",
+    "english_name": "Numbness on one side of the body"
+  },
+  {
+    "id": "SMTS00797",
+    "english_name": "Hemiplegia"
+  },
+  {
+    "id": "SMTS00798",
+    "english_name": "Migraine"
+  },
+  {
+    "id": "SMTS00799",
+    "english_name": "anemia"
+  },
+  {
+    "id": "SMTS00800",
+    "english_name": "umbilical and abdominal distension and pain"
+  },
+  {
+    "id": "SMTS00801",
+    "english_name": "Difficulty in sitting up"
+  },
+  {
+    "id": "SMTS00802",
+    "english_name": "breathlessness and fainting"
+  },
+  {
+    "id": "SMTS00803",
+    "english_name": "Asthma"
+  },
+  {
+    "id": "SMTS00804",
+    "english_name": "Asthma and cough"
+  },
+  {
+    "id": "SMTS00805",
+    "english_name": "rough Qi"
+  },
+  {
+    "id": "SMTS00806",
+    "english_name": "shortness of breath"
+  },
+  {
+    "id": "SMTS00807",
+    "english_name": "shortness of breath and wheezing"
+  },
+  {
+    "id": "SMTS00808",
+    "english_name": "shortness of breath"
+  },
+  {
+    "id": "SMTS00809",
+    "english_name": "shortness of breath"
+  },
+  {
+    "id": "SMTS00810",
+    "english_name": "Qi Rebellion"
+  },
+  {
+    "id": "SMTS00811",
+    "english_name": "shortness of breath, shortness of breath, and shortness of breath"
+  },
+  {
+    "id": "SMTS00812",
+    "english_name": "dyspnea, asthma and cough"
+  },
+  {
+    "id": "SMTS00813",
+    "english_name": "Qi and Yin deficiency"
+  },
+  {
+    "id": "SMTS00814",
+    "english_name": "Qi depression"
+  },
+  {
+    "id": "SMTS00815",
+    "english_name": "Qi stagnation and stomach pain"
+  },
+  {
+    "id": "SMTS00816",
+    "english_name": "forehead headache"
+  },
+  {
+    "id": "SMTS00817",
+    "english_name": "forehead tenderness"
+  },
+  {
+    "id": "SMTS00819",
+    "english_name": "Superficial pustules"
+  },
+  {
+    "id": "SMTS00820",
+    "english_name": "Blue Blind Bird Eyes"
+  },
+  {
+    "id": "SMTS00821",
+    "english_name": "Distance vision loss in young people"
+  },
+  {
+    "id": "SMTS00823",
+    "english_name": "mild vision loss"
+  },
+  {
+    "id": "SMTS00825",
+    "english_name": "poor mood"
+  },
+  {
+    "id": "SMTS00826",
+    "english_name": "Emotional Depression"
+  },
+  {
+    "id": "SMTS00827",
+    "english_name": "Difficulty in flexion and extension"
+  },
+  {
+    "id": "SMTS00828",
+    "english_name": "dental caries pain"
+  },
+  {
+    "id": "SMTS00829",
+    "english_name": "general fatigue"
+  },
+  {
+    "id": "SMTS00830",
+    "english_name": "body aches"
+  },
+  {
+    "id": "SMTS00831",
+    "english_name": "Tenderness in the cheekbones"
+  },
+  {
+    "id": "SMTS00832",
+    "english_name": "heat numbness and pain"
+  },
+  {
+    "id": "SMTS00833",
+    "english_name": "Fever"
+  },
+  {
+    "id": "SMTS00834",
+    "english_name": "Fever"
+  },
+  {
+    "id": "SMTS00835",
+    "english_name": "fever and polydipsia"
+  },
+  {
+    "id": "SMTS00836",
+    "english_name": "heat poisoning and diarrhea"
+  },
+  {
+    "id": "SMTS00837",
+    "english_name": "dysentery caused by heat, poison, and blood"
+  },
+  {
+    "id": "SMTS00838",
+    "english_name": "fever dysentery"
+  },
+  {
+    "id": "SMTS00839",
+    "english_name": "hot stranguria and astringent pain"
+  },
+  {
+    "id": "SMTS00840",
+    "english_name": "heat stranguria syndrome"
+  },
+  {
+    "id": "SMTS00841",
+    "english_name": "hot phlegm"
+  },
+  {
+    "id": "SMTS00842",
+    "english_name": "hot diarrhea"
+  },
+  {
+    "id": "SMTS00843",
+    "english_name": "Pregnancy obstruction"
+  },
+  {
+    "id": "SMTS00844",
+    "english_name": "Pregnancy Bleeding"
+  },
+  {
+    "id": "SMTS00845",
+    "english_name": "Vomiting in pregnancy"
+  },
+  {
+    "id": "SMTS00846",
+    "english_name": "Pregnancy Leakage"
+  },
+  {
+    "id": "SMTS00848",
+    "english_name": "Breast Nodules"
+  },
+  {
+    "id": "SMTS00849",
+    "english_name": "Breast Pain"
+  },
+  {
+    "id": "SMTS00850",
+    "english_name": "lump in breast"
+  },
+  {
+    "id": "SMTS00851",
+    "english_name": "Breast swelling and pain"
+  },
+  {
+    "id": "SMTS00852",
+    "english_name": "Breast Lumps"
+  },
+  {
+    "id": "SMTS00853",
+    "english_name": "breast swelling and pain"
+  },
+  {
+    "id": "SMTS00854",
+    "english_name": "Breast Mania"
+  },
+  {
+    "id": "SMTS00855",
+    "english_name": "lack of breast milk"
+  },
+  {
+    "id": "SMTS00856",
+    "english_name": "Breast hyperplasia"
+  },
+  {
+    "id": "SMTS00857",
+    "english_name": "mastitis"
+  },
+  {
+    "id": "SMTS00858",
+    "english_name": "initial onset of mastitis"
+  },
+  {
+    "id": "SMTS00859",
+    "english_name": "Breast swelling and pain"
+  },
+  {
+    "id": "SMTS00860",
+    "english_name": "Lactation obstruction"
+  },
+  {
+    "id": "SMTS00861",
+    "english_name": "Lack of Breast Milk"
+  },
+  {
+    "id": "SMTS00862",
+    "english_name": "galactostasis"
+  },
+  {
+    "id": "SMTS00863",
+    "english_name": "breast swelling and pain"
+  },
+  {
+    "id": "SMTS00865",
+    "english_name": "bedsores, swelling and pain"
+  },
+  {
+    "id": "SMTS00867",
+    "english_name": "mumps swelling and pain"
+  },
+  {
+    "id": "SMTS00868",
+    "english_name": "swollen cheeks"
+  },
+  {
+    "id": "SMTS00869",
+    "english_name": "itching"
+  },
+  {
+    "id": "SMTS00870",
+    "english_name": "obvious itching"
+  },
+  {
+    "id": "SMTS00871",
+    "english_name": "unbearable itching"
+  },
+  {
+    "id": "SMTS00873",
+    "english_name": "astringent pain"
+  },
+  {
+    "id": "SMTS00875",
+    "english_name": "Sha distension and abdominal pain"
+  },
+  {
+    "id": "SMTS00877",
+    "english_name": "Flash of waist and depression of Qi"
+  },
+  {
+    "id": "SMTS00879",
+    "english_name": "Hunger"
+  },
+  {
+    "id": "SMTS00880",
+    "english_name": "Shantaixi"
+  },
+  {
+    "id": "SMTS00881",
+    "english_name": "bruise, swelling and pain"
+  },
+  {
+    "id": "SMTS00884",
+    "english_name": "numbness in upper and lower limbs"
+  },
+  {
+    "id": "SMTS00886",
+    "english_name": "numbness of upper limbs"
+  },
+  {
+    "id": "SMTS00887",
+    "english_name": "upper limb pain"
+  },
+  {
+    "id": "SMTS00888",
+    "english_name": "Refusal to press on the lower abdomen"
+  },
+  {
+    "id": "SMTS00889",
+    "english_name": "cold pain in lower abdomen"
+  },
+  {
+    "id": "SMTS00890",
+    "english_name": "lower abdominal pain"
+  },
+  {
+    "id": "SMTS00891",
+    "english_name": "abdominal pain"
+  },
+  {
+    "id": "SMTS00892",
+    "english_name": "distension in lower abdomen"
+  },
+  {
+    "id": "SMTS00893",
+    "english_name": "Shaojin"
+  },
+  {
+    "id": "SMTS00894",
+    "english_name": "less sleepiness"
+  },
+  {
+    "id": "SMTS00895",
+    "english_name": "Lack of Qi"
+  },
+  {
+    "id": "SMTS00896",
+    "english_name": "Eat less"
+  },
+  {
+    "id": "SMTS00897",
+    "english_name": "less phlegm"
+  },
+  {
+    "id": "SMTS00898",
+    "english_name": "dark tongue"
+  },
+  {
+    "id": "SMTS00899",
+    "english_name": "dark red tongue"
+  },
+  {
+    "id": "SMTS00900",
+    "english_name": "ecchymosis on the tip of the tongue"
+  },
+  {
+    "id": "SMTS00901",
+    "english_name": "Tired spots on tongue"
+  },
+  {
+    "id": "SMTS00902",
+    "english_name": "red tongue"
+  },
+  {
+    "id": "SMTS00903",
+    "english_name": "Pale tongue"
+  },
+  {
+    "id": "SMTS00904",
+    "english_name": "dry tongue"
+  },
+  {
+    "id": "SMTS00905",
+    "english_name": "red tongue"
+  },
+  {
+    "id": "SMTS00906",
+    "english_name": "red tongue, yellow and greasy coating"
+  },
+  {
+    "id": "SMTS00907",
+    "english_name": "petechiae on the tip of the tongue"
+  },
+  {
+    "id": "SMTS00908",
+    "english_name": "red tip of tongue"
+  },
+  {
+    "id": "SMTS00909",
+    "english_name": "dark tongue"
+  },
+  {
+    "id": "SMTS00910",
+    "english_name": "Tongue erosion"
+  },
+  {
+    "id": "SMTS00911",
+    "english_name": "fat tongue"
+  },
+  {
+    "id": "SMTS00912",
+    "english_name": "red tongue"
+  },
+  {
+    "id": "SMTS00913",
+    "english_name": "Strong tongue"
+  },
+  {
+    "id": "SMTS00914",
+    "english_name": "Strong tongue and inability to speak"
+  },
+  {
+    "id": "SMTS00915",
+    "english_name": "sores on tongue"
+  },
+  {
+    "id": "SMTS00916",
+    "english_name": "Fat and enlarged tongue"
+  },
+  {
+    "id": "SMTS00917",
+    "english_name": "swollen tongue"
+  },
+  {
+    "id": "SMTS00918",
+    "english_name": "Teeth marks on tongue"
+  },
+  {
+    "id": "SMTS00919",
+    "english_name": "ecchymosis on tongue"
+  },
+  {
+    "id": "SMTS00920",
+    "english_name": "Petechiae and ecchymosis on tongue"
+  },
+  {
+    "id": "SMTS00921",
+    "english_name": "Tongue ecchymosis"
+  },
+  {
+    "id": "SMTS00922",
+    "english_name": "dark red tongue"
+  },
+  {
+    "id": "SMTS00923",
+    "english_name": "dark tongue"
+  },
+  {
+    "id": "SMTS00924",
+    "english_name": "dark tongue"
+  },
+  {
+    "id": "SMTS00925",
+    "english_name": "red tongue and less fluid"
+  },
+  {
+    "id": "SMTS00926",
+    "english_name": "red tongue with less coating"
+  },
+  {
+    "id": "SMTS00927",
+    "english_name": "ecchymosis on tongue"
+  },
+  {
+    "id": "SMTS00928",
+    "english_name": "dark purple tongue"
+  },
+  {
+    "id": "SMTS00929",
+    "english_name": "dark purple tongue"
+  },
+  {
+    "id": "SMTS00931",
+    "english_name": "Yellow body"
+  },
+  {
+    "id": "SMTS00932",
+    "english_name": "Tiredness"
+  },
+  {
+    "id": "SMTS00933",
+    "english_name": "Heavy sleepiness"
+  },
+  {
+    "id": "SMTS00934",
+    "english_name": "yellowing of body and eyes"
+  },
+  {
+    "id": "SMTS00935",
+    "english_name": "body heat"
+  },
+  {
+    "id": "SMTS00936",
+    "english_name": "weight loss"
+  },
+  {
+    "id": "SMTS00937",
+    "english_name": "body pain"
+  },
+  {
+    "id": "SMTS00938",
+    "english_name": "Physical fatigue"
+  },
+  {
+    "id": "SMTS00939",
+    "english_name": "Body numbness"
+  },
+  {
+    "id": "SMTS00940",
+    "english_name": "Physical weakness"
+  },
+  {
+    "id": "SMTS00941",
+    "english_name": "thin body"
+  },
+  {
+    "id": "SMTS00942",
+    "english_name": "body pain"
+  },
+  {
+    "id": "SMTS00943",
+    "english_name": "body pain and spasm"
+  },
+  {
+    "id": "SMTS00944",
+    "english_name": "coma"
+  },
+  {
+    "id": "SMTS00945",
+    "english_name": "Faint and speechless"
+  },
+  {
+    "id": "SMTS00946",
+    "english_name": "coma and mania"
+  },
+  {
+    "id": "SMTS00947",
+    "english_name": "coma and delirium"
+  },
+  {
+    "id": "SMTS00948",
+    "english_name": "neurasthenia"
+  },
+  {
+    "id": "SMTS00949",
+    "english_name": "neuralgia"
+  },
+  {
+    "id": "SMTS00950",
+    "english_name": "Neuropathic Pain"
+  },
+  {
+    "id": "SMTS00951",
+    "english_name": "Nervous headache"
+  },
+  {
+    "id": "SMTS00952",
+    "english_name": "fatigue"
+  },
+  {
+    "id": "SMTS00953",
+    "english_name": "tiredness and laziness"
+  },
+  {
+    "id": "SMTS00954",
+    "english_name": "mental fatigue"
+  },
+  {
+    "id": "SMTS00955",
+    "english_name": "Sluggish expression"
+  },
+  {
+    "id": "SMTS00956",
+    "english_name": "Confusion"
+  },
+  {
+    "id": "SMTS00957",
+    "english_name": "Apathy"
+  },
+  {
+    "id": "SMTS00958",
+    "english_name": "Confusion"
+  },
+  {
+    "id": "SMTS00959",
+    "english_name": "confusion"
+  },
+  {
+    "id": "SMTS00960",
+    "english_name": "coma"
+  },
+  {
+    "id": "SMTS00961",
+    "english_name": "Confusion"
+  },
+  {
+    "id": "SMTS00962",
+    "english_name": "Insufficient kidney essence"
+  },
+  {
+    "id": "SMTS00963",
+    "english_name": "percussion pain in the kidney area"
+  },
+  {
+    "id": "SMTS00964",
+    "english_name": "cold pain in kidney area,"
+  },
+  {
+    "id": "SMTS00965",
+    "english_name": "Vocal cord congestion"
+  },
+  {
+    "id": "SMTS00967",
+    "english_name": "Vocal cord nodules"
+  },
+  {
+    "id": "SMTS00968",
+    "english_name": "hoarseness"
+  },
+  {
+    "id": "SMTS00969",
+    "english_name": "heavy voice"
+  },
+  {
+    "id": "SMTS00970",
+    "english_name": "insomnia"
+  },
+  {
+    "id": "SMTS00971",
+    "english_name": "aphonia"
+  },
+  {
+    "id": "SMTS00972",
+    "english_name": "aphasia"
+  },
+  {
+    "id": "SMTS00973",
+    "english_name": "Dampness and spasm"
+  },
+  {
+    "id": "SMTS00974",
+    "english_name": "Eczema"
+  },
+  {
+    "id": "SMTS00975",
+    "english_name": "Eczema and pus-soaked water"
+  },
+  {
+    "id": "SMTS00976",
+    "english_name": "dampness, heat and poisonous evil gather on the skin"
+  },
+  {
+    "id": "SMTS00977",
+    "english_name": "Damp and Heat Bets"
+  },
+  {
+    "id": "SMTS00978",
+    "english_name": "Eczema"
+  },
+  {
+    "id": "SMTS00979",
+    "english_name": "Eczema Itching"
+  },
+  {
+    "id": "SMTS00981",
+    "english_name": "Shilin"
+  },
+  {
+    "id": "SMTS00982",
+    "english_name": "Shilin astringent pain"
+  },
+  {
+    "id": "SMTS00983",
+    "english_name": "dull pain from time to time"
+  },
+  {
+    "id": "SMTS00984",
+    "english_name": "abdominal distension and refusal to press after eating"
+  },
+  {
+    "id": "SMTS00985",
+    "english_name": "distension and pain after eating"
+  },
+  {
+    "id": "SMTS00986",
+    "english_name": "food accumulation"
+  },
+  {
+    "id": "SMTS00987",
+    "english_name": "food accumulation that cannot be eliminated"
+  },
+  {
+    "id": "SMTS00988",
+    "english_name": "fullness due to food accumulation"
+  },
+  {
+    "id": "SMTS00989",
+    "english_name": "Inability to digest milk after eating"
+  },
+  {
+    "id": "SMTS00990",
+    "english_name": "Eating less"
+  },
+  {
+    "id": "SMTS00991",
+    "english_name": "Not eating enough"
+  },
+  {
+    "id": "SMTS00992",
+    "english_name": "Lack of food and fatigue"
+  },
+  {
+    "id": "SMTS00993",
+    "english_name": "abdominal distension after eating less"
+  },
+  {
+    "id": "SMTS00994",
+    "english_name": "food stagnation"
+  },
+  {
+    "id": "SMTS00995",
+    "english_name": "loss of appetite"
+  },
+  {
+    "id": "SMTS00996",
+    "english_name": "loss of appetite"
+  },
+  {
+    "id": "SMTS00997",
+    "english_name": "food stagnation"
+  },
+  {
+    "id": "SMTS00998",
+    "english_name": "food stagnation"
+  },
+  {
+    "id": "SMTS00999",
+    "english_name": "Food stagnation turns into heat"
+  },
+  {
+    "id": "SMTS01001",
+    "english_name": "vision loss"
+  },
+  {
+    "id": "SMTS01002",
+    "english_name": "visual fatigue"
+  },
+  {
+    "id": "SMTS01003",
+    "english_name": "decreased vision"
+  },
+  {
+    "id": "SMTS01004",
+    "english_name": "blurred vision"
+  },
+  {
+    "id": "SMTS01005",
+    "english_name": "dim vision"
+  },
+  {
+    "id": "SMTS01006",
+    "english_name": "blurred vision"
+  },
+  {
+    "id": "SMTS01007",
+    "english_name": "blurred vision"
+  },
+  {
+    "id": "SMTS01008",
+    "english_name": "numbness in arms"
+  },
+  {
+    "id": "SMTS01009",
+    "english_name": "hand twitching"
+  },
+  {
+    "id": "SMTS01010",
+    "english_name": "hand spasm"
+  },
+  {
+    "id": "SMTS01011",
+    "english_name": "numbness in hands"
+  },
+  {
+    "id": "SMTS01013",
+    "english_name": "hot palms"
+  },
+  {
+    "id": "SMTS01014",
+    "english_name": "Swelling of Hands"
+  },
+  {
+    "id": "SMTS01015",
+    "english_name": "Paralysis of Hands and Feet"
+  },
+  {
+    "id": "SMTS01016",
+    "english_name": "lukewarm hands and feet"
+  },
+  {
+    "id": "SMTS01017",
+    "english_name": "cold hands and feet"
+  },
+  {
+    "id": "SMTS01018",
+    "english_name": "Numbness of Hands and Feet"
+  },
+  {
+    "id": "SMTS01019",
+    "english_name": "Fatigue in hands and feet"
+  },
+  {
+    "id": "SMTS01020",
+    "english_name": "summer heat dampness"
+  },
+  {
+    "id": "SMTS01021",
+    "english_name": "Fever caused by summer heat"
+  },
+  {
+    "id": "SMTS01022",
+    "english_name": "postoperative pain"
+  },
+  {
+    "id": "SMTS01023",
+    "english_name": "Hanging eyes"
+  },
+  {
+    "id": "SMTS01024",
+    "english_name": "breast pain"
+  },
+  {
+    "id": "SMTS01025",
+    "english_name": "Difficulty in water slurry"
+  },
+  {
+    "id": "SMTS01026",
+    "english_name": "Watery Diarrhea"
+  },
+  {
+    "id": "SMTS01027",
+    "english_name": "edema"
+  },
+  {
+    "id": "SMTS01028",
+    "english_name": "restless sleep"
+  },
+  {
+    "id": "SMTS01029",
+    "english_name": "slow thinking"
+  },
+  {
+    "id": "SMTS01030",
+    "english_name": "stillbirth"
+  },
+  {
+    "id": "SMTS01031",
+    "english_name": "lukewarm limbs"
+  },
+  {
+    "id": "SMTS01032",
+    "english_name": "Weakness in the limbs"
+  },
+  {
+    "id": "SMTS01033",
+    "english_name": "edema of limbs"
+  },
+  {
+    "id": "SMTS01034",
+    "english_name": "cold pain in limb joints"
+  },
+  {
+    "id": "SMTS01035",
+    "english_name": "spasm of limbs"
+  },
+  {
+    "id": "SMTS01036",
+    "english_name": "fatigue of limbs"
+  },
+  {
+    "id": "SMTS01037",
+    "english_name": "tiredness of limbs"
+  },
+  {
+    "id": "SMTS01038",
+    "english_name": "syncope in limbs"
+  },
+  {
+    "id": "SMTS01039",
+    "english_name": "Acute cramping of limbs"
+  },
+  {
+    "id": "SMTS01040",
+    "english_name": "cramping pain in limbs"
+  },
+  {
+    "id": "SMTS01041",
+    "english_name": "paralysis of limbs"
+  },
+  {
+    "id": "SMTS01042",
+    "english_name": "numbness of limbs"
+  },
+  {
+    "id": "SMTS01043",
+    "english_name": "Coldness in the limbs"
+  },
+  {
+    "id": "SMTS01044",
+    "english_name": "Sore limbs"
+  },
+  {
+    "id": "SMTS01045",
+    "english_name": "soreness and laziness of limbs"
+  },
+  {
+    "id": "SMTS01046",
+    "english_name": "soreness in limbs"
+  },
+  {
+    "id": "SMTS01047",
+    "english_name": "pain in limbs"
+  },
+  {
+    "id": "SMTS01048",
+    "english_name": "weakness in limbs"
+  },
+  {
+    "id": "SMTS01049",
+    "english_name": "soreness"
+  },
+  {
+    "id": "SMTS01050",
+    "english_name": "Anhui"
+  },
+  {
+    "id": "SMTS01051",
+    "english_name": "Fetal Movement Restlessness"
+  },
+  {
+    "id": "SMTS01052",
+    "english_name": "fetal leakage"
+  },
+  {
+    "id": "SMTS01053",
+    "english_name": "fetal bleeding"
+  },
+  {
+    "id": "SMTS01054",
+    "english_name": "Retained placenta"
+  },
+  {
+    "id": "SMTS01055",
+    "english_name": "Paralysis"
+  },
+  {
+    "id": "SMTS01056",
+    "english_name": "white phlegm"
+  },
+  {
+    "id": "SMTS01057",
+    "english_name": "thin phlegm and white matter"
+  },
+  {
+    "id": "SMTS01058",
+    "english_name": "Difficulty phlegm coming out"
+  },
+  {
+    "id": "SMTS01059",
+    "english_name": "thick phlegm"
+  },
+  {
+    "id": "SMTS01060",
+    "english_name": "thick yellow phlegm"
+  },
+  {
+    "id": "SMTS01061",
+    "english_name": "thick phlegm that is difficult to come out"
+  },
+  {
+    "id": "SMTS01062",
+    "english_name": "phlegm and asthma"
+  },
+  {
+    "id": "SMTS01063",
+    "english_name": "excessive phlegm"
+  },
+  {
+    "id": "SMTS01064",
+    "english_name": "yellowish and thick phlegm"
+  },
+  {
+    "id": "SMTS01065",
+    "english_name": "Cough with excessive phlegm"
+  },
+  {
+    "id": "SMTS01066",
+    "english_name": "excessive phlegm and thin phlegm"
+  },
+  {
+    "id": "SMTS01067",
+    "english_name": "Excessive phlegm and constipation"
+  },
+  {
+    "id": "SMTS01068",
+    "english_name": "Excessive phlegm and asthma"
+  },
+  {
+    "id": "SMTS01069",
+    "english_name": "phlegm core lumps"
+  },
+  {
+    "id": "SMTS01070",
+    "english_name": "yellow phlegm"
+  },
+  {
+    "id": "SMTS01071",
+    "english_name": "yellow and thick phlegm"
+  },
+  {
+    "id": "SMTS01072",
+    "english_name": "yellow, thick and sticky phlegm"
+  },
+  {
+    "id": "SMTS01073",
+    "english_name": "yellow and sticky phlegm"
+  },
+  {
+    "id": "SMTS01074",
+    "english_name": "phlegm syncope"
+  },
+  {
+    "id": "SMTS01075",
+    "english_name": "phlegm and headache"
+  },
+  {
+    "id": "SMTS01076",
+    "english_name": "Phlegm"
+  },
+  {
+    "id": "SMTS01077",
+    "english_name": "Roaring phlegm"
+  },
+  {
+    "id": "SMTS01078",
+    "english_name": "sticky phlegm"
+  },
+  {
+    "id": "SMTS01079",
+    "english_name": "sticky phlegm"
+  },
+  {
+    "id": "SMTS01080",
+    "english_name": "Phlegm-heat"
+  },
+  {
+    "id": "SMTS01081",
+    "english_name": "phlegm-heat, asthma and cough"
+  },
+  {
+    "id": "SMTS01082",
+    "english_name": "Phlegm-heat blocking the lungs"
+  },
+  {
+    "id": "SMTS01083",
+    "english_name": "less phlegm"
+  },
+  {
+    "id": "SMTS01084",
+    "english_name": "excessive phlegm"
+  },
+  {
+    "id": "SMTS01085",
+    "english_name": "thin phlegm"
+  },
+  {
+    "id": "SMTS01086",
+    "english_name": "excessive phlegm and saliva"
+  },
+  {
+    "id": "SMTS01087",
+    "english_name": "phlegm and blood"
+  },
+  {
+    "id": "SMTS01088",
+    "english_name": "Phlegm Drinking"
+  },
+  {
+    "id": "SMTS01089",
+    "english_name": "phlegm, cough, and asthma"
+  },
+  {
+    "id": "SMTS01090",
+    "english_name": "phlegm congestion"
+  },
+  {
+    "id": "SMTS01091",
+    "english_name": "sticky phlegm"
+  },
+  {
+    "id": "SMTS01092",
+    "english_name": "blood in sputum"
+  },
+  {
+    "id": "SMTS01093",
+    "english_name": "turbid yellow and thick phlegm"
+  },
+  {
+    "id": "SMTS01094",
+    "english_name": "Pain"
+  },
+  {
+    "id": "SMTS01095",
+    "english_name": "severe pain at night"
+  },
+  {
+    "id": "SMTS01096",
+    "english_name": "fatigue"
+  },
+  {
+    "id": "SMTS01097",
+    "english_name": "fatigue and weakness"
+  },
+  {
+    "id": "SMTS01098",
+    "english_name": "Tiredness"
+  },
+  {
+    "id": "SMTS01099",
+    "english_name": "physical fatigue"
+  },
+  {
+    "id": "SMTS01100",
+    "english_name": "Weakness"
+  },
+  {
+    "id": "SMTS01101",
+    "english_name": "physical weakness"
+  },
+  {
+    "id": "SMTS01102",
+    "english_name": "physical weakness and excessive sweating"
+  },
+  {
+    "id": "SMTS01103",
+    "english_name": "physical weakness and fatigue"
+  },
+  {
+    "id": "SMTS01104",
+    "english_name": "physical weakness and desire to escape"
+  },
+  {
+    "id": "SMTS01105",
+    "english_name": "physical weakness"
+  },
+  {
+    "id": "SMTS01106",
+    "english_name": "yellowish and thick mucus"
+  },
+  {
+    "id": "SMTS01107",
+    "english_name": "blood in the nose"
+  },
+  {
+    "id": "SMTS01108",
+    "english_name": "Heavenly Red Eyes"
+  },
+  {
+    "id": "SMTS01109",
+    "english_name": "Hearing Failure"
+  },
+  {
+    "id": "SMTS01110",
+    "english_name": "Menopause"
+  },
+  {
+    "id": "SMTS01111",
+    "english_name": "Breastfeeding cessation"
+  },
+  {
+    "id": "SMTS01112",
+    "english_name": "Stop eating"
+  },
+  {
+    "id": "SMTS01115",
+    "english_name": "Refusal to press on the painful area"
+  },
+  {
+    "id": "SMTS01116",
+    "english_name": "dysmenorrhea"
+  },
+  {
+    "id": "SMTS01117",
+    "english_name": "Pain like acupuncture"
+  },
+  {
+    "id": "SMTS01118",
+    "english_name": "severe pain"
+  },
+  {
+    "id": "SMTS01119",
+    "english_name": "Pain has a fixed location"
+  },
+  {
+    "id": "SMTS01121",
+    "english_name": "Stinging pain in head"
+  },
+  {
+    "id": "SMTS01122",
+    "english_name": "Head swelling and pain"
+  },
+  {
+    "id": "SMTS01123",
+    "english_name": "premature graying of hair"
+  },
+  {
+    "id": "SMTS01124",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS01125",
+    "english_name": "Head pain"
+  },
+  {
+    "id": "SMTS01126",
+    "english_name": "Head and facial neuralgia"
+  },
+  {
+    "id": "SMTS01127",
+    "english_name": "Head and face pain"
+  },
+  {
+    "id": "SMTS01128",
+    "english_name": "unclear head and head"
+  },
+  {
+    "id": "SMTS01130",
+    "english_name": "scalp itching"
+  },
+  {
+    "id": "SMTS01131",
+    "english_name": "Head and body drowsiness"
+  },
+  {
+    "id": "SMTS01132",
+    "english_name": "headache"
+  },
+  {
+    "id": "SMTS01133",
+    "english_name": "headache"
+  },
+  {
+    "id": "SMTS01134",
+    "english_name": "headache that lasts for a long time"
+  },
+  {
+    "id": "SMTS01135",
+    "english_name": "headache"
+  },
+  {
+    "id": "SMTS01138",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS01139",
+    "english_name": "Head carbuncle"
+  },
+  {
+    "id": "SMTS01140",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS01141",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS01142",
+    "english_name": "dizziness and dizziness"
+  },
+  {
+    "id": "SMTS01143",
+    "english_name": "Head swelling"
+  },
+  {
+    "id": "SMTS01144",
+    "english_name": "Head swelling and pain"
+  },
+  {
+    "id": "SMTS01145",
+    "english_name": "heavy head"
+  },
+  {
+    "id": "SMTS01146",
+    "english_name": "Vomiting pus"
+  },
+  {
+    "id": "SMTS01147",
+    "english_name": "vomiting"
+  },
+  {
+    "id": "SMTS01148",
+    "english_name": "spitting"
+  },
+  {
+    "id": "SMTS01149",
+    "english_name": "thin phlegm"
+  },
+  {
+    "id": "SMTS01150",
+    "english_name": "vomiting and diarrhea"
+  },
+  {
+    "id": "SMTS01151",
+    "english_name": "vomiting, diarrhea and abdominal pain"
+  },
+  {
+    "id": "SMTS01152",
+    "english_name": "vomiting blood"
+  },
+  {
+    "id": "SMTS01153",
+    "english_name": "Weak legs"
+  },
+  {
+    "id": "SMTS01154",
+    "english_name": "Leg fatigue and pain"
+  },
+  {
+    "id": "SMTS01155",
+    "english_name": "weak legs"
+  },
+  {
+    "id": "SMTS01156",
+    "english_name": "leg pain, severe pain, inability to turn sideways"
+  },
+  {
+    "id": "SMTS01157",
+    "english_name": "acid swallowing"
+  },
+  {
+    "id": "SMTS01158",
+    "english_name": "hair loss"
+  },
+  {
+    "id": "SMTS01159",
+    "english_name": "Anal prolapse"
+  },
+  {
+    "id": "SMTS01161",
+    "english_name": "Desquamation"
+  },
+  {
+    "id": "SMTS01164",
+    "english_name": "redness and swelling due to trauma"
+  },
+  {
+    "id": "SMTS01166",
+    "english_name": "vulva redness and swelling"
+  },
+  {
+    "id": "SMTS01167",
+    "english_name": "The grain remains intact"
+  },
+  {
+    "id": "SMTS01168",
+    "english_name": "Stubborn phlegm"
+  },
+  {
+    "id": "SMTS01169",
+    "english_name": "Pain in the epigastrium and abdomen"
+  },
+  {
+    "id": "SMTS01170",
+    "english_name": "Cold in the epigastrium and abdomen"
+  },
+  {
+    "id": "SMTS01171",
+    "english_name": "cold pain in the epigastrium and abdomen"
+  },
+  {
+    "id": "SMTS01172",
+    "english_name": "abdominal distension and fullness"
+  },
+  {
+    "id": "SMTS01173",
+    "english_name": "abdominal distension and tightness"
+  },
+  {
+    "id": "SMTS01174",
+    "english_name": "epigastric pain"
+  },
+  {
+    "id": "SMTS01175",
+    "english_name": "epigastric and abdominal pain"
+  },
+  {
+    "id": "SMTS01176",
+    "english_name": "epigastrium, abdominal and hypochondriac pain"
+  },
+  {
+    "id": "SMTS01177",
+    "english_name": "Dull pain in the epigastrium and abdomen"
+  },
+  {
+    "id": "SMTS01178",
+    "english_name": "abdominal distension"
+  },
+  {
+    "id": "SMTS01179",
+    "english_name": "abdominal distension and stuffiness"
+  },
+  {
+    "id": "SMTS01180",
+    "english_name": "abdominal distension and pain"
+  },
+  {
+    "id": "SMTS01181",
+    "english_name": "abdominal discomfort"
+  },
+  {
+    "id": "SMTS01182",
+    "english_name": "abdominal discomfort and discomfort"
+  },
+  {
+    "id": "SMTS01183",
+    "english_name": "epigastrium"
+  },
+  {
+    "id": "SMTS01184",
+    "english_name": "epigastrium and no hunger"
+  },
+  {
+    "id": "SMTS01185",
+    "english_name": "epigastrium and vomiting"
+  },
+  {
+    "id": "SMTS01186",
+    "english_name": "epigastrium and hypochondriac pain"
+  },
+  {
+    "id": "SMTS01187",
+    "english_name": "distension and pain in the abdomen and hypochondrium"
+  },
+  {
+    "id": "SMTS01188",
+    "english_name": "Slight aversion to wind and cold"
+  },
+  {
+    "id": "SMTS01189",
+    "english_name": "slight thirst"
+  },
+  {
+    "id": "SMTS01190",
+    "english_name": "Photophobia"
+  },
+  {
+    "id": "SMTS01191",
+    "english_name": "Chill"
+  },
+  {
+    "id": "SMTS01192",
+    "english_name": "Fear of heat"
+  },
+  {
+    "id": "SMTS01194",
+    "english_name": "gastrointestinal heat accumulation"
+  },
+  {
+    "id": "SMTS01195",
+    "english_name": "abdominal distension after gastrointestinal surgery"
+  },
+  {
+    "id": "SMTS01198",
+    "english_name": "Stomach cold and vomiting"
+  },
+  {
+    "id": "SMTS01199",
+    "english_name": "gastric colic"
+  },
+  {
+    "id": "SMTS01202",
+    "english_name": "stomach heat"
+  },
+  {
+    "id": "SMTS01203",
+    "english_name": "Hyperacidity"
+  },
+  {
+    "id": "SMTS01204",
+    "english_name": "stomach pain"
+  },
+  {
+    "id": "SMTS01205",
+    "english_name": "stomach pain and nervousness"
+  },
+  {
+    "id": "SMTS01206",
+    "english_name": "Stomach pain"
+  },
+  {
+    "id": "SMTS01207",
+    "english_name": "dull stomach pain"
+  },
+  {
+    "id": "SMTS01208",
+    "english_name": "epigastric fullness"
+  },
+  {
+    "id": "SMTS01209",
+    "english_name": "epigastric discomfort"
+  },
+  {
+    "id": "SMTS01210",
+    "english_name": "noisy epigastrium"
+  },
+  {
+    "id": "SMTS01211",
+    "english_name": "Noisy and uncomfortable epigastrium"
+  },
+  {
+    "id": "SMTS01212",
+    "english_name": "epigastric tingling"
+  },
+  {
+    "id": "SMTS01213",
+    "english_name": "epigastric pain"
+  },
+  {
+    "id": "SMTS01214",
+    "english_name": "cold and painful epigastrium"
+  },
+  {
+    "id": "SMTS01215",
+    "english_name": "gastric epigastric spasm"
+  },
+  {
+    "id": "SMTS01216",
+    "english_name": "epigastric fullness"
+  },
+  {
+    "id": "SMTS01217",
+    "english_name": "epigastric congestion"
+  },
+  {
+    "id": "SMTS01218",
+    "english_name": "epigastric congestion"
+  },
+  {
+    "id": "SMTS01219",
+    "english_name": "Burning sensation in the epigastrium"
+  },
+  {
+    "id": "SMTS01220",
+    "english_name": "epigastric pain"
+  },
+  {
+    "id": "SMTS01221",
+    "english_name": "Dull epigastric pain"
+  },
+  {
+    "id": "SMTS01222",
+    "english_name": "epigastric distension"
+  },
+  {
+    "id": "SMTS01223",
+    "english_name": "epigastric distension and pain"
+  },
+  {
+    "id": "SMTS01224",
+    "english_name": "Insufficient stomach yin"
+  },
+  {
+    "id": "SMTS01225",
+    "english_name": "stomach bloating"
+  },
+  {
+    "id": "SMTS01226",
+    "english_name": "stomach fullness"
+  },
+  {
+    "id": "SMTS01227",
+    "english_name": "Burning in the Heart"
+  },
+  {
+    "id": "SMTS01228",
+    "english_name": "Warm toxin spots"
+  },
+  {
+    "id": "SMTS01229",
+    "english_name": "Plague Fever"
+  },
+  {
+    "id": "SMTS01230",
+    "english_name": "no sweating"
+  },
+  {
+    "id": "SMTS01231",
+    "english_name": "nameless swelling and pain"
+  },
+  {
+    "id": "SMTS01232",
+    "english_name": "No Breasts"
+  },
+  {
+    "id": "SMTS01233",
+    "english_name": "loose stools at midnight"
+  },
+  {
+    "id": "SMTS01234",
+    "english_name": "diarrhea at midnight"
+  },
+  {
+    "id": "SMTS01235",
+    "english_name": "Five upsets and fever"
+  },
+  {
+    "id": "SMTS01236",
+    "english_name": "Afternoon Hot Flashes"
+  },
+  {
+    "id": "SMTS01237",
+    "english_name": "Knee weakness"
+  },
+  {
+    "id": "SMTS01238",
+    "english_name": "Knee weakness and weakness"
+  },
+  {
+    "id": "SMTS01239",
+    "english_name": "Knee Soreness"
+  },
+  {
+    "id": "SMTS01240",
+    "english_name": "warmth"
+  },
+  {
+    "id": "SMTS01241",
+    "english_name": "lower abdominal distension and pain"
+  },
+  {
+    "id": "SMTS01242",
+    "english_name": "Lower Li Qinggu"
+  },
+  {
+    "id": "SMTS01243",
+    "english_name": "diarrhea and foul smell"
+  },
+  {
+    "id": "SMTS01244",
+    "english_name": "dysentery, pus and blood"
+  },
+  {
+    "id": "SMTS01245",
+    "english_name": "severe pain in lowering Qi"
+  },
+  {
+    "id": "SMTS01246",
+    "english_name": "bleeding"
+  },
+  {
+    "id": "SMTS01247",
+    "english_name": "Xia Yuan deficiency and cold"
+  },
+  {
+    "id": "SMTS01248",
+    "english_name": "heaviness in lower limbs"
+  },
+  {
+    "id": "SMTS01249",
+    "english_name": "edema of lower limbs"
+  },
+  {
+    "id": "SMTS01250",
+    "english_name": "flaccidity of lower limbs"
+  },
+  {
+    "id": "SMTS01251",
+    "english_name": "weakness of lower limbs"
+  },
+  {
+    "id": "SMTS01252",
+    "english_name": "weakness in lower limbs"
+  },
+  {
+    "id": "SMTS01253",
+    "english_name": "Summer Evil Fainting"
+  },
+  {
+    "id": "SMTS01254",
+    "english_name": "Strongness and discomfort in the nape and back"
+  },
+  {
+    "id": "SMTS01255",
+    "english_name": "strong pain in the neck and back"
+  },
+  {
+    "id": "SMTS01256",
+    "english_name": "Ankylosis of the nape and back"
+  },
+  {
+    "id": "SMTS01257",
+    "english_name": "Xiang Qiang"
+  },
+  {
+    "id": "SMTS01260",
+    "english_name": "thirst"
+  },
+  {
+    "id": "SMTS01261",
+    "english_name": "diarrhea"
+  },
+  {
+    "id": "SMTS01262",
+    "english_name": "weight loss"
+  },
+  {
+    "id": "SMTS01264",
+    "english_name": "white and turbid urine"
+  },
+  {
+    "id": "SMTS01265",
+    "english_name": "Difficulty urinating"
+  },
+  {
+    "id": "SMTS01266",
+    "english_name": "Unpleasant urination"
+  },
+  {
+    "id": "SMTS01267",
+    "english_name": "difficulty urinating"
+  },
+  {
+    "id": "SMTS01268",
+    "english_name": "red and astringent urine"
+  },
+  {
+    "id": "SMTS01269",
+    "english_name": "Dirty urine"
+  },
+  {
+    "id": "SMTS01270",
+    "english_name": "short red urine"
+  },
+  {
+    "id": "SMTS01271",
+    "english_name": "Shortness of Urination"
+  },
+  {
+    "id": "SMTS01272",
+    "english_name": "yellow urine"
+  },
+  {
+    "id": "SMTS01273",
+    "english_name": "yellow and red urine"
+  },
+  {
+    "id": "SMTS01274",
+    "english_name": "yellowish urine"
+  },
+  {
+    "id": "SMTS01275",
+    "english_name": "cloudy urine"
+  },
+  {
+    "id": "SMTS01276",
+    "english_name": "Incessant urination"
+  },
+  {
+    "id": "SMTS01277",
+    "english_name": "turbid urine"
+  },
+  {
+    "id": "SMTS01278",
+    "english_name": "Frequent and urgent urination"
+  },
+  {
+    "id": "SMTS01279",
+    "english_name": "Frequent urination"
+  },
+  {
+    "id": "SMTS01280",
+    "english_name": "Frequent urination, short and astringent urine"
+  },
+  {
+    "id": "SMTS01281",
+    "english_name": "long and clear urine"
+  },
+  {
+    "id": "SMTS01282",
+    "english_name": "Urinary fever"
+  },
+  {
+    "id": "SMTS01283",
+    "english_name": "astringent and painful urination"
+  },
+  {
+    "id": "SMTS01284",
+    "english_name": "painful urination"
+  },
+  {
+    "id": "SMTS01285",
+    "english_name": "Cough in children"
+  },
+  {
+    "id": "SMTS01286",
+    "english_name": "excessive sweating in children"
+  },
+  {
+    "id": "SMTS01287",
+    "english_name": "infantile malnutrition and fever"
+  },
+  {
+    "id": "SMTS01289",
+    "english_name": "high fever in children"
+  },
+  {
+    "id": "SMTS01290",
+    "english_name": "Infantile Delay"
+  },
+  {
+    "id": "SMTS01291",
+    "english_name": "stagnation of heat in children"
+  },
+  {
+    "id": "SMTS01292",
+    "english_name": "panic in children"
+  },
+  {
+    "id": "SMTS01293",
+    "english_name": "acute fever and convulsions in children"
+  },
+  {
+    "id": "SMTS01294",
+    "english_name": "diarrhea in children in autumn"
+  },
+  {
+    "id": "SMTS01295",
+    "english_name": "food stagnation in children"
+  },
+  {
+    "id": "SMTS01296",
+    "english_name": "Tension in the lower abdomen"
+  },
+  {
+    "id": "SMTS01297",
+    "english_name": "cold pain in lower abdomen"
+  },
+  {
+    "id": "SMTS01298",
+    "english_name": "distension and pain on both sides of lower abdomen"
+  },
+  {
+    "id": "SMTS01299",
+    "english_name": "fullness in lower abdomen"
+  },
+  {
+    "id": "SMTS01300",
+    "english_name": "lower abdominal pain"
+  },
+  {
+    "id": "SMTS01301",
+    "english_name": "lower abdominal pain"
+  },
+  {
+    "id": "SMTS01302",
+    "english_name": "Feeling hot in the lower abdomen"
+  },
+  {
+    "id": "SMTS01303",
+    "english_name": "Lower abdominal drop"
+  },
+  {
+    "id": "SMTS01304",
+    "english_name": "Dull pain in lower abdomen"
+  },
+  {
+    "id": "SMTS01305",
+    "english_name": "abdominal distension"
+  },
+  {
+    "id": "SMTS01306",
+    "english_name": "lower abdominal distension and pain"
+  },
+  {
+    "id": "SMTS01307",
+    "english_name": "lower abdominal pain"
+  },
+  {
+    "id": "SMTS01308",
+    "english_name": "distension in the lower abdomen"
+  },
+  {
+    "id": "SMTS01309",
+    "english_name": "Asthma"
+  },
+  {
+    "id": "SMTS01310",
+    "english_name": "Discomfort in the flanks"
+  },
+  {
+    "id": "SMTS01311",
+    "english_name": "Pain in the flanks and ribs"
+  },
+  {
+    "id": "SMTS01312",
+    "english_name": "Tingling pain in the flanks"
+  },
+  {
+    "id": "SMTS01313",
+    "english_name": "flank pain"
+  },
+  {
+    "id": "SMTS01314",
+    "english_name": "Dull pain in the hypochondrium"
+  },
+  {
+    "id": "SMTS01315",
+    "english_name": "distended ribs and pain"
+  },
+  {
+    "id": "SMTS01316",
+    "english_name": "hypochondriac pain"
+  },
+  {
+    "id": "SMTS01317",
+    "english_name": "lumps under the ribs"
+  },
+  {
+    "id": "SMTS01318",
+    "english_name": "diarrhea"
+  },
+  {
+    "id": "SMTS01319",
+    "english_name": "Urgent diarrhea"
+  },
+  {
+    "id": "SMTS01320",
+    "english_name": "diarrhea and discomfort"
+  },
+  {
+    "id": "SMTS01323",
+    "english_name": "heart attack and pain"
+  },
+  {
+    "id": "SMTS01324",
+    "english_name": "upset"
+  },
+  {
+    "id": "SMTS01325",
+    "english_name": "upset and insomnia"
+  },
+  {
+    "id": "SMTS01326",
+    "english_name": "Restlessness"
+  },
+  {
+    "id": "SMTS01327",
+    "english_name": "upset and difficulty sleeping"
+  },
+  {
+    "id": "SMTS01328",
+    "english_name": "upset, nausea and vomiting"
+  },
+  {
+    "id": "SMTS01329",
+    "english_name": "Pain in the heart and abdomen"
+  },
+  {
+    "id": "SMTS01330",
+    "english_name": "Coldness and pain in the heart and abdomen"
+  },
+  {
+    "id": "SMTS01331",
+    "english_name": "palpitation"
+  },
+  {
+    "id": "SMTS01333",
+    "english_name": "palpitations"
+  },
+  {
+    "id": "SMTS01334",
+    "english_name": "palpitation and restlessness"
+  },
+  {
+    "id": "SMTS01335",
+    "english_name": "palpitation and restlessness"
+  },
+  {
+    "id": "SMTS01336",
+    "english_name": "angina pectoris"
+  },
+  {
+    "id": "SMTS01339",
+    "english_name": "Heart Qi pain"
+  },
+  {
+    "id": "SMTS01340",
+    "english_name": "Heart Qi deficiency"
+  },
+  {
+    "id": "SMTS01341",
+    "english_name": "tingling in the precordium"
+  },
+  {
+    "id": "SMTS01342",
+    "english_name": "Precordial pain"
+  },
+  {
+    "id": "SMTS01343",
+    "english_name": "Precordial pain"
+  },
+  {
+    "id": "SMTS01344",
+    "english_name": "uneasiness"
+  },
+  {
+    "id": "SMTS01345",
+    "english_name": "Restlessness"
+  },
+  {
+    "id": "SMTS01346",
+    "english_name": "Heartache"
+  },
+  {
+    "id": "SMTS01347",
+    "english_name": "Hard heart"
+  },
+  {
+    "id": "SMTS01348",
+    "english_name": "irritability and heat in the chest and chest"
+  },
+  {
+    "id": "SMTS01349",
+    "english_name": "insufficient heart-blood flow"
+  },
+  {
+    "id": "SMTS01350",
+    "english_name": "new and old blood stasis and pain"
+  },
+  {
+    "id": "SMTS01351",
+    "english_name": "Cold form"
+  },
+  {
+    "id": "SMTS01352",
+    "english_name": "Thin appearance"
+  },
+  {
+    "id": "SMTS01353",
+    "english_name": "body obesity"
+  },
+  {
+    "id": "SMTS01354",
+    "english_name": "weight loss"
+  },
+  {
+    "id": "SMTS01356",
+    "english_name": "sexual function decline"
+  },
+  {
+    "id": "SMTS01357",
+    "english_name": "Sexual Dysfunction"
+  },
+  {
+    "id": "SMTS01358",
+    "english_name": "frigidity"
+  },
+  {
+    "id": "SMTS01359",
+    "english_name": "loss of sexual desire"
+  },
+  {
+    "id": "SMTS01360",
+    "english_name": "Chest Bi"
+  },
+  {
+    "id": "SMTS01361",
+    "english_name": "chest pain"
+  },
+  {
+    "id": "SMTS01362",
+    "english_name": "chest tightness"
+  },
+  {
+    "id": "SMTS01363",
+    "english_name": "Tingling in the chest"
+  },
+  {
+    "id": "SMTS01364",
+    "english_name": "Chest tightness and pain"
+  },
+  {
+    "id": "SMTS01365",
+    "english_name": "Chest Pain"
+  },
+  {
+    "id": "SMTS01366",
+    "english_name": "tingling in the chest and abdomen"
+  },
+  {
+    "id": "SMTS01367",
+    "english_name": "hydrops in chest and abdomen"
+  },
+  {
+    "id": "SMTS01368",
+    "english_name": "cold pain in chest and abdomen"
+  },
+  {
+    "id": "SMTS01369",
+    "english_name": "chest and abdominal fullness and tightness"
+  },
+  {
+    "id": "SMTS01370",
+    "english_name": "Chest and abdominal distention"
+  },
+  {
+    "id": "SMTS01371",
+    "english_name": "chest and abdominal edema"
+  },
+  {
+    "id": "SMTS01372",
+    "english_name": "Chest and abdominal pain"
+  },
+  {
+    "id": "SMTS01373",
+    "english_name": "distension of chest and abdomen"
+  },
+  {
+    "id": "SMTS01374",
+    "english_name": "Chest and abdominal distension and tightness"
+  },
+  {
+    "id": "SMTS01375",
+    "english_name": "Chest and abdominal distension and pain"
+  },
+  {
+    "id": "SMTS01376",
+    "english_name": "Chest and diaphragm discomfort"
+  },
+  {
+    "id": "SMTS01377",
+    "english_name": "chest and diaphragm fullness and tightness"
+  },
+  {
+    "id": "SMTS01378",
+    "english_name": "chest and diaphragm fullness"
+  },
+  {
+    "id": "SMTS01379",
+    "english_name": "Chest and diaphragm tightness"
+  },
+  {
+    "id": "SMTS01380",
+    "english_name": "Chest and diaphragm congestion"
+  },
+  {
+    "id": "SMTS01381",
+    "english_name": "distension of chest and diaphragm"
+  },
+  {
+    "id": "SMTS01382",
+    "english_name": "chest fullness"
+  },
+  {
+    "id": "SMTS01383",
+    "english_name": "Chest fullness and depression"
+  },
+  {
+    "id": "SMTS01384",
+    "english_name": "Chest tightness"
+  },
+  {
+    "id": "SMTS01385",
+    "english_name": "Chest tightness"
+  },
+  {
+    "id": "SMTS01386",
+    "english_name": "Chest tightness and discomfort"
+  },
+  {
+    "id": "SMTS01387",
+    "english_name": "Chest tightness and discomfort"
+  },
+  {
+    "id": "SMTS01388",
+    "english_name": "Chest tightness and pain"
+  },
+  {
+    "id": "SMTS01389",
+    "english_name": "chest pain"
+  },
+  {
+    "id": "SMTS01390",
+    "english_name": "Chest fever"
+  },
+  {
+    "id": "SMTS01391",
+    "english_name": "chest pain"
+  },
+  {
+    "id": "SMTS01392",
+    "english_name": "Chest pain all over the back"
+  },
+  {
+    "id": "SMTS01393",
+    "english_name": "chest and epigastrium fullness and tightness"
+  },
+  {
+    "id": "SMTS01394",
+    "english_name": "chest and epigastrium tightness"
+  },
+  {
+    "id": "SMTS01395",
+    "english_name": "chest fullness"
+  },
+  {
+    "id": "SMTS01396",
+    "english_name": "chest and epigastrium distension and tightness"
+  },
+  {
+    "id": "SMTS01397",
+    "english_name": "Tingling pain in the chest and hypochondrium"
+  },
+  {
+    "id": "SMTS01398",
+    "english_name": "chest and hypochondrium contusion"
+  },
+  {
+    "id": "SMTS01399",
+    "english_name": "bitter fullness in the chest and hypochondrium"
+  },
+  {
+    "id": "SMTS01400",
+    "english_name": "stabbing pain in chest and hypochondrium"
+  },
+  {
+    "id": "SMTS01401",
+    "english_name": "Chest and hypochondrium pain"
+  },
+  {
+    "id": "SMTS01402",
+    "english_name": "chest and hypochondrium tightness"
+  },
+  {
+    "id": "SMTS01403",
+    "english_name": "Qi stagnation in the chest and hypochondrium"
+  },
+  {
+    "id": "SMTS01404",
+    "english_name": "chest and hypochondrium pain"
+  },
+  {
+    "id": "SMTS01405",
+    "english_name": "chest and hypochondriac pain"
+  },
+  {
+    "id": "SMTS01406",
+    "english_name": "Dull pain in chest and hypochondrium"
+  },
+  {
+    "id": "SMTS01407",
+    "english_name": "distension of chest and hypochondrium"
+  },
+  {
+    "id": "SMTS01408",
+    "english_name": "fullness in the chest and hypochondrium"
+  },
+  {
+    "id": "SMTS01409",
+    "english_name": "distension and tightness in the chest and hypochondrium"
+  },
+  {
+    "id": "SMTS01410",
+    "english_name": "chest and hypochondrium pain"
+  },
+  {
+    "id": "SMTS01411",
+    "english_name": "chest and hypochondrium pain"
+  },
+  {
+    "id": "SMTS01412",
+    "english_name": "chest fullness"
+  },
+  {
+    "id": "SMTS01413",
+    "english_name": "Chest swelling and pain"
+  },
+  {
+    "id": "SMTS01414",
+    "english_name": "tightness in the chest"
+  },
+  {
+    "id": "SMTS01415",
+    "english_name": "Fullness and tightness in the chest"
+  },
+  {
+    "id": "SMTS01416",
+    "english_name": "hot and stuffy chest"
+  },
+  {
+    "id": "SMTS01417",
+    "english_name": "chest pain"
+  },
+  {
+    "id": "SMTS01418",
+    "english_name": "Shame"
+  },
+  {
+    "id": "SMTS01419",
+    "english_name": "Shame, Ming and Duohuan"
+  },
+  {
+    "id": "SMTS01420",
+    "english_name": "Shyness and tears"
+  },
+  {
+    "id": "SMTS01421",
+    "english_name": "shyness and photophobia"
+  },
+  {
+    "id": "SMTS01422",
+    "english_name": "poor sense of smell"
+  },
+  {
+    "id": "SMTS01423",
+    "english_name": "Dull sense of smell"
+  },
+  {
+    "id": "SMTS01424",
+    "english_name": "loss of sense of smell"
+  },
+  {
+    "id": "SMTS01425",
+    "english_name": "premature graying of beard and hair"
+  },
+  {
+    "id": "SMTS01426",
+    "english_name": "Asthenia and asthma"
+  },
+  {
+    "id": "SMTS01427",
+    "english_name": "Deficiency and Trouble"
+  },
+  {
+    "id": "SMTS01428",
+    "english_name": "Tiredness and insomnia"
+  },
+  {
+    "id": "SMTS01429",
+    "english_name": "Deficiency and cold"
+  },
+  {
+    "id": "SMTS01430",
+    "english_name": "Bleeding due to deficiency and cold"
+  },
+  {
+    "id": "SMTS01431",
+    "english_name": "Consumption"
+  },
+  {
+    "id": "SMTS01432",
+    "english_name": "chronic cough due to fatigue"
+  },
+  {
+    "id": "SMTS01433",
+    "english_name": "Cough and asthma due to fatigue"
+  },
+  {
+    "id": "SMTS01434",
+    "english_name": "Asthenia and cough"
+  },
+  {
+    "id": "SMTS01435",
+    "english_name": "Deficiency heat"
+  },
+  {
+    "id": "SMTS01436",
+    "english_name": "Deficient heat that persists"
+  },
+  {
+    "id": "SMTS01437",
+    "english_name": "collapse"
+  },
+  {
+    "id": "SMTS01438",
+    "english_name": "Deficiency and diarrhea"
+  },
+  {
+    "id": "SMTS01439",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS01440",
+    "english_name": "bloody stool"
+  },
+  {
+    "id": "SMTS01441",
+    "english_name": "vaso-neuropathic headache"
+  },
+  {
+    "id": "SMTS01443",
+    "english_name": "bloody stranguria"
+  },
+  {
+    "id": "SMTS01444",
+    "english_name": "hematuria"
+  },
+  {
+    "id": "SMTS01445",
+    "english_name": "blood heat"
+  },
+  {
+    "id": "SMTS01446",
+    "english_name": "blood heat and vomiting"
+  },
+  {
+    "id": "SMTS01447",
+    "english_name": "blood heat and vomiting"
+  },
+  {
+    "id": "SMTS01451",
+    "english_name": "blood stasis"
+  },
+  {
+    "id": "SMTS01453",
+    "english_name": "hematoma pain"
+  },
+  {
+    "id": "SMTS01454",
+    "english_name": "loose teeth"
+  },
+  {
+    "id": "SMTS01455",
+    "english_name": "Trismus"
+  },
+  {
+    "id": "SMTS01456",
+    "english_name": "toothache"
+  },
+  {
+    "id": "SMTS01457",
+    "english_name": "toothache"
+  },
+  {
+    "id": "SMTS01458",
+    "english_name": "Bleeding gums"
+  },
+  {
+    "id": "SMTS01459",
+    "english_name": "red and swollen gums"
+  },
+  {
+    "id": "SMTS01460",
+    "english_name": "gum pain"
+  },
+  {
+    "id": "SMTS01461",
+    "english_name": "swollen gums"
+  },
+  {
+    "id": "SMTS01462",
+    "english_name": "gum swelling and pain"
+  },
+  {
+    "id": "SMTS01463",
+    "english_name": "gum swelling"
+  },
+  {
+    "id": "SMTS01464",
+    "english_name": "Pharyngeal discomfort"
+  },
+  {
+    "id": "SMTS01465",
+    "english_name": "Throat congestion"
+  },
+  {
+    "id": "SMTS01466",
+    "english_name": "red throat"
+  },
+  {
+    "id": "SMTS01467",
+    "english_name": "pharyngeal redness and swelling"
+  },
+  {
+    "id": "SMTS01468",
+    "english_name": "pharyngeal swelling"
+  },
+  {
+    "id": "SMTS01469",
+    "english_name": "pharyngeal swelling and pain"
+  },
+  {
+    "id": "SMTS01470",
+    "english_name": "dry throat"
+  },
+  {
+    "id": "SMTS01471",
+    "english_name": "dry throat and sore throat"
+  },
+  {
+    "id": "SMTS01472",
+    "english_name": "Dry throat"
+  },
+  {
+    "id": "SMTS01473",
+    "english_name": "dry and burning throat"
+  },
+  {
+    "id": "SMTS01474",
+    "english_name": "Unfavorable throat and diaphragm"
+  },
+  {
+    "id": "SMTS01475",
+    "english_name": "red throat"
+  },
+  {
+    "id": "SMTS01476",
+    "english_name": "sore throat, redness, swelling and pain"
+  },
+  {
+    "id": "SMTS01477",
+    "english_name": "Sore throat"
+  },
+  {
+    "id": "SMTS01478",
+    "english_name": "dry throat"
+  },
+  {
+    "id": "SMTS01479",
+    "english_name": "Dry throat"
+  },
+  {
+    "id": "SMTS01480",
+    "english_name": "Throat redness and swelling"
+  },
+  {
+    "id": "SMTS01481",
+    "english_name": "Throat Pain"
+  },
+  {
+    "id": "SMTS01482",
+    "english_name": "sore throat"
+  },
+  {
+    "id": "SMTS01483",
+    "english_name": "itchy throat"
+  },
+  {
+    "id": "SMTS01484",
+    "english_name": "swollen throat"
+  },
+  {
+    "id": "SMTS01485",
+    "english_name": "sore throat"
+  },
+  {
+    "id": "SMTS01486",
+    "english_name": "Sore throat and carbuncle"
+  },
+  {
+    "id": "SMTS01487",
+    "english_name": "Throat burning"
+  },
+  {
+    "id": "SMTS01488",
+    "english_name": "Congestion of pharyngeal mucosa"
+  },
+  {
+    "id": "SMTS01489",
+    "english_name": "sore throat"
+  },
+  {
+    "id": "SMTS01490",
+    "english_name": "Difficulty swallowing"
+  },
+  {
+    "id": "SMTS01491",
+    "english_name": "itchy throat"
+  },
+  {
+    "id": "SMTS01492",
+    "english_name": "pharyngeal abscess"
+  },
+  {
+    "id": "SMTS01493",
+    "english_name": "dry throat"
+  },
+  {
+    "id": "SMTS01494",
+    "english_name": "phlegm in the throat"
+  },
+  {
+    "id": "SMTS01495",
+    "english_name": "burning sensation in throat"
+  },
+  {
+    "id": "SMTS01496",
+    "english_name": "Speech Difficulty"
+  },
+  {
+    "id": "SMTS01497",
+    "english_name": "slurred speech"
+  },
+  {
+    "id": "SMTS01498",
+    "english_name": "slurred speech"
+  },
+  {
+    "id": "SMTS01499",
+    "english_name": "astringent speech"
+  },
+  {
+    "id": "SMTS01500",
+    "english_name": "facial erythema"
+  },
+  {
+    "id": "SMTS01501",
+    "english_name": "shiny and greasy facial skin"
+  },
+  {
+    "id": "SMTS01502",
+    "english_name": "itching around the eyes"
+  },
+  {
+    "id": "SMTS01503",
+    "english_name": "blood stasis under the eyes"
+  },
+  {
+    "id": "SMTS01504",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS01505",
+    "english_name": "red and rotten eyelids"
+  },
+  {
+    "id": "SMTS01506",
+    "english_name": "red and rotten eyelids"
+  },
+  {
+    "id": "SMTS01507",
+    "english_name": "red and swollen eyes"
+  },
+  {
+    "id": "SMTS01508",
+    "english_name": "Eye pain and itching"
+  },
+  {
+    "id": "SMTS01509",
+    "english_name": "eye swelling and pain"
+  },
+  {
+    "id": "SMTS01510",
+    "english_name": "blurred vision"
+  },
+  {
+    "id": "SMTS01511",
+    "english_name": "Dizzy eyes"
+  },
+  {
+    "id": "SMTS01512",
+    "english_name": "Eye nebula"
+  },
+  {
+    "id": "SMTS01513",
+    "english_name": "eye pain"
+  },
+  {
+    "id": "SMTS01514",
+    "english_name": "anorexia"
+  },
+  {
+    "id": "SMTS01515",
+    "english_name": "impotence"
+  },
+  {
+    "id": "SMTS01516",
+    "english_name": "Yang deficiency"
+  },
+  {
+    "id": "SMTS01517",
+    "english_name": "Yang deficiency and blood stasis"
+  },
+  {
+    "id": "SMTS01518",
+    "english_name": "Yang deficiency and desire to escape"
+  },
+  {
+    "id": "SMTS01519",
+    "english_name": "itching"
+  },
+  {
+    "id": "SMTS01520",
+    "english_name": "low back pain"
+  },
+  {
+    "id": "SMTS01521",
+    "english_name": "waist pain"
+  },
+  {
+    "id": "SMTS01522",
+    "english_name": "weak waist"
+  },
+  {
+    "id": "SMTS01523",
+    "english_name": "lumbosacral pain"
+  },
+  {
+    "id": "SMTS01524",
+    "english_name": "lumbosacral pain"
+  },
+  {
+    "id": "SMTS01525",
+    "english_name": "lumbosacral distension and pain"
+  },
+  {
+    "id": "SMTS01526",
+    "english_name": "waist and abdominal pain"
+  },
+  {
+    "id": "SMTS01528",
+    "english_name": "cold pain in the waist and spine"
+  },
+  {
+    "id": "SMTS01529",
+    "english_name": "pain in the waist and spine"
+  },
+  {
+    "id": "SMTS01530",
+    "english_name": "Lumbar pain"
+  },
+  {
+    "id": "SMTS01531",
+    "english_name": "backache"
+  },
+  {
+    "id": "SMTS01532",
+    "english_name": "low back pain"
+  },
+  {
+    "id": "SMTS01533",
+    "english_name": "Soreness and weakness in waist and legs"
+  },
+  {
+    "id": "SMTS01534",
+    "english_name": "soreness in waist and legs"
+  },
+  {
+    "id": "SMTS01535",
+    "english_name": "severe waist and leg pain"
+  },
+  {
+    "id": "SMTS01536",
+    "english_name": "waist and leg pain"
+  },
+  {
+    "id": "SMTS01537",
+    "english_name": "Soreness of waist and knee joints"
+  },
+  {
+    "id": "SMTS01538",
+    "english_name": "waist and knee joint pain"
+  },
+  {
+    "id": "SMTS01539",
+    "english_name": "cold pain in waist and knees"
+  },
+  {
+    "id": "SMTS01540",
+    "english_name": "Soreness and weakness in waist and knees"
+  },
+  {
+    "id": "SMTS01541",
+    "english_name": "soreness and coldness in waist and knees"
+  },
+  {
+    "id": "SMTS01542",
+    "english_name": "Soreness and weakness in waist and knees"
+  },
+  {
+    "id": "SMTS01543",
+    "english_name": "soreness in waist and knees"
+  },
+  {
+    "id": "SMTS01544",
+    "english_name": "Soreness of waist and knees"
+  },
+  {
+    "id": "SMTS01545",
+    "english_name": "waist and knee pain"
+  },
+  {
+    "id": "SMTS01546",
+    "english_name": "Weakness in waist and knees"
+  },
+  {
+    "id": "SMTS01548",
+    "english_name": "nocturnal enuresis"
+  },
+  {
+    "id": "SMTS01549",
+    "english_name": "Night Terrors"
+  },
+  {
+    "id": "SMTS01551",
+    "english_name": "Restless sleep at night"
+  },
+  {
+    "id": "SMTS01552",
+    "english_name": "Night Dreams"
+  },
+  {
+    "id": "SMTS01553",
+    "english_name": "Restless Night Sleep"
+  },
+  {
+    "id": "SMTS01554",
+    "english_name": "restless sleep at night"
+  },
+  {
+    "id": "SMTS01555",
+    "english_name": "Frequent urination at night"
+  },
+  {
+    "id": "SMTS01556",
+    "english_name": "Frequent urination at night"
+  },
+  {
+    "id": "SMTS01557",
+    "english_name": "clear and clear urine at night"
+  },
+  {
+    "id": "SMTS01558",
+    "english_name": "hot at night and cool in the morning"
+  },
+  {
+    "id": "SMTS01559",
+    "english_name": "Night Crying"
+  },
+  {
+    "id": "SMTS01560",
+    "english_name": "Geezing"
+  },
+  {
+    "id": "SMTS01561",
+    "english_name": "spermatorrhea"
+  },
+  {
+    "id": "SMTS01562",
+    "english_name": "enuresis"
+  },
+  {
+    "id": "SMTS01563",
+    "english_name": "Depression"
+  },
+  {
+    "id": "SMTS01564",
+    "english_name": "Susceptibility"
+  },
+  {
+    "id": "SMTS01565",
+    "english_name": "susceptibility to wind evil"
+  },
+  {
+    "id": "SMTS01566",
+    "english_name": "easy hunger"
+  },
+  {
+    "id": "SMTS01567",
+    "english_name": "easily frightened"
+  },
+  {
+    "id": "SMTS01568",
+    "english_name": "Irritability"
+  },
+  {
+    "id": "SMTS01570",
+    "english_name": "Vaginal Bleeding"
+  },
+  {
+    "id": "SMTS01571",
+    "english_name": "Vaginal Dryness"
+  },
+  {
+    "id": "SMTS01573",
+    "english_name": "uncontrolled vaginal gangrene"
+  },
+  {
+    "id": "SMTS01574",
+    "english_name": "initial onset of vaginal gangrene"
+  },
+  {
+    "id": "SMTS01575",
+    "english_name": "vaginal gangrene, swelling and pain"
+  },
+  {
+    "id": "SMTS01576",
+    "english_name": "wet and itchy scrotum"
+  },
+  {
+    "id": "SMTS01577",
+    "english_name": "vaginal itching"
+  },
+  {
+    "id": "SMTS01578",
+    "english_name": "vaginal swelling"
+  },
+  {
+    "id": "SMTS01579",
+    "english_name": "Dumb tone"
+  },
+  {
+    "id": "SMTS01581",
+    "english_name": "poor diet"
+  },
+  {
+    "id": "SMTS01582",
+    "english_name": "Improper diet"
+  },
+  {
+    "id": "SMTS01583",
+    "english_name": "Dietary stagnation"
+  },
+  {
+    "id": "SMTS01584",
+    "english_name": "Eat less"
+  },
+  {
+    "id": "SMTS01585",
+    "english_name": "Eating Stagnation"
+  },
+  {
+    "id": "SMTS01586",
+    "english_name": "dull pain"
+  },
+  {
+    "id": "SMTS01587",
+    "english_name": "vaginal mass"
+  },
+  {
+    "id": "SMTS01593",
+    "english_name": "carbuncle"
+  },
+  {
+    "id": "SMTS01594",
+    "english_name": "carbuncle does not break out"
+  },
+  {
+    "id": "SMTS01595",
+    "english_name": "carbuncle and furuncle"
+  },
+  {
+    "id": "SMTS01596",
+    "english_name": "Carbuncle is difficult to ulcerate"
+  },
+  {
+    "id": "SMTS01597",
+    "english_name": "carbuncle, swelling and poison"
+  },
+  {
+    "id": "SMTS01598",
+    "english_name": "carbuncle, swelling and pain"
+  },
+  {
+    "id": "SMTS01599",
+    "english_name": "carbuncle"
+  },
+  {
+    "id": "SMTS01600",
+    "english_name": "carbuncle, swollen sore"
+  },
+  {
+    "id": "SMTS01601",
+    "english_name": "carbuncle ulceration"
+  },
+  {
+    "id": "SMTS01602",
+    "english_name": "spitting and salivation"
+  },
+  {
+    "id": "SMTS01603",
+    "english_name": "sweating"
+  },
+  {
+    "id": "SMTS01604",
+    "english_name": "blood clots"
+  },
+  {
+    "id": "SMTS01605",
+    "english_name": "Dull pain in the right upper abdomen"
+  },
+  {
+    "id": "SMTS01606",
+    "english_name": "Fullness in the right hypochondrium"
+  },
+  {
+    "id": "SMTS01607",
+    "english_name": "ecchymosis"
+  },
+  {
+    "id": "SMTS01608",
+    "english_name": "persistent blood stasis"
+  },
+  {
+    "id": "SMTS01609",
+    "english_name": "blood stasis and swelling"
+  },
+  {
+    "id": "SMTS01610",
+    "english_name": "blood stasis blocking collaterals"
+  },
+  {
+    "id": "SMTS01611",
+    "english_name": "amenorrhea due to blood stasis"
+  },
+  {
+    "id": "SMTS01613",
+    "english_name": "Language Difficulty"
+  },
+  {
+    "id": "SMTS01614",
+    "english_name": "astringent speech"
+  },
+  {
+    "id": "SMTS01615",
+    "english_name": "depression and upset"
+  },
+  {
+    "id": "SMTS01616",
+    "english_name": "irregular menstruation"
+  },
+  {
+    "id": "SMTS01617",
+    "english_name": "Menorrhagia"
+  },
+  {
+    "id": "SMTS01618",
+    "english_name": "Postmenstrual errors"
+  },
+  {
+    "id": "SMTS01619",
+    "english_name": "heavy menstruation"
+  },
+  {
+    "id": "SMTS01620",
+    "english_name": "heavy menstrual flow and foul odor"
+  },
+  {
+    "id": "SMTS01621",
+    "english_name": "low menstrual flow"
+  },
+  {
+    "id": "SMTS01622",
+    "english_name": "early menstruation"
+  },
+  {
+    "id": "SMTS01623",
+    "english_name": "irregular menstruation"
+  },
+  {
+    "id": "SMTS01626",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS01628",
+    "english_name": "organ ptosis"
+  },
+  {
+    "id": "SMTS01630",
+    "english_name": "premature birth"
+  },
+  {
+    "id": "SMTS01631",
+    "english_name": "premature ejaculation"
+  },
+  {
+    "id": "SMTS01632",
+    "english_name": "Dry cough"
+  },
+  {
+    "id": "SMTS01633",
+    "english_name": "Dry cough with less phlegm"
+  },
+  {
+    "id": "SMTS01634",
+    "english_name": "dryness and thirst"
+  },
+  {
+    "id": "SMTS01635",
+    "english_name": "dryness and heat"
+  },
+  {
+    "id": "SMTS01636",
+    "english_name": "dry phlegm"
+  },
+  {
+    "id": "SMTS01637",
+    "english_name": "aversion to cold"
+  },
+  {
+    "id": "SMTS01639",
+    "english_name": "Delirium"
+  },
+  {
+    "id": "SMTS01640",
+    "english_name": "Delirium"
+  },
+  {
+    "id": "SMTS01641",
+    "english_name": "fullness"
+  },
+  {
+    "id": "SMTS01642",
+    "english_name": "swelling and pain"
+  },
+  {
+    "id": "SMTS01643",
+    "english_name": "Insufficient True Yuan"
+  },
+  {
+    "id": "SMTS01644",
+    "english_name": "hesitation"
+  },
+  {
+    "id": "SMTS01645",
+    "english_name": "Symptoms"
+  },
+  {
+    "id": "SMTS01646",
+    "english_name": "Massage"
+  },
+  {
+    "id": "SMTS01647",
+    "english_name": "Abdominal pain"
+  },
+  {
+    "id": "SMTS01648",
+    "english_name": "lumps and lumps"
+  },
+  {
+    "id": "SMTS01649",
+    "english_name": "Symptoms"
+  },
+  {
+    "id": "SMTS01652",
+    "english_name": "limb edema"
+  },
+  {
+    "id": "SMTS01653",
+    "english_name": "Pain in limbs and joints"
+  },
+  {
+    "id": "SMTS01654",
+    "english_name": "tiredness and fatigue in limbs"
+  },
+  {
+    "id": "SMTS01655",
+    "english_name": "cold limbs"
+  },
+  {
+    "id": "SMTS01656",
+    "english_name": "numbness in limbs"
+  },
+  {
+    "id": "SMTS01657",
+    "english_name": "limb aches"
+  },
+  {
+    "id": "SMTS01658",
+    "english_name": "Limb Disadvantage"
+  },
+  {
+    "id": "SMTS01659",
+    "english_name": "No use of limbs"
+  },
+  {
+    "id": "SMTS01660",
+    "english_name": "heavy limbs"
+  },
+  {
+    "id": "SMTS01661",
+    "english_name": "limb weakness"
+  },
+  {
+    "id": "SMTS01662",
+    "english_name": "limb edema"
+  },
+  {
+    "id": "SMTS01663",
+    "english_name": "limb joint pain"
+  },
+  {
+    "id": "SMTS01664",
+    "english_name": "limited limb movement"
+  },
+  {
+    "id": "SMTS01665",
+    "english_name": "limb muscle atrophy"
+  },
+  {
+    "id": "SMTS01666",
+    "english_name": "limb spasm"
+  },
+  {
+    "id": "SMTS01667",
+    "english_name": "heavy limbs"
+  },
+  {
+    "id": "SMTS01668",
+    "english_name": "tingling pain in limbs"
+  },
+  {
+    "id": "SMTS01669",
+    "english_name": "numbness of limbs"
+  },
+  {
+    "id": "SMTS01670",
+    "english_name": "numbness and spasm of limbs"
+  },
+  {
+    "id": "SMTS01671",
+    "english_name": "sore limbs"
+  },
+  {
+    "id": "SMTS01672",
+    "english_name": "Soreness and heaviness of limbs"
+  },
+  {
+    "id": "SMTS01673",
+    "english_name": "limb pain"
+  },
+  {
+    "id": "SMTS01674",
+    "english_name": "chest pain in limbs"
+  },
+  {
+    "id": "SMTS01676",
+    "english_name": "Hemorrhoids Bleeding"
+  },
+  {
+    "id": "SMTS01677",
+    "english_name": "Hemorrhoid Pain"
+  },
+  {
+    "id": "SMTS01678",
+    "english_name": "swollen hemorrhoids"
+  },
+  {
+    "id": "SMTS01679",
+    "english_name": "hemorrhoid swelling and pain"
+  },
+  {
+    "id": "SMTS01680",
+    "english_name": "hemorrhoids"
+  },
+  {
+    "id": "SMTS01681",
+    "english_name": "hemorrhoids"
+  },
+  {
+    "id": "SMTS01683",
+    "english_name": "Stroke"
+  },
+  {
+    "id": "SMTS01684",
+    "english_name": "sequelae of stroke"
+  },
+  {
+    "id": "SMTS01685",
+    "english_name": "Heat Stroke"
+  },
+  {
+    "id": "SMTS01686",
+    "english_name": "swelling and poisoning"
+  },
+  {
+    "id": "SMTS01687",
+    "english_name": "swelling and pain"
+  },
+  {
+    "id": "SMTS01688",
+    "english_name": "swelling, pain, and shyness"
+  },
+  {
+    "id": "SMTS01689",
+    "english_name": "swelling, hardness and pain"
+  },
+  {
+    "id": "SMTS01690",
+    "english_name": "swelling"
+  },
+  {
+    "id": "SMTS01691",
+    "english_name": "swelling and numbness"
+  },
+  {
+    "id": "SMTS01693",
+    "english_name": "general fatigue"
+  },
+  {
+    "id": "SMTS01695",
+    "english_name": "Spasticity pain"
+  },
+  {
+    "id": "SMTS01696",
+    "english_name": "strong fever"
+  },
+  {
+    "id": "SMTS01697",
+    "english_name": "burning"
+  },
+  {
+    "id": "SMTS01698",
+    "english_name": "burning pain"
+  },
+  {
+    "id": "SMTS01699",
+    "english_name": "turbid nasal discharge"
+  },
+  {
+    "id": "SMTS01700",
+    "english_name": "turbid nasal discharge and odor"
+  },
+  {
+    "id": "SMTS01701",
+    "english_name": "Trouble"
+  },
+  {
+    "id": "SMTS01702",
+    "english_name": "uterine bleeding"
+  },
+  {
+    "id": "SMTS01703",
+    "english_name": "functional uterine bleeding"
+  },
+  {
+    "id": "SMTS01704",
+    "english_name": "uterine prolapse"
+  },
+  {
+    "id": "SMTS01705",
+    "english_name": "eclamptic convulsions"
+  },
+  {
+    "id": "SMTS01706",
+    "english_name": "Purpura"
+  },
+  {
+    "id": "SMTS01707",
+    "english_name": "spontaneous sweating"
+  },
+  {
+    "id": "SMTS01708",
+    "english_name": "foot twitching"
+  },
+  {
+    "id": "SMTS01709",
+    "english_name": "Heel Pain"
+  },
+  {
+    "id": "SMTS01710",
+    "english_name": "redness, swelling, heat and pain in the shins"
+  },
+  {
+    "id": "SMTS01711",
+    "english_name": "foot spasm"
+  },
+  {
+    "id": "SMTS01712",
+    "english_name": "cold feet"
+  },
+  {
+    "id": "SMTS01713",
+    "english_name": "numbness of feet"
+  },
+  {
+    "id": "SMTS01714",
+    "english_name": "foot flaccidity and spasm"
+  },
+  {
+    "id": "SMTS01715",
+    "english_name": "redness and swelling of feet and knees"
+  },
+  {
+    "id": "SMTS01716",
+    "english_name": "redness, swelling, heat and pain in the feet and knees"
+  },
+  {
+    "id": "SMTS01717",
+    "english_name": "swollen feet"
+  },
+  {
+    "id": "SMTS01718",
+    "english_name": "Chancre"
+  },
+  {
+    "id": "SMTS01720",
+    "english_name": "Do not lie down"
+  },
+  {
+    "id": "SMTS01721",
+    "english_name": "Insomnia"
+  },
+  {
+    "id": "SMTS01722",
+    "english_name": "Silence"
+  },
+  {
+    "id": "SMTS01725",
+    "english_name": "middle-evil coma"
+  },
+  {
+    "id": "SMTS01727",
+    "english_name": "Stroke and Phlegm Disorder"
+  },
+  {
+    "id": "SMTS01728",
+    "english_name": "Not closing the mouth for a long time"
+  },
+  {
+    "id": "SMTS01730",
+    "english_name": "Prolonged ulceration"
+  },
+  {
+    "id": "SMTS01733",
+    "english_name": "mastitis swelling and pain"
+  },
+  {
+    "id": "SMTS01737",
+    "english_name": "Milk Moth"
+  },
+  {
+    "id": "SMTS01738",
+    "english_name": "Breast Atresia"
+  },
+  {
+    "id": "SMTS01739",
+    "english_name": "Difficulty in defecation"
+  },
+  {
+    "id": "SMTS01740",
+    "english_name": "obstruction of bowel movements"
+  },
+  {
+    "id": "SMTS01741",
+    "english_name": "Qi pain"
+  },
+  {
+    "id": "SMTS01745",
+    "english_name": "Postpartum congestion"
+  },
+  {
+    "id": "SMTS01748",
+    "english_name": "postpartum blood stasis"
+  },
+  {
+    "id": "SMTS01750",
+    "english_name": "Postpartum blood stasis"
+  },
+  {
+    "id": "SMTS01759",
+    "english_name": "fatigue and fatigue"
+  },
+  {
+    "id": "SMTS01761",
+    "english_name": "asthma"
+  },
+  {
+    "id": "SMTS01762",
+    "english_name": "Bitter Pond"
+  },
+  {
+    "id": "SMTS01763",
+    "english_name": "migraine headache"
+  },
+  {
+    "id": "SMTS01765",
+    "english_name": "Guan Qiao is blocked."
+  },
+  {
+    "id": "SMTS01766",
+    "english_name": "joint flaccidity"
+  },
+  {
+    "id": "SMTS01767",
+    "english_name": "joint swelling"
+  },
+  {
+    "id": "SMTS01768",
+    "english_name": "joint acidity"
+  },
+  {
+    "id": "SMTS01773",
+    "english_name": "Strain and low back pain"
+  },
+  {
+    "id": "SMTS01774",
+    "english_name": "labor fever"
+  },
+  {
+    "id": "SMTS01776",
+    "english_name": "wind pain during festivals"
+  },
+  {
+    "id": "SMTS01780",
+    "english_name": "Mouth㖞"
+  },
+  {
+    "id": "SMTS01781",
+    "english_name": "slanted mouth and eyes"
+  },
+  {
+    "id": "SMTS01782",
+    "english_name": "squinting in mouth and eyes"
+  },
+  {
+    "id": "SMTS01784",
+    "english_name": "Oral cochlea"
+  },
+  {
+    "id": "SMTS01786",
+    "english_name": "backache"
+  },
+  {
+    "id": "SMTS01789",
+    "english_name": "vomiting and hiccups"
+  },
+  {
+    "id": "SMTS01790",
+    "english_name": "Vomiting and abdominal pain"
+  },
+  {
+    "id": "SMTS01791",
+    "english_name": "vomiting"
+  },
+  {
+    "id": "SMTS01793",
+    "english_name": "unable to vomit"
+  },
+  {
+    "id": "SMTS01795",
+    "english_name": "Cough and asthma"
+  },
+  {
+    "id": "SMTS01796",
+    "english_name": "expectoration"
+  },
+  {
+    "id": "SMTS01797",
+    "english_name": "Cough"
+  },
+  {
+    "id": "SMTS01798",
+    "english_name": "dry and painful throat"
+  },
+  {
+    "id": "SMTS01800",
+    "english_name": "pharyngeal swelling"
+  },
+  {
+    "id": "SMTS01805",
+    "english_name": "choking and diaphragm"
+  },
+  {
+    "id": "SMTS01807",
+    "english_name": "twitching of limbs"
+  },
+  {
+    "id": "SMTS01808",
+    "english_name": "Acute pain in limbs"
+  },
+  {
+    "id": "SMTS01811",
+    "english_name": "hoarseness"
+  },
+  {
+    "id": "SMTS01814",
+    "english_name": "trauma, swelling and pain"
+  },
+  {
+    "id": "SMTS01816",
+    "english_name": "exogenous fever"
+  },
+  {
+    "id": "SMTS01818",
+    "english_name": "Big Head Plague"
+  },
+  {
+    "id": "SMTS01819",
+    "english_name": "profuse sweating"
+  },
+  {
+    "id": "SMTS01820",
+    "english_name": "Pemphigus"
+  },
+  {
+    "id": "SMTS01822",
+    "english_name": "blood loss"
+  },
+  {
+    "id": "SMTS01828",
+    "english_name": "Running Dolphin"
+  },
+  {
+    "id": "SMTS01829",
+    "english_name": "Women’s irritability"
+  },
+  {
+    "id": "SMTS01833",
+    "english_name": "Pregnancy Eclampsia"
+  },
+  {
+    "id": "SMTS01837",
+    "english_name": "constipation due to excess heat accumulation"
+  },
+  {
+    "id": "SMTS01838",
+    "english_name": "cold uterus and infertility"
+  },
+  {
+    "id": "SMTS01839",
+    "english_name": "cold-dampness and vomiting"
+  },
+  {
+    "id": "SMTS01840",
+    "english_name": "cold-damp athlete’s foot"
+  },
+  {
+    "id": "SMTS01842",
+    "english_name": "cold hernia and abdominal pain"
+  },
+  {
+    "id": "SMTS01843",
+    "english_name": "Cold Bi"
+  },
+  {
+    "id": "SMTS01844",
+    "english_name": "constipation due to cold accumulation"
+  },
+  {
+    "id": "SMTS01846",
+    "english_name": "dripping urine"
+  },
+  {
+    "id": "SMTS01848",
+    "english_name": "short, red, astringent and painful urination"
+  },
+  {
+    "id": "SMTS01849",
+    "english_name": "Difficulty urinating"
+  },
+  {
+    "id": "SMTS01850",
+    "english_name": "red urine"
+  },
+  {
+    "id": "SMTS01853",
+    "english_name": "acute convulsions in children"
+  },
+  {
+    "id": "SMTS01854",
+    "english_name": "Children crying"
+  },
+  {
+    "id": "SMTS01855",
+    "english_name": "epilepsy in children"
+  },
+  {
+    "id": "SMTS01856",
+    "english_name": "convulsions in children"
+  },
+  {
+    "id": "SMTS01857",
+    "english_name": "Slow terror in children"
+  },
+  {
+    "id": "SMTS01859",
+    "english_name": "infantile malnutrition"
+  },
+  {
+    "id": "SMTS01860",
+    "english_name": "phlegm-heat and epilepsy in children"
+  },
+  {
+    "id": "SMTS01862",
+    "english_name": "Shaoyin subdued wind headache"
+  },
+  {
+    "id": "SMTS01863",
+    "english_name": "oliguria, astringency and pain"
+  },
+  {
+    "id": "SMTS01864",
+    "english_name": "hot and painful urination"
+  },
+  {
+    "id": "SMTS01866",
+    "english_name": "anuria"
+  },
+  {
+    "id": "SMTS01867",
+    "english_name": "collapse"
+  },
+  {
+    "id": "SMTS01870",
+    "english_name": "white vaginal discharge"
+  },
+  {
+    "id": "SMTS01871",
+    "english_name": "vaginal discharge with red color"
+  },
+  {
+    "id": "SMTS01872",
+    "english_name": "vaginal itching"
+  },
+  {
+    "id": "SMTS01877",
+    "english_name": "swelling"
+  },
+  {
+    "id": "SMTS01879",
+    "english_name": "strong middle"
+  },
+  {
+    "id": "SMTS01880",
+    "english_name": "palpitations"
+  },
+  {
+    "id": "SMTS01882",
+    "english_name": "disharmony between the heart and kidneys and excessive dreams"
+  },
+  {
+    "id": "SMTS01883",
+    "english_name": "Insomnia due to disharmony between the heart and kidneys"
+  },
+  {
+    "id": "SMTS01885",
+    "english_name": "depression"
+  },
+  {
+    "id": "SMTS01886",
+    "english_name": "Severe pain in the heart and abdomen"
+  },
+  {
+    "id": "SMTS01887",
+    "english_name": "abdominal pain"
+  },
+  {
+    "id": "SMTS01888",
+    "english_name": "blood stasis and pain in the heart and abdomen"
+  },
+  {
+    "id": "SMTS01889",
+    "english_name": "Depression"
+  },
+  {
+    "id": "SMTS01896",
+    "english_name": "endless lochia"
+  },
+  {
+    "id": "SMTS01897",
+    "english_name": "Lochia is not working"
+  },
+  {
+    "id": "SMTS01898",
+    "english_name": "frightened pain"
+  },
+  {
+    "id": "SMTS01909",
+    "english_name": "Fistula on hands and feet"
+  },
+  {
+    "id": "SMTS01910",
+    "english_name": "numbness in hands and feet"
+  },
+  {
+    "id": "SMTS01911",
+    "english_name": "sprain and pain"
+  },
+  {
+    "id": "SMTS01912",
+    "english_name": "spasm"
+  },
+  {
+    "id": "SMTS01913",
+    "english_name": "acute spasm"
+  },
+  {
+    "id": "SMTS01914",
+    "english_name": "spasm pain"
+  },
+  {
+    "id": "SMTS01918",
+    "english_name": "purple and black spots"
+  },
+  {
+    "id": "SMTS01919",
+    "english_name": "Xinjiu Cough"
+  },
+  {
+    "id": "SMTS01920",
+    "english_name": "New Cough"
+  },
+  {
+    "id": "SMTS01922",
+    "english_name": "No phlegm"
+  },
+  {
+    "id": "SMTS01924",
+    "english_name": "premature aging"
+  },
+  {
+    "id": "SMTS01925",
+    "english_name": "Epidemic"
+  },
+  {
+    "id": "SMTS01926",
+    "english_name": "Epidemic Cold"
+  },
+  {
+    "id": "SMTS01927",
+    "english_name": "dizziness"
+  },
+  {
+    "id": "SMTS01929",
+    "english_name": "cough"
+  },
+  {
+    "id": "SMTS01930",
+    "english_name": "vomiting and diarrhea due to summer heat dampness"
+  },
+  {
+    "id": "SMTS01938",
+    "english_name": "Asthma and excessive phlegm"
+  },
+  {
+    "id": "SMTS01943",
+    "english_name": "edema and fullness"
+  },
+  {
+    "id": "SMTS01944",
+    "english_name": "edema, full urine, and oliguria"
+  },
+  {
+    "id": "SMTS01947",
+    "english_name": "pantothenic acid"
+  },
+  {
+    "id": "SMTS01948",
+    "english_name": "severe diarrhea and diarrhea"
+  },
+  {
+    "id": "SMTS01954",
+    "english_name": "lymph node tuberculosis"
+  },
+  {
+    "id": "SMTS01956",
+    "english_name": "stranguria and astringent pain"
+  },
+  {
+    "id": "SMTS01959",
+    "english_name": "Poison during warm epidemic"
+  },
+  {
+    "id": "SMTS01960",
+    "english_name": "febrile disease"
+  },
+  {
+    "id": "SMTS01963",
+    "english_name": "Damp-heat stranguria syndrome"
+  },
+  {
+    "id": "SMTS01964",
+    "english_name": "Damp-heat sores"
+  },
+  {
+    "id": "SMTS01968",
+    "english_name": "Dampness"
+  },
+  {
+    "id": "SMTS01969",
+    "english_name": "dampness syndrome"
+  },
+  {
+    "id": "SMTS01970",
+    "english_name": "Ulcer"
+  },
+  {
+    "id": "SMTS01973",
+    "english_name": "Danyu"
+  },
+  {
+    "id": "SMTS01974",
+    "english_name": "fire poisonous sores"
+  },
+  {
+    "id": "SMTS01977",
+    "english_name": "Sore Throat and Dansha"
+  },
+  {
+    "id": "SMTS01985",
+    "english_name": "hot stranguria"
+  },
+  {
+    "id": "SMTS01988",
+    "english_name": "heat numbness"
+  },
+  {
+    "id": "SMTS01989",
+    "english_name": "heat syndrome"
+  },
+  {
+    "id": "SMTS01990",
+    "english_name": "swelling"
+  },
+  {
+    "id": "SMTS01991",
+    "english_name": "Teeth Crane"
+  },
+  {
+    "id": "SMTS01992",
+    "english_name": "gum pain"
+  },
+  {
+    "id": "SMTS01993",
+    "english_name": "swollen, painful and bleeding gums"
+  },
+  {
+    "id": "SMTS01995",
+    "english_name": "Madness Syndrome"
+  },
+  {
+    "id": "SMTS01998",
+    "english_name": "boils, swelling and poison"
+  },
+  {
+    "id": "SMTS01999",
+    "english_name": "boils"
+  },
+  {
+    "id": "SMTS02001",
+    "english_name": "Healing Poison"
+  },
+  {
+    "id": "SMTS02002",
+    "english_name": "Treating Sores"
+  },
+  {
+    "id": "SMTS02003",
+    "english_name": "Hernia Pain"
+  },
+  {
+    "id": "SMTS02015",
+    "english_name": "Sores"
+  },
+  {
+    "id": "SMTS02016",
+    "english_name": "boils"
+  },
+  {
+    "id": "SMTS02017",
+    "english_name": "first onset of sores"
+  },
+  {
+    "id": "SMTS02020",
+    "english_name": "sores, swelling and poison"
+  },
+  {
+    "id": "SMTS02021",
+    "english_name": "Cancer"
+  },
+  {
+    "id": "SMTS02023",
+    "english_name": "sores, carbuncles, swollen poison"
+  },
+  {
+    "id": "SMTS02026",
+    "english_name": "purple-black rash"
+  },
+  {
+    "id": "SMTS02027",
+    "english_name": "pain and numbness"
+  },
+  {
+    "id": "SMTS02028",
+    "english_name": "Deficiency and heat that persists after illness"
+  },
+  {
+    "id": "SMTS02033",
+    "english_name": "carbuncle, swelling and poison"
+  },
+  {
+    "id": "SMTS02034",
+    "english_name": "the beginning of carbuncle"
+  },
+  {
+    "id": "SMTS02037",
+    "english_name": "carbuncle with pus that does not ulcerate"
+  },
+  {
+    "id": "SMTS02038",
+    "english_name": "carbuncle and furuncle"
+  },
+  {
+    "id": "SMTS02039",
+    "english_name": "carbuncle and sore"
+  },
+  {
+    "id": "SMTS02040",
+    "english_name": "carbuncle, phlegm core"
+  },
+  {
+    "id": "SMTS02042",
+    "english_name": "carbuncle, pus, and abscess"
+  },
+  {
+    "id": "SMTS02044",
+    "english_name": "hemorrhoids and fistulas"
+  },
+  {
+    "id": "SMTS02045",
+    "english_name": "hemorrhoids and bleeding"
+  },
+  {
+    "id": "SMTS02046",
+    "english_name": "lumps"
+  },
+  {
+    "id": "SMTS02049",
+    "english_name": "Acne"
+  },
+  {
+    "id": "SMTS02050",
+    "english_name": "Sha"
+  },
+  {
+    "id": "SMTS02051",
+    "english_name": "Sha distension, abdominal pain, vomiting and diarrhea"
+  },
+  {
+    "id": "SMTS02053",
+    "english_name": "phlegm and cough"
+  },
+  {
+    "id": "SMTS02054",
+    "english_name": "Phlegm Core"
+  },
+  {
+    "id": "SMTS02055",
+    "english_name": "phlegm and dampness flowing down"
+  },
+  {
+    "id": "SMTS02056",
+    "english_name": "Cough due to phlegm-heat"
+  },
+  {
+    "id": "SMTS02060",
+    "english_name": "prickly heat"
+  },
+  {
+    "id": "SMTS02061",
+    "english_name": "gangrene"
+  },
+  {
+    "id": "SMTS02064",
+    "english_name": "Plague"
+  },
+  {
+    "id": "SMTS02065",
+    "english_name": "scrofula"
+  },
+  {
+    "id": "SMTS02067",
+    "english_name": "scrofula"
+  },
+  {
+    "id": "SMTS02069",
+    "english_name": "Treatment of boils"
+  },
+  {
+    "id": "SMTS02070",
+    "english_name": "treating scabs"
+  },
+  {
+    "id": "SMTS02080",
+    "english_name": "epilepsy syndrome"
+  },
+  {
+    "id": "SMTS02081",
+    "english_name": "Madness"
+  },
+  {
+    "id": "SMTS02085",
+    "english_name": "excessive leucorrhea"
+  },
+  {
+    "id": "SMTS02094",
+    "english_name": "skin ulcers"
+  },
+  {
+    "id": "SMTS02096",
+    "english_name": "skin tinea"
+  },
+  {
+    "id": "SMTS02097",
+    "english_name": "dark eyes"
+  },
+  {
+    "id": "SMTS02098",
+    "english_name": "sore eyes"
+  },
+  {
+    "id": "SMTS02100",
+    "english_name": "eye pain"
+  },
+  {
+    "id": "SMTS02102",
+    "english_name": "swollen eyes"
+  },
+  {
+    "id": "SMTS02104",
+    "english_name": "dizziness and palpitations"
+  },
+  {
+    "id": "SMTS02107",
+    "english_name": "testicular swelling and pain"
+  },
+  {
+    "id": "SMTS02109",
+    "english_name": "Bald Sores"
+  },
+  {
+    "id": "SMTS02110",
+    "english_name": "Accumulation"
+  },
+  {
+    "id": "SMTS02112",
+    "english_name": "tendon injuries and fractures"
+  },
+  {
+    "id": "SMTS02113",
+    "english_name": "spasticity"
+  },
+  {
+    "id": "SMTS02114",
+    "english_name": "tendon fractures and injuries"
+  },
+  {
+    "id": "SMTS02117",
+    "english_name": "weak muscles and bones"
+  },
+  {
+    "id": "SMTS02118",
+    "english_name": "Soft muscles and bones with phlegm"
+  },
+  {
+    "id": "SMTS02120",
+    "english_name": "Rheumatoid Arthritis"
+  },
+  {
+    "id": "SMTS02122",
+    "english_name": "rash"
+  },
+  {
+    "id": "SMTS02125",
+    "english_name": "Menorrhagia"
+  },
+  {
+    "id": "SMTS02131",
+    "english_name": "Chest knot"
+  },
+  {
+    "id": "SMTS02132",
+    "english_name": "knotted chest and fullness"
+  },
+  {
+    "id": "SMTS02133",
+    "english_name": "Menopausal Dizziness"
+  },
+  {
+    "id": "SMTS02136",
+    "english_name": "Snake Pill"
+  },
+  {
+    "id": "SMTS02138",
+    "english_name": "Ear discharge"
+  },
+  {
+    "id": "SMTS02139",
+    "english_name": "Yin Er"
+  },
+  {
+    "id": "SMTS02141",
+    "english_name": "dark purple flesh"
+  },
+  {
+    "id": "SMTS02142",
+    "english_name": "Liver fire dizziness"
+  },
+  {
+    "id": "SMTS02147",
+    "english_name": "Insufficiency of liver and kidney, soreness and coldness in waist and knees"
+  },
+  {
+    "id": "SMTS02149",
+    "english_name": "Liver and kidney yin deficiency, dizziness, tinnitus"
+  },
+  {
+    "id": "SMTS02150",
+    "english_name": "Liver and stomach qi pain"
+  },
+  {
+    "id": "SMTS02156",
+    "english_name": "intestinal carbuncle"
+  },
+  {
+    "id": "SMTS02157",
+    "english_name": "intestinal abscess, swelling and pain"
+  },
+  {
+    "id": "SMTS02159",
+    "english_name": "intestinal wind"
+  },
+  {
+    "id": "SMTS02162",
+    "english_name": "weakness of limbs"
+  },
+  {
+    "id": "SMTS02163",
+    "english_name": "sore limbs"
+  },
+  {
+    "id": "SMTS02164",
+    "english_name": "heavy limbs"
+  },
+  {
+    "id": "SMTS02166",
+    "english_name": "shoulder and arm pain"
+  },
+  {
+    "id": "SMTS02167",
+    "english_name": "Shoulder and arm soreness"
+  },
+  {
+    "id": "SMTS02168",
+    "english_name": "shoulder and arm pain and numbness"
+  },
+  {
+    "id": "SMTS02169",
+    "english_name": "numbness of shoulders and arms"
+  },
+  {
+    "id": "SMTS02171",
+    "english_name": "Feilao"
+  },
+  {
+    "id": "SMTS02177",
+    "english_name": "lung abscess and vomiting pus"
+  },
+  {
+    "id": "SMTS02179",
+    "english_name": "Tuberculosis"
+  },
+  {
+    "id": "SMTS02180",
+    "english_name": "Tuberculosis Cough"
+  },
+  {
+    "id": "SMTS02183",
+    "english_name": "Cold and pain in the kidneys and lower abdomen"
+  },
+  {
+    "id": "SMTS02184",
+    "english_name": "cold kidney pain"
+  },
+  {
+    "id": "SMTS02193",
+    "english_name": "fullness and pain"
+  },
+  {
+    "id": "SMTS02194",
+    "english_name": "stomach fire and toothache"
+  },
+  {
+    "id": "SMTS02201",
+    "english_name": "chest pain and tingling pain"
+  },
+  {
+    "id": "SMTS02203",
+    "english_name": "pleural effusion"
+  },
+  {
+    "id": "SMTS02205",
+    "english_name": "Chest and diaphragm discomfort"
+  },
+  {
+    "id": "SMTS02206",
+    "english_name": "weak pulse"
+  },
+  {
+    "id": "SMTS02207",
+    "english_name": "pulse knotting"
+  },
+  {
+    "id": "SMTS02208",
+    "english_name": "dripping pus"
+  },
+  {
+    "id": "SMTS02210",
+    "english_name": "epigastrium, vomiting and diarrhea"
+  },
+  {
+    "id": "SMTS02211",
+    "english_name": "epigastrium, vomiting and nausea"
+  },
+  {
+    "id": "SMTS02212",
+    "english_name": "acute pain in the epigastrium and abdomen"
+  },
+  {
+    "id": "SMTS02213",
+    "english_name": "abdominal fullness and pain"
+  },
+  {
+    "id": "SMTS02214",
+    "english_name": "distension and cold pain in the epigastrium"
+  },
+  {
+    "id": "SMTS02216",
+    "english_name": "epigastric and abdominal pain"
+  },
+  {
+    "id": "SMTS02217",
+    "english_name": "Beriberi Toxin"
+  },
+  {
+    "id": "SMTS02220",
+    "english_name": "fatigue and fatigue"
+  },
+  {
+    "id": "SMTS02221",
+    "english_name": "Spleen and kidney deficiency and diarrhea"
+  },
+  {
+    "id": "SMTS02222",
+    "english_name": "Spleen deficiency and diarrhea"
+  },
+  {
+    "id": "SMTS02223",
+    "english_name": "Spleen deficiency and lack of food"
+  },
+  {
+    "id": "SMTS02225",
+    "english_name": "cold pain in the waist"
+  },
+  {
+    "id": "SMTS02226",
+    "english_name": "waist and leg pain"
+  },
+  {
+    "id": "SMTS02229",
+    "english_name": "weak waist and knees"
+  },
+  {
+    "id": "SMTS02230",
+    "english_name": "heaviness in the waist"
+  },
+  {
+    "id": "SMTS02231",
+    "english_name": "Soreness and weakness of waist"
+  },
+  {
+    "id": "SMTS02232",
+    "english_name": "abdominal mass"
+  },
+  {
+    "id": "SMTS02233",
+    "english_name": "abdominal fullness"
+  },
+  {
+    "id": "SMTS02235",
+    "english_name": "hydroabdominal fluid"
+  },
+  {
+    "id": "SMTS02236",
+    "english_name": "leg pain"
+  },
+  {
+    "id": "SMTS02238",
+    "english_name": "heavy knee joints"
+  },
+  {
+    "id": "SMTS02239",
+    "english_name": "Knee Pain"
+  },
+  {
+    "id": "SMTS02240",
+    "english_name": "Knee joint soreness"
+  },
+  {
+    "id": "SMTS02241",
+    "english_name": "cold knee pain"
+  },
+  {
+    "id": "SMTS02242",
+    "english_name": "Knee Pain"
+  },
+  {
+    "id": "SMTS02243",
+    "english_name": "Knee Soreness"
+  },
+  {
+    "id": "SMTS02244",
+    "english_name": "Sore and weak knees"
+  },
+  {
+    "id": "SMTS02245",
+    "english_name": "ecthyma"
+  },
+  {
+    "id": "SMTS02249",
+    "english_name": "chlorosis"
+  },
+  {
+    "id": "SMTS02255",
+    "english_name": "Erosion"
+  },
+  {
+    "id": "SMTS02267",
+    "english_name": "bloody and astringent pain"
+  },
+  {
+    "id": "SMTS02269",
+    "english_name": "blood heat spots"
+  },
+  {
+    "id": "SMTS02270",
+    "english_name": "blood heat rash"
+  },
+  {
+    "id": "SMTS02271",
+    "english_name": "blood heat and vomiting blood"
+  },
+  {
+    "id": "SMTS02277",
+    "english_name": "bloody dysentery"
+  },
+  {
+    "id": "SMTS02280",
+    "english_name": "red and white discharge"
+  },
+  {
+    "id": "SMTS02282",
+    "english_name": "foot flaccidity"
+  },
+  {
+    "id": "SMTS02283",
+    "english_name": "swelling and pain"
+  },
+  {
+    "id": "SMTS02284",
+    "english_name": "Fall injury"
+  },
+  {
+    "id": "SMTS02285",
+    "english_name": "falling and falling"
+  },
+  {
+    "id": "SMTS02289",
+    "english_name": "tendon transfer"
+  },
+  {
+    "id": "SMTS02290",
+    "english_name": "Depression"
+  },
+  {
+    "id": "SMTS02297",
+    "english_name": "flashing waist"
+  },
+  {
+    "id": "SMTS02299",
+    "english_name": "spots caused by impotence"
+  },
+  {
+    "id": "SMTS02300",
+    "english_name": "Yang paralysis"
+  },
+  {
+    "id": "SMTS02301",
+    "english_name": "impotence and infertility"
+  },
+  {
+    "id": "SMTS02302",
+    "english_name": "impotence"
+  },
+  {
+    "id": "SMTS02303",
+    "english_name": "Impotence"
+  },
+  {
+    "id": "SMTS02306",
+    "english_name": "Yin deficiency and labor cough"
+  },
+  {
+    "id": "SMTS02309",
+    "english_name": "cold and painful abdominal pain"
+  },
+  {
+    "id": "SMTS02310",
+    "english_name": "Abdominal tightness in hospital"
+  },
+  {
+    "id": "SMTS02311",
+    "english_name": "Bird Eyes"
+  },
+  {
+    "id": "SMTS02314",
+    "english_name": "Blue Blindness"
+  },
+  {
+    "id": "SMTS02315",
+    "english_name": "puffy facial skin"
+  },
+  {
+    "id": "SMTS02317",
+    "english_name": "Headache due to wind-cold and dampness"
+  },
+  {
+    "id": "SMTS02319",
+    "english_name": "wind-cold-damp arthralgia"
+  },
+  {
+    "id": "SMTS02320",
+    "english_name": "Feng Shui edema"
+  },
+  {
+    "id": "SMTS02322",
+    "english_name": "rheumatic joint flaccidity and pain"
+  },
+  {
+    "id": "SMTS02324",
+    "english_name": "Rheumatism and heat paralysis"
+  },
+  {
+    "id": "SMTS02326",
+    "english_name": "rheumatic paralysis"
+  },
+  {
+    "id": "SMTS02327",
+    "english_name": "Rheumatism, weakness and pain in limbs"
+  },
+  {
+    "id": "SMTS02328",
+    "english_name": "rheumatic shoulder and arm pain"
+  },
+  {
+    "id": "SMTS02329",
+    "english_name": "rheumatism, swelling and pain"
+  },
+  {
+    "id": "SMTS02330",
+    "english_name": "Rheumatism and stubborn paralysis"
+  },
+  {
+    "id": "SMTS02331",
+    "english_name": "rheumatic bone pain"
+  },
+  {
+    "id": "SMTS02334",
+    "english_name": "wind-heat, lung stagnation, sore throat"
+  },
+  {
+    "id": "SMTS02335",
+    "english_name": "Rubella"
+  },
+  {
+    "id": "SMTS02337",
+    "english_name": "Wind Bi"
+  },
+  {
+    "id": "SMTS02338",
+    "english_name": "Wind Bi disease"
+  },
+  {
+    "id": "SMTS02340",
+    "english_name": "Insufficiency of diet"
+  },
+  {
+    "id": "SMTS02341",
+    "english_name": "bone pain"
+  },
+  {
+    "id": "SMTS02342",
+    "english_name": "bone steaming"
+  },
+  {
+    "id": "SMTS02353",
+    "english_name": "Paralysis"
+  },
+  {
+    "id": "SMTS02357",
+    "english_name": "dripping yellow water"
+  },
+  {
+    "id": "SMTS02358",
+    "english_name": "yellow water sores"
+  },
+  {
+    "id": "SMTS02360",
+    "english_name": "jaundice"
+  },
+  {
+    "id": "SMTS02361",
+    "english_name": "yellow swelling and fullness"
+  },
+  {
+    "id": "SMTS02362",
+    "english_name": "sticky and difficult"
+  }
+]

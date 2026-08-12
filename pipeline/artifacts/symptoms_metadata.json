@@ -1,7478 +1,7478 @@
 [
   {
     "id": "SMTS00001",
-    "label": "嗳气"
+    "label": "belching"
   },
   {
     "id": "SMTS00002",
-    "label": "白带色乳白"
+    "label": "leucorrhea milky white in color"
   },
   {
     "id": "SMTS00003",
-    "label": "白带淸稀"
+    "label": "thin leucorrhea"
   },
   {
     "id": "SMTS00004",
-    "label": "白带增多"
+    "label": "increased leucorrhea"
   },
   {
     "id": "SMTS00005",
-    "label": "白发"
+    "label": "gray hair"
   },
   {
     "id": "SMTS00006",
-    "label": "白睛红赤"
+    "label": "redness of the white of the eye"
   },
   {
     "id": "SMTS00010",
-    "label": "斑疹"
+    "label": "macules"
   },
   {
     "id": "SMTS00011",
-    "label": "斑疹紫黑"
+    "label": "purple-black macules"
   },
   {
     "id": "SMTS00012",
-    "label": "半身不遂"
+    "label": "hemiplegia"
   },
   {
     "id": "SMTS00013",
-    "label": "半身麻木"
+    "label": "numbness in half of the body"
   },
   {
     "id": "SMTS00014",
-    "label": "胞衣不下"
+    "label": "Remaining afterbirth"
   },
   {
     "id": "SMTS00015",
-    "label": "饱胀"
+    "label": "fullness"
   },
   {
     "id": "SMTS00016",
-    "label": "暴发火眼"
+    "label": "acute contagious conjunctivitis"
   },
   {
     "id": "SMTS00017",
-    "label": "暴厥"
+    "label": "violent seizures"
   },
   {
     "id": "SMTS00018",
-    "label": "暴注下泻"
+    "label": "severe diarrhea"
   },
   {
     "id": "SMTS00019",
-    "label": "背冷"
+    "label": "cold back"
   },
   {
     "id": "SMTS00020",
-    "label": "背酸痛"
+    "label": "back pain"
   },
   {
     "id": "SMTS00021",
-    "label": "背疼痛"
+    "label": "Back Pain"
   },
   {
     "id": "SMTS00022",
-    "label": "背痛"
+    "label": "Back Pain"
   },
   {
     "id": "SMTS00023",
-    "label": "崩漏"
+    "label": "metrorrhagia"
   },
   {
     "id": "SMTS00024",
-    "label": "鼻干"
+    "label": "dry nose"
   },
   {
     "id": "SMTS00025",
-    "label": "鼻干燥"
+    "label": "Dry nose"
   },
   {
     "id": "SMTS00026",
-    "label": "鼻流清涕"
+    "label": "runny nose and clear discharge"
   },
   {
     "id": "SMTS00027",
-    "label": "鼻流浊涕"
+    "label": "runny nose and runny nose"
   },
   {
     "id": "SMTS00028",
-    "label": "鼻鸣"
+    "label": "rhinorrhoea"
   },
   {
     "id": "SMTS00029",
-    "label": "鼻衄"
+    "label": "epistaxis"
   },
   {
     "id": "SMTS00030",
-    "label": "鼻塞"
+    "label": "nasal congestion"
   },
   {
     "id": "SMTS00032",
-    "label": "鼻痒"
+    "label": "nasal itching"
   },
   {
     "id": "SMTS00034",
-    "label": "鼻燥"
+    "label": "Nasal dryness"
   },
   {
     "id": "SMTS00036",
-    "label": "闭经"
+    "label": "amenorrhea"
   },
   {
     "id": "SMTS00037",
-    "label": "痹病"
+    "label": "Bi disease"
   },
   {
     "id": "SMTS00038",
-    "label": "痹痛"
+    "label": "numbness and pain"
   },
   {
     "id": "SMTS00039",
-    "label": "臂疼痛"
+    "label": "arm pain"
   },
   {
     "id": "SMTS00040",
-    "label": "臂痛"
+    "label": "arm pain"
   },
   {
     "id": "SMTS00041",
-    "label": "便闭"
+    "label": "constipation"
   },
   {
     "id": "SMTS00042",
-    "label": "便干"
+    "label": "dry stool"
   },
   {
     "id": "SMTS00043",
-    "label": "便黄而黏"
+    "label": "yellow and sticky stool"
   },
   {
     "id": "SMTS00044",
-    "label": "便结"
+    "label": "constipation"
   },
   {
     "id": "SMTS00045",
-    "label": "便秘"
+    "label": "constipation"
   },
   {
     "id": "SMTS00046",
-    "label": "便溏"
+    "label": "loose stools"
   },
   {
     "id": "SMTS00047",
-    "label": "便溏日久"
+    "label": "Prolonged loose stools"
   },
   {
     "id": "SMTS00048",
-    "label": "便下脓血"
+    "label": "pus and blood in stool"
   },
   {
     "id": "SMTS00049",
-    "label": "便泻"
+    "label": "diarrhea"
   },
   {
     "id": "SMTS00050",
-    "label": "便血"
+    "label": "blood in the stool"
   },
   {
     "id": "SMTS00051",
-    "label": "表虚自汗"
+    "label": "spontaneous sweating due to superficial deficiency"
   },
   {
     "id": "SMTS00052",
-    "label": "憋气"
+    "label": "breathlessness"
   },
   {
     "id": "SMTS00053",
-    "label": "病后体弱"
+    "label": "Weakness after illness"
   },
   {
     "id": "SMTS00054",
-    "label": "病后脱发"
+    "label": "hair loss after illness"
   },
   {
     "id": "SMTS00055",
-    "label": "病后虚弱"
+    "label": "weakness after illness"
   },
   {
     "id": "SMTS00056",
-    "label": "不饥"
+    "label": "Not hungry"
   },
   {
     "id": "SMTS00057",
-    "label": "不寐"
+    "label": "insomnia"
   },
   {
     "id": "SMTS00058",
-    "label": "不能久视"
+    "label": "Can’t look for long periods of time"
   },
   {
     "id": "SMTS00059",
-    "label": "不省人事"
+    "label": "unconsciousness"
   },
   {
     "id": "SMTS00060",
-    "label": "不食"
+    "label": "Not eating"
   },
   {
     "id": "SMTS00061",
-    "label": "不思乳食"
+    "label": "Not wanting to eat milk"
   },
   {
     "id": "SMTS00062",
-    "label": "不思饮食"
+    "label": "Not thinking about eating"
   },
   {
     "id": "SMTS00063",
-    "label": "不喜热饮"
+    "label": "dislike hot drinks"
   },
   {
     "id": "SMTS00064",
-    "label": "不育"
+    "label": "Infertility"
   },
   {
     "id": "SMTS00065",
-    "label": "不欲饮食"
+    "label": "No desire to eat"
   },
   {
     "id": "SMTS00066",
-    "label": "不孕"
+    "label": "Infertility"
   },
   {
     "id": "SMTS00067",
-    "label": "步履艰难"
+    "label": "Hard Steps"
   },
   {
     "id": "SMTS00068",
-    "label": "嘈杂"
+    "label": "Noisy"
   },
   {
     "id": "SMTS00069",
-    "label": "嘈杂呕吐"
+    "label": "noisy vomiting"
   },
   {
     "id": "SMTS00070",
-    "label": "嘈杂似饥"
+    "label": "noisy and hungry"
   },
   {
     "id": "SMTS00071",
-    "label": "岔气"
+    "label": "Cha Qi"
   },
   {
     "id": "SMTS00072",
-    "label": "岔气作痛"
+    "label": "Pain caused by miscarriage of energy"
   },
   {
     "id": "SMTS00073",
-    "label": "产后出血日久"
+    "label": "Prolonged Postpartum Hemorrhage"
   },
   {
     "id": "SMTS00074",
-    "label": "产后恶露不尽"
+    "label": "postpartum lochia"
   },
   {
     "id": "SMTS00075",
-    "label": "产后腹痛"
+    "label": "postpartum abdominal pain"
   },
   {
     "id": "SMTS00076",
-    "label": "产后流血"
+    "label": "Postpartum Bleeding"
   },
   {
     "id": "SMTS00077",
-    "label": "产后乳房结块"
+    "label": "postpartum breast lumps"
   },
   {
     "id": "SMTS00078",
-    "label": "产后乳汁不通"
+    "label": "Postpartum lactation obstruction"
   },
   {
     "id": "SMTS00079",
-    "label": "产后乳肿"
+    "label": "postpartum breast swelling"
   },
   {
     "id": "SMTS00080",
-    "label": "产后少乳"
+    "label": "Postpartum oliguria"
   },
   {
     "id": "SMTS00081",
-    "label": "产后脱发"
+    "label": "postpartum hair loss"
   },
   {
     "id": "SMTS00082",
-    "label": "产后小腹疼痛"
+    "label": "postpartum lower abdominal pain"
   },
   {
     "id": "SMTS00083",
-    "label": "产后血虚"
+    "label": "postpartum anemia"
   },
   {
     "id": "SMTS00084",
-    "label": "产后血晕"
+    "label": "Postpartum haemorrhage"
   },
   {
     "id": "SMTS00085",
-    "label": "产后瘀痛"
+    "label": "Postpartum blood stasis and pain"
   },
   {
     "id": "SMTS00086",
-    "label": "产后诸虚"
+    "label": "Postpartum deficiency"
   },
   {
     "id": "SMTS00087",
-    "label": "产后子宫复旧不全"
+    "label": "Postpartum uterine involution is incomplete"
   },
   {
     "id": "SMTS00088",
-    "label": "肠风便血"
+    "label": "intestinal wind and blood in the stool"
   },
   {
     "id": "SMTS00089",
-    "label": "肠风下血"
+    "label": "intestinal wind and bleeding"
   },
   {
     "id": "SMTS00091",
-    "label": "肠鸣"
+    "label": "bowel borborygmus"
   },
   {
     "id": "SMTS00092",
-    "label": "肠胃不适"
+    "label": "gastrointestinal discomfort"
   },
   {
     "id": "SMTS00093",
-    "label": "潮热"
+    "label": "hot flashes"
   },
   {
     "id": "SMTS00095",
-    "label": "晨起面肿"
+    "label": "swollen face in the morning"
   },
   {
     "id": "SMTS00096",
-    "label": "齿鼻衄血"
+    "label": "Teeth and epistaxis"
   },
   {
     "id": "SMTS00097",
-    "label": "齿痛"
+    "label": "toothache"
   },
   {
     "id": "SMTS00098",
-    "label": "齿龈肿痛"
+    "label": "gum swelling and pain"
   },
   {
     "id": "SMTS00102",
-    "label": "赤缕红斑"
+    "label": "red streaks of erythema"
   },
   {
     "id": "SMTS00104",
-    "label": "虫咬肿痛"
+    "label": "insect bites, swelling and pain"
   },
   {
     "id": "SMTS00105",
-    "label": "抽搐"
+    "label": "convulsions"
   },
   {
     "id": "SMTS00106",
-    "label": "抽搐神昏"
+    "label": "convulsions and coma"
   },
   {
     "id": "SMTS00107",
-    "label": "出血"
+    "label": "bleeding"
   },
   {
     "id": "SMTS00108",
-    "label": "出血症"
+    "label": "hemorrhage"
   },
   {
     "id": "SMTS00109",
-    "label": "喘"
+    "label": "asthma"
   },
   {
     "id": "SMTS00110",
-    "label": "喘促"
+    "label": "shortness of breath"
   },
   {
     "id": "SMTS00111",
-    "label": "喘促气逆"
+    "label": "shortness of breath and shortness of breath"
   },
   {
     "id": "SMTS00112",
-    "label": "喘促痰多"
+    "label": "Breathing, promoting phlegm and excessive phlegm"
   },
   {
     "id": "SMTS00113",
-    "label": "喘急"
+    "label": "shortness of breath"
   },
   {
     "id": "SMTS00114",
-    "label": "喘咳"
+    "label": "asthma and cough"
   },
   {
     "id": "SMTS00115",
-    "label": "喘满"
+    "label": "dyspnea"
   },
   {
     "id": "SMTS00116",
-    "label": "喘嗽"
+    "label": "asthma and cough"
   },
   {
     "id": "SMTS00117",
-    "label": "喘息"
+    "label": "wheezing"
   },
   {
     "id": "SMTS00118",
-    "label": "疮毒"
+    "label": "Sores"
   },
   {
     "id": "SMTS00119",
-    "label": "疮疖痈肿"
+    "label": "sores, boils and carbuncles"
   },
   {
     "id": "SMTS00120",
-    "label": "疮疖肿毒"
+    "label": "sores, boils, swelling and poison"
   },
   {
     "id": "SMTS00121",
-    "label": "疮疖肿痛"
+    "label": "sores, boils, swelling and pain"
   },
   {
     "id": "SMTS00122",
-    "label": "疮口久不愈合"
+    "label": "Sores that don’t heal for a long time"
   },
   {
     "id": "SMTS00123",
-    "label": "疮面久溃不敛"
+    "label": "sores that persist for a long time"
   },
   {
     "id": "SMTS00124",
-    "label": "疮面疼痛"
+    "label": "Sore face pain"
   },
   {
     "id": "SMTS00125",
-    "label": "疮面鲜活"
+    "label": "sores appear fresh"
   },
   {
     "id": "SMTS00126",
-    "label": "疮色鲜活"
+    "label": "Sores are vivid in color"
   },
   {
     "id": "SMTS00128",
-    "label": "疮疡"
+    "label": "sores"
   },
   {
     "id": "SMTS00129",
-    "label": "疮疡不敛"
+    "label": "sores that do not heal"
   },
   {
     "id": "SMTS00130",
-    "label": "疮疡久溃不敛"
+    "label": "Sores that persist for a long time"
   },
   {
     "id": "SMTS00131",
-    "label": "疮疡溃烂"
+    "label": "sores and ulcers"
   },
   {
     "id": "SMTS00132",
-    "label": "疮疡肿痛"
+    "label": "sores, swelling and pain"
   },
   {
     "id": "SMTS00133",
-    "label": "疮痈肿痛"
+    "label": "sores, swelling and pain"
   },
   {
     "id": "SMTS00134",
-    "label": "疮肿"
+    "label": "sores and swelling"
   },
   {
     "id": "SMTS00136",
-    "label": "唇干"
+    "label": "Dry lips"
   },
   {
     "id": "SMTS00137",
-    "label": "唇甲出血"
+    "label": "lip nail bleeding"
   },
   {
     "id": "SMTS00138",
-    "label": "唇甲色淡"
+    "label": "pale lip and nail color"
   },
   {
     "id": "SMTS00139",
-    "label": "刺痛"
+    "label": "tingling"
   },
   {
     "id": "SMTS00140",
-    "label": "猝然昏倒"
+    "label": "sudden fainting"
   },
   {
     "id": "SMTS00141",
-    "label": "窜痛"
+    "label": "channeling pain"
   },
   {
     "id": "SMTS00142",
-    "label": "挫伤筋骨"
+    "label": "Bruised muscles and bones"
   },
   {
     "id": "SMTS00143",
-    "label": "大便不畅"
+    "label": "difficulty in defecation"
   },
   {
     "id": "SMTS00144",
-    "label": "大便不利"
+    "label": "Difficulty in defecation"
   },
   {
     "id": "SMTS00145",
-    "label": "大便不爽"
+    "label": "Unpleasant bowel movement"
   },
   {
     "id": "SMTS00146",
-    "label": "大便不调"
+    "label": "irregular bowel movements"
   },
   {
     "id": "SMTS00148",
-    "label": "大便不下"
+    "label": "Inability to defecate"
   },
   {
     "id": "SMTS00149",
-    "label": "大便臭秽"
+    "label": "Smelly stool"
   },
   {
     "id": "SMTS00150",
-    "label": "大便出血"
+    "label": "bleeding in stool"
   },
   {
     "id": "SMTS00151",
-    "label": "大便次数增多"
+    "label": "increased stool frequency"
   },
   {
     "id": "SMTS00152",
-    "label": "大便干"
+    "label": "dry stool"
   },
   {
     "id": "SMTS00153",
-    "label": "大便干结"
+    "label": "dry stool"
   },
   {
     "id": "SMTS00154",
-    "label": "大便干结难下"
+    "label": "dry and hard stool"
   },
   {
     "id": "SMTS00155",
-    "label": "大便干燥"
+    "label": "dry stool"
   },
   {
     "id": "SMTS00156",
-    "label": "大便困难"
+    "label": "Difficulty in defecation"
   },
   {
     "id": "SMTS00157",
-    "label": "大便秘结"
+    "label": "constipation"
   },
   {
     "id": "SMTS00158",
-    "label": "大便黏滞"
+    "label": "sticky stool"
   },
   {
     "id": "SMTS00159",
-    "label": "大便黏滞不爽"
+    "label": "Sticky and unpleasant stools"
   },
   {
     "id": "SMTS00160",
-    "label": "大便脓血"
+    "label": "pus and blood in stool"
   },
   {
     "id": "SMTS00161",
-    "label": "大便清稀"
+    "label": "loose stools"
   },
   {
     "id": "SMTS00162",
-    "label": "大便失调"
+    "label": "Defecation Disorders"
   },
   {
     "id": "SMTS00163",
-    "label": "大便酸臭"
+    "label": "sour and smelly stools"
   },
   {
     "id": "SMTS00164",
-    "label": "大便溏雹"
+    "label": "loose stools"
   },
   {
     "id": "SMTS00165",
-    "label": "大便溏薄"
+    "label": "loose stools"
   },
   {
     "id": "SMTS00166",
-    "label": "大便溏软"
+    "label": "loose stools"
   },
   {
     "id": "SMTS00167",
-    "label": "大便溏泻"
+    "label": "loose stools and diarrhea"
   },
   {
     "id": "SMTS00168",
-    "label": "大便稀薄如水样"
+    "label": "thin and watery stool"
   },
   {
     "id": "SMTS00169",
-    "label": "大便稀溏"
+    "label": "loose stools"
   },
   {
     "id": "SMTS00170",
-    "label": "大便泄泻"
+    "label": "stool and diarrhea"
   },
   {
     "id": "SMTS00171",
-    "label": "大便燥结"
+    "label": "dry stool"
   },
   {
     "id": "SMTS00173",
-    "label": "带下白浊"
+    "label": "white turbid vaginal discharge"
   },
   {
     "id": "SMTS00175",
-    "label": "带下量多"
+    "label": "heavy vaginal discharge"
   },
   {
     "id": "SMTS00176",
-    "label": "带下色黄"
+    "label": "vaginal discharge with yellow color"
   },
   {
     "id": "SMTS00177",
-    "label": "带下色黄质稠"
+    "label": "vaginal discharge with thick yellowish substance"
   },
   {
     "id": "SMTS00182",
-    "label": "倒饱嘈杂"
+    "label": "Feeling full and noisy"
   },
   {
     "id": "SMTS00183",
-    "label": "盗汗"
+    "label": "night sweats"
   },
   {
     "id": "SMTS00184",
-    "label": "低热"
+    "label": "low fever"
   },
   {
     "id": "SMTS00185",
-    "label": "巅顶疼痛"
+    "label": "Peak Pain"
   },
   {
     "id": "SMTS00186",
-    "label": "癫狂"
+    "label": "Madness"
   },
   {
     "id": "SMTS00187",
-    "label": "癫痫"
+    "label": "Epilepsy"
   },
   {
     "id": "SMTS00188",
-    "label": "癫痫痰多"
+    "label": "epilepsy with excessive phlegm"
   },
   {
     "id": "SMTS00189",
-    "label": "癲痫"
+    "label": "Epilepsy"
   },
   {
     "id": "SMTS00190",
-    "label": "跌打伤痛"
+    "label": "bruises and pain"
   },
   {
     "id": "SMTS00191",
-    "label": "跌打损伤"
+    "label": "bruises and injuries"
   },
   {
     "id": "SMTS00192",
-    "label": "跌打瘀痛"
+    "label": "pain due to bruises and blood stasis"
   },
   {
     "id": "SMTS00193",
-    "label": "跌打肿痛"
+    "label": "swelling and pain due to bruises"
   },
   {
     "id": "SMTS00194",
-    "label": "跌扑伤痛"
+    "label": "Pain due to fall"
   },
   {
     "id": "SMTS00195",
-    "label": "跌扑瘀肿"
+    "label": "falling, fluttering, blood stasis and swelling"
   },
   {
     "id": "SMTS00196",
-    "label": "跌扑肿痛"
+    "label": "swelling and pain due to falls"
   },
   {
     "id": "SMTS00197",
-    "label": "疔疮痈肿初起"
+    "label": "First onset of boils and carbuncles"
   },
   {
     "id": "SMTS00198",
-    "label": "疔疮肿痛"
+    "label": "boils, swelling and pain"
   },
   {
     "id": "SMTS00199",
-    "label": "疔毒"
+    "label": "boils"
   },
   {
     "id": "SMTS00201",
-    "label": "动辄汗出"
+    "label": "Frequent sweating"
   },
   {
     "id": "SMTS00206",
-    "label": "短气"
+    "label": "shortness of breath"
   },
   {
     "id": "SMTS00208",
-    "label": "多汗"
+    "label": "excessive sweating"
   },
   {
     "id": "SMTS00209",
-    "label": "多泪"
+    "label": "excessive tears"
   },
   {
     "id": "SMTS00210",
-    "label": "多泪羞明"
+    "label": "excessive tears and shy eyesight"
   },
   {
     "id": "SMTS00211",
-    "label": "多梦"
+    "label": "dreaminess"
   },
   {
     "id": "SMTS00212",
-    "label": "多尿"
+    "label": "polyuria"
   },
   {
     "id": "SMTS00213",
-    "label": "多食"
+    "label": "eating too much"
   },
   {
     "id": "SMTS00214",
-    "label": "多涎"
+    "label": "excessive salivation"
   },
   {
     "id": "SMTS00215",
-    "label": "多饮"
+    "label": "Polydipsia"
   },
   {
     "id": "SMTS00216",
-    "label": "呃逆"
+    "label": "hiccups"
   },
   {
     "id": "SMTS00217",
-    "label": "恶疮"
+    "label": "malignant sores"
   },
   {
     "id": "SMTS00218",
-    "label": "恶风寒"
+    "label": "Aversion to wind and cold"
   },
   {
     "id": "SMTS00219",
-    "label": "恶寒"
+    "label": "Aversion to cold"
   },
   {
     "id": "SMTS00220",
-    "label": "恶寒重"
+    "label": "Severe aversion to cold"
   },
   {
     "id": "SMTS00221",
-    "label": "恶寒壮热"
+    "label": "aversion to cold and strengthening of heat"
   },
   {
     "id": "SMTS00222",
-    "label": "恶心"
+    "label": "Nausea"
   },
   {
     "id": "SMTS00223",
-    "label": "耳道流脓"
+    "label": "Ear canal discharge"
   },
   {
     "id": "SMTS00224",
-    "label": "耳聋"
+    "label": "Deafness"
   },
   {
     "id": "SMTS00225",
-    "label": "耳漏"
+    "label": "otorrhea"
   },
   {
     "id": "SMTS00226",
-    "label": "耳鸣"
+    "label": "tinnitus"
   },
   {
     "id": "SMTS00227",
-    "label": "耳内流脓"
+    "label": "Ear discharge"
   },
   {
     "id": "SMTS00228",
-    "label": "耳下肿痛"
+    "label": "swelling and pain under the ears"
   },
   {
     "id": "SMTS00229",
-    "label": "二便失禁"
+    "label": "fecal incontinence"
   },
   {
     "id": "SMTS00230",
-    "label": "发斑"
+    "label": "hair spots"
   },
   {
     "id": "SMTS00231",
-    "label": "发喘"
+    "label": "Asthma"
   },
   {
     "id": "SMTS00233",
-    "label": "发狂"
+    "label": "Madness"
   },
   {
     "id": "SMTS00234",
-    "label": "发热"
+    "label": "fever"
   },
   {
     "id": "SMTS00235",
-    "label": "发热重"
+    "label": "severe fever"
   },
   {
     "id": "SMTS00236",
-    "label": "发烧"
+    "label": "fever"
   },
   {
     "id": "SMTS00237",
-    "label": "发颐"
+    "label": "Fayi"
   },
   {
     "id": "SMTS00238",
-    "label": "发育迟缓"
+    "label": "Developmental delay"
   },
   {
     "id": "SMTS00239",
-    "label": "发疹"
+    "label": "Rash"
   },
   {
     "id": "SMTS00240",
-    "label": "乏力"
+    "label": "fatigue"
   },
   {
     "id": "SMTS00241",
-    "label": "烦倦"
+    "label": "Tiredness"
   },
   {
     "id": "SMTS00242",
-    "label": "烦渴"
+    "label": "Polydipsia"
   },
   {
     "id": "SMTS00243",
-    "label": "烦热"
+    "label": "Fever"
   },
   {
     "id": "SMTS00244",
-    "label": "烦躁"
+    "label": "irritability"
   },
   {
     "id": "SMTS00245",
-    "label": "烦躁不安"
+    "label": "irritability"
   },
   {
     "id": "SMTS00246",
-    "label": "烦躁不宁"
+    "label": "restlessness"
   },
   {
     "id": "SMTS00247",
-    "label": "烦躁不适"
+    "label": "irritability and discomfort"
   },
   {
     "id": "SMTS00248",
-    "label": "烦躁易怒"
+    "label": "irritability and irritability"
   },
   {
     "id": "SMTS00249",
-    "label": "烦躁谵语"
+    "label": "Irritability and Delirium"
   },
   {
     "id": "SMTS00250",
-    "label": "反酸"
+    "label": "Acid Reflux"
   },
   {
     "id": "SMTS00251",
-    "label": "反胃"
+    "label": "Nausea"
   },
   {
     "id": "SMTS00252",
-    "label": "反应迟钝"
+    "label": "slow response"
   },
   {
     "id": "SMTS00253",
-    "label": "泛吐清水"
+    "label": "general vomiting of water"
   },
   {
     "id": "SMTS00254",
-    "label": "肺痨"
+    "label": "Tuberculosis"
   },
   {
     "id": "SMTS00255",
-    "label": "肺气不畅"
+    "label": "poor lung qi"
   },
   {
     "id": "SMTS00256",
-    "label": "肺热"
+    "label": "Lung heat"
   },
   {
     "id": "SMTS00257",
-    "label": "肺热咳嗽"
+    "label": "Cough due to lung heat"
   },
   {
     "id": "SMTS00258",
-    "label": "肺痈"
+    "label": "lung abscess"
   },
   {
     "id": "SMTS00259",
-    "label": "肺燥"
+    "label": "dryness of the lungs"
   },
   {
     "id": "SMTS00260",
-    "label": "痱疹鲜红"
+    "label": "prickly heat rash bright red"
   },
   {
     "id": "SMTS00261",
-    "label": "粉刺"
+    "label": "Acne"
   },
   {
     "id": "SMTS00262",
-    "label": "粉剌疙瘩"
+    "label": "powdery pimples"
   },
   {
     "id": "SMTS00263",
-    "label": "风寒头痛"
+    "label": "headache due to wind cold"
   },
   {
     "id": "SMTS00264",
-    "label": "风热"
+    "label": "wind-heat"
   },
   {
     "id": "SMTS00265",
-    "label": "风热感冒"
+    "label": "wind-heat and cold"
   },
   {
     "id": "SMTS00266",
-    "label": "风湿痹痛"
+    "label": "rheumatic arthralgia"
   },
   {
     "id": "SMTS00267",
-    "label": "风湿关节痛"
+    "label": "rheumatic joint pain"
   },
   {
     "id": "SMTS00268",
-    "label": "风湿疼痛"
+    "label": "rheumatic pain"
   },
   {
     "id": "SMTS00269",
-    "label": "风湿瘀痛"
+    "label": "Rheumatism and blood stasis pain"
   },
   {
     "id": "SMTS00270",
-    "label": "风湿肢体关节痿软"
+    "label": "rheumatism, weak joints in limbs"
   },
   {
     "id": "SMTS00271",
-    "label": "风痰"
+    "label": "Wind Phlegm"
   },
   {
     "id": "SMTS00272",
-    "label": "风痰眩晕"
+    "label": "dizziness caused by wind and phlegm"
   },
   {
     "id": "SMTS00273",
-    "label": "风痰瘀血痹阻脉络"
+    "label": "wind, phlegm, blood stasis, obstruction of veins"
   },
   {
     "id": "SMTS00274",
-    "label": "风痛"
+    "label": "wind pain"
   },
   {
     "id": "SMTS00275",
-    "label": "风眼烂弦"
+    "label": "Wind eye and strings"
   },
   {
     "id": "SMTS00276",
-    "label": "风疹发红"
+    "label": "rubella redness"
   },
   {
     "id": "SMTS00277",
-    "label": "风疹瘙痒"
+    "label": "rubella itching"
   },
   {
     "id": "SMTS00278",
-    "label": "浮肿"
+    "label": "edema"
   },
   {
     "id": "SMTS00279",
-    "label": "腐肉不去"
+    "label": "Carrion does not go away"
   },
   {
     "id": "SMTS00280",
-    "label": "妇女痛经"
+    "label": "Women’s Dysmenorrhea"
   },
   {
     "id": "SMTS00281",
-    "label": "妇女癥瘕"
+    "label": "Gynecomastia"
   },
   {
     "id": "SMTS00282",
-    "label": "腹暴痛"
+    "label": "Abdominal pain"
   },
   {
     "id": "SMTS00283",
-    "label": "腹部不适"
+    "label": "abdominal discomfort"
   },
   {
     "id": "SMTS00284",
-    "label": "腹部隐痛"
+    "label": "Abdominal pain"
   },
   {
     "id": "SMTS00285",
-    "label": "腹部胀满"
+    "label": "abdominal fullness"
   },
   {
     "id": "SMTS00286",
-    "label": "腹部胀满不舒"
+    "label": "abdominal fullness and discomfort"
   },
   {
     "id": "SMTS00287",
-    "label": "腹水"
+    "label": "ascites"
   },
   {
     "id": "SMTS00288",
-    "label": "腹痛"
+    "label": "abdominal pain"
   },
   {
     "id": "SMTS00289",
-    "label": "腹痛绵绵"
+    "label": "Abdominal pain"
   },
   {
     "id": "SMTS00290",
-    "label": "腹泻"
+    "label": "Diarrhea"
   },
   {
     "id": "SMTS00291",
-    "label": "腹有癥块"
+    "label": "Symptoms in the abdomen"
   },
   {
     "id": "SMTS00292",
-    "label": "腹胀"
+    "label": "abdominal distension"
   },
   {
     "id": "SMTS00293",
-    "label": "腹胀满"
+    "label": "abdominal distension and fullness"
   },
   {
     "id": "SMTS00294",
-    "label": "腹中冷痛"
+    "label": "cold pain in the abdomen"
   },
   {
     "id": "SMTS00295",
-    "label": "腹中胀满"
+    "label": "fullness in the abdomen"
   },
   {
     "id": "SMTS00297",
-    "label": "肝火目赤"
+    "label": "Liver fire, red eyes"
   },
   {
     "id": "SMTS00298",
-    "label": "肝区疼痛"
+    "label": "pain in liver area"
   },
   {
     "id": "SMTS00299",
-    "label": "肝区胀痛"
+    "label": "swelling and pain in the liver area"
   },
   {
     "id": "SMTS00300",
-    "label": "肝热目赤"
+    "label": "Liver heat and red eyes"
   },
   {
     "id": "SMTS00301",
-    "label": "肝痛"
+    "label": "liver pain"
   },
   {
     "id": "SMTS00302",
-    "label": "肝阳眩晕"
+    "label": "Liver Yang dizziness"
   },
   {
     "id": "SMTS00309",
-    "label": "干咳"
+    "label": "dry cough"
   },
   {
     "id": "SMTS00310",
-    "label": "干呕"
+    "label": "retching"
   },
   {
     "id": "SMTS00311",
-    "label": "肛窦炎出血"
+    "label": "anal sinusitis and bleeding"
   },
   {
     "id": "SMTS00312",
-    "label": "肛裂疼痛"
+    "label": "anal fissure pain"
   },
   {
     "id": "SMTS00313",
-    "label": "肛门疼痛"
+    "label": "anal pain"
   },
   {
     "id": "SMTS00314",
-    "label": "肛门下坠"
+    "label": "Anal prolapse"
   },
   {
     "id": "SMTS00315",
-    "label": "肛门肿痛"
+    "label": "Anal swelling and pain"
   },
   {
     "id": "SMTS00316",
-    "label": "肛门灼热"
+    "label": "Anal burning"
   },
   {
     "id": "SMTS00317",
-    "label": "高热"
+    "label": "high fever"
   },
   {
     "id": "SMTS00318",
-    "label": "高热不退"
+    "label": "high fever that does not go away"
   },
   {
     "id": "SMTS00319",
-    "label": "高热惊厥"
+    "label": "febrile convulsions"
   },
   {
     "id": "SMTS00320",
-    "label": "高热神昏"
+    "label": "high fever and coma"
   },
   {
     "id": "SMTS00321",
-    "label": "高血压头痛"
+    "label": "high blood pressure and headache"
   },
   {
     "id": "SMTS00323",
-    "label": "髙热"
+    "label": "high fever"
   },
   {
     "id": "SMTS00324",
-    "label": "髙热不退"
+    "label": "high fever that does not go away"
   },
   {
     "id": "SMTS00325",
-    "label": "睾丸偏坠"
+    "label": "testicular prolapse"
   },
   {
     "id": "SMTS00326",
-    "label": "睾丸痛"
+    "label": "testicular pain"
   },
   {
     "id": "SMTS00327",
-    "label": "睾丸肿"
+    "label": "testicular swelling"
   },
   {
     "id": "SMTS00328",
-    "label": "睾丸坠胀疼痛"
+    "label": "testicle swelling and pain"
   },
   {
     "id": "SMTS00329",
-    "label": "咯痰"
+    "label": "expectoration"
   },
   {
     "id": "SMTS00330",
-    "label": "咯痰、血"
+    "label": "expectoration, blood"
   },
   {
     "id": "SMTS00331",
-    "label": "咯痰不爽"
+    "label": "Unpleasant expectoration"
   },
   {
     "id": "SMTS00332",
-    "label": "咯痰黄稠"
+    "label": "Vomiting yellow and thick phlegm"
   },
   {
     "id": "SMTS00333",
-    "label": "咯痰色白"
+    "label": "expectoration with white color"
   },
   {
     "id": "SMTS00334",
-    "label": "咯痰色黄"
+    "label": "Vomiting and yellow phlegm"
   },
   {
     "id": "SMTS00335",
-    "label": "咯痰稀白"
+    "label": "Vomiting and thin white phlegm"
   },
   {
     "id": "SMTS00336",
-    "label": "咯吐白痰"
+    "label": "Vomiting white phlegm"
   },
   {
     "id": "SMTS00337",
-    "label": "咯吐不爽"
+    "label": "Unpleasant vomiting"
   },
   {
     "id": "SMTS00338",
-    "label": "咯血"
+    "label": "hemoptysis"
   },
   {
     "id": "SMTS00341",
-    "label": "宫寒"
+    "label": "Gong Han"
   },
   {
     "id": "SMTS00343",
-    "label": "骨关节疼痛"
+    "label": "bone and joint pain"
   },
   {
     "id": "SMTS00344",
-    "label": "骨关节肿大"
+    "label": "bone and joint swelling"
   },
   {
     "id": "SMTS00345",
-    "label": "骨节酸痛"
+    "label": "joint pain"
   },
   {
     "id": "SMTS00346",
-    "label": "骨节疼痛"
+    "label": "joint pain"
   },
   {
     "id": "SMTS00347",
-    "label": "骨扭伤"
+    "label": "bone sprain"
   },
   {
     "id": "SMTS00349",
-    "label": "骨折肿痛"
+    "label": "fracture, swelling and pain"
   },
   {
     "id": "SMTS00350",
-    "label": "骨蒸劳热"
+    "label": "bone steaming fever"
   },
   {
     "id": "SMTS00352",
-    "label": "骨肿大"
+    "label": "bone swelling"
   },
   {
     "id": "SMTS00354",
-    "label": "关节痹痛"
+    "label": "joint pain"
   },
   {
     "id": "SMTS00355",
-    "label": "关节不利"
+    "label": "Joint Disadvantage"
   },
   {
     "id": "SMTS00356",
-    "label": "关节刺痛"
+    "label": "joint pain"
   },
   {
     "id": "SMTS00357",
-    "label": "关节钝痛"
+    "label": "Dull pain in joints"
   },
   {
     "id": "SMTS00358",
-    "label": "关节红肿热痛"
+    "label": "joint redness, swelling, heat and pain"
   },
   {
     "id": "SMTS00359",
-    "label": "关节僵硬"
+    "label": "joint stiffness"
   },
   {
     "id": "SMTS00360",
-    "label": "关节剧痛"
+    "label": "severe joint pain"
   },
   {
     "id": "SMTS00361",
-    "label": "关节冷痛"
+    "label": "cold joint pain"
   },
   {
     "id": "SMTS00362",
-    "label": "关节麻木"
+    "label": "joint numbness"
   },
   {
     "id": "SMTS00363",
-    "label": "关节扭伤"
+    "label": "joint sprains"
   },
   {
     "id": "SMTS00364",
-    "label": "关节屈伸不利"
+    "label": "Inadequate joint flexion and extension"
   },
   {
     "id": "SMTS00365",
-    "label": "关节四肢疼痛"
+    "label": "pain in joints and limbs"
   },
   {
     "id": "SMTS00366",
-    "label": "关节酸痛"
+    "label": "joint pain"
   },
   {
     "id": "SMTS00367",
-    "label": "关节酸痛麻木"
+    "label": "joint pain and numbness"
   },
   {
     "id": "SMTS00368",
-    "label": "关节疼痛"
+    "label": "joint pain"
   },
   {
     "id": "SMTS00369",
-    "label": "关节疼痈"
+    "label": "joint pain and carbuncle"
   },
   {
     "id": "SMTS00370",
-    "label": "关节痛"
+    "label": "joint pain"
   },
   {
     "id": "SMTS00371",
-    "label": "关节肿大"
+    "label": "joint swelling"
   },
   {
     "id": "SMTS00372",
-    "label": "关节肿痛"
+    "label": "joint swelling and pain"
   },
   {
     "id": "SMTS00373",
-    "label": "关节肿胀疼痛"
+    "label": "joint swelling and pain"
   },
   {
     "id": "SMTS00376",
-    "label": "寒疝"
+    "label": "Cold Hernia"
   },
   {
     "id": "SMTS00377",
-    "label": "寒湿痹痛"
+    "label": "cold-dampness arthralgia"
   },
   {
     "id": "SMTS00378",
-    "label": "寒痰"
+    "label": "cold phlegm"
   },
   {
     "id": "SMTS00379",
-    "label": "寒性腹泻"
+    "label": "cold diarrhea"
   },
   {
     "id": "SMTS00380",
-    "label": "汗出"
+    "label": "sweating"
   },
   {
     "id": "SMTS00381",
-    "label": "汗出不畅"
+    "label": "poor sweating"
   },
   {
     "id": "SMTS00382",
-    "label": "汗出不解"
+    "label": "Perplexed sweating"
   },
   {
     "id": "SMTS00383",
-    "label": "汗少"
+    "label": "less sweating"
   },
   {
     "id": "SMTS00385",
-    "label": "行经腹痛"
+    "label": "abdominal pain during menstruation"
   },
   {
     "id": "SMTS00386",
-    "label": "行经小腹冷痛"
+    "label": "cold pain in lower abdomen during menstruation"
   },
   {
     "id": "SMTS00387",
-    "label": "行走无力"
+    "label": "Weakness in walking"
   },
   {
     "id": "SMTS00388",
-    "label": "黑便"
+    "label": "black stool"
   },
   {
     "id": "SMTS00390",
-    "label": "烘热"
+    "label": "fever"
   },
   {
     "id": "SMTS00392",
-    "label": "红肿"
+    "label": "redness and swelling"
   },
   {
     "id": "SMTS00394",
-    "label": "喉核红肿"
+    "label": "redness and swelling of the throat core"
   },
   {
     "id": "SMTS00395",
-    "label": "喉核肿大"
+    "label": "Swelling of laryngeal core"
   },
   {
     "id": "SMTS00396",
-    "label": "喉间痰鸣"
+    "label": "Phlegm in the throat"
   },
   {
     "id": "SMTS00397",
-    "label": "喉痛"
+    "label": "sore throat"
   },
   {
     "id": "SMTS00398",
-    "label": "喉痒"
+    "label": "itchy throat"
   },
   {
     "id": "SMTS00399",
-    "label": "喉中作响"
+    "label": "Sound in the throat"
   },
   {
     "id": "SMTS00400",
-    "label": "喉肿"
+    "label": "swollen larynx"
   },
   {
     "id": "SMTS00402",
-    "label": "呼吸气促"
+    "label": "shortness of breath"
   },
   {
     "id": "SMTS00403",
-    "label": "滑精"
+    "label": "Huajing"
   },
   {
     "id": "SMTS00405",
-    "label": "黄疸"
+    "label": "jaundice"
   },
   {
     "id": "SMTS00406",
-    "label": "黄痰"
+    "label": "yellow phlegm"
   },
   {
     "id": "SMTS00407",
-    "label": "会阴少腹腰骶部疼痛"
+    "label": "lumbosacral pain in the lower abdomen and perineum"
   },
   {
     "id": "SMTS00408",
-    "label": "昏厥"
+    "label": "fainting"
   },
   {
     "id": "SMTS00409",
-    "label": "昏迷"
+    "label": "coma"
   },
   {
     "id": "SMTS00410",
-    "label": "昏仆"
+    "label": "Fainting"
   },
   {
     "id": "SMTS00411",
-    "label": "昏睡"
+    "label": "lethargy"
   },
   {
     "id": "SMTS00412",
-    "label": "活动受限"
+    "label": "limited activity"
   },
   {
     "id": "SMTS00413",
-    "label": "活动障碍"
+    "label": "Movement Disorder"
   },
   {
     "id": "SMTS00414",
-    "label": "肌肤红"
+    "label": "red skin"
   },
   {
     "id": "SMTS00415",
-    "label": "肌肤下肿块数处"
+    "label": "several lumps under the skin"
   },
   {
     "id": "SMTS00416",
-    "label": "肌肤下肿块一处"
+    "label": "a lump under the skin"
   },
   {
     "id": "SMTS00417",
-    "label": "肌肤肿块数处"
+    "label": "several skin bumps"
   },
   {
     "id": "SMTS00418",
-    "label": "肌肤肿块一处 推之能动"
+    "label": "A lump on the skin can be moved by pushing it"
   },
   {
     "id": "SMTS00419",
-    "label": "肌肉关节酸痛"
+    "label": "Muscle and joint pain"
   },
   {
     "id": "SMTS00420",
-    "label": "肌肉红肿热痛"
+    "label": "muscle redness, swelling, heat and pain"
   },
   {
     "id": "SMTS00421",
-    "label": "肌肉剧痛"
+    "label": "severe muscle pain"
   },
   {
     "id": "SMTS00422",
-    "label": "肌肉麻木"
+    "label": "muscle numbness"
   },
   {
     "id": "SMTS00423",
-    "label": "肌肉疲劳"
+    "label": "Muscle Fatigue"
   },
   {
     "id": "SMTS00424",
-    "label": "肌肉酸麻"
+    "label": "Muscle soreness and numbness"
   },
   {
     "id": "SMTS00425",
-    "label": "肌肉酸痛"
+    "label": "muscle soreness"
   },
   {
     "id": "SMTS00426",
-    "label": "肌肉疼痛"
+    "label": "Muscle Pain"
   },
   {
     "id": "SMTS00427",
-    "label": "肌肉萎缩"
+    "label": "Muscle atrophy"
   },
   {
     "id": "SMTS00428",
-    "label": "肌痩"
+    "label": "Muscle thinning"
   },
   {
     "id": "SMTS00429",
-    "label": "肌痿无力"
+    "label": "muscle weakness and weakness"
   },
   {
     "id": "SMTS00430",
-    "label": "积聚痞块"
+    "label": "accumulation of lumps"
   },
   {
     "id": "SMTS00431",
-    "label": "积滞"
+    "label": "stagnation"
   },
   {
     "id": "SMTS00432",
-    "label": "积滞不消"
+    "label": "lingering stagnation"
   },
   {
     "id": "SMTS00433",
-    "label": "积滞内停"
+    "label": "internal stagnation"
   },
   {
     "id": "SMTS00434",
-    "label": "积滞胀满"
+    "label": "stagnation and fullness"
   },
   {
     "id": "SMTS00436",
-    "label": "急性起并半身不遂"
+    "label": "acute onset and hemiplegia"
   },
   {
     "id": "SMTS00437",
-    "label": "急躁易怒"
+    "label": "irritable and irritable"
   },
   {
     "id": "SMTS00438",
-    "label": "记忆减退"
+    "label": "memory loss"
   },
   {
     "id": "SMTS00439",
-    "label": "记忆力减退"
+    "label": "memory loss"
   },
   {
     "id": "SMTS00441",
-    "label": "肩背酸痛"
+    "label": "shoulder and back pain"
   },
   {
     "id": "SMTS00442",
-    "label": "肩臂疼痛"
+    "label": "shoulder and arm pain"
   },
   {
     "id": "SMTS00443",
-    "label": "肩部疼痛重着"
+    "label": "severe shoulder pain"
   },
   {
     "id": "SMTS00444",
-    "label": "肩颈疼痛"
+    "label": "shoulder and neck pain"
   },
   {
     "id": "SMTS00445",
-    "label": "肩疼痛"
+    "label": "Shoulder Pain"
   },
   {
     "id": "SMTS00446",
-    "label": "睑弦赤烂"
+    "label": "Red and rotten eyelid strings"
   },
   {
     "id": "SMTS00447",
-    "label": "健忘"
+    "label": "Forgetfulness"
   },
   {
     "id": "SMTS00449",
-    "label": "僵硬"
+    "label": "stiffness"
   },
   {
     "id": "SMTS00450",
-    "label": "僵硬畸形"
+    "label": "stiffness and deformity"
   },
   {
     "id": "SMTS00451",
-    "label": "焦虑"
+    "label": "Anxiety"
   },
   {
     "id": "SMTS00453",
-    "label": "脚气浮肿"
+    "label": "athlete’s foot and edema"
   },
   {
     "id": "SMTS00454",
-    "label": "脚重"
+    "label": "heavy feet"
   },
   {
     "id": "SMTS00455",
-    "label": "疖肿"
+    "label": "boils and swelling"
   },
   {
     "id": "SMTS00458",
-    "label": "疥癣瘙痒"
+    "label": "scabies itching"
   },
   {
     "id": "SMTS00459",
-    "label": "津伤"
+    "label": "body fluid injury"
   },
   {
     "id": "SMTS00460",
-    "label": "筋骨酸痛"
+    "label": "muscle and bone aches"
   },
   {
     "id": "SMTS00461",
-    "label": "筋骨疼痛"
+    "label": "muscle and bone pain"
   },
   {
     "id": "SMTS00462",
-    "label": "筋骨痿软"
+    "label": "weak muscles and bones"
   },
   {
     "id": "SMTS00463",
-    "label": "筋骨无力"
+    "label": "weakness of muscles and bones"
   },
   {
     "id": "SMTS00464",
-    "label": "筋骨瘀痛"
+    "label": "muscle and bone stasis and pain"
   },
   {
     "id": "SMTS00465",
-    "label": "筋脉拘急"
+    "label": "Tension in tendons and arteries"
   },
   {
     "id": "SMTS00466",
-    "label": "筋脉拘挛"
+    "label": "muscle spasm"
   },
   {
     "id": "SMTS00467",
-    "label": "筋扭伤"
+    "label": "tendon sprain"
   },
   {
     "id": "SMTS00468",
-    "label": "筋伤"
+    "label": "tendon injury"
   },
   {
     "id": "SMTS00470",
-    "label": "经闭"
+    "label": "amenorrhea"
   },
   {
     "id": "SMTS00471",
-    "label": "经初行不畅"
+    "label": "Sluggish menstruation at the beginning of menstruation"
   },
   {
     "id": "SMTS00472",
-    "label": "经寒不调"
+    "label": "Irregular menstruation"
   },
   {
     "id": "SMTS00473",
-    "label": "经行腹痛"
+    "label": "abdominal pain during menstruation"
   },
   {
     "id": "SMTS00474",
-    "label": "经行量少"
+    "label": "low menstrual flow"
   },
   {
     "id": "SMTS00475",
-    "label": "经行痛减"
+    "label": "Reduced menstrual pain"
   },
   {
     "id": "SMTS00476",
-    "label": "经行小腹冷痛"
+    "label": "cold pain in lower abdomen during menstruation"
   },
   {
     "id": "SMTS00477",
-    "label": "经行小腹疼痛"
+    "label": "lower abdominal pain during menstruation"
   },
   {
     "id": "SMTS00478",
-    "label": "经行小腹喜热"
+    "label": "Feeling hot in the lower abdomen during menstruation"
   },
   {
     "id": "SMTS00479",
-    "label": "经行小腹胀痛"
+    "label": "lower abdominal distension and pain during menstruation"
   },
   {
     "id": "SMTS00480",
-    "label": "经量少有血块"
+    "label": "low menstrual flow and blood clots"
   },
   {
     "id": "SMTS00481",
-    "label": "经期腹痛"
+    "label": "abdominal pain during menstruation"
   },
   {
     "id": "SMTS00482",
-    "label": "经期延长"
+    "label": "prolonged menstruation"
   },
   {
     "id": "SMTS00483",
-    "label": "经前腹痛加剧"
+    "label": "Premenstrual abdominal pain worsens"
   },
   {
     "id": "SMTS00484",
-    "label": "经前乳房胀痛"
+    "label": "Premenstrual breast swelling and pain"
   },
   {
     "id": "SMTS00485",
-    "label": "经前乳胀"
+    "label": "Premenstrual breast swelling"
   },
   {
     "id": "SMTS00486",
-    "label": "经前双乳胀痛"
+    "label": "Premenstrual breast swelling and pain"
   },
   {
     "id": "SMTS00487",
-    "label": "经前疼痛加重"
+    "label": "worsening of premenstrual pain"
   },
   {
     "id": "SMTS00488",
-    "label": "经前头痛"
+    "label": "Premenstrual headache"
   },
   {
     "id": "SMTS00489",
-    "label": "经前性情急躁"
+    "label": "Premenstrual irritability"
   },
   {
     "id": "SMTS00490",
-    "label": "经前胸闷"
+    "label": "Premenstrual chest tightness"
   },
   {
     "id": "SMTS00491",
-    "label": "经少色淡"
+    "label": "scanty menstruation and light color"
   },
   {
     "id": "SMTS00492",
-    "label": "经水淋漓不净"
+    "label": "Menstrual fluid dripping and unclean"
   },
   {
     "id": "SMTS00493",
-    "label": "经血紫暗"
+    "label": "dark purple menstrual blood"
   },
   {
     "id": "SMTS00495",
-    "label": "惊风抽搐"
+    "label": "convulsions and convulsions"
   },
   {
     "id": "SMTS00496",
-    "label": "惊悸"
+    "label": "palpitation"
   },
   {
     "id": "SMTS00497",
-    "label": "惊悸不安"
+    "label": "panic and restlessness"
   },
   {
     "id": "SMTS00498",
-    "label": "惊悸不宁"
+    "label": "panic and restlessness"
   },
   {
     "id": "SMTS00499",
-    "label": "惊悸多梦"
+    "label": "palpitation and dreaminess"
   },
   {
     "id": "SMTS00500",
-    "label": "惊厥"
+    "label": "convulsions"
   },
   {
     "id": "SMTS00501",
-    "label": "惊恐"
+    "label": "Panic"
   },
   {
     "id": "SMTS00502",
-    "label": "惊痫"
+    "label": "epilepsy"
   },
   {
     "id": "SMTS00503",
-    "label": "惊痫不安"
+    "label": "epilepsy and restlessness"
   },
   {
     "id": "SMTS00504",
-    "label": "精亏"
+    "label": "Jing deficiency"
   },
   {
     "id": "SMTS00505",
-    "label": "精冷"
+    "label": "Jing Leng"
   },
   {
     "id": "SMTS00506",
-    "label": "精气不足"
+    "label": "Insufficient Essence and Qi"
   },
   {
     "id": "SMTS00507",
-    "label": "精神不振"
+    "label": "Lack of energy"
   },
   {
     "id": "SMTS00508",
-    "label": "精神恍惚"
+    "label": "Trance"
   },
   {
     "id": "SMTS00509",
-    "label": "精神萎靡"
+    "label": "listlessness"
   },
   {
     "id": "SMTS00510",
-    "label": "精神忧郁"
+    "label": "Mental Depression"
   },
   {
     "id": "SMTS00511",
-    "label": "精溢"
+    "label": "semen overflow"
   },
   {
     "id": "SMTS00512",
-    "label": "颈肩部僵硬"
+    "label": "stiff neck and shoulders"
   },
   {
     "id": "SMTS00513",
-    "label": "颈项活动不利"
+    "label": "Inability to move the neck"
   },
   {
     "id": "SMTS00515",
-    "label": "颈项僵直"
+    "label": "stiff neck"
   },
   {
     "id": "SMTS00516",
-    "label": "颈项紧张不舒"
+    "label": "Neck tension and discomfort"
   },
   {
     "id": "SMTS00517",
-    "label": "颈项疼痛"
+    "label": "Neck Pain"
   },
   {
     "id": "SMTS00518",
-    "label": "颈椎病型头痛"
+    "label": "cervical spondylosis type headache"
   },
   {
     "id": "SMTS00520",
-    "label": "胫膝酸软"
+    "label": "Soreness and weakness in shins and knees"
   },
   {
     "id": "SMTS00521",
-    "label": "痉厥"
+    "label": "convulsions"
   },
   {
     "id": "SMTS00522",
-    "label": "痉挛"
+    "label": "spasm"
   },
   {
     "id": "SMTS00523",
-    "label": "久病体弱"
+    "label": "chronic illness and weakness"
   },
   {
     "id": "SMTS00524",
-    "label": "久咳"
+    "label": "Chronic Cough"
   },
   {
     "id": "SMTS00525",
-    "label": "久咳不止"
+    "label": "persistent cough"
   },
   {
     "id": "SMTS00528",
-    "label": "久疟体虚"
+    "label": "chronic malaria and physical weakness"
   },
   {
     "id": "SMTS00529",
-    "label": "久嗽"
+    "label": "Chronic Cough"
   },
   {
     "id": "SMTS00530",
-    "label": "久嗽不止"
+    "label": "persistent cough"
   },
   {
     "id": "SMTS00531",
-    "label": "久泻"
+    "label": "chronic diarrhea"
   },
   {
     "id": "SMTS00532",
-    "label": "久泻不止"
+    "label": "persistent diarrhea"
   },
   {
     "id": "SMTS00533",
-    "label": "久泻久痢"
+    "label": "chronic diarrhea and dysentery"
   },
   {
     "id": "SMTS00534",
-    "label": "久泻脱肛"
+    "label": "chronic diarrhea and anal prolapse"
   },
   {
     "id": "SMTS00535",
-    "label": "拘挛麻木"
+    "label": "spasm and numbness"
   },
   {
     "id": "SMTS00536",
-    "label": "局部恶寒"
+    "label": "local aversion to cold"
   },
   {
     "id": "SMTS00537",
-    "label": "局部红肿"
+    "label": "local redness and swelling"
   },
   {
     "id": "SMTS00538",
-    "label": "局部畏恶风寒"
+    "label": "local fear of wind and cold"
   },
   {
     "id": "SMTS00539",
-    "label": "局部畏风寒"
+    "label": "local fear of wind and cold"
   },
   {
     "id": "SMTS00540",
-    "label": "局部畏寒"
+    "label": "local chills"
   },
   {
     "id": "SMTS00542",
-    "label": "倦怠"
+    "label": "Burnout"
   },
   {
     "id": "SMTS00543",
-    "label": "倦怠乏力"
+    "label": "fatigue and fatigue"
   },
   {
     "id": "SMTS00544",
-    "label": "厥阴头痛"
+    "label": "Jueyin headache"
   },
   {
     "id": "SMTS00545",
-    "label": "咳喘"
+    "label": "Cough and asthma"
   },
   {
     "id": "SMTS00546",
-    "label": "咳喘痛甚"
+    "label": "Cough, asthma and severe pain"
   },
   {
     "id": "SMTS00547",
-    "label": "咳呛阵作"
+    "label": "bursts of coughing and choking"
   },
   {
     "id": "SMTS00548",
-    "label": "咳甚而喘"
+    "label": "Cough and even wheezing"
   },
   {
     "id": "SMTS00549",
-    "label": "咳嗽"
+    "label": "cough"
   },
   {
     "id": "SMTS00550",
-    "label": "咳嗽频作"
+    "label": "Frequent cough"
   },
   {
     "id": "SMTS00551",
-    "label": "咳嗽日久"
+    "label": "Cough that lasts for a long time"
   },
   {
     "id": "SMTS00552",
-    "label": "咳嗽痰多"
+    "label": "Cough with excessive phlegm"
   },
   {
     "id": "SMTS00553",
-    "label": "咳嗽痰盛"
+    "label": "Cough with excessive phlegm"
   },
   {
     "id": "SMTS00554",
-    "label": "咳嗽有痰"
+    "label": "Cough with phlegm"
   },
   {
     "id": "SMTS00555",
-    "label": "咳嗽阵作"
+    "label": "Cough bursts"
   },
   {
     "id": "SMTS00556",
-    "label": "咳痰不爽"
+    "label": "Unpleasant coughing up phlegm"
   },
   {
     "id": "SMTS00557",
-    "label": "咳痰不已"
+    "label": "endless coughing up phlegm"
   },
   {
     "id": "SMTS00558",
-    "label": "咳痰带血"
+    "label": "coughing up phlegm with blood"
   },
   {
     "id": "SMTS00559",
-    "label": "咳痰色白"
+    "label": "cough with white phlegm"
   },
   {
     "id": "SMTS00560",
-    "label": "咳吐不爽"
+    "label": "Unpleasant cough and vomiting"
   },
   {
     "id": "SMTS00561",
-    "label": "咳血"
+    "label": "coughing up blood"
   },
   {
     "id": "SMTS00562",
-    "label": "渴"
+    "label": "Thirst"
   },
   {
     "id": "SMTS00563",
-    "label": "渴不思饮"
+    "label": "Thirst and no desire to drink"
   },
   {
     "id": "SMTS00564",
-    "label": "渴不欲饮"
+    "label": "Thirst and no desire to drink"
   },
   {
     "id": "SMTS00565",
-    "label": "口鼻生疮"
+    "label": "Sores in the mouth and nose"
   },
   {
     "id": "SMTS00566",
-    "label": "口臭"
+    "label": "bad breath"
   },
   {
     "id": "SMTS00567",
-    "label": "口疮"
+    "label": "Aphthous Sores"
   },
   {
     "id": "SMTS00568",
-    "label": "口疮肿痛"
+    "label": "aphthous swelling and pain"
   },
   {
     "id": "SMTS00569",
-    "label": "口唇青紫"
+    "label": "blue lips"
   },
   {
     "id": "SMTS00570",
-    "label": "口唇紫绀"
+    "label": "cyanosis of lips"
   },
   {
     "id": "SMTS00571",
-    "label": "口淡乏味"
+    "label": "Bland mouth"
   },
   {
     "id": "SMTS00573",
-    "label": "口干"
+    "label": "dry mouth"
   },
   {
     "id": "SMTS00574",
-    "label": "口角流诞"
+    "label": "quarrels and quarrels"
   },
   {
     "id": "SMTS00575",
-    "label": "口角流涎"
+    "label": "salivation at the corners of the mouth"
   },
   {
     "id": "SMTS00576",
-    "label": "口噤"
+    "label": "Silence of mouth"
   },
   {
     "id": "SMTS00577",
-    "label": "口渴"
+    "label": "Thirst"
   },
   {
     "id": "SMTS00578",
-    "label": "口渴不欲饮"
+    "label": "Thirst and no desire to drink"
   },
   {
     "id": "SMTS00579",
-    "label": "口渴喜饮"
+    "label": "thirsty and fond of drinking"
   },
   {
     "id": "SMTS00580",
-    "label": "口苦"
+    "label": "Bitter mouth"
   },
   {
     "id": "SMTS00581",
-    "label": "口糜烂"
+    "label": "Oral erosion"
   },
   {
     "id": "SMTS00582",
-    "label": "口黏"
+    "label": "sticky mouth"
   },
   {
     "id": "SMTS00584",
-    "label": "口腔溃疡久不收敛"
+    "label": "Oral ulcers that persist for a long time"
   },
   {
     "id": "SMTS00586",
-    "label": "口舌干燥"
+    "label": "Dry mouth and tongue"
   },
   {
     "id": "SMTS00587",
-    "label": "口舌生疮"
+    "label": "Sores on the mouth and tongue"
   },
   {
     "id": "SMTS00589",
-    "label": "口舌肿痛"
+    "label": "swelling and pain in mouth and tongue"
   },
   {
     "id": "SMTS00590",
-    "label": "口生疮"
+    "label": "mouth sores"
   },
   {
     "id": "SMTS00591",
-    "label": "口吐涎沫"
+    "label": "spitting at the mouth"
   },
   {
     "id": "SMTS00592",
-    "label": "口喎"
+    "label": "Mouth"
   },
   {
     "id": "SMTS00593",
-    "label": "口眼涡斜"
+    "label": "vortex of mouth and eyes"
   },
   {
     "id": "SMTS00594",
-    "label": "口喁"
+    "label": "Mouth"
   },
   {
     "id": "SMTS00595",
-    "label": "口燥"
+    "label": "Dry mouth"
   },
   {
     "id": "SMTS00596",
-    "label": "口中甜腻"
+    "label": "sweetness and greasiness in the mouth"
   },
   {
     "id": "SMTS00597",
-    "label": "狂躁"
+    "label": "Mania"
   },
   {
     "id": "SMTS00598",
-    "label": "溃疡不敛"
+    "label": "ulcers that do not heal"
   },
   {
     "id": "SMTS00599",
-    "label": "剌痛"
+    "label": "stinging pain"
   },
   {
     "id": "SMTS00600",
-    "label": "懒言"
+    "label": "Lazy Talk"
   },
   {
     "id": "SMTS00601",
-    "label": "劳伤"
+    "label": "Strain"
   },
   {
     "id": "SMTS00602",
-    "label": "劳嗽"
+    "label": "labor cough"
   },
   {
     "id": "SMTS00603",
-    "label": "劳嗽咯血"
+    "label": "labor cough and hemoptysis"
   },
   {
     "id": "SMTS00604",
-    "label": "痨嗽"
+    "label": "tuberculosis and cough"
   },
   {
     "id": "SMTS00605",
-    "label": "老年轻度认知障碍"
+    "label": "Mild Cognitive Impairment in the Elderly"
   },
   {
     "id": "SMTS00606",
-    "label": "老年腰膝酸软"
+    "label": "Soreness and weakness in waist and knees in the elderly"
   },
   {
     "id": "SMTS00607",
-    "label": "羸瘦"
+    "label": "thinness"
   },
   {
     "id": "SMTS00608",
-    "label": "肋间神经痛"
+    "label": "intercostal neuralgia"
   },
   {
     "id": "SMTS00609",
-    "label": "冷喘"
+    "label": "cold asthma"
   },
   {
     "id": "SMTS00610",
-    "label": "冷汗自出"
+    "label": "cold sweat spontaneously"
   },
   {
     "id": "SMTS00611",
-    "label": "冷痛"
+    "label": "cold pain"
   },
   {
     "id": "SMTS00612",
-    "label": "冷哮"
+    "label": "cold asthma"
   },
   {
     "id": "SMTS00613",
-    "label": "冷泻"
+    "label": "cold diarrhea"
   },
   {
     "id": "SMTS00614",
-    "label": "里急后重"
+    "label": "tenesmus"
   },
   {
     "id": "SMTS00616",
-    "label": "臁疮糜烂"
+    "label": "ecthyma and erosion"
   },
   {
     "id": "SMTS00617",
-    "label": "两腮痛"
+    "label": "Pain in both cheeks"
   },
   {
     "id": "SMTS00618",
-    "label": "两腮肿"
+    "label": "swollen cheeks"
   },
   {
     "id": "SMTS00619",
-    "label": "两腮肿痛"
+    "label": "swelling and pain in both cheeks"
   },
   {
     "id": "SMTS00620",
-    "label": "两胁疼痛"
+    "label": "Pain in both flanks"
   },
   {
     "id": "SMTS00621",
-    "label": "两胁胀痛"
+    "label": "swelling and pain in both sides of the body"
   },
   {
     "id": "SMTS00622",
-    "label": "两眼刺痛"
+    "label": "tingling in both eyes"
   },
   {
     "id": "SMTS00623",
-    "label": "淋沥疼痛"
+    "label": "Lymph Pain"
   },
   {
     "id": "SMTS00625",
-    "label": "淋证涩痛"
+    "label": "stranguria syndrome, astringent pain"
   },
   {
     "id": "SMTS00627",
-    "label": "淋浊"
+    "label": "stranguria"
   },
   {
     "id": "SMTS00629",
-    "label": "流产后出血"
+    "label": "Post-abortion Bleeding"
   },
   {
     "id": "SMTS00630",
-    "label": "流产后宫缩不良"
+    "label": "poor uterine contractions after miscarriage"
   },
   {
     "id": "SMTS00631",
-    "label": "流黄稠涕"
+    "label": "yellow and thick nasal discharge"
   },
   {
     "id": "SMTS00632",
-    "label": "流黄涕"
+    "label": "yellow runny nose"
   },
   {
     "id": "SMTS00633",
-    "label": "流黄浊涕"
+    "label": "yellowish and turbid nasal discharge"
   },
   {
     "id": "SMTS00634",
-    "label": "流泪"
+    "label": "Tears"
   },
   {
     "id": "SMTS00635",
-    "label": "流脓"
+    "label": "pus discharge"
   },
   {
     "id": "SMTS00636",
-    "label": "流脓涕"
+    "label": "purulent nasal discharge"
   },
   {
     "id": "SMTS00637",
-    "label": "流清涕"
+    "label": "runny nose"
   },
   {
     "id": "SMTS00638",
-    "label": "流涕"
+    "label": "runny nose"
   },
   {
     "id": "SMTS00639",
-    "label": "流涕黏白"
+    "label": "runny nose and sticky white urine"
   },
   {
     "id": "SMTS00641",
-    "label": "流浊涕"
+    "label": "runny nose"
   },
   {
     "id": "SMTS00642",
-    "label": "瘰疬"
+    "label": "Scrofula"
   },
   {
     "id": "SMTS00643",
-    "label": "瘰疬未溃"
+    "label": "Scrofula does not break out"
   },
   {
     "id": "SMTS00644",
-    "label": "落枕"
+    "label": "stiff neck"
   },
   {
     "id": "SMTS00645",
-    "label": "屡经流产"
+    "label": "Repeated Miscarriages"
   },
   {
     "id": "SMTS00646",
-    "label": "麻痹瘙痒"
+    "label": "numbness and itching"
   },
   {
     "id": "SMTS00647",
-    "label": "麻木"
+    "label": "Numbness"
   },
   {
     "id": "SMTS00648",
-    "label": "麻木拘挛"
+    "label": "numbness and spasm"
   },
   {
     "id": "SMTS00649",
-    "label": "麻木瘫痪"
+    "label": "numbness and paralysis"
   },
   {
     "id": "SMTS00650",
-    "label": "麻疹不透"
+    "label": "Measles is not clear"
   },
   {
     "id": "SMTS00651",
-    "label": "脉沉细"
+    "label": "Thready pulse"
   },
   {
     "id": "SMTS00652",
-    "label": "脉细"
+    "label": "thin pulse"
   },
   {
     "id": "SMTS00653",
-    "label": "脉细弱"
+    "label": "thin and weak pulse"
   },
   {
     "id": "SMTS00654",
-    "label": "脉细涩"
+    "label": "thin and astringent pulse"
   },
   {
     "id": "SMTS00655",
-    "label": "脉细数"
+    "label": "thready and rapid pulse"
   },
   {
     "id": "SMTS00656",
-    "label": "脉细弦"
+    "label": "thin and stringy pulse"
   },
   {
     "id": "SMTS00657",
-    "label": "脉弦细"
+    "label": "stringy and thin pulse"
   },
   {
     "id": "SMTS00658",
-    "label": "慢性腹泻"
+    "label": "chronic diarrhea"
   },
   {
     "id": "SMTS00660",
-    "label": "毛发成片脱落"
+    "label": "hair falling out in patches"
   },
   {
     "id": "SMTS00661",
-    "label": "毛发呈稀疏状脱落"
+    "label": "Hair is thinning and falling out"
   },
   {
     "id": "SMTS00662",
-    "label": "毛发干燥"
+    "label": "dry hair"
   },
   {
     "id": "SMTS00663",
-    "label": "毛发松动"
+    "label": "loose hair"
   },
   {
     "id": "SMTS00664",
-    "label": "毛发油腻"
+    "label": "greasy hair"
   },
   {
     "id": "SMTS00666",
-    "label": "梦遗"
+    "label": "wet dreams"
   },
   {
     "id": "SMTS00667",
-    "label": "眠差"
+    "label": "poor sleep"
   },
   {
     "id": "SMTS00668",
-    "label": "面赤"
+    "label": "red face"
   },
   {
     "id": "SMTS00669",
-    "label": "面浮肿"
+    "label": "Facial edema"
   },
   {
     "id": "SMTS00670",
-    "label": "面红"
+    "label": "flushing"
   },
   {
     "id": "SMTS00671",
-    "label": "面黄"
+    "label": "yellow face"
   },
   {
     "id": "SMTS00672",
-    "label": "面目悉黄"
+    "label": "Facial complexion becomes yellowish"
   },
   {
     "id": "SMTS00673",
-    "label": "面目虚涪"
+    "label": "weak-looking face"
   },
   {
     "id": "SMTS00674",
-    "label": "面色不华"
+    "label": "Unpleasant complexion"
   },
   {
     "id": "SMTS00675",
-    "label": "面色苍白"
+    "label": "pale complexion"
   },
   {
     "id": "SMTS00676",
-    "label": "面色淡白"
+    "label": "Pale complexion"
   },
   {
     "id": "SMTS00677",
-    "label": "面色恍白"
+    "label": "pale complexion"
   },
   {
     "id": "SMTS00678",
-    "label": "面色晄白"
+    "label": "pale complexion"
   },
   {
     "id": "SMTS00679",
-    "label": "面色黢黑"
+    "label": "dark complexion"
   },
   {
     "id": "SMTS00680",
-    "label": "面色少华"
+    "label": "Shaohua complexion"
   },
   {
     "id": "SMTS00681",
-    "label": "面色萎黄"
+    "label": "sallow complexion"
   },
   {
     "id": "SMTS00682",
-    "label": "面色无华"
+    "label": "Pale complexion"
   },
   {
     "id": "SMTS00684",
-    "label": "面肢浮肿"
+    "label": "facial and limb edema"
   },
   {
     "id": "SMTS00685",
-    "label": "目暗不明"
+    "label": "Darkness of vision"
   },
   {
     "id": "SMTS00686",
-    "label": "目暗昏花"
+    "label": "Dark eyesight"
   },
   {
     "id": "SMTS00687",
-    "label": "目暗羞明"
+    "label": "dark eyes and shyness"
   },
   {
     "id": "SMTS00688",
-    "label": "目赤"
+    "label": "red eyes"
   },
   {
     "id": "SMTS00689",
-    "label": "目赤红肿"
+    "label": "red and swollen eyes"
   },
   {
     "id": "SMTS00690",
-    "label": "目赤昏花"
+    "label": "red eyes and dim light"
   },
   {
     "id": "SMTS00691",
-    "label": "目赤翳障"
+    "label": "red eyes and nebula"
   },
   {
     "id": "SMTS00692",
-    "label": "目赤肿痛"
+    "label": "red, swollen and painful eyes"
   },
   {
     "id": "SMTS00693",
-    "label": "目发黄"
+    "label": "yellowing of eyes"
   },
   {
     "id": "SMTS00694",
-    "label": "目花"
+    "label": "Flowering Eyes"
   },
   {
     "id": "SMTS00695",
-    "label": "目黄"
+    "label": "yellow eyes"
   },
   {
     "id": "SMTS00696",
-    "label": "目昏"
+    "label": "dizziness"
   },
   {
     "id": "SMTS00697",
-    "label": "目昏不明"
+    "label": "blurred vision"
   },
   {
     "id": "SMTS00698",
-    "label": "目涩"
+    "label": "astringent eyes"
   },
   {
     "id": "SMTS00699",
-    "label": "目生翳膜"
+    "label": "nebula in the eyes"
   },
   {
     "id": "SMTS00700",
-    "label": "目生云翳"
+    "label": "Unseen clouds"
   },
   {
     "id": "SMTS00701",
-    "label": "目眩"
+    "label": "dizziness"
   },
   {
     "id": "SMTS00702",
-    "label": "目痒"
+    "label": "itchy eyes"
   },
   {
     "id": "SMTS00703",
-    "label": "目淫羞明"
+    "label": "blurred vision"
   },
   {
     "id": "SMTS00704",
-    "label": "目胀"
+    "label": "swelling of eyes"
   },
   {
     "id": "SMTS00705",
-    "label": "目珠夜痛"
+    "label": "Eye pain at night"
   },
   {
     "id": "SMTS00706",
-    "label": "纳差"
+    "label": "Anorexia"
   },
   {
     "id": "SMTS00707",
-    "label": "纳呆"
+    "label": "Nausea"
   },
   {
     "id": "SMTS00708",
-    "label": "纳谷不香"
+    "label": "Nagu is not fragrant"
   },
   {
     "id": "SMTS00709",
-    "label": "纳少"
+    "label": "Nausea"
   },
   {
     "id": "SMTS00710",
-    "label": "纳少嘈杂"
+    "label": "Nasty and noisy"
   },
   {
     "id": "SMTS00712",
-    "label": "脑部疼痛"
+    "label": "Brain Pain"
   },
   {
     "id": "SMTS00713",
-    "label": "脑功能减退"
+    "label": "decreased brain function"
   },
   {
     "id": "SMTS00714",
-    "label": "脑络瘀阻"
+    "label": "Cerebral Blood Stasis"
   },
   {
     "id": "SMTS00716",
-    "label": "内障目暗"
+    "label": "Cataract and dark eyes"
   },
   {
     "id": "SMTS00717",
-    "label": "内痔出血"
+    "label": "Internal Hemorrhoids Bleeding"
   },
   {
     "id": "SMTS00718",
-    "label": "年老气喘"
+    "label": "Asthma in the elderly"
   },
   {
     "id": "SMTS00719",
-    "label": "年老哮喘"
+    "label": "Asthma in the elderly"
   },
   {
     "id": "SMTS00720",
-    "label": "黏液便"
+    "label": "Mucus stool"
   },
   {
     "id": "SMTS00721",
-    "label": "尿赤"
+    "label": "red urine"
   },
   {
     "id": "SMTS00722",
-    "label": "尿道涩痛"
+    "label": "urethral astringency and pain"
   },
   {
     "id": "SMTS00723",
-    "label": "尿道灼热"
+    "label": "Urethral burning"
   },
   {
     "id": "SMTS00724",
-    "label": "尿点滴而下"
+    "label": "dribbling of urine"
   },
   {
     "id": "SMTS00725",
-    "label": "尿后滴沥"
+    "label": "dripping after urination"
   },
   {
     "id": "SMTS00726",
-    "label": "尿后余沥不尽"
+    "label": "Incessant drainage after urination"
   },
   {
     "id": "SMTS00727",
-    "label": "尿黄"
+    "label": "yellow urine"
   },
   {
     "id": "SMTS00728",
-    "label": "尿黄如茶"
+    "label": "urine as yellow as tea"
   },
   {
     "id": "SMTS00729",
-    "label": "尿混浊"
+    "label": "cloudy urine"
   },
   {
     "id": "SMTS00730",
-    "label": "尿急"
+    "label": "Urgency of urination"
   },
   {
     "id": "SMTS00732",
-    "label": "尿频"
+    "label": "Frequent urination"
   },
   {
     "id": "SMTS00733",
-    "label": "尿频数"
+    "label": "Frequent urination"
   },
   {
     "id": "SMTS00734",
-    "label": "尿热"
+    "label": "hot urination"
   },
   {
     "id": "SMTS00735",
-    "label": "尿色赤黄"
+    "label": "red-yellow urine"
   },
   {
     "id": "SMTS00736",
-    "label": "尿色偏黄"
+    "label": "yellowish urine"
   },
   {
     "id": "SMTS00737",
-    "label": "尿涩"
+    "label": "astringent urine"
   },
   {
     "id": "SMTS00738",
-    "label": "尿涩痛"
+    "label": "astringent and painful urination"
   },
   {
     "id": "SMTS00739",
-    "label": "尿少"
+    "label": "oliguria"
   },
   {
     "id": "SMTS00740",
-    "label": "尿痛"
+    "label": "painful urination"
   },
   {
     "id": "SMTS00741",
-    "label": "尿线细"
+    "label": "thin urine lines"
   },
   {
     "id": "SMTS00742",
-    "label": "尿血"
+    "label": "blood in urine"
   },
   {
     "id": "SMTS00743",
-    "label": "尿血血色鲜红"
+    "label": "bright red blood in urine"
   },
   {
     "id": "SMTS00744",
-    "label": "尿血血色紫红"
+    "label": "Purple-red blood in urine"
   },
   {
     "id": "SMTS00745",
-    "label": "扭腰"
+    "label": "twisted waist"
   },
   {
     "id": "SMTS00746",
-    "label": "脓成不溃"
+    "label": "pus does not ulcerate"
   },
   {
     "id": "SMTS00747",
-    "label": "脓腐将荆"
+    "label": "purulent rot and thorns"
   },
   {
     "id": "SMTS00748",
-    "label": "脓疱"
+    "label": "pustules"
   },
   {
     "id": "SMTS00749",
-    "label": "脓水"
+    "label": "pus"
   },
   {
     "id": "SMTS00750",
-    "label": "脓痰"
+    "label": "purulent phlegm"
   },
   {
     "id": "SMTS00752",
-    "label": "衄血"
+    "label": "epistaxis"
   },
   {
     "id": "SMTS00753",
-    "label": "呕恶"
+    "label": "Vomiting"
   },
   {
     "id": "SMTS00754",
-    "label": "呕逆"
+    "label": "Vomiting"
   },
   {
     "id": "SMTS00755",
-    "label": "呕吐"
+    "label": "vomiting"
   },
   {
     "id": "SMTS00756",
-    "label": "呕吐清水"
+    "label": "Vomiting clear water"
   },
   {
     "id": "SMTS00757",
-    "label": "呕吐乳食"
+    "label": "Vomiting after breastfeeding"
   },
   {
     "id": "SMTS00758",
-    "label": "呕吐痰涎"
+    "label": "Vomiting and phlegm"
   },
   {
     "id": "SMTS00759",
-    "label": "呕吐吞酸"
+    "label": "vomiting, acid swallowing"
   },
   {
     "id": "SMTS00761",
-    "label": "排尿滴沥不尽"
+    "label": "Incontinent urination"
   },
   {
     "id": "SMTS00762",
-    "label": "排尿困难"
+    "label": "Difficulty urinating"
   },
   {
     "id": "SMTS00763",
-    "label": "喷嚏"
+    "label": "sneezing"
   },
   {
     "id": "SMTS00765",
-    "label": "皮肤风团色红"
+    "label": "skin wheals with red color"
   },
   {
     "id": "SMTS00767",
-    "label": "皮肤干燥"
+    "label": "dry skin"
   },
   {
     "id": "SMTS00768",
-    "label": "皮肤黄染"
+    "label": "yellowish skin"
   },
   {
     "id": "SMTS00769",
-    "label": "皮肤皲裂"
+    "label": "chapped skin"
   },
   {
     "id": "SMTS00770",
-    "label": "皮肤潰疡"
+    "label": "skin ulcers"
   },
   {
     "id": "SMTS00771",
-    "label": "皮肤糜烂"
+    "label": "skin erosion"
   },
   {
     "id": "SMTS00772",
-    "label": "皮肤黏膜破溃"
+    "label": "skin and mucous membrane ulcers"
   },
   {
     "id": "SMTS00773",
-    "label": "皮肤青紫"
+    "label": "blue and purple skin"
   },
   {
     "id": "SMTS00774",
-    "label": "皮肤瘙痒"
+    "label": "itchy skin"
   },
   {
     "id": "SMTS00775",
-    "label": "皮肤色斑"
+    "label": "skin spots"
   },
   {
     "id": "SMTS00776",
-    "label": "皮肤湿烂"
+    "label": "wet and rotten skin"
   },
   {
     "id": "SMTS00777",
-    "label": "皮肤湿疹"
+    "label": "skin eczema"
   },
   {
     "id": "SMTS00778",
-    "label": "皮肤瘀斑"
+    "label": "skin ecchymosis"
   },
   {
     "id": "SMTS00779",
-    "label": "皮肤肿痛"
+    "label": "skin swelling and pain"
   },
   {
     "id": "SMTS00780",
-    "label": "皮肤紫斑"
+    "label": "skin purpura"
   },
   {
     "id": "SMTS00781",
-    "label": "皮肤紫癜"
+    "label": "skin purpura"
   },
   {
     "id": "SMTS00782",
-    "label": "皮损呈红斑湿润"
+    "label": "The skin lesions are erythematous and moist"
   },
   {
     "id": "SMTS00783",
-    "label": "皮下结块"
+    "label": "subcutaneous agglomeration"
   },
   {
     "id": "SMTS00784",
-    "label": "皮下紫斑"
+    "label": "Purpura under the skin"
   },
   {
     "id": "SMTS00785",
-    "label": "皮疹表面覆有较厚的银白色鳞屑"
+    "label": "The rash is covered with thick silvery white scales."
   },
   {
     "id": "SMTS00786",
-    "label": "皮疹色鲜红"
+    "label": "bright red rash"
   },
   {
     "id": "SMTS00789",
-    "label": "疲乏无力"
+    "label": "fatigue and weakness"
   },
   {
     "id": "SMTS00790",
-    "label": "疲倦"
+    "label": "fatigue"
   },
   {
     "id": "SMTS00791",
-    "label": "脾胃气滞"
+    "label": "Spleen and stomach qi stagnation"
   },
   {
     "id": "SMTS00792",
-    "label": "脾虚"
+    "label": "spleen deficiency"
   },
   {
     "id": "SMTS00793",
-    "label": "脾虚气滞"
+    "label": "spleen deficiency and qi stagnation"
   },
   {
     "id": "SMTS00794",
-    "label": "痞满"
+    "label": "fullness"
   },
   {
     "id": "SMTS00795",
-    "label": "痞闷"
+    "label": "Suffocation"
   },
   {
     "id": "SMTS00796",
-    "label": "偏身麻木"
+    "label": "Numbness on one side of the body"
   },
   {
     "id": "SMTS00797",
-    "label": "偏瘫"
+    "label": "Hemiplegia"
   },
   {
     "id": "SMTS00798",
-    "label": "偏头痛"
+    "label": "Migraine"
   },
   {
     "id": "SMTS00799",
-    "label": "贫血"
+    "label": "anemia"
   },
   {
     "id": "SMTS00800",
-    "label": "脐腹胀痛"
+    "label": "umbilical and abdominal distension and pain"
   },
   {
     "id": "SMTS00801",
-    "label": "起坐不利"
+    "label": "Difficulty in sitting up"
   },
   {
     "id": "SMTS00802",
-    "label": "气闭昏厥"
+    "label": "breathlessness and fainting"
   },
   {
     "id": "SMTS00803",
-    "label": "气喘"
+    "label": "Asthma"
   },
   {
     "id": "SMTS00804",
-    "label": "气喘咳嗽"
+    "label": "Asthma and cough"
   },
   {
     "id": "SMTS00805",
-    "label": "气粗"
+    "label": "rough Qi"
   },
   {
     "id": "SMTS00806",
-    "label": "气促"
+    "label": "shortness of breath"
   },
   {
     "id": "SMTS00807",
-    "label": "气促喘息"
+    "label": "shortness of breath and wheezing"
   },
   {
     "id": "SMTS00808",
-    "label": "气短"
+    "label": "shortness of breath"
   },
   {
     "id": "SMTS00809",
-    "label": "气急"
+    "label": "shortness of breath"
   },
   {
     "id": "SMTS00810",
-    "label": "气逆"
+    "label": "Qi Rebellion"
   },
   {
     "id": "SMTS00811",
-    "label": "气逆喘急"
+    "label": "shortness of breath, shortness of breath, and shortness of breath"
   },
   {
     "id": "SMTS00812",
-    "label": "气逆喘咳"
+    "label": "dyspnea, asthma and cough"
   },
   {
     "id": "SMTS00813",
-    "label": "气阴两虚"
+    "label": "Qi and Yin deficiency"
   },
   {
     "id": "SMTS00814",
-    "label": "气郁"
+    "label": "Qi depression"
   },
   {
     "id": "SMTS00815",
-    "label": "气滞胃痛"
+    "label": "Qi stagnation and stomach pain"
   },
   {
     "id": "SMTS00816",
-    "label": "前额头痛"
+    "label": "forehead headache"
   },
   {
     "id": "SMTS00817",
-    "label": "前额压痛"
+    "label": "forehead tenderness"
   },
   {
     "id": "SMTS00819",
-    "label": "浅表脓疱"
+    "label": "Superficial pustules"
   },
   {
     "id": "SMTS00820",
-    "label": "青盲雀目"
+    "label": "Blue Blind Bird Eyes"
   },
   {
     "id": "SMTS00821",
-    "label": "靑少年远视力下降"
+    "label": "Distance vision loss in young people"
   },
   {
     "id": "SMTS00823",
-    "label": "轻度视力下降"
+    "label": "mild vision loss"
   },
   {
     "id": "SMTS00825",
-    "label": "情志不畅"
+    "label": "poor mood"
   },
   {
     "id": "SMTS00826",
-    "label": "情志抑郁"
+    "label": "Emotional Depression"
   },
   {
     "id": "SMTS00827",
-    "label": "屈伸不利"
+    "label": "Difficulty in flexion and extension"
   },
   {
     "id": "SMTS00828",
-    "label": "龋齿疼痛"
+    "label": "dental caries pain"
   },
   {
     "id": "SMTS00829",
-    "label": "全身乏力"
+    "label": "general fatigue"
   },
   {
     "id": "SMTS00830",
-    "label": "全身酸疼"
+    "label": "body aches"
   },
   {
     "id": "SMTS00831",
-    "label": "颧骨部压痛"
+    "label": "Tenderness in the cheekbones"
   },
   {
     "id": "SMTS00832",
-    "label": "热痹疼痛"
+    "label": "heat numbness and pain"
   },
   {
     "id": "SMTS00833",
-    "label": "热病发热"
+    "label": "Fever"
   },
   {
     "id": "SMTS00834",
-    "label": "热病发烧"
+    "label": "Fever"
   },
   {
     "id": "SMTS00835",
-    "label": "热病烦渴"
+    "label": "fever and polydipsia"
   },
   {
     "id": "SMTS00836",
-    "label": "热毒泻痢"
+    "label": "heat poisoning and diarrhea"
   },
   {
     "id": "SMTS00837",
-    "label": "热毒血痢"
+    "label": "dysentery caused by heat, poison, and blood"
   },
   {
     "id": "SMTS00838",
-    "label": "热痢"
+    "label": "fever dysentery"
   },
   {
     "id": "SMTS00839",
-    "label": "热淋涩痛"
+    "label": "hot stranguria and astringent pain"
   },
   {
     "id": "SMTS00840",
-    "label": "热淋证"
+    "label": "heat stranguria syndrome"
   },
   {
     "id": "SMTS00841",
-    "label": "热痰"
+    "label": "hot phlegm"
   },
   {
     "id": "SMTS00842",
-    "label": "热泻"
+    "label": "hot diarrhea"
   },
   {
     "id": "SMTS00843",
-    "label": "妊娠恶阻"
+    "label": "Pregnancy obstruction"
   },
   {
     "id": "SMTS00844",
-    "label": "妊娠漏血"
+    "label": "Pregnancy Bleeding"
   },
   {
     "id": "SMTS00845",
-    "label": "妊娠呕吐"
+    "label": "Vomiting in pregnancy"
   },
   {
     "id": "SMTS00846",
-    "label": "妊娠胎漏"
+    "label": "Pregnancy Leakage"
   },
   {
     "id": "SMTS00848",
-    "label": "乳房结节"
+    "label": "Breast Nodules"
   },
   {
     "id": "SMTS00849",
-    "label": "乳房疼痛"
+    "label": "Breast Pain"
   },
   {
     "id": "SMTS00850",
-    "label": "乳房有块"
+    "label": "lump in breast"
   },
   {
     "id": "SMTS00851",
-    "label": "乳房胀痛"
+    "label": "Breast swelling and pain"
   },
   {
     "id": "SMTS00852",
-    "label": "乳房肿块"
+    "label": "Breast Lumps"
   },
   {
     "id": "SMTS00853",
-    "label": "乳房肿痛"
+    "label": "breast swelling and pain"
   },
   {
     "id": "SMTS00854",
-    "label": "乳癖"
+    "label": "Breast Mania"
   },
   {
     "id": "SMTS00855",
-    "label": "乳少"
+    "label": "lack of breast milk"
   },
   {
     "id": "SMTS00856",
-    "label": "乳腺增生"
+    "label": "Breast hyperplasia"
   },
   {
     "id": "SMTS00857",
-    "label": "乳痈"
+    "label": "mastitis"
   },
   {
     "id": "SMTS00858",
-    "label": "乳痈初起"
+    "label": "initial onset of mastitis"
   },
   {
     "id": "SMTS00859",
-    "label": "乳胀痛"
+    "label": "Breast swelling and pain"
   },
   {
     "id": "SMTS00860",
-    "label": "乳汁不通"
+    "label": "Lactation obstruction"
   },
   {
     "id": "SMTS00861",
-    "label": "乳汁不下"
+    "label": "Lack of Breast Milk"
   },
   {
     "id": "SMTS00862",
-    "label": "乳汁郁积"
+    "label": "galactostasis"
   },
   {
     "id": "SMTS00863",
-    "label": "乳肿痛"
+    "label": "breast swelling and pain"
   },
   {
     "id": "SMTS00865",
-    "label": "褥疮肿痛"
+    "label": "bedsores, swelling and pain"
   },
   {
     "id": "SMTS00867",
-    "label": "腮腺炎肿痛"
+    "label": "mumps swelling and pain"
   },
   {
     "id": "SMTS00868",
-    "label": "腮肿"
+    "label": "swollen cheeks"
   },
   {
     "id": "SMTS00869",
-    "label": "瘙痒"
+    "label": "itching"
   },
   {
     "id": "SMTS00870",
-    "label": "瘙痒明显"
+    "label": "obvious itching"
   },
   {
     "id": "SMTS00871",
-    "label": "瘙痒难忍"
+    "label": "unbearable itching"
   },
   {
     "id": "SMTS00873",
-    "label": "涩痛"
+    "label": "astringent pain"
   },
   {
     "id": "SMTS00875",
-    "label": "痧胀腹痛"
+    "label": "Sha distension and abdominal pain"
   },
   {
     "id": "SMTS00877",
-    "label": "闪腰挫气"
+    "label": "Flash of waist and depression of Qi"
   },
   {
     "id": "SMTS00879",
-    "label": "善饥"
+    "label": "Hunger"
   },
   {
     "id": "SMTS00880",
-    "label": "善太息"
+    "label": "Shantaixi"
   },
   {
     "id": "SMTS00881",
-    "label": "伤处瘀肿疼痛"
+    "label": "bruise, swelling and pain"
   },
   {
     "id": "SMTS00884",
-    "label": "上下肢 偏身麻木"
+    "label": "numbness in upper and lower limbs"
   },
   {
     "id": "SMTS00886",
-    "label": "上肢麻木"
+    "label": "numbness of upper limbs"
   },
   {
     "id": "SMTS00887",
-    "label": "上肢疼痛"
+    "label": "upper limb pain"
   },
   {
     "id": "SMTS00888",
-    "label": "少腹拒按"
+    "label": "Refusal to press on the lower abdomen"
   },
   {
     "id": "SMTS00889",
-    "label": "少腹冷痛"
+    "label": "cold pain in lower abdomen"
   },
   {
     "id": "SMTS00890",
-    "label": "少腹疼痛"
+    "label": "lower abdominal pain"
   },
   {
     "id": "SMTS00891",
-    "label": "少腹痛"
+    "label": "abdominal pain"
   },
   {
     "id": "SMTS00892",
-    "label": "少腹坠胀"
+    "label": "distension in lower abdomen"
   },
   {
     "id": "SMTS00893",
-    "label": "少津"
+    "label": "Shaojin"
   },
   {
     "id": "SMTS00894",
-    "label": "少寐"
+    "label": "less sleepiness"
   },
   {
     "id": "SMTS00895",
-    "label": "少气"
+    "label": "Lack of Qi"
   },
   {
     "id": "SMTS00896",
-    "label": "少食"
+    "label": "Eat less"
   },
   {
     "id": "SMTS00897",
-    "label": "少痰"
+    "label": "less phlegm"
   },
   {
     "id": "SMTS00898",
-    "label": "舌暗"
+    "label": "dark tongue"
   },
   {
     "id": "SMTS00899",
-    "label": "舌暗红"
+    "label": "dark red tongue"
   },
   {
     "id": "SMTS00900",
-    "label": "舌边尖有瘀斑"
+    "label": "ecchymosis on the tip of the tongue"
   },
   {
     "id": "SMTS00901",
-    "label": "舌部疲斑"
+    "label": "Tired spots on tongue"
   },
   {
     "id": "SMTS00902",
-    "label": "舌赤"
+    "label": "red tongue"
   },
   {
     "id": "SMTS00903",
-    "label": "舌淡"
+    "label": "Pale tongue"
   },
   {
     "id": "SMTS00904",
-    "label": "舌干"
+    "label": "dry tongue"
   },
   {
     "id": "SMTS00905",
-    "label": "舌红"
+    "label": "red tongue"
   },
   {
     "id": "SMTS00906",
-    "label": "舌红苔黄腻"
+    "label": "red tongue, yellow and greasy coating"
   },
   {
     "id": "SMTS00907",
-    "label": "舌尖边有瘀点"
+    "label": "petechiae on the tip of the tongue"
   },
   {
     "id": "SMTS00908",
-    "label": "舌尖红"
+    "label": "red tip of tongue"
   },
   {
     "id": "SMTS00909",
-    "label": "舌绛"
+    "label": "dark tongue"
   },
   {
     "id": "SMTS00910",
-    "label": "舌糜烂"
+    "label": "Tongue erosion"
   },
   {
     "id": "SMTS00911",
-    "label": "舌胖"
+    "label": "fat tongue"
   },
   {
     "id": "SMTS00912",
-    "label": "舌偏红"
+    "label": "red tongue"
   },
   {
     "id": "SMTS00913",
-    "label": "舌强"
+    "label": "Strong tongue"
   },
   {
     "id": "SMTS00914",
-    "label": "舌强不语"
+    "label": "Strong tongue and inability to speak"
   },
   {
     "id": "SMTS00915",
-    "label": "舌生疮"
+    "label": "sores on tongue"
   },
   {
     "id": "SMTS00916",
-    "label": "舌体胖大"
+    "label": "Fat and enlarged tongue"
   },
   {
     "id": "SMTS00917",
-    "label": "舌体肿"
+    "label": "swollen tongue"
   },
   {
     "id": "SMTS00918",
-    "label": "舌有齿痕"
+    "label": "Teeth marks on tongue"
   },
   {
     "id": "SMTS00919",
-    "label": "舌有瘀斑"
+    "label": "ecchymosis on tongue"
   },
   {
     "id": "SMTS00920",
-    "label": "舌有瘀点瘀斑"
+    "label": "Petechiae and ecchymosis on tongue"
   },
   {
     "id": "SMTS00921",
-    "label": "舌瘀斑"
+    "label": "Tongue ecchymosis"
   },
   {
     "id": "SMTS00922",
-    "label": "舌质暗红"
+    "label": "dark red tongue"
   },
   {
     "id": "SMTS00923",
-    "label": "舌质黯"
+    "label": "dark tongue"
   },
   {
     "id": "SMTS00924",
-    "label": "舌质淡暗"
+    "label": "dark tongue"
   },
   {
     "id": "SMTS00925",
-    "label": "舌质红少津"
+    "label": "red tongue and less fluid"
   },
   {
     "id": "SMTS00926",
-    "label": "舌质红少苔"
+    "label": "red tongue with less coating"
   },
   {
     "id": "SMTS00927",
-    "label": "舌质有瘀斑"
+    "label": "ecchymosis on tongue"
   },
   {
     "id": "SMTS00928",
-    "label": "舌质紫暗"
+    "label": "dark purple tongue"
   },
   {
     "id": "SMTS00929",
-    "label": "舌紫暗"
+    "label": "dark purple tongue"
   },
   {
     "id": "SMTS00931",
-    "label": "身黄"
+    "label": "Yellow body"
   },
   {
     "id": "SMTS00932",
-    "label": "身倦"
+    "label": "Tiredness"
   },
   {
     "id": "SMTS00933",
-    "label": "身困重"
+    "label": "Heavy sleepiness"
   },
   {
     "id": "SMTS00934",
-    "label": "身目发黄"
+    "label": "yellowing of body and eyes"
   },
   {
     "id": "SMTS00935",
-    "label": "身热"
+    "label": "body heat"
   },
   {
     "id": "SMTS00936",
-    "label": "身瘦"
+    "label": "weight loss"
   },
   {
     "id": "SMTS00937",
-    "label": "身疼痛"
+    "label": "body pain"
   },
   {
     "id": "SMTS00938",
-    "label": "身体倦懒"
+    "label": "Physical fatigue"
   },
   {
     "id": "SMTS00939",
-    "label": "身体麻木"
+    "label": "Body numbness"
   },
   {
     "id": "SMTS00940",
-    "label": "身体痩弱"
+    "label": "Physical weakness"
   },
   {
     "id": "SMTS00941",
-    "label": "身体瘦弱"
+    "label": "thin body"
   },
   {
     "id": "SMTS00942",
-    "label": "身痛"
+    "label": "body pain"
   },
   {
     "id": "SMTS00943",
-    "label": "身痛痉挛"
+    "label": "body pain and spasm"
   },
   {
     "id": "SMTS00944",
-    "label": "神昏"
+    "label": "coma"
   },
   {
     "id": "SMTS00945",
-    "label": "神昏不语"
+    "label": "Faint and speechless"
   },
   {
     "id": "SMTS00946",
-    "label": "神昏狂躁"
+    "label": "coma and mania"
   },
   {
     "id": "SMTS00947",
-    "label": "神昏谵语"
+    "label": "coma and delirium"
   },
   {
     "id": "SMTS00948",
-    "label": "神经衰弱"
+    "label": "neurasthenia"
   },
   {
     "id": "SMTS00949",
-    "label": "神经痛"
+    "label": "neuralgia"
   },
   {
     "id": "SMTS00950",
-    "label": "神经性疼痛"
+    "label": "Neuropathic Pain"
   },
   {
     "id": "SMTS00951",
-    "label": "神经性头痛"
+    "label": "Nervous headache"
   },
   {
     "id": "SMTS00952",
-    "label": "神倦"
+    "label": "fatigue"
   },
   {
     "id": "SMTS00953",
-    "label": "神倦懒言"
+    "label": "tiredness and laziness"
   },
   {
     "id": "SMTS00954",
-    "label": "神疲"
+    "label": "mental fatigue"
   },
   {
     "id": "SMTS00955",
-    "label": "神情呆滞"
+    "label": "Sluggish expression"
   },
   {
     "id": "SMTS00956",
-    "label": "神志不清"
+    "label": "Confusion"
   },
   {
     "id": "SMTS00957",
-    "label": "神志淡漠"
+    "label": "Apathy"
   },
   {
     "id": "SMTS00958",
-    "label": "神志恍惚"
+    "label": "Confusion"
   },
   {
     "id": "SMTS00959",
-    "label": "神志昏蒙"
+    "label": "confusion"
   },
   {
     "id": "SMTS00960",
-    "label": "神志昏迷"
+    "label": "coma"
   },
   {
     "id": "SMTS00961",
-    "label": "神志混乱"
+    "label": "Confusion"
   },
   {
     "id": "SMTS00962",
-    "label": "肾精不足"
+    "label": "Insufficient kidney essence"
   },
   {
     "id": "SMTS00963",
-    "label": "肾区叩击痛"
+    "label": "percussion pain in the kidney area"
   },
   {
     "id": "SMTS00964",
-    "label": "肾区冷痛、"
+    "label": "cold pain in kidney area,"
   },
   {
     "id": "SMTS00965",
-    "label": "声带充血"
+    "label": "Vocal cord congestion"
   },
   {
     "id": "SMTS00967",
-    "label": "声带小结"
+    "label": "Vocal cord nodules"
   },
   {
     "id": "SMTS00968",
-    "label": "声音嘶哑"
+    "label": "hoarseness"
   },
   {
     "id": "SMTS00969",
-    "label": "声重"
+    "label": "heavy voice"
   },
   {
     "id": "SMTS00970",
-    "label": "失眠"
+    "label": "insomnia"
   },
   {
     "id": "SMTS00971",
-    "label": "失音"
+    "label": "aphonia"
   },
   {
     "id": "SMTS00972",
-    "label": "失语"
+    "label": "aphasia"
   },
   {
     "id": "SMTS00973",
-    "label": "湿痹拘挛"
+    "label": "Dampness and spasm"
   },
   {
     "id": "SMTS00974",
-    "label": "湿疮"
+    "label": "Eczema"
   },
   {
     "id": "SMTS00975",
-    "label": "湿疮脓水浸淫"
+    "label": "Eczema and pus-soaked water"
   },
   {
     "id": "SMTS00976",
-    "label": "湿热毒邪聚结肌肤"
+    "label": "dampness, heat and poisonous evil gather on the skin"
   },
   {
     "id": "SMTS00977",
-    "label": "湿热下注"
+    "label": "Damp and Heat Bets"
   },
   {
     "id": "SMTS00978",
-    "label": "湿疹"
+    "label": "Eczema"
   },
   {
     "id": "SMTS00979",
-    "label": "湿疹瘙痒"
+    "label": "Eczema Itching"
   },
   {
     "id": "SMTS00981",
-    "label": "石淋"
+    "label": "Shilin"
   },
   {
     "id": "SMTS00982",
-    "label": "石淋涩痛"
+    "label": "Shilin astringent pain"
   },
   {
     "id": "SMTS00983",
-    "label": "时有隐痛"
+    "label": "dull pain from time to time"
   },
   {
     "id": "SMTS00984",
-    "label": "食后腹胀拒按"
+    "label": "abdominal distension and refusal to press after eating"
   },
   {
     "id": "SMTS00985",
-    "label": "食后胀痛"
+    "label": "distension and pain after eating"
   },
   {
     "id": "SMTS00986",
-    "label": "食积"
+    "label": "food accumulation"
   },
   {
     "id": "SMTS00987",
-    "label": "食积不消"
+    "label": "food accumulation that cannot be eliminated"
   },
   {
     "id": "SMTS00988",
-    "label": "食积胀满"
+    "label": "fullness due to food accumulation"
   },
   {
     "id": "SMTS00989",
-    "label": "食乳不化"
+    "label": "Inability to digest milk after eating"
   },
   {
     "id": "SMTS00990",
-    "label": "食少"
+    "label": "Eating less"
   },
   {
     "id": "SMTS00991",
-    "label": "食少不化"
+    "label": "Not eating enough"
   },
   {
     "id": "SMTS00992",
-    "label": "食少乏力"
+    "label": "Lack of food and fatigue"
   },
   {
     "id": "SMTS00993",
-    "label": "食少腹胀"
+    "label": "abdominal distension after eating less"
   },
   {
     "id": "SMTS00994",
-    "label": "食物积滞"
+    "label": "food stagnation"
   },
   {
     "id": "SMTS00995",
-    "label": "食欲不振"
+    "label": "loss of appetite"
   },
   {
     "id": "SMTS00996",
-    "label": "食欲减退"
+    "label": "loss of appetite"
   },
   {
     "id": "SMTS00997",
-    "label": "食滞"
+    "label": "food stagnation"
   },
   {
     "id": "SMTS00998",
-    "label": "食滞不化"
+    "label": "food stagnation"
   },
   {
     "id": "SMTS00999",
-    "label": "食滞化热"
+    "label": "Food stagnation turns into heat"
   },
   {
     "id": "SMTS01001",
-    "label": "视力减退"
+    "label": "vision loss"
   },
   {
     "id": "SMTS01002",
-    "label": "视力疲劳"
+    "label": "visual fatigue"
   },
   {
     "id": "SMTS01003",
-    "label": "视力下降"
+    "label": "decreased vision"
   },
   {
     "id": "SMTS01004",
-    "label": "视物不清"
+    "label": "blurred vision"
   },
   {
     "id": "SMTS01005",
-    "label": "视物昏暗"
+    "label": "dim vision"
   },
   {
     "id": "SMTS01006",
-    "label": "视物昏花"
+    "label": "blurred vision"
   },
   {
     "id": "SMTS01007",
-    "label": "视物模糊"
+    "label": "blurred vision"
   },
   {
     "id": "SMTS01008",
-    "label": "手臂麻木"
+    "label": "numbness in arms"
   },
   {
     "id": "SMTS01009",
-    "label": "手抽搐"
+    "label": "hand twitching"
   },
   {
     "id": "SMTS01010",
-    "label": "手拘挛"
+    "label": "hand spasm"
   },
   {
     "id": "SMTS01011",
-    "label": "手麻木"
+    "label": "numbness in hands"
   },
   {
     "id": "SMTS01013",
-    "label": "手心热"
+    "label": "hot palms"
   },
   {
     "id": "SMTS01014",
-    "label": "手肿胀"
+    "label": "Swelling of Hands"
   },
   {
     "id": "SMTS01015",
-    "label": "手足不遂"
+    "label": "Paralysis of Hands and Feet"
   },
   {
     "id": "SMTS01016",
-    "label": "手足不温"
+    "label": "lukewarm hands and feet"
   },
   {
     "id": "SMTS01017",
-    "label": "手足发凉"
+    "label": "cold hands and feet"
   },
   {
     "id": "SMTS01018",
-    "label": "手足麻木症"
+    "label": "Numbness of Hands and Feet"
   },
   {
     "id": "SMTS01019",
-    "label": "手足瘈疲"
+    "label": "Fatigue in hands and feet"
   },
   {
     "id": "SMTS01020",
-    "label": "暑湿"
+    "label": "summer heat dampness"
   },
   {
     "id": "SMTS01021",
-    "label": "暑邪发热"
+    "label": "Fever caused by summer heat"
   },
   {
     "id": "SMTS01022",
-    "label": "术后疼痛"
+    "label": "postoperative pain"
   },
   {
     "id": "SMTS01023",
-    "label": "双目上吊"
+    "label": "Hanging eyes"
   },
   {
     "id": "SMTS01024",
-    "label": "双乳痛"
+    "label": "breast pain"
   },
   {
     "id": "SMTS01025",
-    "label": "水浆难下"
+    "label": "Difficulty in water slurry"
   },
   {
     "id": "SMTS01026",
-    "label": "水泻"
+    "label": "Watery Diarrhea"
   },
   {
     "id": "SMTS01027",
-    "label": "水肿"
+    "label": "edema"
   },
   {
     "id": "SMTS01028",
-    "label": "睡卧不安"
+    "label": "restless sleep"
   },
   {
     "id": "SMTS01029",
-    "label": "思维迟缓"
+    "label": "slow thinking"
   },
   {
     "id": "SMTS01030",
-    "label": "死胎"
+    "label": "stillbirth"
   },
   {
     "id": "SMTS01031",
-    "label": "四肢不温"
+    "label": "lukewarm limbs"
   },
   {
     "id": "SMTS01032",
-    "label": "四肢乏力"
+    "label": "Weakness in the limbs"
   },
   {
     "id": "SMTS01033",
-    "label": "四肢浮肿"
+    "label": "edema of limbs"
   },
   {
     "id": "SMTS01034",
-    "label": "四肢关节冷痛"
+    "label": "cold pain in limb joints"
   },
   {
     "id": "SMTS01035",
-    "label": "四肢拘挛"
+    "label": "spasm of limbs"
   },
   {
     "id": "SMTS01036",
-    "label": "四肢倦怠"
+    "label": "fatigue of limbs"
   },
   {
     "id": "SMTS01037",
-    "label": "四肢倦乏"
+    "label": "tiredness of limbs"
   },
   {
     "id": "SMTS01038",
-    "label": "四肢厥逆"
+    "label": "syncope in limbs"
   },
   {
     "id": "SMTS01039",
-    "label": "四肢挛急"
+    "label": "Acute cramping of limbs"
   },
   {
     "id": "SMTS01040",
-    "label": "四肢挛痛"
+    "label": "cramping pain in limbs"
   },
   {
     "id": "SMTS01041",
-    "label": "四肢麻痹"
+    "label": "paralysis of limbs"
   },
   {
     "id": "SMTS01042",
-    "label": "四肢麻木"
+    "label": "numbness of limbs"
   },
   {
     "id": "SMTS01043",
-    "label": "四肢逆冷"
+    "label": "Coldness in the limbs"
   },
   {
     "id": "SMTS01044",
-    "label": "四肢酸"
+    "label": "Sore limbs"
   },
   {
     "id": "SMTS01045",
-    "label": "四肢酸懒"
+    "label": "soreness and laziness of limbs"
   },
   {
     "id": "SMTS01046",
-    "label": "四肢酸痛"
+    "label": "soreness in limbs"
   },
   {
     "id": "SMTS01047",
-    "label": "四肢疼痛"
+    "label": "pain in limbs"
   },
   {
     "id": "SMTS01048",
-    "label": "四肢无力"
+    "label": "weakness in limbs"
   },
   {
     "id": "SMTS01049",
-    "label": "嗖痛"
+    "label": "soreness"
   },
   {
     "id": "SMTS01050",
-    "label": "溲黄"
+    "label": "Anhui"
   },
   {
     "id": "SMTS01051",
-    "label": "胎动不安"
+    "label": "Fetal Movement Restlessness"
   },
   {
     "id": "SMTS01052",
-    "label": "胎漏"
+    "label": "fetal leakage"
   },
   {
     "id": "SMTS01053",
-    "label": "胎漏下血"
+    "label": "fetal bleeding"
   },
   {
     "id": "SMTS01054",
-    "label": "胎盘不下"
+    "label": "Retained placenta"
   },
   {
     "id": "SMTS01055",
-    "label": "瘫痪"
+    "label": "Paralysis"
   },
   {
     "id": "SMTS01056",
-    "label": "痰白"
+    "label": "white phlegm"
   },
   {
     "id": "SMTS01057",
-    "label": "痰白质稀"
+    "label": "thin phlegm and white matter"
   },
   {
     "id": "SMTS01058",
-    "label": "痰不易出"
+    "label": "Difficulty phlegm coming out"
   },
   {
     "id": "SMTS01059",
-    "label": "痰稠"
+    "label": "thick phlegm"
   },
   {
     "id": "SMTS01060",
-    "label": "痰稠黄"
+    "label": "thick yellow phlegm"
   },
   {
     "id": "SMTS01061",
-    "label": "痰稠难出"
+    "label": "thick phlegm that is difficult to come out"
   },
   {
     "id": "SMTS01062",
-    "label": "痰喘"
+    "label": "phlegm and asthma"
   },
   {
     "id": "SMTS01063",
-    "label": "痰多"
+    "label": "excessive phlegm"
   },
   {
     "id": "SMTS01064",
-    "label": "痰多黄稠"
+    "label": "yellowish and thick phlegm"
   },
   {
     "id": "SMTS01065",
-    "label": "痰多咳嗽"
+    "label": "Cough with excessive phlegm"
   },
   {
     "id": "SMTS01066",
-    "label": "痰多淸稀"
+    "label": "excessive phlegm and thin phlegm"
   },
   {
     "id": "SMTS01067",
-    "label": "痰多上气"
+    "label": "Excessive phlegm and constipation"
   },
   {
     "id": "SMTS01068",
-    "label": "痰多作喘"
+    "label": "Excessive phlegm and asthma"
   },
   {
     "id": "SMTS01069",
-    "label": "痰核痞块"
+    "label": "phlegm core lumps"
   },
   {
     "id": "SMTS01070",
-    "label": "痰黄"
+    "label": "yellow phlegm"
   },
   {
     "id": "SMTS01071",
-    "label": "痰黄稠"
+    "label": "yellow and thick phlegm"
   },
   {
     "id": "SMTS01072",
-    "label": "痰黄稠黏"
+    "label": "yellow, thick and sticky phlegm"
   },
   {
     "id": "SMTS01073",
-    "label": "痰黄黏稠"
+    "label": "yellow and sticky phlegm"
   },
   {
     "id": "SMTS01074",
-    "label": "痰厥"
+    "label": "phlegm syncope"
   },
   {
     "id": "SMTS01075",
-    "label": "痰厥头痛"
+    "label": "phlegm and headache"
   },
   {
     "id": "SMTS01076",
-    "label": "痰鸣"
+    "label": "Phlegm"
   },
   {
     "id": "SMTS01077",
-    "label": "痰鸣如吼"
+    "label": "Roaring phlegm"
   },
   {
     "id": "SMTS01078",
-    "label": "痰黏"
+    "label": "sticky phlegm"
   },
   {
     "id": "SMTS01079",
-    "label": "痰黏稠"
+    "label": "sticky phlegm"
   },
   {
     "id": "SMTS01080",
-    "label": "痰热"
+    "label": "Phlegm-heat"
   },
   {
     "id": "SMTS01081",
-    "label": "痰热喘咳"
+    "label": "phlegm-heat, asthma and cough"
   },
   {
     "id": "SMTS01082",
-    "label": "痰热阻肺"
+    "label": "Phlegm-heat blocking the lungs"
   },
   {
     "id": "SMTS01083",
-    "label": "痰少"
+    "label": "less phlegm"
   },
   {
     "id": "SMTS01084",
-    "label": "痰盛"
+    "label": "excessive phlegm"
   },
   {
     "id": "SMTS01085",
-    "label": "痰稀"
+    "label": "thin phlegm"
   },
   {
     "id": "SMTS01086",
-    "label": "痰涎壅盛"
+    "label": "excessive phlegm and saliva"
   },
   {
     "id": "SMTS01087",
-    "label": "痰血"
+    "label": "phlegm and blood"
   },
   {
     "id": "SMTS01088",
-    "label": "痰饮"
+    "label": "Phlegm Drinking"
   },
   {
     "id": "SMTS01089",
-    "label": "痰饮咳喘"
+    "label": "phlegm, cough, and asthma"
   },
   {
     "id": "SMTS01090",
-    "label": "痰壅"
+    "label": "phlegm congestion"
   },
   {
     "id": "SMTS01091",
-    "label": "痰粘稠"
+    "label": "sticky phlegm"
   },
   {
     "id": "SMTS01092",
-    "label": "痰中带血"
+    "label": "blood in sputum"
   },
   {
     "id": "SMTS01093",
-    "label": "痰浊黄稠"
+    "label": "turbid yellow and thick phlegm"
   },
   {
     "id": "SMTS01094",
-    "label": "疼痛"
+    "label": "Pain"
   },
   {
     "id": "SMTS01095",
-    "label": "疼痛夜甚"
+    "label": "severe pain at night"
   },
   {
     "id": "SMTS01096",
-    "label": "体乏"
+    "label": "fatigue"
   },
   {
     "id": "SMTS01097",
-    "label": "体乏无力"
+    "label": "fatigue and weakness"
   },
   {
     "id": "SMTS01098",
-    "label": "体倦"
+    "label": "Tiredness"
   },
   {
     "id": "SMTS01099",
-    "label": "体疲"
+    "label": "physical fatigue"
   },
   {
     "id": "SMTS01100",
-    "label": "体弱"
+    "label": "Weakness"
   },
   {
     "id": "SMTS01101",
-    "label": "体虚"
+    "label": "physical weakness"
   },
   {
     "id": "SMTS01102",
-    "label": "体虚多汗"
+    "label": "physical weakness and excessive sweating"
   },
   {
     "id": "SMTS01103",
-    "label": "体虚乏力"
+    "label": "physical weakness and fatigue"
   },
   {
     "id": "SMTS01104",
-    "label": "体虚欲脱"
+    "label": "physical weakness and desire to escape"
   },
   {
     "id": "SMTS01105",
-    "label": "体虛"
+    "label": "physical weakness"
   },
   {
     "id": "SMTS01106",
-    "label": "涕黄稠"
+    "label": "yellowish and thick mucus"
   },
   {
     "id": "SMTS01107",
-    "label": "涕中带血"
+    "label": "blood in the nose"
   },
   {
     "id": "SMTS01108",
-    "label": "天行赤眼"
+    "label": "Heavenly Red Eyes"
   },
   {
     "id": "SMTS01109",
-    "label": "听衰"
+    "label": "Hearing Failure"
   },
   {
     "id": "SMTS01110",
-    "label": "停经"
+    "label": "Menopause"
   },
   {
     "id": "SMTS01111",
-    "label": "停乳"
+    "label": "Breastfeeding cessation"
   },
   {
     "id": "SMTS01112",
-    "label": "停食"
+    "label": "Stop eating"
   },
   {
     "id": "SMTS01115",
-    "label": "痛处拒按"
+    "label": "Refusal to press on the painful area"
   },
   {
     "id": "SMTS01116",
-    "label": "痛经"
+    "label": "dysmenorrhea"
   },
   {
     "id": "SMTS01117",
-    "label": "痛如针刺"
+    "label": "Pain like acupuncture"
   },
   {
     "id": "SMTS01118",
-    "label": "痛甚"
+    "label": "severe pain"
   },
   {
     "id": "SMTS01119",
-    "label": "痛有定处"
+    "label": "Pain has a fixed location"
   },
   {
     "id": "SMTS01121",
-    "label": "头部剌痛"
+    "label": "Stinging pain in head"
   },
   {
     "id": "SMTS01122",
-    "label": "头部胀痛"
+    "label": "Head swelling and pain"
   },
   {
     "id": "SMTS01123",
-    "label": "头发早白"
+    "label": "premature graying of hair"
   },
   {
     "id": "SMTS01124",
-    "label": "头昏"
+    "label": "dizziness"
   },
   {
     "id": "SMTS01125",
-    "label": "头剌痛"
+    "label": "Head pain"
   },
   {
     "id": "SMTS01126",
-    "label": "头面部神经痛"
+    "label": "Head and facial neuralgia"
   },
   {
     "id": "SMTS01127",
-    "label": "头面疼痛"
+    "label": "Head and face pain"
   },
   {
     "id": "SMTS01128",
-    "label": "头目不清"
+    "label": "unclear head and head"
   },
   {
     "id": "SMTS01130",
-    "label": "头皮瘙痒"
+    "label": "scalp itching"
   },
   {
     "id": "SMTS01131",
-    "label": "头身困重"
+    "label": "Head and body drowsiness"
   },
   {
     "id": "SMTS01132",
-    "label": "头疼痛"
+    "label": "headache"
   },
   {
     "id": "SMTS01133",
-    "label": "头痛"
+    "label": "headache"
   },
   {
     "id": "SMTS01134",
-    "label": "头痛日久"
+    "label": "headache that lasts for a long time"
   },
   {
     "id": "SMTS01135",
-    "label": "头痛如裹"
+    "label": "headache"
   },
   {
     "id": "SMTS01138",
-    "label": "头眩"
+    "label": "dizziness"
   },
   {
     "id": "SMTS01139",
-    "label": "头痈"
+    "label": "Head carbuncle"
   },
   {
     "id": "SMTS01140",
-    "label": "头晕"
+    "label": "dizziness"
   },
   {
     "id": "SMTS01141",
-    "label": "头晕目眩"
+    "label": "dizziness"
   },
   {
     "id": "SMTS01142",
-    "label": "头晕眼花"
+    "label": "dizziness and dizziness"
   },
   {
     "id": "SMTS01143",
-    "label": "头胀"
+    "label": "Head swelling"
   },
   {
     "id": "SMTS01144",
-    "label": "头胀痛"
+    "label": "Head swelling and pain"
   },
   {
     "id": "SMTS01145",
-    "label": "头重"
+    "label": "heavy head"
   },
   {
     "id": "SMTS01146",
-    "label": "吐脓"
+    "label": "Vomiting pus"
   },
   {
     "id": "SMTS01147",
-    "label": "吐衄"
+    "label": "vomiting"
   },
   {
     "id": "SMTS01148",
-    "label": "吐痰"
+    "label": "spitting"
   },
   {
     "id": "SMTS01149",
-    "label": "吐痰清稀"
+    "label": "thin phlegm"
   },
   {
     "id": "SMTS01150",
-    "label": "吐泻"
+    "label": "vomiting and diarrhea"
   },
   {
     "id": "SMTS01151",
-    "label": "吐泻腹痛"
+    "label": "vomiting, diarrhea and abdominal pain"
   },
   {
     "id": "SMTS01152",
-    "label": "吐血"
+    "label": "vomiting blood"
   },
   {
     "id": "SMTS01153",
-    "label": "腿疲软"
+    "label": "Weak legs"
   },
   {
     "id": "SMTS01154",
-    "label": "腿疲痛"
+    "label": "Leg fatigue and pain"
   },
   {
     "id": "SMTS01155",
-    "label": "腿软"
+    "label": "weak legs"
   },
   {
     "id": "SMTS01156",
-    "label": "腿疼痛，重者痛剧不能转侧"
+    "label": "leg pain, severe pain, inability to turn sideways"
   },
   {
     "id": "SMTS01157",
-    "label": "吞酸"
+    "label": "acid swallowing"
   },
   {
     "id": "SMTS01158",
-    "label": "脱发"
+    "label": "hair loss"
   },
   {
     "id": "SMTS01159",
-    "label": "脱肛"
+    "label": "Anal prolapse"
   },
   {
     "id": "SMTS01161",
-    "label": "脱屑"
+    "label": "Desquamation"
   },
   {
     "id": "SMTS01164",
-    "label": "外伤红肿"
+    "label": "redness and swelling due to trauma"
   },
   {
     "id": "SMTS01166",
-    "label": "外阴红肿"
+    "label": "vulva redness and swelling"
   },
   {
     "id": "SMTS01167",
-    "label": "完谷不化"
+    "label": "The grain remains intact"
   },
   {
     "id": "SMTS01168",
-    "label": "顽痰"
+    "label": "Stubborn phlegm"
   },
   {
     "id": "SMTS01169",
-    "label": "脘腹刺痛"
+    "label": "Pain in the epigastrium and abdomen"
   },
   {
     "id": "SMTS01170",
-    "label": "脘腹冷"
+    "label": "Cold in the epigastrium and abdomen"
   },
   {
     "id": "SMTS01171",
-    "label": "脘腹冷痛"
+    "label": "cold pain in the epigastrium and abdomen"
   },
   {
     "id": "SMTS01172",
-    "label": "脘腹痞满"
+    "label": "abdominal distension and fullness"
   },
   {
     "id": "SMTS01173",
-    "label": "脘腹痞闷"
+    "label": "abdominal distension and tightness"
   },
   {
     "id": "SMTS01174",
-    "label": "脘腹疼痛"
+    "label": "epigastric pain"
   },
   {
     "id": "SMTS01175",
-    "label": "脘腹痛"
+    "label": "epigastric and abdominal pain"
   },
   {
     "id": "SMTS01176",
-    "label": "脘腹胁痛"
+    "label": "epigastrium, abdominal and hypochondriac pain"
   },
   {
     "id": "SMTS01177",
-    "label": "脘腹隐痛"
+    "label": "Dull pain in the epigastrium and abdomen"
   },
   {
     "id": "SMTS01178",
-    "label": "脘腹胀满"
+    "label": "abdominal distension"
   },
   {
     "id": "SMTS01179",
-    "label": "脘腹胀闷"
+    "label": "abdominal distension and stuffiness"
   },
   {
     "id": "SMTS01180",
-    "label": "脘腹胀痛"
+    "label": "abdominal distension and pain"
   },
   {
     "id": "SMTS01181",
-    "label": "脘闷"
+    "label": "abdominal discomfort"
   },
   {
     "id": "SMTS01182",
-    "label": "脘闷不舒"
+    "label": "abdominal discomfort and discomfort"
   },
   {
     "id": "SMTS01183",
-    "label": "脘痞"
+    "label": "epigastrium"
   },
   {
     "id": "SMTS01184",
-    "label": "脘痞不饥"
+    "label": "epigastrium and no hunger"
   },
   {
     "id": "SMTS01185",
-    "label": "脘痞呕吐"
+    "label": "epigastrium and vomiting"
   },
   {
     "id": "SMTS01186",
-    "label": "脘胁疼痛"
+    "label": "epigastrium and hypochondriac pain"
   },
   {
     "id": "SMTS01187",
-    "label": "脘胁胀痛"
+    "label": "distension and pain in the abdomen and hypochondrium"
   },
   {
     "id": "SMTS01188",
-    "label": "微恶风寒"
+    "label": "Slight aversion to wind and cold"
   },
   {
     "id": "SMTS01189",
-    "label": "微渴"
+    "label": "slight thirst"
   },
   {
     "id": "SMTS01190",
-    "label": "畏光"
+    "label": "Photophobia"
   },
   {
     "id": "SMTS01191",
-    "label": "畏寒"
+    "label": "Chill"
   },
   {
     "id": "SMTS01192",
-    "label": "畏热"
+    "label": "Fear of heat"
   },
   {
     "id": "SMTS01194",
-    "label": "胃肠积热"
+    "label": "gastrointestinal heat accumulation"
   },
   {
     "id": "SMTS01195",
-    "label": "胃肠术后腹胀"
+    "label": "abdominal distension after gastrointestinal surgery"
   },
   {
     "id": "SMTS01198",
-    "label": "胃寒呕吐"
+    "label": "Stomach cold and vomiting"
   },
   {
     "id": "SMTS01199",
-    "label": "胃绞痛"
+    "label": "gastric colic"
   },
   {
     "id": "SMTS01202",
-    "label": "胃热"
+    "label": "stomach heat"
   },
   {
     "id": "SMTS01203",
-    "label": "胃酸过多"
+    "label": "Hyperacidity"
   },
   {
     "id": "SMTS01204",
-    "label": "胃痛"
+    "label": "stomach pain"
   },
   {
     "id": "SMTS01205",
-    "label": "胃痛拘急"
+    "label": "stomach pain and nervousness"
   },
   {
     "id": "SMTS01206",
-    "label": "胃痛绵绵"
+    "label": "Stomach pain"
   },
   {
     "id": "SMTS01207",
-    "label": "胃痛隐隐"
+    "label": "dull stomach pain"
   },
   {
     "id": "SMTS01208",
-    "label": "胃脘饱胀"
+    "label": "epigastric fullness"
   },
   {
     "id": "SMTS01209",
-    "label": "胃脘不舒"
+    "label": "epigastric discomfort"
   },
   {
     "id": "SMTS01210",
-    "label": "胃脘嘈杂"
+    "label": "noisy epigastrium"
   },
   {
     "id": "SMTS01211",
-    "label": "胃脘嘈杂不适"
+    "label": "Noisy and uncomfortable epigastrium"
   },
   {
     "id": "SMTS01212",
-    "label": "胃脘刺痛"
+    "label": "epigastric tingling"
   },
   {
     "id": "SMTS01213",
-    "label": "胃脘剌痛"
+    "label": "epigastric pain"
   },
   {
     "id": "SMTS01214",
-    "label": "胃脘冷痛"
+    "label": "cold and painful epigastrium"
   },
   {
     "id": "SMTS01215",
-    "label": "胃脘挛痛"
+    "label": "gastric epigastric spasm"
   },
   {
     "id": "SMTS01216",
-    "label": "胃脘痞满"
+    "label": "epigastric fullness"
   },
   {
     "id": "SMTS01217",
-    "label": "胃脘痞闷"
+    "label": "epigastric congestion"
   },
   {
     "id": "SMTS01218",
-    "label": "胃脘痞塞"
+    "label": "epigastric congestion"
   },
   {
     "id": "SMTS01219",
-    "label": "胃脘烧灼感"
+    "label": "Burning sensation in the epigastrium"
   },
   {
     "id": "SMTS01220",
-    "label": "胃脘疼痛"
+    "label": "epigastric pain"
   },
   {
     "id": "SMTS01221",
-    "label": "胃脘隐痛"
+    "label": "Dull epigastric pain"
   },
   {
     "id": "SMTS01222",
-    "label": "胃脘胀满"
+    "label": "epigastric distension"
   },
   {
     "id": "SMTS01223",
-    "label": "胃脘胀痛"
+    "label": "epigastric distension and pain"
   },
   {
     "id": "SMTS01224",
-    "label": "胃阴不足"
+    "label": "Insufficient stomach yin"
   },
   {
     "id": "SMTS01225",
-    "label": "胃胀"
+    "label": "stomach bloating"
   },
   {
     "id": "SMTS01226",
-    "label": "胃胀满"
+    "label": "stomach fullness"
   },
   {
     "id": "SMTS01227",
-    "label": "胃中灼热"
+    "label": "Burning in the Heart"
   },
   {
     "id": "SMTS01228",
-    "label": "温毒发斑"
+    "label": "Warm toxin spots"
   },
   {
     "id": "SMTS01229",
-    "label": "瘟疫发热"
+    "label": "Plague Fever"
   },
   {
     "id": "SMTS01230",
-    "label": "无汗"
+    "label": "no sweating"
   },
   {
     "id": "SMTS01231",
-    "label": "无名肿痛"
+    "label": "nameless swelling and pain"
   },
   {
     "id": "SMTS01232",
-    "label": "无乳"
+    "label": "No Breasts"
   },
   {
     "id": "SMTS01233",
-    "label": "五更溏泻"
+    "label": "loose stools at midnight"
   },
   {
     "id": "SMTS01234",
-    "label": "五更泄泻"
+    "label": "diarrhea at midnight"
   },
   {
     "id": "SMTS01235",
-    "label": "五心烦热"
+    "label": "Five upsets and fever"
   },
   {
     "id": "SMTS01236",
-    "label": "午后潮热"
+    "label": "Afternoon Hot Flashes"
   },
   {
     "id": "SMTS01237",
-    "label": "膝部痿软"
+    "label": "Knee weakness"
   },
   {
     "id": "SMTS01238",
-    "label": "膝软乏力"
+    "label": "Knee weakness and weakness"
   },
   {
     "id": "SMTS01239",
-    "label": "膝酸痛"
+    "label": "Knee Soreness"
   },
   {
     "id": "SMTS01240",
-    "label": "喜暖"
+    "label": "warmth"
   },
   {
     "id": "SMTS01241",
-    "label": "下腹胀痛"
+    "label": "lower abdominal distension and pain"
   },
   {
     "id": "SMTS01242",
-    "label": "下利清谷"
+    "label": "Lower Li Qinggu"
   },
   {
     "id": "SMTS01243",
-    "label": "下痢臭秽"
+    "label": "diarrhea and foul smell"
   },
   {
     "id": "SMTS01244",
-    "label": "下痢脓血"
+    "label": "dysentery, pus and blood"
   },
   {
     "id": "SMTS01245",
-    "label": "下气甚痛"
+    "label": "severe pain in lowering Qi"
   },
   {
     "id": "SMTS01246",
-    "label": "下血"
+    "label": "bleeding"
   },
   {
     "id": "SMTS01247",
-    "label": "下元虚冷"
+    "label": "Xia Yuan deficiency and cold"
   },
   {
     "id": "SMTS01248",
-    "label": "下肢沉重"
+    "label": "heaviness in lower limbs"
   },
   {
     "id": "SMTS01249",
-    "label": "下肢浮肿"
+    "label": "edema of lower limbs"
   },
   {
     "id": "SMTS01250",
-    "label": "下肢痿软"
+    "label": "flaccidity of lower limbs"
   },
   {
     "id": "SMTS01251",
-    "label": "下肢痿弱"
+    "label": "weakness of lower limbs"
   },
   {
     "id": "SMTS01252",
-    "label": "下肢无力"
+    "label": "weakness in lower limbs"
   },
   {
     "id": "SMTS01253",
-    "label": "夏令中恶昏厥"
+    "label": "Summer Evil Fainting"
   },
   {
     "id": "SMTS01254",
-    "label": "项背强急不舒"
+    "label": "Strongness and discomfort in the nape and back"
   },
   {
     "id": "SMTS01255",
-    "label": "项背强痛"
+    "label": "strong pain in the neck and back"
   },
   {
     "id": "SMTS01256",
-    "label": "项背强直"
+    "label": "Ankylosis of the nape and back"
   },
   {
     "id": "SMTS01257",
-    "label": "项强"
+    "label": "Xiang Qiang"
   },
   {
     "id": "SMTS01260",
-    "label": "消渴"
+    "label": "thirst"
   },
   {
     "id": "SMTS01261",
-    "label": "消痩"
+    "label": "diarrhea"
   },
   {
     "id": "SMTS01262",
-    "label": "消瘦"
+    "label": "weight loss"
   },
   {
     "id": "SMTS01264",
-    "label": "小便白浊"
+    "label": "white and turbid urine"
   },
   {
     "id": "SMTS01265",
-    "label": "小便不利"
+    "label": "Difficulty urinating"
   },
   {
     "id": "SMTS01266",
-    "label": "小便不爽"
+    "label": "Unpleasant urination"
   },
   {
     "id": "SMTS01267",
-    "label": "小便不通"
+    "label": "difficulty urinating"
   },
   {
     "id": "SMTS01268",
-    "label": "小便赤涩"
+    "label": "red and astringent urine"
   },
   {
     "id": "SMTS01269",
-    "label": "小便滴沥不净"
+    "label": "Dirty urine"
   },
   {
     "id": "SMTS01270",
-    "label": "小便短赤"
+    "label": "short red urine"
   },
   {
     "id": "SMTS01271",
-    "label": "小便短少"
+    "label": "Shortness of Urination"
   },
   {
     "id": "SMTS01272",
-    "label": "小便黄"
+    "label": "yellow urine"
   },
   {
     "id": "SMTS01273",
-    "label": "小便黄赤"
+    "label": "yellow and red urine"
   },
   {
     "id": "SMTS01274",
-    "label": "小便黄少"
+    "label": "yellowish urine"
   },
   {
     "id": "SMTS01275",
-    "label": "小便浑浊"
+    "label": "cloudy urine"
   },
   {
     "id": "SMTS01276",
-    "label": "小便淋漓不尽"
+    "label": "Incessant urination"
   },
   {
     "id": "SMTS01277",
-    "label": "小便淋浊"
+    "label": "turbid urine"
   },
   {
     "id": "SMTS01278",
-    "label": "小便频急"
+    "label": "Frequent and urgent urination"
   },
   {
     "id": "SMTS01279",
-    "label": "小便频数"
+    "label": "Frequent urination"
   },
   {
     "id": "SMTS01280",
-    "label": "小便频数短涩"
+    "label": "Frequent urination, short and astringent urine"
   },
   {
     "id": "SMTS01281",
-    "label": "小便清长"
+    "label": "long and clear urine"
   },
   {
     "id": "SMTS01282",
-    "label": "小便热"
+    "label": "Urinary fever"
   },
   {
     "id": "SMTS01283",
-    "label": "小便涩痛"
+    "label": "astringent and painful urination"
   },
   {
     "id": "SMTS01284",
-    "label": "小便痛"
+    "label": "painful urination"
   },
   {
     "id": "SMTS01285",
-    "label": "小儿顿咳"
+    "label": "Cough in children"
   },
   {
     "id": "SMTS01286",
-    "label": "小儿多汗"
+    "label": "excessive sweating in children"
   },
   {
     "id": "SMTS01287",
-    "label": "小儿疳积发热"
+    "label": "infantile malnutrition and fever"
   },
   {
     "id": "SMTS01289",
-    "label": "小儿高热"
+    "label": "high fever in children"
   },
   {
     "id": "SMTS01290",
-    "label": "小儿行迟"
+    "label": "Infantile Delay"
   },
   {
     "id": "SMTS01291",
-    "label": "小儿积滞化热"
+    "label": "stagnation of heat in children"
   },
   {
     "id": "SMTS01292",
-    "label": "小儿急惊"
+    "label": "panic in children"
   },
   {
     "id": "SMTS01293",
-    "label": "小儿急热惊风"
+    "label": "acute fever and convulsions in children"
   },
   {
     "id": "SMTS01294",
-    "label": "小儿秋季腹泻"
+    "label": "diarrhea in children in autumn"
   },
   {
     "id": "SMTS01295",
-    "label": "小儿饮食积滞"
+    "label": "food stagnation in children"
   },
   {
     "id": "SMTS01296",
-    "label": "小腹拘急"
+    "label": "Tension in the lower abdomen"
   },
   {
     "id": "SMTS01297",
-    "label": "小腹冷痛"
+    "label": "cold pain in lower abdomen"
   },
   {
     "id": "SMTS01298",
-    "label": "小腹两侧胀痛"
+    "label": "distension and pain on both sides of lower abdomen"
   },
   {
     "id": "SMTS01299",
-    "label": "小腹满"
+    "label": "fullness in lower abdomen"
   },
   {
     "id": "SMTS01300",
-    "label": "小腹疼痛"
+    "label": "lower abdominal pain"
   },
   {
     "id": "SMTS01301",
-    "label": "小腹痛"
+    "label": "lower abdominal pain"
   },
   {
     "id": "SMTS01302",
-    "label": "小腹喜热"
+    "label": "Feeling hot in the lower abdomen"
   },
   {
     "id": "SMTS01303",
-    "label": "小腹下坠"
+    "label": "Lower abdominal drop"
   },
   {
     "id": "SMTS01304",
-    "label": "小腹隐痛"
+    "label": "Dull pain in lower abdomen"
   },
   {
     "id": "SMTS01305",
-    "label": "小腹胀"
+    "label": "abdominal distension"
   },
   {
     "id": "SMTS01306",
-    "label": "小腹胀痛"
+    "label": "lower abdominal distension and pain"
   },
   {
     "id": "SMTS01307",
-    "label": "小腹坠痛"
+    "label": "lower abdominal pain"
   },
   {
     "id": "SMTS01308",
-    "label": "小腹坠胀"
+    "label": "distension in the lower abdomen"
   },
   {
     "id": "SMTS01309",
-    "label": "哮喘"
+    "label": "Asthma"
   },
   {
     "id": "SMTS01310",
-    "label": "胁肋不舒"
+    "label": "Discomfort in the flanks"
   },
   {
     "id": "SMTS01311",
-    "label": "胁肋部疼痛"
+    "label": "Pain in the flanks and ribs"
   },
   {
     "id": "SMTS01312",
-    "label": "胁肋刺痛"
+    "label": "Tingling pain in the flanks"
   },
   {
     "id": "SMTS01313",
-    "label": "胁肋疼痛"
+    "label": "flank pain"
   },
   {
     "id": "SMTS01314",
-    "label": "胁肋隐痛"
+    "label": "Dull pain in the hypochondrium"
   },
   {
     "id": "SMTS01315",
-    "label": "胁肋胀痛"
+    "label": "distended ribs and pain"
   },
   {
     "id": "SMTS01316",
-    "label": "胁痛"
+    "label": "hypochondriac pain"
   },
   {
     "id": "SMTS01317",
-    "label": "胁下痞块"
+    "label": "lumps under the ribs"
   },
   {
     "id": "SMTS01318",
-    "label": "泄泻"
+    "label": "diarrhea"
   },
   {
     "id": "SMTS01319",
-    "label": "泄泻急迫"
+    "label": "Urgent diarrhea"
   },
   {
     "id": "SMTS01320",
-    "label": "泻而不爽"
+    "label": "diarrhea and discomfort"
   },
   {
     "id": "SMTS01323",
-    "label": "心暴痛"
+    "label": "heart attack and pain"
   },
   {
     "id": "SMTS01324",
-    "label": "心烦"
+    "label": "upset"
   },
   {
     "id": "SMTS01325",
-    "label": "心烦不寐"
+    "label": "upset and insomnia"
   },
   {
     "id": "SMTS01326",
-    "label": "心烦不宁"
+    "label": "Restlessness"
   },
   {
     "id": "SMTS01327",
-    "label": "心烦难寐"
+    "label": "upset and difficulty sleeping"
   },
   {
     "id": "SMTS01328",
-    "label": "心烦喜呕"
+    "label": "upset, nausea and vomiting"
   },
   {
     "id": "SMTS01329",
-    "label": "心腹刺痛"
+    "label": "Pain in the heart and abdomen"
   },
   {
     "id": "SMTS01330",
-    "label": "心腹冷痛"
+    "label": "Coldness and pain in the heart and abdomen"
   },
   {
     "id": "SMTS01331",
-    "label": "心慌"
+    "label": "palpitation"
   },
   {
     "id": "SMTS01333",
-    "label": "心悸"
+    "label": "palpitations"
   },
   {
     "id": "SMTS01334",
-    "label": "心悸不安"
+    "label": "palpitation and restlessness"
   },
   {
     "id": "SMTS01335",
-    "label": "心悸不宁"
+    "label": "palpitation and restlessness"
   },
   {
     "id": "SMTS01336",
-    "label": "心绞痛"
+    "label": "angina pectoris"
   },
   {
     "id": "SMTS01339",
-    "label": "心气痛"
+    "label": "Heart Qi pain"
   },
   {
     "id": "SMTS01340",
-    "label": "心气虚损"
+    "label": "Heart Qi deficiency"
   },
   {
     "id": "SMTS01341",
-    "label": "心前区刺痛"
+    "label": "tingling in the precordium"
   },
   {
     "id": "SMTS01342",
-    "label": "心前区剌痛"
+    "label": "Precordial pain"
   },
   {
     "id": "SMTS01343",
-    "label": "心前区疼痛"
+    "label": "Precordial pain"
   },
   {
     "id": "SMTS01344",
-    "label": "心神不安"
+    "label": "uneasiness"
   },
   {
     "id": "SMTS01345",
-    "label": "心神不宁"
+    "label": "Restlessness"
   },
   {
     "id": "SMTS01346",
-    "label": "心痛"
+    "label": "Heartache"
   },
   {
     "id": "SMTS01347",
-    "label": "心下痞硬"
+    "label": "Hard heart"
   },
   {
     "id": "SMTS01348",
-    "label": "心胸烦热"
+    "label": "irritability and heat in the chest and chest"
   },
   {
     "id": "SMTS01349",
-    "label": "心血不足"
+    "label": "insufficient heart-blood flow"
   },
   {
     "id": "SMTS01350",
-    "label": "新旧瘀痛"
+    "label": "new and old blood stasis and pain"
   },
   {
     "id": "SMTS01351",
-    "label": "形寒"
+    "label": "Cold form"
   },
   {
     "id": "SMTS01352",
-    "label": "形瘦"
+    "label": "Thin appearance"
   },
   {
     "id": "SMTS01353",
-    "label": "形体肥胖"
+    "label": "body obesity"
   },
   {
     "id": "SMTS01354",
-    "label": "形体消瘦"
+    "label": "weight loss"
   },
   {
     "id": "SMTS01356",
-    "label": "性功能衰退"
+    "label": "sexual function decline"
   },
   {
     "id": "SMTS01357",
-    "label": "性功能障碍"
+    "label": "Sexual Dysfunction"
   },
   {
     "id": "SMTS01358",
-    "label": "性冷淡"
+    "label": "frigidity"
   },
   {
     "id": "SMTS01359",
-    "label": "性欲减退"
+    "label": "loss of sexual desire"
   },
   {
     "id": "SMTS01360",
-    "label": "胸痹"
+    "label": "Chest Bi"
   },
   {
     "id": "SMTS01361",
-    "label": "胸痹作痛"
+    "label": "chest pain"
   },
   {
     "id": "SMTS01362",
-    "label": "胸部憋闷"
+    "label": "chest tightness"
   },
   {
     "id": "SMTS01363",
-    "label": "胸部刺痛"
+    "label": "Tingling in the chest"
   },
   {
     "id": "SMTS01364",
-    "label": "胸部闷痛"
+    "label": "Chest tightness and pain"
   },
   {
     "id": "SMTS01365",
-    "label": "胸部疼痛"
+    "label": "Chest Pain"
   },
   {
     "id": "SMTS01366",
-    "label": "胸腹刺痛"
+    "label": "tingling in the chest and abdomen"
   },
   {
     "id": "SMTS01367",
-    "label": "胸腹积水"
+    "label": "hydrops in chest and abdomen"
   },
   {
     "id": "SMTS01368",
-    "label": "胸腹冷痛"
+    "label": "cold pain in chest and abdomen"
   },
   {
     "id": "SMTS01369",
-    "label": "胸腹满闷"
+    "label": "chest and abdominal fullness and tightness"
   },
   {
     "id": "SMTS01370",
-    "label": "胸腹闷胀"
+    "label": "Chest and abdominal distention"
   },
   {
     "id": "SMTS01371",
-    "label": "胸腹水肿"
+    "label": "chest and abdominal edema"
   },
   {
     "id": "SMTS01372",
-    "label": "胸腹疼痛"
+    "label": "Chest and abdominal pain"
   },
   {
     "id": "SMTS01373",
-    "label": "胸腹胀满"
+    "label": "distension of chest and abdomen"
   },
   {
     "id": "SMTS01374",
-    "label": "胸腹胀闷"
+    "label": "Chest and abdominal distension and tightness"
   },
   {
     "id": "SMTS01375",
-    "label": "胸腹胀痛"
+    "label": "Chest and abdominal distension and pain"
   },
   {
     "id": "SMTS01376",
-    "label": "胸膈不利"
+    "label": "Chest and diaphragm discomfort"
   },
   {
     "id": "SMTS01377",
-    "label": "胸膈满闷"
+    "label": "chest and diaphragm fullness and tightness"
   },
   {
     "id": "SMTS01378",
-    "label": "胸膈痞满"
+    "label": "chest and diaphragm fullness"
   },
   {
     "id": "SMTS01379",
-    "label": "胸膈痞闷"
+    "label": "Chest and diaphragm tightness"
   },
   {
     "id": "SMTS01380",
-    "label": "胸膈痞塞"
+    "label": "Chest and diaphragm congestion"
   },
   {
     "id": "SMTS01381",
-    "label": "胸膈胀满"
+    "label": "distension of chest and diaphragm"
   },
   {
     "id": "SMTS01382",
-    "label": "胸满"
+    "label": "chest fullness"
   },
   {
     "id": "SMTS01383",
-    "label": "胸满郁闷"
+    "label": "Chest fullness and depression"
   },
   {
     "id": "SMTS01384",
-    "label": "胸闷"
+    "label": "Chest tightness"
   },
   {
     "id": "SMTS01385",
-    "label": "胸闷不畅"
+    "label": "Chest tightness"
   },
   {
     "id": "SMTS01386",
-    "label": "胸闷不适"
+    "label": "Chest tightness and discomfort"
   },
   {
     "id": "SMTS01387",
-    "label": "胸闷不舒"
+    "label": "Chest tightness and discomfort"
   },
   {
     "id": "SMTS01388",
-    "label": "胸闷作痛"
+    "label": "Chest tightness and pain"
   },
   {
     "id": "SMTS01389",
-    "label": "胸痞"
+    "label": "chest pain"
   },
   {
     "id": "SMTS01390",
-    "label": "胸热"
+    "label": "Chest fever"
   },
   {
     "id": "SMTS01391",
-    "label": "胸痛"
+    "label": "chest pain"
   },
   {
     "id": "SMTS01392",
-    "label": "胸痛彻背"
+    "label": "Chest pain all over the back"
   },
   {
     "id": "SMTS01393",
-    "label": "胸脘满闷"
+    "label": "chest and epigastrium fullness and tightness"
   },
   {
     "id": "SMTS01394",
-    "label": "胸脘痞闷"
+    "label": "chest and epigastrium tightness"
   },
   {
     "id": "SMTS01395",
-    "label": "胸脘胀满"
+    "label": "chest fullness"
   },
   {
     "id": "SMTS01396",
-    "label": "胸脘胀闷"
+    "label": "chest and epigastrium distension and tightness"
   },
   {
     "id": "SMTS01397",
-    "label": "胸胁刺痛"
+    "label": "Tingling pain in the chest and hypochondrium"
   },
   {
     "id": "SMTS01398",
-    "label": "胸胁挫伤"
+    "label": "chest and hypochondrium contusion"
   },
   {
     "id": "SMTS01399",
-    "label": "胸胁苦满"
+    "label": "bitter fullness in the chest and hypochondrium"
   },
   {
     "id": "SMTS01400",
-    "label": "胸胁剌痛"
+    "label": "stabbing pain in chest and hypochondrium"
   },
   {
     "id": "SMTS01401",
-    "label": "胸胁闷痛"
+    "label": "Chest and hypochondrium pain"
   },
   {
     "id": "SMTS01402",
-    "label": "胸胁痞闷"
+    "label": "chest and hypochondrium tightness"
   },
   {
     "id": "SMTS01403",
-    "label": "胸胁气滞"
+    "label": "Qi stagnation in the chest and hypochondrium"
   },
   {
     "id": "SMTS01404",
-    "label": "胸胁疼痛"
+    "label": "chest and hypochondrium pain"
   },
   {
     "id": "SMTS01405",
-    "label": "胸胁痛"
+    "label": "chest and hypochondriac pain"
   },
   {
     "id": "SMTS01406",
-    "label": "胸胁隐痛"
+    "label": "Dull pain in chest and hypochondrium"
   },
   {
     "id": "SMTS01407",
-    "label": "胸胁胀"
+    "label": "distension of chest and hypochondrium"
   },
   {
     "id": "SMTS01408",
-    "label": "胸胁胀满"
+    "label": "fullness in the chest and hypochondrium"
   },
   {
     "id": "SMTS01409",
-    "label": "胸胁胀闷"
+    "label": "distension and tightness in the chest and hypochondrium"
   },
   {
     "id": "SMTS01410",
-    "label": "胸胁胀痛"
+    "label": "chest and hypochondrium pain"
   },
   {
     "id": "SMTS01411",
-    "label": "胸胁作痛"
+    "label": "chest and hypochondrium pain"
   },
   {
     "id": "SMTS01412",
-    "label": "胸胀满"
+    "label": "chest fullness"
   },
   {
     "id": "SMTS01413",
-    "label": "胸胀痛"
+    "label": "Chest swelling and pain"
   },
   {
     "id": "SMTS01414",
-    "label": "胸中憋闷"
+    "label": "tightness in the chest"
   },
   {
     "id": "SMTS01415",
-    "label": "胸中满闷"
+    "label": "Fullness and tightness in the chest"
   },
   {
     "id": "SMTS01416",
-    "label": "胸中闷热"
+    "label": "hot and stuffy chest"
   },
   {
     "id": "SMTS01417",
-    "label": "胸中闷痛"
+    "label": "chest pain"
   },
   {
     "id": "SMTS01418",
-    "label": "羞明"
+    "label": "Shame"
   },
   {
     "id": "SMTS01419",
-    "label": "羞明多眵"
+    "label": "Shame, Ming and Duohuan"
   },
   {
     "id": "SMTS01420",
-    "label": "羞明流泪"
+    "label": "Shyness and tears"
   },
   {
     "id": "SMTS01421",
-    "label": "羞明畏光"
+    "label": "shyness and photophobia"
   },
   {
     "id": "SMTS01422",
-    "label": "嗅觉不灵"
+    "label": "poor sense of smell"
   },
   {
     "id": "SMTS01423",
-    "label": "嗅觉迟钝"
+    "label": "Dull sense of smell"
   },
   {
     "id": "SMTS01424",
-    "label": "嗅觉失灵"
+    "label": "loss of sense of smell"
   },
   {
     "id": "SMTS01425",
-    "label": "须发早白"
+    "label": "premature graying of beard and hair"
   },
   {
     "id": "SMTS01426",
-    "label": "虚喘"
+    "label": "Asthenia and asthma"
   },
   {
     "id": "SMTS01427",
-    "label": "虚烦"
+    "label": "Deficiency and Trouble"
   },
   {
     "id": "SMTS01428",
-    "label": "虚烦不眠"
+    "label": "Tiredness and insomnia"
   },
   {
     "id": "SMTS01429",
-    "label": "虚寒"
+    "label": "Deficiency and cold"
   },
   {
     "id": "SMTS01430",
-    "label": "虚寒性出血"
+    "label": "Bleeding due to deficiency and cold"
   },
   {
     "id": "SMTS01431",
-    "label": "虚劳"
+    "label": "Consumption"
   },
   {
     "id": "SMTS01432",
-    "label": "虚劳久咳"
+    "label": "chronic cough due to fatigue"
   },
   {
     "id": "SMTS01433",
-    "label": "虚劳咳喘"
+    "label": "Cough and asthma due to fatigue"
   },
   {
     "id": "SMTS01434",
-    "label": "虚劳咳嗽"
+    "label": "Asthenia and cough"
   },
   {
     "id": "SMTS01435",
-    "label": "虚热"
+    "label": "Deficiency heat"
   },
   {
     "id": "SMTS01436",
-    "label": "虚热不退"
+    "label": "Deficient heat that persists"
   },
   {
     "id": "SMTS01437",
-    "label": "虚脱"
+    "label": "collapse"
   },
   {
     "id": "SMTS01438",
-    "label": "虚泻"
+    "label": "Deficiency and diarrhea"
   },
   {
     "id": "SMTS01439",
-    "label": "眩晕"
+    "label": "dizziness"
   },
   {
     "id": "SMTS01440",
-    "label": "血便"
+    "label": "bloody stool"
   },
   {
     "id": "SMTS01441",
-    "label": "血管神经性头痛"
+    "label": "vaso-neuropathic headache"
   },
   {
     "id": "SMTS01443",
-    "label": "血淋"
+    "label": "bloody stranguria"
   },
   {
     "id": "SMTS01444",
-    "label": "血尿"
+    "label": "hematuria"
   },
   {
     "id": "SMTS01445",
-    "label": "血热"
+    "label": "blood heat"
   },
   {
     "id": "SMTS01446",
-    "label": "血热吐紐"
+    "label": "blood heat and vomiting"
   },
   {
     "id": "SMTS01447",
-    "label": "血热吐衄"
+    "label": "blood heat and vomiting"
   },
   {
     "id": "SMTS01451",
-    "label": "血瘀"
+    "label": "blood stasis"
   },
   {
     "id": "SMTS01453",
-    "label": "血肿疼痛"
+    "label": "hematoma pain"
   },
   {
     "id": "SMTS01454",
-    "label": "牙齿松动"
+    "label": "loose teeth"
   },
   {
     "id": "SMTS01455",
-    "label": "牙关紧闭"
+    "label": "Trismus"
   },
   {
     "id": "SMTS01456",
-    "label": "牙疼"
+    "label": "toothache"
   },
   {
     "id": "SMTS01457",
-    "label": "牙痛"
+    "label": "toothache"
   },
   {
     "id": "SMTS01458",
-    "label": "牙龈出血"
+    "label": "Bleeding gums"
   },
   {
     "id": "SMTS01459",
-    "label": "牙龈红肿"
+    "label": "red and swollen gums"
   },
   {
     "id": "SMTS01460",
-    "label": "牙龈痛"
+    "label": "gum pain"
   },
   {
     "id": "SMTS01461",
-    "label": "牙龈肿"
+    "label": "swollen gums"
   },
   {
     "id": "SMTS01462",
-    "label": "牙龈肿痛"
+    "label": "gum swelling and pain"
   },
   {
     "id": "SMTS01463",
-    "label": "牙龈肿胀"
+    "label": "gum swelling"
   },
   {
     "id": "SMTS01464",
-    "label": "咽部不适"
+    "label": "Pharyngeal discomfort"
   },
   {
     "id": "SMTS01465",
-    "label": "咽部充血"
+    "label": "Throat congestion"
   },
   {
     "id": "SMTS01466",
-    "label": "咽部红"
+    "label": "red throat"
   },
   {
     "id": "SMTS01467",
-    "label": "咽部红肿"
+    "label": "pharyngeal redness and swelling"
   },
   {
     "id": "SMTS01468",
-    "label": "咽部肿"
+    "label": "pharyngeal swelling"
   },
   {
     "id": "SMTS01469",
-    "label": "咽部肿痛"
+    "label": "pharyngeal swelling and pain"
   },
   {
     "id": "SMTS01470",
-    "label": "咽干"
+    "label": "dry throat"
   },
   {
     "id": "SMTS01471",
-    "label": "咽干喉痛"
+    "label": "dry throat and sore throat"
   },
   {
     "id": "SMTS01472",
-    "label": "咽干燥"
+    "label": "Dry throat"
   },
   {
     "id": "SMTS01473",
-    "label": "咽干灼热"
+    "label": "dry and burning throat"
   },
   {
     "id": "SMTS01474",
-    "label": "咽膈不利"
+    "label": "Unfavorable throat and diaphragm"
   },
   {
     "id": "SMTS01475",
-    "label": "咽红"
+    "label": "red throat"
   },
   {
     "id": "SMTS01476",
-    "label": "咽红肿痛"
+    "label": "sore throat, redness, swelling and pain"
   },
   {
     "id": "SMTS01477",
-    "label": "咽喉不利"
+    "label": "Sore throat"
   },
   {
     "id": "SMTS01478",
-    "label": "咽喉干"
+    "label": "dry throat"
   },
   {
     "id": "SMTS01479",
-    "label": "咽喉干燥"
+    "label": "Dry throat"
   },
   {
     "id": "SMTS01480",
-    "label": "咽喉红肿"
+    "label": "Throat redness and swelling"
   },
   {
     "id": "SMTS01481",
-    "label": "咽喉疼痛"
+    "label": "Throat Pain"
   },
   {
     "id": "SMTS01482",
-    "label": "咽喉痛"
+    "label": "sore throat"
   },
   {
     "id": "SMTS01483",
-    "label": "咽喉痒"
+    "label": "itchy throat"
   },
   {
     "id": "SMTS01484",
-    "label": "咽喉肿"
+    "label": "swollen throat"
   },
   {
     "id": "SMTS01485",
-    "label": "咽喉肿痛"
+    "label": "sore throat"
   },
   {
     "id": "SMTS01486",
-    "label": "咽喉肿痈"
+    "label": "Sore throat and carbuncle"
   },
   {
     "id": "SMTS01487",
-    "label": "咽喉灼热"
+    "label": "Throat burning"
   },
   {
     "id": "SMTS01488",
-    "label": "咽黏膜充血"
+    "label": "Congestion of pharyngeal mucosa"
   },
   {
     "id": "SMTS01489",
-    "label": "咽痛"
+    "label": "sore throat"
   },
   {
     "id": "SMTS01490",
-    "label": "咽下不利"
+    "label": "Difficulty swallowing"
   },
   {
     "id": "SMTS01491",
-    "label": "咽痒"
+    "label": "itchy throat"
   },
   {
     "id": "SMTS01492",
-    "label": "咽痈"
+    "label": "pharyngeal abscess"
   },
   {
     "id": "SMTS01493",
-    "label": "咽燥"
+    "label": "dry throat"
   },
   {
     "id": "SMTS01494",
-    "label": "咽中有痰"
+    "label": "phlegm in the throat"
   },
   {
     "id": "SMTS01495",
-    "label": "咽灼热感"
+    "label": "burning sensation in throat"
   },
   {
     "id": "SMTS01496",
-    "label": "言语不利"
+    "label": "Speech Difficulty"
   },
   {
     "id": "SMTS01497",
-    "label": "言语不清"
+    "label": "slurred speech"
   },
   {
     "id": "SMTS01498",
-    "label": "言语不淸"
+    "label": "slurred speech"
   },
   {
     "id": "SMTS01499",
-    "label": "言语謇涩"
+    "label": "astringent speech"
   },
   {
     "id": "SMTS01500",
-    "label": "颜面部红斑"
+    "label": "facial erythema"
   },
   {
     "id": "SMTS01501",
-    "label": "颜面皮肤光亮油腻"
+    "label": "shiny and greasy facial skin"
   },
   {
     "id": "SMTS01502",
-    "label": "眼边刺痒"
+    "label": "itching around the eyes"
   },
   {
     "id": "SMTS01503",
-    "label": "眼底瘀血"
+    "label": "blood stasis under the eyes"
   },
   {
     "id": "SMTS01504",
-    "label": "眼花"
+    "label": "dizziness"
   },
   {
     "id": "SMTS01505",
-    "label": "眼睑赤烂"
+    "label": "red and rotten eyelids"
   },
   {
     "id": "SMTS01506",
-    "label": "眼睑红烂"
+    "label": "red and rotten eyelids"
   },
   {
     "id": "SMTS01507",
-    "label": "眼睛红肿"
+    "label": "red and swollen eyes"
   },
   {
     "id": "SMTS01508",
-    "label": "眼睛痛痒"
+    "label": "Eye pain and itching"
   },
   {
     "id": "SMTS01509",
-    "label": "眼睛肿痛"
+    "label": "eye swelling and pain"
   },
   {
     "id": "SMTS01510",
-    "label": "眼目昏花"
+    "label": "blurred vision"
   },
   {
     "id": "SMTS01511",
-    "label": "眼目昏涩"
+    "label": "Dizzy eyes"
   },
   {
     "id": "SMTS01512",
-    "label": "眼生翳膜"
+    "label": "Eye nebula"
   },
   {
     "id": "SMTS01513",
-    "label": "眼痛"
+    "label": "eye pain"
   },
   {
     "id": "SMTS01514",
-    "label": "厌食"
+    "label": "anorexia"
   },
   {
     "id": "SMTS01515",
-    "label": "阳痿"
+    "label": "impotence"
   },
   {
     "id": "SMTS01516",
-    "label": "阳虚"
+    "label": "Yang deficiency"
   },
   {
     "id": "SMTS01517",
-    "label": "阳虚血瘀"
+    "label": "Yang deficiency and blood stasis"
   },
   {
     "id": "SMTS01518",
-    "label": "阳虚欲脱"
+    "label": "Yang deficiency and desire to escape"
   },
   {
     "id": "SMTS01519",
-    "label": "痒"
+    "label": "itching"
   },
   {
     "id": "SMTS01520",
-    "label": "腰背痛"
+    "label": "low back pain"
   },
   {
     "id": "SMTS01521",
-    "label": "腰部疼痛"
+    "label": "waist pain"
   },
   {
     "id": "SMTS01522",
-    "label": "腰部痿软"
+    "label": "weak waist"
   },
   {
     "id": "SMTS01523",
-    "label": "腰骶酸痛"
+    "label": "lumbosacral pain"
   },
   {
     "id": "SMTS01524",
-    "label": "腰骶痛"
+    "label": "lumbosacral pain"
   },
   {
     "id": "SMTS01525",
-    "label": "腰骶胀痛"
+    "label": "lumbosacral distension and pain"
   },
   {
     "id": "SMTS01526",
-    "label": "腰腹疼痛"
+    "label": "waist and abdominal pain"
   },
   {
     "id": "SMTS01528",
-    "label": "腰脊冷痛"
+    "label": "cold pain in the waist and spine"
   },
   {
     "id": "SMTS01529",
-    "label": "腰脊酸痛"
+    "label": "pain in the waist and spine"
   },
   {
     "id": "SMTS01530",
-    "label": "腰脊疼痛"
+    "label": "Lumbar pain"
   },
   {
     "id": "SMTS01531",
-    "label": "腰酸"
+    "label": "backache"
   },
   {
     "id": "SMTS01532",
-    "label": "腰痛"
+    "label": "low back pain"
   },
   {
     "id": "SMTS01533",
-    "label": "腰腿酸软"
+    "label": "Soreness and weakness in waist and legs"
   },
   {
     "id": "SMTS01534",
-    "label": "腰腿酸痛"
+    "label": "soreness in waist and legs"
   },
   {
     "id": "SMTS01535",
-    "label": "腰腿疼痛重着"
+    "label": "severe waist and leg pain"
   },
   {
     "id": "SMTS01536",
-    "label": "腰腿痛"
+    "label": "waist and leg pain"
   },
   {
     "id": "SMTS01537",
-    "label": "腰膝关节酸重"
+    "label": "Soreness of waist and knee joints"
   },
   {
     "id": "SMTS01538",
-    "label": "腰膝关节疼痛"
+    "label": "waist and knee joint pain"
   },
   {
     "id": "SMTS01539",
-    "label": "腰膝冷痛"
+    "label": "cold pain in waist and knees"
   },
   {
     "id": "SMTS01540",
-    "label": "腰膝痠软"
+    "label": "Soreness and weakness in waist and knees"
   },
   {
     "id": "SMTS01541",
-    "label": "腰膝酸冷"
+    "label": "soreness and coldness in waist and knees"
   },
   {
     "id": "SMTS01542",
-    "label": "腰膝酸软"
+    "label": "Soreness and weakness in waist and knees"
   },
   {
     "id": "SMTS01543",
-    "label": "腰膝酸痛"
+    "label": "soreness in waist and knees"
   },
   {
     "id": "SMTS01544",
-    "label": "腰膝酸重"
+    "label": "Soreness of waist and knees"
   },
   {
     "id": "SMTS01545",
-    "label": "腰膝疼痛"
+    "label": "waist and knee pain"
   },
   {
     "id": "SMTS01546",
-    "label": "腰膝无力"
+    "label": "Weakness in waist and knees"
   },
   {
     "id": "SMTS01548",
-    "label": "夜间遗尿"
+    "label": "nocturnal enuresis"
   },
   {
     "id": "SMTS01549",
-    "label": "夜惊"
+    "label": "Night Terrors"
   },
   {
     "id": "SMTS01551",
-    "label": "夜寐不安"
+    "label": "Restless sleep at night"
   },
   {
     "id": "SMTS01552",
-    "label": "夜梦"
+    "label": "Night Dreams"
   },
   {
     "id": "SMTS01553",
-    "label": "夜眠不安"
+    "label": "Restless Night Sleep"
   },
   {
     "id": "SMTS01554",
-    "label": "夜眠不宁"
+    "label": "restless sleep at night"
   },
   {
     "id": "SMTS01555",
-    "label": "夜尿频"
+    "label": "Frequent urination at night"
   },
   {
     "id": "SMTS01556",
-    "label": "夜尿频多"
+    "label": "Frequent urination at night"
   },
   {
     "id": "SMTS01557",
-    "label": "夜尿清长"
+    "label": "clear and clear urine at night"
   },
   {
     "id": "SMTS01558",
-    "label": "夜热早凉"
+    "label": "hot at night and cool in the morning"
   },
   {
     "id": "SMTS01559",
-    "label": "夜啼"
+    "label": "Night Crying"
   },
   {
     "id": "SMTS01560",
-    "label": "噫气"
+    "label": "Geezing"
   },
   {
     "id": "SMTS01561",
-    "label": "遗精"
+    "label": "spermatorrhea"
   },
   {
     "id": "SMTS01562",
-    "label": "遗尿"
+    "label": "enuresis"
   },
   {
     "id": "SMTS01563",
-    "label": "抑郁"
+    "label": "Depression"
   },
   {
     "id": "SMTS01564",
-    "label": "易感"
+    "label": "Susceptibility"
   },
   {
     "id": "SMTS01565",
-    "label": "易感风邪"
+    "label": "susceptibility to wind evil"
   },
   {
     "id": "SMTS01566",
-    "label": "易饥"
+    "label": "easy hunger"
   },
   {
     "id": "SMTS01567",
-    "label": "易惊"
+    "label": "easily frightened"
   },
   {
     "id": "SMTS01568",
-    "label": "易怒"
+    "label": "Irritability"
   },
   {
     "id": "SMTS01570",
-    "label": "阴道出血"
+    "label": "Vaginal Bleeding"
   },
   {
     "id": "SMTS01571",
-    "label": "阴道干燥"
+    "label": "Vaginal Dryness"
   },
   {
     "id": "SMTS01573",
-    "label": "阴疽不敛"
+    "label": "uncontrolled vaginal gangrene"
   },
   {
     "id": "SMTS01574",
-    "label": "阴疽初起"
+    "label": "initial onset of vaginal gangrene"
   },
   {
     "id": "SMTS01575",
-    "label": "阴疽肿痛"
+    "label": "vaginal gangrene, swelling and pain"
   },
   {
     "id": "SMTS01576",
-    "label": "阴囊湿痒"
+    "label": "wet and itchy scrotum"
   },
   {
     "id": "SMTS01577",
-    "label": "阴痒"
+    "label": "vaginal itching"
   },
   {
     "id": "SMTS01578",
-    "label": "阴肿"
+    "label": "vaginal swelling"
   },
   {
     "id": "SMTS01579",
-    "label": "音哑"
+    "label": "Dumb tone"
   },
   {
     "id": "SMTS01581",
-    "label": "饮食不化"
+    "label": "poor diet"
   },
   {
     "id": "SMTS01582",
-    "label": "饮食不节"
+    "label": "Improper diet"
   },
   {
     "id": "SMTS01583",
-    "label": "饮食积滞"
+    "label": "Dietary stagnation"
   },
   {
     "id": "SMTS01584",
-    "label": "饮食少进"
+    "label": "Eat less"
   },
   {
     "id": "SMTS01585",
-    "label": "饮食停滞"
+    "label": "Eating Stagnation"
   },
   {
     "id": "SMTS01586",
-    "label": "隐痛"
+    "label": "dull pain"
   },
   {
     "id": "SMTS01587",
-    "label": "阴部肿块"
+    "label": "vaginal mass"
   },
   {
     "id": "SMTS01593",
-    "label": "痈疽"
+    "label": "carbuncle"
   },
   {
     "id": "SMTS01594",
-    "label": "痈疽不溃"
+    "label": "carbuncle does not break out"
   },
   {
     "id": "SMTS01595",
-    "label": "痈疽疔毒"
+    "label": "carbuncle and furuncle"
   },
   {
     "id": "SMTS01596",
-    "label": "痈疽难溃"
+    "label": "Carbuncle is difficult to ulcerate"
   },
   {
     "id": "SMTS01597",
-    "label": "痈疽肿毒"
+    "label": "carbuncle, swelling and poison"
   },
   {
     "id": "SMTS01598",
-    "label": "痈疽肿痛"
+    "label": "carbuncle, swelling and pain"
   },
   {
     "id": "SMTS01599",
-    "label": "痈肿"
+    "label": "carbuncle"
   },
   {
     "id": "SMTS01600",
-    "label": "痈肿疮疡"
+    "label": "carbuncle, swollen sore"
   },
   {
     "id": "SMTS01601",
-    "label": "痈肿溃烂"
+    "label": "carbuncle ulceration"
   },
   {
     "id": "SMTS01602",
-    "label": "涌吐痰涎"
+    "label": "spitting and salivation"
   },
   {
     "id": "SMTS01603",
-    "label": "有汗"
+    "label": "sweating"
   },
   {
     "id": "SMTS01604",
-    "label": "有血块"
+    "label": "blood clots"
   },
   {
     "id": "SMTS01605",
-    "label": "右上腹隐隐作痛"
+    "label": "Dull pain in the right upper abdomen"
   },
   {
     "id": "SMTS01606",
-    "label": "右胁胀满"
+    "label": "Fullness in the right hypochondrium"
   },
   {
     "id": "SMTS01607",
-    "label": "瘀斑"
+    "label": "ecchymosis"
   },
   {
     "id": "SMTS01608",
-    "label": "瘀血不尽"
+    "label": "persistent blood stasis"
   },
   {
     "id": "SMTS01609",
-    "label": "瘀血肿胀"
+    "label": "blood stasis and swelling"
   },
   {
     "id": "SMTS01610",
-    "label": "瘀血阻络"
+    "label": "blood stasis blocking collaterals"
   },
   {
     "id": "SMTS01611",
-    "label": "瘀阻经闭"
+    "label": "amenorrhea due to blood stasis"
   },
   {
     "id": "SMTS01613",
-    "label": "语言不利"
+    "label": "Language Difficulty"
   },
   {
     "id": "SMTS01614",
-    "label": "语言謇涩"
+    "label": "astringent speech"
   },
   {
     "id": "SMTS01615",
-    "label": "郁闷心烦"
+    "label": "depression and upset"
   },
   {
     "id": "SMTS01616",
-    "label": "月经不调"
+    "label": "irregular menstruation"
   },
   {
     "id": "SMTS01617",
-    "label": "月经过多"
+    "label": "Menorrhagia"
   },
   {
     "id": "SMTS01618",
-    "label": "月经后错"
+    "label": "Postmenstrual errors"
   },
   {
     "id": "SMTS01619",
-    "label": "月经量多"
+    "label": "heavy menstruation"
   },
   {
     "id": "SMTS01620",
-    "label": "月经量多，味臭"
+    "label": "heavy menstrual flow and foul odor"
   },
   {
     "id": "SMTS01621",
-    "label": "月经量少"
+    "label": "low menstrual flow"
   },
   {
     "id": "SMTS01622",
-    "label": "月经提前"
+    "label": "early menstruation"
   },
   {
     "id": "SMTS01623",
-    "label": "月经先后不定期"
+    "label": "irregular menstruation"
   },
   {
     "id": "SMTS01626",
-    "label": "晕眩"
+    "label": "dizziness"
   },
   {
     "id": "SMTS01628",
-    "label": "脏器下垂"
+    "label": "organ ptosis"
   },
   {
     "id": "SMTS01630",
-    "label": "早产"
+    "label": "premature birth"
   },
   {
     "id": "SMTS01631",
-    "label": "早泄"
+    "label": "premature ejaculation"
   },
   {
     "id": "SMTS01632",
-    "label": "燥咳"
+    "label": "Dry cough"
   },
   {
     "id": "SMTS01633",
-    "label": "燥咳少痰"
+    "label": "Dry cough with less phlegm"
   },
   {
     "id": "SMTS01634",
-    "label": "燥渴"
+    "label": "dryness and thirst"
   },
   {
     "id": "SMTS01635",
-    "label": "燥热"
+    "label": "dryness and heat"
   },
   {
     "id": "SMTS01636",
-    "label": "燥痰"
+    "label": "dry phlegm"
   },
   {
     "id": "SMTS01637",
-    "label": "憎寒"
+    "label": "aversion to cold"
   },
   {
     "id": "SMTS01639",
-    "label": "谵狂"
+    "label": "Delirium"
   },
   {
     "id": "SMTS01640",
-    "label": "谵语"
+    "label": "Delirium"
   },
   {
     "id": "SMTS01641",
-    "label": "胀满"
+    "label": "fullness"
   },
   {
     "id": "SMTS01642",
-    "label": "胀痛"
+    "label": "swelling and pain"
   },
   {
     "id": "SMTS01643",
-    "label": "真元不足"
+    "label": "Insufficient True Yuan"
   },
   {
     "id": "SMTS01644",
-    "label": "怔忡"
+    "label": "hesitation"
   },
   {
     "id": "SMTS01645",
-    "label": "癥积"
+    "label": "Symptoms"
   },
   {
     "id": "SMTS01646",
-    "label": "癥瘕"
+    "label": "Massage"
   },
   {
     "id": "SMTS01647",
-    "label": "癥瘕腹痛"
+    "label": "Abdominal pain"
   },
   {
     "id": "SMTS01648",
-    "label": "癥瘕痞块"
+    "label": "lumps and lumps"
   },
   {
     "id": "SMTS01649",
-    "label": "癥块"
+    "label": "Symptoms"
   },
   {
     "id": "SMTS01652",
-    "label": "肢浮肿"
+    "label": "limb edema"
   },
   {
     "id": "SMTS01653",
-    "label": "肢节疼痛"
+    "label": "Pain in limbs and joints"
   },
   {
     "id": "SMTS01654",
-    "label": "肢倦乏力"
+    "label": "tiredness and fatigue in limbs"
   },
   {
     "id": "SMTS01655",
-    "label": "肢冷"
+    "label": "cold limbs"
   },
   {
     "id": "SMTS01656",
-    "label": "肢麻"
+    "label": "numbness in limbs"
   },
   {
     "id": "SMTS01657",
-    "label": "肢酸"
+    "label": "limb aches"
   },
   {
     "id": "SMTS01658",
-    "label": "肢体不利"
+    "label": "Limb Disadvantage"
   },
   {
     "id": "SMTS01659",
-    "label": "肢体不用"
+    "label": "No use of limbs"
   },
   {
     "id": "SMTS01660",
-    "label": "肢体沉重"
+    "label": "heavy limbs"
   },
   {
     "id": "SMTS01661",
-    "label": "肢体乏力"
+    "label": "limb weakness"
   },
   {
     "id": "SMTS01662",
-    "label": "肢体浮肿"
+    "label": "limb edema"
   },
   {
     "id": "SMTS01663",
-    "label": "肢体关节疼痛"
+    "label": "limb joint pain"
   },
   {
     "id": "SMTS01664",
-    "label": "肢体活动受限"
+    "label": "limited limb movement"
   },
   {
     "id": "SMTS01665",
-    "label": "肢体肌肉萎缩"
+    "label": "limb muscle atrophy"
   },
   {
     "id": "SMTS01666",
-    "label": "肢体拘挛"
+    "label": "limb spasm"
   },
   {
     "id": "SMTS01667",
-    "label": "肢体困重"
+    "label": "heavy limbs"
   },
   {
     "id": "SMTS01668",
-    "label": "肢体剌痛"
+    "label": "tingling pain in limbs"
   },
   {
     "id": "SMTS01669",
-    "label": "肢体麻木"
+    "label": "numbness of limbs"
   },
   {
     "id": "SMTS01670",
-    "label": "肢体麻木拘挛"
+    "label": "numbness and spasm of limbs"
   },
   {
     "id": "SMTS01671",
-    "label": "肢体酸痛"
+    "label": "sore limbs"
   },
   {
     "id": "SMTS01672",
-    "label": "肢体酸重"
+    "label": "Soreness and heaviness of limbs"
   },
   {
     "id": "SMTS01673",
-    "label": "肢体疼痛"
+    "label": "limb pain"
   },
   {
     "id": "SMTS01674",
-    "label": "肢体胸痛"
+    "label": "chest pain in limbs"
   },
   {
     "id": "SMTS01676",
-    "label": "痔疮出血"
+    "label": "Hemorrhoids Bleeding"
   },
   {
     "id": "SMTS01677",
-    "label": "痔疮痛"
+    "label": "Hemorrhoid Pain"
   },
   {
     "id": "SMTS01678",
-    "label": "痔疮肿"
+    "label": "swollen hemorrhoids"
   },
   {
     "id": "SMTS01679",
-    "label": "痔疮肿痛"
+    "label": "hemorrhoid swelling and pain"
   },
   {
     "id": "SMTS01680",
-    "label": "痔血"
+    "label": "hemorrhoids"
   },
   {
     "id": "SMTS01681",
-    "label": "痔肿"
+    "label": "hemorrhoids"
   },
   {
     "id": "SMTS01683",
-    "label": "中风"
+    "label": "Stroke"
   },
   {
     "id": "SMTS01684",
-    "label": "中风后遗症"
+    "label": "sequelae of stroke"
   },
   {
     "id": "SMTS01685",
-    "label": "中暑"
+    "label": "Heat Stroke"
   },
   {
     "id": "SMTS01686",
-    "label": "肿毒"
+    "label": "swelling and poisoning"
   },
   {
     "id": "SMTS01687",
-    "label": "肿痛"
+    "label": "swelling and pain"
   },
   {
     "id": "SMTS01688",
-    "label": "肿痛羞明"
+    "label": "swelling, pain, and shyness"
   },
   {
     "id": "SMTS01689",
-    "label": "肿硬作痛"
+    "label": "swelling, hardness and pain"
   },
   {
     "id": "SMTS01690",
-    "label": "肿胀"
+    "label": "swelling"
   },
   {
     "id": "SMTS01691",
-    "label": "肿胀麻木"
+    "label": "swelling and numbness"
   },
   {
     "id": "SMTS01693",
-    "label": "周身乏力"
+    "label": "general fatigue"
   },
   {
     "id": "SMTS01695",
-    "label": "转筋挛痛"
+    "label": "Spasticity pain"
   },
   {
     "id": "SMTS01696",
-    "label": "壮热"
+    "label": "strong fever"
   },
   {
     "id": "SMTS01697",
-    "label": "灼热"
+    "label": "burning"
   },
   {
     "id": "SMTS01698",
-    "label": "灼痛"
+    "label": "burning pain"
   },
   {
     "id": "SMTS01699",
-    "label": "浊涕"
+    "label": "turbid nasal discharge"
   },
   {
     "id": "SMTS01700",
-    "label": "浊涕臭气"
+    "label": "turbid nasal discharge and odor"
   },
   {
     "id": "SMTS01701",
-    "label": "子烦"
+    "label": "Trouble"
   },
   {
     "id": "SMTS01702",
-    "label": "子宫出血"
+    "label": "uterine bleeding"
   },
   {
     "id": "SMTS01703",
-    "label": "子宫功能性出血"
+    "label": "functional uterine bleeding"
   },
   {
     "id": "SMTS01704",
-    "label": "子宫脱垂"
+    "label": "uterine prolapse"
   },
   {
     "id": "SMTS01705",
-    "label": "子痫抽搐"
+    "label": "eclamptic convulsions"
   },
   {
     "id": "SMTS01706",
-    "label": "紫斑"
+    "label": "Purpura"
   },
   {
     "id": "SMTS01707",
-    "label": "自汗"
+    "label": "spontaneous sweating"
   },
   {
     "id": "SMTS01708",
-    "label": "足抽搐"
+    "label": "foot twitching"
   },
   {
     "id": "SMTS01709",
-    "label": "足跟疼痛"
+    "label": "Heel Pain"
   },
   {
     "id": "SMTS01710",
-    "label": "足胫红肿热痛"
+    "label": "redness, swelling, heat and pain in the shins"
   },
   {
     "id": "SMTS01711",
-    "label": "足拘挛"
+    "label": "foot spasm"
   },
   {
     "id": "SMTS01712",
-    "label": "足冷"
+    "label": "cold feet"
   },
   {
     "id": "SMTS01713",
-    "label": "足麻木"
+    "label": "numbness of feet"
   },
   {
     "id": "SMTS01714",
-    "label": "足痿筋挛"
+    "label": "foot flaccidity and spasm"
   },
   {
     "id": "SMTS01715",
-    "label": "足膝红肿"
+    "label": "redness and swelling of feet and knees"
   },
   {
     "id": "SMTS01716",
-    "label": "足膝红肿热痛"
+    "label": "redness, swelling, heat and pain in the feet and knees"
   },
   {
     "id": "SMTS01717",
-    "label": "足肿胀"
+    "label": "swollen feet"
   },
   {
     "id": "SMTS01718",
-    "label": "下疳"
+    "label": "Chancre"
   },
   {
     "id": "SMTS01720",
-    "label": "不得平卧"
+    "label": "Do not lie down"
   },
   {
     "id": "SMTS01721",
-    "label": "不眠"
+    "label": "Insomnia"
   },
   {
     "id": "SMTS01722",
-    "label": "不语"
+    "label": "Silence"
   },
   {
     "id": "SMTS01725",
-    "label": "中恶昏迷"
+    "label": "middle-evil coma"
   },
   {
     "id": "SMTS01727",
-    "label": "中风痰迷"
+    "label": "Stroke and Phlegm Disorder"
   },
   {
     "id": "SMTS01728",
-    "label": "久不收口"
+    "label": "Not closing the mouth for a long time"
   },
   {
     "id": "SMTS01730",
-    "label": "久溃不敛"
+    "label": "Prolonged ulceration"
   },
   {
     "id": "SMTS01733",
-    "label": "乳痈肿痛"
+    "label": "mastitis swelling and pain"
   },
   {
     "id": "SMTS01737",
-    "label": "乳蛾"
+    "label": "Milk Moth"
   },
   {
     "id": "SMTS01738",
-    "label": "乳闭"
+    "label": "Breast Atresia"
   },
   {
     "id": "SMTS01739",
-    "label": "二便不利"
+    "label": "Difficulty in defecation"
   },
   {
     "id": "SMTS01740",
-    "label": "二便不通"
+    "label": "obstruction of bowel movements"
   },
   {
     "id": "SMTS01741",
-    "label": "亦气疼痛"
+    "label": "Qi pain"
   },
   {
     "id": "SMTS01745",
-    "label": "产后淤阻"
+    "label": "Postpartum congestion"
   },
   {
     "id": "SMTS01748",
-    "label": "产后瘀血"
+    "label": "postpartum blood stasis"
   },
   {
     "id": "SMTS01750",
-    "label": "产后瘀阻"
+    "label": "Postpartum blood stasis"
   },
   {
     "id": "SMTS01759",
-    "label": "体倦乏力"
+    "label": "fatigue and fatigue"
   },
   {
     "id": "SMTS01761",
-    "label": "作喘"
+    "label": "asthma"
   },
   {
     "id": "SMTS01762",
-    "label": "便塘"
+    "label": "Bitter Pond"
   },
   {
     "id": "SMTS01763",
-    "label": "偏正头痛"
+    "label": "migraine headache"
   },
   {
     "id": "SMTS01765",
-    "label": "关窍不通"
+    "label": "Guan Qiao is blocked."
   },
   {
     "id": "SMTS01766",
-    "label": "关节痿软"
+    "label": "joint flaccidity"
   },
   {
     "id": "SMTS01767",
-    "label": "关节肿胀"
+    "label": "joint swelling"
   },
   {
     "id": "SMTS01768",
-    "label": "关节酸"
+    "label": "joint acidity"
   },
   {
     "id": "SMTS01773",
-    "label": "劳伤腰痛"
+    "label": "Strain and low back pain"
   },
   {
     "id": "SMTS01774",
-    "label": "劳热"
+    "label": "labor fever"
   },
   {
     "id": "SMTS01776",
-    "label": "历节风痛"
+    "label": "wind pain during festivals"
   },
   {
     "id": "SMTS01780",
-    "label": "口㖞"
+    "label": "Mouth㖞"
   },
   {
     "id": "SMTS01781",
-    "label": "口眼㖞斜"
+    "label": "slanted mouth and eyes"
   },
   {
     "id": "SMTS01782",
-    "label": "口眼喝斜"
+    "label": "squinting in mouth and eyes"
   },
   {
     "id": "SMTS01784",
-    "label": "口蜗"
+    "label": "Oral cochlea"
   },
   {
     "id": "SMTS01786",
-    "label": "后重"
+    "label": "backache"
   },
   {
     "id": "SMTS01789",
-    "label": "呕吐呃逆"
+    "label": "vomiting and hiccups"
   },
   {
     "id": "SMTS01790",
-    "label": "呕吐腹痛"
+    "label": "Vomiting and abdominal pain"
   },
   {
     "id": "SMTS01791",
-    "label": "呕哕"
+    "label": "vomiting"
   },
   {
     "id": "SMTS01793",
-    "label": "咯吐不出"
+    "label": "unable to vomit"
   },
   {
     "id": "SMTS01795",
-    "label": "咳嗽气喘"
+    "label": "Cough and asthma"
   },
   {
     "id": "SMTS01796",
-    "label": "咳痰"
+    "label": "expectoration"
   },
   {
     "id": "SMTS01797",
-    "label": "咳逆"
+    "label": "Cough"
   },
   {
     "id": "SMTS01798",
-    "label": "咽喉干痛"
+    "label": "dry and painful throat"
   },
   {
     "id": "SMTS01800",
-    "label": "咽肿"
+    "label": "pharyngeal swelling"
   },
   {
     "id": "SMTS01805",
-    "label": "噎膈"
+    "label": "choking and diaphragm"
   },
   {
     "id": "SMTS01807",
-    "label": "四肢抽搐"
+    "label": "twitching of limbs"
   },
   {
     "id": "SMTS01808",
-    "label": "四肢挛急疼痛"
+    "label": "Acute pain in limbs"
   },
   {
     "id": "SMTS01811",
-    "label": "声哑"
+    "label": "hoarseness"
   },
   {
     "id": "SMTS01814",
-    "label": "外伤肿痛"
+    "label": "trauma, swelling and pain"
   },
   {
     "id": "SMTS01816",
-    "label": "外感热病"
+    "label": "exogenous fever"
   },
   {
     "id": "SMTS01818",
-    "label": "大头瘟疫"
+    "label": "Big Head Plague"
   },
   {
     "id": "SMTS01819",
-    "label": "大汗"
+    "label": "profuse sweating"
   },
   {
     "id": "SMTS01820",
-    "label": "天疱疮"
+    "label": "Pemphigus"
   },
   {
     "id": "SMTS01822",
-    "label": "失血"
+    "label": "blood loss"
   },
   {
     "id": "SMTS01828",
-    "label": "奔豚"
+    "label": "Running Dolphin"
   },
   {
     "id": "SMTS01829",
-    "label": "妇人脏躁"
+    "label": "Women’s irritability"
   },
   {
     "id": "SMTS01833",
-    "label": "妊娠子痫"
+    "label": "Pregnancy Eclampsia"
   },
   {
     "id": "SMTS01837",
-    "label": "实热积滞便秘"
+    "label": "constipation due to excess heat accumulation"
   },
   {
     "id": "SMTS01838",
-    "label": "宫冷不孕"
+    "label": "cold uterus and infertility"
   },
   {
     "id": "SMTS01839",
-    "label": "寒湿呕逆"
+    "label": "cold-dampness and vomiting"
   },
   {
     "id": "SMTS01840",
-    "label": "寒湿脚气"
+    "label": "cold-damp athlete’s foot"
   },
   {
     "id": "SMTS01842",
-    "label": "寒疝腹痛"
+    "label": "cold hernia and abdominal pain"
   },
   {
     "id": "SMTS01843",
-    "label": "寒痹"
+    "label": "Cold Bi"
   },
   {
     "id": "SMTS01844",
-    "label": "寒积便秘"
+    "label": "constipation due to cold accumulation"
   },
   {
     "id": "SMTS01846",
-    "label": "小便淋漓"
+    "label": "dripping urine"
   },
   {
     "id": "SMTS01848",
-    "label": "小便短赤涩痛"
+    "label": "short, red, astringent and painful urination"
   },
   {
     "id": "SMTS01849",
-    "label": "小便艰涩"
+    "label": "Difficulty urinating"
   },
   {
     "id": "SMTS01850",
-    "label": "小便赤"
+    "label": "red urine"
   },
   {
     "id": "SMTS01853",
-    "label": "小儿急惊风"
+    "label": "acute convulsions in children"
   },
   {
     "id": "SMTS01854",
-    "label": "小儿惊啼"
+    "label": "Children crying"
   },
   {
     "id": "SMTS01855",
-    "label": "小儿惊痫"
+    "label": "epilepsy in children"
   },
   {
     "id": "SMTS01856",
-    "label": "小儿惊风"
+    "label": "convulsions in children"
   },
   {
     "id": "SMTS01857",
-    "label": "小儿慢惊"
+    "label": "Slow terror in children"
   },
   {
     "id": "SMTS01859",
-    "label": "小儿疳积"
+    "label": "infantile malnutrition"
   },
   {
     "id": "SMTS01860",
-    "label": "小儿痰热惊痫"
+    "label": "phlegm-heat and epilepsy in children"
   },
   {
     "id": "SMTS01862",
-    "label": "少阴伏风头痛"
+    "label": "Shaoyin subdued wind headache"
   },
   {
     "id": "SMTS01863",
-    "label": "尿少涩痛"
+    "label": "oliguria, astringency and pain"
   },
   {
     "id": "SMTS01864",
-    "label": "尿热涩痛"
+    "label": "hot and painful urination"
   },
   {
     "id": "SMTS01866",
-    "label": "尿闭"
+    "label": "anuria"
   },
   {
     "id": "SMTS01867",
-    "label": "崩中"
+    "label": "collapse"
   },
   {
     "id": "SMTS01870",
-    "label": "带下色白"
+    "label": "white vaginal discharge"
   },
   {
     "id": "SMTS01871",
-    "label": "带下色赤"
+    "label": "vaginal discharge with red color"
   },
   {
     "id": "SMTS01872",
-    "label": "带下阴痒"
+    "label": "vaginal itching"
   },
   {
     "id": "SMTS01877",
-    "label": "庁肿"
+    "label": "swelling"
   },
   {
     "id": "SMTS01879",
-    "label": "强中"
+    "label": "strong middle"
   },
   {
     "id": "SMTS01880",
-    "label": "心动悸"
+    "label": "palpitations"
   },
   {
     "id": "SMTS01882",
-    "label": "心肾不交多梦"
+    "label": "disharmony between the heart and kidneys and excessive dreams"
   },
   {
     "id": "SMTS01883",
-    "label": "心肾不交失眠"
+    "label": "Insomnia due to disharmony between the heart and kidneys"
   },
   {
     "id": "SMTS01885",
-    "label": "心胸郁闷"
+    "label": "depression"
   },
   {
     "id": "SMTS01886",
-    "label": "心腹暴痛"
+    "label": "Severe pain in the heart and abdomen"
   },
   {
     "id": "SMTS01887",
-    "label": "心腹疼痛"
+    "label": "abdominal pain"
   },
   {
     "id": "SMTS01888",
-    "label": "心腹瘀痛"
+    "label": "blood stasis and pain in the heart and abdomen"
   },
   {
     "id": "SMTS01889",
-    "label": "忧郁"
+    "label": "Depression"
   },
   {
     "id": "SMTS01896",
-    "label": "恶露不尽"
+    "label": "endless lochia"
   },
   {
     "id": "SMTS01897",
-    "label": "恶露不行"
+    "label": "Lochia is not working"
   },
   {
     "id": "SMTS01898",
-    "label": "惊痛"
+    "label": "frightened pain"
   },
   {
     "id": "SMTS01909",
-    "label": "手足瘈疭"
+    "label": "Fistula on hands and feet"
   },
   {
     "id": "SMTS01910",
-    "label": "手足麻木"
+    "label": "numbness in hands and feet"
   },
   {
     "id": "SMTS01911",
-    "label": "扭挫伤痛"
+    "label": "sprain and pain"
   },
   {
     "id": "SMTS01912",
-    "label": "拘挛"
+    "label": "spasm"
   },
   {
     "id": "SMTS01913",
-    "label": "挛急"
+    "label": "acute spasm"
   },
   {
     "id": "SMTS01914",
-    "label": "挛痛"
+    "label": "spasm pain"
   },
   {
     "id": "SMTS01918",
-    "label": "斑紫黑"
+    "label": "purple and black spots"
   },
   {
     "id": "SMTS01919",
-    "label": "新久咳嗽"
+    "label": "Xinjiu Cough"
   },
   {
     "id": "SMTS01920",
-    "label": "新咳"
+    "label": "New Cough"
   },
   {
     "id": "SMTS01922",
-    "label": "无痰"
+    "label": "No phlegm"
   },
   {
     "id": "SMTS01924",
-    "label": "早衰"
+    "label": "premature aging"
   },
   {
     "id": "SMTS01925",
-    "label": "时疫"
+    "label": "Epidemic"
   },
   {
     "id": "SMTS01926",
-    "label": "时疫感冒"
+    "label": "Epidemic Cold"
   },
   {
     "id": "SMTS01927",
-    "label": "昏花"
+    "label": "dizziness"
   },
   {
     "id": "SMTS01929",
-    "label": "晐嗽"
+    "label": "cough"
   },
   {
     "id": "SMTS01930",
-    "label": "暑湿吐泻"
+    "label": "vomiting and diarrhea due to summer heat dampness"
   },
   {
     "id": "SMTS01938",
-    "label": "气喘痰多"
+    "label": "Asthma and excessive phlegm"
   },
   {
     "id": "SMTS01943",
-    "label": "水肿胀满"
+    "label": "edema and fullness"
   },
   {
     "id": "SMTS01944",
-    "label": "水肿胀满尿少"
+    "label": "edema, full urine, and oliguria"
   },
   {
     "id": "SMTS01947",
-    "label": "泛酸"
+    "label": "pantothenic acid"
   },
   {
     "id": "SMTS01948",
-    "label": "泻痢后重"
+    "label": "severe diarrhea and diarrhea"
   },
   {
     "id": "SMTS01954",
-    "label": "淋巴结结核"
+    "label": "lymph node tuberculosis"
   },
   {
     "id": "SMTS01956",
-    "label": "淋沥涩痛"
+    "label": "stranguria and astringent pain"
   },
   {
     "id": "SMTS01959",
-    "label": "温疫时毒"
+    "label": "Poison during warm epidemic"
   },
   {
     "id": "SMTS01960",
-    "label": "温病"
+    "label": "febrile disease"
   },
   {
     "id": "SMTS01963",
-    "label": "湿热淋证"
+    "label": "Damp-heat stranguria syndrome"
   },
   {
     "id": "SMTS01964",
-    "label": "湿热疮满"
+    "label": "Damp-heat sores"
   },
   {
     "id": "SMTS01968",
-    "label": "湿痹"
+    "label": "Dampness"
   },
   {
     "id": "SMTS01969",
-    "label": "湿痹病"
+    "label": "dampness syndrome"
   },
   {
     "id": "SMTS01970",
-    "label": "溃疡"
+    "label": "Ulcer"
   },
   {
     "id": "SMTS01973",
-    "label": "澹语"
+    "label": "Danyu"
   },
   {
     "id": "SMTS01974",
-    "label": "火毒疮疡"
+    "label": "fire poisonous sores"
   },
   {
     "id": "SMTS01977",
-    "label": "烂喉丹痧"
+    "label": "Sore Throat and Dansha"
   },
   {
     "id": "SMTS01985",
-    "label": "热淋"
+    "label": "hot stranguria"
   },
   {
     "id": "SMTS01988",
-    "label": "热痹"
+    "label": "heat numbness"
   },
   {
     "id": "SMTS01989",
-    "label": "热证"
+    "label": "heat syndrome"
   },
   {
     "id": "SMTS01990",
-    "label": "焮肿"
+    "label": "swelling"
   },
   {
     "id": "SMTS01991",
-    "label": "牙疳"
+    "label": "Teeth Crane"
   },
   {
     "id": "SMTS01992",
-    "label": "牙龈疼痛"
+    "label": "gum pain"
   },
   {
     "id": "SMTS01993",
-    "label": "牙龈肿痛出血"
+    "label": "swollen, painful and bleeding gums"
   },
   {
     "id": "SMTS01995",
-    "label": "狂证"
+    "label": "Madness Syndrome"
   },
   {
     "id": "SMTS01998",
-    "label": "疔疮肿毒"
+    "label": "boils, swelling and poison"
   },
   {
     "id": "SMTS01999",
-    "label": "疔肿"
+    "label": "boils"
   },
   {
     "id": "SMTS02001",
-    "label": "疗毒"
+    "label": "Healing Poison"
   },
   {
     "id": "SMTS02002",
-    "label": "疗疮"
+    "label": "Treating Sores"
   },
   {
     "id": "SMTS02003",
-    "label": "疝气疼痛"
+    "label": "Hernia Pain"
   },
   {
     "id": "SMTS02015",
-    "label": "疮满"
+    "label": "Sores"
   },
   {
     "id": "SMTS02016",
-    "label": "疮疖"
+    "label": "boils"
   },
   {
     "id": "SMTS02017",
-    "label": "疮疡初起"
+    "label": "first onset of sores"
   },
   {
     "id": "SMTS02020",
-    "label": "疮疡肿毒"
+    "label": "sores, swelling and poison"
   },
   {
     "id": "SMTS02021",
-    "label": "疮疳"
+    "label": "Cancer"
   },
   {
     "id": "SMTS02023",
-    "label": "疮痈肿毒"
+    "label": "sores, carbuncles, swollen poison"
   },
   {
     "id": "SMTS02026",
-    "label": "疹紫黑"
+    "label": "purple-black rash"
   },
   {
     "id": "SMTS02027",
-    "label": "疼痛麻木"
+    "label": "pain and numbness"
   },
   {
     "id": "SMTS02028",
-    "label": "病后虚热不退"
+    "label": "Deficiency and heat that persists after illness"
   },
   {
     "id": "SMTS02033",
-    "label": "痈疮肿毒"
+    "label": "carbuncle, swelling and poison"
   },
   {
     "id": "SMTS02034",
-    "label": "痈疽初起"
+    "label": "the beginning of carbuncle"
   },
   {
     "id": "SMTS02037",
-    "label": "痈疽脓成不溃"
+    "label": "carbuncle with pus that does not ulcerate"
   },
   {
     "id": "SMTS02038",
-    "label": "痈肿疔疮"
+    "label": "carbuncle and furuncle"
   },
   {
     "id": "SMTS02039",
-    "label": "痈肿疮毒"
+    "label": "carbuncle and sore"
   },
   {
     "id": "SMTS02040",
-    "label": "痈肿痰核"
+    "label": "carbuncle, phlegm core"
   },
   {
     "id": "SMTS02042",
-    "label": "痈肿脓成不溃"
+    "label": "carbuncle, pus, and abscess"
   },
   {
     "id": "SMTS02044",
-    "label": "痔瘘"
+    "label": "hemorrhoids and fistulas"
   },
   {
     "id": "SMTS02045",
-    "label": "痔肿出血"
+    "label": "hemorrhoids and bleeding"
   },
   {
     "id": "SMTS02046",
-    "label": "痞块"
+    "label": "lumps"
   },
   {
     "id": "SMTS02049",
-    "label": "痤疮"
+    "label": "Acne"
   },
   {
     "id": "SMTS02050",
-    "label": "痧"
+    "label": "Sha"
   },
   {
     "id": "SMTS02051",
-    "label": "痧胀腹痛吐泻"
+    "label": "Sha distension, abdominal pain, vomiting and diarrhea"
   },
   {
     "id": "SMTS02053",
-    "label": "痰嗽"
+    "label": "phlegm and cough"
   },
   {
     "id": "SMTS02054",
-    "label": "痰核"
+    "label": "Phlegm Core"
   },
   {
     "id": "SMTS02055",
-    "label": "痰湿流注"
+    "label": "phlegm and dampness flowing down"
   },
   {
     "id": "SMTS02056",
-    "label": "痰热咳嗽"
+    "label": "Cough due to phlegm-heat"
   },
   {
     "id": "SMTS02060",
-    "label": "痱子"
+    "label": "prickly heat"
   },
   {
     "id": "SMTS02061",
-    "label": "痹疽"
+    "label": "gangrene"
   },
   {
     "id": "SMTS02064",
-    "label": "瘟疫"
+    "label": "Plague"
   },
   {
     "id": "SMTS02065",
-    "label": "瘰疠"
+    "label": "scrofula"
   },
   {
     "id": "SMTS02067",
-    "label": "瘰痂"
+    "label": "scrofula"
   },
   {
     "id": "SMTS02069",
-    "label": "療疬"
+    "label": "Treatment of boils"
   },
   {
     "id": "SMTS02070",
-    "label": "療痂"
+    "label": "treating scabs"
   },
   {
     "id": "SMTS02080",
-    "label": "癫证"
+    "label": "epilepsy syndrome"
   },
   {
     "id": "SMTS02081",
-    "label": "癲狂"
+    "label": "Madness"
   },
   {
     "id": "SMTS02085",
-    "label": "白带过多"
+    "label": "excessive leucorrhea"
   },
   {
     "id": "SMTS02094",
-    "label": "皮肤溃疡"
+    "label": "skin ulcers"
   },
   {
     "id": "SMTS02096",
-    "label": "皮肤顽癣"
+    "label": "skin tinea"
   },
   {
     "id": "SMTS02097",
-    "label": "目暗"
+    "label": "dark eyes"
   },
   {
     "id": "SMTS02098",
-    "label": "目涩痛"
+    "label": "sore eyes"
   },
   {
     "id": "SMTS02100",
-    "label": "目痛"
+    "label": "eye pain"
   },
   {
     "id": "SMTS02102",
-    "label": "目肿"
+    "label": "swollen eyes"
   },
   {
     "id": "SMTS02104",
-    "label": "眩悸"
+    "label": "dizziness and palpitations"
   },
   {
     "id": "SMTS02107",
-    "label": "睾丸肿痛"
+    "label": "testicular swelling and pain"
   },
   {
     "id": "SMTS02109",
-    "label": "秃疮"
+    "label": "Bald Sores"
   },
   {
     "id": "SMTS02110",
-    "label": "积聚"
+    "label": "Accumulation"
   },
   {
     "id": "SMTS02112",
-    "label": "筋伤骨折"
+    "label": "tendon injuries and fractures"
   },
   {
     "id": "SMTS02113",
-    "label": "筋挛"
+    "label": "spasticity"
   },
   {
     "id": "SMTS02114",
-    "label": "筋骨折伤"
+    "label": "tendon fractures and injuries"
   },
   {
     "id": "SMTS02117",
-    "label": "筋骨痪软"
+    "label": "weak muscles and bones"
   },
   {
     "id": "SMTS02118",
-    "label": "筋骨痰软"
+    "label": "Soft muscles and bones with phlegm"
   },
   {
     "id": "SMTS02120",
-    "label": "类风湿性关节炎"
+    "label": "Rheumatoid Arthritis"
   },
   {
     "id": "SMTS02122",
-    "label": "红疹"
+    "label": "rash"
   },
   {
     "id": "SMTS02125",
-    "label": "经多"
+    "label": "Menorrhagia"
   },
   {
     "id": "SMTS02131",
-    "label": "结胸"
+    "label": "Chest knot"
   },
   {
     "id": "SMTS02132",
-    "label": "结胸痞满"
+    "label": "knotted chest and fullness"
   },
   {
     "id": "SMTS02133",
-    "label": "绝经期眩晕"
+    "label": "Menopausal Dizziness"
   },
   {
     "id": "SMTS02136",
-    "label": "缠身蛇丹"
+    "label": "Snake Pill"
   },
   {
     "id": "SMTS02138",
-    "label": "聘耳流脓"
+    "label": "Ear discharge"
   },
   {
     "id": "SMTS02139",
-    "label": "聤耳"
+    "label": "Yin Er"
   },
   {
     "id": "SMTS02141",
-    "label": "肉暗紫黑"
+    "label": "dark purple flesh"
   },
   {
     "id": "SMTS02142",
-    "label": "肝火眩晕"
+    "label": "Liver fire dizziness"
   },
   {
     "id": "SMTS02147",
-    "label": "肝肾不足腰膝酸冷"
+    "label": "Insufficiency of liver and kidney, soreness and coldness in waist and knees"
   },
   {
     "id": "SMTS02149",
-    "label": "肝肾阴虚眩晕耳鸣"
+    "label": "Liver and kidney yin deficiency, dizziness, tinnitus"
   },
   {
     "id": "SMTS02150",
-    "label": "肝胃气痛"
+    "label": "Liver and stomach qi pain"
   },
   {
     "id": "SMTS02156",
-    "label": "肠痈"
+    "label": "intestinal carbuncle"
   },
   {
     "id": "SMTS02157",
-    "label": "肠痈肿痛"
+    "label": "intestinal abscess, swelling and pain"
   },
   {
     "id": "SMTS02159",
-    "label": "肠风"
+    "label": "intestinal wind"
   },
   {
     "id": "SMTS02162",
-    "label": "肢体痿软"
+    "label": "weakness of limbs"
   },
   {
     "id": "SMTS02163",
-    "label": "肢体酸"
+    "label": "sore limbs"
   },
   {
     "id": "SMTS02164",
-    "label": "肢体重"
+    "label": "heavy limbs"
   },
   {
     "id": "SMTS02166",
-    "label": "肩臂痛"
+    "label": "shoulder and arm pain"
   },
   {
     "id": "SMTS02167",
-    "label": "肩臂酸"
+    "label": "Shoulder and arm soreness"
   },
   {
     "id": "SMTS02168",
-    "label": "肩臂酸痛麻木"
+    "label": "shoulder and arm pain and numbness"
   },
   {
     "id": "SMTS02169",
-    "label": "肩臂麻木"
+    "label": "numbness of shoulders and arms"
   },
   {
     "id": "SMTS02171",
-    "label": "肺捞"
+    "label": "Feilao"
   },
   {
     "id": "SMTS02177",
-    "label": "肺痈吐脓"
+    "label": "lung abscess and vomiting pus"
   },
   {
     "id": "SMTS02179",
-    "label": "肺结核"
+    "label": "Tuberculosis"
   },
   {
     "id": "SMTS02180",
-    "label": "肺结核咳嗽"
+    "label": "Tuberculosis Cough"
   },
   {
     "id": "SMTS02183",
-    "label": "肾与小腹冷痛"
+    "label": "Cold and pain in the kidneys and lower abdomen"
   },
   {
     "id": "SMTS02184",
-    "label": "肾冷痛"
+    "label": "cold kidney pain"
   },
   {
     "id": "SMTS02193",
-    "label": "胀满疼痛"
+    "label": "fullness and pain"
   },
   {
     "id": "SMTS02194",
-    "label": "胃火牙痛"
+    "label": "stomach fire and toothache"
   },
   {
     "id": "SMTS02201",
-    "label": "胸痹刺痛"
+    "label": "chest pain and tingling pain"
   },
   {
     "id": "SMTS02203",
-    "label": "胸腔积水"
+    "label": "pleural effusion"
   },
   {
     "id": "SMTS02205",
-    "label": "胸膈不舒"
+    "label": "Chest and diaphragm discomfort"
   },
   {
     "id": "SMTS02206",
-    "label": "脉微"
+    "label": "weak pulse"
   },
   {
     "id": "SMTS02207",
-    "label": "脉结代"
+    "label": "pulse knotting"
   },
   {
     "id": "SMTS02208",
-    "label": "脓水淋漓"
+    "label": "dripping pus"
   },
   {
     "id": "SMTS02210",
-    "label": "脘痞吐泻"
+    "label": "epigastrium, vomiting and diarrhea"
   },
   {
     "id": "SMTS02211",
-    "label": "脘痞呕恶"
+    "label": "epigastrium, vomiting and nausea"
   },
   {
     "id": "SMTS02212",
-    "label": "脘腹挛急疼痛"
+    "label": "acute pain in the epigastrium and abdomen"
   },
   {
     "id": "SMTS02213",
-    "label": "脘腹痞满胀痛"
+    "label": "abdominal fullness and pain"
   },
   {
     "id": "SMTS02214",
-    "label": "脘腹胀满冷痛"
+    "label": "distension and cold pain in the epigastrium"
   },
   {
     "id": "SMTS02216",
-    "label": "脘腹虛痛"
+    "label": "epigastric and abdominal pain"
   },
   {
     "id": "SMTS02217",
-    "label": "脚气肿毒"
+    "label": "Beriberi Toxin"
   },
   {
     "id": "SMTS02220",
-    "label": "脱力劳伤"
+    "label": "fatigue and fatigue"
   },
   {
     "id": "SMTS02221",
-    "label": "脾肾虚泻"
+    "label": "Spleen and kidney deficiency and diarrhea"
   },
   {
     "id": "SMTS02222",
-    "label": "脾虚泄泻"
+    "label": "Spleen deficiency and diarrhea"
   },
   {
     "id": "SMTS02223",
-    "label": "脾虚食少"
+    "label": "Spleen deficiency and lack of food"
   },
   {
     "id": "SMTS02225",
-    "label": "腰冷痛"
+    "label": "cold pain in the waist"
   },
   {
     "id": "SMTS02226",
-    "label": "腰腿疼痛"
+    "label": "waist and leg pain"
   },
   {
     "id": "SMTS02229",
-    "label": "腰膝痿软"
+    "label": "weak waist and knees"
   },
   {
     "id": "SMTS02230",
-    "label": "腰部沉重"
+    "label": "heaviness in the waist"
   },
   {
     "id": "SMTS02231",
-    "label": "腰酸软"
+    "label": "Soreness and weakness of waist"
   },
   {
     "id": "SMTS02232",
-    "label": "腹中痞块"
+    "label": "abdominal mass"
   },
   {
     "id": "SMTS02233",
-    "label": "腹满"
+    "label": "abdominal fullness"
   },
   {
     "id": "SMTS02235",
-    "label": "腹腔积水"
+    "label": "hydroabdominal fluid"
   },
   {
     "id": "SMTS02236",
-    "label": "腿痛"
+    "label": "leg pain"
   },
   {
     "id": "SMTS02238",
-    "label": "膝关节沉重"
+    "label": "heavy knee joints"
   },
   {
     "id": "SMTS02239",
-    "label": "膝关节疼痛"
+    "label": "Knee Pain"
   },
   {
     "id": "SMTS02240",
-    "label": "膝关节酸"
+    "label": "Knee joint soreness"
   },
   {
     "id": "SMTS02241",
-    "label": "膝冷痛"
+    "label": "cold knee pain"
   },
   {
     "id": "SMTS02242",
-    "label": "膝痛"
+    "label": "Knee Pain"
   },
   {
     "id": "SMTS02243",
-    "label": "膝酸"
+    "label": "Knee Soreness"
   },
   {
     "id": "SMTS02244",
-    "label": "膝酸软"
+    "label": "Sore and weak knees"
   },
   {
     "id": "SMTS02245",
-    "label": "臁疮"
+    "label": "ecthyma"
   },
   {
     "id": "SMTS02249",
-    "label": "萎黄"
+    "label": "chlorosis"
   },
   {
     "id": "SMTS02255",
-    "label": "蚀疮"
+    "label": "Erosion"
   },
   {
     "id": "SMTS02267",
-    "label": "血淋涩痛"
+    "label": "bloody and astringent pain"
   },
   {
     "id": "SMTS02269",
-    "label": "血热发斑"
+    "label": "blood heat spots"
   },
   {
     "id": "SMTS02270",
-    "label": "血热发疹"
+    "label": "blood heat rash"
   },
   {
     "id": "SMTS02271",
-    "label": "血热吐血"
+    "label": "blood heat and vomiting blood"
   },
   {
     "id": "SMTS02277",
-    "label": "血痢"
+    "label": "bloody dysentery"
   },
   {
     "id": "SMTS02280",
-    "label": "赤白带下"
+    "label": "red and white discharge"
   },
   {
     "id": "SMTS02282",
-    "label": "足痿"
+    "label": "foot flaccidity"
   },
   {
     "id": "SMTS02283",
-    "label": "趺扑肿痛"
+    "label": "swelling and pain"
   },
   {
     "id": "SMTS02284",
-    "label": "跌扑损伤"
+    "label": "Fall injury"
   },
   {
     "id": "SMTS02285",
-    "label": "跌扑闪挫"
+    "label": "falling and falling"
   },
   {
     "id": "SMTS02289",
-    "label": "转筋"
+    "label": "tendon transfer"
   },
   {
     "id": "SMTS02290",
-    "label": "郁闷"
+    "label": "Depression"
   },
   {
     "id": "SMTS02297",
-    "label": "闪腰"
+    "label": "flashing waist"
   },
   {
     "id": "SMTS02299",
-    "label": "阳毒发斑"
+    "label": "spots caused by impotence"
   },
   {
     "id": "SMTS02300",
-    "label": "阳痪"
+    "label": "Yang paralysis"
   },
   {
     "id": "SMTS02301",
-    "label": "阳痿不孕"
+    "label": "impotence and infertility"
   },
   {
     "id": "SMTS02302",
-    "label": "阳瘘"
+    "label": "impotence"
   },
   {
     "id": "SMTS02303",
-    "label": "阳萎"
+    "label": "Impotence"
   },
   {
     "id": "SMTS02306",
-    "label": "阴虚劳嗽"
+    "label": "Yin deficiency and labor cough"
   },
   {
     "id": "SMTS02309",
-    "label": "院腹冷痛"
+    "label": "cold and painful abdominal pain"
   },
   {
     "id": "SMTS02310",
-    "label": "院腹括闷"
+    "label": "Abdominal tightness in hospital"
   },
   {
     "id": "SMTS02311",
-    "label": "雀目"
+    "label": "Bird Eyes"
   },
   {
     "id": "SMTS02314",
-    "label": "青盲"
+    "label": "Blue Blindness"
   },
   {
     "id": "SMTS02315",
-    "label": "面目肌肤浮肿"
+    "label": "puffy facial skin"
   },
   {
     "id": "SMTS02317",
-    "label": "风寒挟湿头痛"
+    "label": "Headache due to wind-cold and dampness"
   },
   {
     "id": "SMTS02319",
-    "label": "风寒湿痹痛"
+    "label": "wind-cold-damp arthralgia"
   },
   {
     "id": "SMTS02320",
-    "label": "风水浮肿"
+    "label": "Feng Shui edema"
   },
   {
     "id": "SMTS02322",
-    "label": "风湿关节痿软疼痛"
+    "label": "rheumatic joint flaccidity and pain"
   },
   {
     "id": "SMTS02324",
-    "label": "风湿热痹"
+    "label": "Rheumatism and heat paralysis"
   },
   {
     "id": "SMTS02326",
-    "label": "风湿痹病"
+    "label": "rheumatic paralysis"
   },
   {
     "id": "SMTS02327",
-    "label": "风湿肢体痿软疼痛"
+    "label": "Rheumatism, weakness and pain in limbs"
   },
   {
     "id": "SMTS02328",
-    "label": "风湿肩臂疼痛"
+    "label": "rheumatic shoulder and arm pain"
   },
   {
     "id": "SMTS02329",
-    "label": "风湿肿痛"
+    "label": "rheumatism, swelling and pain"
   },
   {
     "id": "SMTS02330",
-    "label": "风湿顽痹"
+    "label": "Rheumatism and stubborn paralysis"
   },
   {
     "id": "SMTS02331",
-    "label": "风湿骨痛"
+    "label": "rheumatic bone pain"
   },
   {
     "id": "SMTS02334",
-    "label": "风热郁肺咽痛"
+    "label": "wind-heat, lung stagnation, sore throat"
   },
   {
     "id": "SMTS02335",
-    "label": "风疹"
+    "label": "Rubella"
   },
   {
     "id": "SMTS02337",
-    "label": "风痹"
+    "label": "Wind Bi"
   },
   {
     "id": "SMTS02338",
-    "label": "风痹病"
+    "label": "Wind Bi disease"
   },
   {
     "id": "SMTS02340",
-    "label": "饮食不消"
+    "label": "Insufficiency of diet"
   },
   {
     "id": "SMTS02341",
-    "label": "骨痛"
+    "label": "bone pain"
   },
   {
     "id": "SMTS02342",
-    "label": "骨蒸"
+    "label": "bone steaming"
   },
   {
     "id": "SMTS02353",
-    "label": "麻痹"
+    "label": "Paralysis"
   },
   {
     "id": "SMTS02357",
-    "label": "黄水淋漓"
+    "label": "dripping yellow water"
   },
   {
     "id": "SMTS02358",
-    "label": "黄水疮"
+    "label": "yellow water sores"
   },
   {
     "id": "SMTS02360",
-    "label": "黄疽"
+    "label": "jaundice"
   },
   {
     "id": "SMTS02361",
-    "label": "黄肿胀满"
+    "label": "yellow swelling and fullness"
   },
   {
     "id": "SMTS02362",
-    "label": "黏稠难咯"
+    "label": "sticky and difficult"
   }
 ]
