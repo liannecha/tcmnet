@@ -240,10 +240,9 @@ function LandingPage({ onStart }: { onStart: () => void }) {
 
       <View style={styles.aboutSection}>
         <Text style={styles.aboutEyebrow}>ABOUT TCMNET</Text>
-        <Text style={styles.aboutTitle}>Built to make TCM prediction easier to inspect.</Text>
+        <Text style={styles.aboutTitle}>From symptoms to syndromes, with interpretable reasoning in between.</Text>
         <Text style={styles.aboutIntro}>
-          TCMNet helps organize symptoms into traditional pattern language, then shows
-          how those patterns connect to possible syndromes and herbs.
+          TCMNet translates symptom patterns into traditional diagnostic concepts, predicts likely syndromes, and connects those predictions to herbal recommendations.
         </Text>
         <View style={styles.aboutGrid}>
           {ABOUT_CARDS.map((card) => (

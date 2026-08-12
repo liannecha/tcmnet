@@ -12,28 +12,17 @@ cd frontend
 npm install
 ```
 
-## Backend
+## Browser-Side Inference
 
-From the project root, run the FastAPI backend:
+The deployed web app runs inference in the browser from bundled frozen
+artifacts. A hosted FastAPI backend is no longer required for the frontend.
 
-```bash
-uvicorn backend.app.main:app --reload
-```
-
-The frontend defaults to:
+If the frozen artifacts in `pipeline/artifacts/` change, regenerate the browser
+bundle from the project root:
 
 ```bash
-http://localhost:8000
+python3 tools/export_frontend_artifacts.py
 ```
-
-Override it when needed:
-
-```bash
-EXPO_PUBLIC_API_BASE_URL=http://localhost:8000 npm run web
-```
-
-For testing on a physical phone, use your computer's LAN IP instead of
-`localhost`, for example `http://192.168.1.25:8000`.
 
 ## Run Expo
 
@@ -64,11 +53,4 @@ Output directory:
 dist
 ```
 
-Set this environment variable in Vercel:
-
-```bash
-EXPO_PUBLIC_API_BASE_URL=https://your-backend-url
-```
-
-The Python/FastAPI backend should be deployed separately, then its deployed URL
-should be used as `EXPO_PUBLIC_API_BASE_URL`.
+No backend URL environment variable is needed for the web deployment.
