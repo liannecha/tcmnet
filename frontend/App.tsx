@@ -86,11 +86,7 @@ function Header({
           <Pressable onPress={onStart} style={({ pressed }) => [styles.navButton, pressed && styles.pressed]}>
             <Text style={styles.navButtonText}>Get started</Text>
           </Pressable>
-        ) : (
-          <Pressable onPress={onHome} style={({ pressed }) => [styles.navLink, pressed && styles.pressed]}>
-            <Text style={styles.navLinkText}>About</Text>
-          </Pressable>
-        )}
+        ) : null}
       </View>
     </View>
   );
@@ -121,13 +117,7 @@ function LandingPage({ onStart }: { onStart: () => void }) {
         </Text>
         <View style={styles.aboutGrid}>
           {ABOUT_CARDS.map((card) => (
-            <View key={card.title} style={styles.aboutCard}>
-              <View style={[styles.aboutIcon, { backgroundColor: card.color }]}>
-                <Text style={styles.aboutIconText}>{card.initial}</Text>
-              </View>
-              <Text style={styles.aboutCardTitle}>{card.title}</Text>
-              <Text style={styles.aboutCardText}>{card.text}</Text>
-            </View>
+            <AboutCard key={card.title} card={card} />
           ))}
         </View>
       </View>
@@ -135,42 +125,58 @@ function LandingPage({ onStart }: { onStart: () => void }) {
   );
 }
 
+function AboutCard({ card }: { card: (typeof ABOUT_CARDS)[number] }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <View
+      style={[styles.aboutCard, isHovered && styles.aboutCardHovered]}
+      onPointerEnter={() => setIsHovered(true)}
+      onPointerLeave={() => setIsHovered(false)}
+    >
+      <Text style={styles.aboutCardTitle}>{card.title}</Text>
+      <Text style={styles.aboutCardText}>{card.text}</Text>
+      {isHovered ? <Text style={styles.aboutCardDetail}>{card.detail}</Text> : null}
+    </View>
+  );
+}
+
 const ABOUT_CARDS = [
   {
     title: 'Symptom Input',
-    initial: 'S',
-    color: '#A8D5BA',
     text: 'Start with observed symptoms and search by readable English labels.',
+    detail:
+      'The interface groups duplicate translated labels while preserving the model IDs needed for prediction.',
   },
   {
     title: 'Concept Signals',
-    initial: 'C',
-    color: '#6BBF8A',
     text: 'The model estimates TCM concept patterns such as internal, heat, yin, and organ groups.',
+    detail:
+      'These concept scores make the model output easier to inspect than a syndrome label alone.',
   },
   {
     title: 'Syndrome Prediction',
-    initial: 'P',
-    color: '#4B9B6E',
     text: 'TCMNet ranks likely syndromes from the selected symptom pattern.',
+    detail:
+      'The app shows the top syndrome and alternatives with model scores, so uncertainty remains visible.',
   },
   {
     title: 'Herb Ranking',
-    initial: 'H',
-    color: '#2E7D5C',
     text: 'Herbs are scored from concept fit and known syndrome-herb relationships.',
+    detail:
+      'The herb recommender is frozen and reproducible: it blends concept similarity with syndrome-herb priors.',
   },
   {
-    title: 'Transparent Output',
-    initial: 'E',
-    color: '#A8D5BA',
-    text: 'Results include recognized symptoms and the strongest signals behind the recommendation.',
+    title: 'Future Direction',
+    text: 'Next steps include stronger labels, better grouping, richer explanations, and model validation.',
+    detail:
+      'This prototype is designed so future work can improve metadata, confidence calibration, and clinical review.',
   },
   {
-    title: 'Research First',
-    initial: 'R',
-    color: '#1B5E3A',
-    text: 'The app is for learning and experimentation, not diagnosis or treatment decisions.',
+    title: 'Final Report',
+    text: 'A final report and findings link will live here once the project writeup is complete.',
+    detail:
+      'Use this space for the CS229 report, model results, limitations, and supporting analysis.',
   },
 ];
 
@@ -991,26 +997,17 @@ const styles = StyleSheet.create({
   aboutCard: {
     flexBasis: 360,
     flexGrow: 1,
-    minHeight: 230,
+    minHeight: 190,
     borderRadius: 8,
     backgroundColor: colors.softPanel,
     padding: 22,
     justifyContent: 'flex-start',
     gap: 10,
   },
-  aboutIcon: {
-    width: 74,
-    height: 74,
-    borderRadius: 37,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 6,
-  },
-  aboutIconText: {
-    color: colors.text,
-    fontFamily: serifFont,
-    fontSize: 32,
-    fontWeight: '700',
+  aboutCardHovered: {
+    backgroundColor: '#e4f0e9',
+    borderWidth: 1,
+    borderColor: '#c8dfd0',
   },
   aboutCardTitle: {
     color: colors.text,
@@ -1021,6 +1018,13 @@ const styles = StyleSheet.create({
     color: colors.muted,
     fontSize: 15,
     lineHeight: 23,
+  },
+  aboutCardDetail: {
+    color: colors.text,
+    fontSize: 14,
+    lineHeight: 21,
+    fontWeight: '700',
+    marginTop: 4,
   },
   page: {
     width: '100%',
