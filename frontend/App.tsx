@@ -85,6 +85,14 @@ function syndromeDescriptionText(description: string) {
     .trim();
 }
 
+function reportDateLabel() {
+  return new Date().toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+
 type ConceptAxis = {
   key: string;
   sourceKey?: string;
@@ -222,8 +230,8 @@ function LandingPage({ onStart }: { onStart: () => void }) {
       <View style={styles.hero}>
         <Text style={styles.heroTitle}>TCMNet</Text>
         <Text style={styles.heroCopy}>
-          TCMNet turns selected symptoms into TCM syndrome predictions, herb
-          recommendations, and a plain-language view of the pattern signals behind them.
+          Bridging traditional medicine with modern data science to translate complex
+          symptoms into pattern diagnoses and customized herbal prescriptions.
         </Text>
         <Pressable onPress={onStart} style={({ pressed }) => [styles.heroButton, pressed && styles.pressed]}>
           <Text style={styles.heroButtonText}>Get started</Text>
@@ -540,7 +548,7 @@ function HorizontalStepper({ activeStep }: { activeStep: number }) {
     { id: 1, label: 'Input symptoms' },
     { id: 2, label: 'Syndrome prediction' },
     { id: 3, label: 'Herb recommendation' },
-    { id: 4, label: 'Final review' },
+    { id: 4, label: 'Summary report' },
   ];
 
   return (
@@ -708,9 +716,6 @@ function SymptomPanel({
                   </Pressable>
                 ))}
               </View>
-              <Text style={styles.mutedText}>
-                These suggestions update as symptoms are selected.
-              </Text>
             </View>
           ) : null}
         </View>
@@ -782,9 +787,9 @@ function SymptomPanel({
               {selectedSymptoms.length > 0 ? (
                 <Pressable
                   onPress={onClear}
-                  style={({ pressed }) => [styles.secondaryButton, pressed && styles.pressed]}
+                  style={({ pressed }) => [styles.clearTextButton, pressed && styles.pressed]}
                 >
-                  <Text style={styles.secondaryButtonText}>Clear all</Text>
+                  <Text style={styles.clearTextButtonText}>Clear all</Text>
                 </Pressable>
               ) : null}
             </View>
@@ -924,7 +929,7 @@ function HerbResults({
 
       <StepNavigation
         secondaryLabel="Back"
-        primaryLabel="Next: Review"
+        primaryLabel="Next: Summary"
         onSecondary={onBack}
         onPrimary={onNext}
       />
@@ -945,34 +950,77 @@ function FinalReview({
 }) {
   const topSyndrome = prediction.syndromes[0];
   const topHerbs = prediction.herbs.slice(0, 3);
+  const keyConcepts = [...prediction.concepts]
+    .filter((concept) => concept.id.toLowerCase() !== 'reproductive')
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5);
 
   return (
     <View style={styles.resultsStack}>
-      <View style={styles.panel}>
-        <Text style={styles.panelTitle}>Final Review</Text>
-        <Text style={styles.bodyText}>
-          A concise summary of the selected symptoms, best syndrome match, key pattern
-          signals, and top herb recommendations.
-        </Text>
+      <View style={[styles.panel, styles.reportPanel]}>
+        <View style={styles.reportHeader}>
+          <View style={styles.reportHeaderText}>
+            <Text style={styles.reportEyebrow}>TCMNet</Text>
+            <Text style={styles.reportTitle}>Summary Report</Text>
+            <Text style={styles.reportMeta}>Generated {reportDateLabel()}</Text>
+          </View>
+          <Pressable
+            onPress={() => downloadPredictionPdf(prediction, selectedSymptoms)}
+            style={({ pressed }) => [styles.reportDownloadButton, pressed && styles.pressed]}
+          >
+            <Text style={styles.reportDownloadButtonText}>Download PDF</Text>
+          </Pressable>
+        </View>
 
-        <Text style={styles.sectionSubtitle}>Selected Symptoms</Text>
-        <View style={styles.chips}>
-          {selectedSymptoms.map((symptom) => (
-            <View key={symptom.key} style={styles.subtleChip}>
-              <Text style={styles.subtleChipText}>{symptom.label}</Text>
+        <View style={styles.reportSection}>
+          <Text style={styles.reportSectionTitle}>Symptoms</Text>
+          <View style={styles.reportList}>
+            {selectedSymptoms.map((symptom) => (
+              <Text key={symptom.key} style={styles.reportListItem}>
+                {symptom.label}
+              </Text>
+            ))}
+          </View>
+        </View>
+
+        <View style={styles.reportSection}>
+          <Text style={styles.reportSectionTitle}>Predicted syndrome</Text>
+          {topSyndrome ? (
+            <>
+              <Text style={styles.reportPrimaryName}>{bilingualDisplayName(topSyndrome)}</Text>
+              <Text style={styles.reportBodyText}>
+                {syndromeDescriptionText(topSyndrome.description)}
+              </Text>
+              <View style={styles.reportSignalBlock}>
+                <Text style={styles.reportMeta}>Key pattern signals</Text>
+                <View style={styles.reportInlineList}>
+                  {keyConcepts.map((concept) => (
+                    <Text key={`report-signal-${concept.id}`} style={styles.reportInlineItem}>
+                      {titleCaseLabel(concept.label)}
+                    </Text>
+                  ))}
+                </View>
+              </View>
+            </>
+          ) : null}
+        </View>
+
+        <View style={styles.reportSection}>
+          <Text style={styles.reportSectionTitle}>Herb recommendations</Text>
+          {topHerbs.map((herb, index) => (
+            <View key={`review-${herb.herb_id}`} style={styles.reportHerbItem}>
+              <Text style={styles.reportHerbName}>
+                {index + 1}. {bilingualDisplayName(herb)}
+              </Text>
+              <Text style={styles.reportBodyText}>{herb.description}</Text>
+              {herb.target_concepts.length > 0 ? (
+                <Text style={styles.reportMeta}>
+                  Targets: {herb.target_concepts.map(titleCaseLabel).join(', ')}
+                </Text>
+              ) : null}
             </View>
           ))}
         </View>
-
-        <Text style={styles.sectionSubtitle}>Top Syndrome</Text>
-        {topSyndrome ? <TopSyndrome syndrome={topSyndrome} /> : null}
-
-        <KeySignalSummary concepts={prediction.concepts} />
-
-        <Text style={styles.sectionSubtitle}>Top Herb Recommendations</Text>
-        {topHerbs.map((herb) => (
-          <HerbRow key={`review-${herb.herb_id}`} herb={herb} />
-        ))}
       </View>
 
       <StepNavigation
@@ -1083,9 +1131,11 @@ function OtherSyndromeCard({ syndrome }: { syndrome: SyndromePrediction }) {
         <Text style={styles.otherSyndromeName}>{bilingualDisplayName(syndrome)}</Text>
       </Animated.View>
       <Animated.View style={[styles.otherSyndromeFace, styles.otherSyndromeBackFace, backStyle]}>
-        <Text style={styles.otherSyndromeDescription}>
-          {syndromeDescriptionText(syndrome.description)}
-        </Text>
+        <ScrollView style={styles.otherSyndromeDescriptionScroller}>
+          <Text style={styles.otherSyndromeDescription}>
+            {syndromeDescriptionText(syndrome.description)}
+          </Text>
+        </ScrollView>
       </Animated.View>
     </Pressable>
   );
@@ -1124,11 +1174,23 @@ function SyndromeExplanationSummary({ prediction }: { prediction: PredictionResp
         pattern directions that most shaped this result.
       </Text>
 
-      <Text style={[styles.sectionSubtitle, styles.radarHeading]}>Eight Principle Signals</Text>
-      <ConceptRadarChart concepts={prediction.concepts} axes={EIGHT_PRINCIPLE_AXES} />
+      <View style={styles.radarPair}>
+        <View style={styles.radarPairItem}>
+          <Text style={[styles.sectionSubtitle, styles.radarHeading]}>
+            Eight Principle Signals
+          </Text>
+          <View style={styles.eightPrinciplesChartLift}>
+            <ConceptRadarChart concepts={prediction.concepts} axes={EIGHT_PRINCIPLE_AXES} compact />
+          </View>
+        </View>
 
-      <Text style={[styles.sectionSubtitle, styles.radarHeading]}>Five Element Signals</Text>
-      <ConceptRadarChart concepts={prediction.concepts} axes={FIVE_ELEMENT_AXES} />
+        <View style={styles.radarPairItem}>
+          <Text style={[styles.sectionSubtitle, styles.radarHeading]}>Five Element Signals</Text>
+          <View style={styles.fiveElementChartLift}>
+            <ConceptRadarChart concepts={prediction.concepts} axes={FIVE_ELEMENT_AXES} compact />
+          </View>
+        </View>
+      </View>
     </View>
   );
 }
@@ -1157,12 +1219,302 @@ function KeySignalSummary({ concepts }: { concepts: ConceptScore[] }) {
   );
 }
 
+function downloadPredictionPdf(
+  prediction: PredictionResponse,
+  selectedSymptoms: SymptomGroup[],
+) {
+  if (typeof document === 'undefined' || typeof URL === 'undefined') {
+    return;
+  }
+
+  const pdfText = createSummaryReportPdf(prediction, selectedSymptoms);
+  const blob = new Blob([pdfText], { type: 'application/pdf' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `tcmnet-summary-report-${new Date().toISOString().slice(0, 10)}.pdf`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+
+function createSummaryReportPdf(
+  prediction: PredictionResponse,
+  selectedSymptoms: SymptomGroup[],
+) {
+  const topSyndrome = prediction.syndromes[0];
+  const topHerbs = prediction.herbs.slice(0, 3);
+  const keyConcepts = [...prediction.concepts]
+    .filter((concept) => concept.id.toLowerCase() !== 'reproductive')
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5)
+    .map((concept) => titleCaseLabel(concept.label));
+  const content = buildSummaryReportContent({
+    symptoms: selectedSymptoms.map((symptom) => symptom.label),
+    syndromeName: topSyndrome ? englishDisplayName(topSyndrome) : 'No syndrome predicted',
+    syndromeDescription: topSyndrome ? syndromeDescriptionText(topSyndrome.description) : '',
+    keyConcepts,
+    herbs: topHerbs,
+    concepts: prediction.concepts,
+  });
+  return createMultiPagePdf(content);
+}
+
+function wrapReportText(text: string, maxLength: number) {
+  const words = text.split(/\s+/).filter(Boolean);
+  const lines: string[] = [];
+  let line = '';
+
+  for (const word of words) {
+    const nextLine = line ? `${line} ${word}` : word;
+    if (nextLine.length > maxLength && line) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = nextLine;
+    }
+  }
+
+  if (line) {
+    lines.push(line);
+  }
+
+  return lines;
+}
+
+type PdfReportData = {
+  symptoms: string[];
+  syndromeName: string;
+  syndromeDescription: string;
+  keyConcepts: string[];
+  herbs: HerbRecommendation[];
+  concepts: ConceptScore[];
+};
+
+function createMultiPagePdf(pageContents: string[]) {
+  const objects: string[] = [];
+  objects.push('<< /Type /Catalog /Pages 2 0 R >>');
+  const pageObjectIds = pageContents.map((_, index) => 3 + index * 2);
+  objects.push(
+    `<< /Type /Pages /Kids [${pageObjectIds.map((id) => `${id} 0 R`).join(' ')}] /Count ${pageContents.length} >>`,
+  );
+  pageContents.forEach((content, index) => {
+    const pageObjectId = 3 + index * 2;
+    const contentObjectId = pageObjectId + 1;
+    objects.push(
+      `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> >> >> /Contents ${contentObjectId} 0 R >>`,
+    );
+    objects.push(`<< /Length ${content.length} >>\nstream\n${content}\nendstream`);
+  });
+
+  let pdf = '%PDF-1.4\n';
+  const offsets = [0];
+  objects.forEach((object, index) => {
+    offsets.push(pdf.length);
+    pdf += `${index + 1} 0 obj\n${object}\nendobj\n`;
+  });
+
+  const xrefStart = pdf.length;
+  pdf += `xref\n0 ${objects.length + 1}\n0000000000 65535 f \n`;
+  for (const offset of offsets.slice(1)) {
+    pdf += `${String(offset).padStart(10, '0')} 00000 n \n`;
+  }
+  pdf += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xrefStart}\n%%EOF`;
+  return pdf;
+}
+
+function buildSummaryReportContent(report: PdfReportData) {
+  const pages: string[][] = [[]];
+  const green = '0.1059 0.3686 0.2275';
+  const softGreen = '0.4196 0.7490 0.5412';
+  const mutedGreen = '0.4588 0.6157 0.5059';
+  const black = '0 0 0';
+  let y = 708;
+
+  function currentPage() {
+    return pages[pages.length - 1];
+  }
+
+  function addPage() {
+    pages.push([]);
+    y = 720;
+  }
+
+  function ensureSpace(height: number) {
+    if (y - height < 58) {
+      addPage();
+    }
+  }
+
+  function drawText(text: string, x: number, size: number, bold: boolean, color: string, lineHeight: number) {
+    currentPage().push(pdfText(text, x, y, size, bold, color));
+    y -= lineHeight;
+  }
+
+  function drawSectionTitle(title: string) {
+    ensureSpace(40);
+    drawText(title, 72, 16, true, green, 26);
+  }
+
+  currentPage().push(`${green} rg`, `${green} RG`);
+  drawText('TCMNet', 72, 18, true, green, 44);
+  drawText('Summary Report', 72, 46, true, green, 34);
+  drawText(`Generated ${reportDateLabel()}`, 72, 18, true, black, 42);
+
+  drawSectionTitle('Symptoms');
+  wrapReportText(pdfSafeText(report.symptoms.join('  |  ')) || 'No symptoms selected', 88).forEach((line) => {
+    drawText(line, 72, 11, false, black, 15);
+  });
+  y -= 18;
+
+  drawSectionTitle('Predicted Syndrome');
+  drawText(report.syndromeName, 72, 14, true, green, 20);
+  wrapReportText(report.syndromeDescription, 88).forEach((line) => {
+    drawText(line, 72, 11, false, black, 15);
+  });
+  y -= 12;
+
+  ensureSpace(44);
+  drawText('Key pattern signals', 72, 12, true, green, 20);
+  wrapReportText(report.keyConcepts.join('  |  '), 88).forEach((line) => {
+    drawText(line, 72, 12, false, black, 16);
+  });
+  y -= 18;
+
+  drawSectionTitle('Herb Recommendations');
+  report.herbs.slice(0, 3).forEach((herb, index) => {
+    const descriptionLines = wrapReportText(herb.description, 88);
+    const targetLines = herb.target_concepts.length > 0
+      ? wrapReportText(`Targets: ${herb.target_concepts.map(titleCaseLabel).join(', ')}`, 88)
+      : [];
+    ensureSpace(22 + (descriptionLines.length + targetLines.length) * 14 + 12);
+    drawText(`${index + 1}. ${englishDisplayName(herb)}`, 92, 11, true, black, 15);
+    descriptionLines.forEach((line) => {
+      drawText(line, 116, 11, false, black, 14);
+    });
+    targetLines.forEach((line) => {
+      drawText(line, 116, 11, false, black, 14);
+    });
+    y -= 8;
+  });
+
+  ensureSpace(170);
+  const chartTitleY = y;
+  currentPage().push(pdfText('Eight Principle Signals', 124, chartTitleY, 12, true, green));
+  currentPage().push(pdfText('Five Element Signals', 348, chartTitleY, 12, true, green));
+  currentPage().push(
+    buildPdfRadarChart(report.concepts, EIGHT_PRINCIPLE_AXES, 190, chartTitleY - 82, 48, green, softGreen, mutedGreen),
+  );
+  currentPage().push(
+    buildPdfRadarChart(report.concepts, FIVE_ELEMENT_AXES, 410, chartTitleY - 82, 48, green, softGreen, mutedGreen),
+  );
+
+  return pages.map((page) => page.join('\n'));
+}
+
+function pdfText(text: string, x: number, y: number, size: number, bold: boolean, color: string) {
+  const font = bold ? 'F2' : 'F1';
+  return `BT\n${color} rg\n/${font} ${size} Tf\n${x} ${y} Td\n(${escapePdfText(pdfSafeText(text))}) Tj\nET`;
+}
+
+function buildPdfRadarChart(
+  concepts: ConceptScore[],
+  axes: ConceptAxis[],
+  centerX: number,
+  centerY: number,
+  radius: number,
+  green: string,
+  softGreen: string,
+  mutedGreen: string,
+) {
+  const scoreByKey = new Map<string, number>();
+  concepts.forEach((concept) => {
+    scoreByKey.set(concept.id.toLowerCase(), concept.score);
+    scoreByKey.set(concept.label.toLowerCase(), concept.score);
+  });
+  const points = axes.map((axis, index) => {
+    const angle = Math.PI / 2 - (2 * Math.PI * index) / axes.length;
+    const score = Math.max(
+      0,
+      Math.min(scoreByKey.get((axis.sourceKey || axis.key).toLowerCase()) ?? 0, 1),
+    );
+    return {
+      axis,
+      x: centerX + Math.cos(angle) * radius * score,
+      y: centerY + Math.sin(angle) * radius * score,
+      axisX: centerX + Math.cos(angle) * radius,
+      axisY: centerY + Math.sin(angle) * radius,
+      labelX: centerX + Math.cos(angle) * (radius + 16),
+      labelY: centerY + Math.sin(angle) * (radius + 16),
+    };
+  });
+  const grid = [0.33, 0.66, 1]
+    .map((level) => {
+      const gridPoints = axes.map((_, index) => {
+        const angle = Math.PI / 2 - (2 * Math.PI * index) / axes.length;
+        return [centerX + Math.cos(angle) * radius * level, centerY + Math.sin(angle) * radius * level];
+      });
+      return `${mutedGreen} RG 0.5 w ${pdfPolygonPath(gridPoints)} S`;
+    })
+    .join('\n');
+  const spokes = points
+    .map((point) => `${mutedGreen} RG 0.4 w ${centerX} ${centerY} m ${point.axisX} ${point.axisY} l S`)
+    .join('\n');
+  const areaPoints = points.map((point) => [point.x, point.y]);
+  const labels = points
+    .map((point) => {
+      const anchorOffset = point.labelX < centerX - 4 ? -estimatePdfLabelWidth(point.axis.label) : point.labelX > centerX + 4 ? 0 : -estimatePdfLabelWidth(point.axis.label) / 2;
+      return pdfText(point.axis.label, point.labelX + anchorOffset, point.labelY - 3, 7, true, green);
+    })
+    .join('\n');
+
+  return [
+    grid,
+    spokes,
+    `${softGreen} rg ${green} RG 1 w ${pdfPolygonPath(areaPoints)} B`,
+    ...points.map(
+      (point) =>
+        `${green} rg ${formatPdfNumber(point.x - 2)} ${formatPdfNumber(point.y - 2)} 4 4 re f`,
+    ),
+    labels,
+  ].join('\n');
+}
+
+function pdfPolygonPath(points: number[][]) {
+  return points
+    .map(([x, y], index) => `${formatPdfNumber(x)} ${formatPdfNumber(y)} ${index === 0 ? 'm' : 'l'}`)
+    .join(' ') + ' h';
+}
+
+function estimatePdfLabelWidth(text: string) {
+  return text.length * 4.2;
+}
+
+function formatPdfNumber(value: number) {
+  return Number(value.toFixed(2));
+}
+
+function pdfSafeText(text: string) {
+  return text
+    .normalize('NFKD')
+    .replace(/[^\x20-\x7E]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function escapePdfText(text: string) {
+  return text.replace(/\\/g, '\\\\').replace(/\(/g, '\\(').replace(/\)/g, '\\)');
+}
+
 function ConceptRadarChart({
   concepts,
   axes,
+  compact,
 }: {
   concepts: ConceptScore[];
   axes: ConceptAxis[];
+  compact?: boolean;
 }) {
   const [hoveredAxis, setHoveredAxis] = useState<ConceptAxis | null>(null);
   const scoreByKey = useMemo(() => {
@@ -1174,15 +1526,15 @@ function ConceptRadarChart({
     return scores;
   }, [concepts]);
 
-  const size = 280;
-  const viewWidth = 720;
-  const viewHeight = 480;
+  const size = compact ? 220 : 280;
+  const viewWidth = compact ? 430 : 720;
+  const viewHeight = compact ? 330 : 480;
   const center = size / 2;
   const offsetX = (viewWidth - size) / 2;
   const offsetY = (viewHeight - size) / 2;
   const chartCenterX = offsetX + center;
   const chartCenterY = offsetY + center;
-  const radius = 96;
+  const radius = compact ? 72 : 96;
   const gridLevels = [0.25, 0.5, 0.75, 1];
   const chartPoints = axes.map((axis, index) => {
     const angle = -Math.PI / 2 + (2 * Math.PI * index) / axes.length;
@@ -1200,25 +1552,13 @@ function ConceptRadarChart({
       labelWidth: estimateSvgTextWidth(axis.label, 12, 800),
       x: chartCenterX + Math.cos(angle) * radius * score,
       y: chartCenterY + Math.sin(angle) * radius * score,
-      labelX: chartCenterX + Math.cos(angle) * (radius + 30),
-      labelY: chartCenterY + Math.sin(angle) * (radius + 30),
+      labelX: chartCenterX + Math.cos(angle) * (radius + (compact ? 24 : 30)),
+      labelY: chartCenterY + Math.sin(angle) * (radius + (compact ? 24 : 30)),
       axisX: chartCenterX + Math.cos(angle) * radius,
       axisY: chartCenterY + Math.sin(angle) * radius,
     };
   });
   const polygonPoints = chartPoints.map((point) => `${point.x},${point.y}`).join(' ');
-  const hoveredPoint = hoveredAxis
-    ? chartPoints.find((point) => point.axis.key === hoveredAxis.key)
-    : null;
-  const labelCallout =
-    hoveredPoint && hoveredAxis
-      ? labelCalloutPlacement(hoveredAxis, hoveredPoint, viewWidth, viewHeight)
-      : null;
-  const calloutLines =
-    hoveredAxis && labelCallout
-      ? wrapSvgText(hoveredAxis.description, labelCallout.maxLineLength).slice(0, 4)
-      : [];
-
   return (
     <View style={styles.radarCard}>
       {createElement(
@@ -1298,155 +1638,18 @@ function ConceptRadarChart({
               point.axis.label,
             ),
           ),
-          hoveredPoint && labelCallout
-            ? createElement('line', {
-                key: 'hover-callout-line',
-                x1: labelCallout.lineStartX,
-                y1: labelCallout.lineStartY,
-                x2: labelCallout.lineEndX,
-                y2: labelCallout.lineEndY,
-                stroke: '#2E7D5C',
-                strokeWidth: 1.5,
-                strokeOpacity: 0.78,
-              })
-            : null,
-          hoveredAxis
-            ? createElement(
-                'text',
-                {
-                  key: 'hover-callout-text',
-                  x: labelCallout?.textX ?? viewWidth / 2,
-                  y: labelCallout?.textY ?? viewHeight / 2,
-                  textAnchor: labelCallout?.textAnchor ?? 'middle',
-                  dominantBaseline: labelCallout?.dominantBaseline ?? 'middle',
-                  fill: '#111111',
-                  fontSize: 11,
-                  fontWeight: 500,
-                },
-                calloutLines.map((line, index) =>
-                  createElement(
-                    'tspan',
-                    {
-                      key: `callout-line-${index}`,
-                      x: labelCallout?.textX ?? viewWidth / 2,
-                      dy: index === 0 ? 0 : 14,
-                    },
-                    line,
-                  ),
-                ),
-              )
-            : null,
         ],
       )}
+      <View style={styles.radarTooltipSlot}>
+        {hoveredAxis ? (
+          <View style={styles.radarTooltipPanel}>
+            <Text style={styles.radarTooltipTitle}>{hoveredAxis.label}</Text>
+            <Text style={styles.radarTooltipBody}>{hoveredAxis.description}</Text>
+          </View>
+        ) : null}
+      </View>
     </View>
   );
-}
-
-function wrapSvgText(text: string, maxLength: number) {
-  const words = text.split(' ');
-  const lines: string[] = [];
-  let line = '';
-
-  for (const word of words) {
-    const nextLine = line ? `${line} ${word}` : word;
-    if (nextLine.length > maxLength && line) {
-      lines.push(line);
-      line = word;
-    } else {
-      line = nextLine;
-    }
-  }
-
-  if (line) {
-    lines.push(line);
-  }
-
-  return lines;
-}
-
-function labelCalloutPlacement(
-  axis: ConceptAxis,
-  point: { labelX: number; labelY: number; labelWidth: number },
-  viewWidth: number,
-  viewHeight: number,
-) {
-  const direction = conceptCalloutDirection(axis.key);
-  const key = axis.key.toLowerCase();
-  const sideTextYOffset =
-    key === 'earth' || key === 'water'
-      ? -46
-      : key === 'metal' || key === 'fire'
-        ? 52
-        : 0;
-  const sideTextY = Math.max(54, Math.min(viewHeight - 46, point.labelY + sideTextYOffset));
-
-  if (direction === 'up') {
-    const textY = Math.max(22, point.labelY - 104);
-    const lineEndY = point.labelY - 32;
-    return {
-      textX: point.labelX,
-      textY,
-      textAnchor: 'middle',
-      dominantBaseline: 'middle',
-      lineStartX: point.labelX,
-      lineStartY: point.labelY - 16,
-      lineEndX: point.labelX,
-      lineEndY,
-      maxLineLength: 34,
-    };
-  }
-
-  if (direction === 'down') {
-    const textY = Math.min(viewHeight - 28, point.labelY + 104);
-    const lineEndY = point.labelY + 34;
-    return {
-      textX: point.labelX,
-      textY,
-      textAnchor: 'middle',
-      dominantBaseline: 'middle',
-      lineStartX: point.labelX,
-      lineStartY: point.labelY + 16,
-      lineEndX: point.labelX,
-      lineEndY,
-      maxLineLength: 34,
-    };
-  }
-
-  if (direction === 'left') {
-    const labelLeftX = point.labelX - point.labelWidth;
-    const lineStartX = labelLeftX - 3;
-    const textX = Math.max(44, lineStartX - 122);
-    const lineEndX = textX + 3;
-    const lineEndY = sideTextY;
-    return {
-      textX,
-      textY: sideTextY,
-      textAnchor: 'end',
-      dominantBaseline: 'middle',
-      lineStartX,
-      lineStartY: point.labelY,
-      lineEndX,
-      lineEndY,
-      maxLineLength: 30,
-    };
-  }
-
-  const labelRightX = point.labelX + point.labelWidth;
-  const lineStartX = labelRightX + 3;
-  const textX = Math.min(viewWidth - 44, lineStartX + 122);
-  const lineEndX = textX - 3;
-  const lineEndY = sideTextY;
-  return {
-    textX,
-    textY: sideTextY,
-    textAnchor: 'start',
-    dominantBaseline: 'middle',
-    lineStartX,
-    lineStartY: point.labelY,
-    lineEndX,
-    lineEndY,
-    maxLineLength: 30,
-  };
 }
 
 function estimateSvgTextWidth(text: string, fontSize: number, fontWeight: number) {
@@ -1472,20 +1675,6 @@ function estimateSvgTextWidth(text: string, fontSize: number, fontWeight: number
   return text.length * fontSize * weightFactor;
 }
 
-function conceptCalloutDirection(key: string) {
-  const normalizedKey = key.toLowerCase();
-  if (normalizedKey === 'yin' || normalizedKey === 'wood') {
-    return 'up';
-  }
-  if (normalizedKey === 'cold') {
-    return 'down';
-  }
-  if (['excess', 'deficiency', 'heat', 'earth', 'metal'].includes(normalizedKey)) {
-    return 'left';
-  }
-  return 'right';
-}
-
 const colors = {
   mint: '#A8D5BA',
   green: '#6BBF8A',
@@ -1503,6 +1692,7 @@ const colors = {
 };
 
 const serifFont = 'Georgia';
+const sansSerifFont = 'Jakarta Sans, Arial, Helvetica, sans-serif';
 
 const styles = StyleSheet.create({
   safeArea: {
@@ -1806,6 +1996,122 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 20,
   },
+  reportPanel: {
+    padding: 24,
+    gap: 0,
+  },
+  reportHeader: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    gap: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.line,
+    paddingBottom: 18,
+    marginBottom: 2,
+  },
+  reportHeaderText: {
+    flex: 1,
+    minWidth: 240,
+    gap: 3,
+  },
+  reportEyebrow: {
+    color: colors.deepGreen,
+    fontSize: 12,
+    lineHeight: 16,
+    fontWeight: '900',
+  },
+  reportTitle: {
+    color: colors.text,
+    fontFamily: serifFont,
+    fontSize: 32,
+    lineHeight: 38,
+    fontWeight: '700',
+  },
+  reportDownloadButton: {
+    minHeight: 36,
+    borderRadius: 999,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.deepGreen,
+    paddingHorizontal: 14,
+    paddingVertical: 7,
+  },
+  reportDownloadButtonText: {
+    color: '#ffffff',
+    fontSize: 13,
+    lineHeight: 17,
+    fontWeight: '900',
+  },
+  reportSection: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#edf4ef',
+    paddingVertical: 18,
+    gap: 9,
+  },
+  reportSectionTitle: {
+    color: colors.deepGreen,
+    fontSize: 16,
+    lineHeight: 21,
+    fontWeight: '900',
+  },
+  reportPrimaryName: {
+    color: colors.text,
+    fontFamily: serifFont,
+    fontSize: 22,
+    lineHeight: 28,
+    fontWeight: '700',
+  },
+  reportBodyText: {
+    color: colors.text,
+    fontSize: 14,
+    lineHeight: 21,
+  },
+  reportList: {
+    gap: 6,
+  },
+  reportListItem: {
+    color: colors.text,
+    fontSize: 14,
+    lineHeight: 20,
+  },
+  reportInlineList: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  reportSignalBlock: {
+    gap: 7,
+    paddingTop: 4,
+  },
+  reportInlineItem: {
+    color: colors.text,
+    borderWidth: 1,
+    borderColor: '#c7dfcf',
+    backgroundColor: '#f1f8f4',
+    borderRadius: 999,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    fontSize: 13,
+    lineHeight: 17,
+    fontWeight: '800',
+  },
+  reportHerbItem: {
+    gap: 5,
+    paddingTop: 4,
+  },
+  reportHerbName: {
+    color: colors.text,
+    fontSize: 15,
+    lineHeight: 20,
+    fontWeight: '900',
+  },
+  reportMeta: {
+    color: colors.muted,
+    fontSize: 12,
+    lineHeight: 17,
+  },
   symptomComposer: {
     gap: 16,
   },
@@ -1906,11 +2212,6 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   quickAddPanel: {
-    borderWidth: 1,
-    borderColor: colors.line,
-    borderRadius: 8,
-    backgroundColor: '#fbfdfb',
-    padding: 14,
     gap: 10,
   },
   quickAddTitle: {
@@ -2058,16 +2359,16 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
   primaryButton: {
-    flexGrow: 1,
-    minHeight: 48,
-    minWidth: 190,
+    minHeight: 38,
+    minWidth: 154,
     borderRadius: 999,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: colors.deepGreen,
     borderWidth: 1,
     borderColor: colors.deepGreen,
-    paddingHorizontal: 16,
+    paddingHorizontal: 14,
+    paddingVertical: 8,
   },
   disabledButton: {
     backgroundColor: '#f4f8f5',
@@ -2078,10 +2379,23 @@ const styles = StyleSheet.create({
   },
   primaryButtonText: {
     color: '#ffffff',
-    fontSize: 15,
-    lineHeight: 19,
+    fontSize: 13,
+    lineHeight: 17,
     fontWeight: '900',
     textAlign: 'center',
+  },
+  clearTextButton: {
+    minHeight: 38,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 6,
+  },
+  clearTextButtonText: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 17,
+    fontWeight: '800',
+    textDecorationLine: 'underline',
   },
   secondaryButton: {
     minHeight: 48,
@@ -2215,6 +2529,10 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
   },
+  otherSyndromeDescriptionScroller: {
+    width: '100%',
+    maxHeight: '100%',
+  },
   otherSyndromeName: {
     color: colors.text,
     fontFamily: serifFont,
@@ -2227,12 +2545,35 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontSize: 13,
     lineHeight: 19,
-    fontWeight: '700',
+    fontWeight: '400',
   },
   radarHeading: {
     textAlign: 'center',
     alignSelf: 'center',
     width: '100%',
+  },
+  radarPair: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    gap: 12,
+    marginTop: 8,
+  },
+  radarPairItem: {
+    flexBasis: 360,
+    flexGrow: 1,
+    maxWidth: 500,
+    minWidth: 300,
+  },
+  eightPrinciplesHeading: {
+    marginTop: 20,
+  },
+  eightPrinciplesChartLift: {
+    marginTop: -10,
+  },
+  fiveElementChartLift: {
+    marginTop: -10,
   },
   compactRow: {
     flexDirection: 'row',
@@ -2308,5 +2649,35 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     paddingVertical: 4,
+  },
+  radarTooltipSlot: {
+    width: '100%',
+    minHeight: 72,
+    alignItems: 'center',
+    marginTop: -8,
+  },
+  radarTooltipPanel: {
+    width: '92%',
+    maxWidth: 360,
+    borderLeftWidth: 2,
+    borderLeftColor: colors.forest,
+    paddingLeft: 10,
+    paddingRight: 8,
+    paddingVertical: 4,
+  },
+  radarTooltipTitle: {
+    color: colors.deepGreen,
+    fontFamily: serifFont,
+    fontSize: 14,
+    lineHeight: 18,
+    fontWeight: '700',
+  },
+  radarTooltipBody: {
+    color: '#111111',
+    fontFamily: sansSerifFont,
+    fontSize: 12,
+    lineHeight: 17,
+    fontWeight: '400',
+    marginTop: 2,
   },
 });

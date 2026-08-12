@@ -19,6 +19,8 @@ SYMPTOM_ENGLISH_FILE = (
 )
 SYNDROME_ENGLISH_OVERRIDES = {
     "SMSY00055": "fluid-blood imbalance",
+    "SMSY00056": "fluid-blood insufficiency",
+    "SMSY00119": "blood stasis swelling and pain",
     "SMSY00132": "cold in the channels",
 }
 
@@ -48,6 +50,7 @@ ORGAN_MEANINGS = {
     "spleen": "digestion, energy production, and the body's ability to transform fluids",
     "liver": "the smooth movement of qi, blood, and emotions",
     "heart": "circulation, spirit, sleep, and mental-emotional steadiness",
+    "cardiac": "circulation, spirit, sleep, and mental-emotional steadiness",
     "lung": "breathing, protective qi, skin, and fluid movement",
     "stomach": "digestion and the downward movement of food and fluids",
     "gallbladder": "the gallbladder channel and the movement of bile or constrained heat",
@@ -55,22 +58,60 @@ ORGAN_MEANINGS = {
 }
 
 PATTERN_MEANINGS = {
+    "accumulation": "material or functional buildup that is not moving or transforming well",
+    "accumulated": "material or functional buildup that is not moving or transforming well",
+    "air": "qi strength and movement",
     "qi": "qi movement or qi strength",
     "blood": "blood nourishment, movement, or stagnation",
+    "body fluid": "the nourishment and movement of fluids",
     "yin": "cooling, moistening, and nourishing aspects of the body",
     "yang": "warming, activating, and transforming aspects of the body",
     "cold": "cold signs such as chilliness, slow movement, or cold pain",
     "heat": "heat signs such as fever, inflammation, thirst, or irritability",
     "fever": "heat signs such as fever, inflammation, thirst, or irritability",
+    "febrile": "heat signs such as fever, inflammation, thirst, or irritability",
+    "warm": "heat signs that may enter deeper levels of the body",
+    "humidity": "dampness with heat or heavy, turbid symptoms",
     "dampness": "heaviness, swelling, discharge, or sluggish fluid movement",
     "damp": "heaviness, swelling, discharge, or sluggish fluid movement",
+    "fluid": "fluid movement, retention, or depletion",
     "phlegm": "thick fluids, mucus, nodules, cloudiness, or obstructed movement",
+    "sputum": "phlegm or mucus that is difficult to clear",
     "wind": "moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset",
     "fire": "intense heat signs such as inflammation, agitation, bleeding, or burning pain",
+    "dry": "dryness signs such as dry cough, dry stool, thirst, or depleted fluids",
+    "dryness": "dryness signs such as dry cough, dry stool, thirst, or depleted fluids",
     "deficiency": "an underlying weakness or lack of nourishment, warmth, or functional energy",
+    "weakness": "an underlying weakness or lack of nourishment, warmth, or functional energy",
+    "asthenia": "an underlying weakness or lack of nourishment, warmth, or functional energy",
+    "debility": "weakness after chronic illness or prolonged depletion",
+    "consumptive": "long-running deficiency with fatigue, wasting, or depleted reserves",
+    "prostration": "a severe collapse-like deficiency state with loss of functional strength",
+    "depression": "constrained or depressed movement of qi, often affecting mood, rib-side tension, or digestion",
     "excess": "a stronger obstructive pattern where something is stuck, accumulated, or overactive",
     "stagnation": "blocked movement, often linked with distension, pain, or emotional constraint",
     "stasis": "slowed or blocked blood movement, often linked with fixed or sharp pain",
+    "congestion": "blocked or congested movement of blood, fluids, or qi",
+    "retention": "something lingering or collecting rather than clearing normally",
+    "indigestion": "poor food transformation with fullness, distension, belching, nausea, or diarrhea",
+    "dyspepsia": "poor food transformation with fullness, distension, belching, nausea, or diarrhea",
+    "food": "food retention or poor transformation after eating",
+    "strain": "overuse or taxation that weakens qi, blood, muscles, or channels",
+    "sprain": "traumatic channel injury with pain, swelling, or impaired movement",
+    "external": "a surface-level invasion affecting protective qi",
+    "externally": "a surface-level invasion affecting protective qi",
+    "infected": "an externally contracted pattern affecting protective qi",
+    "alcohol": "alcohol-related heat, dampness, toxin, or digestive injury",
+    "toxin": "toxic heat or irritant accumulation that can disturb normal function",
+    "parasitic": "parasitic accumulation that may cause abdominal pain or digestive disruption",
+    "parasite": "parasitic accumulation that may cause abdominal pain or digestive disruption",
+    "amenorrhea": "menstrual blockage or lack of menstrual flow",
+    "dysentery": "intestinal disturbance with diarrhea, urgency, mucus, or blood",
+    "diarrhea": "intestinal disturbance with loose stools or poor transformation",
+    "distention": "fullness, pressure, or swelling from stagnation or accumulation",
+    "distending": "fullness, pressure, or swelling from stagnation or accumulation",
+    "hypochondrium": "rib-side or flank discomfort often linked with constrained flow",
+    "camp": "deeper heat affecting nutritive or blood-level function",
 }
 
 PATTERN_DETAILS = {
@@ -119,8 +160,12 @@ PATTERN_DETAILS = {
         "or a sluggish stuck feeling"
     ),
     "phlegm": (
-        "phlegm in TCM can mean visible mucus or a broader pattern of thick fluids, "
+        "phlegm can mean visible mucus or a broader pattern of thick fluids, "
         "cloudiness, nodules, dizziness, nausea, or obstruction"
+    ),
+    "sputum": (
+        "sputum points to phlegm or mucus accumulation, especially with cough, chest "
+        "fullness, throat obstruction, nausea, or heaviness"
     ),
     "wind": (
         "wind often points to symptoms that move, change quickly, or involve shaking, "
@@ -145,6 +190,138 @@ PATTERN_DETAILS = {
     "stasis": (
         "stasis means blood movement is slowed or blocked, often linked with fixed, "
         "sharp, or persistent pain"
+    ),
+    "accumulation": (
+        "accumulation suggests that food, fluids, blood, or other material is collecting "
+        "instead of moving, transforming, or clearing normally"
+    ),
+    "retention": (
+        "retention suggests that food, fluid, phlegm, or another substance is lingering "
+        "rather than being transformed and cleared"
+    ),
+    "food": (
+        "food retention often shows up as abdominal fullness, distension, belching, "
+        "nausea, sour regurgitation, poor appetite, loose stool, or diarrhea after eating"
+    ),
+    "indigestion": (
+        "indigestion points to poor transformation of food, often with fullness, bloating, "
+        "belching, nausea, or irregular stool"
+    ),
+    "dyspepsia": (
+        "dyspepsia points to poor transformation of food, often with fullness, bloating, "
+        "belching, nausea, or irregular stool"
+    ),
+    "febrile": (
+        "febrile patterns emphasize heat signs such as fever, thirst, irritability, "
+        "restlessness, delirium, or injury to fluids"
+    ),
+    "warm": (
+        "warm disease language points to heat entering more deeply, where it may disturb "
+        "fluids, consciousness, or blood-level function"
+    ),
+    "humidity": (
+        "damp-heat or humid-warm patterns often combine heaviness, digestive upset, fever, "
+        "sticky discharge, or a turbid stuck feeling"
+    ),
+    "dryness": (
+        "dryness may appear as dry cough, dry throat, dry stool, thirst, or signs that "
+        "body fluids are insufficient"
+    ),
+    "dry": (
+        "dryness may appear as dry cough, dry throat, dry stool, thirst, or signs that "
+        "body fluids are insufficient"
+    ),
+    "body fluid": (
+        "fluid injury may show up as thirst, dryness, scant fluids, dry stool, or heat "
+        "signs that consume fluids"
+    ),
+    "congestion": (
+        "congestion means movement is obstructed, which may cause fixed pain, swelling, "
+        "distension, or menstrual blockage"
+    ),
+    "strain": (
+        "strain and overwork can tax qi, blood, muscles, and channels, leading to pain, "
+        "weakness, fatigue, or reduced recovery"
+    ),
+    "sprain": (
+        "sprain patterns point to traumatic channel injury with pain, swelling, bruising, "
+        "or limited movement"
+    ),
+    "external": (
+        "external patterns affect the body's surface and protective qi, often with acute "
+        "onset, chills, fever, body aches, cough, or nasal symptoms"
+    ),
+    "externally": (
+        "external patterns affect the body's surface and protective qi, often with acute "
+        "onset, chills, fever, body aches, cough, or nasal symptoms"
+    ),
+    "infected": (
+        "externally contracted patterns affect the body's surface and protective qi, often "
+        "with acute onset, chills, fever, body aches, cough, or nasal symptoms"
+    ),
+    "debil": (
+        "long illness can deplete qi, blood, yin, or yang, leaving fatigue, weakness, "
+        "poor appetite, low resilience, or slow recovery"
+    ),
+    "consumptive": (
+        "consumptive patterns describe long-running depletion with fatigue, weakness, "
+        "weight loss, low reserves, or chronic deficiency signs"
+    ),
+    "weakness": (
+        "weakness may show up as fatigue, low resilience, poor appetite, shortness of "
+        "breath, spontaneous sweating, or reduced functional strength"
+    ),
+    "asthenia": (
+        "asthenia describes weakness or depleted functional strength, often with fatigue, "
+        "poor resilience, shortness of breath, or reduced organ-system support"
+    ),
+    "prostration": (
+        "prostration points to a severe collapse-like deficiency state, where functional "
+        "strength is very low and urgent support is implied in the source terminology"
+    ),
+    "alcohol": (
+        "alcohol-related patterns often involve dampness, heat, toxin, nausea, abdominal "
+        "discomfort, thirst, irritability, or injury to the digestive center"
+    ),
+    "toxin": (
+        "toxin language suggests a stronger irritant or heat accumulation that can disturb "
+        "digestion, consciousness, skin, or inflammatory signs"
+    ),
+    "parasitic": (
+        "parasitic accumulation may be associated with abdominal pain, digestive upset, "
+        "irregular appetite, distension, or stool changes"
+    ),
+    "amenorrhea": (
+        "amenorrhea points to menstrual flow being absent or blocked, often considered "
+        "through blood movement, blood nourishment, or stagnation patterns"
+    ),
+    "dysentery": (
+        "dysentery points to intestinal disturbance with diarrhea, urgency, mucus, blood, "
+        "or abdominal discomfort"
+    ),
+    "diarrhea": (
+        "diarrhea points to poor intestinal transformation or clearing, often with loose "
+        "stools, urgency, abdominal discomfort, dampness, cold, heat, or deficiency"
+    ),
+    "distention": (
+        "distention points to fullness or pressure from stagnation, accumulation, dampness, "
+        "or blocked movement"
+    ),
+    "distending": (
+        "distending pain points to pressure from constrained movement, often around the "
+        "flank, chest, abdomen, or channel pathway"
+    ),
+    "hypochondrium": (
+        "hypochondriac or flank pain often points to constrained movement around the rib-side "
+        "region, commonly framed through liver or gallbladder channel patterns"
+    ),
+    "depression": (
+        "depression in this pattern language usually means constrained qi movement rather "
+        "than only a modern mood diagnosis"
+    ),
+    "camp": (
+        "nutritive-level heat can disturb fluids, sleep, restlessness, consciousness, or "
+        "blood-level signs"
     ),
 }
 
@@ -173,7 +350,7 @@ def syndrome_description(english_name: str, chinese_name: str) -> str:
 
     if "phlegm" in lowered and "interior" in lowered:
         return (
-            f"In TCM, {name} describes a pattern where phlegm is understood to remain "
+            f"{name.capitalize()} describes a pattern where phlegm is understood to remain "
             "inside the body and obstruct normal movement of qi and fluids. Phlegm may "
             "refer to visible mucus, but it can also describe heaviness, cloudiness, "
             "nausea, dizziness, fullness, nodules, or a stuck sensation."
@@ -181,7 +358,7 @@ def syndrome_description(english_name: str, chinese_name: str) -> str:
 
     if "middle qi" in lowered:
         return (
-            "In TCM, this pattern means the central qi is weak and cannot hold or lift "
+            "This pattern means the central qi is weak and cannot hold or lift "
             "the body's functions well. It is often associated with fatigue, dizziness, "
             "abdominal heaviness, loose stools, or prolapse-like symptoms. The name points "
             "to a loss of upward support from the digestive center of the body."
@@ -189,36 +366,39 @@ def syndrome_description(english_name: str, chinese_name: str) -> str:
 
     if "wind-cold" in lowered or ("wind" in lowered and "cold" in lowered):
         return (
-            "In TCM, this pattern describes an external wind-cold invasion, often similar "
+            "This pattern describes an external wind-cold invasion, often similar "
             "to an early cold-like presentation. It may involve chills, aversion to cold, "
             "clear nasal discharge, headache, body aches, or cough. The emphasis is on an "
             "external pattern affecting the body's surface and protective qi."
         )
 
     detail_sentences = [PATTERN_DETAILS[term] for term in detail_terms[:3]]
+    detail_text = " ".join(
+        sentence.capitalize() + "." for sentence in detail_sentences
+    ).strip()
 
     if organ_meanings and pattern_meanings:
-        return (
-            f"In TCM, {name} describes a pattern involving {organ_meanings[0]} together "
-            f"with {', '.join(pattern_meanings[:2])}. "
-            f"{' '.join(sentence.capitalize() + '.' for sentence in detail_sentences)}"
+        description = (
+            f"{name.capitalize()} points to {organ_meanings[0]} together "
+            f"with {', '.join(pattern_meanings[:2])}."
         )
+        return f"{description} {detail_text}".strip()
 
     if pattern_meanings:
-        return (
-            f"In TCM, {name} describes a pattern involving {', '.join(pattern_meanings[:3])}. "
-            f"{' '.join(sentence.capitalize() + '.' for sentence in detail_sentences)}"
-        )
+        description = f"{name.capitalize()} points to {', '.join(pattern_meanings[:3])}."
+        return f"{description} {detail_text}".strip()
 
     if organ_meanings:
         return (
-            f"In TCM, {name} describes a pattern involving {organ_meanings[0]}. "
+            f"{name.capitalize()} points to {organ_meanings[0]}. "
             "The syndrome name points to the body system or region most associated "
             "with the symptom pattern."
         )
 
     return (
-        f"In TCM, {name} describes a recognized symptom pattern from the source data."
+        f"{name.capitalize()} is a traditional pattern label associated with {chinese_name}. "
+        "The name should be reviewed against the original terminology before using it as "
+        "a detailed explanatory label."
     )
 
 
