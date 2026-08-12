@@ -17,6 +17,10 @@ ARTIFACT_DIR = PROJECT_ROOT / "pipeline" / "artifacts"
 SYMPTOM_ENGLISH_FILE = (
     PROJECT_ROOT / "pipeline" / "data" / "processed" / "Symptom_English_Names.csv"
 )
+SYNDROME_ENGLISH_OVERRIDES = {
+    "SMSY00055": "fluid-blood imbalance",
+    "SMSY00132": "cold in the channels",
+}
 
 
 def read_json(path: Path):
@@ -172,8 +176,7 @@ def syndrome_description(english_name: str, chinese_name: str) -> str:
             f"In TCM, {name} describes a pattern where phlegm is understood to remain "
             "inside the body and obstruct normal movement of qi and fluids. Phlegm may "
             "refer to visible mucus, but it can also describe heaviness, cloudiness, "
-            "nausea, dizziness, fullness, nodules, or a stuck sensation. This is pattern "
-            "language for organizing symptoms, not a Western medical diagnosis."
+            "nausea, dizziness, fullness, nodules, or a stuck sensation."
         )
 
     if "middle qi" in lowered:
@@ -198,30 +201,24 @@ def syndrome_description(english_name: str, chinese_name: str) -> str:
         return (
             f"In TCM, {name} describes a pattern involving {organ_meanings[0]} together "
             f"with {', '.join(pattern_meanings[:2])}. "
-            f"{' '.join(sentence.capitalize() + '.' for sentence in detail_sentences)} "
-            "This description helps explain the pattern language behind the model's "
-            "syndrome prediction."
+            f"{' '.join(sentence.capitalize() + '.' for sentence in detail_sentences)}"
         )
 
     if pattern_meanings:
         return (
             f"In TCM, {name} describes a pattern involving {', '.join(pattern_meanings[:3])}. "
-            f"{' '.join(sentence.capitalize() + '.' for sentence in detail_sentences)} "
-            "This is a way of grouping related signs and symptoms into a traditional "
-            "pattern, not a Western medical diagnosis."
+            f"{' '.join(sentence.capitalize() + '.' for sentence in detail_sentences)}"
         )
 
     if organ_meanings:
         return (
             f"In TCM, {name} describes a pattern involving {organ_meanings[0]}. "
-            "The syndrome name is used to summarize a cluster of related signs and "
-            "symptoms in traditional pattern language."
+            "The syndrome name points to the body system or region most associated "
+            "with the symptom pattern."
         )
 
     return (
-        f"In TCM, {name} is a syndrome pattern used to summarize a cluster of related "
-        "signs and symptoms. It helps describe the model's predicted pattern in "
-        "traditional diagnostic language rather than as a Western medical diagnosis."
+        f"In TCM, {name} describes a recognized symptom pattern from the source data."
     )
 
 
@@ -321,9 +318,12 @@ def build_syndromes_metadata() -> list[dict[str, str]]:
     metadata_by_id = {}
     for _, row in source.iterrows():
         artifact_id = smsy_id(row["Syndrome_id"])
-        english_name = clean_label(
-            row.get("Syndrome_English"),
-            clean_label(row.get("Syndrome_name"), artifact_id),
+        english_name = SYNDROME_ENGLISH_OVERRIDES.get(
+            artifact_id,
+            clean_label(
+                row.get("Syndrome_English"),
+                clean_label(row.get("Syndrome_name"), artifact_id),
+            ),
         )
         chinese_name = clean_label(row.get("Syndrome_name"), artifact_id)
         metadata_by_id[artifact_id] = {

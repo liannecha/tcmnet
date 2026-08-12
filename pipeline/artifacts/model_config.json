@@ -40,7 +40,7 @@
     "deficiency"
   ],
   "training": {
-    "epochs": 1,
+    "epochs": 100,
     "batch_size": 64,
     "learning_rate": 0.001,
     "lambda_concept": 10.0,
@@ -50,9 +50,9 @@
     "validation_size": 1140
   },
   "metrics": {
-    "accuracy": 0.4421052631578947,
-    "top5_accuracy": 0.787719298245614,
-    "macro_f1": 0.3496838608006033,
-    "concept_mse": 0.02488579290608565
+    "accuracy": 0.8833333333333333,
+    "top5_accuracy": 0.9973684210526316,
+    "macro_f1": 0.8715217124526874,
+    "concept_mse": 0.0013477076879805988
   }
 }

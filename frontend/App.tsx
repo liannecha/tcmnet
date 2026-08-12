@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { createElement, useEffect, useMemo, useState } from 'react';
+import { createElement, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
+  Animated,
   Pressable,
   SafeAreaView,
   ScrollView,
@@ -74,6 +75,14 @@ function bilingualDisplayName(record: {
 }) {
   const englishName = englishDisplayName(record);
   return record.chinese_name ? `${englishName} / ${record.chinese_name}` : englishName;
+}
+
+function syndromeDescriptionText(description: string) {
+  return description
+    .replace(/This is a way of grouping related signs and symptoms.*?Western medical diagnosis\./g, '')
+    .replace(/This description helps explain the pattern language behind the model's syndrome prediction\./g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 type ConceptAxis = {
@@ -211,9 +220,7 @@ function LandingPage({ onStart }: { onStart: () => void }) {
   return (
     <ScrollView contentContainerStyle={styles.landingPage}>
       <View style={styles.hero}>
-        <Text style={styles.eyebrow}>DEEP LEARNING FOR TRADITIONAL MEDICINE</Text>
         <Text style={styles.heroTitle}>TCMNet</Text>
-        <Text style={styles.tagline}>Make pattern recognition clearer.</Text>
         <Text style={styles.heroCopy}>
           TCMNet turns selected symptoms into TCM syndrome predictions, herb
           recommendations, and a plain-language view of the pattern signals behind them.
@@ -507,25 +514,9 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
         ) : (
           <View style={[styles.assessmentGrid, !isWide && styles.assessmentGridStacked]}>
             <View style={styles.leftPanel}>
-              <SymptomPanel
-                title="Symptoms"
-                helperText="Adjust the symptom set and run the prediction again."
-                query={query}
-                setQuery={setQuery}
-                searchResults={searchResults}
-                trySymptoms={trySymptoms}
+              <SelectedSymptomsSidebar
                 selectedSymptoms={selectedSymptoms}
-                loadingSymptoms={loadingSymptoms}
-                predicting={predicting}
-                error={error}
-                isWide={false}
-                onAddSymptom={addSymptom}
-                onRemoveSymptom={removeSymptom}
-                onClear={clearSymptoms}
-                onPredict={runPrediction}
-                onSelectFirstResult={selectFirstSearchResult}
-                primaryLabel="Predict again"
-                compact
+                onStartOver={startOver}
               />
             </View>
             <View style={styles.rightPanel}>
@@ -609,7 +600,6 @@ type SymptomPanelProps = {
   onPredict: () => void;
   onSelectFirstResult: () => void;
   primaryLabel: string;
-  compact?: boolean;
   centered?: boolean;
 };
 
@@ -805,6 +795,42 @@ function SymptomPanel({
   );
 }
 
+function SelectedSymptomsSidebar({
+  selectedSymptoms,
+  onStartOver,
+}: {
+  selectedSymptoms: SymptomGroup[];
+  onStartOver: () => void;
+}) {
+  return (
+    <View style={styles.panel}>
+      <View style={styles.panelHeader}>
+        <Text style={styles.panelTitle}>Selected Symptoms</Text>
+        <Text style={styles.panelHelp}>{selectedSymptoms.length} symptoms included</Text>
+      </View>
+
+      <View style={styles.readOnlySelectedList}>
+        {selectedSymptoms.map((symptom) => (
+          <View key={symptom.key} style={styles.readOnlySymptomItem}>
+            <Text style={styles.readOnlySymptomText}>
+              {symptom.label}
+            </Text>
+          </View>
+        ))}
+      </View>
+
+      <View style={styles.sidebarActions}>
+        <Pressable
+          onPress={onStartOver}
+          style={({ pressed }) => [styles.stepSecondaryButton, pressed && styles.pressed]}
+        >
+          <Text style={styles.stepSecondaryButtonText}>Start over</Text>
+        </Pressable>
+      </View>
+    </View>
+  );
+}
+
 function ResultStage({
   prediction,
   selectedSymptoms,
@@ -854,16 +880,21 @@ function SyndromeResults({
 
   return (
     <View style={styles.resultsStack}>
-      <View style={styles.panel}>
-        <Text style={styles.panelTitle}>Best Syndrome Match</Text>
+      <View style={[styles.panel, styles.bestSyndromePanel]}>
+        <Text style={styles.bestSyndromeEyebrow}>Best Syndrome Match</Text>
         {topSyndrome ? <TopSyndrome syndrome={topSyndrome} /> : null}
       </View>
 
-      <View style={styles.panel}>
+      <View style={styles.plainPanel}>
         <Text style={styles.panelTitle}>Other Possible Syndromes</Text>
-        {visibleOtherSyndromes.map((syndrome) => (
-          <SyndromeRow key={`${syndrome.syndrome_id}-${syndrome.index}`} syndrome={syndrome} />
-        ))}
+        <View style={styles.otherSyndromeGrid}>
+          {visibleOtherSyndromes.map((syndrome) => (
+            <OtherSyndromeCard
+              key={`${syndrome.syndrome_id}-${syndrome.index}`}
+              syndrome={syndrome}
+            />
+          ))}
+        </View>
       </View>
 
       <SyndromeExplanationSummary prediction={prediction} />
@@ -989,25 +1020,74 @@ function StepNavigation({
 
 function TopSyndrome({ syndrome }: { syndrome: SyndromePrediction }) {
   return (
-    <View style={styles.topSyndromeBox}>
+    <View style={styles.topSyndromeContent}>
       <View style={styles.resultText}>
         <Text style={styles.topSyndromeLabel}>{bilingualDisplayName(syndrome)}</Text>
-        <Text style={styles.bodyText}>{syndrome.description}</Text>
+        <Text style={styles.bodyText}>{syndromeDescriptionText(syndrome.description)}</Text>
       </View>
     </View>
   );
 }
 
-function SyndromeRow({ syndrome }: { syndrome: SyndromePrediction }) {
+function OtherSyndromeCard({ syndrome }: { syndrome: SyndromePrediction }) {
+  const [showDescription, setShowDescription] = useState(false);
+  const flipValue = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.timing(flipValue, {
+      toValue: showDescription ? 1 : 0,
+      duration: 280,
+      useNativeDriver: true,
+    }).start();
+  }, [flipValue, showDescription]);
+
+  const frontStyle = {
+    opacity: flipValue.interpolate({
+      inputRange: [0, 0.45, 1],
+      outputRange: [1, 0, 0],
+    }),
+    transform: [
+      {
+        rotateY: flipValue.interpolate({
+          inputRange: [0, 1],
+          outputRange: ['0deg', '180deg'],
+        }),
+      },
+    ],
+  };
+  const backStyle = {
+    opacity: flipValue.interpolate({
+      inputRange: [0, 0.55, 1],
+      outputRange: [0, 0, 1],
+    }),
+    transform: [
+      {
+        rotateY: flipValue.interpolate({
+          inputRange: [0, 1],
+          outputRange: ['-180deg', '0deg'],
+        }),
+      },
+    ],
+  };
+
   return (
-    <View style={styles.compactRow}>
-      <View style={styles.resultText}>
-        <Text style={styles.resultLabel}>
-          {bilingualDisplayName(syndrome)}
+    <Pressable
+      onPress={() => setShowDescription((current) => !current)}
+      style={({ pressed }) => [
+        styles.otherSyndromeCard,
+        showDescription && styles.otherSyndromeCardFlipped,
+        pressed && styles.pressed,
+      ]}
+    >
+      <Animated.View style={[styles.otherSyndromeFace, frontStyle]}>
+        <Text style={styles.otherSyndromeName}>{bilingualDisplayName(syndrome)}</Text>
+      </Animated.View>
+      <Animated.View style={[styles.otherSyndromeFace, styles.otherSyndromeBackFace, backStyle]}>
+        <Text style={styles.otherSyndromeDescription}>
+          {syndromeDescriptionText(syndrome.description)}
         </Text>
-        <Text style={styles.finePrint}>{syndrome.description}</Text>
-      </View>
-    </View>
+      </Animated.View>
+    </Pressable>
   );
 }
 
@@ -1036,22 +1116,18 @@ function HerbRow({ herb }: { herb: HerbRecommendation }) {
 
 function SyndromeExplanationSummary({ prediction }: { prediction: PredictionResponse }) {
   return (
-    <View style={styles.panel}>
-      <Text style={styles.panelTitle}>Explanation Summary</Text>
+    <View style={styles.plainPanel}>
+      <Text style={styles.panelTitle}>Why this prediction</Text>
+      <Text style={styles.bodyText}>
+        TCMNet compares the selected symptoms with learned TCM pattern signals, then
+        ranks syndrome matches that best fit those signals. The diagrams below show the
+        pattern directions that most shaped this result.
+      </Text>
 
-      <View style={styles.whyCard}>
-        <Text style={styles.whyTitle}>Why this prediction?</Text>
-        <Text style={styles.bodyText}>
-          TCMNet compares the selected symptoms with learned TCM pattern signals, then
-          ranks syndrome matches that best fit those signals. The diagrams below show the
-          pattern directions that most shaped this result.
-        </Text>
-      </View>
-
-      <Text style={styles.sectionSubtitle}>Eight Principle Signals</Text>
+      <Text style={[styles.sectionSubtitle, styles.radarHeading]}>Eight Principle Signals</Text>
       <ConceptRadarChart concepts={prediction.concepts} axes={EIGHT_PRINCIPLE_AXES} />
 
-      <Text style={styles.sectionSubtitle}>Five Element Signals</Text>
+      <Text style={[styles.sectionSubtitle, styles.radarHeading]}>Five Element Signals</Text>
       <ConceptRadarChart concepts={prediction.concepts} axes={FIVE_ELEMENT_AXES} />
     </View>
   );
@@ -1099,7 +1175,13 @@ function ConceptRadarChart({
   }, [concepts]);
 
   const size = 280;
+  const viewWidth = 720;
+  const viewHeight = 480;
   const center = size / 2;
+  const offsetX = (viewWidth - size) / 2;
+  const offsetY = (viewHeight - size) / 2;
+  const chartCenterX = offsetX + center;
+  const chartCenterY = offsetY + center;
   const radius = 96;
   const gridLevels = [0.25, 0.5, 0.75, 1];
   const chartPoints = axes.map((axis, index) => {
@@ -1115,15 +1197,27 @@ function ConceptRadarChart({
       axis,
       score,
       angle,
-      x: center + Math.cos(angle) * radius * score,
-      y: center + Math.sin(angle) * radius * score,
-      labelX: center + Math.cos(angle) * (radius + 30),
-      labelY: center + Math.sin(angle) * (radius + 30),
-      axisX: center + Math.cos(angle) * radius,
-      axisY: center + Math.sin(angle) * radius,
+      labelWidth: estimateSvgTextWidth(axis.label, 12, 800),
+      x: chartCenterX + Math.cos(angle) * radius * score,
+      y: chartCenterY + Math.sin(angle) * radius * score,
+      labelX: chartCenterX + Math.cos(angle) * (radius + 30),
+      labelY: chartCenterY + Math.sin(angle) * (radius + 30),
+      axisX: chartCenterX + Math.cos(angle) * radius,
+      axisY: chartCenterY + Math.sin(angle) * radius,
     };
   });
   const polygonPoints = chartPoints.map((point) => `${point.x},${point.y}`).join(' ');
+  const hoveredPoint = hoveredAxis
+    ? chartPoints.find((point) => point.axis.key === hoveredAxis.key)
+    : null;
+  const labelCallout =
+    hoveredPoint && hoveredAxis
+      ? labelCalloutPlacement(hoveredAxis, hoveredPoint, viewWidth, viewHeight)
+      : null;
+  const calloutLines =
+    hoveredAxis && labelCallout
+      ? wrapSvgText(hoveredAxis.description, labelCallout.maxLineLength).slice(0, 4)
+      : [];
 
   return (
     <View style={styles.radarCard}>
@@ -1131,8 +1225,8 @@ function ConceptRadarChart({
         'svg',
         {
           width: '100%',
-          height: size,
-          viewBox: `0 0 ${size} ${size}`,
+          height: viewHeight,
+          viewBox: `0 0 ${viewWidth} ${viewHeight}`,
           role: 'img',
           'aria-label': 'Concept radar diagram',
         },
@@ -1143,8 +1237,8 @@ function ConceptRadarChart({
               points: axes
                 .map((_, index) => {
                   const angle = -Math.PI / 2 + (2 * Math.PI * index) / axes.length;
-                  return `${center + Math.cos(angle) * radius * level},${
-                    center + Math.sin(angle) * radius * level
+                  return `${chartCenterX + Math.cos(angle) * radius * level},${
+                    chartCenterY + Math.sin(angle) * radius * level
                   }`;
                 })
                 .join(' '),
@@ -1157,8 +1251,8 @@ function ConceptRadarChart({
           ...chartPoints.map((point) =>
             createElement('line', {
               key: `axis-${point.axis.key}`,
-              x1: center,
-              y1: center,
+              x1: chartCenterX,
+              y1: chartCenterY,
               x2: point.axisX,
               y2: point.axisY,
               stroke: '#1b3d2e',
@@ -1192,7 +1286,7 @@ function ConceptRadarChart({
                 key: `label-${point.axis.key}`,
                 x: point.labelX,
                 y: point.labelY,
-                textAnchor: point.labelX < center - 8 ? 'end' : point.labelX > center + 8 ? 'start' : 'middle',
+                textAnchor: point.labelX < chartCenterX - 8 ? 'end' : point.labelX > chartCenterX + 8 ? 'start' : 'middle',
                 dominantBaseline: 'middle',
                 fill: hoveredAxis?.key === point.axis.key ? '#1B5E3A' : '#18392b',
                 fontSize: 12,
@@ -1204,20 +1298,192 @@ function ConceptRadarChart({
               point.axis.label,
             ),
           ),
+          hoveredPoint && labelCallout
+            ? createElement('line', {
+                key: 'hover-callout-line',
+                x1: labelCallout.lineStartX,
+                y1: labelCallout.lineStartY,
+                x2: labelCallout.lineEndX,
+                y2: labelCallout.lineEndY,
+                stroke: '#2E7D5C',
+                strokeWidth: 1.5,
+                strokeOpacity: 0.78,
+              })
+            : null,
+          hoveredAxis
+            ? createElement(
+                'text',
+                {
+                  key: 'hover-callout-text',
+                  x: labelCallout?.textX ?? viewWidth / 2,
+                  y: labelCallout?.textY ?? viewHeight / 2,
+                  textAnchor: labelCallout?.textAnchor ?? 'middle',
+                  dominantBaseline: labelCallout?.dominantBaseline ?? 'middle',
+                  fill: '#111111',
+                  fontSize: 11,
+                  fontWeight: 500,
+                },
+                calloutLines.map((line, index) =>
+                  createElement(
+                    'tspan',
+                    {
+                      key: `callout-line-${index}`,
+                      x: labelCallout?.textX ?? viewWidth / 2,
+                      dy: index === 0 ? 0 : 14,
+                    },
+                    line,
+                  ),
+                ),
+              )
+            : null,
         ],
       )}
-      <View style={styles.radarTooltip}>
-        <Text style={styles.radarTooltipTitle}>
-          {hoveredAxis ? hoveredAxis.label : 'Hover A Concept'}
-        </Text>
-        <Text style={styles.radarTooltipText}>
-          {hoveredAxis
-            ? hoveredAxis.description
-            : 'Move over a label or point to see what that concept means.'}
-        </Text>
-      </View>
     </View>
   );
+}
+
+function wrapSvgText(text: string, maxLength: number) {
+  const words = text.split(' ');
+  const lines: string[] = [];
+  let line = '';
+
+  for (const word of words) {
+    const nextLine = line ? `${line} ${word}` : word;
+    if (nextLine.length > maxLength && line) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = nextLine;
+    }
+  }
+
+  if (line) {
+    lines.push(line);
+  }
+
+  return lines;
+}
+
+function labelCalloutPlacement(
+  axis: ConceptAxis,
+  point: { labelX: number; labelY: number; labelWidth: number },
+  viewWidth: number,
+  viewHeight: number,
+) {
+  const direction = conceptCalloutDirection(axis.key);
+  const key = axis.key.toLowerCase();
+  const sideTextYOffset =
+    key === 'earth' || key === 'water'
+      ? -46
+      : key === 'metal' || key === 'fire'
+        ? 52
+        : 0;
+  const sideTextY = Math.max(54, Math.min(viewHeight - 46, point.labelY + sideTextYOffset));
+
+  if (direction === 'up') {
+    const textY = Math.max(22, point.labelY - 104);
+    const lineEndY = point.labelY - 32;
+    return {
+      textX: point.labelX,
+      textY,
+      textAnchor: 'middle',
+      dominantBaseline: 'middle',
+      lineStartX: point.labelX,
+      lineStartY: point.labelY - 16,
+      lineEndX: point.labelX,
+      lineEndY,
+      maxLineLength: 34,
+    };
+  }
+
+  if (direction === 'down') {
+    const textY = Math.min(viewHeight - 28, point.labelY + 104);
+    const lineEndY = point.labelY + 34;
+    return {
+      textX: point.labelX,
+      textY,
+      textAnchor: 'middle',
+      dominantBaseline: 'middle',
+      lineStartX: point.labelX,
+      lineStartY: point.labelY + 16,
+      lineEndX: point.labelX,
+      lineEndY,
+      maxLineLength: 34,
+    };
+  }
+
+  if (direction === 'left') {
+    const labelLeftX = point.labelX - point.labelWidth;
+    const lineStartX = labelLeftX - 3;
+    const textX = Math.max(44, lineStartX - 122);
+    const lineEndX = textX + 3;
+    const lineEndY = sideTextY;
+    return {
+      textX,
+      textY: sideTextY,
+      textAnchor: 'end',
+      dominantBaseline: 'middle',
+      lineStartX,
+      lineStartY: point.labelY,
+      lineEndX,
+      lineEndY,
+      maxLineLength: 30,
+    };
+  }
+
+  const labelRightX = point.labelX + point.labelWidth;
+  const lineStartX = labelRightX + 3;
+  const textX = Math.min(viewWidth - 44, lineStartX + 122);
+  const lineEndX = textX - 3;
+  const lineEndY = sideTextY;
+  return {
+    textX,
+    textY: sideTextY,
+    textAnchor: 'start',
+    dominantBaseline: 'middle',
+    lineStartX,
+    lineStartY: point.labelY,
+    lineEndX,
+    lineEndY,
+    maxLineLength: 30,
+  };
+}
+
+function estimateSvgTextWidth(text: string, fontSize: number, fontWeight: number) {
+  const knownWidths: Record<string, number> = {
+    Yin: 17,
+    Yang: 26,
+    Internal: 42,
+    External: 44,
+    Cold: 25,
+    Heat: 24,
+    Deficiency: 53,
+    Excess: 34,
+    Wood: 31,
+    Water: 32,
+    Fire: 21,
+    Metal: 30,
+    Earth: 30,
+  };
+  if (knownWidths[text]) {
+    return knownWidths[text];
+  }
+  const weightFactor = fontWeight >= 700 ? 0.52 : 0.48;
+  return text.length * fontSize * weightFactor;
+}
+
+function conceptCalloutDirection(key: string) {
+  const normalizedKey = key.toLowerCase();
+  if (normalizedKey === 'yin' || normalizedKey === 'wood') {
+    return 'up';
+  }
+  if (normalizedKey === 'cold') {
+    return 'down';
+  }
+  if (['excess', 'deficiency', 'heat', 'earth', 'metal'].includes(normalizedKey)) {
+    return 'left';
+  }
+  return 'right';
 }
 
 const colors = {
@@ -1493,7 +1759,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   leftPanel: {
-    width: 360,
+    width: 280,
     maxWidth: '100%',
   },
   rightPanel: {
@@ -1507,6 +1773,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 8,
     padding: 18,
+    gap: 14,
+  },
+  plainPanel: {
+    width: '100%',
+    backgroundColor: 'transparent',
+    paddingVertical: 4,
     gap: 14,
   },
   centerPanel: {
@@ -1675,6 +1947,20 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     gap: 8,
   },
+  readOnlySelectedList: {
+    gap: 8,
+  },
+  readOnlySymptomItem: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#edf4ef',
+    paddingBottom: 8,
+  },
+  readOnlySymptomText: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 18,
+    fontWeight: '800',
+  },
   selectedTag: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -1746,6 +2032,11 @@ const styles = StyleSheet.create({
   buttonArea: {
     position: 'relative',
     gap: 8,
+  },
+  sidebarActions: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    paddingTop: 2,
   },
   tooltip: {
     alignSelf: 'flex-start',
@@ -1869,16 +2160,18 @@ const styles = StyleSheet.create({
     lineHeight: 17,
     fontWeight: '900',
   },
-  topSyndromeBox: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: 16,
-    borderRadius: 8,
+  bestSyndromePanel: {
     backgroundColor: '#f1f8f4',
-    borderWidth: 1,
     borderColor: '#c7dfcf',
-    padding: 16,
+  },
+  bestSyndromeEyebrow: {
+    color: colors.deepGreen,
+    fontSize: 13,
+    lineHeight: 17,
+    fontWeight: '900',
+  },
+  topSyndromeContent: {
+    gap: 10,
   },
   topSyndromeLabel: {
     color: colors.text,
@@ -1886,6 +2179,60 @@ const styles = StyleSheet.create({
     fontSize: 24,
     lineHeight: 30,
     fontWeight: '700',
+  },
+  otherSyndromeGrid: {
+    flexDirection: 'row',
+    gap: 12,
+    flexWrap: 'wrap',
+  },
+  otherSyndromeCard: {
+    flexBasis: 190,
+    flexGrow: 1,
+    minHeight: 132,
+    borderWidth: 1,
+    borderColor: '#c7dfcf',
+    borderRadius: 8,
+    backgroundColor: '#fbfdfb',
+    padding: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+    position: 'relative',
+  },
+  otherSyndromeCardFlipped: {
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    backgroundColor: '#f1f8f4',
+  },
+  otherSyndromeFace: {
+    ...StyleSheet.absoluteFillObject,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 14,
+    backfaceVisibility: 'hidden',
+  },
+  otherSyndromeBackFace: {
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+  },
+  otherSyndromeName: {
+    color: colors.text,
+    fontFamily: serifFont,
+    fontSize: 18,
+    lineHeight: 24,
+    fontWeight: '700',
+    textAlign: 'center',
+  },
+  otherSyndromeDescription: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 19,
+    fontWeight: '700',
+  },
+  radarHeading: {
+    textAlign: 'center',
+    alignSelf: 'center',
+    width: '100%',
   },
   compactRow: {
     flexDirection: 'row',
@@ -1957,48 +2304,9 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '900',
   },
-  whyCard: {
-    borderWidth: 1,
-    borderColor: '#c7dfcf',
-    borderRadius: 8,
-    backgroundColor: '#f1f8f4',
-    padding: 14,
-    gap: 6,
-  },
-  whyTitle: {
-    color: colors.deepGreen,
-    fontSize: 14,
-    fontWeight: '900',
-  },
   radarCard: {
     width: '100%',
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: '#d9e8de',
-    borderRadius: 8,
-    backgroundColor: '#fbfdfb',
-    padding: 12,
-    gap: 10,
-  },
-  radarTooltip: {
-    width: '100%',
-    minHeight: 74,
-    borderWidth: 1,
-    borderColor: '#d9e8de',
-    borderRadius: 8,
-    backgroundColor: colors.panel,
-    paddingHorizontal: 12,
-    paddingVertical: 10,
-    gap: 4,
-  },
-  radarTooltipTitle: {
-    color: colors.deepGreen,
-    fontSize: 13,
-    fontWeight: '900',
-  },
-  radarTooltipText: {
-    color: colors.text,
-    fontSize: 13,
-    lineHeight: 18,
+    paddingVertical: 4,
   },
 });
