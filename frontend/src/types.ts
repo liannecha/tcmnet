@@ -1,6 +1,8 @@
 export type MetadataRecord = {
   id: string;
   label: string;
+  english_name?: string;
+  chinese_name?: string;
 };
 
 export type PredictRequest = {
@@ -13,6 +15,9 @@ export type SyndromePrediction = {
   index: number;
   syndrome_id: string;
   label: string;
+  english_name: string;
+  chinese_name: string;
+  description: string;
   confidence: number;
 };
 
@@ -25,6 +30,10 @@ export type ConceptScore = {
 export type HerbRecommendation = {
   herb_id: string;
   label: string;
+  english_name: string;
+  chinese_name: string;
+  description: string;
+  target_concepts: string[];
   score: number;
   concept_similarity: number;
   syndrome_prior: number;
@@ -37,6 +46,8 @@ export type Explanation = {
   syndrome_herb_associations: {
     syndrome_id: string;
     label: string;
+    english_name: string;
+    chinese_name: string;
     associated_herbs: MetadataRecord[];
     total_associated_herbs: number;
   };
@@ -46,6 +57,10 @@ export type Explanation = {
     items: Array<{
       herb_id: string;
       label: string;
+      english_name: string;
+      chinese_name: string;
+      description: string;
+      target_concepts: string[];
       concept_similarity: number;
       syndrome_prior: number;
       score: number;

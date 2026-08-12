@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useMemo, useState } from 'react';
+import { createElement, useEffect, useMemo, useState } from 'react';
 import {
   ActivityIndicator,
   Pressable,
@@ -24,14 +24,18 @@ import type {
 const MAX_VISIBLE_SYMPTOMS = 10;
 const MIN_SEARCH_LENGTH = 2;
 const COMMON_SYMPTOM_LABELS = ['Fever', 'Cough', 'Dizziness', 'Fatigue', 'Abdominal Pain'];
-
-function formatPercent(value: number) {
-  return `${Math.round(value * 1000) / 10}%`;
-}
-
-function formatScore(value: number) {
-  return value.toFixed(3);
-}
+const RELATED_SYMPTOM_TERMS: Record<string, string[]> = {
+  fever: ['chills', 'cold', 'sweating', 'thirst', 'headache', 'cough', 'phlegm'],
+  cough: ['phlegm', 'throat', 'asthma', 'wheezing', 'chest', 'fever', 'nasal'],
+  dizziness: ['fatigue', 'headache', 'palpitation', 'tinnitus', 'vision', 'weakness'],
+  fatigue: ['weakness', 'qi', 'dizziness', 'pale', 'appetite', 'loose stool'],
+  abdominal: ['pain', 'distension', 'fullness', 'nausea', 'vomiting', 'stool', 'diarrhea'],
+  pain: ['distension', 'cold', 'heat', 'numbness', 'swelling', 'stiffness'],
+  phlegm: ['cough', 'asthma', 'chest', 'throat', 'sticky', 'yellow', 'dizziness'],
+  cold: ['chills', 'aversion', 'pain', 'clear', 'pale', 'warmth'],
+  heat: ['fever', 'thirst', 'yellow', 'red', 'bitter', 'irritability'],
+  diarrhea: ['abdominal', 'stool', 'cold', 'dampness', 'fatigue'],
+};
 
 function titleCaseLabel(label: string) {
   return label.replace(/\p{L}[\p{L}'-]*/gu, (word) => {
@@ -44,11 +48,125 @@ function symptomDisplayLabel(symptom: MetadataRecord) {
   return titleCaseLabel(symptom.label || symptom.id);
 }
 
+function normalizedLabel(label: string) {
+  return label.toLocaleLowerCase();
+}
+
+function uniqueGroups(groups: SymptomGroup[]) {
+  const seen = new Set<string>();
+  return groups.filter((group) => {
+    if (seen.has(group.key)) {
+      return false;
+    }
+    seen.add(group.key);
+    return true;
+  });
+}
+
+function englishDisplayName(record: { english_name?: string; label: string }) {
+  return titleCaseLabel(record.english_name || record.label);
+}
+
+function bilingualDisplayName(record: {
+  english_name?: string;
+  chinese_name?: string;
+  label: string;
+}) {
+  const englishName = englishDisplayName(record);
+  return record.chinese_name ? `${englishName} / ${record.chinese_name}` : englishName;
+}
+
+type ConceptAxis = {
+  key: string;
+  sourceKey?: string;
+  label: string;
+  description: string;
+};
+
+const EIGHT_PRINCIPLE_AXES: ConceptAxis[] = [
+  {
+    key: 'yin',
+    label: 'Yin',
+    description: 'Cooling, moistening, and nourishing qualities in TCM pattern language.',
+  },
+  {
+    key: 'yang',
+    label: 'Yang',
+    description: 'Warming, activating, and transforming qualities in TCM pattern language.',
+  },
+  {
+    key: 'internal',
+    label: 'Internal',
+    description: 'A pattern understood as deeper or inside the body rather than surface-level.',
+  },
+  {
+    key: 'external',
+    label: 'External',
+    description: 'A pattern understood as affecting the surface or protective layer of the body.',
+  },
+  {
+    key: 'cold',
+    label: 'Cold',
+    description: 'Cold signs may include chilliness, slow movement, cold pain, or pale features.',
+  },
+  {
+    key: 'heat',
+    sourceKey: 'hot',
+    label: 'Heat',
+    description: 'Heat signs may include feverishness, thirst, redness, irritability, or yellow secretions.',
+  },
+  {
+    key: 'deficiency',
+    label: 'Deficiency',
+    description: 'A lack of nourishment, warmth, fluids, blood, or functional strength.',
+  },
+  {
+    key: 'excess',
+    label: 'Excess',
+    description: 'A stronger obstructive pattern involving accumulation, blockage, or overactivity.',
+  },
+];
+
+const FIVE_ELEMENT_AXES: ConceptAxis[] = [
+  {
+    key: 'wood',
+    sourceKey: 'Wood',
+    label: 'Wood',
+    description: 'Associated with movement, growth, the Liver system, and smooth flow.',
+  },
+  {
+    key: 'water',
+    sourceKey: 'Water',
+    label: 'Water',
+    description: 'Associated with storage, fluids, the Kidney system, and foundational reserves.',
+  },
+  {
+    key: 'fire',
+    sourceKey: 'Fire',
+    label: 'Fire',
+    description: 'Associated with warmth, activity, circulation, spirit, and the Heart system.',
+  },
+  {
+    key: 'metal',
+    sourceKey: 'Metal',
+    label: 'Metal',
+    description: 'Associated with breathing, boundaries, the Lung system, and protective qi.',
+  },
+  {
+    key: 'earth',
+    sourceKey: 'Earth',
+    label: 'Earth',
+    description: 'Associated with digestion, nourishment, transformation, and the Spleen/Stomach system.',
+  },
+];
+
 type SymptomGroup = {
   key: string;
   label: string;
   ids: string[];
 };
+
+type AssessmentStep = 1 | 2 | 3 | 4;
 
 export default function App() {
   const { width } = useWindowDimensions();
@@ -76,9 +194,6 @@ function Header({
   return (
     <View style={styles.topHeader}>
       <Pressable onPress={onHome} style={({ pressed }) => [styles.brand, pressed && styles.pressed]}>
-        <View style={styles.brandMark}>
-          <Text style={styles.brandMarkText}>T</Text>
-        </View>
         <Text style={styles.brandText}>TCMNet</Text>
       </Pressable>
       <View style={styles.navActions}>
@@ -96,12 +211,12 @@ function LandingPage({ onStart }: { onStart: () => void }) {
   return (
     <ScrollView contentContainerStyle={styles.landingPage}>
       <View style={styles.hero}>
-        <Text style={styles.eyebrow}>CONCEPT-GUIDED TCM INSIGHT</Text>
+        <Text style={styles.eyebrow}>DEEP LEARNING FOR TRADITIONAL MEDICINE</Text>
         <Text style={styles.heroTitle}>TCMNet</Text>
         <Text style={styles.tagline}>Make pattern recognition clearer.</Text>
         <Text style={styles.heroCopy}>
-          TCMNet is a research prototype that turns selected symptoms into syndrome
-          predictions, herb recommendations, and a simple explanation of the model signals.
+          TCMNet turns selected symptoms into TCM syndrome predictions, herb
+          recommendations, and a plain-language view of the pattern signals behind them.
         </Text>
         <Pressable onPress={onStart} style={({ pressed }) => [styles.heroButton, pressed && styles.pressed]}>
           <Text style={styles.heroButtonText}>Get started</Text>
@@ -112,8 +227,8 @@ function LandingPage({ onStart }: { onStart: () => void }) {
         <Text style={styles.aboutEyebrow}>ABOUT TCMNET</Text>
         <Text style={styles.aboutTitle}>Built to make TCM prediction easier to inspect.</Text>
         <Text style={styles.aboutIntro}>
-          The goal is not to replace clinical judgment. TCMNet helps explore how symptoms,
-          traditional concepts, syndromes, and herbs connect inside a trained model.
+          TCMNet helps organize symptoms into traditional pattern language, then shows
+          how those patterns connect to possible syndromes and herbs.
         </Text>
         <View style={styles.aboutGrid}>
           {ABOUT_CARDS.map((card) => (
@@ -146,37 +261,37 @@ const ABOUT_CARDS = [
     title: 'Symptom Input',
     text: 'Start with observed symptoms and search by readable English labels.',
     detail:
-      'The interface groups duplicate translated labels while preserving the model IDs needed for prediction.',
+      'The interface groups similar translated labels so symptom selection stays readable.',
   },
   {
     title: 'Concept Signals',
-    text: 'The model estimates TCM concept patterns such as internal, heat, yin, and organ groups.',
+    text: 'TCMNet highlights pattern signals such as internal, heat, yin, and organ groups.',
     detail:
-      'These concept scores make the model output easier to inspect than a syndrome label alone.',
+      'These signals make the result easier to understand than a syndrome name alone.',
   },
   {
     title: 'Syndrome Prediction',
     text: 'TCMNet ranks likely syndromes from the selected symptom pattern.',
     detail:
-      'The app shows the top syndrome and alternatives with model scores, so uncertainty remains visible.',
+      'The app shows the best match first, then keeps a few alternatives visible for comparison.',
   },
   {
     title: 'Herb Ranking',
-    text: 'Herbs are scored from concept fit and known syndrome-herb relationships.',
+    text: 'Herb recommendations are shown with plain-language context.',
     detail:
-      'The herb recommender is frozen and reproducible: it blends concept similarity with syndrome-herb priors.',
+      'Each herb includes its Chinese name, typical TCM category, and targeted concepts.',
   },
   {
     title: 'Future Direction',
-    text: 'Next steps include stronger labels, better grouping, richer explanations, and model validation.',
+    text: 'Next steps include stronger labels, better grouping, richer explanations, and validation.',
     detail:
-      'This prototype is designed so future work can improve metadata, confidence calibration, and clinical review.',
+      'Future work can improve metadata, validation, and clinical review workflows.',
   },
   {
     title: 'Final Report',
     text: 'A final report and findings link will live here once the project writeup is complete.',
     detail:
-      'Use this space for the CS229 report, model results, limitations, and supporting analysis.',
+      'Use this space for the CS229 report, results, limitations, and supporting analysis.',
   },
 ];
 
@@ -188,6 +303,7 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
   const [predicting, setPredicting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [prediction, setPrediction] = useState<PredictionResponse | null>(null);
+  const [assessmentStep, setAssessmentStep] = useState<AssessmentStep>(1);
 
   useEffect(() => {
     let mounted = true;
@@ -270,15 +386,36 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
       .slice(0, MAX_VISIBLE_SYMPTOMS);
   }, [groupedSymptoms, query, selectedGroupKeys]);
 
-  const commonSymptoms = useMemo(
-    () =>
-      COMMON_SYMPTOM_LABELS.map((label) =>
-        groupedSymptoms.find((group) => group.key === label.toLocaleLowerCase()),
-      )
-        .filter((group): group is SymptomGroup => Boolean(group))
-        .filter((group) => !selectedGroupKeys.has(group.key)),
-    [groupedSymptoms, selectedGroupKeys],
-  );
+  const trySymptoms = useMemo(() => {
+    const availableGroups = groupedSymptoms.filter((group) => !selectedGroupKeys.has(group.key));
+    const defaultSuggestions = COMMON_SYMPTOM_LABELS.map((label) =>
+      groupedSymptoms.find((group) => group.key === label.toLocaleLowerCase()),
+    ).filter((group): group is SymptomGroup => Boolean(group));
+
+    const selectedText = selectedSymptoms
+      .map((symptom) => normalizedLabel(symptom.label))
+      .join(' ');
+    const relatedTerms = Object.entries(RELATED_SYMPTOM_TERMS)
+      .filter(([term]) => selectedText.includes(term))
+      .flatMap(([, terms]) => terms);
+    const relatedSuggestions = relatedTerms.flatMap((term) =>
+      availableGroups
+        .filter((group) => normalizedLabel(group.label).includes(term))
+        .slice(0, 3),
+    );
+    const fallbackSuggestions = availableGroups.filter((group) =>
+      COMMON_SYMPTOM_LABELS.some((label) =>
+        normalizedLabel(group.label).includes(label.toLocaleLowerCase()),
+      ),
+    );
+
+    return uniqueGroups([
+      ...relatedSuggestions,
+      ...defaultSuggestions,
+      ...fallbackSuggestions,
+      ...availableGroups,
+    ]).slice(0, 6);
+  }, [groupedSymptoms, selectedGroupKeys, selectedSymptoms]);
 
   function addSymptom(symptom: SymptomGroup) {
     setSelectedSymptoms((current) =>
@@ -286,16 +423,27 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
     );
     setQuery('');
     setPrediction(null);
+    setAssessmentStep(1);
   }
 
   function removeSymptom(symptomKey: string) {
     setSelectedSymptoms((current) => current.filter((symptom) => symptom.key !== symptomKey));
     setPrediction(null);
+    setAssessmentStep(1);
   }
 
   function clearSymptoms() {
     setSelectedSymptoms([]);
     setPrediction(null);
+    setAssessmentStep(1);
+    setError(null);
+  }
+
+  function startOver() {
+    setSelectedSymptoms([]);
+    setQuery('');
+    setPrediction(null);
+    setAssessmentStep(1);
     setError(null);
   }
 
@@ -320,6 +468,7 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
         top_herbs: 5,
       });
       setPrediction(result);
+      setAssessmentStep(2);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Prediction request failed.');
     } finally {
@@ -330,13 +479,7 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
   return (
     <ScrollView contentContainerStyle={styles.page}>
       <View style={styles.pageInner}>
-        <View style={styles.disclaimerBanner}>
-          <Text style={styles.disclaimerText}>
-            Educational and research-use prototype. Not medical advice.
-          </Text>
-        </View>
-
-        <HorizontalStepper activeStep={prediction ? 3 : 1} />
+        <HorizontalStepper activeStep={prediction ? assessmentStep : 1} />
 
         {!prediction ? (
           <View style={styles.initialStage}>
@@ -346,7 +489,7 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
               query={query}
               setQuery={setQuery}
               searchResults={searchResults}
-              commonSymptoms={commonSymptoms}
+              trySymptoms={trySymptoms}
               selectedSymptoms={selectedSymptoms}
               loadingSymptoms={loadingSymptoms}
               predicting={predicting}
@@ -366,11 +509,11 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
             <View style={styles.leftPanel}>
               <SymptomPanel
                 title="Symptoms"
-                helperText="Adjust the symptom set and run the model again."
+                helperText="Adjust the symptom set and run the prediction again."
                 query={query}
                 setQuery={setQuery}
                 searchResults={searchResults}
-                commonSymptoms={commonSymptoms}
+                trySymptoms={trySymptoms}
                 selectedSymptoms={selectedSymptoms}
                 loadingSymptoms={loadingSymptoms}
                 predicting={predicting}
@@ -386,7 +529,13 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
               />
             </View>
             <View style={styles.rightPanel}>
-              <Results prediction={prediction} />
+              <ResultStage
+                prediction={prediction}
+                selectedSymptoms={selectedSymptoms}
+                step={assessmentStep}
+                onStepChange={setAssessmentStep}
+                onStartOver={startOver}
+              />
             </View>
           </View>
         )}
@@ -398,8 +547,9 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
 function HorizontalStepper({ activeStep }: { activeStep: number }) {
   const steps = [
     { id: 1, label: 'Input symptoms' },
-    { id: 2, label: 'Prediction' },
-    { id: 3, label: 'Explanation' },
+    { id: 2, label: 'Syndrome prediction' },
+    { id: 3, label: 'Herb recommendation' },
+    { id: 4, label: 'Final review' },
   ];
 
   return (
@@ -447,7 +597,7 @@ type SymptomPanelProps = {
   query: string;
   setQuery: (value: string) => void;
   searchResults: SymptomGroup[];
-  commonSymptoms: SymptomGroup[];
+  trySymptoms: SymptomGroup[];
   selectedSymptoms: SymptomGroup[];
   loadingSymptoms: boolean;
   predicting: boolean;
@@ -469,7 +619,7 @@ function SymptomPanel({
   query,
   setQuery,
   searchResults,
-  commonSymptoms,
+  trySymptoms,
   selectedSymptoms,
   loadingSymptoms,
   predicting,
@@ -544,7 +694,7 @@ function SymptomPanel({
                       </Text>
                       {symptom.ids.length > 1 ? (
                         <Text style={styles.groupHint}>
-                          Includes {symptom.ids.length} related model entries
+                          Includes {symptom.ids.length} related symptom entries
                         </Text>
                       ) : null}
                     </Pressable>
@@ -556,9 +706,9 @@ function SymptomPanel({
 
           {!shouldShowResults ? (
             <View style={styles.quickAddPanel}>
-              <Text style={styles.quickAddTitle}>Commonly Reported Symptoms</Text>
+              <Text style={styles.quickAddTitle}>Try These Symptoms</Text>
               <View style={styles.quickAddGrid}>
-                {commonSymptoms.map((symptom) => (
+                {trySymptoms.map((symptom) => (
                   <Pressable
                     key={`quick-${symptom.key}`}
                     onPress={() => onAddSymptom(symptom)}
@@ -569,7 +719,7 @@ function SymptomPanel({
                 ))}
               </View>
               <Text style={styles.mutedText}>
-                Start typing a symptom, such as cough, fever, or abdominal pain.
+                These suggestions update as symptoms are selected.
               </Text>
             </View>
           ) : null}
@@ -655,23 +805,85 @@ function SymptomPanel({
   );
 }
 
-function Results({ prediction }: { prediction: PredictionResponse }) {
+function ResultStage({
+  prediction,
+  selectedSymptoms,
+  step,
+  onStepChange,
+  onStartOver,
+}: {
+  prediction: PredictionResponse;
+  selectedSymptoms: SymptomGroup[];
+  step: AssessmentStep;
+  onStepChange: (step: AssessmentStep) => void;
+  onStartOver: () => void;
+}) {
+  if (step === 2) {
+    return <SyndromeResults prediction={prediction} onNext={() => onStepChange(3)} />;
+  }
+
+  if (step === 3) {
+    return (
+      <HerbResults
+        prediction={prediction}
+        onBack={() => onStepChange(2)}
+        onNext={() => onStepChange(4)}
+      />
+    );
+  }
+
+  return (
+    <FinalReview
+      prediction={prediction}
+      selectedSymptoms={selectedSymptoms}
+      onBack={() => onStepChange(3)}
+      onStartOver={onStartOver}
+    />
+  );
+}
+
+function SyndromeResults({
+  prediction,
+  onNext,
+}: {
+  prediction: PredictionResponse;
+  onNext: () => void;
+}) {
   const [topSyndrome, ...otherSyndromes] = prediction.syndromes;
+  const visibleOtherSyndromes = otherSyndromes.slice(0, 3);
 
   return (
     <View style={styles.resultsStack}>
       <View style={styles.panel}>
-        <Text style={styles.panelTitle}>Top Syndrome Prediction</Text>
+        <Text style={styles.panelTitle}>Best Syndrome Match</Text>
         {topSyndrome ? <TopSyndrome syndrome={topSyndrome} /> : null}
       </View>
 
       <View style={styles.panel}>
         <Text style={styles.panelTitle}>Other Possible Syndromes</Text>
-        {otherSyndromes.map((syndrome) => (
+        {visibleOtherSyndromes.map((syndrome) => (
           <SyndromeRow key={`${syndrome.syndrome_id}-${syndrome.index}`} syndrome={syndrome} />
         ))}
       </View>
 
+      <SyndromeExplanationSummary prediction={prediction} />
+
+      <StepNavigation primaryLabel="Next: Herbs" onPrimary={onNext} />
+    </View>
+  );
+}
+
+function HerbResults({
+  prediction,
+  onBack,
+  onNext,
+}: {
+  prediction: PredictionResponse;
+  onBack: () => void;
+  onNext: () => void;
+}) {
+  return (
+    <View style={styles.resultsStack}>
       <View style={styles.panel}>
         <Text style={styles.panelTitle}>Herb Recommendations</Text>
         {prediction.herbs.map((herb) => (
@@ -679,7 +891,98 @@ function Results({ prediction }: { prediction: PredictionResponse }) {
         ))}
       </View>
 
-      <Explanation prediction={prediction} />
+      <StepNavigation
+        secondaryLabel="Back"
+        primaryLabel="Next: Review"
+        onSecondary={onBack}
+        onPrimary={onNext}
+      />
+    </View>
+  );
+}
+
+function FinalReview({
+  prediction,
+  selectedSymptoms,
+  onBack,
+  onStartOver,
+}: {
+  prediction: PredictionResponse;
+  selectedSymptoms: SymptomGroup[];
+  onBack: () => void;
+  onStartOver: () => void;
+}) {
+  const topSyndrome = prediction.syndromes[0];
+  const topHerbs = prediction.herbs.slice(0, 3);
+
+  return (
+    <View style={styles.resultsStack}>
+      <View style={styles.panel}>
+        <Text style={styles.panelTitle}>Final Review</Text>
+        <Text style={styles.bodyText}>
+          A concise summary of the selected symptoms, best syndrome match, key pattern
+          signals, and top herb recommendations.
+        </Text>
+
+        <Text style={styles.sectionSubtitle}>Selected Symptoms</Text>
+        <View style={styles.chips}>
+          {selectedSymptoms.map((symptom) => (
+            <View key={symptom.key} style={styles.subtleChip}>
+              <Text style={styles.subtleChipText}>{symptom.label}</Text>
+            </View>
+          ))}
+        </View>
+
+        <Text style={styles.sectionSubtitle}>Top Syndrome</Text>
+        {topSyndrome ? <TopSyndrome syndrome={topSyndrome} /> : null}
+
+        <KeySignalSummary concepts={prediction.concepts} />
+
+        <Text style={styles.sectionSubtitle}>Top Herb Recommendations</Text>
+        {topHerbs.map((herb) => (
+          <HerbRow key={`review-${herb.herb_id}`} herb={herb} />
+        ))}
+      </View>
+
+      <StepNavigation
+        secondaryLabel="Back"
+        primaryLabel="Start over"
+        onSecondary={onBack}
+        onPrimary={onStartOver}
+      />
+    </View>
+  );
+}
+
+function StepNavigation({
+  primaryLabel,
+  secondaryLabel,
+  onPrimary,
+  onSecondary,
+}: {
+  primaryLabel?: string;
+  secondaryLabel?: string;
+  onPrimary?: () => void;
+  onSecondary?: () => void;
+}) {
+  return (
+    <View style={styles.stepNavigation}>
+      {secondaryLabel && onSecondary ? (
+        <Pressable
+          onPress={onSecondary}
+          style={({ pressed }) => [styles.stepSecondaryButton, pressed && styles.pressed]}
+        >
+          <Text style={styles.stepSecondaryButtonText}>{secondaryLabel}</Text>
+        </Pressable>
+      ) : null}
+      {primaryLabel && onPrimary ? (
+        <Pressable
+          onPress={onPrimary}
+          style={({ pressed }) => [styles.stepPrimaryButton, pressed && styles.pressed]}
+        >
+          <Text style={styles.stepPrimaryButtonText}>{primaryLabel}</Text>
+        </Pressable>
+      ) : null}
     </View>
   );
 }
@@ -688,12 +991,8 @@ function TopSyndrome({ syndrome }: { syndrome: SyndromePrediction }) {
   return (
     <View style={styles.topSyndromeBox}>
       <View style={styles.resultText}>
-        <Text style={styles.topSyndromeLabel}>{syndrome.label}</Text>
-        <Text style={styles.resultId}>{syndrome.syndrome_id}</Text>
-      </View>
-      <View style={styles.scoreBadge}>
-        <Text style={styles.scoreBadgeValue}>{formatPercent(syndrome.confidence)}</Text>
-        <Text style={styles.scoreBadgeLabel}>model score</Text>
+        <Text style={styles.topSyndromeLabel}>{bilingualDisplayName(syndrome)}</Text>
+        <Text style={styles.bodyText}>{syndrome.description}</Text>
       </View>
     </View>
   );
@@ -703,116 +1002,220 @@ function SyndromeRow({ syndrome }: { syndrome: SyndromePrediction }) {
   return (
     <View style={styles.compactRow}>
       <View style={styles.resultText}>
-        <Text style={styles.resultLabel} numberOfLines={1}>
-          {syndrome.label}
+        <Text style={styles.resultLabel}>
+          {bilingualDisplayName(syndrome)}
         </Text>
-        <Text style={styles.resultId}>{syndrome.syndrome_id}</Text>
+        <Text style={styles.finePrint}>{syndrome.description}</Text>
       </View>
-      <Text style={styles.metric}>{formatPercent(syndrome.confidence)}</Text>
     </View>
   );
 }
 
 function HerbRow({ herb }: { herb: HerbRecommendation }) {
   return (
-    <View style={styles.compactRow}>
+    <View style={styles.herbRecommendationRow}>
       <View style={styles.resultText}>
-        <Text style={styles.resultLabel} numberOfLines={1}>
-          {herb.label}
+        <Text style={styles.resultLabel}>
+          {bilingualDisplayName(herb)}
         </Text>
-        <Text style={styles.resultId}>{herb.herb_id}</Text>
-        <Text style={styles.finePrint}>
-          concept {formatScore(herb.concept_similarity)} · prior{' '}
-          {formatScore(herb.syndrome_prior)}
-        </Text>
+        <Text style={styles.finePrint}>{herb.description}</Text>
+        {herb.target_concepts.length > 0 ? (
+          <View style={styles.targetConceptList}>
+            <Text style={styles.targetConceptLead}>Targets</Text>
+            {herb.target_concepts.map((concept) => (
+              <View key={`${herb.herb_id}-${concept}`} style={styles.targetConceptChip}>
+                <Text style={styles.targetConceptText}>{titleCaseLabel(concept)}</Text>
+              </View>
+            ))}
+          </View>
+        ) : null}
       </View>
-      <Text style={styles.metric}>{formatScore(herb.score)}</Text>
     </View>
   );
 }
 
-function Explanation({ prediction }: { prediction: PredictionResponse }) {
+function SyndromeExplanationSummary({ prediction }: { prediction: PredictionResponse }) {
   return (
     <View style={styles.panel}>
-      <Text style={styles.panelTitle}>Explanation</Text>
+      <Text style={styles.panelTitle}>Explanation Summary</Text>
 
-      <Text style={styles.sectionSubtitle}>Recognized Symptoms</Text>
-      <View style={styles.chips}>
-        {prediction.explanation.matching_symptoms.map((symptom) => (
-          <View key={symptom.id} style={styles.subtleChip}>
-            <Text style={styles.subtleChipText} numberOfLines={1}>
-              {titleCaseLabel(symptom.label)}
-            </Text>
-          </View>
-        ))}
+      <View style={styles.whyCard}>
+        <Text style={styles.whyTitle}>Why this prediction?</Text>
+        <Text style={styles.bodyText}>
+          TCMNet compares the selected symptoms with learned TCM pattern signals, then
+          ranks syndrome matches that best fit those signals. The diagrams below show the
+          pattern directions that most shaped this result.
+        </Text>
       </View>
 
-      {prediction.input.unknown_symptom_ids.length ? (
-        <>
-          <Text style={styles.sectionSubtitle}>Unknown Symptom IDs</Text>
-          <Text style={styles.warningText}>{prediction.input.unknown_symptom_ids.join(', ')}</Text>
-        </>
-      ) : null}
+      <Text style={styles.sectionSubtitle}>Eight Principle Signals</Text>
+      <ConceptRadarChart concepts={prediction.concepts} axes={EIGHT_PRINCIPLE_AXES} />
 
-      <Text style={styles.sectionSubtitle}>Strongest Concept Signals</Text>
-      <ConceptBars concepts={prediction.explanation.concept_alignment} />
-
-      <Text style={styles.sectionSubtitle}>Syndrome-Herb Association Summary</Text>
-      <Text style={styles.bodyText}>
-        {prediction.explanation.syndrome_herb_associations.label} (
-        {prediction.explanation.syndrome_herb_associations.syndrome_id}) has{' '}
-        {prediction.explanation.syndrome_herb_associations.total_associated_herbs} known
-        herb associations in the frozen artifact.
-      </Text>
-      <View style={styles.chips}>
-        {prediction.explanation.syndrome_herb_associations.associated_herbs.map((herb) => (
-          <View key={`assoc-${herb.id}`} style={styles.subtleChip}>
-            <Text style={styles.subtleChipText} numberOfLines={1}>
-              {herb.label}
-            </Text>
-            <Text style={styles.chipId}>{herb.id}</Text>
-          </View>
-        ))}
-      </View>
-
-      <Text style={styles.sectionSubtitle}>Herb Ranking Details</Text>
-      <Text style={styles.bodyText}>
-        {prediction.explanation.herb_ranking.formula}; alpha ={' '}
-        {formatScore(prediction.explanation.herb_ranking.alpha)}.
-      </Text>
-      {prediction.explanation.herb_ranking.items.map((item) => (
-        <View key={`rank-${item.herb_id}`} style={styles.compactRow}>
-          <View style={styles.resultText}>
-            <Text style={styles.resultLabel} numberOfLines={1}>
-              {item.label}
-            </Text>
-            <Text style={styles.finePrint}>
-              concept {formatScore(item.concept_similarity)} · prior{' '}
-              {formatScore(item.syndrome_prior)} ·{' '}
-              {item.known_for_predicted_syndrome ? 'known association' : 'not linked'}
-            </Text>
-          </View>
-          <Text style={styles.metric}>{formatScore(item.score)}</Text>
-        </View>
-      ))}
+      <Text style={styles.sectionSubtitle}>Five Element Signals</Text>
+      <ConceptRadarChart concepts={prediction.concepts} axes={FIVE_ELEMENT_AXES} />
     </View>
   );
 }
 
-function ConceptBars({ concepts }: { concepts: ConceptScore[] }) {
+function KeySignalSummary({ concepts }: { concepts: ConceptScore[] }) {
+  const topConcepts = useMemo(
+    () =>
+      [...concepts]
+        .filter((concept) => concept.id.toLowerCase() !== 'reproductive')
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 5),
+    [concepts],
+  );
+
   return (
-    <View style={styles.conceptStack}>
-      {concepts.map((concept) => (
-        <View key={concept.id} style={styles.conceptBarRow}>
-          <View style={styles.conceptBarHeader}>
-            <Text style={styles.conceptLabel}>{concept.label}</Text>
-            <Text style={styles.metric}>{formatScore(concept.score)}</Text>
+    <>
+      <Text style={styles.sectionSubtitle}>Key Pattern Signals</Text>
+      <View style={styles.chips}>
+        {topConcepts.map((concept) => (
+          <View key={`signal-${concept.id}`} style={styles.subtleChip}>
+            <Text style={styles.subtleChipText}>{titleCaseLabel(concept.label)}</Text>
           </View>
-          <View style={styles.barTrack}>
-            <View style={[styles.barFill, { width: `${Math.min(concept.score * 100, 100)}%` }]} />
-          </View>
-        </View>
-      ))}
+        ))}
+      </View>
+    </>
+  );
+}
+
+function ConceptRadarChart({
+  concepts,
+  axes,
+}: {
+  concepts: ConceptScore[];
+  axes: ConceptAxis[];
+}) {
+  const [hoveredAxis, setHoveredAxis] = useState<ConceptAxis | null>(null);
+  const scoreByKey = useMemo(() => {
+    const scores = new Map<string, number>();
+    for (const concept of concepts) {
+      scores.set(concept.id.toLowerCase(), concept.score);
+      scores.set(concept.label.toLowerCase(), concept.score);
+    }
+    return scores;
+  }, [concepts]);
+
+  const size = 280;
+  const center = size / 2;
+  const radius = 96;
+  const gridLevels = [0.25, 0.5, 0.75, 1];
+  const chartPoints = axes.map((axis, index) => {
+    const angle = -Math.PI / 2 + (2 * Math.PI * index) / axes.length;
+    const score = Math.max(
+      0,
+      Math.min(
+        scoreByKey.get((axis.sourceKey || axis.key).toLowerCase()) ?? 0,
+        1,
+      ),
+    );
+    return {
+      axis,
+      score,
+      angle,
+      x: center + Math.cos(angle) * radius * score,
+      y: center + Math.sin(angle) * radius * score,
+      labelX: center + Math.cos(angle) * (radius + 30),
+      labelY: center + Math.sin(angle) * (radius + 30),
+      axisX: center + Math.cos(angle) * radius,
+      axisY: center + Math.sin(angle) * radius,
+    };
+  });
+  const polygonPoints = chartPoints.map((point) => `${point.x},${point.y}`).join(' ');
+
+  return (
+    <View style={styles.radarCard}>
+      {createElement(
+        'svg',
+        {
+          width: '100%',
+          height: size,
+          viewBox: `0 0 ${size} ${size}`,
+          role: 'img',
+          'aria-label': 'Concept radar diagram',
+        },
+        [
+          ...gridLevels.map((level) =>
+            createElement('polygon', {
+              key: `grid-${level}`,
+              points: axes
+                .map((_, index) => {
+                  const angle = -Math.PI / 2 + (2 * Math.PI * index) / axes.length;
+                  return `${center + Math.cos(angle) * radius * level},${
+                    center + Math.sin(angle) * radius * level
+                  }`;
+                })
+                .join(' '),
+              fill: 'none',
+              stroke: '#1b3d2e',
+              strokeOpacity: 0.28,
+              strokeWidth: 1,
+            }),
+          ),
+          ...chartPoints.map((point) =>
+            createElement('line', {
+              key: `axis-${point.axis.key}`,
+              x1: center,
+              y1: center,
+              x2: point.axisX,
+              y2: point.axisY,
+              stroke: '#1b3d2e',
+              strokeOpacity: 0.35,
+              strokeWidth: 1,
+            }),
+          ),
+          createElement('polygon', {
+            key: 'signal',
+            points: polygonPoints,
+            fill: '#6BBF8A',
+            fillOpacity: 0.48,
+            stroke: '#2E7D5C',
+            strokeWidth: 2,
+          }),
+          ...chartPoints.map((point) =>
+            createElement('circle', {
+              key: `point-${point.axis.key}`,
+              cx: point.x,
+              cy: point.y,
+              r: hoveredAxis?.key === point.axis.key ? 5 : 4,
+              fill: '#1B5E3A',
+              onMouseEnter: () => setHoveredAxis(point.axis),
+              onMouseLeave: () => setHoveredAxis(null),
+            }),
+          ),
+          ...chartPoints.map((point) =>
+            createElement(
+              'text',
+              {
+                key: `label-${point.axis.key}`,
+                x: point.labelX,
+                y: point.labelY,
+                textAnchor: point.labelX < center - 8 ? 'end' : point.labelX > center + 8 ? 'start' : 'middle',
+                dominantBaseline: 'middle',
+                fill: hoveredAxis?.key === point.axis.key ? '#1B5E3A' : '#18392b',
+                fontSize: 12,
+                fontWeight: 800,
+                onMouseEnter: () => setHoveredAxis(point.axis),
+                onMouseLeave: () => setHoveredAxis(null),
+                style: { cursor: 'default' },
+              },
+              point.axis.label,
+            ),
+          ),
+        ],
+      )}
+      <View style={styles.radarTooltip}>
+        <Text style={styles.radarTooltipTitle}>
+          {hoveredAxis ? hoveredAxis.label : 'Hover A Concept'}
+        </Text>
+        <Text style={styles.radarTooltipText}>
+          {hoveredAxis
+            ? hoveredAxis.description
+            : 'Move over a label or point to see what that concept means.'}
+        </Text>
+      </View>
     </View>
   );
 }
@@ -854,25 +1257,12 @@ const styles = StyleSheet.create({
   brand: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
-  },
-  brandMark: {
-    width: 34,
-    height: 34,
-    borderRadius: 17,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.deepGreen,
-  },
-  brandMarkText: {
-    color: '#fff',
-    fontWeight: '900',
-    fontSize: 16,
   },
   brandText: {
     color: colors.text,
+    fontFamily: serifFont,
     fontSize: 24,
-    fontWeight: '900',
+    fontWeight: '700',
   },
   navActions: {
     flexDirection: 'row',
@@ -1035,22 +1425,6 @@ const styles = StyleSheet.create({
     maxWidth: 1180,
     alignSelf: 'center',
     gap: 18,
-  },
-  disclaimerBanner: {
-    alignSelf: 'center',
-    borderWidth: 1,
-    borderColor: '#c7dfcf',
-    borderRadius: 999,
-    backgroundColor: '#f1f8f4',
-    paddingHorizontal: 14,
-    paddingVertical: 8,
-  },
-  disclaimerText: {
-    color: colors.text,
-    fontSize: 13,
-    lineHeight: 17,
-    fontWeight: '800',
-    textAlign: 'center',
   },
   horizontalStepper: {
     width: '100%',
@@ -1454,6 +1828,47 @@ const styles = StyleSheet.create({
   resultsStack: {
     gap: 16,
   },
+  stepNavigation: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'flex-end',
+    gap: 8,
+  },
+  stepPrimaryButton: {
+    minHeight: 36,
+    borderRadius: 999,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.deepGreen,
+    borderWidth: 1,
+    borderColor: colors.deepGreen,
+    paddingHorizontal: 14,
+    paddingVertical: 7,
+  },
+  stepPrimaryButtonText: {
+    color: '#ffffff',
+    fontSize: 13,
+    lineHeight: 17,
+    fontWeight: '900',
+    textAlign: 'center',
+  },
+  stepSecondaryButton: {
+    minHeight: 36,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: colors.line,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 13,
+    paddingVertical: 7,
+    backgroundColor: colors.panel,
+  },
+  stepSecondaryButtonText: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 17,
+    fontWeight: '900',
+  },
   topSyndromeBox: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -1472,27 +1887,6 @@ const styles = StyleSheet.create({
     lineHeight: 30,
     fontWeight: '700',
   },
-  scoreBadge: {
-    minWidth: 104,
-    alignItems: 'center',
-    borderRadius: 8,
-    backgroundColor: colors.panel,
-    borderWidth: 1,
-    borderColor: '#c7dfcf',
-    paddingHorizontal: 12,
-    paddingVertical: 10,
-  },
-  scoreBadgeValue: {
-    color: colors.deepGreen,
-    fontSize: 20,
-    fontWeight: '900',
-  },
-  scoreBadgeLabel: {
-    color: colors.muted,
-    fontSize: 11,
-    fontWeight: '800',
-    marginTop: 2,
-  },
   compactRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -1501,6 +1895,12 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: '#edf4ef',
     paddingTop: 10,
+  },
+  herbRecommendationRow: {
+    borderTopWidth: 1,
+    borderTopColor: '#edf4ef',
+    paddingTop: 12,
+    gap: 10,
   },
   resultText: {
     flex: 1,
@@ -1532,31 +1932,73 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '900',
   },
-  conceptStack: {
-    gap: 10,
+  targetConceptList: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    gap: 7,
+    marginTop: 10,
   },
-  conceptBarRow: {
+  targetConceptLead: {
+    color: colors.muted,
+    fontSize: 12,
+    fontWeight: '900',
+  },
+  targetConceptChip: {
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: '#c7dfcf',
+    backgroundColor: '#f1f8f4',
+    paddingHorizontal: 9,
+    paddingVertical: 5,
+  },
+  targetConceptText: {
+    color: colors.deepGreen,
+    fontSize: 12,
+    fontWeight: '900',
+  },
+  whyCard: {
+    borderWidth: 1,
+    borderColor: '#c7dfcf',
+    borderRadius: 8,
+    backgroundColor: '#f1f8f4',
+    padding: 14,
     gap: 6,
   },
-  conceptBarHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+  whyTitle: {
+    color: colors.deepGreen,
+    fontSize: 14,
+    fontWeight: '900',
+  },
+  radarCard: {
+    width: '100%',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#d9e8de',
+    borderRadius: 8,
+    backgroundColor: '#fbfdfb',
+    padding: 12,
     gap: 10,
   },
-  conceptLabel: {
-    color: colors.text,
+  radarTooltip: {
+    width: '100%',
+    minHeight: 74,
+    borderWidth: 1,
+    borderColor: '#d9e8de',
+    borderRadius: 8,
+    backgroundColor: colors.panel,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    gap: 4,
+  },
+  radarTooltipTitle: {
+    color: colors.deepGreen,
     fontSize: 13,
     fontWeight: '900',
   },
-  barTrack: {
-    height: 7,
-    borderRadius: 8,
-    backgroundColor: '#e5efe8',
-    overflow: 'hidden',
-  },
-  barFill: {
-    height: 7,
-    borderRadius: 8,
-    backgroundColor: colors.forest,
+  radarTooltipText: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 18,
   },
 });

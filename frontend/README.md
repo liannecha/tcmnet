@@ -1,7 +1,7 @@
 # TCMNet Frontend
 
-Expo React Native app for the TCMNet research prototype. It supports native local
-development and Expo Web for a future web deployment.
+Expo React Native app for TCMNet. It supports local development and Expo Web
+deployment.
 
 ## Setup
 
@@ -48,5 +48,27 @@ For web:
 npm run web
 ```
 
-For a future Vercel deployment with Expo Web, set `EXPO_PUBLIC_API_BASE_URL` to
-the deployed backend URL during the build.
+## Deploy To Vercel
+
+Deploy the `frontend` folder as the Vercel project root.
+
+Use:
+
+```bash
+npm run build
+```
+
+Output directory:
+
+```bash
+dist
+```
+
+Set this environment variable in Vercel:
+
+```bash
+EXPO_PUBLIC_API_BASE_URL=https://your-backend-url
+```
+
+The Python/FastAPI backend should be deployed separately, then its deployed URL
+should be used as `EXPO_PUBLIC_API_BASE_URL`.

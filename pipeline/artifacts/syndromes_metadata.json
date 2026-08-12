@@ -1,914 +1,1598 @@
 [
   {
     "id": "SMSY00001",
-    "label": "deficiency-cold of kidney"
+    "label": "deficiency-cold of kidney",
+    "english_name": "deficiency-cold of kidney",
+    "chinese_name": "下元虚冷",
+    "description": "In TCM, deficiency-cold of kidney describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with cold signs such as chilliness, slow movement, or cold pain, an underlying weakness or lack of nourishment, warmth, or functional energy. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00002",
-    "label": "deficiency-cold of abdomen"
+    "label": "deficiency-cold of abdomen",
+    "english_name": "deficiency-cold of abdomen",
+    "chinese_name": "下脘虚冷",
+    "description": "In TCM, deficiency-cold of abdomen describes a pattern involving abdominal digestion, pain, fullness, or cold sensations together with cold signs such as chilliness, slow movement, or cold pain, an underlying weakness or lack of nourishment, warmth, or functional energy. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00003",
-    "label": "sinking of the middle qi"
+    "label": "sinking of the middle qi",
+    "english_name": "sinking of the middle qi",
+    "chinese_name": "中气下陷",
+    "description": "In TCM, this pattern means the central qi is weak and cannot hold or lift the body's functions well. It is often associated with fatigue, dizziness, abdominal heaviness, loose stools, or prolapse-like symptoms. The name points to a loss of upward support from the digestive center of the body."
   },
   {
     "id": "SMSY00004",
-    "label": "the debility from chronic illness"
+    "label": "the debility from chronic illness",
+    "english_name": "the debility from chronic illness",
+    "chinese_name": "久病虚羸",
+    "description": "In TCM, the debility from chronic illness is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00005",
-    "label": "milk stagnation"
+    "label": "milk stagnation",
+    "english_name": "milk stagnation",
+    "chinese_name": "乳食停滞",
+    "description": "In TCM, milk stagnation describes a pattern involving blocked movement, often linked with distension, pain, or emotional constraint. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00006",
-    "label": "yang exhaustion"
+    "label": "yang exhaustion",
+    "english_name": "yang exhaustion",
+    "chinese_name": "亡阳",
+    "description": "In TCM, yang exhaustion describes a pattern involving warming, activating, and transforming aspects of the body. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00007",
-    "label": "postpartum  blood stasis"
+    "label": "postpartum  blood stasis",
+    "english_name": "postpartum  blood stasis",
+    "chinese_name": "产后瘀血",
+    "description": "In TCM, postpartum  blood stasis describes a pattern involving blood nourishment, movement, or stagnation, slowed or blocked blood movement, often linked with fixed or sharp pain. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00008",
-    "label": "postpartum blood deficiency"
+    "label": "postpartum blood deficiency",
+    "english_name": "postpartum blood deficiency",
+    "chinese_name": "产后血虚",
+    "description": "In TCM, postpartum blood deficiency describes a pattern involving blood nourishment, movement, or stagnation, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00009",
-    "label": "intrinsic heat"
+    "label": "intrinsic heat",
+    "english_name": "intrinsic heat",
+    "chinese_name": "内热",
+    "description": "In TCM, intrinsic heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00010",
-    "label": "asthma of cold type"
+    "label": "asthma of cold type",
+    "english_name": "asthma of cold type",
+    "chinese_name": "冷哮",
+    "description": "In TCM, asthma of cold type describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00011",
-    "label": "Cold-type Dyspnea"
+    "label": "Cold-type Dyspnea",
+    "english_name": "Cold-type Dyspnea",
+    "chinese_name": "冷喘",
+    "description": "In TCM, Cold-type Dyspnea describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00012",
-    "label": "cold diarrhea"
+    "label": "cold diarrhea",
+    "english_name": "cold diarrhea",
+    "chinese_name": "冷泻",
+    "description": "In TCM, cold diarrhea describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00013",
-    "label": "injury caused by strain and sprain"
+    "label": "injury caused by strain and sprain",
+    "english_name": "injury caused by strain and sprain",
+    "chinese_name": "劳伤",
+    "description": "In TCM, injury caused by strain and sprain is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00014",
-    "label": "externally infected disease"
+    "label": "externally infected disease",
+    "english_name": "externally infected disease",
+    "chinese_name": "外感",
+    "description": "In TCM, externally infected disease is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00015",
-    "label": "affection by exopathic wind-cold"
+    "label": "affection by exopathic wind-cold",
+    "english_name": "affection by exopathic wind-cold",
+    "chinese_name": "外感风寒",
+    "description": "In TCM, this pattern describes an external wind-cold invasion, often similar to an early cold-like presentation. It may involve chills, aversion to cold, clear nasal discharge, headache, body aches, or cough. The emphasis is on an external pattern affecting the body's surface and protective qi."
   },
   {
     "id": "SMSY00016",
-    "label": "strong fever"
+    "label": "strong fever",
+    "english_name": "strong fever",
+    "chinese_name": "实热",
+    "description": "In TCM, strong fever describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00017",
-    "label": "stagnation due to excessive heat"
+    "label": "stagnation due to excessive heat",
+    "english_name": "stagnation due to excessive heat",
+    "chinese_name": "实热积滞",
+    "description": "In TCM, stagnation due to excessive heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, a stronger obstructive pattern where something is stuck, accumulated, or overactive, blocked movement, often linked with distension, pain, or emotional constraint. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Excess means the pattern is driven more by accumulation, obstruction, or an overactive pathogenic factor. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00018",
-    "label": "cold sensation in uterus"
+    "label": "cold sensation in uterus",
+    "english_name": "cold sensation in uterus",
+    "chinese_name": "宫冷",
+    "description": "In TCM, cold sensation in uterus describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00019",
-    "label": "accumulation of cold and stasis of qi"
+    "label": "accumulation of cold and stasis of qi",
+    "english_name": "accumulation of cold and stasis of qi",
+    "chinese_name": "寒凝气滞",
+    "description": "In TCM, accumulation of cold and stasis of qi describes a pattern involving qi movement or qi strength, cold signs such as chilliness, slow movement, or cold pain, slowed or blocked blood movement, often linked with fixed or sharp pain. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00020",
-    "label": "cold and damp"
+    "label": "cold and damp",
+    "english_name": "cold and damp",
+    "chinese_name": "寒湿",
+    "description": "In TCM, cold and damp describes a pattern involving cold signs such as chilliness, slow movement, or cold pain, heaviness, swelling, discharge, or sluggish fluid movement. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00021",
-    "label": "retention of cold and wind within the body"
+    "label": "retention of cold and wind within the body",
+    "english_name": "retention of cold and wind within the body",
+    "chinese_name": "寒湿内阻",
+    "description": "In TCM, this pattern describes an external wind-cold invasion, often similar to an early cold-like presentation. It may involve chills, aversion to cold, clear nasal discharge, headache, body aches, or cough. The emphasis is on an external pattern affecting the body's surface and protective qi."
   },
   {
     "id": "SMSY00022",
-    "label": "stagnation of cold-dampness"
+    "label": "stagnation of cold-dampness",
+    "english_name": "stagnation of cold-dampness",
+    "chinese_name": "寒湿郁滞",
+    "description": "In TCM, stagnation of cold-dampness describes a pattern involving cold signs such as chilliness, slow movement, or cold pain, heaviness, swelling, discharge, or sluggish fluid movement, blocked movement, often linked with distension, pain, or emotional constraint. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00023",
-    "label": "Cold-dampness and incubated summer heat"
+    "label": "Cold-dampness and incubated summer heat",
+    "english_name": "Cold-dampness and incubated summer heat",
+    "chinese_name": "寒湿闭暑",
+    "description": "In TCM, Cold-dampness and incubated summer heat describes a pattern involving cold signs such as chilliness, slow movement, or cold pain, heat signs such as fever, inflammation, thirst, or irritability, heaviness, swelling, discharge, or sluggish fluid movement. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00024",
-    "label": "retention of cold and fluid"
+    "label": "retention of cold and fluid",
+    "english_name": "retention of cold and fluid",
+    "chinese_name": "寒滞",
+    "description": "In TCM, retention of cold and fluid describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Something is lingering or accumulating inside the body rather than moving or clearing normally. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00025",
-    "label": "combination of cold and heat"
+    "label": "combination of cold and heat",
+    "english_name": "combination of cold and heat",
+    "chinese_name": "寒热互结",
+    "description": "In TCM, combination of cold and heat describes a pattern involving cold signs such as chilliness, slow movement, or cold pain, heat signs such as fever, inflammation, thirst, or irritability. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00026",
-    "label": "periumbilical colic due to invasion of cold"
+    "label": "periumbilical colic due to invasion of cold",
+    "english_name": "periumbilical colic due to invasion of cold",
+    "chinese_name": "寒疝",
+    "description": "In TCM, periumbilical colic due to invasion of cold describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00027",
-    "label": "cold phlegm"
+    "label": "cold phlegm",
+    "english_name": "cold phlegm",
+    "chinese_name": "寒痰",
+    "description": "In TCM, cold phlegm describes a pattern involving cold signs such as chilliness, slow movement, or cold pain, thick fluids, mucus, nodules, cloudiness, or obstructed movement. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00028",
-    "label": "accumulation of cold evil"
+    "label": "accumulation of cold evil",
+    "english_name": "accumulation of cold evil",
+    "chinese_name": "寒积",
+    "description": "In TCM, accumulation of cold evil describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00029",
-    "label": "fluid retention"
+    "label": "fluid retention",
+    "english_name": "fluid retention",
+    "chinese_name": "寒饮",
+    "description": "In TCM, fluid retention is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00030",
-    "label": "Phlegm fever in children"
+    "label": "Phlegm fever in children",
+    "english_name": "Phlegm fever in children",
+    "chinese_name": "小儿痰热",
+    "description": "In TCM, Phlegm fever in children describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, thick fluids, mucus, nodules, cloudiness, or obstructed movement. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00031",
-    "label": "wind in shaoyin"
+    "label": "wind in shaoyin",
+    "english_name": "wind in shaoyin",
+    "chinese_name": "少阴伏风",
+    "description": "In TCM, wind in shaoyin describes a pattern involving cooling, moistening, and nourishing aspects of the body, moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00032",
-    "label": "exuberance of the heart fire"
+    "label": "exuberance of the heart fire",
+    "english_name": "exuberance of the heart fire",
+    "chinese_name": "心火亢盛",
+    "description": "In TCM, exuberance of the heart fire describes a pattern involving circulation, spirit, sleep, and mental-emotional steadiness together with intense heat signs such as inflammation, agitation, bleeding, or burning pain. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00033",
-    "label": "breakdowm of the normal physilolgical coordination between the heart and the kidney"
+    "label": "breakdowm of the normal physilolgical coordination between the heart and the kidney",
+    "english_name": "breakdowm of the normal physilolgical coordination between the heart and the kidney",
+    "chinese_name": "心肾不交",
+    "description": "In TCM, breakdowm of the normal physilolgical coordination between the heart and the kidney describes a pattern involving kidney-related warming, fluid, growth, or lower-body function. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00034",
-    "label": "insufficiency of both the heart and the spleen"
+    "label": "insufficiency of both the heart and the spleen",
+    "english_name": "insufficiency of both the heart and the spleen",
+    "chinese_name": "心脾不足",
+    "description": "In TCM, insufficiency of both the heart and the spleen describes a pattern involving digestion, energy production, and the body's ability to transform fluids. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00035",
-    "label": "Heart stasis"
+    "label": "Heart stasis",
+    "english_name": "Heart stasis",
+    "chinese_name": "心腹瘀血",
+    "description": "In TCM, Heart stasis describes a pattern involving circulation, spirit, sleep, and mental-emotional steadiness together with slowed or blocked blood movement, often linked with fixed or sharp pain. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00036",
-    "label": "cardiac asthenia"
+    "label": "cardiac asthenia",
+    "english_name": "cardiac asthenia",
+    "chinese_name": "心虚",
+    "description": "In TCM, cardiac asthenia is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00037",
-    "label": "insufficiency of cardiac yang"
+    "label": "insufficiency of cardiac yang",
+    "english_name": "insufficiency of cardiac yang",
+    "chinese_name": "心阳不足",
+    "description": "In TCM, insufficiency of cardiac yang describes a pattern involving warming, activating, and transforming aspects of the body. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00038",
-    "label": "be affected by summer-head-dampness"
+    "label": "be affected by summer-head-dampness",
+    "english_name": "be affected by summer-head-dampness",
+    "chinese_name": "暑湿",
+    "description": "In TCM, be affected by summer-head-dampness describes a pattern involving heaviness, swelling, discharge, or sluggish fluid movement. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00039",
-    "label": "cold in meridian"
+    "label": "cold in meridian",
+    "english_name": "cold in meridian",
+    "chinese_name": "暑湿表证",
+    "description": "In TCM, cold in meridian describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00040",
-    "label": "summer heat"
+    "label": "summer heat",
+    "english_name": "summer heat",
+    "chinese_name": "暑热",
+    "description": "In TCM, summer heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00041",
-    "label": "summer-heat evil"
+    "label": "summer-heat evil",
+    "english_name": "summer-heat evil",
+    "chinese_name": "暑邪",
+    "description": "In TCM, summer-heat evil describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00042",
-    "label": "Qi fails to keep"
+    "label": "Qi fails to keep",
+    "english_name": "Qi fails to keep",
+    "chinese_name": "气不摄",
+    "description": "In TCM, Qi fails to keep describes a pattern involving qi movement or qi strength. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00043",
-    "label": "failure of qi to govern blood;qi failing to failure of qi to contain blood"
+    "label": "failure of qi to govern blood;qi failing to failure of qi to contain blood",
+    "english_name": "failure of qi to govern blood;qi failing to failure of qi to contain blood",
+    "chinese_name": "气不摄血",
+    "description": "In TCM, failure of qi to govern blood;qi failing to failure of qi to contain blood describes a pattern involving qi movement or qi strength, blood nourishment, movement, or stagnation. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00044",
-    "label": "sluggish flow of qi"
+    "label": "sluggish flow of qi",
+    "english_name": "sluggish flow of qi",
+    "chinese_name": "气滞",
+    "description": "In TCM, sluggish flow of qi describes a pattern involving qi movement or qi strength. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00045",
-    "label": "Qi becomes dormant or concealed"
+    "label": "Qi becomes dormant or concealed",
+    "english_name": "Qi becomes dormant or concealed",
+    "chinese_name": "气潜",
+    "description": "In TCM, Qi becomes dormant or concealed describes a pattern involving qi movement or qi strength. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00046",
-    "label": "air weakness"
+    "label": "air weakness",
+    "english_name": "air weakness",
+    "chinese_name": "气虚",
+    "description": "In TCM, air weakness is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00047",
-    "label": "insufficiency of the vital energy and blood"
+    "label": "insufficiency of the vital energy and blood",
+    "english_name": "insufficiency of the vital energy and blood",
+    "chinese_name": "气血不足",
+    "description": "In TCM, insufficiency of the vital energy and blood describes a pattern involving blood nourishment, movement, or stagnation. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00048",
-    "label": "deficiency of qi and the blood"
+    "label": "deficiency of qi and the blood",
+    "english_name": "deficiency of qi and the blood",
+    "chinese_name": "气血亏虚",
+    "description": "In TCM, deficiency of qi and the blood describes a pattern involving qi movement or qi strength, blood nourishment, movement, or stagnation, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00049",
-    "label": "the debility of qi and the blood"
+    "label": "the debility of qi and the blood",
+    "english_name": "the debility of qi and the blood",
+    "chinese_name": "气血虚弱",
+    "description": "In TCM, the debility of qi and the blood describes a pattern involving qi movement or qi strength, blood nourishment, movement, or stagnation. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00050",
-    "label": "abnormal rising of qi"
+    "label": "abnormal rising of qi",
+    "english_name": "abnormal rising of qi",
+    "chinese_name": "气逆",
+    "description": "In TCM, abnormal rising of qi describes a pattern involving qi movement or qi strength. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00051",
-    "label": "stagnation of qi"
+    "label": "stagnation of qi",
+    "english_name": "stagnation of qi",
+    "chinese_name": "气郁",
+    "description": "In TCM, stagnation of qi describes a pattern involving qi movement or qi strength, blocked movement, often linked with distension, pain, or emotional constraint. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00052",
-    "label": "insufficiency of  qi and yin; deficiency of qi and yin"
+    "label": "insufficiency of  qi and yin; deficiency of qi and yin",
+    "english_name": "insufficiency of  qi and yin; deficiency of qi and yin",
+    "chinese_name": "气阴不足",
+    "description": "In TCM, insufficiency of  qi and yin; deficiency of qi and yin describes a pattern involving qi movement or qi strength, cooling, moistening, and nourishing aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00053",
-    "label": "insufficiency of qi and yin"
+    "label": "insufficiency of qi and yin",
+    "english_name": "insufficiency of qi and yin",
+    "chinese_name": "气阴两虚",
+    "description": "In TCM, insufficiency of qi and yin describes a pattern involving qi movement or qi strength, cooling, moistening, and nourishing aspects of the body. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00054",
-    "label": "deficiency of qi and yin"
+    "label": "deficiency of qi and yin",
+    "english_name": "deficiency of qi and yin",
+    "chinese_name": "气阴亏虚",
+    "description": "In TCM, deficiency of qi and yin describes a pattern involving qi movement or qi strength, cooling, moistening, and nourishing aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00055",
-    "label": "水血不"
+    "label": "水血不",
+    "english_name": "水血不",
+    "chinese_name": "水血不",
+    "description": "In TCM, 水血不 is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00056",
-    "label": "anhydremia"
+    "label": "anhydremia",
+    "english_name": "anhydremia",
+    "chinese_name": "水血不足",
+    "description": "In TCM, anhydremia is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00057",
-    "label": "deficiency of fluid"
+    "label": "deficiency of fluid",
+    "english_name": "deficiency of fluid",
+    "chinese_name": "津亏",
+    "description": "In TCM, deficiency of fluid describes a pattern involving an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00058",
-    "label": "deficiency of the body fluid"
+    "label": "deficiency of the body fluid",
+    "english_name": "deficiency of the body fluid",
+    "chinese_name": "津伤",
+    "description": "In TCM, deficiency of the body fluid describes a pattern involving an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00059",
-    "label": "deficiency of body fluid with dryness in the intestines"
+    "label": "deficiency of body fluid with dryness in the intestines",
+    "english_name": "deficiency of body fluid with dryness in the intestines",
+    "chinese_name": "津枯肠燥",
+    "description": "In TCM, deficiency of body fluid with dryness in the intestines describes a pattern involving an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00060",
-    "label": "stasis"
+    "label": "stasis",
+    "english_name": "stasis",
+    "chinese_name": "淤滞",
+    "description": "In TCM, stasis describes a pattern involving slowed or blocked blood movement, often linked with fixed or sharp pain. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00061",
-    "label": "swelling and pain due to blood stasis"
+    "label": "swelling and pain due to blood stasis",
+    "english_name": "swelling and pain due to blood stasis",
+    "chinese_name": "淤血肿痛",
+    "description": "In TCM, swelling and pain due to blood stasis describes a pattern involving blood nourishment, movement, or stagnation, slowed or blocked blood movement, often linked with fixed or sharp pain. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00063",
-    "label": "heat toxins"
+    "label": "heat toxins",
+    "english_name": "heat toxins",
+    "chinese_name": "温毒",
+    "description": "In TCM, heat toxins describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00064",
-    "label": "maculae caused by violent heat pathogen"
+    "label": "maculae caused by violent heat pathogen",
+    "english_name": "maculae caused by violent heat pathogen",
+    "chinese_name": "温毒发斑",
+    "description": "In TCM, maculae caused by violent heat pathogen describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00065",
-    "label": "Warm into the camp"
+    "label": "Warm into the camp",
+    "english_name": "Warm into the camp",
+    "chinese_name": "温热入营",
+    "description": "In TCM, Warm into the camp is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00066",
-    "label": "Febrile disease early"
+    "label": "Febrile disease early",
+    "english_name": "Febrile disease early",
+    "chinese_name": "温病初起",
+    "description": "In TCM, Febrile disease early is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00067",
-    "label": "Heat Evil camp injury"
+    "label": "Heat Evil camp injury",
+    "english_name": "Heat Evil camp injury",
+    "chinese_name": "温邪伤营",
+    "description": "In TCM, Heat Evil camp injury describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00068",
-    "label": "Warm evil and hurt yin"
+    "label": "Warm evil and hurt yin",
+    "english_name": "Warm evil and hurt yin",
+    "chinese_name": "温邪伤阴",
+    "description": "In TCM, Warm evil and hurt yin describes a pattern involving cooling, moistening, and nourishing aspects of the body. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00069",
-    "label": "Retention of Dampness and turbidity in Mtddle-energizer"
+    "label": "Retention of Dampness and turbidity in Mtddle-energizer",
+    "english_name": "Retention of Dampness and turbidity in Mtddle-energizer",
+    "chinese_name": "湿浊中阻",
+    "description": "In TCM, Retention of Dampness and turbidity in Mtddle-energizer describes a pattern involving heaviness, swelling, discharge, or sluggish fluid movement. Something is lingering or accumulating inside the body rather than moving or clearing normally. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00070",
-    "label": "damp fever"
+    "label": "damp fever",
+    "english_name": "damp fever",
+    "chinese_name": "湿温",
+    "description": "In TCM, damp fever describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, heaviness, swelling, discharge, or sluggish fluid movement. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00071",
-    "label": "Humidity at the beginning"
+    "label": "Humidity at the beginning",
+    "english_name": "Humidity at the beginning",
+    "chinese_name": "湿温初起",
+    "description": "In TCM, Humidity at the beginning is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00073",
-    "label": "wet fever"
+    "label": "wet fever",
+    "english_name": "wet fever",
+    "chinese_name": "湿热",
+    "description": "In TCM, wet fever describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00074",
-    "label": "Retention of Dampness and heat in Mtddle-energizer"
+    "label": "Retention of Dampness and heat in Mtddle-energizer",
+    "english_name": "Retention of Dampness and heat in Mtddle-energizer",
+    "chinese_name": "湿热中阻",
+    "description": "In TCM, Retention of Dampness and heat in Mtddle-energizer describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, heaviness, swelling, discharge, or sluggish fluid movement. Something is lingering or accumulating inside the body rather than moving or clearing normally. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00075",
-    "label": "Humidity and heat suppression"
+    "label": "Humidity and heat suppression",
+    "english_name": "Humidity and heat suppression",
+    "chinese_name": "湿热壅遏",
+    "description": "In TCM, Humidity and heat suppression describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00076",
-    "label": "sensation of fullness due to dampness and heat"
+    "label": "sensation of fullness due to dampness and heat",
+    "english_name": "sensation of fullness due to dampness and heat",
+    "chinese_name": "湿热痞满",
+    "description": "In TCM, sensation of fullness due to dampness and heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, heaviness, swelling, discharge, or sluggish fluid movement. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00077",
-    "label": "Damp Phlegm"
+    "label": "Damp Phlegm",
+    "english_name": "Damp Phlegm",
+    "chinese_name": "湿痰",
+    "description": "In TCM, Damp Phlegm describes a pattern involving heaviness, swelling, discharge, or sluggish fluid movement, thick fluids, mucus, nodules, cloudiness, or obstructed movement. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00078",
-    "label": "Retention of Dampness in Mtddle-energizer"
+    "label": "Retention of Dampness in Mtddle-energizer",
+    "english_name": "Retention of Dampness in Mtddle-energizer",
+    "chinese_name": "湿阻中焦",
+    "description": "In TCM, Retention of Dampness in Mtddle-energizer describes a pattern involving heaviness, swelling, discharge, or sluggish fluid movement. Something is lingering or accumulating inside the body rather than moving or clearing normally. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00079",
-    "label": "damp obstruction leading to qi stagnation"
+    "label": "damp obstruction leading to qi stagnation",
+    "english_name": "damp obstruction leading to qi stagnation",
+    "chinese_name": "湿阻气滞",
+    "description": "In TCM, damp obstruction leading to qi stagnation describes a pattern involving qi movement or qi strength, heaviness, swelling, discharge, or sluggish fluid movement, blocked movement, often linked with distension, pain, or emotional constraint. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00080",
-    "label": "fire toxic"
+    "label": "fire toxic",
+    "english_name": "fire toxic",
+    "chinese_name": "火毒",
+    "description": "In TCM, fire toxic describes a pattern involving intense heat signs such as inflammation, agitation, bleeding, or burning pain. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00081",
-    "label": "accumulation of fire toxins"
+    "label": "accumulation of fire toxins",
+    "english_name": "accumulation of fire toxins",
+    "chinese_name": "火毒蕴结",
+    "description": "In TCM, accumulation of fire toxins describes a pattern involving intense heat signs such as inflammation, agitation, bleeding, or burning pain. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00082",
-    "label": "the heat attacts the pericardium"
+    "label": "the heat attacts the pericardium",
+    "english_name": "the heat attacts the pericardium",
+    "chinese_name": "热入心包",
+    "description": "In TCM, the heat attacts the pericardium describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00083",
-    "label": "heat attacking xuefen;heat invading blood"
+    "label": "heat attacking xuefen;heat invading blood",
+    "english_name": "heat attacking xuefen;heat invading blood",
+    "chinese_name": "热入营血",
+    "description": "In TCM, heat attacking xuefen;heat invading blood describes a pattern involving blood nourishment, movement, or stagnation, heat signs such as fever, inflammation, thirst, or irritability. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00084",
-    "label": "heat toxic"
+    "label": "heat toxic",
+    "english_name": "heat toxic",
+    "chinese_name": "热毒",
+    "description": "In TCM, heat toxic describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00085",
-    "label": "domination of toxin-heat in the body"
+    "label": "domination of toxin-heat in the body",
+    "english_name": "domination of toxin-heat in the body",
+    "chinese_name": "热毒内盛",
+    "description": "In TCM, domination of toxin-heat in the body describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00086",
-    "label": "accumulation of heat toxic and phlegm"
+    "label": "accumulation of heat toxic and phlegm",
+    "english_name": "accumulation of heat toxic and phlegm",
+    "chinese_name": "热毒痰火郁结",
+    "description": "In TCM, accumulation of heat toxic and phlegm describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, thick fluids, mucus, nodules, cloudiness, or obstructed movement. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00087",
-    "label": "diarrhea due to evil heat"
+    "label": "diarrhea due to evil heat",
+    "english_name": "diarrhea due to evil heat",
+    "chinese_name": "热泻",
+    "description": "In TCM, diarrhea due to evil heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00088",
-    "label": "heat disease"
+    "label": "heat disease",
+    "english_name": "heat disease",
+    "chinese_name": "热病",
+    "description": "In TCM, heat disease describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00089",
-    "label": "consumption of yin caused by febrile diseases"
+    "label": "consumption of yin caused by febrile diseases",
+    "english_name": "consumption of yin caused by febrile diseases",
+    "chinese_name": "热病伤阴",
+    "description": "In TCM, consumption of yin caused by febrile diseases describes a pattern involving cooling, moistening, and nourishing aspects of the body. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00090",
-    "label": "Fever and Qi Deficiency"
+    "label": "Fever and Qi Deficiency",
+    "english_name": "Fever and Qi Deficiency",
+    "chinese_name": "热病气虚",
+    "description": "In TCM, Fever and Qi Deficiency describes a pattern involving qi movement or qi strength, heat signs such as fever, inflammation, thirst, or irritability, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00091",
-    "label": "impairment of the body fluid"
+    "label": "impairment of the body fluid",
+    "english_name": "impairment of the body fluid",
+    "chinese_name": "热病津伤",
+    "description": "In TCM, impairment of the body fluid is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00092",
-    "label": "an unconscious patient with febrile diseases"
+    "label": "an unconscious patient with febrile diseases",
+    "english_name": "an unconscious patient with febrile diseases",
+    "chinese_name": "热病神昏",
+    "description": "In TCM, an unconscious patient with febrile diseases is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00093",
-    "label": "heat-phlegm"
+    "label": "heat-phlegm",
+    "english_name": "heat-phlegm",
+    "chinese_name": "热痰",
+    "description": "In TCM, heat-phlegm describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, thick fluids, mucus, nodules, cloudiness, or obstructed movement. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00094",
-    "label": "consumption of the body fluid due to excessive heat"
+    "label": "consumption of the body fluid due to excessive heat",
+    "english_name": "consumption of the body fluid due to excessive heat",
+    "chinese_name": "热盛伤津",
+    "description": "In TCM, consumption of the body fluid due to excessive heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, a stronger obstructive pattern where something is stuck, accumulated, or overactive. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Excess means the pattern is driven more by accumulation, obstruction, or an overactive pathogenic factor. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00095",
-    "label": "accumulation of heat"
+    "label": "accumulation of heat",
+    "english_name": "accumulation of heat",
+    "chinese_name": "热结",
+    "description": "In TCM, accumulation of heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00096",
-    "label": "febrile symptoms"
+    "label": "febrile symptoms",
+    "english_name": "febrile symptoms",
+    "chinese_name": "热证",
+    "description": "In TCM, febrile symptoms is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00097",
-    "label": "cough caused by dryness"
+    "label": "cough caused by dryness",
+    "english_name": "cough caused by dryness",
+    "chinese_name": "燥咳",
+    "description": "In TCM, cough caused by dryness is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00098",
-    "label": "adverse rising of phlegm"
+    "label": "adverse rising of phlegm",
+    "english_name": "adverse rising of phlegm",
+    "chinese_name": "痰厥",
+    "description": "In TCM, adverse rising of phlegm describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00099",
-    "label": "accumulation of phlegm"
+    "label": "accumulation of phlegm",
+    "english_name": "accumulation of phlegm",
+    "chinese_name": "痰壅",
+    "description": "In TCM, accumulation of phlegm describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00100",
-    "label": "abundant sputum"
+    "label": "abundant sputum",
+    "english_name": "abundant sputum",
+    "chinese_name": "痰多",
+    "description": "In TCM, abundant sputum is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00101",
-    "label": "phlegmatic saliva accumulated in the interior"
+    "label": "phlegmatic saliva accumulated in the interior",
+    "english_name": "phlegmatic saliva accumulated in the interior",
+    "chinese_name": "痰涎凝聚",
+    "description": "In TCM, phlegmatic saliva accumulated in the interior describes a pattern where phlegm is understood to remain inside the body and obstruct normal movement of qi and fluids. Phlegm may refer to visible mucus, but it can also describe heaviness, cloudiness, nausea, dizziness, fullness, nodules, or a stuck sensation. This is pattern language for organizing symptoms, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00102",
-    "label": "phlegm-damoness obstructing lung"
+    "label": "phlegm-damoness obstructing lung",
+    "english_name": "phlegm-damoness obstructing lung",
+    "chinese_name": "痰涎壅肺",
+    "description": "In TCM, phlegm-damoness obstructing lung describes a pattern involving breathing, protective qi, skin, and fluid movement together with thick fluids, mucus, nodules, cloudiness, or obstructed movement. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00103",
-    "label": "stagnation of phlegm and drool"
+    "label": "stagnation of phlegm and drool",
+    "english_name": "stagnation of phlegm and drool",
+    "chinese_name": "痰涎积滞",
+    "description": "In TCM, stagnation of phlegm and drool describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement, blocked movement, often linked with distension, pain, or emotional constraint. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00104",
-    "label": "phlegm and qi obstructing each other"
+    "label": "phlegm and qi obstructing each other",
+    "english_name": "phlegm and qi obstructing each other",
+    "chinese_name": "痰滞气阻",
+    "description": "In TCM, phlegm and qi obstructing each other describes a pattern involving qi movement or qi strength, thick fluids, mucus, nodules, cloudiness, or obstructed movement. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00105",
-    "label": "retention of phlegm in Meridians and Collaterals"
+    "label": "retention of phlegm in Meridians and Collaterals",
+    "english_name": "retention of phlegm in Meridians and Collaterals",
+    "chinese_name": "痰滞经络",
+    "description": "In TCM, retention of phlegm in Meridians and Collaterals describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Something is lingering or accumulating inside the body rather than moving or clearing normally. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00106",
-    "label": "phlegm fire"
+    "label": "phlegm fire",
+    "english_name": "phlegm fire",
+    "chinese_name": "痰火",
+    "description": "In TCM, phlegm fire describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement, intense heat signs such as inflammation, agitation, bleeding, or burning pain. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00107",
-    "label": "phlegm heat"
+    "label": "phlegm heat",
+    "english_name": "phlegm heat",
+    "chinese_name": "痰热",
+    "description": "In TCM, phlegm heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, thick fluids, mucus, nodules, cloudiness, or obstructed movement. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00108",
-    "label": "abundant phlegm"
+    "label": "abundant phlegm",
+    "english_name": "abundant phlegm",
+    "chinese_name": "痰盛",
+    "description": "In TCM, abundant phlegm describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00109",
-    "label": "phlegm covering"
+    "label": "phlegm covering",
+    "english_name": "phlegm covering",
+    "chinese_name": "痰迷",
+    "description": "In TCM, phlegm covering describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00110",
-    "label": "retention of phlegm"
+    "label": "retention of phlegm",
+    "english_name": "retention of phlegm",
+    "chinese_name": "痰阻",
+    "description": "In TCM, retention of phlegm describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Something is lingering or accumulating inside the body rather than moving or clearing normally. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00111",
-    "label": "sputum drink"
+    "label": "sputum drink",
+    "english_name": "sputum drink",
+    "chinese_name": "痰饮",
+    "description": "In TCM, sputum drink is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00112",
-    "label": "stagnation of phlegm retention"
+    "label": "stagnation of phlegm retention",
+    "english_name": "stagnation of phlegm retention",
+    "chinese_name": "痰饮停滞",
+    "description": "In TCM, stagnation of phlegm retention describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement, blocked movement, often linked with distension, pain, or emotional constraint. Something is lingering or accumulating inside the body rather than moving or clearing normally. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00113",
-    "label": "retention of phlegm in the interior"
+    "label": "retention of phlegm in the interior",
+    "english_name": "retention of phlegm in the interior",
+    "chinese_name": "痰饮停聚",
+    "description": "In TCM, retention of phlegm in the interior describes a pattern where phlegm is understood to remain inside the body and obstruct normal movement of qi and fluids. Phlegm may refer to visible mucus, but it can also describe heaviness, cloudiness, nausea, dizziness, fullness, nodules, or a stuck sensation. This is pattern language for organizing symptoms, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00114",
-    "label": "retention of phlegm in the interior"
+    "label": "retention of phlegm in the interior",
+    "english_name": "retention of phlegm in the interior",
+    "chinese_name": "痰饮内停",
+    "description": "In TCM, retention of phlegm in the interior describes a pattern where phlegm is understood to remain inside the body and obstruct normal movement of qi and fluids. Phlegm may refer to visible mucus, but it can also describe heaviness, cloudiness, nausea, dizziness, fullness, nodules, or a stuck sensation. This is pattern language for organizing symptoms, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00115",
-    "label": "abdominal mass and gethering of phlegm retention"
+    "label": "abdominal mass and gethering of phlegm retention",
+    "english_name": "abdominal mass and gethering of phlegm retention",
+    "chinese_name": "痰饮积聚",
+    "description": "In TCM, abdominal mass and gethering of phlegm retention describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Something is lingering or accumulating inside the body rather than moving or clearing normally. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00116",
-    "label": "Phlegm build knot"
+    "label": "Phlegm build knot",
+    "english_name": "Phlegm build knot",
+    "chinese_name": "痰饮蓄结",
+    "description": "In TCM, Phlegm build knot describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00118",
-    "label": "Stasis, swelling and pain"
+    "label": "Stasis, swelling and pain",
+    "english_name": "Stasis, swelling and pain",
+    "chinese_name": "瘀滞肿痛",
+    "description": "In TCM, Stasis, swelling and pain describes a pattern involving slowed or blocked blood movement, often linked with fixed or sharp pain. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00119",
-    "label": "pain caused by ecchymoma"
+    "label": "pain caused by ecchymoma",
+    "english_name": "pain caused by ecchymoma",
+    "chinese_name": "瘀肿疼痛",
+    "description": "In TCM, pain caused by ecchymoma is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00120",
-    "label": "stagnant blood"
+    "label": "stagnant blood",
+    "english_name": "stagnant blood",
+    "chinese_name": "瘀血",
+    "description": "In TCM, stagnant blood describes a pattern involving blood nourishment, movement, or stagnation. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00121",
-    "label": "blood stasis in collaterals"
+    "label": "blood stasis in collaterals",
+    "english_name": "blood stasis in collaterals",
+    "chinese_name": "瘀血阻络",
+    "description": "In TCM, blood stasis in collaterals describes a pattern involving blood nourishment, movement, or stagnation, slowed or blocked blood movement, often linked with fixed or sharp pain. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00122",
-    "label": "Stagnation"
+    "label": "Stagnation",
+    "english_name": "Stagnation",
+    "chinese_name": "瘀阻",
+    "description": "In TCM, Stagnation describes a pattern involving blocked movement, often linked with distension, pain, or emotional constraint. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00123",
-    "label": "amenorrhea due to congestion"
+    "label": "amenorrhea due to congestion",
+    "english_name": "amenorrhea due to congestion",
+    "chinese_name": "瘀阻经闭",
+    "description": "In TCM, amenorrhea due to congestion is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00124",
-    "label": "indigestion due to accumulation"
+    "label": "indigestion due to accumulation",
+    "english_name": "indigestion due to accumulation",
+    "chinese_name": "积滞不消",
+    "description": "In TCM, indigestion due to accumulation is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00125",
-    "label": "accumulation within the body"
+    "label": "accumulation within the body",
+    "english_name": "accumulation within the body",
+    "chinese_name": "积滞内停",
+    "description": "In TCM, accumulation within the body is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00126",
-    "label": "indigestion accompanied with diarrhea and dysentery"
+    "label": "indigestion accompanied with diarrhea and dysentery",
+    "english_name": "indigestion accompanied with diarrhea and dysentery",
+    "chinese_name": "积滞泻痢",
+    "description": "In TCM, indigestion accompanied with diarrhea and dysentery is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00127",
-    "label": "dyspeptic abdonimal distention"
+    "label": "dyspeptic abdonimal distention",
+    "english_name": "dyspeptic abdonimal distention",
+    "chinese_name": "积滞胀满",
+    "description": "In TCM, dyspeptic abdonimal distention is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00128",
-    "label": "deficiency of spermatozoa"
+    "label": "deficiency of spermatozoa",
+    "english_name": "deficiency of spermatozoa",
+    "chinese_name": "精亏",
+    "description": "In TCM, deficiency of spermatozoa describes a pattern involving an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00129",
-    "label": "cold sperm"
+    "label": "cold sperm",
+    "english_name": "cold sperm",
+    "chinese_name": "精冷",
+    "description": "In TCM, cold sperm describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00130",
-    "label": "deficiency of the essence and blood"
+    "label": "deficiency of the essence and blood",
+    "english_name": "deficiency of the essence and blood",
+    "chinese_name": "精血不足",
+    "description": "In TCM, deficiency of the essence and blood describes a pattern involving blood nourishment, movement, or stagnation, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00131",
-    "label": "deficiency of the essence and blood"
+    "label": "deficiency of the essence and blood",
+    "english_name": "deficiency of the essence and blood",
+    "chinese_name": "精血亏虚",
+    "description": "In TCM, deficiency of the essence and blood describes a pattern involving blood nourishment, movement, or stagnation, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00132",
-    "label": "经寒"
+    "label": "经寒",
+    "english_name": "经寒",
+    "chinese_name": "经寒",
+    "description": "In TCM, 经寒 is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00133",
-    "label": "retention of meat and food in the stomach"
+    "label": "retention of meat and food in the stomach",
+    "english_name": "retention of meat and food in the stomach",
+    "chinese_name": "肉食积滞",
+    "description": "In TCM, retention of meat and food in the stomach describes a pattern involving digestion and the downward movement of food and fluids. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00134",
-    "label": "stagnation of liver-qi"
+    "label": "stagnation of liver-qi",
+    "english_name": "stagnation of liver-qi",
+    "chinese_name": "肝气郁结",
+    "description": "In TCM, stagnation of liver-qi describes a pattern involving the smooth movement of qi, blood, and emotions together with qi movement or qi strength, blocked movement, often linked with distension, pain, or emotional constraint. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00135",
-    "label": "the hepatic fire"
+    "label": "the hepatic fire",
+    "english_name": "the hepatic fire",
+    "chinese_name": "肝火",
+    "description": "In TCM, the hepatic fire describes a pattern involving intense heat signs such as inflammation, agitation, bleeding, or burning pain. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00136",
-    "label": "heat in liver"
+    "label": "heat in liver",
+    "english_name": "heat in liver",
+    "chinese_name": "肝热",
+    "description": "In TCM, heat in liver describes a pattern involving the smooth movement of qi, blood, and emotions together with heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00137",
-    "label": "deficiency of the liver and kidney"
+    "label": "deficiency of the liver and kidney",
+    "english_name": "deficiency of the liver and kidney",
+    "chinese_name": "肝肾不足",
+    "description": "In TCM, deficiency of the liver and kidney describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00138",
-    "label": "deficiency of the liver and kidney"
+    "label": "deficiency of the liver and kidney",
+    "english_name": "deficiency of the liver and kidney",
+    "chinese_name": "肝肾亏虚",
+    "description": "In TCM, deficiency of the liver and kidney describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00139",
-    "label": "asthenia of both liver and kidney; deficiency of both liver and kidney"
+    "label": "asthenia of both liver and kidney; deficiency of both liver and kidney",
+    "english_name": "asthenia of both liver and kidney; deficiency of both liver and kidney",
+    "chinese_name": "肝肾虚",
+    "description": "In TCM, asthenia of both liver and kidney; deficiency of both liver and kidney describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00140",
-    "label": "deficiency of the liver-yin and kidney-yin"
+    "label": "deficiency of the liver-yin and kidney-yin",
+    "english_name": "deficiency of the liver-yin and kidney-yin",
+    "chinese_name": "肝肾阴虚",
+    "description": "In TCM, deficiency of the liver-yin and kidney-yin describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with cooling, moistening, and nourishing aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00141",
-    "label": "disharmony between the liver and stomach"
+    "label": "disharmony between the liver and stomach",
+    "english_name": "disharmony between the liver and stomach",
+    "chinese_name": "肝胃不和",
+    "description": "In TCM, disharmony between the liver and stomach describes a pattern involving the smooth movement of qi, blood, and emotions. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00142",
-    "label": "stagnation of qi of the liver and stomach"
+    "label": "stagnation of qi of the liver and stomach",
+    "english_name": "stagnation of qi of the liver and stomach",
+    "chinese_name": "肝胃气滞",
+    "description": "In TCM, stagnation of qi of the liver and stomach describes a pattern involving the smooth movement of qi, blood, and emotions together with qi movement or qi strength, blocked movement, often linked with distension, pain, or emotional constraint. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00143",
-    "label": "Dampness and Heat in Liver and Gallbladder"
+    "label": "Dampness and Heat in Liver and Gallbladder",
+    "english_name": "Dampness and Heat in Liver and Gallbladder",
+    "chinese_name": "肝胆湿热",
+    "description": "In TCM, Dampness and Heat in Liver and Gallbladder describes a pattern involving the smooth movement of qi, blood, and emotions together with heat signs such as fever, inflammation, thirst, or irritability, heaviness, swelling, discharge, or sluggish fluid movement. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00144",
-    "label": "liver weakness"
+    "label": "liver weakness",
+    "english_name": "liver weakness",
+    "chinese_name": "肝虚",
+    "description": "In TCM, liver weakness describes a pattern involving the smooth movement of qi, blood, and emotions. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00145",
-    "label": "liver depression"
+    "label": "liver depression",
+    "english_name": "liver depression",
+    "chinese_name": "肝郁",
+    "description": "In TCM, liver depression describes a pattern involving the smooth movement of qi, blood, and emotions. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00146",
-    "label": "the Depression of the liver generates pathogenic fire"
+    "label": "the Depression of the liver generates pathogenic fire",
+    "english_name": "the Depression of the liver generates pathogenic fire",
+    "chinese_name": "肝郁化火",
+    "description": "In TCM, the Depression of the liver generates pathogenic fire describes a pattern involving the smooth movement of qi, blood, and emotions together with intense heat signs such as inflammation, agitation, bleeding, or burning pain. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00147",
-    "label": "liver depression and qi stagnation"
+    "label": "liver depression and qi stagnation",
+    "english_name": "liver depression and qi stagnation",
+    "chinese_name": "肝郁气滞",
+    "description": "In TCM, liver depression and qi stagnation describes a pattern involving the smooth movement of qi, blood, and emotions together with qi movement or qi strength, blocked movement, often linked with distension, pain, or emotional constraint. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00148",
-    "label": "liver yang"
+    "label": "liver yang",
+    "english_name": "liver yang",
+    "chinese_name": "肝阳",
+    "description": "In TCM, liver yang describes a pattern involving the smooth movement of qi, blood, and emotions together with warming, activating, and transforming aspects of the body. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00149",
-    "label": "internal movement of the liver-wind"
+    "label": "internal movement of the liver-wind",
+    "english_name": "internal movement of the liver-wind",
+    "chinese_name": "肝风内动",
+    "description": "In TCM, internal movement of the liver-wind describes a pattern involving the smooth movement of qi, blood, and emotions together with moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00150",
-    "label": "Liver wind and phlegm"
+    "label": "Liver wind and phlegm",
+    "english_name": "Liver wind and phlegm",
+    "chinese_name": "肝风夹痰",
+    "description": "In TCM, Liver wind and phlegm describes a pattern involving the smooth movement of qi, blood, and emotions together with thick fluids, mucus, nodules, cloudiness, or obstructed movement, moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00151",
-    "label": "constipation due to heat in the large intestine"
+    "label": "constipation due to heat in the large intestine",
+    "english_name": "constipation due to heat in the large intestine",
+    "chinese_name": "肠热",
+    "description": "In TCM, constipation due to heat in the large intestine describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00152",
-    "label": "dryness in the intestines"
+    "label": "dryness in the intestines",
+    "english_name": "dryness in the intestines",
+    "chinese_name": "肠燥",
+    "description": "In TCM, dryness in the intestines is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00153",
-    "label": "cold on the lungs"
+    "label": "cold on the lungs",
+    "english_name": "cold on the lungs",
+    "chinese_name": "肺寒",
+    "description": "In TCM, cold on the lungs describes a pattern involving breathing, protective qi, skin, and fluid movement together with cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00154",
-    "label": "stasis of lung-energy"
+    "label": "stasis of lung-energy",
+    "english_name": "stasis of lung-energy",
+    "chinese_name": "肺气壅实",
+    "description": "In TCM, stasis of lung-energy describes a pattern involving breathing, protective qi, skin, and fluid movement together with slowed or blocked blood movement, often linked with fixed or sharp pain. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00155",
-    "label": "heat in lung"
+    "label": "heat in lung",
+    "english_name": "heat in lung",
+    "chinese_name": "肺热",
+    "description": "In TCM, heat in lung describes a pattern involving breathing, protective qi, skin, and fluid movement together with heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00156",
-    "label": "dry lungs"
+    "label": "dry lungs",
+    "english_name": "dry lungs",
+    "chinese_name": "肺燥",
+    "description": "In TCM, dry lungs describes a pattern involving breathing, protective qi, skin, and fluid movement. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00157",
-    "label": "deficiency of the lung and kidney"
+    "label": "deficiency of the lung and kidney",
+    "english_name": "deficiency of the lung and kidney",
+    "chinese_name": "肺肾不足",
+    "description": "In TCM, deficiency of the lung and kidney describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00158",
-    "label": "asthenia of both the lung and kidney"
+    "label": "asthenia of both the lung and kidney",
+    "english_name": "asthenia of both the lung and kidney",
+    "chinese_name": "肺肾两虚",
+    "description": "In TCM, asthenia of both the lung and kidney describes a pattern involving kidney-related warming, fluid, growth, or lower-body function. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00159",
-    "label": "imperiment of yin in lung and stomach"
+    "label": "imperiment of yin in lung and stomach",
+    "english_name": "imperiment of yin in lung and stomach",
+    "chinese_name": "肺胃阴伤",
+    "description": "In TCM, imperiment of yin in lung and stomach describes a pattern involving breathing, protective qi, skin, and fluid movement together with cooling, moistening, and nourishing aspects of the body. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00160",
-    "label": "asthenia of lung"
+    "label": "asthenia of lung",
+    "english_name": "asthenia of lung",
+    "chinese_name": "肺虚",
+    "description": "In TCM, asthenia of lung describes a pattern involving breathing, protective qi, skin, and fluid movement. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00161",
-    "label": "deficiency in kidney"
+    "label": "deficiency in kidney",
+    "english_name": "deficiency in kidney",
+    "chinese_name": "肾虚",
+    "description": "In TCM, deficiency in kidney describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00162",
-    "label": "deficiency of kidney-yang"
+    "label": "deficiency of kidney-yang",
+    "english_name": "deficiency of kidney-yang",
+    "chinese_name": "肾阳不足",
+    "description": "In TCM, deficiency of kidney-yang describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with warming, activating, and transforming aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00163",
-    "label": "deficiency of the kidney-yang"
+    "label": "deficiency of the kidney-yang",
+    "english_name": "deficiency of the kidney-yang",
+    "chinese_name": "肾阳亏虚",
+    "description": "In TCM, deficiency of the kidney-yang describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with warming, activating, and transforming aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00164",
-    "label": "deficiency of the kidney-yang"
+    "label": "deficiency of the kidney-yang",
+    "english_name": "deficiency of the kidney-yang",
+    "chinese_name": "肾阳虚",
+    "description": "In TCM, deficiency of the kidney-yang describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with warming, activating, and transforming aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00165",
-    "label": "kidney yang deficiency"
+    "label": "kidney yang deficiency",
+    "english_name": "kidney yang deficiency",
+    "chinese_name": "肾阳虚衰",
+    "description": "In TCM, kidney yang deficiency describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with warming, activating, and transforming aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00166",
-    "label": "the stomach affected by cold"
+    "label": "the stomach affected by cold",
+    "english_name": "the stomach affected by cold",
+    "chinese_name": "胃寒",
+    "description": "In TCM, the stomach affected by cold describes a pattern involving digestion and the downward movement of food and fluids together with cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00167",
-    "label": "the stomach fire"
+    "label": "the stomach fire",
+    "english_name": "the stomach fire",
+    "chinese_name": "胃火",
+    "description": "In TCM, the stomach fire describes a pattern involving digestion and the downward movement of food and fluids together with intense heat signs such as inflammation, agitation, bleeding, or burning pain. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00168",
-    "label": "excessiveness of the stomach-fire"
+    "label": "excessiveness of the stomach-fire",
+    "english_name": "excessiveness of the stomach-fire",
+    "chinese_name": "胃火亢盛",
+    "description": "In TCM, excessiveness of the stomach-fire describes a pattern involving digestion and the downward movement of food and fluids together with intense heat signs such as inflammation, agitation, bleeding, or burning pain, a stronger obstructive pattern where something is stuck, accumulated, or overactive. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. Excess means the pattern is driven more by accumulation, obstruction, or an overactive pathogenic factor. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00169",
-    "label": "stomach heat"
+    "label": "stomach heat",
+    "english_name": "stomach heat",
+    "chinese_name": "胃热",
+    "description": "In TCM, stomach heat describes a pattern involving digestion and the downward movement of food and fluids together with heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00170",
-    "label": "deficiency of the stomach-yin"
+    "label": "deficiency of the stomach-yin",
+    "english_name": "deficiency of the stomach-yin",
+    "chinese_name": "胃阴不足",
+    "description": "In TCM, deficiency of the stomach-yin describes a pattern involving digestion and the downward movement of food and fluids together with cooling, moistening, and nourishing aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00171",
-    "label": "Bile fire and phlegm"
+    "label": "Bile fire and phlegm",
+    "english_name": "Bile fire and phlegm",
+    "chinese_name": "胆火挟痰",
+    "description": "In TCM, Bile fire and phlegm describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement, intense heat signs such as inflammation, agitation, bleeding, or burning pain. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00172",
-    "label": "distending pain of the hypochondrium due to gallblsdder disorder"
+    "label": "distending pain of the hypochondrium due to gallblsdder disorder",
+    "english_name": "distending pain of the hypochondrium due to gallblsdder disorder",
+    "chinese_name": "胆胀",
+    "description": "In TCM, distending pain of the hypochondrium due to gallblsdder disorder is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00173",
-    "label": "a presence of cold in the spleen"
+    "label": "a presence of cold in the spleen",
+    "english_name": "a presence of cold in the spleen",
+    "chinese_name": "脾寒",
+    "description": "In TCM, a presence of cold in the spleen describes a pattern involving digestion, energy production, and the body's ability to transform fluids together with cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00174",
-    "label": "asthenia of spleen and lung qi; deficiency of spleen and lung"
+    "label": "asthenia of spleen and lung qi; deficiency of spleen and lung",
+    "english_name": "asthenia of spleen and lung qi; deficiency of spleen and lung",
+    "chinese_name": "脾肺气虚",
+    "description": "In TCM, asthenia of spleen and lung qi; deficiency of spleen and lung describes a pattern involving digestion, energy production, and the body's ability to transform fluids together with qi movement or qi strength, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00175",
-    "label": "splenonephric deficiency"
+    "label": "splenonephric deficiency",
+    "english_name": "splenonephric deficiency",
+    "chinese_name": "脾肾虚",
+    "description": "In TCM, splenonephric deficiency describes a pattern involving an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00176",
-    "label": "deficiency of the spleen-yang and kidney-yang"
+    "label": "deficiency of the spleen-yang and kidney-yang",
+    "english_name": "deficiency of the spleen-yang and kidney-yang",
+    "chinese_name": "脾肾阳虚",
+    "description": "In TCM, deficiency of the spleen-yang and kidney-yang describes a pattern involving kidney-related warming, fluid, growth, or lower-body function together with warming, activating, and transforming aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00177",
-    "label": "weak spleen and stomach"
+    "label": "weak spleen and stomach",
+    "english_name": "weak spleen and stomach",
+    "chinese_name": "脾胃亏虚",
+    "description": "In TCM, weak spleen and stomach describes a pattern involving digestion, energy production, and the body's ability to transform fluids. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00178",
-    "label": "stagnation of gastrosplenic qi; stagnation of spleen and stomach qi"
+    "label": "stagnation of gastrosplenic qi; stagnation of spleen and stomach qi",
+    "english_name": "stagnation of gastrosplenic qi; stagnation of spleen and stomach qi",
+    "chinese_name": "脾胃气滞",
+    "description": "In TCM, stagnation of gastrosplenic qi; stagnation of spleen and stomach qi describes a pattern involving digestion, energy production, and the body's ability to transform fluids together with qi movement or qi strength, blocked movement, often linked with distension, pain, or emotional constraint. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00179",
-    "label": "eficiency of qi in the spleen and stomach"
+    "label": "eficiency of qi in the spleen and stomach",
+    "english_name": "eficiency of qi in the spleen and stomach",
+    "chinese_name": "脾胃气虚",
+    "description": "In TCM, eficiency of qi in the spleen and stomach describes a pattern involving digestion, energy production, and the body's ability to transform fluids together with qi movement or qi strength. The pattern involves the body's functional energy, especially movement, lifting, holding, or transformation. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00180",
-    "label": "Spleen and stomach dampness block"
+    "label": "Spleen and stomach dampness block",
+    "english_name": "Spleen and stomach dampness block",
+    "chinese_name": "脾胃湿阻气滞",
+    "description": "In TCM, Spleen and stomach dampness block describes a pattern involving digestion, energy production, and the body's ability to transform fluids together with heaviness, swelling, discharge, or sluggish fluid movement. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. Dampness can show up as heaviness, swelling, loose stools, discharge, nausea, or a sluggish stuck feeling. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00181",
-    "label": "weak spleen and stomach"
+    "label": "weak spleen and stomach",
+    "english_name": "weak spleen and stomach",
+    "chinese_name": "脾胃虚",
+    "description": "In TCM, weak spleen and stomach describes a pattern involving digestion, energy production, and the body's ability to transform fluids. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00182",
-    "label": "cold syndrome of the spleen and the stomach of deficiency type"
+    "label": "cold syndrome of the spleen and the stomach of deficiency type",
+    "english_name": "cold syndrome of the spleen and the stomach of deficiency type",
+    "chinese_name": "脾胃虚寒",
+    "description": "In TCM, cold syndrome of the spleen and the stomach of deficiency type describes a pattern involving digestion, energy production, and the body's ability to transform fluids together with cold signs such as chilliness, slow movement, or cold pain, an underlying weakness or lack of nourishment, warmth, or functional energy. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00183",
-    "label": "weak spleen and stomach"
+    "label": "weak spleen and stomach",
+    "english_name": "weak spleen and stomach",
+    "chinese_name": "脾胃虚弱",
+    "description": "In TCM, weak spleen and stomach describes a pattern involving digestion, energy production, and the body's ability to transform fluids. The syndrome name is used to summarize a cluster of related signs and symptoms in traditional pattern language."
   },
   {
     "id": "SMSY00184",
-    "label": "deficiency of spleen"
+    "label": "deficiency of spleen",
+    "english_name": "deficiency of spleen",
+    "chinese_name": "脾虚",
+    "description": "In TCM, deficiency of spleen describes a pattern involving digestion, energy production, and the body's ability to transform fluids together with an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00185",
-    "label": "asthenia cold of bladder"
+    "label": "asthenia cold of bladder",
+    "english_name": "asthenia cold of bladder",
+    "chinese_name": "膀胱虚冷",
+    "description": "In TCM, asthenia cold of bladder describes a pattern involving cold signs such as chilliness, slow movement, or cold pain. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00186",
-    "label": "consumptive disease"
+    "label": "consumptive disease",
+    "english_name": "consumptive disease",
+    "chinese_name": "虚劳",
+    "description": "In TCM, consumptive disease is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00187",
-    "label": "dyspnea due to deficiency"
+    "label": "dyspnea due to deficiency",
+    "english_name": "dyspnea due to deficiency",
+    "chinese_name": "虚喘",
+    "description": "In TCM, dyspnea due to deficiency describes a pattern involving an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00188",
-    "label": "deficiency-cold"
+    "label": "deficiency-cold",
+    "english_name": "deficiency-cold",
+    "chinese_name": "虚寒",
+    "description": "In TCM, deficiency-cold describes a pattern involving cold signs such as chilliness, slow movement, or cold pain, an underlying weakness or lack of nourishment, warmth, or functional energy. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00189",
-    "label": "fidgetiness due to deficiency"
+    "label": "fidgetiness due to deficiency",
+    "english_name": "fidgetiness due to deficiency",
+    "chinese_name": "虚烦",
+    "description": "In TCM, fidgetiness due to deficiency describes a pattern involving an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00190",
-    "label": "asthenia-heat"
+    "label": "asthenia-heat",
+    "english_name": "asthenia-heat",
+    "chinese_name": "虚热",
+    "description": "In TCM, asthenia-heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00191",
-    "label": "consumptive disease"
+    "label": "consumptive disease",
+    "english_name": "consumptive disease",
+    "chinese_name": "虚痨",
+    "description": "In TCM, consumptive disease is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00192",
-    "label": "prostration syndrome"
+    "label": "prostration syndrome",
+    "english_name": "prostration syndrome",
+    "chinese_name": "虚脱",
+    "description": "In TCM, prostration syndrome is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00193",
-    "label": "floating of weak yang"
+    "label": "floating of weak yang",
+    "english_name": "floating of weak yang",
+    "chinese_name": "虚阳上浮",
+    "description": "In TCM, floating of weak yang describes a pattern involving warming, activating, and transforming aspects of the body. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00194",
-    "label": "internal stirring of deficiency-wind"
+    "label": "internal stirring of deficiency-wind",
+    "english_name": "internal stirring of deficiency-wind",
+    "chinese_name": "虚风内动",
+    "description": "In TCM, internal stirring of deficiency-wind describes a pattern involving moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset, an underlying weakness or lack of nourishment, warmth, or functional energy. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00195",
-    "label": "abdominal pain due to parasitic infestation"
+    "label": "abdominal pain due to parasitic infestation",
+    "english_name": "abdominal pain due to parasitic infestation",
+    "chinese_name": "虫积",
+    "description": "In TCM, abdominal pain due to parasitic infestation is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00196",
-    "label": "blood cold"
+    "label": "blood cold",
+    "english_name": "blood cold",
+    "chinese_name": "血寒",
+    "description": "In TCM, blood cold describes a pattern involving blood nourishment, movement, or stagnation, cold signs such as chilliness, slow movement, or cold pain. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00197",
-    "label": "heat in blood"
+    "label": "heat in blood",
+    "english_name": "heat in blood",
+    "chinese_name": "血热",
+    "description": "In TCM, heat in blood describes a pattern involving blood nourishment, movement, or stagnation, heat signs such as fever, inflammation, thirst, or irritability. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00198",
-    "label": "heat in blood with ecchymosis"
+    "label": "heat in blood with ecchymosis",
+    "english_name": "heat in blood with ecchymosis",
+    "chinese_name": "血热有瘀",
+    "description": "In TCM, heat in blood with ecchymosis describes a pattern involving blood nourishment, movement, or stagnation, heat signs such as fever, inflammation, thirst, or irritability. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00199",
-    "label": "heat invading the blood phase"
+    "label": "heat invading the blood phase",
+    "english_name": "heat invading the blood phase",
+    "chinese_name": "血热毒盛",
+    "description": "In TCM, heat invading the blood phase describes a pattern involving blood nourishment, movement, or stagnation, heat signs such as fever, inflammation, thirst, or irritability. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00200",
-    "label": "stasis of blood"
+    "label": "stasis of blood",
+    "english_name": "stasis of blood",
+    "chinese_name": "血瘀",
+    "description": "In TCM, stasis of blood describes a pattern involving blood nourishment, movement, or stagnation, slowed or blocked blood movement, often linked with fixed or sharp pain. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Stasis means blood movement is slowed or blocked, often linked with fixed, sharp, or persistent pain. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00201",
-    "label": "deficiency of blood"
+    "label": "deficiency of blood",
+    "english_name": "deficiency of blood",
+    "chinese_name": "血虚",
+    "description": "In TCM, deficiency of blood describes a pattern involving blood nourishment, movement, or stagnation, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00202",
-    "label": "Exteriat Syndrome of Deficiency"
+    "label": "Exteriat Syndrome of Deficiency",
+    "english_name": "Exteriat Syndrome of Deficiency",
+    "chinese_name": "表虚",
+    "description": "In TCM, Exteriat Syndrome of Deficiency describes a pattern involving an underlying weakness or lack of nourishment, warmth, or functional energy. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00203",
-    "label": "impairment in the body due to alcohol toxin"
+    "label": "impairment in the body due to alcohol toxin",
+    "english_name": "impairment in the body due to alcohol toxin",
+    "chinese_name": "酒毒伤中",
+    "description": "In TCM, impairment in the body due to alcohol toxin is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00204",
-    "label": "excess of yang"
+    "label": "excess of yang",
+    "english_name": "excess of yang",
+    "chinese_name": "阳亢",
+    "description": "In TCM, excess of yang describes a pattern involving warming, activating, and transforming aspects of the body, a stronger obstructive pattern where something is stuck, accumulated, or overactive. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. Excess means the pattern is driven more by accumulation, obstruction, or an overactive pathogenic factor. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00205",
-    "label": "yang virulence"
+    "label": "yang virulence",
+    "english_name": "yang virulence",
+    "chinese_name": "阳毒",
+    "description": "In TCM, yang virulence describes a pattern involving warming, activating, and transforming aspects of the body. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00206",
-    "label": "yang deficiency"
+    "label": "yang deficiency",
+    "english_name": "yang deficiency",
+    "chinese_name": "阳虚",
+    "description": "In TCM, yang deficiency describes a pattern involving warming, activating, and transforming aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00207",
-    "label": "externally infection due to yang deficiency"
+    "label": "externally infection due to yang deficiency",
+    "english_name": "externally infection due to yang deficiency",
+    "chinese_name": "阳虚外感",
+    "description": "In TCM, externally infection due to yang deficiency describes a pattern involving warming, activating, and transforming aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the warming and activating side of the body, so coldness, low energy, or weak transformation may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00208",
-    "label": "deficiency of yin"
+    "label": "deficiency of yin",
+    "english_name": "deficiency of yin",
+    "chinese_name": "阴亏",
+    "description": "In TCM, deficiency of yin describes a pattern involving cooling, moistening, and nourishing aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00209",
-    "label": "coldness of yin"
+    "label": "coldness of yin",
+    "english_name": "coldness of yin",
+    "chinese_name": "阴寒",
+    "description": "In TCM, coldness of yin describes a pattern involving cooling, moistening, and nourishing aspects of the body, cold signs such as chilliness, slow movement, or cold pain. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Cold signs may include chilliness, cold pain, pale appearance, slower movement, or symptoms that feel better with warmth. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00210",
-    "label": "toxic swelling due to carbuncle of yin nature"
+    "label": "toxic swelling due to carbuncle of yin nature",
+    "english_name": "toxic swelling due to carbuncle of yin nature",
+    "chinese_name": "阴疽肿毒",
+    "description": "In TCM, toxic swelling due to carbuncle of yin nature describes a pattern involving cooling, moistening, and nourishing aspects of the body. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00211",
-    "label": "deficiency of yin"
+    "label": "deficiency of yin",
+    "english_name": "deficiency of yin",
+    "chinese_name": "阴虚",
+    "description": "In TCM, deficiency of yin describes a pattern involving cooling, moistening, and nourishing aspects of the body, an underlying weakness or lack of nourishment, warmth, or functional energy. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Deficiency means the body lacks enough nourishment, warmth, fluids, blood, or functional strength to regulate itself well. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00212",
-    "label": "flaming-up of fire due to dificiency of yin"
+    "label": "flaming-up of fire due to dificiency of yin",
+    "english_name": "flaming-up of fire due to dificiency of yin",
+    "chinese_name": "阴虚火旺",
+    "description": "In TCM, flaming-up of fire due to dificiency of yin describes a pattern involving cooling, moistening, and nourishing aspects of the body, intense heat signs such as inflammation, agitation, bleeding, or burning pain. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. Fire is a stronger heat pattern and may suggest agitation, burning pain, redness, inflammation, bleeding, or intense thirst. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00213",
-    "label": "insufficiency of the yin-blood"
+    "label": "insufficiency of the yin-blood",
+    "english_name": "insufficiency of the yin-blood",
+    "chinese_name": "阴血不足",
+    "description": "In TCM, insufficiency of the yin-blood describes a pattern involving blood nourishment, movement, or stagnation, cooling, moistening, and nourishing aspects of the body. The pattern involves nourishment or circulation, and may relate to weakness, dryness, fixed pain, or poor movement of blood. The pattern involves the cooling and nourishing side of the body, so dryness, heat sensations, or lack of fluids may be relevant. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00214",
-    "label": "stubborn phlegm"
+    "label": "stubborn phlegm",
+    "english_name": "stubborn phlegm",
+    "chinese_name": "顽痰",
+    "description": "In TCM, stubborn phlegm describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00215",
-    "label": "retention of stubborn phlegm"
+    "label": "retention of stubborn phlegm",
+    "english_name": "retention of stubborn phlegm",
+    "chinese_name": "顽痰胶结",
+    "description": "In TCM, retention of stubborn phlegm describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement. Something is lingering or accumulating inside the body rather than moving or clearing normally. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00216",
-    "label": "wind-cold syndrome"
+    "label": "wind-cold syndrome",
+    "english_name": "wind-cold syndrome",
+    "chinese_name": "风寒",
+    "description": "In TCM, this pattern describes an external wind-cold invasion, often similar to an early cold-like presentation. It may involve chills, aversion to cold, clear nasal discharge, headache, body aches, or cough. The emphasis is on an external pattern affecting the body's surface and protective qi."
   },
   {
     "id": "SMSY00217",
-    "label": "wind syndromes of cold type with damp symptoms"
+    "label": "wind syndromes of cold type with damp symptoms",
+    "english_name": "wind syndromes of cold type with damp symptoms",
+    "chinese_name": "风寒挟湿",
+    "description": "In TCM, this pattern describes an external wind-cold invasion, often similar to an early cold-like presentation. It may involve chills, aversion to cold, clear nasal discharge, headache, body aches, or cough. The emphasis is on an external pattern affecting the body's surface and protective qi."
   },
   {
     "id": "SMSY00218",
-    "label": "wind-cold-damp syndrome"
+    "label": "wind-cold-damp syndrome",
+    "english_name": "wind-cold-damp syndrome",
+    "chinese_name": "风寒湿",
+    "description": "In TCM, this pattern describes an external wind-cold invasion, often similar to an early cold-like presentation. It may involve chills, aversion to cold, clear nasal discharge, headache, body aches, or cough. The emphasis is on an external pattern affecting the body's surface and protective qi."
   },
   {
     "id": "SMSY00219",
-    "label": "wind water"
+    "label": "wind water",
+    "english_name": "wind water",
+    "chinese_name": "风水",
+    "description": "In TCM, wind water describes a pattern involving moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00220",
-    "label": "onset of affection due to wind-warm syndrome"
+    "label": "onset of affection due to wind-warm syndrome",
+    "english_name": "onset of affection due to wind-warm syndrome",
+    "chinese_name": "风温初起",
+    "description": "In TCM, onset of affection due to wind-warm syndrome describes a pattern involving moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00222",
-    "label": "wind and heat"
+    "label": "wind and heat",
+    "english_name": "wind and heat",
+    "chinese_name": "风热",
+    "description": "In TCM, wind and heat describes a pattern involving heat signs such as fever, inflammation, thirst, or irritability, moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00223",
-    "label": "retention of wind-heat in the lung"
+    "label": "retention of wind-heat in the lung",
+    "english_name": "retention of wind-heat in the lung",
+    "chinese_name": "风热郁肺",
+    "description": "In TCM, retention of wind-heat in the lung describes a pattern involving breathing, protective qi, skin, and fluid movement together with heat signs such as fever, inflammation, thirst, or irritability, moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset. Something is lingering or accumulating inside the body rather than moving or clearing normally. Heat signs may include feverishness, thirst, irritability, redness, yellow secretions, or inflammatory-type symptoms. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. This description helps explain the pattern language behind the model's syndrome prediction."
   },
   {
     "id": "SMSY00224",
-    "label": "wind-phlegm"
+    "label": "wind-phlegm",
+    "english_name": "wind-phlegm",
+    "chinese_name": "风痰",
+    "description": "In TCM, wind-phlegm describes a pattern involving thick fluids, mucus, nodules, cloudiness, or obstructed movement, moving or changing symptoms such as tremor, dizziness, spasms, or sudden onset. Phlegm in tcm can mean visible mucus or a broader pattern of thick fluids, cloudiness, nodules, dizziness, nausea, or obstruction. Wind often points to symptoms that move, change quickly, or involve shaking, spasm, dizziness, itching, or sudden onset. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00225",
-    "label": "food accumulation"
+    "label": "food accumulation",
+    "english_name": "food accumulation",
+    "chinese_name": "食物积滞",
+    "description": "In TCM, food accumulation is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00226",
-    "label": "food stagnation"
+    "label": "food stagnation",
+    "english_name": "food stagnation",
+    "chinese_name": "食积",
+    "description": "In TCM, food stagnation describes a pattern involving blocked movement, often linked with distension, pain, or emotional constraint. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   },
   {
     "id": "SMSY00227",
-    "label": "food accumulation"
+    "label": "food accumulation",
+    "english_name": "food accumulation",
+    "chinese_name": "食积不化",
+    "description": "In TCM, food accumulation is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00228",
-    "label": "indigestion with food retention"
+    "label": "indigestion with food retention",
+    "english_name": "indigestion with food retention",
+    "chinese_name": "食积不消",
+    "description": "In TCM, indigestion with food retention is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00229",
-    "label": "Dyspepsia injury wine"
+    "label": "Dyspepsia injury wine",
+    "english_name": "Dyspepsia injury wine",
+    "chinese_name": "食积伤酒",
+    "description": "In TCM, Dyspepsia injury wine is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00231",
-    "label": "indigestion"
+    "label": "indigestion",
+    "english_name": "indigestion",
+    "chinese_name": "饮食不消",
+    "description": "In TCM, indigestion is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00232",
-    "label": "indigestion"
+    "label": "indigestion",
+    "english_name": "indigestion",
+    "chinese_name": "饮食停滞",
+    "description": "In TCM, indigestion is a syndrome pattern used to summarize a cluster of related signs and symptoms. It helps describe the model's predicted pattern in traditional diagnostic language rather than as a Western medical diagnosis."
   },
   {
     "id": "SMSY00233",
-    "label": "food stagnation"
+    "label": "food stagnation",
+    "english_name": "food stagnation",
+    "chinese_name": "饮食积滞",
+    "description": "In TCM, food stagnation describes a pattern involving blocked movement, often linked with distension, pain, or emotional constraint. Stagnation means movement is blocked, often creating distension, pressure, pain, mood constraint, or symptoms that come and go. This is a way of grouping related signs and symptoms into a traditional pattern, not a Western medical diagnosis."
   }
 ]

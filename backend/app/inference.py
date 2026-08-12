@@ -98,6 +98,10 @@ class TCMNetInference:
         self.symptom_label_by_id = self._metadata_label_map(self.symptoms_metadata)
         self.syndrome_label_by_id = self._metadata_label_map(self.syndromes_metadata)
         self.herb_label_by_id = self._metadata_label_map(self.herbs_metadata)
+        self.syndrome_metadata_by_id = self._metadata_record_map(
+            self.syndromes_metadata
+        )
+        self.herb_metadata_by_id = self._metadata_record_map(self.herbs_metadata)
 
         self._validate_artifacts()
         self.model = self._load_model()
@@ -227,14 +231,16 @@ class TCMNetInference:
         return [
             {
                 "index": int(index),
-                "syndrome_id": self.syndrome_index_to_id[int(index)],
-                "label": self.syndrome_label_by_id.get(
-                    self.syndrome_index_to_id[int(index)],
-                    self.syndrome_index_to_id[int(index)],
-                ),
+                "syndrome_id": syndrome_id,
+                "label": metadata.get("label", syndrome_id),
+                "english_name": metadata.get("english_name", metadata.get("label", syndrome_id)),
+                "chinese_name": metadata.get("chinese_name", syndrome_id),
+                "description": metadata.get("description", ""),
                 "confidence": float(syndrome_probs[int(index)]),
             }
             for index in indices
+            for syndrome_id in [self.syndrome_index_to_id[int(index)]]
+            for metadata in [self.syndrome_metadata_by_id.get(syndrome_id, {})]
         ]
 
     def _recommend_herbs(
@@ -263,17 +269,20 @@ class TCMNetInference:
         ][:top_k]
         return [
             {
-                "herb_id": self.herb_ids[int(index)],
-                "label": self.herb_label_by_id.get(
-                    self.herb_ids[int(index)],
-                    self.herb_ids[int(index)],
-                ),
+                "herb_id": herb_id,
+                "label": metadata.get("label", herb_id),
+                "english_name": metadata.get("english_name", metadata.get("label", herb_id)),
+                "chinese_name": metadata.get("chinese_name", herb_id),
+                "description": metadata.get("description", ""),
+                "target_concepts": metadata.get("target_concepts", []),
                 "score": float(final_scores[int(index)]),
                 "concept_similarity": float(concept_similarity[int(index)]),
                 "syndrome_prior": float(prior[int(index)]),
                 "known_for_predicted_syndrome": bool(prior[int(index)] > 0),
             }
             for index in sorted_candidates
+            for herb_id in [self.herb_ids[int(index)]]
+            for metadata in [self.herb_metadata_by_id.get(herb_id, {})]
         ]
 
     def _build_explanation(
@@ -307,21 +316,27 @@ class TCMNetInference:
         # Keep this list short so responses stay lightweight for the UI.
         associated_herbs = [
             {
-                "id": self.herb_ids[int(index)],
-                "label": self.herb_label_by_id.get(
-                    self.herb_ids[int(index)],
-                    self.herb_ids[int(index)],
-                ),
+                "id": herb_id,
+                "label": metadata.get("label", herb_id),
+                "english_name": metadata.get("english_name", metadata.get("label", herb_id)),
+                "chinese_name": metadata.get("chinese_name", herb_id),
             }
             for index in associated_indices[:12]
+            for herb_id in [self.herb_ids[int(index)]]
+            for metadata in [self.herb_metadata_by_id.get(herb_id, {})]
         ]
+        syndrome_metadata = self.syndrome_metadata_by_id.get(syndrome_id, {})
 
         return {
             "matching_symptoms": matched_symptoms,
             "concept_alignment": top_concepts,
             "syndrome_herb_associations": {
                 "syndrome_id": syndrome_id,
-                "label": self.syndrome_label_by_id.get(syndrome_id, syndrome_id),
+                "label": syndrome_metadata.get("label", syndrome_id),
+                "english_name": syndrome_metadata.get(
+                    "english_name", syndrome_metadata.get("label", syndrome_id)
+                ),
+                "chinese_name": syndrome_metadata.get("chinese_name", syndrome_id),
                 "associated_herbs": associated_herbs,
                 "total_associated_herbs": int(len(associated_indices)),
             },
@@ -332,6 +347,10 @@ class TCMNetInference:
                     {
                         "herb_id": herb["herb_id"],
                         "label": herb["label"],
+                        "english_name": herb["english_name"],
+                        "chinese_name": herb["chinese_name"],
+                        "description": herb["description"],
+                        "target_concepts": herb["target_concepts"],
                         "concept_similarity": herb["concept_similarity"],
                         "syndrome_prior": herb["syndrome_prior"],
                         "score": herb["score"],
@@ -408,6 +427,11 @@ class TCMNetInference:
             str(record["id"]): str(record.get("label") or record["id"])
             for record in records
         }
+
+    @staticmethod
+    def _metadata_record_map(records: list[dict]) -> dict[str, dict]:
+        """Build a quick ID-to-record lookup from metadata records."""
+        return {str(record["id"]): record for record in records}
 
     def _read_json(self, filename: str):
         """Read a JSON artifact from the artifact directory."""
