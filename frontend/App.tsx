@@ -272,40 +272,40 @@ function AboutCard({ card }: { card: (typeof ABOUT_CARDS)[number] }) {
 
 const ABOUT_CARDS = [
   {
-    title: 'Symptom Input',
-    text: 'Start with observed symptoms and search by readable English labels.',
+    title: 'What is TCM?',
+    text: 'Traditional Chinese Medicine diagnoses illness by interpreting combinations of symptoms as underlying patterns, or syndromes, which then guide treatment.',
     detail:
-      'The interface groups similar translated labels so symptom selection stays readable.',
+      'TCM emphasizes patterns of signs and symptoms rather than single isolated findings, which directs therapeutic choices.',
   },
   {
-    title: 'Concept Signals',
-    text: 'TCMNet highlights pattern signals such as internal, heat, yin, and organ groups.',
+    title: 'The 14 Concepts',
+    text: 'TCMNet tracks 14 core concepts, including Yin/Yang, Hot/Cold, Interior/Exterior, Deficiency/Excess, and six organ or meridian groups.',
     detail:
-      'These signals make the result easier to understand than a syndrome name alone.',
+      'These concept signals are predicted from symptoms and help translate clinical features into traditional diagnostic language.',
   },
   {
     title: 'Syndrome Prediction',
-    text: 'TCMNet ranks likely syndromes from the selected symptom pattern.',
+    text: "TCMNet combines a patient's symptoms with these learned concepts to rank which of 228 TCM syndromes best matches their pattern.",
     detail:
-      'The app shows the best match first, then keeps a few alternatives visible for comparison.',
+      'The app surfaces the top matches while preserving alternative candidates for clinician review.',
   },
   {
-    title: 'Herb Ranking',
-    text: 'Herb recommendations are shown with plain-language context.',
+    title: 'Herb Recommendation',
+    text: 'After predicting a syndrome, TCMNet ranks herbs using both traditional syndrome-herb relationships and how closely each herb matches the predicted concepts.',
     detail:
-      'Each herb includes its Chinese name, typical TCM category, and targeted concepts.',
+      'Recommendations include contextual metadata so users can see why an herb was ranked highly for a given pattern.',
   },
   {
-    title: 'Future Direction',
-    text: 'Next steps include stronger labels, better grouping, richer explanations, and validation.',
+    title: 'How Our Model Works',
+    text: 'TCMNet uses a multi-task neural network that learns shared symptom features, predicts the 14 TCM concepts, then uses both to predict the final syndrome.',
     detail:
-      'Future work can improve metadata, validation, and clinical review workflows.',
+      'A shared representation helps the model leverage concept supervision to improve syndrome prediction performance.',
   },
   {
-    title: 'Final Report',
-    text: 'A final report and findings link will live here once the project writeup is complete.',
+    title: 'Model Performance',
+    text: 'TCMNet reached 88.25% syndrome accuracy and 90.79% Precision@1 for herb recommendations.',
     detail:
-      'Use this space for the CS229 report, results, limitations, and supporting analysis.',
+      'Performance metrics are reported on held-out synthetic test data and described in the project writeup.',
   },
 ];
 
