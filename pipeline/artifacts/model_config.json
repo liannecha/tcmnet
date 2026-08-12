@@ -1,0 +1,58 @@
+{
+  "model_type": "TCMNet",
+  "num_symptoms": 1869,
+  "num_concepts": 14,
+  "num_syndromes": 228,
+  "shared_hidden": 512,
+  "syndrome_hidden": 256,
+  "shared_dropout": 0.3,
+  "syndrome_dropout": 0.2,
+  "concept_columns": [
+    "Is_Wood",
+    "Is_Fire",
+    "Is_Earth",
+    "Is_Metal",
+    "Is_Water",
+    "Is_Reproductive",
+    "hot",
+    "cold",
+    "internal",
+    "external",
+    "yin",
+    "yang",
+    "excess",
+    "deficiency"
+  ],
+  "concept_labels": [
+    "Wood",
+    "Fire",
+    "Earth",
+    "Metal",
+    "Water",
+    "Reproductive",
+    "hot",
+    "cold",
+    "internal",
+    "external",
+    "yin",
+    "yang",
+    "excess",
+    "deficiency"
+  ],
+  "training": {
+    "epochs": 1,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "lambda_concept": 10.0,
+    "lambda_syndrome": 1.0,
+    "seed": 229,
+    "train_size": 4560,
+    "validation_size": 1140
+  },
+  "metrics": {
+    "accuracy": 0.4421052631578947,
+    "top5_accuracy": 0.787719298245614,
+    "macro_f1": 0.3496838608006033,
+    "concept_mse": 0.02488579290608565
+  }
+}

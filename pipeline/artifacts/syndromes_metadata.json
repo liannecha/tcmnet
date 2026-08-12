@@ -1,0 +1,914 @@
+[
+  {
+    "id": "SMSY00001",
+    "label": "deficiency-cold of kidney"
+  },
+  {
+    "id": "SMSY00002",
+    "label": "deficiency-cold of abdomen"
+  },
+  {
+    "id": "SMSY00003",
+    "label": "sinking of the middle qi"
+  },
+  {
+    "id": "SMSY00004",
+    "label": "the debility from chronic illness"
+  },
+  {
+    "id": "SMSY00005",
+    "label": "milk stagnation"
+  },
+  {
+    "id": "SMSY00006",
+    "label": "yang exhaustion"
+  },
+  {
+    "id": "SMSY00007",
+    "label": "postpartum  blood stasis"
+  },
+  {
+    "id": "SMSY00008",
+    "label": "postpartum blood deficiency"
+  },
+  {
+    "id": "SMSY00009",
+    "label": "intrinsic heat"
+  },
+  {
+    "id": "SMSY00010",
+    "label": "asthma of cold type"
+  },
+  {
+    "id": "SMSY00011",
+    "label": "Cold-type Dyspnea"
+  },
+  {
+    "id": "SMSY00012",
+    "label": "cold diarrhea"
+  },
+  {
+    "id": "SMSY00013",
+    "label": "injury caused by strain and sprain"
+  },
+  {
+    "id": "SMSY00014",
+    "label": "externally infected disease"
+  },
+  {
+    "id": "SMSY00015",
+    "label": "affection by exopathic wind-cold"
+  },
+  {
+    "id": "SMSY00016",
+    "label": "strong fever"
+  },
+  {
+    "id": "SMSY00017",
+    "label": "stagnation due to excessive heat"
+  },
+  {
+    "id": "SMSY00018",
+    "label": "cold sensation in uterus"
+  },
+  {
+    "id": "SMSY00019",
+    "label": "accumulation of cold and stasis of qi"
+  },
+  {
+    "id": "SMSY00020",
+    "label": "cold and damp"
+  },
+  {
+    "id": "SMSY00021",
+    "label": "retention of cold and wind within the body"
+  },
+  {
+    "id": "SMSY00022",
+    "label": "stagnation of cold-dampness"
+  },
+  {
+    "id": "SMSY00023",
+    "label": "Cold-dampness and incubated summer heat"
+  },
+  {
+    "id": "SMSY00024",
+    "label": "retention of cold and fluid"
+  },
+  {
+    "id": "SMSY00025",
+    "label": "combination of cold and heat"
+  },
+  {
+    "id": "SMSY00026",
+    "label": "periumbilical colic due to invasion of cold"
+  },
+  {
+    "id": "SMSY00027",
+    "label": "cold phlegm"
+  },
+  {
+    "id": "SMSY00028",
+    "label": "accumulation of cold evil"
+  },
+  {
+    "id": "SMSY00029",
+    "label": "fluid retention"
+  },
+  {
+    "id": "SMSY00030",
+    "label": "Phlegm fever in children"
+  },
+  {
+    "id": "SMSY00031",
+    "label": "wind in shaoyin"
+  },
+  {
+    "id": "SMSY00032",
+    "label": "exuberance of the heart fire"
+  },
+  {
+    "id": "SMSY00033",
+    "label": "breakdowm of the normal physilolgical coordination between the heart and the kidney"
+  },
+  {
+    "id": "SMSY00034",
+    "label": "insufficiency of both the heart and the spleen"
+  },
+  {
+    "id": "SMSY00035",
+    "label": "Heart stasis"
+  },
+  {
+    "id": "SMSY00036",
+    "label": "cardiac asthenia"
+  },
+  {
+    "id": "SMSY00037",
+    "label": "insufficiency of cardiac yang"
+  },
+  {
+    "id": "SMSY00038",
+    "label": "be affected by summer-head-dampness"
+  },
+  {
+    "id": "SMSY00039",
+    "label": "cold in meridian"
+  },
+  {
+    "id": "SMSY00040",
+    "label": "summer heat"
+  },
+  {
+    "id": "SMSY00041",
+    "label": "summer-heat evil"
+  },
+  {
+    "id": "SMSY00042",
+    "label": "Qi fails to keep"
+  },
+  {
+    "id": "SMSY00043",
+    "label": "failure of qi to govern blood;qi failing to failure of qi to contain blood"
+  },
+  {
+    "id": "SMSY00044",
+    "label": "sluggish flow of qi"
+  },
+  {
+    "id": "SMSY00045",
+    "label": "Qi becomes dormant or concealed"
+  },
+  {
+    "id": "SMSY00046",
+    "label": "air weakness"
+  },
+  {
+    "id": "SMSY00047",
+    "label": "insufficiency of the vital energy and blood"
+  },
+  {
+    "id": "SMSY00048",
+    "label": "deficiency of qi and the blood"
+  },
+  {
+    "id": "SMSY00049",
+    "label": "the debility of qi and the blood"
+  },
+  {
+    "id": "SMSY00050",
+    "label": "abnormal rising of qi"
+  },
+  {
+    "id": "SMSY00051",
+    "label": "stagnation of qi"
+  },
+  {
+    "id": "SMSY00052",
+    "label": "insufficiency of  qi and yin; deficiency of qi and yin"
+  },
+  {
+    "id": "SMSY00053",
+    "label": "insufficiency of qi and yin"
+  },
+  {
+    "id": "SMSY00054",
+    "label": "deficiency of qi and yin"
+  },
+  {
+    "id": "SMSY00055",
+    "label": "水血不"
+  },
+  {
+    "id": "SMSY00056",
+    "label": "anhydremia"
+  },
+  {
+    "id": "SMSY00057",
+    "label": "deficiency of fluid"
+  },
+  {
+    "id": "SMSY00058",
+    "label": "deficiency of the body fluid"
+  },
+  {
+    "id": "SMSY00059",
+    "label": "deficiency of body fluid with dryness in the intestines"
+  },
+  {
+    "id": "SMSY00060",
+    "label": "stasis"
+  },
+  {
+    "id": "SMSY00061",
+    "label": "swelling and pain due to blood stasis"
+  },
+  {
+    "id": "SMSY00063",
+    "label": "heat toxins"
+  },
+  {
+    "id": "SMSY00064",
+    "label": "maculae caused by violent heat pathogen"
+  },
+  {
+    "id": "SMSY00065",
+    "label": "Warm into the camp"
+  },
+  {
+    "id": "SMSY00066",
+    "label": "Febrile disease early"
+  },
+  {
+    "id": "SMSY00067",
+    "label": "Heat Evil camp injury"
+  },
+  {
+    "id": "SMSY00068",
+    "label": "Warm evil and hurt yin"
+  },
+  {
+    "id": "SMSY00069",
+    "label": "Retention of Dampness and turbidity in Mtddle-energizer"
+  },
+  {
+    "id": "SMSY00070",
+    "label": "damp fever"
+  },
+  {
+    "id": "SMSY00071",
+    "label": "Humidity at the beginning"
+  },
+  {
+    "id": "SMSY00073",
+    "label": "wet fever"
+  },
+  {
+    "id": "SMSY00074",
+    "label": "Retention of Dampness and heat in Mtddle-energizer"
+  },
+  {
+    "id": "SMSY00075",
+    "label": "Humidity and heat suppression"
+  },
+  {
+    "id": "SMSY00076",
+    "label": "sensation of fullness due to dampness and heat"
+  },
+  {
+    "id": "SMSY00077",
+    "label": "Damp Phlegm"
+  },
+  {
+    "id": "SMSY00078",
+    "label": "Retention of Dampness in Mtddle-energizer"
+  },
+  {
+    "id": "SMSY00079",
+    "label": "damp obstruction leading to qi stagnation"
+  },
+  {
+    "id": "SMSY00080",
+    "label": "fire toxic"
+  },
+  {
+    "id": "SMSY00081",
+    "label": "accumulation of fire toxins"
+  },
+  {
+    "id": "SMSY00082",
+    "label": "the heat attacts the pericardium"
+  },
+  {
+    "id": "SMSY00083",
+    "label": "heat attacking xuefen;heat invading blood"
+  },
+  {
+    "id": "SMSY00084",
+    "label": "heat toxic"
+  },
+  {
+    "id": "SMSY00085",
+    "label": "domination of toxin-heat in the body"
+  },
+  {
+    "id": "SMSY00086",
+    "label": "accumulation of heat toxic and phlegm"
+  },
+  {
+    "id": "SMSY00087",
+    "label": "diarrhea due to evil heat"
+  },
+  {
+    "id": "SMSY00088",
+    "label": "heat disease"
+  },
+  {
+    "id": "SMSY00089",
+    "label": "consumption of yin caused by febrile diseases"
+  },
+  {
+    "id": "SMSY00090",
+    "label": "Fever and Qi Deficiency"
+  },
+  {
+    "id": "SMSY00091",
+    "label": "impairment of the body fluid"
+  },
+  {
+    "id": "SMSY00092",
+    "label": "an unconscious patient with febrile diseases"
+  },
+  {
+    "id": "SMSY00093",
+    "label": "heat-phlegm"
+  },
+  {
+    "id": "SMSY00094",
+    "label": "consumption of the body fluid due to excessive heat"
+  },
+  {
+    "id": "SMSY00095",
+    "label": "accumulation of heat"
+  },
+  {
+    "id": "SMSY00096",
+    "label": "febrile symptoms"
+  },
+  {
+    "id": "SMSY00097",
+    "label": "cough caused by dryness"
+  },
+  {
+    "id": "SMSY00098",
+    "label": "adverse rising of phlegm"
+  },
+  {
+    "id": "SMSY00099",
+    "label": "accumulation of phlegm"
+  },
+  {
+    "id": "SMSY00100",
+    "label": "abundant sputum"
+  },
+  {
+    "id": "SMSY00101",
+    "label": "phlegmatic saliva accumulated in the interior"
+  },
+  {
+    "id": "SMSY00102",
+    "label": "phlegm-damoness obstructing lung"
+  },
+  {
+    "id": "SMSY00103",
+    "label": "stagnation of phlegm and drool"
+  },
+  {
+    "id": "SMSY00104",
+    "label": "phlegm and qi obstructing each other"
+  },
+  {
+    "id": "SMSY00105",
+    "label": "retention of phlegm in Meridians and Collaterals"
+  },
+  {
+    "id": "SMSY00106",
+    "label": "phlegm fire"
+  },
+  {
+    "id": "SMSY00107",
+    "label": "phlegm heat"
+  },
+  {
+    "id": "SMSY00108",
+    "label": "abundant phlegm"
+  },
+  {
+    "id": "SMSY00109",
+    "label": "phlegm covering"
+  },
+  {
+    "id": "SMSY00110",
+    "label": "retention of phlegm"
+  },
+  {
+    "id": "SMSY00111",
+    "label": "sputum drink"
+  },
+  {
+    "id": "SMSY00112",
+    "label": "stagnation of phlegm retention"
+  },
+  {
+    "id": "SMSY00113",
+    "label": "retention of phlegm in the interior"
+  },
+  {
+    "id": "SMSY00114",
+    "label": "retention of phlegm in the interior"
+  },
+  {
+    "id": "SMSY00115",
+    "label": "abdominal mass and gethering of phlegm retention"
+  },
+  {
+    "id": "SMSY00116",
+    "label": "Phlegm build knot"
+  },
+  {
+    "id": "SMSY00118",
+    "label": "Stasis, swelling and pain"
+  },
+  {
+    "id": "SMSY00119",
+    "label": "pain caused by ecchymoma"
+  },
+  {
+    "id": "SMSY00120",
+    "label": "stagnant blood"
+  },
+  {
+    "id": "SMSY00121",
+    "label": "blood stasis in collaterals"
+  },
+  {
+    "id": "SMSY00122",
+    "label": "Stagnation"
+  },
+  {
+    "id": "SMSY00123",
+    "label": "amenorrhea due to congestion"
+  },
+  {
+    "id": "SMSY00124",
+    "label": "indigestion due to accumulation"
+  },
+  {
+    "id": "SMSY00125",
+    "label": "accumulation within the body"
+  },
+  {
+    "id": "SMSY00126",
+    "label": "indigestion accompanied with diarrhea and dysentery"
+  },
+  {
+    "id": "SMSY00127",
+    "label": "dyspeptic abdonimal distention"
+  },
+  {
+    "id": "SMSY00128",
+    "label": "deficiency of spermatozoa"
+  },
+  {
+    "id": "SMSY00129",
+    "label": "cold sperm"
+  },
+  {
+    "id": "SMSY00130",
+    "label": "deficiency of the essence and blood"
+  },
+  {
+    "id": "SMSY00131",
+    "label": "deficiency of the essence and blood"
+  },
+  {
+    "id": "SMSY00132",
+    "label": "经寒"
+  },
+  {
+    "id": "SMSY00133",
+    "label": "retention of meat and food in the stomach"
+  },
+  {
+    "id": "SMSY00134",
+    "label": "stagnation of liver-qi"
+  },
+  {
+    "id": "SMSY00135",
+    "label": "the hepatic fire"
+  },
+  {
+    "id": "SMSY00136",
+    "label": "heat in liver"
+  },
+  {
+    "id": "SMSY00137",
+    "label": "deficiency of the liver and kidney"
+  },
+  {
+    "id": "SMSY00138",
+    "label": "deficiency of the liver and kidney"
+  },
+  {
+    "id": "SMSY00139",
+    "label": "asthenia of both liver and kidney; deficiency of both liver and kidney"
+  },
+  {
+    "id": "SMSY00140",
+    "label": "deficiency of the liver-yin and kidney-yin"
+  },
+  {
+    "id": "SMSY00141",
+    "label": "disharmony between the liver and stomach"
+  },
+  {
+    "id": "SMSY00142",
+    "label": "stagnation of qi of the liver and stomach"
+  },
+  {
+    "id": "SMSY00143",
+    "label": "Dampness and Heat in Liver and Gallbladder"
+  },
+  {
+    "id": "SMSY00144",
+    "label": "liver weakness"
+  },
+  {
+    "id": "SMSY00145",
+    "label": "liver depression"
+  },
+  {
+    "id": "SMSY00146",
+    "label": "the Depression of the liver generates pathogenic fire"
+  },
+  {
+    "id": "SMSY00147",
+    "label": "liver depression and qi stagnation"
+  },
+  {
+    "id": "SMSY00148",
+    "label": "liver yang"
+  },
+  {
+    "id": "SMSY00149",
+    "label": "internal movement of the liver-wind"
+  },
+  {
+    "id": "SMSY00150",
+    "label": "Liver wind and phlegm"
+  },
+  {
+    "id": "SMSY00151",
+    "label": "constipation due to heat in the large intestine"
+  },
+  {
+    "id": "SMSY00152",
+    "label": "dryness in the intestines"
+  },
+  {
+    "id": "SMSY00153",
+    "label": "cold on the lungs"
+  },
+  {
+    "id": "SMSY00154",
+    "label": "stasis of lung-energy"
+  },
+  {
+    "id": "SMSY00155",
+    "label": "heat in lung"
+  },
+  {
+    "id": "SMSY00156",
+    "label": "dry lungs"
+  },
+  {
+    "id": "SMSY00157",
+    "label": "deficiency of the lung and kidney"
+  },
+  {
+    "id": "SMSY00158",
+    "label": "asthenia of both the lung and kidney"
+  },
+  {
+    "id": "SMSY00159",
+    "label": "imperiment of yin in lung and stomach"
+  },
+  {
+    "id": "SMSY00160",
+    "label": "asthenia of lung"
+  },
+  {
+    "id": "SMSY00161",
+    "label": "deficiency in kidney"
+  },
+  {
+    "id": "SMSY00162",
+    "label": "deficiency of kidney-yang"
+  },
+  {
+    "id": "SMSY00163",
+    "label": "deficiency of the kidney-yang"
+  },
+  {
+    "id": "SMSY00164",
+    "label": "deficiency of the kidney-yang"
+  },
+  {
+    "id": "SMSY00165",
+    "label": "kidney yang deficiency"
+  },
+  {
+    "id": "SMSY00166",
+    "label": "the stomach affected by cold"
+  },
+  {
+    "id": "SMSY00167",
+    "label": "the stomach fire"
+  },
+  {
+    "id": "SMSY00168",
+    "label": "excessiveness of the stomach-fire"
+  },
+  {
+    "id": "SMSY00169",
+    "label": "stomach heat"
+  },
+  {
+    "id": "SMSY00170",
+    "label": "deficiency of the stomach-yin"
+  },
+  {
+    "id": "SMSY00171",
+    "label": "Bile fire and phlegm"
+  },
+  {
+    "id": "SMSY00172",
+    "label": "distending pain of the hypochondrium due to gallblsdder disorder"
+  },
+  {
+    "id": "SMSY00173",
+    "label": "a presence of cold in the spleen"
+  },
+  {
+    "id": "SMSY00174",
+    "label": "asthenia of spleen and lung qi; deficiency of spleen and lung"
+  },
+  {
+    "id": "SMSY00175",
+    "label": "splenonephric deficiency"
+  },
+  {
+    "id": "SMSY00176",
+    "label": "deficiency of the spleen-yang and kidney-yang"
+  },
+  {
+    "id": "SMSY00177",
+    "label": "weak spleen and stomach"
+  },
+  {
+    "id": "SMSY00178",
+    "label": "stagnation of gastrosplenic qi; stagnation of spleen and stomach qi"
+  },
+  {
+    "id": "SMSY00179",
+    "label": "eficiency of qi in the spleen and stomach"
+  },
+  {
+    "id": "SMSY00180",
+    "label": "Spleen and stomach dampness block"
+  },
+  {
+    "id": "SMSY00181",
+    "label": "weak spleen and stomach"
+  },
+  {
+    "id": "SMSY00182",
+    "label": "cold syndrome of the spleen and the stomach of deficiency type"
+  },
+  {
+    "id": "SMSY00183",
+    "label": "weak spleen and stomach"
+  },
+  {
+    "id": "SMSY00184",
+    "label": "deficiency of spleen"
+  },
+  {
+    "id": "SMSY00185",
+    "label": "asthenia cold of bladder"
+  },
+  {
+    "id": "SMSY00186",
+    "label": "consumptive disease"
+  },
+  {
+    "id": "SMSY00187",
+    "label": "dyspnea due to deficiency"
+  },
+  {
+    "id": "SMSY00188",
+    "label": "deficiency-cold"
+  },
+  {
+    "id": "SMSY00189",
+    "label": "fidgetiness due to deficiency"
+  },
+  {
+    "id": "SMSY00190",
+    "label": "asthenia-heat"
+  },
+  {
+    "id": "SMSY00191",
+    "label": "consumptive disease"
+  },
+  {
+    "id": "SMSY00192",
+    "label": "prostration syndrome"
+  },
+  {
+    "id": "SMSY00193",
+    "label": "floating of weak yang"
+  },
+  {
+    "id": "SMSY00194",
+    "label": "internal stirring of deficiency-wind"
+  },
+  {
+    "id": "SMSY00195",
+    "label": "abdominal pain due to parasitic infestation"
+  },
+  {
+    "id": "SMSY00196",
+    "label": "blood cold"
+  },
+  {
+    "id": "SMSY00197",
+    "label": "heat in blood"
+  },
+  {
+    "id": "SMSY00198",
+    "label": "heat in blood with ecchymosis"
+  },
+  {
+    "id": "SMSY00199",
+    "label": "heat invading the blood phase"
+  },
+  {
+    "id": "SMSY00200",
+    "label": "stasis of blood"
+  },
+  {
+    "id": "SMSY00201",
+    "label": "deficiency of blood"
+  },
+  {
+    "id": "SMSY00202",
+    "label": "Exteriat Syndrome of Deficiency"
+  },
+  {
+    "id": "SMSY00203",
+    "label": "impairment in the body due to alcohol toxin"
+  },
+  {
+    "id": "SMSY00204",
+    "label": "excess of yang"
+  },
+  {
+    "id": "SMSY00205",
+    "label": "yang virulence"
+  },
+  {
+    "id": "SMSY00206",
+    "label": "yang deficiency"
+  },
+  {
+    "id": "SMSY00207",
+    "label": "externally infection due to yang deficiency"
+  },
+  {
+    "id": "SMSY00208",
+    "label": "deficiency of yin"
+  },
+  {
+    "id": "SMSY00209",
+    "label": "coldness of yin"
+  },
+  {
+    "id": "SMSY00210",
+    "label": "toxic swelling due to carbuncle of yin nature"
+  },
+  {
+    "id": "SMSY00211",
+    "label": "deficiency of yin"
+  },
+  {
+    "id": "SMSY00212",
+    "label": "flaming-up of fire due to dificiency of yin"
+  },
+  {
+    "id": "SMSY00213",
+    "label": "insufficiency of the yin-blood"
+  },
+  {
+    "id": "SMSY00214",
+    "label": "stubborn phlegm"
+  },
+  {
+    "id": "SMSY00215",
+    "label": "retention of stubborn phlegm"
+  },
+  {
+    "id": "SMSY00216",
+    "label": "wind-cold syndrome"
+  },
+  {
+    "id": "SMSY00217",
+    "label": "wind syndromes of cold type with damp symptoms"
+  },
+  {
+    "id": "SMSY00218",
+    "label": "wind-cold-damp syndrome"
+  },
+  {
+    "id": "SMSY00219",
+    "label": "wind water"
+  },
+  {
+    "id": "SMSY00220",
+    "label": "onset of affection due to wind-warm syndrome"
+  },
+  {
+    "id": "SMSY00222",
+    "label": "wind and heat"
+  },
+  {
+    "id": "SMSY00223",
+    "label": "retention of wind-heat in the lung"
+  },
+  {
+    "id": "SMSY00224",
+    "label": "wind-phlegm"
+  },
+  {
+    "id": "SMSY00225",
+    "label": "food accumulation"
+  },
+  {
+    "id": "SMSY00226",
+    "label": "food stagnation"
+  },
+  {
+    "id": "SMSY00227",
+    "label": "food accumulation"
+  },
+  {
+    "id": "SMSY00228",
+    "label": "indigestion with food retention"
+  },
+  {
+    "id": "SMSY00229",
+    "label": "Dyspepsia injury wine"
+  },
+  {
+    "id": "SMSY00231",
+    "label": "indigestion"
+  },
+  {
+    "id": "SMSY00232",
+    "label": "indigestion"
+  },
+  {
+    "id": "SMSY00233",
+    "label": "food stagnation"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "columns": [
+    "Is_Wood",
+    "Is_Fire",
+    "Is_Earth",
+    "Is_Metal",
+    "Is_Water",
+    "Is_Reproductive",
+    "hot",
+    "cold",
+    "internal",
+    "external",
+    "yin",
+    "yang",
+    "excess",
+    "deficiency"
+  ],
+  "labels": [
+    "Wood",
+    "Fire",
+    "Earth",
+    "Metal",
+    "Water",
+    "Reproductive",
+    "hot",
+    "cold",
+    "internal",
+    "external",
+    "yin",
+    "yang",
+    "excess",
+    "deficiency"
+  ]
+}

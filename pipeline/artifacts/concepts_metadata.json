@@ -1,0 +1,58 @@
+[
+  {
+    "id": "Wood",
+    "label": "Wood"
+  },
+  {
+    "id": "Fire",
+    "label": "Fire"
+  },
+  {
+    "id": "Earth",
+    "label": "Earth"
+  },
+  {
+    "id": "Metal",
+    "label": "Metal"
+  },
+  {
+    "id": "Water",
+    "label": "Water"
+  },
+  {
+    "id": "Reproductive",
+    "label": "Reproductive"
+  },
+  {
+    "id": "hot",
+    "label": "hot"
+  },
+  {
+    "id": "cold",
+    "label": "cold"
+  },
+  {
+    "id": "internal",
+    "label": "internal"
+  },
+  {
+    "id": "external",
+    "label": "external"
+  },
+  {
+    "id": "yin",
+    "label": "yin"
+  },
+  {
+    "id": "yang",
+    "label": "yang"
+  },
+  {
+    "id": "excess",
+    "label": "excess"
+  },
+  {
+    "id": "deficiency",
+    "label": "deficiency"
+  }
+]

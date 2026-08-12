@@ -94,8 +94,26 @@ We explore two approaches:
 ## Repository Structure
 
 ```bash
-data/                # Processed datasets and feature mappings  
-models/              # Neural network and TAN implementations  
-training/            # Training scripts  
-evaluation/          # Metrics and evaluation code  
-utils/               # Helper functions  
+pipeline/
+  data/              # Original, processed, patient, and legacy datasets
+  data_processing/   # Feature extraction and SymMap processing scripts
+  data_generation/   # Synthetic patient dataset generation
+  training/          # Neural network and TAN training scripts
+  artifacts/         # Frozen model and mappings for future inference APIs
+  outputs/           # Generated metrics and predictions
+backend/             # Inference APIs
+frontend/            # User interaction layer
+```
+
+## Regenerating Inference Artifacts
+
+Install dependencies, then run the exporter from the project root:
+
+```bash
+pip install -r requirements.txt
+python3 pipeline/training/export_tcmnet_artifacts.py
+python3 pipeline/training/export_metadata_artifacts.py
+```
+
+This writes `pipeline/artifacts/tcmnet.pt`, model config, symptom ordering, syndrome index mapping, concept label order, herb IDs, and recommendation matrices. For a quick smoke test, use `--epochs 1`.
+The metadata export adds lean `id`/`label` records for symptoms, syndromes, herbs, and concepts.
