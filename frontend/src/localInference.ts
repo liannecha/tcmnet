@@ -13,6 +13,7 @@ type Artifacts = {
     num_symptoms: number;
     num_concepts: number;
     num_syndromes: number;
+    num_herbs?: number;
   };
   symptom_mapping: {
     columns: string[];
@@ -43,6 +44,10 @@ type Artifacts = {
     syndrome_hidden_bias: number[];
     syndrome_output_weight: number[][];
     syndrome_output_bias: number[];
+    herb_hidden_weight?: number[][];
+    herb_hidden_bias?: number[];
+    herb_output_weight?: number[][];
+    herb_output_bias?: number[];
   };
 };
 
@@ -86,15 +91,25 @@ export async function predictLocal(request: PredictRequest): Promise<PredictionR
     artifacts.weights.syndrome_output_weight,
     artifacts.weights.syndrome_output_bias,
   );
+  const herbWeights = getHerbHeadWeights();
+  const herbInput = sharedFeatures.concat(conceptScores, syndromeLogits);
+  const herbHidden = relu(
+    linear(herbInput, herbWeights.herbHiddenWeight, herbWeights.herbHiddenBias),
+  );
+  const herbScores = linear(
+    herbHidden,
+    herbWeights.herbOutputWeight,
+    herbWeights.herbOutputBias,
+  );
   const syndromeProbabilities = softmax(syndromeLogits);
 
   const syndromes = topSyndromes(syndromeProbabilities, request.top_syndromes);
   const predSyndromeIdx = syndromes[0]?.index ?? 0;
   const herbs = recommendHerbs(
     conceptScores,
+    herbScores,
     predSyndromeIdx,
     request.top_herbs,
-    recommendationAlpha,
   );
   const concepts = conceptLabels.map((label, index) => ({
     id: label,
@@ -136,7 +151,11 @@ function relu(values: number[]) {
 }
 
 function sigmoidVector(values: number[]) {
-  return values.map((value) => 1 / (1 + Math.exp(-value)));
+  return values.map(sigmoidValue);
+}
+
+function sigmoidValue(value: number) {
+  return 1 / (1 + Math.exp(-value));
 }
 
 function softmax(values: number[]) {
@@ -144,6 +163,28 @@ function softmax(values: number[]) {
   const expValues = values.map((value) => Math.exp(value - maxValue));
   const total = expValues.reduce((sum, value) => sum + value, 0);
   return expValues.map((value) => value / total);
+}
+
+function getHerbHeadWeights() {
+  const {
+    herb_hidden_weight: herbHiddenWeight,
+    herb_hidden_bias: herbHiddenBias,
+    herb_output_weight: herbOutputWeight,
+    herb_output_bias: herbOutputBias,
+  } = artifacts.weights;
+
+  if (!herbHiddenWeight || !herbHiddenBias || !herbOutputWeight || !herbOutputBias) {
+    throw new Error(
+      'Local TCMNet artifacts do not include herb_head weights. Regenerate frontend artifacts before using neural herb recommendations.',
+    );
+  }
+
+  return {
+    herbHiddenWeight,
+    herbHiddenBias,
+    herbOutputWeight,
+    herbOutputBias,
+  };
 }
 
 function vectorize(symptomIds: string[]) {
@@ -209,9 +250,9 @@ function topSyndromes(syndromeProbabilities: number[], topK: number): SyndromePr
 
 function recommendHerbs(
   conceptScores: number[],
+  herbScores: number[],
   predSyndromeIdx: number,
   topK: number,
-  alpha: number,
 ): HerbRecommendation[] {
   const conceptSimilarity = artifacts.herb_concept_matrix.map(
     (row) =>
@@ -219,18 +260,10 @@ function recommendHerbs(
       Math.max(conceptScores.length, 1),
   );
   const prior = artifacts.syndrome_herb_prior[predSyndromeIdx];
-  const finalScores = conceptSimilarity.map(
-    (score, index) => alpha * score + (1 - alpha) * prior[index],
-  );
-  const associatedIndices = prior
-    .map((value, index) => (value > 0 ? index : -1))
-    .filter((index) => index >= 0);
-  const candidateIndices =
-    associatedIndices.length > 0 ? associatedIndices : herbIds.map((_, index) => index);
 
-  return candidateIndices
-    .slice()
-    .sort((a, b) => finalScores[b] - finalScores[a] || b - a)
+  return herbIds
+    .map((_, index) => index)
+    .sort((a, b) => herbScores[b] - herbScores[a] || b - a)
     .slice(0, topK)
     .map((index) => {
       const herbId = herbIds[index];
@@ -242,7 +275,7 @@ function recommendHerbs(
         chinese_name: metadata.chinese_name ?? herbId,
         description: metadata.description ?? '',
         target_concepts: metadata.target_concepts ?? [],
-        score: finalScores[index],
+        score: sigmoidValue(herbScores[index]),
         concept_similarity: conceptSimilarity[index],
         syndrome_prior: prior[index],
         known_for_predicted_syndrome: prior[index] > 0,
@@ -294,7 +327,7 @@ function buildExplanation(
       total_associated_herbs: associatedIndices.length,
     },
     herb_ranking: {
-      formula: 'score = alpha * concept_similarity + (1 - alpha) * syndrome_prior',
+      formula: 'ranking = descending neural herb_head logit; score = sigmoid(neural herb_head logit)',
       alpha,
       items: herbRecommendations.map((herb) => ({
         herb_id: herb.herb_id,

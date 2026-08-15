@@ -284,15 +284,15 @@ const ABOUT_CARDS = [
   },
   {
     title: 'Herb Recommendation',
-    text: 'After predicting a syndrome, TCMNet ranks herbs using both traditional syndrome-herb relationships and how closely each herb matches the predicted concepts.',
+    text: 'TCMNet ranks herbs with a neural herb head conditioned on symptom features, predicted concepts, and syndrome evidence.',
   },
   {
     title: 'How Our Model Works',
-    text: 'TCMNet uses a multi-task neural network that learns shared symptom features, predicts the 14 TCM concepts, then uses both to predict the final syndrome.',
+    text: 'TCMNet uses a multi-task neural network that learns shared symptom features, predicts concepts and syndromes, then ranks herbs with a dedicated neural head.',
   },
   {
     title: 'Model Performance',
-    text: 'TCMNet reached 88.25% syndrome accuracy and 90.79% Precision@1 for herb recommendations.',
+    text: 'TCMNet reached 86.93% syndrome accuracy and neural herb-head Precision@5 of 57.56% under inference-condition evaluation.',
   },
 ];
 

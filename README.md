@@ -18,21 +18,24 @@ This project aims to learn structured diagnostic relationships and treatment rec
 ## Approach
 
 ### Model Architecture
-- Input: **1,861-dimensional binary symptom vector**
+- Input: **1,869-dimensional binary symptom vector**
 - Outputs:
-  - **228-class syndrome prediction** (classification)
   - **14-dimensional concept vector** (continuous)
+  - **228-class syndrome prediction** (classification)
+  - **596-dimensional neural herb ranking vector**
 
 The model is trained as a **multi-task neural network**:
 - Shared representation layers  
-- Two prediction heads:
-  - Syndrome classification (softmax)
+- Three prediction heads:
   - Concept prediction (sigmoid)
+  - Syndrome classification (softmax)
+  - Herb ranking (neural herb-head logits)
 
 ### Loss Function
 Joint objective combining:
-- Cross-entropy loss (syndrome classification)  
-- Mean squared error (concept prediction)  
+- Mean squared error (concept prediction)
+- Cross-entropy loss (syndrome classification)
+- Hybrid herb loss combining pairwise BPR ranking, multi-label BCE, and baseline-score distillation
 
 This encourages the model to learn **medically meaningful intermediate representations**.
 
@@ -53,33 +56,48 @@ We implement a probabilistic baseline using Tree-Augmented Naive Bayes:
   - ~5,700 total examples  
 
 - Features:
-  - 1,861 binary symptom features  
-  - 14 concept features (Eight Principles + organ systems)  
+  - 1,869 binary symptom features
+  - 14 concept features (Eight Principles + organ systems)
+  - 596 herb targets derived from syndrome-herb associations
 
 ---
 
 ## Results
 
-| Model   | Accuracy | Macro-F1 | Top-5 Accuracy |
-|--------|---------|----------|----------------|
-| TAN    | 58.07%  | 56.55%   | 90.09%         |
-| TCMNet | **88.25%** | **86.79%** | **99.21%**     |
+| Model   | Syndrome Accuracy | Macro-F1 | Top-5 Syndrome Accuracy |
+|--------|-------------------|----------|-------------------------|
+| TAN    | 58.07%            | 56.55%   | 90.09%                  |
+| TCMNet | **86.93%**        | **85.44%** | **98.16%**            |
 
 **Concept prediction MSE:** 0.0016
+
+### Herb Ranking
+
+The active app recommender uses the neural herb head. The older matrix-based formula is preserved under `pipeline/baselines/` for comparison.
+
+| Herb Ranker | Precision@5 | Recall@5 | Hit@5 | Precision@10 | Recall@10 | Hit@10 |
+|-------------|-------------|----------|-------|--------------|-----------|--------|
+| Matrix baseline | 53.94% | 68.43% | 90.09% | 39.64% | 76.47% | 90.94% |
+| Neural herb head | **57.56%** | **75.44%** | **97.33%** | **42.63%** | **85.66%** | **99.05%** |
 
 ### Key Findings
 - Neural model significantly outperforms probabilistic baseline  
 - Concept layer improves interpretability and generalization  
 - Errors primarily occur between syndromes with overlapping symptoms  
+- The neural herb head outperforms the matrix baseline under inference conditions, where herb ranking uses model-predicted concepts and syndromes.
 
 ---
 
 ## Herb Recommendation
-We explore two approaches:
-1. **Syndrome-based ranking** using syndrome–herb mappings  
-2. **Concept-guided scoring**, combining:
-   - cosine similarity between predicted concepts and herb profiles  
-   - prior probabilities from training data  
+TCMNet now ranks herbs with a neural herb head conditioned on shared symptom features, predicted concepts, and syndrome logits. Herb scores are exported with the model and used by both backend inference and browser-side local inference.
+
+The previous matrix ranker is retained as a baseline:
+
+```text
+score = alpha * concept_similarity + (1 - alpha) * syndrome_prior
+```
+
+This baseline is useful for ablations and sanity checks, but it is no longer the active app recommendation method.
 
 ---
 
@@ -95,10 +113,11 @@ We explore two approaches:
 
 ```bash
 pipeline/
-  data/              # Original, processed, patient, and legacy datasets
+  data/              # Original, processed, and patient datasets
   data_processing/   # Feature extraction and SymMap processing scripts
   data_generation/   # Synthetic patient dataset generation
-  training/          # Neural network and TAN training scripts
+  training/          # Neural network training and artifact export scripts
+  baselines/         # TAN and matrix-based baseline models
   artifacts/         # Frozen model and mappings for future inference APIs
   outputs/           # Generated metrics and predictions
 backend/             # Inference APIs
@@ -115,5 +134,11 @@ python3 pipeline/training/export_tcmnet_artifacts.py
 python3 pipeline/training/export_metadata_artifacts.py
 ```
 
-This writes `pipeline/artifacts/tcmnet.pt`, model config, symptom ordering, syndrome index mapping, concept label order, herb IDs, and recommendation matrices. For a quick smoke test, use `--epochs 1`.
+This writes `pipeline/artifacts/tcmnet.pt`, model config, symptom ordering, syndrome index mapping, concept label order, herb IDs, herb-head weights, and comparison matrices for explanation/baseline evaluation. For a quick smoke test, use `--epochs 1`.
 The metadata export adds lean `id`/`label` records for symptoms, syndromes, herbs, and concepts.
+
+After retraining, refresh the browser-side artifact bundle:
+
+```bash
+python3 tools/export_frontend_artifacts.py
+```

@@ -25,8 +25,37 @@ def tensor_list(state_dict, key: str):
     return state_dict[key].detach().cpu().numpy().astype(np.float32).tolist()
 
 
+def maybe_tensor_list(state_dict, key: str):
+    if key not in state_dict:
+        return None
+    return tensor_list(state_dict, key)
+
+
 def main() -> None:
     state_dict = torch.load(ARTIFACT_DIR / "tcmnet.pt", map_location="cpu")
+    weights = {
+        "shared_weight": tensor_list(state_dict, "shared_layer.0.weight"),
+        "shared_bias": tensor_list(state_dict, "shared_layer.0.bias"),
+        "concept_weight": tensor_list(state_dict, "concept_head.weight"),
+        "concept_bias": tensor_list(state_dict, "concept_head.bias"),
+        "syndrome_hidden_weight": tensor_list(state_dict, "syndrome_head.0.weight"),
+        "syndrome_hidden_bias": tensor_list(state_dict, "syndrome_head.0.bias"),
+        "syndrome_output_weight": tensor_list(state_dict, "syndrome_head.3.weight"),
+        "syndrome_output_bias": tensor_list(state_dict, "syndrome_head.3.bias"),
+    }
+    herb_head_weights = {
+        "herb_hidden_weight": maybe_tensor_list(state_dict, "herb_head.0.weight"),
+        "herb_hidden_bias": maybe_tensor_list(state_dict, "herb_head.0.bias"),
+        "herb_output_weight": maybe_tensor_list(state_dict, "herb_head.3.weight"),
+        "herb_output_bias": maybe_tensor_list(state_dict, "herb_head.3.bias"),
+    }
+    weights.update(
+        {
+            key: value
+            for key, value in herb_head_weights.items()
+            if value is not None
+        }
+    )
     payload = {
         "model_config": read_json("model_config.json"),
         "symptom_mapping": read_json("symptom_columns.json"),
@@ -39,16 +68,7 @@ def main() -> None:
         "concepts_metadata": read_json("concepts_metadata.json"),
         "herb_concept_matrix": read_npy("herb_concept_matrix.npy"),
         "syndrome_herb_prior": read_npy("syndrome_herb_prior.npy"),
-        "weights": {
-            "shared_weight": tensor_list(state_dict, "shared_layer.0.weight"),
-            "shared_bias": tensor_list(state_dict, "shared_layer.0.bias"),
-            "concept_weight": tensor_list(state_dict, "concept_head.weight"),
-            "concept_bias": tensor_list(state_dict, "concept_head.bias"),
-            "syndrome_hidden_weight": tensor_list(state_dict, "syndrome_head.0.weight"),
-            "syndrome_hidden_bias": tensor_list(state_dict, "syndrome_head.0.bias"),
-            "syndrome_output_weight": tensor_list(state_dict, "syndrome_head.3.weight"),
-            "syndrome_output_bias": tensor_list(state_dict, "syndrome_head.3.bias"),
-        },
+        "weights": weights,
     }
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)

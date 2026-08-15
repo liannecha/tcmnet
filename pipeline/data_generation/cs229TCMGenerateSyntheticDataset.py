@@ -26,7 +26,7 @@ def generate_aware_patients(num_patients_per_syndrome=25, drop_prob=0.25, num_ex
 
     # rebuild df_combined_kangae
     df_locations = pd.read_csv("pipeline/data/processed/Symptom_Location_Features.csv", index_col='TCM_symptom_id')
-    df_coords = pd.read_csv("pipeline/legacy/SMTS_eight_principles_by_id.csv", index_col='TCM_symptom_id')
+    df_coords = pd.read_csv("pipeline/data/processed/SMTS_eight_principles_by_id.csv", index_col='TCM_symptom_id')
     df_combined_kangae = pd.concat([df_locations, df_coords], axis=1)
     df_combined_kangae = df_combined_kangae.reindex(X_symptoms.columns).fillna(0)
 

@@ -1,6 +1,9 @@
 # Backend
 
 Reusable inference and API code lives in `backend/app/`.
+The active herb recommender ranks herbs with the neural herb head saved in
+`pipeline/artifacts/tcmnet.pt`; matrix-based herb scoring is retained only as a
+baseline/evaluation tool.
 
 Run the local inference smoke test from the project root after generating
 `pipeline/artifacts/`:

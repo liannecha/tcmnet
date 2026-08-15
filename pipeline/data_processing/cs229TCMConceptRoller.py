@@ -24,7 +24,7 @@ X_symptoms.columns = X_symptoms.columns.astype(int)
 
 # Load the other datasets
 df_locations = pd.read_csv("pipeline/data/processed/Symptom_Location_Features.csv", index_col='TCM_symptom_id')
-df_coords = pd.read_csv("pipeline/legacy/SMTS_eight_principles_by_id.csv", index_col='TCM_symptom_id')
+df_coords = pd.read_csv("pipeline/data/processed/SMTS_eight_principles_by_id.csv", index_col='TCM_symptom_id')
 
 # Combine into one dataframe
 df_combined_kangae = pd.concat([df_locations, df_coords], axis=1)

@@ -1,7 +1,7 @@
 """
 Owner: Ethan
 
-Same as cs229TCMNeuralNetworkSyndrome, but trained on synthetic patient data.
+ Early synthetic-patient TCMNet training experiment.
 """
 import torch
 import torch.nn as nn

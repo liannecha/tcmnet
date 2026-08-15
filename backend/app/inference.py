@@ -1,14 +1,15 @@
 """Load frozen TCMNet artifacts and turn symptom IDs into predictions.
 
-1. loads the saved model, mappings, metadata, and herb scoring matrices;
+1. loads the saved model, mappings, metadata, and herb explanation matrices;
 2. converts selected symptom IDs into the fixed model input vector;
-3. runs the neural syndrome/concept model;
-4. scores herbs from predicted concepts plus the predicted syndrome prior.
+3. runs the neural concept, syndrome, and herb heads;
+4. ranks herbs directly from neural herb-head logits.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Iterable
 
@@ -16,9 +17,15 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 DEFAULT_ARTIFACT_DIR = PROJECT_ROOT / "pipeline" / "artifacts"
+HERB_RANKING_FORMULA = (
+    "ranking = descending neural herb_head logit; "
+    "score = sigmoid(neural herb_head logit)"
+)
 
 
 class TCMNet(nn.Module):
@@ -29,10 +36,13 @@ class TCMNet(nn.Module):
         num_symptoms: int,
         num_concepts: int,
         num_syndromes: int,
+        num_herbs: int,
         shared_hidden: int = 512,
         syndrome_hidden: int = 256,
+        herb_hidden: int = 256,
         shared_dropout: float = 0.3,
         syndrome_dropout: float = 0.2,
+        herb_dropout: float = 0.2,
     ) -> None:
         super().__init__()
         self.shared_layer = nn.Sequential(
@@ -47,15 +57,23 @@ class TCMNet(nn.Module):
             nn.Dropout(syndrome_dropout),
             nn.Linear(syndrome_hidden, num_syndromes),
         )
+        self.herb_head = nn.Sequential(
+            nn.Linear(shared_hidden + num_concepts + num_syndromes, herb_hidden),
+            nn.ReLU(),
+            nn.Dropout(herb_dropout),
+            nn.Linear(herb_hidden, num_herbs),
+        )
 
     def forward(self, x):
-        """Return concept scores and raw syndrome logits for an input batch."""
+        """Return concept scores, syndrome logits, and raw herb logits."""
         shared_features = self.shared_layer(x)
         concept_preds = torch.sigmoid(self.concept_head(shared_features))
         # Syndrome prediction is conditioned on both learned features and concepts.
         combined_features = torch.cat((shared_features, concept_preds), dim=1)
-        syndrome_preds = self.syndrome_head(combined_features)
-        return concept_preds, syndrome_preds
+        syndrome_logits = self.syndrome_head(combined_features)
+        herb_input = torch.cat((shared_features, concept_preds, syndrome_logits), dim=1)
+        herb_scores = self.herb_head(herb_input)
+        return concept_preds, syndrome_logits, herb_scores
 
 
 class TCMNetInference:
@@ -121,8 +139,9 @@ class TCMNetInference:
 
         with torch.no_grad():
             x = torch.tensor(input_vector, dtype=torch.float32, device=self.device)
-            concept_scores, syndrome_logits = self.model(x.unsqueeze(0))
+            concept_scores, syndrome_logits, herb_scores = self.model(x.unsqueeze(0))
             concept_array = concept_scores.squeeze(0).cpu().numpy()
+            herb_array = herb_scores.squeeze(0).cpu().numpy()
             # Convert logits into comparable confidence scores for display.
             syndrome_probs = torch.softmax(syndrome_logits, dim=1).squeeze(0).cpu().numpy()
 
@@ -131,9 +150,9 @@ class TCMNetInference:
         alpha = self.recommendation_alpha if herb_alpha is None else herb_alpha
         herb_recommendations = self._recommend_herbs(
             concept_array,
+            herb_array,
             pred_syndrome_idx=pred_syndrome_idx,
             top_k=top_herbs,
-            alpha=alpha,
         )
         concepts = [
             {"id": label, "label": label, "score": float(score)}
@@ -165,16 +184,24 @@ class TCMNetInference:
             num_symptoms=int(config["num_symptoms"]),
             num_concepts=int(config["num_concepts"]),
             num_syndromes=int(config["num_syndromes"]),
+            num_herbs=int(config.get("num_herbs", len(self.herb_ids))),
             shared_hidden=int(config.get("shared_hidden", 512)),
             syndrome_hidden=int(config.get("syndrome_hidden", 256)),
+            herb_hidden=int(config.get("herb_hidden", 256)),
             shared_dropout=float(config.get("shared_dropout", 0.3)),
             syndrome_dropout=float(config.get("syndrome_dropout", 0.2)),
+            herb_dropout=float(config.get("herb_dropout", 0.2)),
         )
         weights_path = self.artifact_dir / "tcmnet.pt"
         if not weights_path.exists():
             raise FileNotFoundError(f"Missing artifact: {weights_path}")
         state_dict = torch.load(weights_path, map_location=self.device)
-        model.load_state_dict(state_dict)
+        if not all(key in state_dict for key in ("herb_head.0.weight", "herb_head.3.weight")):
+            raise ValueError(
+                "TCMNet artifacts do not include herb_head weights. "
+                "Regenerate artifacts before using neural herb recommendations."
+            )
+        model.load_state_dict(state_dict, strict=True)
         model.to(self.device)
         model.eval()
         return model
@@ -246,27 +273,17 @@ class TCMNetInference:
     def _recommend_herbs(
         self,
         concept_scores: np.ndarray,
+        herb_scores: np.ndarray,
         pred_syndrome_idx: int,
         top_k: int,
-        alpha: float,
     ) -> list[dict]:
-        """Score herbs from concept similarity and syndrome-herb prior data."""
+        """Format herbs ranked directly by neural herb_head logits."""
         concept_similarity = (self.herb_concept_matrix @ concept_scores) / max(
             len(concept_scores), 1
         )
         prior = self.syndrome_herb_prior[pred_syndrome_idx]
-        # alpha controls the blend between concept fit and known syndrome usage.
-        final_scores = alpha * concept_similarity + (1.0 - alpha) * prior
-        used_for_syndrome = prior > 0
-        if used_for_syndrome.any():
-            # Prefer herbs known for the predicted syndrome when such links exist.
-            candidate_indices = np.where(used_for_syndrome)[0]
-        else:
-            candidate_indices = np.arange(len(self.herb_ids))
-
-        sorted_candidates = candidate_indices[
-            np.argsort(final_scores[candidate_indices])[::-1]
-        ][:top_k]
+        limit = min(top_k, len(self.herb_ids))
+        ranked_indices = np.argsort(herb_scores)[::-1][:limit]
         return [
             {
                 "herb_id": herb_id,
@@ -275,12 +292,12 @@ class TCMNetInference:
                 "chinese_name": metadata.get("chinese_name", herb_id),
                 "description": metadata.get("description", ""),
                 "target_concepts": metadata.get("target_concepts", []),
-                "score": float(final_scores[int(index)]),
+                "score": float(1.0 / (1.0 + np.exp(-herb_scores[int(index)]))),
                 "concept_similarity": float(concept_similarity[int(index)]),
                 "syndrome_prior": float(prior[int(index)]),
                 "known_for_predicted_syndrome": bool(prior[int(index)] > 0),
             }
-            for index in sorted_candidates
+            for index in ranked_indices
             for herb_id in [self.herb_ids[int(index)]]
             for metadata in [self.herb_metadata_by_id.get(herb_id, {})]
         ]
@@ -341,7 +358,7 @@ class TCMNetInference:
                 "total_associated_herbs": int(len(associated_indices)),
             },
             "herb_ranking": {
-                "formula": "score = alpha * concept_similarity + (1 - alpha) * syndrome_prior",
+                "formula": HERB_RANKING_FORMULA,
                 "alpha": float(alpha),
                 "items": [
                     {
@@ -368,6 +385,7 @@ class TCMNetInference:
         expected_symptoms = int(self.model_config["num_symptoms"])
         expected_concepts = int(self.model_config["num_concepts"])
         expected_syndromes = int(self.model_config["num_syndromes"])
+        expected_herbs = int(self.model_config.get("num_herbs", len(self.herb_ids)))
 
         if len(self.symptom_columns) != expected_symptoms:
             raise ValueError(
@@ -383,6 +401,11 @@ class TCMNetInference:
             raise ValueError(
                 "Concept label length does not match model_config "
                 f"({len(self.concept_labels)} != {expected_concepts})."
+            )
+        if len(self.herb_ids) != expected_herbs:
+            raise ValueError(
+                "Herb mapping length does not match model_config "
+                f"({len(self.herb_ids)} != {expected_herbs})."
             )
         metadata_lengths = {
             "symptoms_metadata.json": (
