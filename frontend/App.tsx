@@ -14,6 +14,13 @@ import {
 } from 'react-native';
 
 import { fetchSymptoms, predict } from './src/api';
+import {
+  BODY_MAP_SOURCE,
+  BODY_MAP_VIEWBOX,
+  BODY_REGIONS,
+  type BodyRegion,
+  type BodyView,
+} from './src/bodyMapRegions';
 import type {
   ConceptScore,
   HerbRecommendation,
@@ -36,6 +43,38 @@ const RELATED_SYMPTOM_TERMS: Record<string, string[]> = {
   cold: ['chills', 'aversion', 'pain', 'clear', 'pale', 'warmth'],
   heat: ['fever', 'thirst', 'yellow', 'red', 'bitter', 'irritability'],
   diarrhea: ['abdominal', 'stool', 'cold', 'dampness', 'fatigue'],
+};
+
+type AssessmentStep = 1 | 2 | 3 | 4;
+type IntakeStep = 1 | 2 | 3;
+
+type IntakeBasics = {
+  sexGender: string;
+  age: number | null;
+  mainConcern: string;
+  onsetDate: string;
+  onsetUnknown: boolean;
+  severity: number | null;
+};
+
+const SEX_GENDER_OPTIONS = [
+  'Female',
+  'Male',
+  'Non-binary',
+  'Prefer not to say',
+];
+
+const SEVERITY_DESCRIPTIONS: Record<number, string> = {
+  1: 'Barely noticeable',
+  2: 'Mild, easy to ignore',
+  3: 'Mild but distracting',
+  4: 'Moderate discomfort',
+  5: 'Moderate, affects focus',
+  6: 'Strong discomfort',
+  7: 'Severe, hard to ignore',
+  8: 'Very severe',
+  9: 'Nearly unbearable',
+  10: 'Worst possible',
 };
 
 function titleCaseLabel(label: string) {
@@ -182,197 +221,6 @@ type SymptomGroup = {
   label: string;
   ids: string[];
 };
-
-type BodyView = 'front' | 'back';
-
-type BodyRegion = {
-  id: string;
-  label: string;
-  view: BodyView;
-  path: string;
-  labelX: number;
-  labelY: number;
-};
-
-type AssessmentStep = 1 | 2 | 3 | 4;
-type IntakeStep = 1 | 2 | 3;
-
-type IntakeBasics = {
-  sexGender: string;
-  age: number | null;
-  mainConcern: string;
-  onsetDate: string;
-  onsetUnknown: boolean;
-  severity: number | null;
-};
-
-const SEX_GENDER_OPTIONS = [
-  'Female',
-  'Male',
-  'Non-binary',
-  'Prefer to self-describe',
-  'Prefer not to say',
-];
-
-const SEVERITY_DESCRIPTIONS: Record<number, string> = {
-  1: 'Barely noticeable',
-  2: 'Mild, easy to ignore',
-  3: 'Mild but distracting',
-  4: 'Moderate discomfort',
-  5: 'Moderate, affects focus',
-  6: 'Strong discomfort',
-  7: 'Severe, hard to ignore',
-  8: 'Very severe',
-  9: 'Nearly unbearable',
-  10: 'Worst possible',
-};
-
-const BODY_REGIONS: BodyRegion[] = [
-  {
-    id: 'front-head',
-    label: 'Head / Face',
-    view: 'front',
-    path: 'M94 18 C116 18 132 36 132 68 C132 99 115 118 94 118 C73 118 56 99 56 68 C56 36 72 18 94 18 Z',
-    labelX: 94,
-    labelY: 68,
-  },
-  {
-    id: 'front-neck',
-    label: 'Neck / Throat',
-    view: 'front',
-    path: 'M78 116 L110 116 L114 145 C102 151 86 151 74 145 Z',
-    labelX: 94,
-    labelY: 134,
-  },
-  {
-    id: 'front-chest',
-    label: 'Chest',
-    view: 'front',
-    path: 'M45 154 C58 144 76 140 94 140 C112 140 130 144 143 154 L132 230 L56 230 Z',
-    labelX: 94,
-    labelY: 185,
-  },
-  {
-    id: 'front-abdomen',
-    label: 'Upper Abdomen',
-    view: 'front',
-    path: 'M56 230 L132 230 L126 292 L62 292 Z',
-    labelX: 94,
-    labelY: 260,
-  },
-  {
-    id: 'front-pelvis',
-    label: 'Lower Abdomen / Pelvis',
-    view: 'front',
-    path: 'M62 292 L126 292 L118 336 C106 349 82 349 70 336 Z',
-    labelX: 94,
-    labelY: 315,
-  },
-  {
-    id: 'front-left-arm',
-    label: 'Left Arm',
-    view: 'front',
-    path: 'M45 156 C29 169 22 195 24 236 L18 334 C17 356 25 374 39 381 L51 376 L46 296 L58 214 Z',
-    labelX: 35,
-    labelY: 264,
-  },
-  {
-    id: 'front-right-arm',
-    label: 'Right Arm',
-    view: 'front',
-    path: 'M143 156 C159 169 166 195 164 236 L170 334 C171 356 163 374 149 381 L137 376 L142 296 L130 214 Z',
-    labelX: 153,
-    labelY: 264,
-  },
-  {
-    id: 'front-left-leg',
-    label: 'Left Leg',
-    view: 'front',
-    path: 'M69 336 C80 345 91 346 93 338 L91 492 C88 534 78 586 66 624 L52 624 C55 558 48 494 51 430 C52 390 57 360 69 336 Z',
-    labelX: 70,
-    labelY: 445,
-  },
-  {
-    id: 'front-right-leg',
-    label: 'Right Leg',
-    view: 'front',
-    path: 'M119 336 C108 345 97 346 95 338 L97 492 C100 534 110 586 122 624 L136 624 C133 558 140 494 137 430 C136 390 131 360 119 336 Z',
-    labelX: 118,
-    labelY: 445,
-  },
-  {
-    id: 'back-head',
-    label: 'Back of Head',
-    view: 'back',
-    path: 'M94 18 C116 18 132 36 132 68 C132 99 115 118 94 118 C73 118 56 99 56 68 C56 36 72 18 94 18 Z',
-    labelX: 94,
-    labelY: 68,
-  },
-  {
-    id: 'back-neck',
-    label: 'Neck',
-    view: 'back',
-    path: 'M78 116 L110 116 L114 145 C102 151 86 151 74 145 Z',
-    labelX: 94,
-    labelY: 134,
-  },
-  {
-    id: 'back-upper-torso',
-    label: 'Upper Back',
-    view: 'back',
-    path: 'M45 154 C58 144 76 140 94 140 C112 140 130 144 143 154 L132 230 L56 230 Z',
-    labelX: 94,
-    labelY: 185,
-  },
-  {
-    id: 'back-lower-torso',
-    label: 'Lower Back',
-    view: 'back',
-    path: 'M56 230 L132 230 L128 303 C114 312 74 312 60 303 Z',
-    labelX: 94,
-    labelY: 264,
-  },
-  {
-    id: 'back-pelvis',
-    label: 'Hips / Sacrum',
-    view: 'back',
-    path: 'M60 303 C74 312 114 312 128 303 L119 340 C106 351 82 351 69 340 Z',
-    labelX: 94,
-    labelY: 324,
-  },
-  {
-    id: 'back-left-arm',
-    label: 'Left Arm',
-    view: 'back',
-    path: 'M45 156 C29 169 22 195 24 236 L18 334 C17 356 25 374 39 381 L51 376 L46 296 L58 214 Z',
-    labelX: 35,
-    labelY: 264,
-  },
-  {
-    id: 'back-right-arm',
-    label: 'Right Arm',
-    view: 'back',
-    path: 'M143 156 C159 169 166 195 164 236 L170 334 C171 356 163 374 149 381 L137 376 L142 296 L130 214 Z',
-    labelX: 153,
-    labelY: 264,
-  },
-  {
-    id: 'back-left-leg',
-    label: 'Left Leg',
-    view: 'back',
-    path: 'M69 336 C80 345 91 346 93 338 L91 492 C88 534 78 586 66 624 L52 624 C55 558 48 494 51 430 C52 390 57 360 69 336 Z',
-    labelX: 70,
-    labelY: 445,
-  },
-  {
-    id: 'back-right-leg',
-    label: 'Right Leg',
-    view: 'back',
-    path: 'M119 336 C108 345 97 346 95 338 L97 492 C100 534 110 586 122 624 L136 624 C133 558 140 494 137 430 C136 390 131 360 119 336 Z',
-    labelX: 118,
-    labelY: 445,
-  },
-];
 
 export default function App() {
   const { width } = useWindowDimensions();
@@ -973,13 +821,8 @@ function IntakeBasicsPanel({
           </View>
         </View>
 
-        <SliderField
-          label="Age"
-          value={displayedAge}
-          min={0}
-          max={100}
-          step={1}
-          valueLabel={`${displayedAge} years`}
+        <AgeField
+          value={basics.age}
           onChange={(value) => updateBasics({ age: value })}
         />
 
@@ -1005,15 +848,9 @@ function IntakeBasicsPanel({
           }
         />
 
-        <SliderField
+        <SeveritySliderField
           label="Severity"
           value={displayedSeverity}
-          min={1}
-          max={10}
-          step={1}
-          valueLabel={`${displayedSeverity} / 10`}
-          helperText={SEVERITY_DESCRIPTIONS[displayedSeverity]}
-          tone="severity"
           onChange={(value) => updateBasics({ severity: value })}
         />
       </View>
@@ -1031,7 +868,6 @@ function SliderField({
   step,
   valueLabel,
   helperText,
-  tone,
   onChange,
 }: {
   label: string;
@@ -1041,11 +877,8 @@ function SliderField({
   step: number;
   valueLabel: string;
   helperText?: string;
-  tone?: 'severity';
   onChange: (value: number) => void;
 }) {
-  const percent = ((value - min) / (max - min)) * 100;
-
   return (
     <View style={styles.formField}>
       <View style={styles.sliderHeader}>
@@ -1064,7 +897,7 @@ function SliderField({
           },
           style: {
             width: '100%',
-            accentColor: tone === 'severity' ? '#e86b1d' : colors.deepGreen,
+            accentColor: colors.deepGreen,
           },
           'aria-label': label,
         })}
@@ -1072,22 +905,134 @@ function SliderField({
           <Text style={styles.sliderEndpoint}>{min}</Text>
           <Text style={styles.sliderEndpoint}>{max}</Text>
         </View>
-        {tone === 'severity' ? (
-          <View style={styles.severityScale}>
-            <View style={styles.severityTrack}>
-              <View style={[styles.severityMarker, { left: `${percent}%` }]} />
-            </View>
-            <View style={styles.severityScaleLabels}>
-              <Text style={styles.severityScaleText}>Mild</Text>
-              <Text style={styles.severityScaleText}>Moderate</Text>
-              <Text style={styles.severityScaleText}>Severe</Text>
-            </View>
-          </View>
-        ) : null}
       </View>
       {helperText ? <Text style={styles.sliderHelp}>{helperText}</Text> : null}
     </View>
   );
+}
+
+function AgeField({
+  value,
+  onChange,
+}: {
+  value: number | null;
+  onChange: (value: number | null) => void;
+}) {
+  return (
+    <View style={styles.formField}>
+      <Text style={styles.formLabel}>Age</Text>
+      <TextInput
+        value={value === null ? '' : String(value)}
+        onChangeText={(text) => {
+          const digitsOnly = text.replace(/\D/g, '').slice(0, 3);
+          onChange(digitsOnly ? Number(digitsOnly) : null);
+        }}
+        placeholder="Enter age"
+        keyboardType="number-pad"
+        inputMode="numeric"
+        maxLength={3}
+        style={styles.formInput}
+        placeholderTextColor={colors.muted}
+      />
+    </View>
+  );
+}
+
+function SeveritySliderField({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: number;
+  onChange: (value: number) => void;
+}) {
+  const percent = ((value - 1) / 9) * 100;
+  const severityColor = severityColorForValue(value);
+  const description = SEVERITY_DESCRIPTIONS[value];
+
+  return (
+    <View style={styles.formField}>
+      <View style={styles.sliderHeader}>
+        <Text style={styles.formLabel}>{label}</Text>
+        <Text style={[styles.sliderValue, { color: severityColor }]}>{value} / 10</Text>
+      </View>
+
+      <View style={styles.severityControl}>
+        <View
+          style={[
+            styles.severityTrack,
+            {
+              background: `linear-gradient(90deg, ${severityColor} 0%, ${severityColor} ${percent}%, #edf1ee ${percent}%, #edf1ee 100%)`,
+            } as Record<string, string>,
+          ]}
+        >
+          <View
+            style={[
+              styles.severityKnob,
+              {
+                left: `${percent}%`,
+                backgroundColor: severityColor,
+              } as Record<string, string>,
+            ]}
+          />
+          {createElement('input', {
+            type: 'range',
+            min: 1,
+            max: 10,
+            step: 1,
+            value,
+            onChange: (event: { target: { value: string } }) => {
+              onChange(Number(event.target.value));
+            },
+            style: {
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: 28,
+              opacity: 0,
+              cursor: 'pointer',
+            },
+            'aria-label': label,
+          })}
+        </View>
+
+        <View style={styles.sliderLabels}>
+          <Text style={styles.sliderEndpoint}>1</Text>
+          <Text style={styles.sliderEndpoint}>10</Text>
+        </View>
+        <View style={styles.severityScaleLabels}>
+          <Text style={[styles.severityScaleText, { color: value <= 4 ? severityColor : colors.muted }]}>
+            Mild
+          </Text>
+          <Text style={[styles.severityScaleText, { color: value >= 5 && value <= 6 ? severityColor : colors.muted }]}>
+            Moderate
+          </Text>
+          <Text style={[styles.severityScaleText, { color: value >= 7 ? severityColor : colors.muted }]}>
+            Severe
+          </Text>
+        </View>
+      </View>
+
+      <Text style={[styles.sliderHelp, { color: severityColor }]}>{description}</Text>
+    </View>
+  );
+}
+
+function severityColorForValue(value: number) {
+  if (value <= 2) {
+    return '#2f9e44';
+  }
+  if (value <= 4) {
+    return '#c6a300';
+  }
+  if (value <= 6) {
+    return '#e07a1f';
+  }
+  if (value <= 8) {
+    return '#c94b1c';
+  }
+  return '#b42318';
 }
 
 function DateField({
@@ -1179,6 +1124,7 @@ function BodyLocationPanel({
           onToggleRegion={onToggleRegion}
         />
       </View>
+      <Text style={styles.bodyMapSource}>Body map adapted from {BODY_MAP_SOURCE}</Text>
 
       <View style={styles.locationLog}>
         <View style={styles.selectedHeader}>
@@ -1231,7 +1177,14 @@ function BodyMapFigure({
   selectedRegionIds: Set<string>;
   onToggleRegion: (regionId: string) => void;
 }) {
+  const [hoveredRegion, setHoveredRegion] = useState<BodyRegion | null>(null);
   const regions = BODY_REGIONS.filter((region) => region.view === view);
+  const selectedInView = regions.filter((region) => selectedRegionIds.has(region.id));
+  const caption =
+    hoveredRegion?.label ??
+    (selectedInView.length > 0
+      ? selectedInView.map((region) => region.label).join(', ')
+      : 'Tap a region to select it');
 
   return (
     <View style={styles.bodyMapFigure}>
@@ -1241,41 +1194,27 @@ function BodyMapFigure({
         {
           width: '100%',
           height: 560,
-          viewBox: '0 0 188 650',
+          viewBox: BODY_MAP_VIEWBOX[view],
           role: 'img',
           'aria-label': `${title} body location map`,
         },
         [
-          createElement('line', {
-            key: `${view}-center`,
-            x1: 94,
-            y1: 20,
-            x2: 94,
-            y2: 624,
-            stroke: '#b7c7bd',
-            strokeWidth: 1,
-            strokeDasharray: '4 5',
-          }),
-          createElement('line', {
-            key: `${view}-waist`,
-            x1: 49,
-            y1: 252,
-            x2: 139,
-            y2: 252,
-            stroke: '#b7c7bd',
-            strokeWidth: 1,
-            strokeDasharray: '4 5',
-          }),
           ...regions.map((region) => {
             const isSelected = selectedRegionIds.has(region.id);
+            const isHovered = hoveredRegion?.id === region.id;
             return createElement('path', {
               key: region.id,
               d: region.path,
-              fill: isSelected ? '#A8D5BA' : '#fbfdfb',
-              fillOpacity: isSelected ? 0.86 : 0.74,
-              stroke: isSelected ? '#1B5E3A' : '#1f3329',
-              strokeWidth: isSelected ? 2.2 : 1.25,
+              transform: region.transform,
+              fill: isSelected ? '#A8D5BA' : isHovered ? '#eef7f1' : '#f7faf8',
+              fillOpacity: 1,
+              stroke: isSelected ? '#1B5E3A' : isHovered ? '#2E7D5C' : '#1f3329',
+              strokeWidth: isSelected ? 1.7 : isHovered ? 1.35 : 0.9,
               onClick: () => onToggleRegion(region.id),
+              onMouseEnter: () => setHoveredRegion(region),
+              onMouseLeave: () => setHoveredRegion(null),
+              onFocus: () => setHoveredRegion(region),
+              onBlur: () => setHoveredRegion(null),
               onKeyDown: (event: { key?: string; preventDefault?: () => void }) => {
                 if (event.key === 'Enter' || event.key === ' ') {
                   event.preventDefault?.();
@@ -1288,25 +1227,9 @@ function BodyMapFigure({
               style: { cursor: 'pointer', outline: 'none' },
             });
           }),
-          ...regions.map((region) =>
-            createElement(
-              'text',
-              {
-                key: `${region.id}-label`,
-                x: region.labelX,
-                y: region.labelY,
-                textAnchor: 'middle',
-                dominantBaseline: 'middle',
-                fill: selectedRegionIds.has(region.id) ? '#1B5E3A' : '#2f483a',
-                fontSize: 8,
-                fontWeight: 800,
-                pointerEvents: 'none',
-              },
-              region.label.split(' / ')[0],
-            ),
-          ),
         ],
       )}
+      <Text style={styles.bodyMapCaption} numberOfLines={2}>{caption}</Text>
     </View>
   );
 }
@@ -3038,25 +2961,29 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     fontWeight: '800',
   },
-  severityScale: {
+  severityControl: {
     gap: 6,
-    paddingTop: 3,
   },
   severityTrack: {
-    height: 8,
+    width: '100%',
+    height: 10,
     borderRadius: 999,
-    backgroundColor: '#2f9e44',
     overflow: 'visible',
     position: 'relative',
   },
-  severityMarker: {
+  severityKnob: {
     position: 'absolute',
-    top: -4,
-    width: 4,
-    height: 16,
-    marginLeft: -2,
+    top: -6,
+    width: 22,
+    height: 22,
+    marginLeft: -11,
     borderRadius: 999,
-    backgroundColor: colors.text,
+    borderWidth: 3,
+    borderColor: colors.panel,
+    shadowColor: '#0f2a1f',
+    shadowOpacity: 0.16,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 3 },
   },
   severityScaleLabels: {
     flexDirection: 'row',
@@ -3078,7 +3005,7 @@ const styles = StyleSheet.create({
   bodyMapFigure: {
     flexBasis: 260,
     flexGrow: 1,
-    maxWidth: 330,
+    maxWidth: 350,
     minWidth: 240,
     alignItems: 'center',
     borderWidth: 1,
@@ -3087,7 +3014,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fbfdfb',
     paddingHorizontal: 12,
     paddingTop: 12,
-    paddingBottom: 4,
+    paddingBottom: 10,
   },
   bodyMapTitle: {
     color: colors.text,
@@ -3095,6 +3022,23 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     fontWeight: '900',
     marginBottom: 6,
+  },
+  bodyMapCaption: {
+    minHeight: 34,
+    color: colors.deepGreen,
+    fontSize: 12,
+    lineHeight: 17,
+    fontWeight: '900',
+    textAlign: 'center',
+    paddingHorizontal: 8,
+    marginTop: -4,
+  },
+  bodyMapSource: {
+    color: colors.muted,
+    fontSize: 11,
+    lineHeight: 15,
+    textAlign: 'center',
+    marginTop: -4,
   },
   locationLog: {
     gap: 10,
