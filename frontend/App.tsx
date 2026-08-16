@@ -183,7 +183,196 @@ type SymptomGroup = {
   ids: string[];
 };
 
+type BodyView = 'front' | 'back';
+
+type BodyRegion = {
+  id: string;
+  label: string;
+  view: BodyView;
+  path: string;
+  labelX: number;
+  labelY: number;
+};
+
 type AssessmentStep = 1 | 2 | 3 | 4;
+type IntakeStep = 1 | 2 | 3;
+
+type IntakeBasics = {
+  sexGender: string;
+  age: number | null;
+  mainConcern: string;
+  onsetDate: string;
+  onsetUnknown: boolean;
+  severity: number | null;
+};
+
+const SEX_GENDER_OPTIONS = [
+  'Female',
+  'Male',
+  'Non-binary',
+  'Prefer to self-describe',
+  'Prefer not to say',
+];
+
+const SEVERITY_DESCRIPTIONS: Record<number, string> = {
+  1: 'Barely noticeable',
+  2: 'Mild, easy to ignore',
+  3: 'Mild but distracting',
+  4: 'Moderate discomfort',
+  5: 'Moderate, affects focus',
+  6: 'Strong discomfort',
+  7: 'Severe, hard to ignore',
+  8: 'Very severe',
+  9: 'Nearly unbearable',
+  10: 'Worst possible',
+};
+
+const BODY_REGIONS: BodyRegion[] = [
+  {
+    id: 'front-head',
+    label: 'Head / Face',
+    view: 'front',
+    path: 'M94 18 C116 18 132 36 132 68 C132 99 115 118 94 118 C73 118 56 99 56 68 C56 36 72 18 94 18 Z',
+    labelX: 94,
+    labelY: 68,
+  },
+  {
+    id: 'front-neck',
+    label: 'Neck / Throat',
+    view: 'front',
+    path: 'M78 116 L110 116 L114 145 C102 151 86 151 74 145 Z',
+    labelX: 94,
+    labelY: 134,
+  },
+  {
+    id: 'front-chest',
+    label: 'Chest',
+    view: 'front',
+    path: 'M45 154 C58 144 76 140 94 140 C112 140 130 144 143 154 L132 230 L56 230 Z',
+    labelX: 94,
+    labelY: 185,
+  },
+  {
+    id: 'front-abdomen',
+    label: 'Upper Abdomen',
+    view: 'front',
+    path: 'M56 230 L132 230 L126 292 L62 292 Z',
+    labelX: 94,
+    labelY: 260,
+  },
+  {
+    id: 'front-pelvis',
+    label: 'Lower Abdomen / Pelvis',
+    view: 'front',
+    path: 'M62 292 L126 292 L118 336 C106 349 82 349 70 336 Z',
+    labelX: 94,
+    labelY: 315,
+  },
+  {
+    id: 'front-left-arm',
+    label: 'Left Arm',
+    view: 'front',
+    path: 'M45 156 C29 169 22 195 24 236 L18 334 C17 356 25 374 39 381 L51 376 L46 296 L58 214 Z',
+    labelX: 35,
+    labelY: 264,
+  },
+  {
+    id: 'front-right-arm',
+    label: 'Right Arm',
+    view: 'front',
+    path: 'M143 156 C159 169 166 195 164 236 L170 334 C171 356 163 374 149 381 L137 376 L142 296 L130 214 Z',
+    labelX: 153,
+    labelY: 264,
+  },
+  {
+    id: 'front-left-leg',
+    label: 'Left Leg',
+    view: 'front',
+    path: 'M69 336 C80 345 91 346 93 338 L91 492 C88 534 78 586 66 624 L52 624 C55 558 48 494 51 430 C52 390 57 360 69 336 Z',
+    labelX: 70,
+    labelY: 445,
+  },
+  {
+    id: 'front-right-leg',
+    label: 'Right Leg',
+    view: 'front',
+    path: 'M119 336 C108 345 97 346 95 338 L97 492 C100 534 110 586 122 624 L136 624 C133 558 140 494 137 430 C136 390 131 360 119 336 Z',
+    labelX: 118,
+    labelY: 445,
+  },
+  {
+    id: 'back-head',
+    label: 'Back of Head',
+    view: 'back',
+    path: 'M94 18 C116 18 132 36 132 68 C132 99 115 118 94 118 C73 118 56 99 56 68 C56 36 72 18 94 18 Z',
+    labelX: 94,
+    labelY: 68,
+  },
+  {
+    id: 'back-neck',
+    label: 'Neck',
+    view: 'back',
+    path: 'M78 116 L110 116 L114 145 C102 151 86 151 74 145 Z',
+    labelX: 94,
+    labelY: 134,
+  },
+  {
+    id: 'back-upper-torso',
+    label: 'Upper Back',
+    view: 'back',
+    path: 'M45 154 C58 144 76 140 94 140 C112 140 130 144 143 154 L132 230 L56 230 Z',
+    labelX: 94,
+    labelY: 185,
+  },
+  {
+    id: 'back-lower-torso',
+    label: 'Lower Back',
+    view: 'back',
+    path: 'M56 230 L132 230 L128 303 C114 312 74 312 60 303 Z',
+    labelX: 94,
+    labelY: 264,
+  },
+  {
+    id: 'back-pelvis',
+    label: 'Hips / Sacrum',
+    view: 'back',
+    path: 'M60 303 C74 312 114 312 128 303 L119 340 C106 351 82 351 69 340 Z',
+    labelX: 94,
+    labelY: 324,
+  },
+  {
+    id: 'back-left-arm',
+    label: 'Left Arm',
+    view: 'back',
+    path: 'M45 156 C29 169 22 195 24 236 L18 334 C17 356 25 374 39 381 L51 376 L46 296 L58 214 Z',
+    labelX: 35,
+    labelY: 264,
+  },
+  {
+    id: 'back-right-arm',
+    label: 'Right Arm',
+    view: 'back',
+    path: 'M143 156 C159 169 166 195 164 236 L170 334 C171 356 163 374 149 381 L137 376 L142 296 L130 214 Z',
+    labelX: 153,
+    labelY: 264,
+  },
+  {
+    id: 'back-left-leg',
+    label: 'Left Leg',
+    view: 'back',
+    path: 'M69 336 C80 345 91 346 93 338 L91 492 C88 534 78 586 66 624 L52 624 C55 558 48 494 51 430 C52 390 57 360 69 336 Z',
+    labelX: 70,
+    labelY: 445,
+  },
+  {
+    id: 'back-right-leg',
+    label: 'Right Leg',
+    view: 'back',
+    path: 'M119 336 C108 345 97 346 95 338 L97 492 C100 534 110 586 122 624 L136 624 C133 558 140 494 137 430 C136 390 131 360 119 336 Z',
+    labelX: 118,
+    labelY: 445,
+  },
+];
 
 export default function App() {
   const { width } = useWindowDimensions();
@@ -299,6 +488,16 @@ const ABOUT_CARDS = [
 function AssessmentPage({ isWide }: { isWide: boolean }) {
   const [symptoms, setSymptoms] = useState<MetadataRecord[]>([]);
   const [selectedSymptoms, setSelectedSymptoms] = useState<SymptomGroup[]>([]);
+  const [selectedBodyRegionIds, setSelectedBodyRegionIds] = useState<string[]>([]);
+  const [intakeBasics, setIntakeBasics] = useState<IntakeBasics>({
+    sexGender: '',
+    age: null,
+    mainConcern: '',
+    onsetDate: '',
+    onsetUnknown: false,
+    severity: null,
+  });
+  const [intakeStep, setIntakeStep] = useState<IntakeStep>(1);
   const [query, setQuery] = useState('');
   const [loadingSymptoms, setLoadingSymptoms] = useState(true);
   const [predicting, setPredicting] = useState(false);
@@ -356,6 +555,34 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
     () => new Set(selectedSymptoms.map((symptom) => symptom.key)),
     [selectedSymptoms],
   );
+  const selectedBodyRegions = useMemo(
+    () => BODY_REGIONS.filter((region) => selectedBodyRegionIds.includes(region.id)),
+    [selectedBodyRegionIds],
+  );
+  const intakeProgress = useMemo(() => {
+    if (prediction) {
+      return Math.min(100, 34 + assessmentStep * 16.5);
+    }
+
+    const basicsCompleted = [
+      intakeBasics.sexGender,
+      intakeBasics.age,
+      intakeBasics.mainConcern.trim(),
+      intakeBasics.onsetUnknown || intakeBasics.onsetDate,
+      intakeBasics.severity,
+    ].filter(Boolean).length;
+    const basicsProgress = (basicsCompleted / 5) * 34;
+    const locationProgress = selectedBodyRegionIds.length > 0 ? 33 : 0;
+    const symptomsProgress = selectedSymptoms.length > 0 ? 33 : 0;
+
+    if (intakeStep === 1) {
+      return basicsProgress;
+    }
+    if (intakeStep === 2) {
+      return 34 + locationProgress;
+    }
+    return 67 + symptomsProgress;
+  }, [assessmentStep, intakeBasics, intakeStep, prediction, selectedBodyRegionIds.length, selectedSymptoms.length]);
 
   const searchResults = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -442,10 +669,36 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
 
   function startOver() {
     setSelectedSymptoms([]);
+    setSelectedBodyRegionIds([]);
+    setIntakeBasics({
+      sexGender: '',
+      age: null,
+      mainConcern: '',
+      onsetDate: '',
+      onsetUnknown: false,
+      severity: null,
+    });
+    setIntakeStep(1);
     setQuery('');
     setPrediction(null);
     setAssessmentStep(1);
     setError(null);
+  }
+
+  function toggleBodyRegion(regionId: string) {
+    setSelectedBodyRegionIds((current) =>
+      current.includes(regionId)
+        ? current.filter((id) => id !== regionId)
+        : [...current, regionId],
+    );
+    setPrediction(null);
+    setAssessmentStep(1);
+  }
+
+  function clearBodyRegions() {
+    setSelectedBodyRegionIds([]);
+    setPrediction(null);
+    setAssessmentStep(1);
   }
 
   function selectFirstSearchResult() {
@@ -480,36 +733,74 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
   return (
     <ScrollView contentContainerStyle={styles.page}>
       <View style={styles.pageInner}>
-        <HorizontalStepper activeStep={prediction ? assessmentStep : 1} />
+        <HorizontalStepper
+          activeStep={prediction ? assessmentStep : 1}
+          progress={intakeProgress}
+          showProgress={!prediction}
+        />
 
         {!prediction ? (
           <View style={styles.initialStage}>
-            <SymptomPanel
-              title="What symptoms are present?"
-              helperText="Search by symptom label, then add the symptoms observed in the case."
-              query={query}
-              setQuery={setQuery}
-              searchResults={searchResults}
-              trySymptoms={trySymptoms}
-              selectedSymptoms={selectedSymptoms}
-              loadingSymptoms={loadingSymptoms}
-              predicting={predicting}
-              error={error}
-              isWide={isWide}
-              onAddSymptom={addSymptom}
-              onRemoveSymptom={removeSymptom}
-              onClear={clearSymptoms}
-              onPredict={runPrediction}
-              onSelectFirstResult={selectFirstSearchResult}
-              primaryLabel="Predict syndrome and herbs"
-              centered
-            />
+            <View style={styles.intakeStack}>
+              {intakeStep === 1 ? (
+                <IntakeBasicsPanel
+                  basics={intakeBasics}
+                  onChange={setIntakeBasics}
+                  onNext={() => setIntakeStep(2)}
+                />
+              ) : null}
+              {intakeStep === 2 ? (
+                <>
+                  <BodyLocationPanel
+                    selectedRegionIds={selectedBodyRegionIds}
+                    selectedRegions={selectedBodyRegions}
+                    onToggleRegion={toggleBodyRegion}
+                    onClear={clearBodyRegions}
+                  />
+                  <StepNavigation
+                    secondaryLabel="Back"
+                    primaryLabel="Next: Symptoms"
+                    onSecondary={() => setIntakeStep(1)}
+                    onPrimary={() => setIntakeStep(3)}
+                  />
+                </>
+              ) : null}
+              {intakeStep === 3 ? (
+                <>
+                  <SymptomPanel
+                    title="Review matched symptoms"
+                    helperText="Add the symptoms that best match this case. Soon this page will show suggested matches from the intake answers."
+                    query={query}
+                    setQuery={setQuery}
+                    searchResults={searchResults}
+                    trySymptoms={trySymptoms}
+                    selectedSymptoms={selectedSymptoms}
+                    loadingSymptoms={loadingSymptoms}
+                    predicting={predicting}
+                    error={error}
+                    isWide={isWide}
+                    onAddSymptom={addSymptom}
+                    onRemoveSymptom={removeSymptom}
+                    onClear={clearSymptoms}
+                    onPredict={runPrediction}
+                    onSelectFirstResult={selectFirstSearchResult}
+                    primaryLabel="Predict syndrome and herbs"
+                    centered
+                  />
+                  <StepNavigation
+                    secondaryLabel="Back"
+                    onSecondary={() => setIntakeStep(2)}
+                  />
+                </>
+              ) : null}
+            </View>
           </View>
         ) : (
           <View style={[styles.assessmentGrid, !isWide && styles.assessmentGridStacked]}>
             <View style={styles.leftPanel}>
               <SelectedSymptomsSidebar
                 selectedSymptoms={selectedSymptoms}
+                selectedBodyRegions={selectedBodyRegions}
                 onStartOver={startOver}
               />
             </View>
@@ -517,6 +808,7 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
               <ResultStage
                 prediction={prediction}
                 selectedSymptoms={selectedSymptoms}
+                selectedBodyRegions={selectedBodyRegions}
                 step={assessmentStep}
                 onStepChange={setAssessmentStep}
                 onStartOver={startOver}
@@ -529,49 +821,78 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
   );
 }
 
-function HorizontalStepper({ activeStep }: { activeStep: number }) {
+function HorizontalStepper({
+  activeStep,
+  progress,
+  showProgress,
+}: {
+  activeStep: number;
+  progress: number;
+  showProgress: boolean;
+}) {
   const steps = [
     { id: 1, label: 'Input symptoms' },
     { id: 2, label: 'Syndrome prediction' },
     { id: 3, label: 'Herb recommendation' },
     { id: 4, label: 'Summary report' },
   ];
+  const boundedProgress = Math.max(0, Math.min(progress, 100));
 
   return (
-    <View style={styles.horizontalStepper}>
-      {steps.map((step) => {
-        const isActive = step.id === activeStep;
-        const isComplete = step.id < activeStep;
-        return (
-          <View key={step.id} style={styles.stepRow}>
-            <View
-              style={[
-                styles.stepDot,
-                isActive && styles.stepDotActive,
-                isComplete && styles.stepDotComplete,
-              ]}
-            >
-              <Text
+    <View style={styles.stepperWrap}>
+      <View style={styles.horizontalStepper}>
+        {steps.map((step) => {
+          const isActive = step.id === activeStep;
+          const isComplete = step.id < activeStep;
+          return (
+            <View key={step.id} style={styles.stepRow}>
+              <View
                 style={[
-                  styles.stepDotText,
-                  (isActive || isComplete) && styles.stepDotTextActive,
+                  styles.stepDot,
+                  isActive && styles.stepDotActive,
+                  isComplete && styles.stepDotComplete,
                 ]}
               >
-                {step.id}
+                <Text
+                  style={[
+                    styles.stepDotText,
+                    (isActive || isComplete) && styles.stepDotTextActive,
+                  ]}
+                >
+                  {step.id}
+                </Text>
+              </View>
+              <Text
+                style={[
+                  styles.stepLabel,
+                  isActive && styles.stepLabelActive,
+                  isComplete && styles.stepLabelComplete,
+                ]}
+              >
+                {step.label}
               </Text>
             </View>
-            <Text
+          );
+        })}
+      </View>
+      {showProgress ? (
+        <View style={styles.progressWrap}>
+          <View style={styles.progressTrack}>
+            <View
               style={[
-                styles.stepLabel,
-                isActive && styles.stepLabelActive,
-                isComplete && styles.stepLabelComplete,
+                styles.progressFill,
+                {
+                  width: `${boundedProgress}%`,
+                  transitionProperty: 'width',
+                  transitionDuration: '260ms',
+                  transitionTimingFunction: 'ease',
+                } as Record<string, string>,
               ]}
-            >
-              {step.label}
-            </Text>
+            />
           </View>
-        );
-      })}
+          <Text style={styles.progressText}>{Math.round(boundedProgress)}%</Text>
+        </View>
+      ) : null}
     </View>
   );
 }
@@ -596,6 +917,399 @@ type SymptomPanelProps = {
   primaryLabel: string;
   centered?: boolean;
 };
+
+function IntakeBasicsPanel({
+  basics,
+  onChange,
+  onNext,
+}: {
+  basics: IntakeBasics;
+  onChange: (basics: IntakeBasics) => void;
+  onNext: () => void;
+}) {
+  const displayedAge = basics.age ?? 35;
+  const displayedSeverity = basics.severity ?? 5;
+
+  function updateBasics(next: Partial<IntakeBasics>) {
+    onChange({ ...basics, ...next });
+  }
+
+  return (
+    <View style={[styles.panel, styles.centerPanel]}>
+      <View style={styles.panelHeader}>
+        <Text style={styles.centerHeading}>Tell us what's going on</Text>
+        <Text style={styles.panelHelp}>
+          Start with a few basics. We will use this to suggest symptoms you can review before prediction.
+        </Text>
+      </View>
+
+      <View style={styles.formStack}>
+        <View style={styles.formField}>
+          <Text style={styles.formLabel}>Sex / gender</Text>
+          <View style={styles.optionGrid}>
+            {SEX_GENDER_OPTIONS.map((option) => {
+              const isSelected = basics.sexGender === option;
+              return (
+                <Pressable
+                  key={option}
+                  onPress={() => updateBasics({ sexGender: option })}
+                  style={({ pressed }) => [
+                    styles.optionChip,
+                    isSelected && styles.optionChipSelected,
+                    pressed && styles.pressed,
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.optionChipText,
+                      isSelected && styles.optionChipTextSelected,
+                    ]}
+                  >
+                    {option}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+        </View>
+
+        <SliderField
+          label="Age"
+          value={displayedAge}
+          min={0}
+          max={100}
+          step={1}
+          valueLabel={`${displayedAge} years`}
+          onChange={(value) => updateBasics({ age: value })}
+        />
+
+        <View style={styles.formField}>
+          <Text style={styles.formLabel}>Main concern</Text>
+          <TextInput
+            value={basics.mainConcern}
+            onChangeText={(value) => updateBasics({ mainConcern: value })}
+            placeholder="For example: stomach pain, cough, fatigue"
+            autoCapitalize="sentences"
+            style={styles.formInput}
+            placeholderTextColor={colors.muted}
+          />
+        </View>
+
+        <DateField
+          label="Onset"
+          value={basics.onsetDate}
+          unknown={basics.onsetUnknown}
+          onChange={(value) => updateBasics({ onsetDate: value })}
+          onUnknownChange={(unknown) =>
+            updateBasics({ onsetUnknown: unknown, onsetDate: unknown ? '' : basics.onsetDate })
+          }
+        />
+
+        <SliderField
+          label="Severity"
+          value={displayedSeverity}
+          min={1}
+          max={10}
+          step={1}
+          valueLabel={`${displayedSeverity} / 10`}
+          helperText={SEVERITY_DESCRIPTIONS[displayedSeverity]}
+          tone="severity"
+          onChange={(value) => updateBasics({ severity: value })}
+        />
+      </View>
+
+      <StepNavigation primaryLabel="Next: Location" onPrimary={onNext} />
+    </View>
+  );
+}
+
+function SliderField({
+  label,
+  value,
+  min,
+  max,
+  step,
+  valueLabel,
+  helperText,
+  tone,
+  onChange,
+}: {
+  label: string;
+  value: number;
+  min: number;
+  max: number;
+  step: number;
+  valueLabel: string;
+  helperText?: string;
+  tone?: 'severity';
+  onChange: (value: number) => void;
+}) {
+  const percent = ((value - min) / (max - min)) * 100;
+
+  return (
+    <View style={styles.formField}>
+      <View style={styles.sliderHeader}>
+        <Text style={styles.formLabel}>{label}</Text>
+        <Text style={styles.sliderValue}>{valueLabel}</Text>
+      </View>
+      <View style={styles.sliderShell}>
+        {createElement('input', {
+          type: 'range',
+          min,
+          max,
+          step,
+          value,
+          onChange: (event: { target: { value: string } }) => {
+            onChange(Number(event.target.value));
+          },
+          style: {
+            width: '100%',
+            accentColor: tone === 'severity' ? '#e86b1d' : colors.deepGreen,
+          },
+          'aria-label': label,
+        })}
+        <View style={styles.sliderLabels}>
+          <Text style={styles.sliderEndpoint}>{min}</Text>
+          <Text style={styles.sliderEndpoint}>{max}</Text>
+        </View>
+        {tone === 'severity' ? (
+          <View style={styles.severityScale}>
+            <View style={styles.severityTrack}>
+              <View style={[styles.severityMarker, { left: `${percent}%` }]} />
+            </View>
+            <View style={styles.severityScaleLabels}>
+              <Text style={styles.severityScaleText}>Mild</Text>
+              <Text style={styles.severityScaleText}>Moderate</Text>
+              <Text style={styles.severityScaleText}>Severe</Text>
+            </View>
+          </View>
+        ) : null}
+      </View>
+      {helperText ? <Text style={styles.sliderHelp}>{helperText}</Text> : null}
+    </View>
+  );
+}
+
+function DateField({
+  label,
+  value,
+  unknown,
+  onChange,
+  onUnknownChange,
+}: {
+  label: string;
+  value: string;
+  unknown: boolean;
+  onChange: (value: string) => void;
+  onUnknownChange: (value: boolean) => void;
+}) {
+  return (
+    <View style={styles.formField}>
+      <Text style={styles.formLabel}>{label}</Text>
+      {createElement('input', {
+        type: 'date',
+        value,
+        disabled: unknown,
+        onChange: (event: { target: { value: string } }) => onChange(event.target.value),
+        style: {
+          minHeight: 48,
+          borderWidth: 1,
+          borderStyle: 'solid',
+          borderColor: colors.line,
+          borderRadius: 8,
+          paddingLeft: 14,
+          paddingRight: 14,
+          fontSize: 16,
+          backgroundColor: '#fbfdfb',
+          color: colors.text,
+          fontFamily: sansSerifFont,
+          opacity: unknown ? 0.52 : 1,
+        },
+        'aria-label': label,
+      })}
+      <Pressable
+        onPress={() => onUnknownChange(!unknown)}
+        style={({ pressed }) => [
+          styles.checkboxRow,
+          pressed && styles.pressed,
+        ]}
+      >
+        <View style={[styles.checkboxBox, unknown && styles.checkboxBoxChecked]}>
+          {unknown ? <Text style={styles.checkboxMark}>✓</Text> : null}
+        </View>
+        <Text style={styles.checkboxText}>I don't know</Text>
+      </Pressable>
+    </View>
+  );
+}
+
+function BodyLocationPanel({
+  selectedRegionIds,
+  selectedRegions,
+  onToggleRegion,
+  onClear,
+}: {
+  selectedRegionIds: string[];
+  selectedRegions: BodyRegion[];
+  onToggleRegion: (regionId: string) => void;
+  onClear: () => void;
+}) {
+  const selectedRegionSet = useMemo(() => new Set(selectedRegionIds), [selectedRegionIds]);
+
+  return (
+    <View style={[styles.panel, styles.centerPanel]}>
+      <View style={styles.panelHeader}>
+        <Text style={styles.centerHeading}>Where is the symptom felt?</Text>
+        <Text style={styles.panelHelp}>
+          Select one or more body regions to log the symptom location for this case.
+        </Text>
+      </View>
+
+      <View style={styles.bodyMapGrid}>
+        <BodyMapFigure
+          title="Front"
+          view="front"
+          selectedRegionIds={selectedRegionSet}
+          onToggleRegion={onToggleRegion}
+        />
+        <BodyMapFigure
+          title="Back"
+          view="back"
+          selectedRegionIds={selectedRegionSet}
+          onToggleRegion={onToggleRegion}
+        />
+      </View>
+
+      <View style={styles.locationLog}>
+        <View style={styles.selectedHeader}>
+          <Text style={styles.selectedTitle}>Logged locations</Text>
+          <Text style={styles.countText}>{selectedRegions.length}</Text>
+        </View>
+
+        {selectedRegions.length === 0 ? (
+          <View style={styles.emptySelectedState}>
+            <Text style={styles.mutedText}>No body locations selected yet.</Text>
+          </View>
+        ) : (
+          <View style={styles.selectedList}>
+            {selectedRegions.map((region) => (
+              <Pressable
+                key={`selected-region-${region.id}`}
+                onPress={() => onToggleRegion(region.id)}
+                style={({ pressed }) => [styles.selectedTag, pressed && styles.pressed]}
+              >
+                <Text style={styles.selectedTagText} numberOfLines={1}>
+                  {region.label} ({region.view})
+                </Text>
+                <Text style={styles.selectedTagRemove}>×</Text>
+              </Pressable>
+            ))}
+          </View>
+        )}
+
+        {selectedRegions.length > 0 ? (
+          <Pressable
+            onPress={onClear}
+            style={({ pressed }) => [styles.clearTextButton, styles.locationClearButton, pressed && styles.pressed]}
+          >
+            <Text style={styles.clearTextButtonText}>Clear locations</Text>
+          </Pressable>
+        ) : null}
+      </View>
+    </View>
+  );
+}
+
+function BodyMapFigure({
+  title,
+  view,
+  selectedRegionIds,
+  onToggleRegion,
+}: {
+  title: string;
+  view: BodyView;
+  selectedRegionIds: Set<string>;
+  onToggleRegion: (regionId: string) => void;
+}) {
+  const regions = BODY_REGIONS.filter((region) => region.view === view);
+
+  return (
+    <View style={styles.bodyMapFigure}>
+      <Text style={styles.bodyMapTitle}>{title}</Text>
+      {createElement(
+        'svg',
+        {
+          width: '100%',
+          height: 560,
+          viewBox: '0 0 188 650',
+          role: 'img',
+          'aria-label': `${title} body location map`,
+        },
+        [
+          createElement('line', {
+            key: `${view}-center`,
+            x1: 94,
+            y1: 20,
+            x2: 94,
+            y2: 624,
+            stroke: '#b7c7bd',
+            strokeWidth: 1,
+            strokeDasharray: '4 5',
+          }),
+          createElement('line', {
+            key: `${view}-waist`,
+            x1: 49,
+            y1: 252,
+            x2: 139,
+            y2: 252,
+            stroke: '#b7c7bd',
+            strokeWidth: 1,
+            strokeDasharray: '4 5',
+          }),
+          ...regions.map((region) => {
+            const isSelected = selectedRegionIds.has(region.id);
+            return createElement('path', {
+              key: region.id,
+              d: region.path,
+              fill: isSelected ? '#A8D5BA' : '#fbfdfb',
+              fillOpacity: isSelected ? 0.86 : 0.74,
+              stroke: isSelected ? '#1B5E3A' : '#1f3329',
+              strokeWidth: isSelected ? 2.2 : 1.25,
+              onClick: () => onToggleRegion(region.id),
+              onKeyDown: (event: { key?: string; preventDefault?: () => void }) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault?.();
+                  onToggleRegion(region.id);
+                }
+              },
+              tabIndex: 0,
+              role: 'button',
+              'aria-label': `${isSelected ? 'Remove' : 'Add'} ${region.label} on ${title.toLowerCase()} view`,
+              style: { cursor: 'pointer', outline: 'none' },
+            });
+          }),
+          ...regions.map((region) =>
+            createElement(
+              'text',
+              {
+                key: `${region.id}-label`,
+                x: region.labelX,
+                y: region.labelY,
+                textAnchor: 'middle',
+                dominantBaseline: 'middle',
+                fill: selectedRegionIds.has(region.id) ? '#1B5E3A' : '#2f483a',
+                fontSize: 8,
+                fontWeight: 800,
+                pointerEvents: 'none',
+              },
+              region.label.split(' / ')[0],
+            ),
+          ),
+        ],
+      )}
+    </View>
+  );
+}
 
 function SymptomPanel({
   title,
@@ -788,26 +1502,48 @@ function SymptomPanel({
 
 function SelectedSymptomsSidebar({
   selectedSymptoms,
+  selectedBodyRegions,
   onStartOver,
 }: {
   selectedSymptoms: SymptomGroup[];
+  selectedBodyRegions: BodyRegion[];
   onStartOver: () => void;
 }) {
   return (
     <View style={styles.panel}>
       <View style={styles.panelHeader}>
-        <Text style={styles.panelTitle}>Selected Symptoms</Text>
-        <Text style={styles.panelHelp}>{selectedSymptoms.length} symptoms included</Text>
+        <Text style={styles.panelTitle}>Case Intake</Text>
+        <Text style={styles.panelHelp}>
+          {selectedSymptoms.length} symptoms and {selectedBodyRegions.length} locations included
+        </Text>
       </View>
 
-      <View style={styles.readOnlySelectedList}>
-        {selectedSymptoms.map((symptom) => (
-          <View key={symptom.key} style={styles.readOnlySymptomItem}>
-            <Text style={styles.readOnlySymptomText}>
-              {symptom.label}
-            </Text>
+      {selectedBodyRegions.length > 0 ? (
+        <View style={styles.sidebarSection}>
+          <Text style={styles.sectionSubtitle}>Body locations</Text>
+          <View style={styles.readOnlySelectedList}>
+            {selectedBodyRegions.map((region) => (
+              <View key={`sidebar-${region.id}`} style={styles.readOnlySymptomItem}>
+                <Text style={styles.readOnlySymptomText}>
+                  {region.label} ({region.view})
+                </Text>
+              </View>
+            ))}
           </View>
-        ))}
+        </View>
+      ) : null}
+
+      <View style={styles.sidebarSection}>
+        <Text style={styles.sectionSubtitle}>Selected symptoms</Text>
+        <View style={styles.readOnlySelectedList}>
+          {selectedSymptoms.map((symptom) => (
+            <View key={symptom.key} style={styles.readOnlySymptomItem}>
+              <Text style={styles.readOnlySymptomText}>
+                {symptom.label}
+              </Text>
+            </View>
+          ))}
+        </View>
       </View>
 
       <View style={styles.sidebarActions}>
@@ -825,12 +1561,14 @@ function SelectedSymptomsSidebar({
 function ResultStage({
   prediction,
   selectedSymptoms,
+  selectedBodyRegions,
   step,
   onStepChange,
   onStartOver,
 }: {
   prediction: PredictionResponse;
   selectedSymptoms: SymptomGroup[];
+  selectedBodyRegions: BodyRegion[];
   step: AssessmentStep;
   onStepChange: (step: AssessmentStep) => void;
   onStartOver: () => void;
@@ -853,6 +1591,7 @@ function ResultStage({
     <FinalReview
       prediction={prediction}
       selectedSymptoms={selectedSymptoms}
+      selectedBodyRegions={selectedBodyRegions}
       onBack={() => onStepChange(3)}
       onStartOver={onStartOver}
     />
@@ -926,11 +1665,13 @@ function HerbResults({
 function FinalReview({
   prediction,
   selectedSymptoms,
+  selectedBodyRegions,
   onBack,
   onStartOver,
 }: {
   prediction: PredictionResponse;
   selectedSymptoms: SymptomGroup[];
+  selectedBodyRegions: BodyRegion[];
   onBack: () => void;
   onStartOver: () => void;
 }) {
@@ -951,7 +1692,7 @@ function FinalReview({
             <Text style={styles.reportMeta}>Generated {reportDateLabel()}</Text>
           </View>
           <Pressable
-            onPress={() => downloadPredictionPdf(prediction, selectedSymptoms)}
+            onPress={() => downloadPredictionPdf(prediction, selectedSymptoms, selectedBodyRegions)}
             style={({ pressed }) => [styles.reportDownloadButton, pressed && styles.pressed]}
           >
             <Text style={styles.reportDownloadButtonText}>Download PDF</Text>
@@ -968,6 +1709,19 @@ function FinalReview({
             ))}
           </View>
         </View>
+
+        {selectedBodyRegions.length > 0 ? (
+          <View style={styles.reportSection}>
+            <Text style={styles.reportSectionTitle}>Body locations</Text>
+            <View style={styles.reportInlineList}>
+              {selectedBodyRegions.map((region) => (
+                <Text key={`report-region-${region.id}`} style={styles.reportInlineItem}>
+                  {region.label} ({region.view})
+                </Text>
+              ))}
+            </View>
+          </View>
+        ) : null}
 
         <View style={styles.reportSection}>
           <Text style={styles.reportSectionTitle}>Predicted syndrome</Text>
@@ -1208,12 +1962,13 @@ function KeySignalSummary({ concepts }: { concepts: ConceptScore[] }) {
 function downloadPredictionPdf(
   prediction: PredictionResponse,
   selectedSymptoms: SymptomGroup[],
+  selectedBodyRegions: BodyRegion[],
 ) {
   if (typeof document === 'undefined' || typeof URL === 'undefined') {
     return;
   }
 
-  const pdfText = createSummaryReportPdf(prediction, selectedSymptoms);
+  const pdfText = createSummaryReportPdf(prediction, selectedSymptoms, selectedBodyRegions);
   const blob = new Blob([pdfText], { type: 'application/pdf' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
@@ -1228,6 +1983,7 @@ function downloadPredictionPdf(
 function createSummaryReportPdf(
   prediction: PredictionResponse,
   selectedSymptoms: SymptomGroup[],
+  selectedBodyRegions: BodyRegion[],
 ) {
   const topSyndrome = prediction.syndromes[0];
   const topHerbs = prediction.herbs.slice(0, 3);
@@ -1238,6 +1994,7 @@ function createSummaryReportPdf(
     .map((concept) => titleCaseLabel(concept.label));
   const content = buildSummaryReportContent({
     symptoms: selectedSymptoms.map((symptom) => symptom.label),
+    bodyLocations: selectedBodyRegions.map((region) => `${region.label} (${region.view})`),
     syndromeName: topSyndrome ? englishDisplayName(topSyndrome) : 'No syndrome predicted',
     syndromeDescription: topSyndrome ? syndromeDescriptionText(topSyndrome.description) : '',
     keyConcepts,
@@ -1271,6 +2028,7 @@ function wrapReportText(text: string, maxLength: number) {
 
 type PdfReportData = {
   symptoms: string[];
+  bodyLocations: string[];
   syndromeName: string;
   syndromeDescription: string;
   keyConcepts: string[];
@@ -1353,6 +2111,14 @@ function buildSummaryReportContent(report: PdfReportData) {
     drawText(line, 72, 11, false, black, 15);
   });
   y -= 18;
+
+  if (report.bodyLocations.length > 0) {
+    drawSectionTitle('Body Locations');
+    wrapReportText(pdfSafeText(report.bodyLocations.join('  |  ')), 88).forEach((line) => {
+      drawText(line, 72, 11, false, black, 15);
+    });
+    y -= 18;
+  }
 
   drawSectionTitle('Predicted Syndrome');
   drawText(report.syndromeName, 72, 14, true, green, 20);
@@ -1862,6 +2628,10 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     gap: 18,
   },
+  stepperWrap: {
+    width: '100%',
+    gap: 7,
+  },
   horizontalStepper: {
     width: '100%',
     flexDirection: 'row',
@@ -1870,6 +2640,34 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     gap: 14,
     paddingVertical: 4,
+  },
+  progressWrap: {
+    width: '100%',
+    maxWidth: 520,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 9,
+  },
+  progressTrack: {
+    flex: 1,
+    height: 4,
+    borderRadius: 999,
+    backgroundColor: '#e8f0eb',
+    overflow: 'hidden',
+  },
+  progressFill: {
+    height: '100%',
+    borderRadius: 999,
+    backgroundColor: colors.deepGreen,
+  },
+  progressText: {
+    width: 38,
+    color: colors.muted,
+    fontSize: 12,
+    lineHeight: 16,
+    fontWeight: '900',
+    textAlign: 'right',
   },
   stepRow: {
     flexDirection: 'row',
@@ -1918,6 +2716,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 16,
+  },
+  intakeStack: {
+    width: '100%',
+    maxWidth: 860,
+    gap: 18,
   },
   assessmentGrid: {
     flex: 1,
@@ -2122,6 +2925,186 @@ const styles = StyleSheet.create({
     width: 290,
     flexShrink: 0,
   },
+  formStack: {
+    gap: 18,
+  },
+  formField: {
+    gap: 9,
+  },
+  formLabel: {
+    color: colors.text,
+    fontSize: 14,
+    lineHeight: 19,
+    fontWeight: '900',
+  },
+  formInput: {
+    minHeight: 48,
+    borderWidth: 1,
+    borderColor: colors.line,
+    borderRadius: 8,
+    paddingHorizontal: 14,
+    fontSize: 16,
+    backgroundColor: '#fbfdfb',
+    color: colors.text,
+  },
+  optionGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  optionChip: {
+    borderWidth: 1,
+    borderColor: '#c7dfcf',
+    borderRadius: 999,
+    backgroundColor: '#fbfdfb',
+    paddingHorizontal: 13,
+    paddingVertical: 9,
+  },
+  optionChipSelected: {
+    borderColor: colors.deepGreen,
+    backgroundColor: '#f1f8f4',
+  },
+  optionChipText: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 17,
+    fontWeight: '800',
+  },
+  optionChipTextSelected: {
+    color: colors.deepGreen,
+    fontWeight: '900',
+  },
+  checkboxRow: {
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    paddingVertical: 3,
+  },
+  checkboxBox: {
+    width: 18,
+    height: 18,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: colors.line,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.panel,
+  },
+  checkboxBoxChecked: {
+    borderColor: colors.deepGreen,
+    backgroundColor: colors.deepGreen,
+  },
+  checkboxMark: {
+    color: '#ffffff',
+    fontSize: 12,
+    lineHeight: 14,
+    fontWeight: '900',
+  },
+  checkboxText: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 18,
+    fontWeight: '800',
+  },
+  sliderHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
+  sliderValue: {
+    color: colors.deepGreen,
+    fontSize: 13,
+    lineHeight: 18,
+    fontWeight: '900',
+  },
+  sliderShell: {
+    gap: 5,
+  },
+  sliderLabels: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  sliderEndpoint: {
+    color: colors.muted,
+    fontSize: 12,
+    lineHeight: 16,
+    fontWeight: '800',
+  },
+  sliderHelp: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 18,
+    fontWeight: '800',
+  },
+  severityScale: {
+    gap: 6,
+    paddingTop: 3,
+  },
+  severityTrack: {
+    height: 8,
+    borderRadius: 999,
+    backgroundColor: '#2f9e44',
+    overflow: 'visible',
+    position: 'relative',
+  },
+  severityMarker: {
+    position: 'absolute',
+    top: -4,
+    width: 4,
+    height: 16,
+    marginLeft: -2,
+    borderRadius: 999,
+    backgroundColor: colors.text,
+  },
+  severityScaleLabels: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  severityScaleText: {
+    color: colors.muted,
+    fontFamily: serifFont,
+    fontSize: 13,
+    lineHeight: 17,
+    fontWeight: '700',
+  },
+  bodyMapGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 18,
+  },
+  bodyMapFigure: {
+    flexBasis: 260,
+    flexGrow: 1,
+    maxWidth: 330,
+    minWidth: 240,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: colors.line,
+    borderRadius: 8,
+    backgroundColor: '#fbfdfb',
+    paddingHorizontal: 12,
+    paddingTop: 12,
+    paddingBottom: 4,
+  },
+  bodyMapTitle: {
+    color: colors.text,
+    fontSize: 13,
+    lineHeight: 18,
+    fontWeight: '900',
+    marginBottom: 6,
+  },
+  locationLog: {
+    gap: 10,
+    borderTopWidth: 1,
+    borderTopColor: '#edf4ef',
+    paddingTop: 14,
+  },
+  locationClearButton: {
+    alignSelf: 'flex-start',
+  },
   selectedTitle: {
     color: colors.text,
     fontSize: 15,
@@ -2229,6 +3212,9 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   readOnlySelectedList: {
+    gap: 8,
+  },
+  sidebarSection: {
     gap: 8,
   },
   readOnlySymptomItem: {
