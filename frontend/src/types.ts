@@ -1,8 +1,32 @@
+import type { BodyRegion } from './bodyMapRegions';
+
 export type MetadataRecord = {
   id: string;
   label: string;
   english_name?: string;
   chinese_name?: string;
+};
+
+export type PatientIntakeBasics = {
+  sexGender: string;
+  age: number | null;
+  mainConcern: string;
+  onsetDate: string;
+  onsetUnknown: boolean;
+  severity: number | null;
+};
+
+export type PatientIntakeSymptom = {
+  key: string;
+  label: string;
+  ids: string[];
+};
+
+export type PatientIntake = PatientIntakeBasics & {
+  selectedBodyRegionIds: string[];
+  selectedBodyRegions: BodyRegion[];
+  selectedSymptoms: PatientIntakeSymptom[];
+  plainLanguageSymptoms?: string[];
 };
 
 export type PredictRequest = {

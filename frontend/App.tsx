@@ -25,9 +25,15 @@ import type {
   ConceptScore,
   HerbRecommendation,
   MetadataRecord,
+  PatientIntakeBasics,
+  PatientIntakeSymptom,
   PredictionResponse,
   SyndromePrediction,
 } from './src/types';
+import {
+  getSymptomSuggestions,
+  type SymptomSuggestion,
+} from './src/symptomSuggestionEngine';
 
 const MAX_VISIBLE_SYMPTOMS = 10;
 const MIN_SEARCH_LENGTH = 2;
@@ -47,15 +53,6 @@ const RELATED_SYMPTOM_TERMS: Record<string, string[]> = {
 
 type AssessmentStep = 1 | 2 | 3 | 4;
 type IntakeStep = 1 | 2 | 3;
-
-type IntakeBasics = {
-  sexGender: string;
-  age: number | null;
-  mainConcern: string;
-  onsetDate: string;
-  onsetUnknown: boolean;
-  severity: number | null;
-};
 
 const SEX_GENDER_OPTIONS = [
   'Female',
@@ -216,11 +213,8 @@ const FIVE_ELEMENT_AXES: ConceptAxis[] = [
   },
 ];
 
-type SymptomGroup = {
-  key: string;
-  label: string;
-  ids: string[];
-};
+type IntakeBasics = PatientIntakeBasics;
+type SymptomGroup = PatientIntakeSymptom;
 
 export default function App() {
   const { width } = useWindowDimensions();
@@ -352,6 +346,7 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
   const [error, setError] = useState<string | null>(null);
   const [prediction, setPrediction] = useState<PredictionResponse | null>(null);
   const [assessmentStep, setAssessmentStep] = useState<AssessmentStep>(1);
+  const [dismissedMatchedSymptomKeys, setDismissedMatchedSymptomKeys] = useState<string[]>([]);
 
   useEffect(() => {
     let mounted = true;
@@ -380,6 +375,10 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
       mounted = false;
     };
   }, []);
+
+  useEffect(() => {
+    setDismissedMatchedSymptomKeys([]);
+  }, [intakeBasics.mainConcern, selectedBodyRegionIds]);
 
   const groupedSymptoms = useMemo(() => {
     const groups = new Map<string, SymptomGroup>();
@@ -462,6 +461,26 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
       .slice(0, MAX_VISIBLE_SYMPTOMS);
   }, [groupedSymptoms, query, selectedGroupKeys]);
 
+  const matchedSymptomCandidates = useMemo(
+    () =>
+      getSymptomSuggestions({
+        intakeBasics,
+        selectedBodyRegionIds,
+        groupedSymptoms,
+        selectedGroupKeys: new Set(),
+        limit: 5,
+      }),
+    [groupedSymptoms, intakeBasics, selectedBodyRegionIds],
+  );
+  const visibleSuggestedSymptoms = useMemo(() => {
+    const dismissedKeys = new Set(dismissedMatchedSymptomKeys);
+    return matchedSymptomCandidates.filter(
+      (suggestion) =>
+        !dismissedKeys.has(suggestion.group.key) &&
+        !selectedGroupKeys.has(suggestion.group.key),
+    );
+  }, [dismissedMatchedSymptomKeys, matchedSymptomCandidates, selectedGroupKeys]);
+
   const trySymptoms = useMemo(() => {
     const availableGroups = groupedSymptoms.filter((group) => !selectedGroupKeys.has(group.key));
     const defaultSuggestions = COMMON_SYMPTOM_LABELS.map((label) =>
@@ -510,6 +529,7 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
 
   function clearSymptoms() {
     setSelectedSymptoms([]);
+    setDismissedMatchedSymptomKeys([]);
     setPrediction(null);
     setAssessmentStep(1);
     setError(null);
@@ -528,9 +548,16 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
     });
     setIntakeStep(1);
     setQuery('');
+    setDismissedMatchedSymptomKeys([]);
     setPrediction(null);
     setAssessmentStep(1);
     setError(null);
+  }
+
+  function dismissMatchedSymptom(symptomKey: string) {
+    setDismissedMatchedSymptomKeys((current) =>
+      current.includes(symptomKey) ? current : [...current, symptomKey],
+    );
   }
 
   function toggleBodyRegion(regionId: string) {
@@ -617,10 +644,12 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
                 <>
                   <SymptomPanel
                     title="Review matched symptoms"
-                    helperText="Add the symptoms that best match this case. Soon this page will show suggested matches from the intake answers."
+                    helperText="Review suggested matches from the intake answers, then add the symptoms that best fit this case."
                     query={query}
                     setQuery={setQuery}
                     searchResults={searchResults}
+                    suggestedSymptoms={visibleSuggestedSymptoms}
+                    hasMatchedSymptomCandidates={matchedSymptomCandidates.length > 0}
                     trySymptoms={trySymptoms}
                     selectedSymptoms={selectedSymptoms}
                     loadingSymptoms={loadingSymptoms}
@@ -628,6 +657,7 @@ function AssessmentPage({ isWide }: { isWide: boolean }) {
                     error={error}
                     isWide={isWide}
                     onAddSymptom={addSymptom}
+                    onDismissSuggestedSymptom={dismissMatchedSymptom}
                     onRemoveSymptom={removeSymptom}
                     onClear={clearSymptoms}
                     onPredict={runPrediction}
@@ -751,6 +781,8 @@ type SymptomPanelProps = {
   query: string;
   setQuery: (value: string) => void;
   searchResults: SymptomGroup[];
+  suggestedSymptoms: SymptomSuggestion[];
+  hasMatchedSymptomCandidates: boolean;
   trySymptoms: SymptomGroup[];
   selectedSymptoms: SymptomGroup[];
   loadingSymptoms: boolean;
@@ -758,6 +790,7 @@ type SymptomPanelProps = {
   error: string | null;
   isWide: boolean;
   onAddSymptom: (symptom: SymptomGroup) => void;
+  onDismissSuggestedSymptom: (symptomKey: string) => void;
   onRemoveSymptom: (symptomKey: string) => void;
   onClear: () => void;
   onPredict: () => void;
@@ -827,7 +860,7 @@ function IntakeBasicsPanel({
         />
 
         <View style={styles.formField}>
-          <Text style={styles.formLabel}>Main concern</Text>
+          <Text style={styles.formLabel}>Main concern(s)</Text>
           <TextInput
             value={basics.mainConcern}
             onChangeText={(value) => updateBasics({ mainConcern: value })}
@@ -836,6 +869,9 @@ function IntakeBasicsPanel({
             style={styles.formInput}
             placeholderTextColor={colors.muted}
           />
+          <Text style={styles.formHelp}>
+            Separate different concerns or symptoms with commas.
+          </Text>
         </View>
 
         <DateField
@@ -1240,6 +1276,8 @@ function SymptomPanel({
   query,
   setQuery,
   searchResults,
+  suggestedSymptoms,
+  hasMatchedSymptomCandidates,
   trySymptoms,
   selectedSymptoms,
   loadingSymptoms,
@@ -1247,6 +1285,7 @@ function SymptomPanel({
   error,
   isWide,
   onAddSymptom,
+  onDismissSuggestedSymptom,
   onRemoveSymptom,
   onClear,
   onPredict,
@@ -1258,6 +1297,7 @@ function SymptomPanel({
   const shouldShowResults = trimmedQuery.length >= MIN_SEARCH_LENGTH;
   const splitLayout = Boolean(centered && isWide);
   const predictDisabled = predicting || selectedSymptoms.length === 0;
+  const shouldShowMatchedPanel = suggestedSymptoms.length > 0 || !hasMatchedSymptomCandidates;
   const [showDisabledTip, setShowDisabledTip] = useState(false);
 
   function handleSearchKeyPress(event: { nativeEvent?: { key?: string } }) {
@@ -1279,7 +1319,50 @@ function SymptomPanel({
 
       <View style={[styles.symptomComposer, splitLayout && styles.symptomComposerSplit]}>
         <View style={styles.searchPane}>
-          <Text style={styles.sectionSubtitle}>Find symptoms</Text>
+          {shouldShowMatchedPanel ? (
+            <View style={styles.suggestedPanel}>
+              <Text style={styles.sectionSubtitle}>Matched symptoms</Text>
+              {suggestedSymptoms.length === 0 ? (
+                <Text style={styles.mutedText}>
+                  No strong matches yet. You can still search and add symptoms manually.
+                </Text>
+              ) : (
+                <View style={styles.suggestionList}>
+                  {suggestedSymptoms.map((suggestion) => (
+                    <View key={`suggested-${suggestion.group.key}`} style={styles.suggestionRow}>
+                      <View style={styles.suggestionTextBlock}>
+                        <Text style={styles.symptomLabel} numberOfLines={2}>
+                          {suggestion.group.label}
+                        </Text>
+                      </View>
+                      <Pressable
+                        onPress={() => onDismissSuggestedSymptom(suggestion.group.key)}
+                        accessibilityRole="button"
+                        accessibilityLabel={`Dismiss ${suggestion.group.label}`}
+                        style={({ pressed }) => [
+                          styles.suggestionDismissButton,
+                          pressed && styles.pressed,
+                        ]}
+                      >
+                        <Text style={styles.suggestionDismissText}>×</Text>
+                      </Pressable>
+                      <Pressable
+                        onPress={() => onAddSymptom(suggestion.group)}
+                        style={({ pressed }) => [
+                          styles.suggestionAddButton,
+                          pressed && styles.pressed,
+                        ]}
+                      >
+                        <Text style={styles.suggestionAddText}>Add</Text>
+                      </Pressable>
+                    </View>
+                  ))}
+                </View>
+              )}
+            </View>
+          ) : null}
+
+          <Text style={styles.sectionSubtitle}>Search all symptoms</Text>
           <View style={styles.searchBoxWrap}>
             <TextInput
               value={query}
@@ -1327,7 +1410,7 @@ function SymptomPanel({
 
           {!shouldShowResults ? (
             <View style={styles.quickAddPanel}>
-              <Text style={styles.quickAddTitle}>Try These Symptoms</Text>
+              <Text style={styles.quickAddTitle}>Suggested symptoms</Text>
               <View style={styles.quickAddGrid}>
                 {trySymptoms.map((symptom) => (
                   <Pressable
@@ -2870,6 +2953,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fbfdfb',
     color: colors.text,
   },
+  formHelp: {
+    color: colors.muted,
+    fontSize: 13,
+    lineHeight: 18,
+  },
   optionGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -3144,6 +3232,59 @@ const styles = StyleSheet.create({
     color: colors.deepGreen,
     fontSize: 13,
     fontWeight: '900',
+  },
+  suggestedPanel: {
+    gap: 10,
+    borderWidth: 1,
+    borderColor: '#d8e8de',
+    borderRadius: 8,
+    backgroundColor: '#f8fcfa',
+    padding: 12,
+  },
+  suggestionList: {
+    gap: 8,
+  },
+  suggestionRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    borderWidth: 1,
+    borderColor: '#e3efe7',
+    borderRadius: 8,
+    backgroundColor: colors.panel,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+  },
+  suggestionTextBlock: {
+    flex: 1,
+    minWidth: 0,
+  },
+  suggestionAddButton: {
+    borderRadius: 8,
+    backgroundColor: colors.deepGreen,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+  },
+  suggestionAddText: {
+    color: '#fff',
+    fontSize: 13,
+    fontWeight: '900',
+  },
+  suggestionDismissButton: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: '#d8e8de',
+    backgroundColor: '#f8fcfa',
+  },
+  suggestionDismissText: {
+    color: colors.muted,
+    fontSize: 20,
+    fontWeight: '800',
+    lineHeight: 22,
   },
   selectedHeader: {
     flexDirection: 'row',
