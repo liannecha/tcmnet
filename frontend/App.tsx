@@ -1,17 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
+import { motion } from 'framer-motion';
 import { createElement, useEffect, useMemo, useRef, useState } from 'react';
+import type { CSSProperties } from 'react';
 import {
   ActivityIndicator,
   Animated,
+  Image,
+  type LayoutChangeEvent,
   Pressable,
   SafeAreaView,
   ScrollView,
   StyleSheet,
-  Text,
-  TextInput,
+  Text as NativeText,
+  TextInput as NativeTextInput,
   View,
   useWindowDimensions,
 } from 'react-native';
+import type { ImageStyle, TextInputProps, TextProps } from 'react-native';
 
 import { fetchSymptoms, predict } from './src/api';
 import {
@@ -35,6 +40,8 @@ import {
   type SymptomSuggestion,
 } from './src/symptomSuggestionEngine';
 
+const serifFont = 'Georgia';
+const sansSerifFont = '"Roboto Condensed", Arial, Helvetica, sans-serif';
 const MAX_VISIBLE_SYMPTOMS = 10;
 const MIN_SEARCH_LENGTH = 2;
 const COMMON_SYMPTOM_LABELS = ['Fever', 'Cough', 'Dizziness', 'Fatigue', 'Abdominal Pain'];
@@ -50,6 +57,27 @@ const RELATED_SYMPTOM_TERMS: Record<string, string[]> = {
   heat: ['fever', 'thirst', 'yellow', 'red', 'bitter', 'irritability'],
   diarrhea: ['abdominal', 'stool', 'cold', 'dampness', 'fatigue'],
 };
+const LANDING_GRID_SIZE = 120;
+const LANDING_GRID_VERTICAL_LINES = Array.from({ length: 13 }, (_, index) => `${index * 8.3333}%` as `${number}%`);
+const LANDING_GRID_HORIZONTAL_LINES = Array.from({ length: 24 }, (_, index) => index * LANDING_GRID_SIZE);
+const MISSION_SECTION_ID = 'mission-section';
+const ABOUT_SECTION_ID = 'about-section';
+const HERO_SECTION_ID = 'hero-section';
+const HERO_MARK_HEIGHT = LANDING_GRID_SIZE * 2;
+const HERO_MARK_WIDTH = HERO_MARK_HEIGHT * (381.36 / 506.16);
+const CTA_SPRING = { type: 'spring', stiffness: 520, damping: 18, mass: 0.75 } as const;
+const FLOWER_CURSOR_OUTLINE =
+  "url(\"data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23153126' stroke-width='1.6' stroke-linejoin='round'%3E%3Ccircle cx='16' cy='16' r='3'/%3E%3Ccircle cx='16' cy='7.5' r='4.8'/%3E%3Ccircle cx='24.1' cy='13.4' r='4.8'/%3E%3Ccircle cx='21' cy='23' r='4.8'/%3E%3Ccircle cx='11' cy='23' r='4.8'/%3E%3Ccircle cx='7.9' cy='13.4' r='4.8'/%3E%3C/g%3E%3C/svg%3E\") 16 16, auto";
+const FLOWER_CURSOR_FILLED =
+  "url(\"data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F7B7C8' stroke='%231B5E3A' stroke-width='1.2' stroke-linejoin='round'%3E%3Ccircle cx='16' cy='7.5' r='4.8'/%3E%3Ccircle cx='24.1' cy='13.4' r='4.8'/%3E%3Ccircle cx='21' cy='23' r='4.8'/%3E%3Ccircle cx='11' cy='23' r='4.8'/%3E%3Ccircle cx='7.9' cy='13.4' r='4.8'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='3.4' fill='%23F6D96B' stroke='%231B5E3A' stroke-width='1.2'/%3E%3C/svg%3E\") 16 16, auto";
+
+function Text({ style, ...props }: TextProps) {
+  return <NativeText {...props} style={[{ fontFamily: sansSerifFont }, style]} />;
+}
+
+function TextInput({ style, ...props }: TextInputProps) {
+  return <NativeTextInput {...props} style={[{ fontFamily: sansSerifFont }, style]} />;
+}
 
 type AssessmentStep = 1 | 2 | 3 | 4;
 type IntakeStep = 1 | 2 | 3;
@@ -220,13 +248,82 @@ export default function App() {
   const { width } = useWindowDimensions();
   const isWide = width >= 920;
   const [started, setStarted] = useState(false);
+  const landingScrollRef = useRef<ScrollView>(null);
+  const [pendingLandingSection, setPendingLandingSection] = useState<string | null>(null);
+  const [landingSectionOffsets, setLandingSectionOffsets] = useState<Record<string, number>>({
+    [HERO_SECTION_ID]: 0,
+  });
+
+  function scrollToSection(sectionId: string) {
+    setStarted(false);
+    setPendingLandingSection(sectionId);
+  }
+
+  function handleLandingSectionLayout(sectionId: string, event: LayoutChangeEvent) {
+    const nextOffset = event.nativeEvent.layout.y;
+    setLandingSectionOffsets((currentOffsets) => {
+      if (currentOffsets[sectionId] === nextOffset) {
+        return currentOffsets;
+      }
+      return { ...currentOffsets, [sectionId]: nextOffset };
+    });
+  }
+
+  useEffect(() => {
+    if (started || !pendingLandingSection) {
+      return;
+    }
+
+    const nextOffset =
+      pendingLandingSection === HERO_SECTION_ID
+        ? 0
+        : landingSectionOffsets[pendingLandingSection];
+
+    if (nextOffset === undefined) {
+      return;
+    }
+
+    requestAnimationFrame(() => {
+      landingScrollRef.current?.scrollTo({ y: nextOffset, animated: true });
+      document.scrollingElement?.scrollTo({ top: 0 });
+      setPendingLandingSection(null);
+    });
+  }, [landingSectionOffsets, pendingLandingSection, started]);
+
+  useEffect(() => {
+    if (typeof document === 'undefined') {
+      return;
+    }
+
+    document.body.classList.toggle('tcmnet-flower-cursor', !started);
+    return () => {
+      document.body.classList.remove('tcmnet-flower-cursor');
+    };
+  }, [started]);
 
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <>
+      <GlobalFontStyles />
+      <SafeAreaView style={styles.safeArea}>
       <StatusBar style="dark" />
-      <Header started={started} onStart={() => setStarted(true)} onHome={() => setStarted(false)} />
-      {started ? <AssessmentPage isWide={isWide} /> : <LandingPage onStart={() => setStarted(true)} />}
-    </SafeAreaView>
+      <Header
+        started={started}
+        onStart={() => setStarted(true)}
+        onHome={() => scrollToSection(HERO_SECTION_ID)}
+        onMission={() => scrollToSection(MISSION_SECTION_ID)}
+        onAbout={() => scrollToSection(ABOUT_SECTION_ID)}
+      />
+      {started ? (
+        <AssessmentPage isWide={isWide} />
+      ) : (
+        <LandingPage
+          scrollRef={landingScrollRef}
+          onSectionLayout={handleLandingSectionLayout}
+          onStart={() => setStarted(true)}
+        />
+      )}
+      </SafeAreaView>
+    </>
   );
 }
 
@@ -234,10 +331,14 @@ function Header({
   started,
   onStart,
   onHome,
+  onMission,
+  onAbout,
 }: {
   started: boolean;
   onStart: () => void;
   onHome: () => void;
+  onMission: () => void;
+  onAbout: () => void;
 }) {
   return (
     <View style={styles.topHeader}>
@@ -245,31 +346,111 @@ function Header({
         <Text style={styles.brandText}>TCMNet</Text>
       </Pressable>
       <View style={styles.navActions}>
-        {!started ? (
-          <Pressable onPress={onStart} style={({ pressed }) => [styles.navButton, pressed && styles.pressed]}>
-            <Text style={styles.navButtonText}>Get started</Text>
-          </Pressable>
-        ) : null}
+        <NavLink label="Mission" onPress={onMission} />
+        <NavLink label="About" onPress={onAbout} />
+        <NavLink label="Try TCMNet" onPress={onStart} emphasis />
       </View>
     </View>
   );
 }
 
-function LandingPage({ onStart }: { onStart: () => void }) {
+function NavLink({
+  label,
+  onPress,
+  emphasis = false,
+}: {
+  label: string;
+  onPress: () => void;
+  emphasis?: boolean;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <ScrollView contentContainerStyle={styles.landingPage}>
-      <View style={styles.hero}>
+    <Pressable
+      onPress={onPress}
+      onHoverIn={() => setIsHovered(true)}
+      onHoverOut={() => setIsHovered(false)}
+      style={({ pressed }) => [
+        styles.navLink,
+        pressed && styles.pressed,
+      ]}
+    >
+      <Text
+        style={[
+          styles.navLinkText,
+          emphasis && styles.navLinkTextEmphasis,
+          isHovered && styles.navLinkTextHovered,
+        ]}
+      >
+        {label}
+      </Text>
+    </Pressable>
+  );
+}
+
+function HeroGrid() {
+  return (
+    <View pointerEvents="none" style={styles.heroGridOverlay}>
+      {LANDING_GRID_VERTICAL_LINES.map((offset) => (
+        <View key={`hero-grid-v-${offset}`} style={[styles.heroGridVerticalLine, { left: offset }]} />
+      ))}
+      {LANDING_GRID_HORIZONTAL_LINES.map((offset) => (
+        <View key={`hero-grid-h-${offset}`} style={[styles.heroGridHorizontalLine, { top: offset }]} />
+      ))}
+    </View>
+  );
+}
+
+function LandingPage({
+  scrollRef,
+  onSectionLayout,
+  onStart,
+}: {
+  scrollRef: React.RefObject<ScrollView>;
+  onSectionLayout: (sectionId: string, event: LayoutChangeEvent) => void;
+  onStart: () => void;
+}) {
+  return (
+    <ScrollView ref={scrollRef} style={styles.landingScroll} contentContainerStyle={styles.landingPage}>
+      <HeroGrid />
+      <View
+        nativeID={HERO_SECTION_ID}
+        onLayout={(event) => onSectionLayout(HERO_SECTION_ID, event)}
+        style={styles.hero}
+      >
+        <Image
+          source={require('./assets/tcmnet-mark.svg')}
+          style={styles.heroMark as ImageStyle}
+          resizeMode="contain"
+        />
         <Text style={styles.heroTitle}>TCMNet</Text>
         <Text style={styles.heroCopy}>
-          Bridging traditional medicine with modern data science to translate complex
-          symptoms into pattern diagnoses and customized herbal prescriptions.
+          Bridge traditional medicine to modern data science.
         </Text>
-        <Pressable onPress={onStart} style={({ pressed }) => [styles.heroButton, pressed && styles.pressed]}>
-          <Text style={styles.heroButtonText}>Get started</Text>
-        </Pressable>
+        <MotionCtaButton onPress={onStart} />
       </View>
 
-      <View style={styles.aboutSection}>
+      <View style={styles.heroGridSpacer} />
+
+      <View
+        nativeID={MISSION_SECTION_ID}
+        onLayout={(event) => onSectionLayout(MISSION_SECTION_ID, event)}
+        style={styles.missionSection}
+      >
+        <View style={styles.missionContent}>
+          <Text style={styles.missionTitle}>MISSION</Text>
+          <Text style={styles.missionStatement}>
+            TCMNet’s mission is to preserve and <Text style={styles.missionStatementEmphasis}>translate traditional diagnostic knowledge</Text> into a <Text style={styles.missionStatementEmphasis}>modern computational framework</Text>.
+          </Text>
+          <MissionColumns />
+        </View>
+      </View>
+
+      <View
+        nativeID={ABOUT_SECTION_ID}
+        onLayout={(event) => onSectionLayout(ABOUT_SECTION_ID, event)}
+        style={styles.aboutSection}
+      >
         <Text style={styles.aboutEyebrow}>ABOUT TCMNET</Text>
         <Text style={styles.aboutTitle}>From symptoms to syndromes, with interpretable reasoning in between.</Text>
         <Text style={styles.aboutIntro}>
@@ -284,6 +465,159 @@ function LandingPage({ onStart }: { onStart: () => void }) {
     </ScrollView>
   );
 }
+
+function MotionCtaButton({ onPress }: { onPress: () => void }) {
+  return (
+    <motion.button
+      type="button"
+      aria-label="Try TCMNet"
+      initial="rest"
+      animate="rest"
+      whileHover="hover"
+      whileTap="tap"
+      onClick={onPress}
+      style={motionCtaStyles.button}
+      variants={{
+        rest: { scale: 1, y: 0 },
+        hover: { scale: 1.045, y: -2 },
+        tap: { scale: 0.94, y: 2 },
+      }}
+      transition={CTA_SPRING}
+    >
+      <motion.span
+        aria-hidden
+        style={motionCtaStyles.bracket}
+        variants={{
+          rest: { x: 0, rotate: 0 },
+          hover: { x: -12, rotate: -4 },
+          tap: { x: -4, rotate: 0 },
+        }}
+        transition={CTA_SPRING}
+      >
+        [
+      </motion.span>
+      <motion.span
+        style={motionCtaStyles.label}
+        variants={{
+          rest: { scale: 1 },
+          hover: { scale: 1.02 },
+          tap: { scale: 0.98 },
+        }}
+        transition={CTA_SPRING}
+      >
+        TRY TCMNET
+      </motion.span>
+      <motion.span
+        aria-hidden
+        style={motionCtaStyles.bracket}
+        variants={{
+          rest: { x: 0, rotate: 0 },
+          hover: { x: 12, rotate: 4 },
+          tap: { x: 4, rotate: 0 },
+        }}
+        transition={CTA_SPRING}
+      >
+        ]
+      </motion.span>
+    </motion.button>
+  );
+}
+
+const motionCtaStyles = {
+  button: {
+    alignItems: 'center',
+    appearance: 'none',
+    background: 'transparent',
+    border: 0,
+    boxShadow: 'none',
+    color: '#1B5E3A',
+    cursor: 'pointer',
+    display: 'inline-flex',
+    font: 'inherit',
+    gap: 12,
+    height: 76,
+    justifyContent: 'center',
+    marginTop: 26,
+    minWidth: 260,
+    overflow: 'visible',
+    padding: '0 30px',
+    position: 'relative',
+    zIndex: 1,
+  },
+  bracket: {
+    display: 'inline-block',
+    fontSize: 31,
+    fontWeight: 800,
+    lineHeight: 1,
+    position: 'relative',
+    textShadow: '0 1px 0 rgba(255, 255, 255, 0.18)',
+    zIndex: 1,
+  },
+  label: {
+    display: 'inline-block',
+    fontFamily: '"Roboto Condensed", Arial, Helvetica, sans-serif',
+    fontSize: '24pt',
+    fontWeight: 900,
+    letterSpacing: '0.12em',
+    lineHeight: '28pt',
+    position: 'relative',
+    textTransform: 'uppercase',
+    zIndex: 1,
+  },
+} satisfies Record<string, CSSProperties>;
+
+function MissionColumns() {
+  return (
+    <motion.div
+      initial="rest"
+      whileInView="together"
+      viewport={{ once: true, amount: 0.45 }}
+      style={missionColumnStyles.grid}
+    >
+      <motion.div
+        style={missionColumnStyles.column}
+        variants={{
+          rest: { opacity: 0, x: -180 },
+          together: { opacity: 1, x: 0 },
+        }}
+        transition={{ type: 'spring', stiffness: 90, damping: 18, mass: 0.9 }}
+      >
+        <Text style={[styles.missionColumnText, styles.missionColumnTextLeft]}>
+          <Text style={styles.missionColumnStrong}>Traditional Chinese Medicine</Text> reads health through body-wide symptom patterns, offering a natural and holistic way to understand chronic and complex conditions alongside conventional diagnosis.
+        </Text>
+      </motion.div>
+
+      <motion.div
+        style={missionColumnStyles.column}
+        variants={{
+          rest: { opacity: 0, x: 180 },
+          together: { opacity: 1, x: 0 },
+        }}
+        transition={{ type: 'spring', stiffness: 90, damping: 18, mass: 0.9 }}
+      >
+        <Text style={[styles.missionColumnText, styles.missionColumnTextRight]}>
+          <Text style={styles.missionColumnStrong}>Modern data science</Text> allows us to model those relationships as learnable data, connecting symptoms, syndromes, and herbal recommendations so this knowledge can be studied, compared, and scaled.
+        </Text>
+      </motion.div>
+    </motion.div>
+  );
+}
+
+const missionColumnStyles = {
+  grid: {
+    alignItems: 'flex-start',
+    display: 'grid',
+    gap: 28,
+    gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)',
+    marginTop: 14,
+    maxWidth: 920,
+    overflow: 'visible',
+    width: '100%',
+  },
+  column: {
+    minWidth: 0,
+  },
+} satisfies Record<string, CSSProperties>;
 
 function AboutCard({ card }: { card: (typeof ABOUT_CARDS)[number] }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -2439,7 +2773,10 @@ const colors = {
   leaf: '#4B9B6E',
   forest: '#2E7D5C',
   deepGreen: '#1B5E3A',
+  darkOlive: '#1e2618',
   page: '#fbfdfb',
+  landingBackground: '#fbfdfb',
+  landingGrid: 'rgba(61, 74, 43, 0.10)',
   panel: '#ffffff',
   softPanel: '#eef5f1',
   text: '#153126',
@@ -2449,13 +2786,48 @@ const colors = {
   warning: '#9c5b00',
 };
 
-const serifFont = 'Georgia';
-const sansSerifFont = 'Jakarta Sans, Arial, Helvetica, sans-serif';
+function GlobalFontStyles() {
+  if (typeof document === 'undefined') {
+    return null;
+  }
+
+  return createElement('style', {
+    dangerouslySetInnerHTML: {
+      __html: `
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;800;900&display=swap');
+        html, body, #root {
+          height: 100%;
+          margin: 0;
+          overscroll-behavior: none;
+          overflow: hidden;
+          font-family: ${sansSerifFont};
+          width: 100%;
+        }
+        #root {
+          display: flex;
+        }
+        button, input, textarea, select {
+          font-family: ${sansSerifFont};
+        }
+        body.tcmnet-flower-cursor,
+        body.tcmnet-flower-cursor * {
+          cursor: ${FLOWER_CURSOR_OUTLINE};
+        }
+        body.tcmnet-flower-cursor:active,
+        body.tcmnet-flower-cursor:active * {
+          cursor: ${FLOWER_CURSOR_FILLED};
+        }
+      `,
+    },
+  });
+}
 
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: colors.page,
+    height: '100%',
+    overflow: 'hidden',
   },
   topHeader: {
     minHeight: 78,
@@ -2481,7 +2853,7 @@ const styles = StyleSheet.create({
   navActions: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 16,
+    gap: 24,
   },
   navButton: {
     minHeight: 46,
@@ -2501,11 +2873,27 @@ const styles = StyleSheet.create({
   },
   navLinkText: {
     color: colors.text,
+    fontFamily: sansSerifFont,
     fontSize: 15,
-    fontWeight: '800',
+    fontWeight: '400',
+    textDecorationLine: 'none',
+    textDecorationColor: 'rgba(21, 49, 38, 0.42)',
+  },
+  navLinkTextEmphasis: {
+    fontWeight: '900',
+  },
+  navLinkTextHovered: {
+    textDecorationLine: 'underline',
+  },
+  landingScroll: {
+    flex: 1,
+    backgroundColor: colors.landingBackground,
   },
   landingPage: {
     width: '100%',
+    backgroundColor: colors.landingBackground,
+    position: 'relative',
+    overflow: 'hidden',
   },
   hero: {
     minHeight: 680,
@@ -2513,7 +2901,31 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 24,
     paddingVertical: 80,
-    backgroundColor: colors.page,
+    position: 'relative',
+    zIndex: 1,
+  },
+  heroGridOverlay: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  heroGridVerticalLine: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    width: 1,
+    backgroundColor: colors.landingGrid,
+  },
+  heroGridHorizontalLine: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    height: 1,
+    backgroundColor: colors.landingGrid,
+  },
+  heroMark: {
+    width: HERO_MARK_WIDTH,
+    height: HERO_MARK_HEIGHT,
+    marginBottom: 12,
+    zIndex: 1,
   },
   eyebrow: {
     color: colors.deepGreen,
@@ -2529,6 +2941,7 @@ const styles = StyleSheet.create({
     lineHeight: 104,
     fontWeight: '700',
     textAlign: 'center',
+    zIndex: 1,
   },
   tagline: {
     color: colors.text,
@@ -2542,10 +2955,16 @@ const styles = StyleSheet.create({
   heroCopy: {
     maxWidth: 760,
     color: colors.muted,
+    fontFamily: sansSerifFont,
     fontSize: 20,
     lineHeight: 30,
     textAlign: 'center',
-    marginTop: 24,
+    marginTop: 16,
+    zIndex: 1,
+  },
+  heroGridSpacer: {
+    height: LANDING_GRID_SIZE,
+    zIndex: 1,
   },
   heroButton: {
     minHeight: 52,
@@ -2556,10 +2975,68 @@ const styles = StyleSheet.create({
     backgroundColor: colors.deepGreen,
     paddingHorizontal: 26,
     marginTop: 34,
+    zIndex: 1,
   },
   heroButtonText: {
     color: '#fff',
     fontSize: 16,
+    fontWeight: '900',
+  },
+  missionSection: {
+    width: '100%',
+    maxWidth: 1240,
+    alignSelf: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 24,
+    paddingTop: 18,
+    paddingBottom: 96,
+    zIndex: 1,
+  },
+  missionContent: {
+    width: '100%',
+    minHeight: LANDING_GRID_SIZE,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    position: 'relative',
+    gap: 16,
+  },
+  missionTitle: {
+    color: colors.muted,
+    fontFamily: sansSerifFont,
+    fontSize: 20,
+    lineHeight: 30,
+    fontWeight: '700',
+    textAlign: 'center',
+  },
+  missionStatement: {
+    color: colors.text,
+    fontFamily: serifFont,
+    fontSize: 24,
+    lineHeight: 32,
+    fontWeight: '700',
+    fontStyle: 'italic',
+    maxWidth: 820,
+    textAlign: 'center',
+  },
+  missionStatementEmphasis: {
+    fontFamily: serifFont,
+    fontStyle: 'normal',
+  },
+  missionColumnText: {
+    color: colors.muted,
+    fontSize: 17,
+    lineHeight: 26,
+  },
+  missionColumnTextLeft: {
+    textAlign: 'left',
+  },
+  missionColumnTextRight: {
+    textAlign: 'right',
+  },
+  missionColumnStrong: {
+    color: colors.muted,
+    fontSize: 17,
+    lineHeight: 26,
     fontWeight: '900',
   },
   aboutSection: {
@@ -2569,18 +3046,21 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingBottom: 90,
     gap: 18,
+    zIndex: 1,
   },
   aboutEyebrow: {
-    color: colors.deepGreen,
-    fontSize: 13,
-    fontWeight: '900',
+    color: colors.muted,
+    fontFamily: sansSerifFont,
+    fontSize: 20,
+    lineHeight: 30,
+    fontWeight: '700',
     textAlign: 'center',
   },
   aboutTitle: {
     color: colors.text,
     fontFamily: serifFont,
-    fontSize: 42,
-    lineHeight: 50,
+    fontSize: 24,
+    lineHeight: 32,
     fontWeight: '700',
     textAlign: 'center',
   },
